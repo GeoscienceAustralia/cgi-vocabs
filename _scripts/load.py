@@ -135,7 +135,7 @@ def load_all_vocabs_details_from_github(folder):
     print("Loading all {} vocabs from GitHub".format(folder))
 
     gh = Github(config.GITHUB_TOKEN)
-    repo = gh.get_repo("surroundaustralia/ga-vocabs")
+    repo = gh.get_repo("surroundaustralia/cgi-vocabs")
     contents = repo.get_contents(folder)
 
     c = 0
@@ -247,7 +247,7 @@ def create_repo(repo_config):
 
 if __name__ == "__main__":
     # purge the repo
-    #purge_repo()
+    # purge_repo()
 
     folders = [
         "earthresourceml",
