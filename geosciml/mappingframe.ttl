@@ -7,7 +7,7 @@
 <http://resource.geosciml.org/classifier/cgi/mappingframe> a skos:Collection ;
     skos:prefLabel "Mapping Frame - All Concepts"@en ;
 skos:definition "All Concepts in this vocabulary" ;
-dcterms:provenance "this vocabulary" ;
+    dcterms:provenance "this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/mappingframe/base_of_quaternary>,
         <http://resource.geosciml.org/classifier/cgi/mappingframe/surface_geology>,
         <http://resource.geosciml.org/classifier/cgi/mappingframe/top_of_basement>,
@@ -17,7 +17,7 @@ dcterms:provenance "this vocabulary" ;
     dcterms:source "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/baseOfQuaternary"@en ;
     skos:definition "Base of the predominantly unconsolidated sedimentary material of Quaternary age, also referred to as superficial deposits"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
     skos:notation "1"^^<file:///Users/nick/Work/ga/cgi-vocabs/geosciml/LocalHierarchyKey> ;
     skos:prefLabel "base of Quaternary"@en .
 
@@ -25,7 +25,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mapp
     dcterms:source "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/surfaceGeology"@en ;
     skos:definition "Bedrock and predominantly unconsolidated sedimentary material of Quaternary age (superficial deposits) that would be visible if the overlying soil was removed or are exposed at the topographic surface."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
     skos:notation "2"^^<file:///Users/nick/Work/ga/cgi-vocabs/geosciml/LocalHierarchyKey> ;
     skos:prefLabel "surface geology"@en .
 
@@ -33,7 +33,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mapp
     dcterms:source "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBasement"@en ;
     skos:definition "The surface in the crust of the Earth below sedimentary or volcanic deposits, or tectonically transported rock unit. What constitutes basement can depend on the context and may comprise other sedimentary, igneous and/or metamorphic rocks."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
     skos:notation "3"^^<file:///Users/nick/Work/ga/cgi-vocabs/geosciml/LocalHierarchyKey> ;
     skos:prefLabel "top of basement"@en .
 
@@ -41,7 +41,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mapp
     dcterms:source "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBedrock"@en ;
     skos:definition "Top surface of the usually solid rock that may either be exposed at the topographic surface or covered by other younger unconsolidated deposits of Quaternary age (superficial deposits)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
     skos:notation "4"^^<file:///Users/nick/Work/ga/cgi-vocabs/geosciml/LocalHierarchyKey> ;
     skos:prefLabel "top of bedrock"@en .
 
@@ -55,7 +55,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mapp
     sdo:url <http://www.cgi-iugs.org> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> a skos:ConceptScheme ;
-dcterms:provenance "Original set of terms from the GeosciML standard" ;
+    dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2017-08-31"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
     skos:definition "Terms to describe the surface, horizon, or time slice at which the mapped features occur (eg, surface geology, top of bedrock), as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Adapted form the the INSPIRE vocabulary http://inspire.ec.europa.eu/codelist/MappingFrameValue. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;

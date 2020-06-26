@@ -15,7 +15,7 @@
     sdo:url <http://www.cgi-iugs.org> .
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form> a skos:Collection ;
-dcterms:provenance "The original vocbaulary - all its concepts"@en ;
+    dcterms:provenance "The original vocbaulary - all its concepts"@en ;
 skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "Earth Resource Form - All Concepts"@en ;
 
@@ -34,7 +34,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     dcterms:provenance "this vocabulary"@en ;
     skos:definition "A mineral deposit which crosscuts stratigraphic contacts or internal structures (eg, bedding, foliation) within its host rocks (eg, vein, reef, mass, lens, pipe, column, etc.)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:notation "02"^^<LocalHierarchyKey> ;
     skos:prefLabel "discordant"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> .
@@ -43,7 +43,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/eart
     dcterms:provenance "this vocabulary"@en ;
     skos:definition "The mineral deposit is hosted within a fault or shear zone."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:notation "05"^^<LocalHierarchyKey> ;
     skos:note "Mineralization is concordant to the fault. If the fault is discordant to host rock structure, the mineral deposit is discordant."@en ;
     skos:prefLabel "fault-hosted"@en ;
@@ -53,7 +53,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/eart
     dcterms:provenance "this vocabulary"@en ;
     skos:definition "The form of the mineral deposit is controlled by an igneous intrusive contact"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:notation "04"^^<LocalHierarchyKey> ;
     skos:note "Mineralization is concordant to the intrusive contact. If the intrusion is discordant to host rock structure, the mineral deposit is discordant to the host rock."@en ;
     skos:prefLabel "intrusive contact-related"@en ;
@@ -63,7 +63,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/eart
     dcterms:provenance "this vocabulary"@en ;
     skos:definition "A subconcordant body in some places lies parallel to, and in other places crosscuts, wallrock contacts or internal structures (eg, bedding, foliation)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:notation "03"^^<LocalHierarchyKey> ;
     skos:prefLabel "mixed concordant discordant"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> .
@@ -73,7 +73,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/eart
     skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratabound> ;
     skos:definition "A type of stratabound mineral deposit that is strictly coextensive with one or more sedimentary, metamorphic or igneous layers"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:notation "01.1.1"^^<LocalHierarchyKey> ;
     skos:prefLabel "stratiform"@en .
 
@@ -81,7 +81,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/eart
     dcterms:provenance "this vocabulary"@en ;
     skos:definition "The form of the mineral deposit has been significantly modified by post-mineralization structural modification."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:notation "06"^^<LocalHierarchyKey> ;
     skos:note "The term 'transposition' has a connotation of ductile deformation. The deformed ore body might be transposed into concordance with the fabric produced by the transposition and is concordant in that sense. At the same time the pre-deformation ore body might have orignated as a discordant body."@en ;
     skos:prefLabel "structurally transposed"@en ;
@@ -91,7 +91,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/eart
     dcterms:provenance "this vocabulary"@en ;
     skos:definition "A mineral deposit forming a surficial layer in or on its host rocks"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:notation "08"^^<LocalHierarchyKey> ;
     skos:note "If sedimentary rocks underlying the surface are horizontal, then the surficial deposit will be concordant, and would be expected to be stratiform if preserved in the geologic record. If the Earth Surface is an erosional surface on older rocks, the deposit will also be unconformity-related."@en ;
     skos:prefLabel "surficial"@en ;
@@ -101,7 +101,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/eart
     dcterms:provenance "this vocabulary"@en ;
     skos:definition "A mineral deposit whose location and form are related to an unconformity between sedimentary host rocks"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:notation "07"^^<LocalHierarchyKey> ;
     skos:note "Mineralization is concordant to the unconformity, and thus concordant to whatever is above the unconformity, but if the unconformity is an angular unconformity, the resource body will be discordant to bedding below the unconformity"@en ;
     skos:prefLabel "unconformity-related"@en ;
@@ -111,7 +111,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/eart
     dcterms:provenance "this vocabulary"@en ;
     skos:definition "A concordant or nearly concordant mineral deposit lies parallel or nearly parallel to wallrocks contacts or internal structures (bedding, foliation, etc.)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratabound> ;
     skos:notation "01"^^<LocalHierarchyKey> ;
     skos:prefLabel "concordant"@en ;
@@ -122,18 +122,18 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/eart
     skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-form/concordant> ;
     skos:definition "A body of mineralisation confined to a single stratigraphic unit. A stratabound deposit may contain discordant internal structures (eg, brecciation)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratiform> ;
     skos:notation "01.1"^^<LocalHierarchyKey> ;
     skos:prefLabel "stratabound"@en .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> a skos:ConceptScheme ;
-dcterms:provenance "The EarthResourceML standard"@en ;
-skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+    dcterms:provenance "The EarthResourceML standard"@en ;
+    skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
 dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
     dcterms:created "2016-11-28"^^xsd:date ;
-dcterms:modified "2020-06-23"^^xsd:date ;
+    dcterms:modified "2020-06-23"^^xsd:date ;
     skos:definition "This file contains the CGI Earth Resource Form vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. This scheme describes concepts specifying an orebody's typical physical and structural relationship to wallrocks and associated rocks (e.g. strataform, stratabound, cross-cutting, vein, intrusive contact etc). The vocabulary includes two sub-schemes, one that includes categories related to the concordance or discordance to host rock structure, and the second that categorizes according to association genetic structure in the host rock. The EarthResource/form property allows multiple values, so that terms from both sub-schemes might be assigned to a given instance. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:prefLabel "Earth Resource Form"@en ;
 

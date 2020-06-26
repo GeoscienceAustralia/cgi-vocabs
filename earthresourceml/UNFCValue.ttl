@@ -15,7 +15,7 @@
     sdo:url <http://www.cgi-iugs.org> .
 
 <http://resource.geosciml.org/classifier/cgi/unfc> a skos:Collection ;
-dcterms:provenance "The original vocbaulary - all its concepts"@en ;
+    dcterms:provenance "The original vocbaulary - all its concepts"@en ;
 skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "UNFC Code - All Concepts"@en ;
 
@@ -36,7 +36,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     dcterms:provenance "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19"@en ;
     skos:definition "Quantities should only be classified as Additional Quantities in Place where no technically feasible projects have been identified that could lead to the extraction of any of these quantities."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "04"^^<LocalHierarchyKey> ;
     skos:prefLabel "additional quantities in place"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
@@ -47,7 +47,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:broader <http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects> ;
     skos:definition "Approved for Development requires that all approvals/contracts are in place, and capital funds have been committed. Construction and installation of project facilities should be underway or due to start imminently."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "01.2"^^<LocalHierarchyKey> ;
     skos:prefLabel "approved for development"@en .
 
@@ -56,7 +56,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:broader <http://resource.geosciml.org/classifier/cgi/unfc/non‐commercial-projects> ;
     skos:definition "Development not Viable is used where a technically feasible project can be identified, but it has been assessed as being of insufficient potential to warrant any further data acquisition activities or any direct efforts to remove commercial contingencies."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "03.02"^^<LocalHierarchyKey> ;
     skos:prefLabel "development not viable"@en .
 
@@ -66,7 +66,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:broader <http://resource.geosciml.org/classifier/cgi/unfc/potentially-commercial-projects> ;
     skos:definition "Development On Hold is used where a project is considered to have at least a reasonable chance of achieving commerciality (i.e. there are reasonable prospects for eventual economic extraction), but where there are currently major non-technical contingencies (e.g. environmental or social issues) that need to be resolved before the project can move towards development."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "02.02"^^<LocalHierarchyKey> ;
     skos:prefLabel "development on hold"@en .
 
@@ -76,7 +76,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:broader <http://resource.geosciml.org/classifier/cgi/unfc/potentially-commercial-projects> ;
     skos:definition "Development Pending is limited to those projects that are actively subject to projectspecific technical activities, such as acquisition of additional data (e.g. appraisal drilling) or the completion of project feasibility studies and associated economic analyses designed to confirm project commerciality and/or to determine the optimum development scenario or mine plan."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "02.01"^^<LocalHierarchyKey> ;
     skos:prefLabel "development pending"@en .
 
@@ -85,7 +85,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:broader <http://resource.geosciml.org/classifier/cgi/unfc/non‐commercial-projects> ;
     skos:definition "Development Unclarified is appropriate for projects that are still in the early stages of technical and commercial evaluation (e.g. a recent new discovery), and/or where significant further data acquisition will be required, in order to make a meaningful assessment of the potential for a commercial development, i.e. there is currently insufficient basis for concluding that there are reasonable prospects for eventual economic extraction."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "03.01"^^<LocalHierarchyKey> ;
     skos:prefLabel "development unclarified"@en .
 
@@ -94,7 +94,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:altLabel "exploration results (334)"@en ;
     skos:definition "Project identiifed that has not advanced enought to categorize further."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "05"^^<LocalHierarchyKey> ;
     skos:prefLabel "exploration projects"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
@@ -105,7 +105,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:broader <http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects> ;
     skos:definition "Justified for Development requires that the project has been demonstrated to be technically feasible and commercially viable, and there must be a reasonable expectation that all necessary approvals/contracts for the project to proceed to development will be forthcoming."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "01.3"^^<LocalHierarchyKey> ;
     skos:prefLabel "justified for development"@en .
 
@@ -115,7 +115,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:broader <http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects> ;
     skos:definition "On Production is used where the project is actually producing/extracting and selling one or more commodities to market as at the Effective Date of the evaluation."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "01.1"^^<LocalHierarchyKey> ;
     skos:prefLabel "on production"@en .
 
@@ -123,7 +123,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     dcterms:provenance "www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6"@en ;
     skos:definition "Non‐Commercial Projects include those that are at an early stage of evaluation in addition to those that are considered unlikely to become commercially feasible developments within the foreseeable future."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/unfc/development-not-viable>,
         <http://resource.geosciml.org/classifier/cgi/unfc/development-unclarified> ;
     skos:notation "03"^^<LocalHierarchyKey> ;
@@ -135,7 +135,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:altLabel "mineral resource"@en ;
     skos:definition "Potentially Commercial Projects are expected to be developed in the foreseeable future, in that the quantities are assessed to have reasonable prospects for eventual economic extraction, but technical and/or commercial feasibility has not yet been confirmed"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/unfc/development-on-hold>,
         <http://resource.geosciml.org/classifier/cgi/unfc/development-pending> ;
     skos:notation "02"^^<LocalHierarchyKey> ;
@@ -147,7 +147,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:altLabel "mineral reserves"@en ;
     skos:definition "Commercial Projects have been confirmed to be technically, economically and socially feasible."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/unfc/approved-for-development>,
         <http://resource.geosciml.org/classifier/cgi/unfc/justified-for-development>,
         <http://resource.geosciml.org/classifier/cgi/unfc/on-production> ;
@@ -156,12 +156,12 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> a skos:ConceptScheme ;
-dcterms:provenance "The EarthResourceML standard"@en ;
-skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+    dcterms:provenance "The EarthResourceML standard"@en ;
+    skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
 dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
     dcterms:created "2019-06-04"^^xsd:date ;
-dcterms:modified "2020-06-23"^^xsd:date ;
+    dcterms:modified "2020-06-23"^^xsd:date ;
     skos:definition "This file contains the CGI UNFC Code vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts for the categorisation of mineral reserves and resources according to the UN Framework Classification (2009). By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:prefLabel "UNFC Code"@en ;
 

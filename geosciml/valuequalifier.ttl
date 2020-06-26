@@ -7,7 +7,7 @@
 <http://resource.geosciml.org/classifier/cgi/valuequalifier> a skos:Collection ;
     skos:prefLabel "Value Qualifier - All Concepts"@en ;
 skos:definition "All Concepts in this vocabulary" ;
-dcterms:provenance "this vocabulary" ;
+    dcterms:provenance "this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/valuequalifier/always>,
         <http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate>,
         <http://resource.geosciml.org/classifier/cgi/valuequalifier/common>,
@@ -27,7 +27,7 @@ dcterms:provenance "this vocabulary" ;
     dcterms:source "GeoSciML UML model, definition this vocabulary"@en ;
     skos:definition "All instances of the observed entity have this property value"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:prefLabel "always"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
 
@@ -35,7 +35,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valu
     dcterms:source "GeoSciML UML model, definition this vocabulary"@en ;
     skos:definition "Specified value is approximate"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:prefLabel "approximate"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
 
@@ -43,7 +43,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valu
     dcterms:source "GeoSciML UML model, definition this vocabulary"@en ;
     skos:definition "Reported property value is commonly observered"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:prefLabel "common"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
 
@@ -51,7 +51,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valu
     dcterms:source "GeoSciML UML model, definition this vocabulary"@en ;
     skos:definition "Reported property value is the observered value"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:prefLabel "equalTo"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
 
@@ -59,7 +59,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valu
     dcterms:source "GeoSciML UML model, definition this vocabulary"@en ;
     skos:definition "Reported property value is lower bound"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:prefLabel "greaterThan"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
 
@@ -67,7 +67,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valu
     dcterms:source "GeoSciML UML model, definition this vocabulary"@en ;
     skos:definition "Reported property value is upper bound"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:prefLabel "lessThan"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
 
@@ -75,7 +75,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valu
     dcterms:source "GeoSciML UML model, definition this vocabulary"@en ;
     skos:definition "Reported property value is never observed"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:prefLabel "never"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
 
@@ -83,7 +83,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valu
     dcterms:source "GeoSciML UML model, definition this vocabulary"@en ;
     skos:definition "Reported property value is rarely observed"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:prefLabel "rare"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
 
@@ -91,7 +91,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valu
     dcterms:source "GeoSciML UML model, definition this vocabulary"@en ;
     skos:definition "Reported property value is observed occasionally"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:prefLabel "sometimes"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
 
@@ -100,7 +100,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valu
     sdo:url <http://www.cgi-iugs.org> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> a skos:ConceptScheme ;
-dcterms:provenance "Original set of terms from the GeosciML standard" ;
+    dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
     skos:definition "This file contains the CGI Value Qualifier vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. These terms are taken from the enumeration for values that may be assigned as the valueQualifier on CGI_Value. Definitions are proposed. This codelist includes qualifiers of several sorts: 1. frequence of occurrence--qualifiers that indicate how many occurrences of a described feature are expected to have a reported value. E.g. 'commonly red, sometimes brown'; 2. kinds of statistical procedure used to determine a single value to report based on a collection of observed values, e.g. mean, median, mode.; 3. kinds of nil values; 4. kind of value--a limiting value or the actual estimated value. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;

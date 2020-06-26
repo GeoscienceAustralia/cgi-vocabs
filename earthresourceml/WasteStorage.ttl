@@ -15,7 +15,7 @@
     sdo:url <http://www.cgi-iugs.org> .
 
 <http://resource.geosciml.org/classifier/cgi/waste-storage> a skos:Collection ;
-dcterms:provenance "The original vocbaulary - all its concepts"@en ;
+    dcterms:provenance "The original vocbaulary - all its concepts"@en ;
 skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "Waste Storage - All Concepts"@en ;
 
@@ -29,7 +29,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:broader <http://resource.geosciml.org/classifier/cgi/waste-storage/surface> ;
     skos:definition "Covered mining waste storage at ground level"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
     skos:notation "01.1"^^<LocalHierarchyKey> ;
     skos:prefLabel "covered"@en .
 
@@ -37,7 +37,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/wast
     dcterms:provenance "This vocabulary"@en ;
     skos:definition "Mining waste storage at underground environment"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
     skos:notation "02"^^<LocalHierarchyKey> ;
     skos:prefLabel "underground"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> .
@@ -46,7 +46,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/wast
     dcterms:provenance "Australia GGIC"@en ;
     skos:definition "Mining waste deposited at sea or lake floor (e.g. sea bed mining)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
     skos:notation "03"^^<LocalHierarchyKey> ;
     skos:prefLabel "underwater"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> .
@@ -55,19 +55,19 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/wast
     dcterms:provenance "This vocabulary"@en ;
     skos:definition "Mining waste storage at open-sky environment (ground level)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/waste-storage/covered> ;
     skos:notation "01"^^<LocalHierarchyKey> ;
     skos:prefLabel "surface"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> a skos:ConceptScheme ;
-dcterms:provenance "The EarthResourceML standard"@en ;
-skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+    dcterms:provenance "The EarthResourceML standard"@en ;
+    skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
 dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
     dcterms:created "2016-11-29"^^xsd:date ;
-dcterms:modified "2020-06-23"^^xsd:date ;
+    dcterms:modified "2020-06-23"^^xsd:date ;
     skos:definition "This file contains the CGI Waste Storage vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts for categorizing approaches to material waste storage associated with Earth Resource extraction. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:prefLabel "Waste Storage"@en ;
 

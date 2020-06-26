@@ -15,7 +15,7 @@
     sdo:url <http://www.cgi-iugs.org> .
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-shape> a skos:Collection ;
-dcterms:provenance "The original vocbaulary - all its concepts"@en ;
+    dcterms:provenance "The original vocbaulary - all its concepts"@en ;
 skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "Earth Resource Shape - All Concepts"@en ;
 
@@ -39,7 +39,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
         "tubular"@en ;
     skos:definition "A roughly cylindrical body, which may reduce in diameter at one end like a funnel"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "05.."^^<LocalHierarchyKey> ;
     skos:prefLabel "cylindrical"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
@@ -48,7 +48,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eart
     dcterms:provenance "From CGI GeologicUnitMorphology vocabulary"@en ;
     skos:definition "Body geometry is irregular and can not be characterized using terminology."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "07.."^^<LocalHierarchyKey> ;
     skos:prefLabel "irregular"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
@@ -59,7 +59,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eart
         "lenticular"@en ;
     skos:definition "A body bounded by converging surfaces (at least one of which is curved), thick in the middle and thinning out toward the edges, resembling a convex lens."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "01.."^^<LocalHierarchyKey> ;
     skos:prefLabel "lensoidal"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
@@ -69,7 +69,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eart
     skos:altLabel "nodule"@en ;
     skos:definition "Having the shape of a nodule or occurring in the form of nodules; e.g. \"nodular ore\" such as a colloform mineral aggregate with a bulbed surface."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "04.."^^<LocalHierarchyKey> ;
     skos:prefLabel "nodular"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
@@ -80,7 +80,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eart
         "pod-like"@en ;
     skos:definition "A roughly cylindrical body having a diameter that decreases to zero at both ends like a cigar or a potato."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "03.."^^<LocalHierarchyKey> ;
     skos:prefLabel "podiform"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
@@ -91,7 +91,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eart
         "saddle reef"@en ;
     skos:definition "Having a curved form like a fold hinge"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "06.."^^<LocalHierarchyKey> ;
     skos:prefLabel "saddle-shaped"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
@@ -107,18 +107,18 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eart
         "sheeted"@en ;
     skos:definition "A body having two dimensions that are much larger or longer than the third, e.g. a dyke-hosted or bed-hosted deposit"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "02.."^^<LocalHierarchyKey> ;
     skos:prefLabel "tabular"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> a skos:ConceptScheme ;
-dcterms:provenance "The EarthResourceML standard"@en ;
-skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+    dcterms:provenance "The EarthResourceML standard"@en ;
+    skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
 dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
     dcterms:created "2016-11-28"^^xsd:date ;
-dcterms:modified "2020-06-23"^^xsd:date ;
+    dcterms:modified "2020-06-23"^^xsd:date ;
     skos:definition "This file contains the CGI Earth Resource Shape vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts specifying the typical geometrical shape of an Earth Resource (e.g. lenticular, pipelike, irregular etc). By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:prefLabel "Earth Resource Shape"@en ;
 

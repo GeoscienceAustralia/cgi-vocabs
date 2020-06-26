@@ -7,7 +7,7 @@
 <http://resource.geosciml.org/classifier/cgi/planarpolaritycode> a skos:Collection ;
     skos:prefLabel "Planar Polarity Code - All Concepts"@en ;
 skos:definition "All Concepts in this vocabulary" ;
-dcterms:provenance "this vocabulary" ;
+    dcterms:provenance "this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/overturned>,
         <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/upright>,
         <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/vertical> .
@@ -16,21 +16,21 @@ dcterms:provenance "this vocabulary" ;
     dcterms:source "This vocabulary"@en ;
     skos:definition "The feature has been overturned (ie; rotated around a horizontal or subhorizontal axis more than 90 degrees from its original orientation)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ;
     skos:prefLabel "overturned"@en .
 
 <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/upright> a skos:Concept ;
     dcterms:source "This vocabulary"@en ;
     skos:definition "The feature has not been rotated around a horizontal or subhorizontal axis beyond 90 degrees from its original orientation."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ;
     skos:prefLabel "upright"@en .
 
 <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/vertical> a skos:Concept ;
     dcterms:source "This vocabulary"@en ;
     skos:definition "The planar orientation of a feature is approximately vertical."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ;
     skos:prefLabel "vertical"@en .
 
 <https://linked.data.gov.au/org/cgi-gtwg> a sdo:Organization ;
@@ -43,7 +43,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/plan
     sdo:url <http://www.cgi-iugs.org> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> a skos:ConceptScheme ;
-dcterms:provenance "Original set of terms from the GeosciML standard" ;
+    dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2017-07-05"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
     skos:definition "This scheme describes terms that specify the facing of planar geologic features (eg, upright, overturned), as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;

@@ -7,7 +7,7 @@
 <http://resource.geosciml.org/classifier/cgi/descriptionpurpose> a skos:Collection ;
     skos:prefLabel "Description Purpose - All Concepts"@en ;
 skos:definition "All Concepts in this vocabulary" ;
-dcterms:provenance "this vocabulary" ;
+    dcterms:provenance "this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/defining_norm>,
         <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/instance>,
         <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/typical_norm> .
@@ -21,7 +21,7 @@ dcterms:provenance "this vocabulary" ;
     dcterms:source "GeoSciML UML model scope notes"@en ;
     skos:definition "A description that specifies properties sufficient to identify a new occurrence as belonging to the class represented by the description. Basically these are the 'sufficient conditions' for class membership. Used when presented with a query 'I have an outcrop with these properties, which geologic unit should I assign to the outcrop?' DefiningNorm has to do with the intension of a ControlledConcept."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
     skos:prefLabel "defining norm"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> .
 
@@ -29,7 +29,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/desc
     dcterms:source "GeoSciML UML model scope notes"@en ;
     skos:definition "A description that is specific to a particular observed occurrence. This is 'raw data', and its classification may start out as very general. There are kinds of narrowly defined ControlledConcepts that might not allow 'instances' that are different from the DefiningNorm. It might be worth considering a different relationship between MappedFeature and an Instance GeologicEntity, with the GeologicEntity role being 'description'."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
     skos:prefLabel "instance"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> .
 
@@ -37,7 +37,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/desc
     dcterms:source "GeoSciML UML model scope notes"@en ;
     skos:definition "A description that specifies properties to be expected of some occurrence associated with the GeologicEntity. This description may include many properties that are not part of the DefiningNorm. For example, the fact that granite is typically light-colored is not a defining property, but is certainly a useful typical property. These kinds of descriptions would be used to address queries like 'This area is within a polygon classified as Podunk Formation, what sort of lithology am I most likely to encounter when I start digging?' The Podunk Formation may be defined by the presence of a certain ammonite... TypicalNorm description would be constructed as a summary over many Instance descriptions."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
     skos:prefLabel "typicalNorm"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> .
 
@@ -46,7 +46,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/desc
     sdo:url <http://www.cgi-iugs.org> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> a skos:ConceptScheme ;
-dcterms:provenance "Original set of terms from the GeosciML standard" ;
+    dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
     skos:definition "This scheme describes codes used to specify the intended scope of a description of a GeologicFeature, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for us in the \"purpose\" property in GeoSciML GeologicFeature elements."@en ;

@@ -7,7 +7,7 @@
 <http://resource.geosciml.org/classifier/cgi/metamorphicgrade> a skos:Collection ;
     skos:prefLabel "Metamorphic Grade - All Concepts"@en ;
 skos:definition "All Concepts in this vocabulary" ;
-dcterms:provenance "this vocabulary" ;
+    dcterms:provenance "this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade>,
         <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade>,
         <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/medium_metamorphic_grade>,
@@ -28,7 +28,7 @@ dcterms:provenance "this vocabulary" ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
     skos:definition "Protolith structures almost always obliterated, evidence of partial melting common. Includes rocks metamorphosed in high-temperature amphibolite, pyroxene hornfels, and medium to high-temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, anthophyllite, cummingtonite, enstatite, mafic-hornblende, (diopside, garnet), calc-aluminous basic-plagioclase, pelite, semi-pelite -- K-feldspar, biotite, quartz, Al-minerals (garnet), migmatite."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:prefLabel "high metamorphic grade"@en .
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade> a skos:Concept ;
@@ -36,7 +36,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/meta
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
     skos:definition "Metamorphic effects clearly visible, protolith structures typically still observable, includes rocks metamorphosed in greenschisthigh-temperature blueschist, very low temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-serpentine (talc, magnesite), mafic-chlorite, actinolite (garnet), calc-aluminous basic-albite, epidote, pelite, semi-pelite -- white mica, chlorite, quartz, biotite (garnet, Al-minerals)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:prefLabel "low metamorphic grade"@en .
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/medium_metamorphic_grade> a skos:Concept ;
@@ -44,14 +44,14 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/meta
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
     skos:definition "Protolith structure typically obliterated. Includes rocks metamorphosed in high-temperature epidote-amphibolite, low-temperature amphibolite, and low temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, talc (magnesite, anthophyllite), mafic-hornblende, (diopside, garnet), calc-aluminous basic-plagioclase, pelite, semi-pelite -- white mica, biotite, quartz (garnet, Al-minerals)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:prefLabel "medium metamorphic grade"@en .
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_unknown> a skos:Concept ;
     dcterms:source "This vocabulary"@en ;
     skos:definition "For use in instance descriptions to indicate that no information is available on metamorphic grade"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:prefLabel "metamorphic grade unknown"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> .
 
@@ -60,7 +60,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/meta
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified> ;
     skos:definition "Rock or sediment not metamorphosed."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:prefLabel "not metamorphosed"@en .
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_high_metamorphic_grade> a skos:Concept ;
@@ -68,7 +68,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/meta
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
     skos:definition "Protolith structures almost always obliterated. Includes rocks metamorphosed in granulite (or sanidinite), and high-temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, enstatite, mafic-hypersthene, diopside (hornblende), calc-aluminous basic-plagioclase, pelite, semi-pelite -- hypersthene + Al-minerals (K-feldspar, quartz), or sapphirine."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:prefLabel "very high metamorphic grade"@en .
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_low_metamorphic_grade> a skos:Concept ;
@@ -76,7 +76,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/meta
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
     skos:definition "Rock very slightly metamorphosed, protolith structure ubiquitous, mineral assemblage of zeolite facies, subgreenschist facies, or low temperature part of blueschist facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-serpentine (quartz, magnesite), mafic-clay, chlorite, relict igneous minerals, calc-aluminous basic-zeolite, pumpellite, epidote, albite, pelite, semi-pelite -- clays, chlorite, sericite, quartz."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:prefLabel "very low metamorphic grade"@en .
 
 <https://linked.data.gov.au/org/cgi> a sdo:Organization ;
@@ -87,7 +87,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/meta
     dcterms:source "This vocabulary"@en ;
     skos:definition "for use in normative descriptions to explicitly indicate that any metamorphic condition is allowed (including non-metamorphosed)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified>,
         <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/not_metamorphosed> ;
     skos:prefLabel "metamorphic grade not specified"@en ;
@@ -98,7 +98,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/meta
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified> ;
     skos:definition "Rock is metamorphosed, may have any value for metamorphic grade."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade>,
         <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade>,
         <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/medium_metamorphic_grade>,
@@ -107,7 +107,7 @@ rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/meta
     skos:prefLabel "metamorphosed grade not specified"@en .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> a skos:ConceptScheme ;
-dcterms:provenance "Original set of terms from the GeosciML standard" ;
+    dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
     skos:definition "This file contains the CGI Metamorphic Grade vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Vocabulary for populating Metamorphic Grade property in GeoSciML metamorphic description elements. Derived from Fettes and Desmons (eds.), 2007, METAMORPHIC ROCKS: A CLASSIFICATION AND GLOSSARY OF TERMS - Recommendations of the International Union of Geological Sciences Subcommission on the Systematics of Metamorphic Rocks. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
