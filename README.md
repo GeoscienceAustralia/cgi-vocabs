@@ -1,6 +1,6 @@
 # CGI's Vocabularies
 
-This repository contains the source files of the Commission for the Management and Application of Geosceicne Information (CGI)'s public vocabularies. 
+This repository contains the source files of the Commission for the Management and Application of Geoscience Information (CGI)'s public vocabularies. 
 
 All these vocabularies are presented as [Simple Knowledge Organization System (SKOS)](https://www.w3.org/TR/skos-reference/) vocabularies and are delivered online at:
 
