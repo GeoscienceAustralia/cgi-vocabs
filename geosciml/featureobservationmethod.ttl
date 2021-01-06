@@ -177,6 +177,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod> a skos:ConceptScheme ;
+    dcterms:source <http://www.opengis.net/doc/geosciml/4.1> ;
     dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2010-02-04"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

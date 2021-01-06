@@ -37,6 +37,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url <http://www.cgi-iugs.org> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> a skos:ConceptScheme ;
+    dcterms:source <http://www.opengis.net/doc/geosciml/4.1> ;
     dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

@@ -3602,6 +3602,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "industrial mineral"@en .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> a skos:ConceptScheme ;
+    dcterms:source <https://earthresourceml.org> ;
     dcterms:provenance "The EarthResourceML standard"@en ;
     skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Simple definition for silica added as missing."@en ;
     skos:changeNote "2020-06-26 NJC tidied some definitions with random characters at the end."@en ;
