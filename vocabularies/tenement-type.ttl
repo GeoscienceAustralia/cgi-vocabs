@@ -12,7 +12,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://resource.geoscience.gov.au/classifier/ggic/tenementtype> a skos:Collection ;
-    skos:prefLabel "Tenement Type - All Concepts"@en ;
+    skos:prefLabel "Tenement Type -  All Concepts"@en ;
     skos:definition "All the Concepts in this ConceptScheme"@en ;
     dcterms:source cs: ;
     skos:member tt:Christmas-Island-mining-lease,
