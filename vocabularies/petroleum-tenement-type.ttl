@@ -8,7 +8,7 @@
 
 <http://resource.geoscience.gov.au/classifier/ggic/petroleum-tenement-type> a skos:Collection ;
     dcterms:source cs: ;
-    skos:prefLabel "Petroleum Tenement Type -  All Concepts"@en ;
+    skos:prefLabel "Petroleum Tenement Type - All Concepts"@en ;
     skos:definition "All the Concepts in the Petroleum Tenement Type ConceptScheem presented as a Collection - a flat list."@en ;
     skos:member :access,
         :access_authority,
