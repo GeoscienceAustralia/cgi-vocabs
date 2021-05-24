@@ -1,0 +1,1221 @@
+@prefix : <http://resource.geoscience.gov.au/classifier/ggic/petroleum-tenement-type/> .
+@prefix cs: <http://resource.geoscience.gov.au/classifierScheme/ggic/2021.01/petroleum-tenement-type> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ggic-lhk: <http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://resource.geoscience.gov.au/classifier/ggic/petroleum-tenement-type> a skos:Collection ;
+    dcterms:source cs: ;
+    skos:prefLabel "Petroleum Tenement Type -  All Concepts"@en ;
+    skos:definition "All the Concepts in the Petroleum Tenement Type ConceptScheem presented as a Collection - a flat list."@en ;
+    skos:member :access,
+        :access_authority,
+        :assessment,
+        :assessment_lease_application,
+        :assessment_lease_appln_section_56,
+        :associated_activities_licence,
+        :associated_activities_licence_application,
+        :associated_facilities_licence,
+        :associated_facilities_licence_application,
+        :authorisation_application,
+        :authority_to_prospect,
+        :coastal_access_authority_,
+        :coastal_exploration_permit,
+        :coastal_pipeline_licence,
+        :coastal_production_licence,
+        :coastal_retention_licence,
+        :coastal_special_prospecting_authority,
+        :competitive_tender_region,
+        :data_acquisition_authority,
+        :drilling_reservation,
+        :exploration,
+        :exploration_geothermal,
+        :exploration_greenhouse_gas,
+        :exploration_permit,
+        :exploration_permit_for_petroleum,
+        :exploration_permit_geothermal,
+        :exploration_permit_greenhouse_gas,
+        :exploration_petroleum,
+        :gas_storage_exploration_licence,
+        :gas_storage_exploration_licence_application,
+        :geothermal_exploration_licence,
+        :geothermal_exploration_licence_application,
+        :geothermal_lease,
+        :geothermal_retention_licence,
+        :geothermal_retention_licence_application,
+        :geothermal_storage_retention_licence,
+        :geothermal_storage_retention_licence_application,
+        :greenhouse_gas_lease,
+        :historic_coastal_exploration_permit,
+        :historic_onshore_pipeline_permit,
+        :historic_onshore_production_licence,
+        :infrastructure,
+        :infrastructure_licence,
+        :miscellaneous,
+        :offshore_petroleum_pipeline_licence,
+        :offshore_petroleum_pipeline_licence_application,
+        :offshore_petroleum_production_licence,
+        :offshore_petroleum_production_licence_application,
+        :offshore_petroleum_retention_lease,
+        :offshore_petroleum_retention_lease_application,
+        :oil_permit,
+        :permit_to_explore,
+        :petroleum_access_authority,
+        :petroleum_assessment_lease,
+        :petroleum_assessment_lease_application,
+        :petroleum_exploration_licence,
+        :petroleum_exploration_licence_application,
+        :petroleum_exploration_permit,
+        :petroleum_exploration_permit_app,
+        :petroleum_exploration_permit_application,
+        :petroleum_explorn_licence_appln,
+        :petroleum_facility_licence,
+        :petroleum_lease,
+        :petroleum_mining_lease,
+        :petroleum_mining_lease_application,
+        :petroleum_pipeline_licence,
+        :petroleum_production_lease,
+        :petroleum_production_lease_application,
+        :petroleum_production_licence,
+        :petroleum_production_licence_application,
+        :petroleum_public_calls,
+        :petroleum_retention_lease,
+        :petroleum_retention_licence,
+        :petroleum_retention_licence_aplication,
+        :petroleum_special_access_authorisation,
+        :petroleum_special_drilling_authorisation,
+        :petroleum_special_prosp_auth_appn_67_act,
+        :petroleum_special_prosp_auth_appn_91_act,
+        :petroleum_special_prospecting_authority,
+        :petroleum_survey_licence,
+        :pipeline,
+        :pipeline_licence,
+        :pipeline_licence_application,
+        :pipeline_permit,
+        :potential_commercial_area,
+        :potential_geothermal_commercial_area,
+        :potential_greenhouse_gas_storage_commercial_area,
+        :preliminary_survey_licence,
+        :preliminary_surveys_licence_application,
+        :production,
+        :production_geothermal,
+        :production_lease,
+        :production_licence,
+        :production_petroleum,
+        :retention,
+        :retention_lease,
+        :retention_licence,
+        :scientific_investigation,
+        :special_facilities_licence,
+        :special_facilities_licence_application,
+        :special_prospecting_authorities,
+        :special_prospecting_authorities_application,
+        :special_prospecting_authority,
+        :speculative_survey_licence,
+        :speculative_survey_licence_application,
+        :storage,
+        :water_monitoring_authority .
+
+:access_authority a skos:Concept ;
+    dcterms:source "NT, WA, NOPTA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :access ;
+    skos:definition "NT: Authority granted to a permittee, licensee or the lessee of a lease granted under the repealed Act or to the holder of a petroleum title granted outside the Territory. Access authority authorises the holder to carry on in the access authority area exploration for petroleum or operations relating to the recovery of petroleum in or from the exploration permit, licence, lease or petroleum title. Petroleum Act 1984: (https://legislation.nt.gov.au/Legislation/PETROLEUM-ACT-1984). WA: (definition TBA). NOPTA: (definition TBA)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "4.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:assessment_lease_application a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:definition "NSW: ASSESSMENT APPLICATION (1992)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "5.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:assessment_lease_appln_section_56 a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:inScheme cs: ;
+    skos:notation "5.2"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:associated_activities_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :access ;
+    skos:definition "SA: Licence to carry out regulated activities outside of the area of the primary licence. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "4.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:associated_activities_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :access ;
+    skos:definition "SA: Application for a licence to carry out regulated activities outside of the area of the primary licence. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "4.3"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:associated_facilities_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :access ;
+    skos:definition "SA: Superseded by Associated Activities Licence. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "4.4"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:associated_facilities_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :access ;
+    skos:definition "SA: Superseded by Associated Activities Licence Application. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "4.5"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:authorisation_application a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :miscellaneous ;
+    skos:inScheme cs: ;
+    skos:notation "9.1"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:authority_to_prospect a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "QLD: To explore for petroleum, oil, coal seam gas and natural gas in Queensland, you must hold a current authority to prospect (ATP). An ATP allows you to: Explore for petroleum Test for petroleum production, Evaluate the feasibility of petroleum production, Evaluate or test natural underground reservoirs for the storage of petroleum or a prescribed storage gas."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/AuthorityToProspect> ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:coastal_access_authority_ a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :access ;
+    skos:definition "NT: Petroleum (Submerged Lands) Act 1981: (https://legislation.nt.gov.au/Legislation/PETROLEUM-SUBMERGED-LANDS-ACT-1981)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "4.6"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:coastal_exploration_permit a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration ;
+    skos:definition "NT: Petroleum (Submerged Lands) Act 1981: (https://legislation.nt.gov.au/Legislation/PETROLEUM-SUBMERGED-LANDS-ACT-1981)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.4"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:coastal_pipeline_licence a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pipeline ;
+    skos:definition "NT: Petroleum (Submerged Lands) Act 1981: (https://legislation.nt.gov.au/Legislation/PETROLEUM-SUBMERGED-LANDS-ACT-1981)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "7.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:coastal_production_licence a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production ;
+    skos:definition "NT: Petroleum (Submerged Lands) Act 1981: (https://legislation.nt.gov.au/Legislation/PETROLEUM-SUBMERGED-LANDS-ACT-1981)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.3"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:coastal_retention_licence a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "NT: Petroleum (Submerged Lands) Act 1981: (https://legislation.nt.gov.au/Legislation/PETROLEUM-SUBMERGED-LANDS-ACT-1981)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:coastal_special_prospecting_authority a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration ;
+    skos:definition "NT: Petroleum (Submerged Lands) Act 1981: (https://legislation.nt.gov.au/Legislation/PETROLEUM-SUBMERGED-LANDS-ACT-1981)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.5"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:competitive_tender_region a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :miscellaneous ;
+    skos:definition "SA: Highly prospective areas restricted from over-the-counter licence applications. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "9.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:data_acquisition_authority a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :access ;
+    skos:definition "QLD: A data acquisition authority (DAA) authorises you to conduct limited geophysical survey activities and collect data outside the area of your authority to prospect (ATP) or petroleum lease (PL). A DAA is only granted on land that is contiguous to the granted ATP or PL and for activities that are directly relevant to authorised activities of your ATP or PL."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/DataAcquisitionAuthority> ;
+    skos:inScheme cs: ;
+    skos:notation "4.7"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:drilling_reservation a skos:Concept ;
+    dcterms:source "WA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration ;
+    skos:inScheme cs: ;
+    skos:notation "1.6"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:exploration_permit_for_petroleum a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "SA: Permit to explore for petroleum in Commonwealth waters. (https://www.legislation.gov.au/Details/C2017C00051)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.3"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:exploration_permit_geothermal a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_geothermal ;
+    skos:definition "QLD: An EPG allows you to explore for geothermal resources and evaluate the feasibility of geothermal production, including by production testing."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/ExplorationPermitGeothermal> ;
+    skos:inScheme cs: ;
+    skos:notation "1.1.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:exploration_permit_greenhouse_gas a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_greenhouse_gas ;
+    skos:definition "QLD: To search for greenhouse gas (GHG) capture and storage locations in Queensland you need an exploration permit for greenhouse gas (EPQ). An EPQ allows you to explore for GHG storage reservoirs within the permit area. It also allows you to carry out injection testing (with ministerial approval) and activities necessary for exploration."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/ExplorationPermitGreenhouseGas> ;
+    skos:inScheme cs: ;
+    skos:notation "1.2.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:gas_storage_exploration_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_greenhouse_gas ;
+    skos:definition "SA: Licence to explore for a natural reservoir for the purposes fo gas storage. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.2.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:gas_storage_exploration_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_greenhouse_gas ;
+    skos:definition "SA: Application for a licence to explore for a natural reservoir for the purposes of gas storage. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.2.3"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:geothermal_exploration_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_geothermal ;
+    skos:definition "SA: Licence to explore for geothermal energy. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.1.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:geothermal_exploration_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_geothermal ;
+    skos:definition "SA: Application for licence to explore for geothermal energy. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.1.3"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:geothermal_lease a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_geothermal ;
+    skos:definition "QLD: Geothermal leases are long-term authorities to allow the commercial development of the resource. A geothermal lease allows you to carry out a range of activities related to exploration, testing and production of geothermal energy."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/GeothermalLease> ;
+    skos:inScheme cs: ;
+    skos:notation "2.1.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:geothermal_retention_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "SA: Licence to establich the nature and extent of a discovery of geothermal energy. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:geothermal_retention_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "SA: Application for a licence to establich the nature and extent of a discovery of geothermal energy. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.3"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:geothermal_storage_retention_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "SA: Licence to establich the nature and extent of a discovery of a natural reservoir for the purposes of gas storage. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.4"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:geothermal_storage_retention_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "SA: Application for a licence to establich the nature and extent of a discovery of natural reservoir for the purposes of gas storage. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.5"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:greenhouse_gas_lease a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :storage ;
+    skos:definition "QLD: Greenhouse gas (GHG) injection and storage leases (QLs) are long-term authorities to allow you to commercially develop a storage site. A QL allows you to: Explore for GHG storage areas; Evaluate the feasibility of GHG stream storage, including GHG storage injection testing; Compress or otherwise process a GHG stream for GHG stream storage; Store a GHG stream; Monitor and verify the behaviour of the GHG streams.Monitor and verify the behaviour of the GHG streams."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/GreenhouseGasLease> ;
+    skos:inScheme cs: ;
+    skos:notation "8.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:historic_coastal_exploration_permit a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration ;
+    skos:inScheme cs: ;
+    skos:notation "1.8"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:historic_onshore_pipeline_permit a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pipeline ;
+    skos:inScheme cs: ;
+    skos:notation "7.2"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:historic_onshore_production_licence a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production ;
+    skos:inScheme cs: ;
+    skos:notation "2.4"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:infrastructure_licence a skos:Concept ;
+    dcterms:source "WA, NOPTA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :infrastructure ;
+    skos:inScheme cs: ;
+    skos:notation "6.1"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:offshore_petroleum_pipeline_licence a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pipeline ;
+    skos:inScheme cs: ;
+    skos:notation "7.3"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:offshore_petroleum_pipeline_licence_application a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pipeline ;
+    skos:definition "NSW: OFFSHORE APPLICATION (1991)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "7.4"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:offshore_petroleum_production_licence a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.1"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:offshore_petroleum_production_licence_application a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:definition "NSW: OFFSHORE APPLICATION"@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:offshore_petroleum_retention_lease a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:inScheme cs: ;
+    skos:notation "3.6"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:offshore_petroleum_retention_lease_application a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:inScheme cs: ;
+    skos:notation "3.7"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:oil_permit a skos:Concept ;
+    dcterms:source "NT, WA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "NT: Repealed Petroleum (Prospecting and Mining) Act: (https://dpir.nt.gov.au/__data/assets/pdf_file/0009/258975/Petroleum_Prospecting_Mining_Act.pdf). Titles remain in force by virtue of section 119 of the Petroleum Act 1984. WA: (definition TBA)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.4"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:permit_to_explore a skos:Concept ;
+    dcterms:source "WA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration ;
+    skos:inScheme cs: ;
+    skos:notation "1.9"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:petroleum_access_authority a skos:Concept ;
+    dcterms:source "VIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :access ;
+    skos:definition "VIC: Authority to carry out certain exploration operations or recovery of petroleum within the holders authority area (https://www.legislation.vic.gov.au/in-force/acts/offshore-petroleum-and-greenhouse-gas-storage-act-2010/014)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "4.8"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_assessment_lease a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:inScheme cs: ;
+    skos:notation "5.3"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:petroleum_assessment_lease_application a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:definition "NSW: ASSESSMENT APPLICATION (1991)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "5.4"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_exploration_licence a skos:Concept ;
+    dcterms:source "SA, NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "SA: Licence to explore for petroleum. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF). NSW: (definition TBA)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.5"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_exploration_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "SA: Application for a licence to explore for petroleum. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.6"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_exploration_permit a skos:Concept ;
+    dcterms:source "VIC, NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "VIC: Permit to explore for or recover petroleum within the permit area. (https://www.legislation.vic.gov.au/in-force/acts/petroleum-act-1998/025, https://www.legislation.vic.gov.au/in-force/acts/offshore-petroleum-and-greenhouse-gas-storage-act-2010/014). NSW: (definition TBA)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.7"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_exploration_permit_app a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.8"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:petroleum_exploration_permit_application a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "NSW: EXPLORING APPLICATION (1982)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.9"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_explorn_licence_appln a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "NSW: EXPLORING APPLICATION (1991)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.10"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_facility_licence a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :infrastructure ;
+    skos:definition "QLD: You will require a petroleum facility licence (PFL) for a processing, refining, storage or transport facility if the facility is not already covered by your petroleum lease or pipeline licence. The PFL will give you the right to construct and operate the facility on 'petroleum facility land'. This is defined as land that you either own or over which you have: An easement; A written agreement with a landowner to enter to construct and operate the facility on their land; A Part 5 permission."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/PetroleumFacilityLicence> ;
+    skos:inScheme cs: ;
+    skos:notation "6.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_lease a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "QLD: You can apply for a petroleum lease over an area of your authority to prospect (ATP) if you make a discovery that is currently commercially viable. If the lease is granted, the area is excised from the ATP."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/PetroleumLease> ;
+    skos:inScheme cs: ;
+    skos:notation "3.8"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_mining_lease a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.3"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:petroleum_mining_lease_application a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.4"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:petroleum_pipeline_licence a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pipeline ;
+    skos:definition "QLD: To construct a petroleum pipeline outside the area of your petroleum lease, you need a petroleum pipeline licence (PPL). The PPL gives you the right to construct and operate the pipeline on designated 'pipeline land.' This is defined as land that you either own or over which you have: An easement; A written agreement with the landowner to enter to construct and operate the pipeline; A Part 5 permission."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/PetroleumPipelineLicence> ;
+    skos:inScheme cs: ;
+    skos:notation "7.5"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_production_lease a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.5"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:petroleum_production_lease_application a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:definition "NSW: MINING APPLICATION (1991)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.6"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_production_licence a skos:Concept ;
+    dcterms:source "SA, VIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:definition "SA: Licence to recover and process petroleum. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF). VIC: Licence to produce or explore for petroleum within the licence area. (https://www.legislation.vic.gov.au/in-force/acts/petroleum-act-1998/025, https://www.legislation.vic.gov.au/in-force/acts/offshore-petroleum-and-greenhouse-gas-storage-act-2010/014)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.7"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_production_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:definition "SA: Application for a licence to recover and process petroleum. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.8"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_public_calls a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :miscellaneous ;
+    skos:definition "SA: Areas offered for competitive bidding. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "9.3"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_retention_lease a skos:Concept ;
+    dcterms:source "VIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "VIC: Extension of exploration permit due to the discovery of petroleum, a production licence maybe subsequently granted. (https://www.legislation.vic.gov.au/in-force/acts/petroleum-act-1998/025, https://www.legislation.vic.gov.au/in-force/acts/offshore-petroleum-and-greenhouse-gas-storage-act-2010/014)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.9"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_retention_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "SA: Licence to establich the nature and extent of a discovery of petroleum. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.10"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_retention_licence_aplication a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "SA: Application for a licence to establich the nature and extent of a discovery of petroleum. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.11"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_special_access_authorisation a skos:Concept ;
+    dcterms:source "VIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :access ;
+    skos:definition "VIC: Special access authority for specific purposes, not necessarily the authority holder of the PEP, PRL or PPL. (https://www.legislation.vic.gov.au/in-force/acts/petroleum-act-1998/025)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "4.9"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_special_drilling_authorisation a skos:Concept ;
+    dcterms:source "VIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "VIC: Allows the holder to carry out petroleum exploration activities within the PSDA area. (https://www.legislation.vic.gov.au/in-force/acts/petroleum-act-1998/025)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.11"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_special_prosp_auth_appn_67_act a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "NSW: EXPLORING APPLICATION (1967)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.12"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_special_prosp_auth_appn_91_act a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "NSW: EXPLORING APPLICATION (1991)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.13"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:petroleum_special_prospecting_authority a skos:Concept ;
+    dcterms:source "NSW"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.14"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:petroleum_survey_licence a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:definition "QLD: A petroleum survey licence (PSL) gives you the right to enter land to survey the proposed route of a pipeline or the suitability of land for a petroleum facility licence. It can be granted for a maximum of 2 years and only allows you to conduct activities that have a minimal impact on the land. There are no area limitations."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/PetroleumSurveyLicence> ;
+    skos:inScheme cs: ;
+    skos:notation "5.5"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:pipeline_licence a skos:Concept ;
+    dcterms:source "NT, WA, NOPTA, SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pipeline ;
+    skos:definition "NT: A licence to commence, or continue, the construction of a pipeline; or alter or reconstruct a pipeline and to operate a pipeline. Energy Pipelines Act: (https://legislation.nt.gov.au/Legislation/ENERGY-PIPELINES-ACT-1981). SA: Licence to construct, operate and maintain a transmission pipline. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "7.6"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:pipeline_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pipeline ;
+    skos:definition "SA: Application for a licence to construct, operate and maintain a transmission pipline. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "7.7"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:pipeline_permit a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :pipeline ;
+    skos:definition "NT: A permit to enter land for the purpose of determining the route of the proposed pipeline, the situation of the proposed apparatus or works and the land, if any, to be used for the purpose of gaining access to the proposed pipeline and proposed apparatus or works. Energy Pipelines Act: (https://legislation.nt.gov.au/Legislation/ENERGY-PIPELINES-ACT-1981)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "7.8"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:potential_commercial_area a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "QLD: You can apply to have an area of your authority to prospect (ATP) declared as a potential commercial area (PCA) so that you can evaluate the potential production and market opportunities for the resource. The PCA is a way of retaining an area of your ATP beyond its term to provide extra time to commercialise the resource. The maximum term for an ATP is 12 years, while the declaration for the PCA can be for up to 15 years. When you apply for a PCA, you must include a commercial viability report that shows that the area is likely to be commercially viable within 15 years. You must also include an evaluation program showing how you will overcome any factors inhibiting the commercial viability of the project."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/PotentialCommercialArea> ;
+    skos:inScheme cs: ;
+    skos:notation "3.12"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:potential_geothermal_commercial_area a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "QLD: If you discover commercial quantities of geothermal resources, you can apply to have an area of your exploration permit declared as a potential geothermal commercial area (PGA). This will allow you to evaluate the potential production and market opportunities for the resource. When an area is declared as a potential commercial area, it remains part of the exploration permit. The land must be brought into production through an application for a production lease within 5 years of the declaration or before the exploration permit expires. If you do not make an application for a lease within the accepted time frame, the potential commercial area lapses and the land ceases to be part of the exploration permit."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/PotentialGeothermalCommercialArea> ;
+    skos:inScheme cs: ;
+    skos:notation "3.13"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:potential_greenhouse_gas_storage_commercial_area a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :storage ;
+    skos:definition "QLD: If you discover a potential storage area, you can apply to have an area of your exploration permit declared as a potential greenhouse gas storage commercial area (PSA). This will allow you to evaluate the area's potential and market opportunities"@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/PotentialGreenhouseGasStorageCommercialArea> ;
+    skos:inScheme cs: ;
+    skos:notation "8.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:preliminary_survey_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:definition "SA: Licence to carry out a survey, environmental evaluation of other form of assessment. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "5.6"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:preliminary_surveys_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:definition "SA: Appplication for licence to carry out a survey, environmental evaluation of other form of assessment. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "5.7"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:production_lease a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:definition "NT: Repealed Petroleum (Prospecting and Mining) Act: (https://dpir.nt.gov.au/__data/assets/pdf_file/0009/258975/Petroleum_Prospecting_Mining_Act.pdf). Titles remain in force by virtue of section 119 of the Petroleum Act 1984"@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.9"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:production_licence a skos:Concept ;
+    dcterms:source "NOPTA, NT, WA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production_petroleum ;
+    skos:definition "NT: A production licence gives the companies the right to explore, test for and produce hydrocarbons from within a licence area. It gives the right to carry out operations to recover petroleum within a licence area, e.g. drilling a development well. Petroleum Act 1984: (https://legislation.nt.gov.au/Legislation/PETROLEUM-ACT-1984). WA: (definition TBA). NOPTA: (definition TBA)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "2.2.10"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:retention_lease a skos:Concept ;
+    dcterms:source "WA, NOPTA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:inScheme cs: ;
+    skos:notation "3.14"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:retention_licence a skos:Concept ;
+    dcterms:source "NT"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :retention ;
+    skos:definition "NT: A Retention Licence or lease allows the companies to work towards making a discovered resource commercially viable. Petroleum Act 1984: (https://legislation.nt.gov.au/Legislation/PETROLEUM-ACT-1984)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "3.15"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:scientific_investigation a skos:Concept ;
+    dcterms:source "WA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:inScheme cs: ;
+    skos:notation "5.8"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:special_facilities_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :infrastructure ;
+    skos:definition "SA: Licence to estabish and operate facilities associated with searching for, processing or producing regulated substances. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "6.3"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:special_facilities_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :infrastructure ;
+    skos:definition "SA: Application for licence to estabish and operate facilities associated with searching for, processing or producing regulated substances. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "6.4"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:special_prospecting_authorities a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "SA: Authority to undertake petroleum exploration operations, other than drilling a well in Commonwealth waters. (https://www.legislation.gov.au/Details/C2017C00051)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.15"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:special_prospecting_authorities_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration_petroleum ;
+    skos:definition "SA: Applicationn for authority to undertake petroleum exploration operations, other than drilling a well in Commonwealth waters. (https://www.legislation.gov.au/Details/C2017C00051)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.16"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:speculative_survey_licence a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:definition "SA: Non-exclusive licence to carry out limited exploration activity. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "5.9"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:speculative_survey_licence_application a skos:Concept ;
+    dcterms:source "SA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:definition "SA: Application for non-exclusive licence to carry out limited exploration activity. (https://www.legislation.sa.gov.au/LZ/C/A/PETROLEUM%20AND%20GEOTHERMAL%20ENERGY%20ACT%202000/CURRENT/2000.60.AUTH.PDF)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "5.10"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:water_monitoring_authority a skos:Concept ;
+    dcterms:source "QLD"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :assessment ;
+    skos:definition "QLD: As the holder of a mining lease, mineral development licence, authority to prospect or petroleum lease, you have an obligation to make good any damage you cause to surrounding water bores. You can apply for a water monitoring authority over land outside the area of your lease/licence to comply with your obligations."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/qld-resource-permit/WaterMonitoringAuthority> ;
+    skos:inScheme cs: ;
+    skos:notation "5.11"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:exploration_permit a skos:Concept ;
+    dcterms:source "NT, NOPTA"@en,
+        "WA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration,
+        :exploration_petroleum ;
+    skos:definition "NT: An Exploration Permit gives the companies the exclusive right to explore but not produce petroleum in the title area. It allows companies to carry out exploratory operations (airborne and ground based geophysical surveys and well drilling) for oil and gas and operations to establish the nature and extent of a petroleum resource which is discovered and the feasibility of production. Petroleum Act 1984: (https://legislation.nt.gov.au/Legislation/PETROLEUM-ACT-1984). NOPTA: (definition TBA)"@en ;
+    skos:inScheme cs: ;
+    skos:notation "1.3.2"^^ggic-lhk:,
+        "1.7"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:production_geothermal a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production ;
+    skos:definition "A licence, permit, or authority to extract or process a geothermal energy resource."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :geothermal_lease ;
+    skos:notation "2.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:special_prospecting_authority a skos:Concept ;
+    dcterms:source "NOPTA"@en,
+        "WA"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration,
+        :exploration_petroleum ;
+    skos:inScheme cs: ;
+    skos:notation "1.10"^^ggic-lhk:,
+        "1.3.17"^^ggic-lhk: ;
+    skos:definition ""@en ;
+    skos:prefLabel ""@en .
+
+:storage a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A licence, permit, or authority to store a commodity."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :greenhouse_gas_lease,
+        :potential_greenhouse_gas_storage_commercial_area ;
+    skos:notation "8"^^ggic-lhk: ;
+    skos:prefLabel ""@en ;
+    skos:topConceptOf cs: .
+
+:exploration_geothermal a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration ;
+    skos:definition "A licence, permit, or authority to explore for a geothermal energy resource."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :exploration_permit_geothermal,
+        :geothermal_exploration_licence,
+        :geothermal_exploration_licence_application ;
+    skos:notation "1.1"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:exploration_greenhouse_gas a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration ;
+    skos:definition "A licence, permit, or authority to explore for a greenhouse gas resource or storage site."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :exploration_permit_greenhouse_gas,
+        :gas_storage_exploration_licence,
+        :gas_storage_exploration_licence_application ;
+    skos:notation "1.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:miscellaneous a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A miscellaneous licence, permit, or authority not otherwise described in this vocabulary."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :authorisation_application,
+        :competitive_tender_region,
+        :petroleum_public_calls ;
+    skos:notation "9"^^ggic-lhk: ;
+    skos:prefLabel ""@en ;
+    skos:topConceptOf cs: .
+
+:infrastructure a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A licence, permit, or authority to establish or operate infrastructure for the exploration or production of a commodity."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :infrastructure_licence,
+        :petroleum_facility_licence,
+        :special_facilities_licence,
+        :special_facilities_licence_application ;
+    skos:notation "6"^^ggic-lhk: ;
+    skos:prefLabel ""@en ;
+    skos:topConceptOf cs: .
+
+:production a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A licence, permit, or authority to extract or process a resource."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :coastal_production_licence,
+        :historic_onshore_production_licence,
+        :production_geothermal,
+        :production_petroleum ;
+    skos:notation "2"^^ggic-lhk: ;
+    skos:prefLabel ""@en ;
+    skos:topConceptOf cs: .
+
+:pipeline a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A licence, permit, or authority to prepare for, build, or maintain a pipeline."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :coastal_pipeline_licence,
+        :historic_onshore_pipeline_permit,
+        :offshore_petroleum_pipeline_licence,
+        :offshore_petroleum_pipeline_licence_application,
+        :petroleum_pipeline_licence,
+        :pipeline_licence,
+        :pipeline_licence_application,
+        :pipeline_permit ;
+    skos:notation "7"^^ggic-lhk: ;
+    skos:prefLabel ""@en ;
+    skos:topConceptOf cs: .
+
+:access a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A licence, permit, or authority to carry out certain exploration or other operations within or outside the holder's authority area."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :access_authority,
+        :associated_activities_licence,
+        :associated_activities_licence_application,
+        :associated_facilities_licence,
+        :associated_facilities_licence_application,
+        :coastal_access_authority_,
+        :data_acquisition_authority,
+        :petroleum_access_authority,
+        :petroleum_special_access_authorisation ;
+    skos:notation "4"^^ggic-lhk: ;
+    skos:prefLabel ""@en ;
+    skos:topConceptOf cs: .
+
+:exploration a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A licence, permit, or authority to explore for a resource."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :coastal_exploration_permit,
+        :coastal_special_prospecting_authority,
+        :drilling_reservation,
+        :exploration_geothermal,
+        :exploration_greenhouse_gas,
+        :exploration_permit,
+        :exploration_petroleum,
+        :historic_coastal_exploration_permit,
+        :permit_to_explore,
+        :special_prospecting_authority ;
+    skos:notation "1"^^ggic-lhk: ;
+    skos:prefLabel ""@en ;
+    skos:topConceptOf cs: .
+
+:production_petroleum a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :production ;
+    skos:definition "A licence, permit, or authority to extract or process a petroleum (hydrocarbon) resource."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :offshore_petroleum_production_licence,
+        :offshore_petroleum_production_licence_application,
+        :petroleum_mining_lease,
+        :petroleum_mining_lease_application,
+        :petroleum_production_lease,
+        :petroleum_production_lease_application,
+        :petroleum_production_licence,
+        :petroleum_production_licence_application,
+        :production_lease,
+        :production_licence ;
+    skos:notation "2.2"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+:assessment a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A licence, permit, or authority to carry out survey, scientific study, other preliminary exploration activities within or outside the authority area."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :assessment_lease_application,
+        :assessment_lease_appln_section_56,
+        :petroleum_assessment_lease,
+        :petroleum_assessment_lease_application,
+        :petroleum_survey_licence,
+        :preliminary_survey_licence,
+        :preliminary_surveys_licence_application,
+        :scientific_investigation,
+        :speculative_survey_licence,
+        :speculative_survey_licence_application,
+        :water_monitoring_authority ;
+    skos:notation "5"^^ggic-lhk: ;
+    skos:prefLabel ""@en ;
+    skos:topConceptOf cs: .
+
+:retention a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A licence, permit, or authority to invesitgate or evaluate the feasibility to exploit or store a discovered resource."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :coastal_retention_licence,
+        :geothermal_retention_licence,
+        :geothermal_retention_licence_application,
+        :geothermal_storage_retention_licence,
+        :geothermal_storage_retention_licence_application,
+        :offshore_petroleum_retention_lease,
+        :offshore_petroleum_retention_lease_application,
+        :petroleum_lease,
+        :petroleum_retention_lease,
+        :petroleum_retention_licence,
+        :petroleum_retention_licence_aplication,
+        :potential_commercial_area,
+        :potential_geothermal_commercial_area,
+        :retention_lease,
+        :retention_licence ;
+    skos:notation "3"^^ggic-lhk: ;
+    skos:prefLabel ""@en ;
+    skos:topConceptOf cs: .
+
+:exploration_petroleum a skos:Concept ;
+    dcterms:source "GGIC"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:broader :exploration ;
+    skos:definition "A licence, permit, or authority to explore for a petroleum (hydrocarbon) resource."@en ;
+    skos:inScheme cs: ;
+    skos:narrower :authority_to_prospect,
+        :exploration_permit,
+        :exploration_permit_for_petroleum,
+        :oil_permit,
+        :petroleum_exploration_licence,
+        :petroleum_exploration_licence_application,
+        :petroleum_exploration_permit,
+        :petroleum_exploration_permit_app,
+        :petroleum_exploration_permit_application,
+        :petroleum_explorn_licence_appln,
+        :petroleum_special_drilling_authorisation,
+        :petroleum_special_prosp_auth_appn_67_act,
+        :petroleum_special_prosp_auth_appn_91_act,
+        :petroleum_special_prospecting_authority,
+        :special_prospecting_authorities,
+        :special_prospecting_authorities_application,
+        :special_prospecting_authority ;
+    skos:notation "1.3"^^ggic-lhk: ;
+    skos:prefLabel ""@en .
+
+cs: a skos:ConceptScheme ;
+    dcterms:creator "GGIC Petroleum Data Working Group" ;
+    dcterms:created "2021-03-17"^^xsd:date ;
+    dcterms:modified "2021-03-19"^^xsd:date ;
+    dcterms:provenance "This vocabulary is expressed for the first time here" ;
+    skos:definition "This vocabulary maps all terms used by Australian State, Territory and Commonwealth jurisdictions to describe types of petroleum tenements to a common simplified classification."@en ;
+    skos:prefLabel "Petroleum Tenement Type"@en ;
+    skos:changeNote "2021-03-17 - Ollie Raymond - Original SKOS implementation"@en ;
+    skos:editorialNote "This file contains the 2021.01 SKOS-RDF version of the GGIC Petroleum Tenement Type vocabulary; adopted April 2021; converted to MS Excel XML for SKOS generation using SKOS_from_XLS_2019.01.xslt"@en ;
+    skos:hasTopConcept :access,
+        :assessment,
+        :exploration,
+        :infrastructure,
+        :miscellaneous,
+        :pipeline,
+        :production,
+        :retention,
+        :storage .

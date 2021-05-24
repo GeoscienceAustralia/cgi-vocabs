@@ -1,0 +1,5 @@
+{
+    "petroleum-tenement-type.ttl": "http://resource.geoscience.gov.au/classifierScheme/ggic/2021.01/petroleum-tenement-type",
+    "tenement-status.ttl": "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenement-status",
+    "tenement-type.ttl": "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"
+}
