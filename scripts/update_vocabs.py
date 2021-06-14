@@ -9,6 +9,7 @@ import os
 
 
 def add_vocabs(vocabs: List[Path], mappings: dict):
+    # add new vocabs
     for vocab in vocabs:
         r = httpx.post(
             "http://fuseki.surroundaustralia.com/cgi-vocabs/data",
@@ -18,23 +19,39 @@ def add_vocabs(vocabs: List[Path], mappings: dict):
             auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
         )
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
-        # add_to_vocab_index(vocab, get_graph_uri_for_vocab(vocab))
+    
+    # re-add remaining vocabs in directory to default graph
+    for f in Path(__file__).parent.parent.glob("vocabularies/*.ttl"):
+        r2 = httpx.post(
+            "http://fuseki.surroundaustralia.com/cgi-vocabs/update",
+            data={"update": "ADD <{}> TO DEFAULT".format(str(mappings[f.name]))},
+            auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
+        )
+        assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
 
 
 def remove_vocabs(vocabs: List[Path], mappings: dict):
+    # clear default graph
+    r = httpx.post(
+        "http://fuseki.surroundaustralia.com/cgi-vocabs/update",
+        data={"update": "DROP DEFAULT"},
+        auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
+    )
+    assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
+    
+    # drop deleted graphs
     for vocab in vocabs:
-        r = httpx.post(
+        r2 = httpx.post(
             "http://fuseki.surroundaustralia.com/cgi-vocabs/update",
-            data={"update": "DROP GRAPH <{}>".format(mappings[vocab.name])},
+            data={"update": "DROP GRAPH <{}>".format(str(mappings[vocab.name]))},
             auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
         )
-        assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
-        # remove_from_vocab_index(vocab)
+        assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
 
 
 def get_graph_uri_for_vocab(vocab: Path) -> URIRef:
     """We can get the Graph URI for a vocab from the vocab file as we know that all VocPub-conformant vocabs
-    have one and only one ConceptScheme per file and that the cgi VocPrez installation uses the ConceptScheme URI
+    have one and only one ConceptScheme per file and that the CGI VocPrez installation uses the ConceptScheme URI
     as the Graph URI"""
     g = Graph().parse(str(vocab), format="ttl")
     for s in g.subjects(predicate=RDF.type, object=SKOS.ConceptScheme):
@@ -136,6 +153,6 @@ if __name__ == "__main__":
     print([str(x) for x in removed])
 
     # rebuild VocPrez' cache
-    # r = httpx.get("http://cgi.surroundaustralia.com/cache-reload")
-    # assert r.status_code == 200
+    r = httpx.get("http://cgi.surroundaustralia.com/cache-reload")
+    assert r.status_code == 200
 
