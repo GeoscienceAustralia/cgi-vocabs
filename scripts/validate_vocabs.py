@@ -5,13 +5,14 @@ import httpx
 
 def main():
     # get the validator
-    r = httpx.get("https://w3id.org/profile/vocpub/validator")
+    # r = httpx.get("https://w3id.org/profile/vocpub/validator")
+    r = httpx.get("https://raw.githubusercontent.com/surroundaustralia/vocpub-profile/master/validator.shacl.ttl")
     assert r.status_code == 200
 
     # for all vocabs...
     invalid_vocabs = {} # format {vocab_filename: error_msg}
     vocabs_dir = Path(__file__).parent.parent / "vocabularies"
-    for f in vocabs_dir.iterdir():
+    for f in vocabs_dir.glob("**/*"):
         # ...validate each file
         if f.name.endswith(".ttl"):
             try:

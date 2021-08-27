@@ -7,45 +7,77 @@ from rdflib import Graph, URIRef
 from rdflib.namespace import RDF, SKOS
 import os
 
+DB_TYPE = "fuseki"  # options: "fuseki" | "graphdb"
+BASE_DB_URI = "http://fuseki.surroundaustralia.com/cgi-vocabs"
+WEBSITE_URL = "http://cgi.surroundaustralia.com"
+
+DB_USERNAME = os.environ.get("DB_USERNAME", None)
+DB_PASSWORD = os.environ.get("DB_PASSWORD", None)
+
 
 def add_vocabs(vocabs: List[Path], mappings: dict):
     # add new vocabs
     for vocab in vocabs:
+        params = {}
+        endpoint = ""
+        if DB_TYPE == "fuseki":
+            params = {"graph": str(mappings[vocab.name])}
+            endpoint = f"{BASE_DB_URI}/data"
+        elif DB_TYPE == "graphdb":
+            params = {"context": f"<{str(mappings[vocab.name])}>"}
+            endpoint = f"{BASE_DB_URI}/statements"
+        else:  # unsupported db type
+            raise ValueError(
+                "Unsupported DB type. Supported types are: 'fuseki', 'graphdb'."
+            )
+
         r = httpx.post(
-            "http://fuseki.surroundaustralia.com/cgi-vocabs/data",
-            params={"graph": str(mappings[vocab.name])},
+            endpoint,
+            params=params,
             headers={"Content-Type": "text/turtle"},
             content=open(vocab, "rb").read(),
-            auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
+            auth=(DB_USERNAME, DB_PASSWORD),
         )
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
-    
-    # re-add remaining vocabs in directory to default graph
-    for f in Path(__file__).parent.parent.glob("vocabularies/*.ttl"):
-        r2 = httpx.post(
-            "http://fuseki.surroundaustralia.com/cgi-vocabs/update",
-            data={"update": "ADD <{}> TO DEFAULT".format(str(mappings[f.name]))},
-            auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
+
+    endpoint = ""
+
+    if DB_TYPE == "fuseki":
+        endpoint = f"{BASE_DB_URI}/update"
+    elif DB_TYPE == "graphdb":
+        endpoint = f"{BASE_DB_URI}/statements"
+    else:  # unsupported db type
+        raise ValueError(
+            "Unsupported DB type. Supported types are: 'fuseki', 'graphdb'."
         )
+
+    # re-add remaining vocabs in directory to default graph
+    for f in Path(__file__).parent.parent.glob("vocabularies/**/*.ttl"):
+        data = {"update": "ADD <{}> TO DEFAULT".format(str(mappings[f.name]))}
+        r2 = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
         assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
 
 
 def remove_vocabs(vocabs: List[Path], mappings: dict):
+    endpoint = ""
+    data = {"update": "DROP DEFAULT"}
+    if DB_TYPE == "fuseki":
+        endpoint = f"{BASE_DB_URI}/update"
+    elif DB_TYPE == "graphdb":
+        endpoint = f"{BASE_DB_URI}/statements"
+    else:  # unsupported db type
+        raise ValueError(
+            "Unsupported DB type. Supported types are: 'fuseki', 'graphdb'."
+        )
+
     # clear default graph
-    r = httpx.post(
-        "http://fuseki.surroundaustralia.com/cgi-vocabs/update",
-        data={"update": "DROP DEFAULT"},
-        auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
-    )
+    r = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
     assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
-    
+
     # drop deleted graphs
     for vocab in vocabs:
-        r2 = httpx.post(
-            "http://fuseki.surroundaustralia.com/cgi-vocabs/update",
-            data={"update": "DROP GRAPH <{}>".format(str(mappings[vocab.name]))},
-            auth=(os.environ["DB_USERNAME"], os.environ["DB_PASSWORD"])
-        )
+        data = {"update": "DROP GRAPH <{}>".format(str(mappings[vocab.name]))}
+        r2 = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
         assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
 
 
@@ -85,8 +117,23 @@ def get_all_vocabs_uris(vocabs: List[Path]) -> dict:
 
 
 if __name__ == "__main__":
-    # for testing (until exit()):
-    # add_vocabs([Path(__file__).parent.parent / "vocabularies" / "valid.ttl"], {"valid.ttl": URIRef("http://test.com")})
+    # for testing, includes index.json as mapping dict
+    # index = json.load(
+    #     open(Path(__file__).parent.parent / "vocabularies" / "index.json", "r")
+    # )
+    # remove_vocabs(
+    #     [
+    #         Path(__file__).parent.parent / "vocabularies" / "earthresourceml" / "ClassificationMethodUsed.ttl",
+    #     ],
+    #     index,
+    # )
+    # add_vocabs(
+    #     [
+    #         Path(__file__).parent.parent / "vocabularies" / "earthresourceml" / "WasteStorage.ttl",
+    #     ], index
+    # )
+
+    # for testing, simple mapping dict (until exit()):
     # add_vocabs([Path(__file__).parent.parent / "vocabularies" / "valid.ttl"], {"valid.ttl": URIRef("http://test.com")})
     # remove_vocabs([Path(__file__).parent.parent / "vocabularies" / "valid.ttl"], {"valid.ttl": URIRef("http://test.com")})
     # exit()
@@ -153,6 +200,5 @@ if __name__ == "__main__":
     print([str(x) for x in removed])
 
     # rebuild VocPrez' cache
-    r = httpx.get("http://cgi.surroundaustralia.com/cache-reload")
+    r = httpx.get(f"{WEBSITE_URL}/cache-reload")
     assert r.status_code == 200
-
