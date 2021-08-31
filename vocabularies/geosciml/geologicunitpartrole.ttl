@@ -39,7 +39,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/bed_lithosome> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome> ;
     skos:definition "Lithosome in lithostratigraphic unit that occurs as individual beds interleaved with other constituents on the outcrop (m) scale or larger."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -47,7 +47,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "bed lithosome"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/blocks> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> ;
     skos:definition "Geologic unit constituent is present as masses with generally sharp boundaries and block-like geometry within a matrix of some other material emplaced by processes at the earth's surface--e.g. volcanic eruption or mass wasting. Implication is that blocks were derived from the same source geologic unit and emplaced in the described unit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -55,7 +55,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "blocks"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/concretion> a skos:Concept ;
-    dcterms:source "Neuendorf et al. 2005"@en ;
+    dcterms:provenance "Neuendorf et al. 2005"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> ;
     skos:definition "Hard, compact mass or aggregate of mineral matter, normally subsperical but commonly oblate, disc-shaped or irregular. Formed from precipitation from solution about a nucleus or centre. Use as a geologic unit part should be restricted to concretions that are too large to consider as constituents in the rock material that composes the unit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -63,7 +63,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "concretion"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/cyclic_bedding_package> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome> ;
     skos:definition "Lithosome characterized by an internal sequence of units, which is repeated in a stacked sequence, e.g. fining-upward sequence, thickening upward sequence, bouma sequence."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -71,7 +71,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "cyclic bedding package"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/enclave> a skos:Concept ;
-    dcterms:source "Cobbing, 2000, Barbarin, 1991"@en ;
+    dcterms:provenance "Cobbing, 2000, Barbarin, 1991"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> ;
     skos:definition "General term for a polymineralic aggregate enclosed in a granitoid."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -79,7 +79,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "enclave"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/facies> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> ;
     skos:definition "Represents a particular body of rock that is a lateral variant of a lithostratigraphic unit, or a variant of a lithodemic unit. Contrast with lithosome in being a particular, connected body of rock, as opposed to a kind of rock body that is repeated in many places in a unit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -87,7 +87,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "facies"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/geologic_unit_matrix> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome> ;
     skos:definition "Lithosome in a geologic unit that is generally interstitial to other constituents, e.g. in a mass wasting deposit, melange, tuff breccia."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -95,7 +95,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "geologic unit matrix"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/irregular_lithosome> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome> ;
     skos:definition "Lithosome in a mixed/heterogeneous lithodemic unit that occurs in irregular bodies within unit"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -103,7 +103,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "irregular lithosome"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/layer_lithosome> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome> ;
     skos:definition "Lithosome in igneous or metamorphic geologic unit that occurs as layers alternating with other constituents."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -111,7 +111,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "layer lithosome"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lenticular_lithosome> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome> ;
     skos:definition "Lithosome occurs as discrete lense-shaped bodies, not connected with other bodies."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -119,7 +119,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "lenticular lithosome"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/marker_bed> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part> ;
     skos:definition "Stratigraphic part that is a thin laterally continuous bed within another unit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -127,7 +127,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "marker bed"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:definition "Entire described unit consists of a single part or constituent"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -135,7 +135,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/rafts> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants> ;
     skos:definition "Pendants of pre-intrusive country rock in intrusive igneous matrix that have large horizontal extent relative to their thickness"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -143,7 +143,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "rafts"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/roof_pendant> a skos:Concept ;
-    dcterms:source "Neuendorf et al 2005"@en ;
+    dcterms:provenance "Neuendorf et al 2005"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants> ;
     skos:definition "Pendant that is demonstrably derived from the upper boundary of an igneous body."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -151,7 +151,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "roof pendant"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/screen> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants> ;
     skos:definition "Pendant that is a vertical sheet like pendant in an intrusive igneous rock body."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -159,7 +159,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "screen"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/tectonic_block> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> ;
     skos:definition "The geologic unit part occurs as discrete masses with faulted boundaries, emplaced into the host unit by tectonic processes inside the earth, e.g. blocks in tectonic melange"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -167,7 +167,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "tectonic block"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/unspecified_part_role> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> ;
     skos:definition "Geologic unit part with unspecified role, use in normative descriptions when any role is allowed."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -175,7 +175,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "unspecified part role"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/vein_or_dike_lithosome> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome> ;
     skos:definition "Lithosome occurs as intrusive, sheet-like bodies within the unit as an essential part of the unit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -183,7 +183,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "vein or dike lithosome"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/xenolith> a skos:Concept ;
-    dcterms:source "Neuendorf et al. 2005, Cobbing, 2000, This vocabulary"@en ;
+    dcterms:provenance "Neuendorf et al. 2005, Cobbing, 2000, This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> ;
     skos:definition "Inclusion of pre-intrusive country rock in intrusive igneous matrix, cm to about 10 meter diameter in longest dimension. Use term pendant for larger blocks."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -195,7 +195,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> ;
     skos:definition "A geologic unit part that occupies a particular stratigraphic position within a geologic unit. Part is a particular body of rock."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -204,7 +204,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "stratigraphic part"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants> a skos:Concept ;
-    dcterms:source "Base on Neuendorf et al 2005"@en ;
+    dcterms:provenance "Base on Neuendorf et al 2005"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> ;
     skos:definition "A block of wall rock material in an igneous intrusion. Pendants become xenoliths as the dimension becomes smaller than about 10 m in their longest dimension. Although term pendant has connotation of being suspended or supported from above, this is rarely demonstrable in geologic situations, and the concept here does not require connection to the wall of the containing intrusion."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -215,7 +215,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "pendants"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:definition "The geologic unit part role is not known in any greater detail. Inclusion of Only_part as a separate concept implies that this concept is the equivalent of 'proper part' in mereology."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -228,7 +228,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> ;
     skos:definition "Geologic unit constituent is present as masses with generally sharp boundaries enclosed within a matrix of some other material."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -242,7 +242,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inclusion"@en .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome> a skos:Concept ;
-    dcterms:source "This vocabulary"@en ;
+    dcterms:provenance "This vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> ;
     skos:definition "A kind of rock body that has multiple occurrences in a single geologic unit. A mass of rock of uniform character, characterized by geometry, composition, and internal structure. Generally denotes rock mass that is the product of a particular rock forming process or related sequence of processes in the containing unit. Example--bouma sequence, point bar sequence. A particular lithosome may be characterized by the presence of blocks, but blocks are not treated as kinds of lithosome because the internal character of the blocks is determined by a separate genetic sequence from the described unit. This vocabulary generalizes the concept defined in Neuendorf et al 2005 to include bodies of igneous or metamorphic rock as well as sedimentary rock. NADM SLTTs (2004) used the term 'lithotope' with similar meaning for sedimentary rocks."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -257,7 +257,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "lithosome"@en .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> a skos:ConceptScheme ;
-    dcterms:source <http://www.opengis.net/doc/geosciml/4.1> ;
+    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

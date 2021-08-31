@@ -28,7 +28,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal> ;
     skos:definition "A regional-scale low-angle normal fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -37,7 +37,7 @@ skos:definition "All Concepts in this vocabulary" ;
         "détachement"@fr .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/generic_decollement> a skos:Concept ;
-    dcterms:source "Neuendorf et al. 2005"@en ;
+    dcterms:provenance "Neuendorf et al. 2005"@en ;
     skos:definition "A large-displacement (kilometers or tens of kilometers) shallowly dipping to subhorizontal fault or shear zone."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -46,7 +46,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/no_movement_sense> a skos:Concept ;
-    dcterms:source "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
+    dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     skos:definition "The fault-parallel displacement is effectively zero, as in an extraction fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -54,7 +54,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust_decollement> a skos:Concept ;
-    dcterms:source "GeoScience Victoria and others"@en ;
+    dcterms:provenance "GeoScience Victoria and others"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust> ;
     skos:definition "A regional-scale low-angle thrust fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -66,7 +66,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse> ;
     skos:definition "Reverse fault with dip typically less than 45 degrees, horizontal compression, rather than vertical displacement is characteristic."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -76,7 +76,7 @@ skos:definition "All Concepts in this vocabulary" ;
         "décrochement"@fr .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:definition "Right-lateral separation sense, in plan view, the side opposite the observer appears displaced to the right.,"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -87,7 +87,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:definition "The movement sense includes both normal and dextral components."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -97,7 +97,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:definition "The movement sense includes both normal and sinistral components."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -107,7 +107,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:definition "The movement sense includes both reverse and dextral components."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -117,7 +117,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:definition "The movement sense includes both reverse and sinistral components."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -127,7 +127,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:definition "Left-lateral separation sense, in plan view, the side opposite the observer appears displaced to the left."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -137,7 +137,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:definition "The hanging wall appears to have moved down relative to the footwall, dip of fault usually 45-90 degrees."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -148,7 +148,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:definition "The hanging wall appears to have moved down relative to the footwall, dip of fault usually greater than 45 degrees."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -160,7 +160,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> a skos:ConceptScheme ;
-    dcterms:source <http://www.opengis.net/doc/geosciml/4.1> ;
+    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

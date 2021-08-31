@@ -39,7 +39,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -47,7 +47,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "advanced argillic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -55,7 +55,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "albitic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -63,7 +63,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "alunitic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/argillic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -71,7 +71,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "argillic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/calcsilicate_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -79,7 +79,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "calcsilicate alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/carbonate_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -87,7 +87,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "carbonate alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/chloritic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -95,7 +95,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "chloritic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/deuteric_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -103,7 +103,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "deuteric alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/epidote_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -111,7 +111,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "epidote alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/greisen> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -119,7 +119,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "greisen"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/hematitic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -127,7 +127,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "hematitic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/kaolinitic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -135,7 +135,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "kaolinitic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/not_altered> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:altLabel "unaltered"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "Rock or sediment not altered."@en ;
@@ -144,7 +144,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "not altered"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/potassic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -152,7 +152,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "potassic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/propylitic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -160,7 +160,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "propylitic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/pyritic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -168,7 +168,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "pyritic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/red_rock_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -176,7 +176,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "red rock alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/saussuritised> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -184,7 +184,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "saussuritised"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/sericitic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -192,7 +192,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "sericitic alteration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/serpentinisation> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -200,7 +200,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "serpentinisation"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/silicification> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -208,7 +208,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "silicification"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -216,7 +216,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "uralitisation"@en .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -228,7 +228,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Rock is altered, but type not specified. Any alteration type allowed."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -259,7 +259,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> a skos:ConceptScheme ;
-    dcterms:source <http://www.opengis.net/doc/geosciml/4.1> ;
+    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2010-11-27"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

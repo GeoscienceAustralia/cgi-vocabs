@@ -42,7 +42,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/compilation> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Mapped feature geometry derived from one or more published or unpublished data sources, involving some interpretation or generalization by the compiler, not an exact digital reproduction of the sources."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -50,7 +50,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inertial_survey> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed> ;
     skos:definition "mapped feature is located by inertial survey methods"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -58,7 +58,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inertial survey"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_aeromagnetic_survey> a skos:Concept ;
-    dcterms:source "based on Matti et al 1997, definition this vocabulary"@en ;
+    dcterms:provenance "based on Matti et al 1997, definition this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method> ;
     skos:definition "Location and specification inferred based on magnetic field data acquired by airborne sensor."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -66,7 +66,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred aeromagnetic survey"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_borehole_geophysical_log> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method> ;
     skos:definition "Location and specification inferred based on measurements made by electronic bore hole logging device(s) that measure geophysical properties."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -74,7 +74,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred borehole geophysical log"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_drill_cuttings> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred> ;
     skos:definition "Geologic feature in bore hole inferred based on interpretation of drill cuttings."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -82,7 +82,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred drill cuttings"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_gravity_data> a skos:Concept ;
-    dcterms:source "based on Matti et al 1997, definition this vocabulary"@en ;
+    dcterms:provenance "based on Matti et al 1997, definition this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method> ;
     skos:definition "Location and specification inferred based on measured variations in the acceleration of gravity related to mass of underlying Earth material."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -90,7 +90,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred gravity data"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_ground_magnetic_survey> a skos:Concept ;
-    dcterms:source "based on Matti et al 1997, definition this vocabulary"@en ;
+    dcterms:provenance "based on Matti et al 1997, definition this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method> ;
     skos:definition "Location and specification inferred based on magnetic field data acquired by sensor on the earth surface, either at manually occupied stations, or by a vehicle-based continuously collected sensor data."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -98,7 +98,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred ground magnetic survey"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_covering_mapped_unit> a skos:Concept ;
-    dcterms:source "Federal Geographic Data Committee, 2006"@en ;
+    dcterms:provenance "Federal Geographic Data Committee, 2006"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations> ;
     skos:definition "Phenomenon inferred to exist based on continuity with observed locations, and assumption of continuity of the feature. Mappable feature is covered by mapped younger geologic unit. Concealed feature."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -106,7 +106,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred projection beneath covering mapped unit"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_unmapped_surficial_material> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations> ;
     skos:definition "Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of covering mantle of soil, talus or colluvium, not mapped as separate geologic units."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -114,7 +114,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred projection beneath unmapped surficial material"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_vegetation> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations> ;
     skos:definition "Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of obscuring vegetation, but inferred to crop out at surface."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -122,7 +122,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred projection obscured by vegetation"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_radiometric_survey> a skos:Concept ;
-    dcterms:source "based on Matti et al 1997, definition this vocabulary"@en ;
+    dcterms:provenance "based on Matti et al 1997, definition this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method> ;
     skos:definition "Location and specification inferred based on flux or intensity of radiation related to the decay of radioactive elements in observed Earth material. Use for both airborne and ground-surface based sensor."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -130,7 +130,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred radiometric survey"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_remote_sensing_imagery> a skos:Concept ;
-    dcterms:source "based on Matti et al 1997, definition this vocabulary"@en ;
+    dcterms:provenance "based on Matti et al 1997, definition this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method> ;
     skos:definition "Location and specification inferred based on spectral characteristics of light measured by airborne or satellite based sensor. Phenomenon visible on standard (visible light) air photographs are considered 'observable'."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -138,7 +138,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred remote sensing imagery"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_aerial_imagery> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation> ;
     skos:definition "Phenomenon observed and located using aerial imagery (standard visible light)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -146,7 +146,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "observed in aerial imagery"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_core> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_material> ;
     skos:definition "Geologic feature observed in core obtained from a borehole."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -154,7 +154,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "observed in borehole core"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_cuttings> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_material> ;
     skos:definition "Geologic feature observed in cuttings obtained from a borehole."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -162,7 +162,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "observed in borehole cuttings"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_distant_outcrop> a skos:Concept ;
-    dcterms:source "based on Matti et al 1997, definition this vocabulary"@en ;
+    dcterms:provenance "based on Matti et al 1997, definition this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop> ;
     skos:definition "Phenomenon observed and located from a distance."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -170,7 +170,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "observed distant outcrop"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_elevation_data> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Geomorphic features located and specified based on surface morphology determined by elevation (or bathemetry) data, e.g. DEM, LIDAR"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -178,7 +178,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop__topographic_map_location> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop> ;
     skos:definition "Phenomenon observed directly in outcrop, and located by positioning on a topographic base map relative to physiographic or cultural features"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -186,7 +186,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "observed outcrop topographic map location"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop_gps_location> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop> ;
     skos:definition "Phenomenon observed directly in outcrop, and located using GPS"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -194,7 +194,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "observed outcrop gps location"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/published_map> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Mapped feature geometry was digitized from a published map, specification of feature based on map unit explanation"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -206,7 +206,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "mapped feature is located by survey methods"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -215,7 +215,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_material> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation> ;
     skos:definition "Geologic feature observed in material obtained from a borehole."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -225,7 +225,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "observed in borehole material"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation> a skos:Concept ;
-    dcterms:source "Federal Geographic Data Committee, 2006"@en ;
+    dcterms:provenance "Federal Geographic Data Committee, 2006"@en ;
     skos:definition "Indicates that mapped feature was delineated and a specifier assigned by direct visual observation."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -236,7 +236,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred> a skos:Concept ;
-    dcterms:source "Federal Geographic Data Committee, 2006"@en ;
+    dcterms:provenance "Federal Geographic Data Committee, 2006"@en ;
     skos:definition "Indicates that mapped feature is not directly observable, location and specification based on inference from available evidence."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -247,7 +247,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred> ;
     skos:definition "Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -258,7 +258,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred projection between observed locations"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop> a skos:Concept ;
-    dcterms:source "based on Matti et al 1997, definition this vocabulary"@en ;
+    dcterms:provenance "based on Matti et al 1997, definition this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation> ;
     skos:definition "Phenomenon observed and located directly in outcrop, geologist occupied location of phenomenon, and traced it explicitly over mapped extent."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -269,7 +269,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "observed in outcrop"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method> a skos:Concept ;
-    dcterms:source "based on Matti et al 1997, definition this vocabulary"@en ;
+    dcterms:provenance "based on Matti et al 1997, definition this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred> ;
     skos:definition "Location and specification inferred based on properties related to lithology, e.g. geophysical or geochemical signature, vegetation, surface texture, reflectance."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -283,7 +283,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "inferred using indirect method"@en .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> a skos:ConceptScheme ;
-    dcterms:source <http://www.opengis.net/doc/geosciml/4.1> ;
+    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

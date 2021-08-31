@@ -39,7 +39,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/detachment_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> ;
     skos:definition "A regional-scale, large displacement, low-angle normal fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -47,7 +47,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "detachment fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/dextral_strike_slip_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
     skos:definition "Fault with right-lateral strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and right-lateral displacement over more than half the mapped trace of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -55,7 +55,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "dextral strike slip fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/horizontal_fault> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> ;
     skos:definition "Fault that dips less than 10 degrees over more than half the recognized extent of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -63,7 +63,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "horizontal fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/left_normal_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> ;
     skos:definition "High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with left-lateral strike-parallel component and normal dip-parallel component over at least half the mapped trace of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -71,7 +71,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "left normal fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/left_reverse_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> ;
     skos:definition "High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with left-lateral strike-parallel component and reverse dip-parallel component over at least half the mapped trace of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -79,7 +79,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "left reverse fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/mixed_extraction_fault> a skos:Concept ;
-    dcterms:source "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
+    dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault> ;
     skos:definition "An extraction fault with some displacement within the fault plane."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -87,7 +87,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "mixed extraction fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/pure_extraction_fault> a skos:Concept ;
-    dcterms:source "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
+    dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault> ;
     skos:definition "An extraction fault with no discernible displacement within the fault plane."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -95,7 +95,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "pure extraction fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/right_normal_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> ;
     skos:definition "High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with right-lateral strike-parallel component and normal dip-parallel component of slip over at least half the mapped trace of the fault"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -103,7 +103,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "right normal fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/right_reverse_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> ;
     skos:definition "High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with a right-lateral strike-parallel component and reverse dip-parallel component of slip over at least half the mapped trace of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -111,7 +111,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "right reverse fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/scissor_fault> a skos:Concept ;
-    dcterms:source "Neuendorf et al 2005"@en ;
+    dcterms:provenance "Neuendorf et al 2005"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
     skos:definition "A fault on which there is increasing offset or separation along the strike from an initial point of no offset, with the opposite sense of offset in the opposite direction."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -119,7 +119,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "scissor fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/sinistral_strike_slip_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
     skos:definition "Fault with left-lateral strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and left-lateral displacement over more than half the mapped trace of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -131,7 +131,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault> ;
     skos:definition "Fault that dips at least 45 degrees over more than half of the recognized extent of the fault with the hanging wall displaced from a structurally higher position relative to footwall rocks."@en ;
@@ -140,7 +140,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "high angle normal fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> ;
     skos:definition "Reverse fault that dips at least 45 degrees over more than half of its recognized extent, for which slip or separation is not explicitly specified."@en ;
@@ -149,7 +149,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "high angle reverse"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> ;
     skos:definition "Fault that dips less than 45 degrees over more than half of the recognized extent of the fault, with a hanging wall displaced from a structurally deeper position relative to footwall rocks."@en ;
@@ -158,7 +158,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "thrust fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/wrench_fault> a skos:Concept ;
-    dcterms:source "GGIC vocabularies working group (Australia)"@en ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
     skos:definition "A strike slip fault in which the fault plane dips at least 45 degrees over more than half of the recognized extent of the fault."@en ;
@@ -167,7 +167,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "wrench fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault> a skos:Concept ;
-    dcterms:source "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
+    dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
     skos:definition "A fault whose two sides have approached each other substantially in the direction perpendicular to the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -177,7 +177,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "extraction fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault> ;
     skos:definition "Fault that dips less than 45 degrees over more than half of the recognized extent of the fault with the hanging wall displaced from a structurally higher position relative to footwall rocks."@en ;
@@ -187,7 +187,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "low angle normal fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
     skos:definition "Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector over more than half recognized extent of the fault, and for which the fault dips consistently in the same direction, and for which the hanging wall has been displaced down relative to the footwall."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -197,7 +197,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "normal fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
     skos:definition "Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector at at least one location along the mapped trace of the fault, and the fault dips consistently in the same direction with the hanging wall displaced up relative to the footwall over at least half the mapped trace of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -207,7 +207,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "reverse fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
     skos:definition "Fault that dips at least 45 degrees over more than half of its recognized extent, for which slip or separation is not explicitly specified."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -218,7 +218,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "high angle fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
     skos:definition "Fault that dips less than 45 degrees over more than half of the recognized extent of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -229,7 +229,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "low angle fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
     skos:definition "Fault with strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the mapped trace of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -240,7 +240,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "strike slip fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
     skos:definition "Fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -252,7 +252,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "oblique slip fault"@en .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/fault> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "A discrete surface, or zone of discrete surfaces, with some thickness, separating two rock masses across which one mass has slid past the other and characterized by brittle deformation."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -268,7 +268,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> a skos:ConceptScheme ;
-    dcterms:source <http://www.opengis.net/doc/geosciml/4.1> ;
+    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

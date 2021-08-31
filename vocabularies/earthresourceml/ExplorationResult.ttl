@@ -148,7 +148,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> a skos:ConceptScheme ;
-    dcterms:source <https://earthresourceml.org> ;
+    dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
     dcterms:provenance "The EarthResourceML standard"@en ;
     skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

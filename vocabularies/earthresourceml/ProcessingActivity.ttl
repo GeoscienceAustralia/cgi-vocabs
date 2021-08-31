@@ -80,7 +80,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "agglomeration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/bioleaching> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Bioleaching"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Bioleaching"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Bioleaching is the extraction of metals from their ores through the use of living organisms. This is much cleaner than the traditional heap leaching using cyanide. Bioleaching is one of several applications within biohydrometallurgy and several methods are used to recover copper, zinc, lead, arsenic, antimony, nickel, molybdenum, gold, silver, and cobalt."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -89,7 +89,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "bioleaching"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/burning> a skos:Concept ;
-    dcterms:provenance "http://www.e-goldprospecting.com/html/coal_gold_agglomeration__cga_.html"@en ;
+    dcterms:source "http://www.e-goldprospecting.com/html/coal_gold_agglomeration__cga_.html"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "The utilization of coal-oil agglomerates in the recovery of gold is based on the natural hydrophobicity/lipophilicity of gold, a property which according to the consensus of most surface chemistry experts is brought about by the ease by which gold surface becomes contaminated, though is possible to recover gold by agglomerating them with oil, the amount of gold in the ore is usually small that there is insufficient gold particles to form agglomerates. Thus, the need to use other hydrophobic materials (e.g. coal) to either form agglomerates together with gold or act as a carrier of gold particles. Agglomerates are prepared in a previous step and then added to the ore pulp in a second step. The gold particles, being oilfilic, penetrate into the agglomerates. In a continuous operation the agglomerates would be maintained in contacting tanks until they reach a pre-determined gold content. The tailings are discarded by means of a screen situated at the upper part of the tanks. The recovery of gold from agglomerates is obtained in a later step by burning the agglomerates and then separating the gold from the ashes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -98,7 +98,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "burning"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/calcining> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Calcination"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Calcination"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "A more general definition is “Calcination (also referred to as calcining) is a thermal treatment process in presence of air applied to ores and other solid materials to bring about a thermal decomposition, phase transition, or removal of a volatile fraction. The calcination process normally takes place at temperatures below the melting point of the product materials. Calcination is to be distinguished from roasting, in which more complex gas–solid reactions take place between the furnace atmosphere and the solids."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -107,7 +107,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "calcining"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/cementation> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Cementation"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Cementation"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "In metallurgy, cementation is a process in which ions are reduced to zero valence at a solid metallic interface"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -125,7 +125,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "centrifugal gravity separation"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/coagulation> a skos:Concept ;
-    dcterms:provenance "http://ktrungthuy.free.fr/SACH-BOOKS/Handbook%20of%20Flotation%20Reagents,%20Elsevier%20(2007),%200444530290.pdf"@en ;
+    dcterms:source "http://ktrungthuy.free.fr/SACH-BOOKS/Handbook%20of%20Flotation%20Reagents,%20Elsevier%20(2007),%200444530290.pdf"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment> ;
     skos:definition "In a dispersed system, particles of all species can be aggregated into larger structures by several mechanisms. Aggregation, based on reducing inter-particle repulsion forces, is known as coagulation and the aggregates are called coagula. If coagulation is induced by a polymer-bridging action, the process is called flocculation and the aggregates are called flocs. When aggregation is achieved as a result of the action of an immersible bridging liquid, such as oil, the process is called agglomeration and the aggregates are referred to as agglomerates. The mechanisms include both those in coagulation (i.e. action of electrolytes) and bridging flocculation by either inorganic polymers or by precipitating metal hydroxides. The latter is known as sweep flocculation."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -147,7 +147,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "comminution"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/crystallization> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Crystallization"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Crystallization"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Crystallization is the (natural or artificial) process of formation of solid crystals precipitating from a solution, melt or more rarely deposited directly from a gas. Crystallization is also a chemical solid-liquid separation technique, in which mass transfer of a solute from the liquid solution to a pure solid crystalline phase occurs. In chemical engineering crystallization occurs in a crystallizer. Crystallization is therefore an aspect of precipitation, obtained through a variation of the solubility conditions of the solute in the solvent, as compared to precipitation due to chemical reaction."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -156,7 +156,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "crystallization"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/distillation> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Distillation"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Distillation"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Distillation is a method of separating mixtures based on differences in volatilities of components in a boiling liquid mixture. Distillation is a unit operation, or a physical separation process, and not a chemical reaction."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -165,7 +165,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "distillation"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/eddy-current-separator> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Eddy_current_separator"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Eddy_current_separator"^^xsd:anyURI ;
     skos:altLabel "foucault current separator"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting> ;
     skos:definition "Uses an electric current induced into a conductor by changes in magnetic flux cutting through it. The effect of such currents is to induce a secondary magnetic field around the particle; this field reacts with the applied magnetic field resulting in forces that eject the conducting particle from the stream of mixed particles, providing the means for an effective separation."@en ;
@@ -175,7 +175,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "eddy current separator"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrolysis> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Hydrometallurgy"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
     skos:altLabel "electrorefining"@en,
         "electrowinning"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
@@ -195,7 +195,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "electrostatic separation"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/evaporation> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Evaporation"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Evaporation"^^xsd:anyURI ;
     skos:altLabel "drying"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance."@en ;
@@ -223,7 +223,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "flotation"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravity-separation-table> a skos:Concept ;
-    dcterms:provenance "http://www.motive-traction.com.au/cgi-bin/engine.pl?Page=page.html&Rec=124"@en ;
+    dcterms:source "http://www.motive-traction.com.au/cgi-bin/engine.pl?Page=page.html&Rec=124"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting> ;
     skos:definition "Gravity concentration consisting of an inclined planar surface fitted with riffles. Particles are carried across the surface by a fluid flow as the surface is vibrated. The shaking promotes the segregation of denser particles and keeps them moving across the deck in different angles down to the discharge end. Wilfley table, Holman table are examples."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -241,7 +241,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "heavy medium separation"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/hydrometallurgy> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Hydrometallurgy"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Hydrometallurgy is part of the field of extractive metallurgy involving the use of aqueous chemistry for the recovery of metals from ores, concentrates, and recycled or residual materials. Hydrometallurgy is typically divided into three general areas: leaching, solution concentration and purification, and metal recovery."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -250,7 +250,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "hydrometallurgy"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/incineration> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Incineration"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Incineration"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Incineration is a waste treatment process that involves the combustion of organic substances contained in waste materials. Incineration of waste materials converts the waste into ash, flue gas, and heat. (http://en.wikipedia.org/wiki/Incineration)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -306,7 +306,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "particle sizing"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/precipitation> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Hydrometallurgy"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Precipitation in hydrometallurgy involves the chemical precipitation of either metals and their compounds or of the contaminants from aqueous solutions. Precipitation will proceed when, through reagent addition, evaporation, pH change or temperature manipulation, any given species exceeds its limit of solubility."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -315,7 +315,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "precipitation"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/pyrometallurgy> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Pyrometallurgy"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Pyrometallurgy"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Pyrometallurgy is a branch of extractive metallurgy. It consists of the thermal treatment of minerals and metallurgical ores and concentrates to bring about physical and chemical transformations in the materials to enable recovery of valuable metals. Pyrometallurgical treatment may produce saleable products such as pure metals, or intermediate compounds or alloys, suitable as feed for further processing. Examples of elements extracted by pyrometallurgical processes include the oxides of less reactive elements like Fe, Cu, Zn, Chromium, Tin, Manganese."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -324,7 +324,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "pyrometallurgy"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/roasting> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Roasting_(metallurgy)"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Roasting_(metallurgy)"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Roasting is a step in the processing of certain ores. More specifically, roasting is a metallurgical process involving gas–solid reactions at elevated temperatures with the goal of purifying the metal component(s). Roasting consists of thermal gas–solid reactions, which can include oxidation, reduction, chlorination, sulfation, and pyrohydrolysis. In roasting, the ore or ore concentrate is treated with very hot air.” http://en.wikipedia.org/wiki/Roasting_(metallurgy)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -342,7 +342,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:prefLabel "sluice concentration"@en .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/smelting> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Pyrometallurgy#Smelting"@en ;
+    dcterms:source "http://en.wikipedia.org/wiki/Pyrometallurgy#Smelting"^^xsd:anyURI ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Smelting is a form of extractive metallurgy; its main use is to produce a metal from its ore. Smelting involves thermal reactions in which at least one product is a molten phase. Metal oxides can then be smelted by heating with coke or charcoal (forms of carbon), a reducing agent that liberates the oxygen as carbon dioxide leaving a refined mineral. Carbonate ores are also smelted with charcoal, but are sometimes need to be calcined first. Other materials may need to be added as flux, aiding the melting of the oxide ores and assisting in the formation of a slag, as the flux reacts with impurities, such as silicon compounds. Smelting usually takes place at a temperature above the melting point of the metal, but processes vary considerably according to the ore involved and other matters."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
@@ -459,7 +459,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> a skos:ConceptScheme ;
-    dcterms:source <https://earthresourceml.org> ;
+    dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
     dcterms:provenance "The EarthResourceML standard"@en ;
     skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

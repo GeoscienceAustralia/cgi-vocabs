@@ -18,7 +18,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Deformation in fault zone has been accommodated primarily through fracturing and loss of continuity between adjacent rock bodies."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
@@ -26,7 +26,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> .
 
 <http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Displacement across shear displacement structure largely accommodated by plastic deformation of the rock body without loss of macroscopic continuity."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
@@ -34,7 +34,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> .
 
 <http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Deformation in fault zone has been accommodated by both fracturing and plastic shape change in rock bodies."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
@@ -46,7 +46,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> a skos:ConceptScheme ;
-    dcterms:source <http://www.opengis.net/doc/geosciml/4.1> ;
+    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2012-04-01"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

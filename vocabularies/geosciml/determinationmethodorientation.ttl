@@ -23,7 +23,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/calculated_average_orientation> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Orientation value is specified using a calculated average of a collection of related orientations (computer generalization)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
@@ -31,7 +31,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> .
 
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/estimate_from_air_photo> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Orientation of a geologic structure estimated based on inspection or measurements on an air photograph."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
@@ -39,7 +39,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> .
 
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/estimate_from_distance> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Orientation of a geologic structure based on observation from a distance great enough to preclude direct inspection of the structure to determine orientation."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
@@ -47,7 +47,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> .
 
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/photogeologic_determination> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Orientation determined based on measurements from aerial photography or satellite imagery (in conjunction with an elevation model."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
@@ -55,7 +55,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> .
 
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/standard_on_site_measure> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop> ;
     skos:definition "Orientation measured using compass or other instrument directly on or at an outcrop of the structure."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
@@ -63,7 +63,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:prefLabel "standard on site measure"@en .
 
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/three_point_determination> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Orientation determined by fitting a plane to three or more points located on the geologic surface of interest."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
@@ -71,7 +71,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> .
 
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/visual_surface_estimation_on_outcrop> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop> ;
     skos:definition "Orientation of a surface is measured by visually averaging across one or more outcrops in a small area--e.g. approximating dip by looking down strike of beds, approximating strike by outcrop trace of one or more beds."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
@@ -83,7 +83,7 @@ skos:definition "All Concepts in this vocabulary" ;
     sdo:url "http://www.cgi-iugs.org"^^xsd:anyURI .
 
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop> a skos:Concept ;
-    dcterms:source "this vocabulary"@en ;
+    dcterms:provenance "this vocabulary"@en ;
     skos:definition "Orientation of surface or line is measured on an outcrop of that surface or line directly, e.g. by measuring a particular bedding surface, a 3-D exposure of a fold hinge, a particular stretched mineral grain in a foliation surface."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
@@ -93,7 +93,7 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> a skos:ConceptScheme ;
-    dcterms:source <http://www.opengis.net/doc/geosciml/4.1> ;
+    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     dcterms:provenance "Original set of terms from the GeosciML standard" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;

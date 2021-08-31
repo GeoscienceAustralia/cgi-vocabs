@@ -36,7 +36,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
         <http://resource.geosciml.org/classifier/cgi/classification-method-used/unfc-code> .
 
 <http://resource.geosciml.org/classifier/cgi/classification-method-used/cim-standards> a skos:Concept ;
-    dcterms:provenance "http://www.cim.org/splash/index.cfm"@en ;
+    dcterms:source "http://www.cim.org/splash/index.cfm"^^xsd:anyURI ;
     skos:definition "The CIM Definition Standards on Mineral Resources and Reserves (CIM Definition Standards) establish definitions and guidelines for the reporting of exploration information, mineral resources and mineral reserves in Canada"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
@@ -54,7 +54,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> .
 
 <http://resource.geosciml.org/classifier/cgi/classification-method-used/iimch-code> a skos:Concept ;
-    dcterms:provenance "http://www.cim.org/standards/documents/Block470_Doc26.pdf"@en ;
+    dcterms:source "http://www.cim.org/standards/documents/Block470_Doc26.pdf"^^xsd:anyURI ;
     skos:definition "Certification Code for Exploration Prospects, Mineral Resources & Ore Reserves. This Code is the result of a Collaboration Agreement between the Institution of Mining Engineers of Chile (IIMCh) and the Ministry of Mining."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
@@ -63,7 +63,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> .
 
 <http://resource.geosciml.org/classifier/cgi/classification-method-used/imm-reporting-code> a skos:Concept ;
-    dcterms:provenance "http://www.iom3.org/"@en ;
+    dcterms:source "http://www.iom3.org/"^^xsd:anyURI ;
     skos:definition "The Code for Reporting of Mineral Resources and Mineral Reserves (the 'Reporting Code' or ‘the Code’) sets out minimum standards, recommendations and guidelines for Public Reporting of Mineral Exploration Results, Mineral Resources and Mineral Reserves in the United Kingdom, Ireland and Europe."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
@@ -72,7 +72,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> .
 
 <http://resource.geosciml.org/classifier/cgi/classification-method-used/jorc-code> a skos:Concept ;
-    dcterms:provenance "http://www.jorc.org"@en ;
+    dcterms:source "http://www.jorc.org"^^xsd:anyURI ;
     skos:definition "The Australasian Code for Reporting of Exploration Results, Mineral Resources and Ore Reserves (the ‘JORC Code’ or ‘the Code’)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
@@ -81,7 +81,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> .
 
 <http://resource.geosciml.org/classifier/cgi/classification-method-used/ni-43-101> a skos:Concept ;
-    dcterms:provenance "http://www.cim.org/splash/index.cfm"@en ;
+    dcterms:source "http://www.cim.org/splash/index.cfm"^^xsd:anyURI ;
     skos:definition "National Instrument 43-101 (the \"NI 43-101\" or the \"NI\") is a mineral resource classification scheme used for the public disclosure of information relating to mineral properties in Canada. The NI is a strict guideline for how public companies can disclose scientific and technical information about mineral projects on bourses supervised by the Canadian Securities Administrators"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
@@ -99,7 +99,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> .
 
 <http://resource.geosciml.org/classifier/cgi/classification-method-used/perc-code> a skos:Concept ;
-    dcterms:provenance "http://www.vmine.net/percreserves/"@en ;
+    dcterms:source "http://www.vmine.net/percreserves/"^^xsd:anyURI ;
     skos:definition "The Pan European Reserves and Resources Reporting Committee (PERC) Code for Reporting of Exploration Results, Mineral Resources and Mineral Reserves (further referred to as ‘the Code’) sets out minimum standards, recommendations and guidelines for Public Reporting of Exploration Results, Mineral Resources and Mineral Reserves in the United Kingdom, Ireland and Europe."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
@@ -108,7 +108,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> .
 
 <http://resource.geosciml.org/classifier/cgi/classification-method-used/peruvian-code> a skos:Concept ;
-    dcterms:provenance "http://www.bvl.com.pe/scr/english/doc-reglamentos/Code%20for%20reporting%20of%20minerals.pdf"@en ;
+    dcterms:source "http://www.bvl.com.pe/scr/english/doc-reglamentos/Code%20for%20reporting%20of%20minerals.pdf"^^xsd:anyURI ;
     skos:definition "The Code for Reporting on Mineral Resources and Ore Reserves has the purpose to set out the minimum standards, recommendations and guidelines to be complied with the presentation of Public Reports which are the basis from which to have access to the Venture Capital Segment of the Lima Stock Exchange. These reports will sustain the results on mineral exploration, of Mineral Resources and Ore Reserves. This Code was prepared by a Joint Committee formed by members of the Lima Stock Exchange and by professionals dedicated to the exploration and evaluation of mineral resources. This Code is based on and follows the example of the 1999 JORC CODE of Australasia which was prepared to ensure compliance with its guidelines in every Public Report on mineral explorations and evaluation results, as well as with similar codes and translations in use such as Canada (CIMVal 2001), United States of America (US Bureau of Mines, USGS Circular 831, Principles of Resource and Reserve Classification for Minerals), South Africa (The SAMREC Code), England (The UKIMM), and Australia (The AusIMM The Valmin Code)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
@@ -117,7 +117,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> .
 
 <http://resource.geosciml.org/classifier/cgi/classification-method-used/russian-code> a skos:Concept ;
-    dcterms:provenance "http://www.imcinvest.com/pdf/Russian_reserves_8.pdf"@en ;
+    dcterms:source "http://www.imcinvest.com/pdf/Russian_reserves_8.pdf"^^xsd:anyURI ;
     skos:altLabel "NAEN Code"@en ;
     skos:definition "Currently effective in Russia is the Code approved by the Decree of the Ministry of Natural Resources, RF № 278 of 11 December, 2006. Full title of the Document: Classification of resources/reserves and prognostic resources of solid minerals."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
@@ -154,7 +154,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> .
 
 <http://resource.geosciml.org/classifier/cgi/classification-method-used/unfc-code> a skos:Concept ;
-    dcterms:provenance "http://www.unece.org/energy/se/reserves.html"@en ;
+    dcterms:source "http://www.unece.org/energy/se/reserves.html"^^xsd:anyURI ;
     skos:definition "The United Nations Framework Classification for Fossil Energy and Mineral Reserves and Resources 2009 (UNFC-2009) is a universally applicable scheme for classifying/evaluating energy and mineral reserves and resources - it is the successor to UNFC-2004. Designed as an all-encompassing framework, it enables the incorporation and unification of existing national systems, while allowing their classification units and glossary to be retained. The principal objective of UNFC-2009 is to enhance international communication by providing a simple, user-friendly and uniform format for the reporting of energy reserves and resources, using market-based economic criteria. It has been developed to meet, to the extent possible, the needs of applications pertaining to international energy and mineral studies, government resource management functions, corporate business processes and financial reporting standards"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ;
@@ -163,7 +163,7 @@ skos:definition "All the Concepts in this vocabulary"@en;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> a skos:ConceptScheme ;
-    dcterms:source <https://earthresourceml.org> ;
+    dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
     dcterms:provenance "The EarthResourceML standard"@en ;
     skos:changeNote "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
