@@ -7,8 +7,7 @@ SHOW_WARNINGS = True
 
 def main():
     # get the validator
-    # r = httpx.get("https://w3id.org/profile/vocpub/validator")
-    r = httpx.get("https://raw.githubusercontent.com/surroundaustralia/vocpub-profile/master/validator.shacl.ttl")
+    r = httpx.get("https://w3id.org/profile/vocpub/validator")
     assert r.status_code == 200
 
     # for all vocabs...
