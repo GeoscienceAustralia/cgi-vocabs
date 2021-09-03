@@ -1,5 +1,4 @@
 {
-    "EndUsePotential.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential",
     "EnvironmentalImpact.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact",
     "ExplorationActivityType.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type",
     "ExplorationResult.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result",
@@ -12,7 +11,6 @@
     "ResourceCategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category",
     "UNFCValue.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc",
     "WasteStorage.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage",
-    "conventioncode.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode",
     "deformationstyle.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle",
     "descriptionpurpose.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose",
     "determinationmethodorientation.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation",
