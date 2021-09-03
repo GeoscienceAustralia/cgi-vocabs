@@ -16,6 +16,7 @@
     "RawMaterialRole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role",
     "ReserveCategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category",
     "ResourceCategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category",
+    "UNFCValue.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc",
     "alterationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype",
     "boreholedrillingmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod",
     "compositioncategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory",
