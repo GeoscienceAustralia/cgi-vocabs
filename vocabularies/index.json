@@ -5,9 +5,11 @@
     "EarthResourceForm.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form",
     "EarthResourceMaterialRole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role",
     "EarthResourceShape.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape",
+    "EndUsePotential.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential",
     "alterationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype",
     "boreholedrillingmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod",
     "compositioncategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory",
     "compoundmaterialconstituentpartrole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole",    "consolidationdegree.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree",
-    "contacttype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype"
+    "contacttype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype",
+    "conventioncode.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode"
 }
