@@ -5,7 +5,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://resource.geosciml.org/classifier/cgi/contacttype> a skos:Collection ;
-    skos:prefLabel "Contact Type - All Concepts "@en ;
+    skos:prefLabel "Contact Type - All Concepts"@en ;
     skos:definition "All Concepts in this vocabulary" ;
     dcterms:provenance "this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/contacttype/alteration_facies_contact>,

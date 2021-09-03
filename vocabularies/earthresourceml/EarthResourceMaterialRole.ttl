@@ -7,9 +7,8 @@
 
 <https://linked.data.gov.au/org/cgi-gtwg> a sdo:Organization ;
     sdo:affiliation <https://linked.data.gov.au/org/cgi> ;
-    sdo:name "CGI Geoscience Terminology Working Group " ;
+    sdo:name "CGI Geoscience Terminology Working Group" ;
     sdo:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
-
 
 <https://linked.data.gov.au/org/cgi> a sdo:Organization ;
     sdo:name "Commission for the Management and Application of Geoscience Information" ;
