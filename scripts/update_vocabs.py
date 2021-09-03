@@ -16,8 +16,11 @@ DB_PASSWORD = os.environ.get("DB_PASSWORD", None)
 
 
 def add_vocabs(vocabs: List[Path], mappings: dict):
+    print("vocabs to add/update")
+    print(vocabs)
     # add new vocabs
     for vocab in vocabs:
+        print(vocab)
         params = {}
         endpoint = ""
         if DB_TYPE == "fuseki":
@@ -38,6 +41,7 @@ def add_vocabs(vocabs: List[Path], mappings: dict):
             content=open(vocab, "rb").read(),
             auth=(DB_USERNAME, DB_PASSWORD),
         )
+        print(r.__dict__)
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
 
     endpoint = ""
