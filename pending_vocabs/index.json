@@ -1,11 +1,9 @@
 {
-    "ProcessingActivity.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity",
     "RawMaterialRole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role",
     "ReserveCategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category",
     "ResourceCategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category",
     "UNFCValue.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc",
     "WasteStorage.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage",
-    "faultmovementtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype",
     "faulttype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype",
     "featureobservationmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod",
     "foliationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype",

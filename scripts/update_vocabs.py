@@ -53,8 +53,10 @@ def add_vocabs(vocabs: List[Path], mappings: dict):
 
     # re-add remaining vocabs in directory to default graph
     for f in Path(__file__).parent.parent.glob("vocabularies/**/*.ttl"):
+        print(f)
         data = {"update": "ADD <{}> TO DEFAULT".format(str(mappings[f.name]))}
         r2 = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
+        print(r2.__dict__)
         assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
 
 

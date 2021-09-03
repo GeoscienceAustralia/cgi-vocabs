@@ -12,6 +12,7 @@
     "MineralOccurrenceType.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type",
     "MineStatus.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status",
     "MiningActivity.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+    "ProcessingActivity.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity",
     "alterationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype",
     "boreholedrillingmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod",
     "compositioncategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory",
@@ -23,5 +24,6 @@
     "determinationmethodorientation.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation",
     "eventenvironment.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment",
     "eventprocess.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess",
-    "faultmovementsense.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"
+    "faultmovementsense.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense",
+    "faultmovementtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"
 }
