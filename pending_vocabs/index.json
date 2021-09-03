@@ -1,10 +1,4 @@
 {
-    "faulttype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype",
-    "featureobservationmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod",
-    "foliationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype",
-    "geneticcategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory",
-    "geologicunitmorphology.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology",
-    "geologicunitpartrole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole",
     "geologicunittype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype",
     "lineationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype",
     "mappedfeatureobservationmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod",

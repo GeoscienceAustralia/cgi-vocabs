@@ -30,5 +30,12 @@
     "eventenvironment.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment",
     "eventprocess.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess",
     "faultmovementsense.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense",
-    "faultmovementtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype"
+    "faultmovementtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype",
+    "faulttype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype",
+    "featureobservationmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod",
+    "foliationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype",
+    "geneticcategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory",
+    "geologicunitmorphology.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology",
+    "geologicunitpartrole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole"
+
 }
