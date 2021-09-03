@@ -187,8 +187,8 @@ if __name__ == "__main__":
                 added.append(p)
 
     removed = []
-    if args.removed:
-        for f in args.removed.split(","):
+    if args.deleted:
+        for f in args.deleted.split(","):
             # if the file is in the vocabularies/ folder and ends with .ttl, it's a vocab file
             if f.startswith("vocabularies/") and f.endswith(".ttl"):
                 p = Path(f)
