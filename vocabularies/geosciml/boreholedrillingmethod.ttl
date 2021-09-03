@@ -6,7 +6,7 @@
 @prefix dt: <http://resource.geosciml.org/datatype/> .
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod> a skos:Collection ;
-    skos:prefLabel "Borehole Drilling Method - All Concepts "@en ;
+    skos:prefLabel "Borehole Drilling Method - All Concepts"@en ;
 skos:definition "All Concepts in this vocabulary" ;
     dcterms:provenance "this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling>,
