@@ -1,7 +1,10 @@
 {
-    "petroleum-tenement-type.ttl": "http://resource.geoscience.gov.au/classifierScheme/ggic/2021.01/petroleum-tenement-type",
-    "tenement-status.ttl": "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenement-status",
-    "tenement-type.ttl": "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
     "ClassificationMethodUsed.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used",
-    "alterationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype"
+    "CommodityCode.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code",
+    "EarthResourceExpression.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression",
+    "EarthResourceForm.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form",
+    "alterationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype",
+    "boreholedrillingmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod",
+    "compositioncategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory",
+    "compoundmaterialconstituentpartrole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole"
 }
