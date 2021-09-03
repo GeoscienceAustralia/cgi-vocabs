@@ -9,6 +9,9 @@
     "EnvironmentalImpact.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact",
     "ExplorationActivityType.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type",
     "ExplorationResult.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result",
+    "MineralOccurrenceType.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type",
+    "MineStatus.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status",
+    "MiningActivity.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
     "alterationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype",
     "boreholedrillingmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod",
     "compositioncategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory",
@@ -17,5 +20,8 @@
     "conventioncode.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode",
     "deformationstyle.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle",
     "descriptionpurpose.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose",
-    "determinationmethodorientation.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"
+    "determinationmethodorientation.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation",
+    "eventenvironment.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment",
+    "eventprocess.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess",
+    "faultmovementsense.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"
 }
