@@ -7,11 +7,15 @@
     "EarthResourceShape.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape",
     "EndUsePotential.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential",
     "EnvironmentalImpact.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact",
+    "ExplorationActivityType.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type",
+    "ExplorationResult.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result",
     "alterationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype",
     "boreholedrillingmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod",
     "compositioncategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory",
     "compoundmaterialconstituentpartrole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole",    "consolidationdegree.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree",
     "contacttype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype",
     "conventioncode.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode",
-    "deformationstyle.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle"
+    "deformationstyle.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle",
+    "descriptionpurpose.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose",
+    "determinationmethodorientation.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"
 }

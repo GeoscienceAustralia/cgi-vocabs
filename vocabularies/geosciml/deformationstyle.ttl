@@ -5,8 +5,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://resource.geosciml.org/classifier/cgi/deformationstyle> a skos:Collection ;
-    skos:prefLabel "Deformation Style - All Concepts"@en ;
-skos:definition "All Concepts in this vocabulary" ;
+    skos:prefLabel "Deformation Style - All Concepts "@en ;
+    skos:definition "All Concepts in this vocabulary" ;
     dcterms:provenance "this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle>,
         <http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile>,

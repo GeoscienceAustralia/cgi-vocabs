@@ -1,6 +1,4 @@
 {
-    "ExplorationActivityType.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type",
-    "ExplorationResult.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result",
     "MineralOccurrenceType.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type",
     "MineStatus.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status",
     "MiningActivity.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
@@ -10,8 +8,6 @@
     "ResourceCategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category",
     "UNFCValue.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc",
     "WasteStorage.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage",
-    "descriptionpurpose.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose",
-    "determinationmethodorientation.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation",
     "eventenvironment.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment",
     "eventprocess.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess",
     "faultmovementsense.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense",
