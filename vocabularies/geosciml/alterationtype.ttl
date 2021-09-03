@@ -5,7 +5,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype> a skos:Collection ;
-    skos:prefLabel "Alteration Type - All Concepts "@en ;
+    skos:prefLabel "Alteration Type - All Concepts"@en ;
 skos:definition "All Concepts in this vocabulary" ;
     dcterms:provenance "this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration>,
