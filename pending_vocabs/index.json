@@ -1,5 +1,4 @@
 {
-    "WasteStorage.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage",
     "faulttype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype",
     "featureobservationmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod",
     "foliationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype",

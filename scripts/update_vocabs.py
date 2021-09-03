@@ -1,11 +1,15 @@
-import json
 from typing import List
+import json
+import os
+import time
 import argparse
 from pathlib import Path
 import httpx
 from rdflib import Graph, URIRef
 from rdflib.namespace import RDF, SKOS
-import os
+
+
+MAX_RETRIES = 3
 
 DB_TYPE = "fuseki"  # options: "fuseki" | "graphdb"
 BASE_DB_URI = "http://fuseki.surroundaustralia.com/cgi-vocabs"
@@ -16,11 +20,8 @@ DB_PASSWORD = os.environ.get("DB_PASSWORD", None)
 
 
 def add_vocabs(vocabs: List[Path], mappings: dict):
-    print("vocabs to add/update")
-    print(vocabs)
     # add new vocabs
     for vocab in vocabs:
-        print(vocab)
         params = {}
         endpoint = ""
         if DB_TYPE == "fuseki":
@@ -41,7 +42,8 @@ def add_vocabs(vocabs: List[Path], mappings: dict):
             content=open(vocab, "rb").read(),
             auth=(DB_USERNAME, DB_PASSWORD),
         )
-        print(r.__dict__)
+        if not 200 <= r.status_code <= 300:
+            print(r.content)
         assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
 
     endpoint = ""
@@ -57,10 +59,10 @@ def add_vocabs(vocabs: List[Path], mappings: dict):
 
     # re-add remaining vocabs in directory to default graph
     for f in Path(__file__).parent.parent.glob("vocabularies/**/*.ttl"):
-        print(f)
         data = {"update": "ADD <{}> TO DEFAULT".format(str(mappings[f.name]))}
         r2 = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
-        print(r2.__dict__)
+        if not 200 <= r2.status_code <= 300:
+            print(r2.content)
         assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
 
 
@@ -78,12 +80,16 @@ def remove_vocabs(vocabs: List[Path], mappings: dict):
 
     # clear default graph
     r = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
+    if not 200 <= r.status_code <= 300:
+        print(r.content)
     assert 200 <= r.status_code <= 300, "Status code was {}".format(r.status_code)
 
     # drop deleted graphs
     for vocab in vocabs:
         data = {"update": "DROP GRAPH <{}>".format(str(mappings[vocab.name]))}
         r2 = httpx.post(endpoint, data=data, auth=(DB_USERNAME, DB_PASSWORD))
+        if not 200 <= r2.status_code <= 300:
+            print(r2.content)
         assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
 
 
@@ -138,11 +144,6 @@ if __name__ == "__main__":
     #         Path(__file__).parent.parent / "vocabularies" / "earthresourceml" / "WasteStorage.ttl",
     #     ], index
     # )
-
-    # for testing, simple mapping dict (until exit()):
-    # add_vocabs([Path(__file__).parent.parent / "vocabularies" / "valid.ttl"], {"valid.ttl": URIRef("http://test.com")})
-    # remove_vocabs([Path(__file__).parent.parent / "vocabularies" / "valid.ttl"], {"valid.ttl": URIRef("http://test.com")})
-    # exit()
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -220,6 +221,22 @@ if __name__ == "__main__":
     print("renamed:")
     print([str(x) for x in renamed])
 
-    # rebuild VocPrez' cache
-    r = httpx.get(f"{WEBSITE_URL}/cache-reload")
-    assert r.status_code == 200
+    # retries if GET request fails
+    retries = 0
+    reason = ""
+    while retries < MAX_RETRIES:
+        try:
+            # rebuild VocPrez' cache
+            r = httpx.get(f"{WEBSITE_URL}/cache-reload")
+            if r.status_code != 200:
+                reason = r.content
+                time.sleep(0 if retries == 0 else 2 ** retries)
+                retries += 1
+                continue
+            break
+        except:
+            assert retries < MAX_RETRIES, "Request failed too many times"
+            time.sleep(0 if retries == 0 else 2 ** retries)
+            retries += 1
+            continue
+    assert r.status_code == 200, f"Error code {r.status_code}: {reason}"
