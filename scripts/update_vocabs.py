@@ -158,9 +158,15 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
+        "-d",
+        "--deleted",
+        help="Vocabs to be deleted from the DB",
+    )
+
+    parser.add_argument(
         "-r",
-        "--removed",
-        help="Vocabs to be removed from the DB",
+        "--renamed",
+        help="Vocabs to be renamed in the DB",
     )
 
     args = parser.parse_args()
@@ -187,15 +193,22 @@ if __name__ == "__main__":
             if f.startswith("vocabularies/") and f.endswith(".ttl"):
                 p = Path(f)
                 removed.append(p)
+    renamed = []
+    if args.renamed:
+        for f in args.renamed.split(","):
+            # if the file is in the vocabularies/ folder and ends with .ttl, it's a vocab file
+            if f.startswith("vocabularies/") and f.endswith(".ttl"):
+                p = Path(f)
+                renamed.append(p)
 
     i = Path(__file__).parent.parent / "vocabularies" / "index.json"
     with open(i, "r") as f:
         mappings = json.load(f)
     # remove all removed and modified vocabs
-    remove_vocabs(removed + modified, mappings)
+    remove_vocabs(removed + modified + renamed, mappings)
 
     # add all added and modified vocabs
-    add_vocabs(added + modified, mappings)
+    add_vocabs(added + modified + renamed, mappings)
 
     # print for testing
     print("modified:")
@@ -204,6 +217,8 @@ if __name__ == "__main__":
     print([str(x) for x in added])
     print("removed:")
     print([str(x) for x in removed])
+    print("renamed:")
+    print([str(x) for x in renamed])
 
     # rebuild VocPrez' cache
     r = httpx.get(f"{WEBSITE_URL}/cache-reload")

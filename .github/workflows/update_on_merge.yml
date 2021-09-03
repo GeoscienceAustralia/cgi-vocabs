@@ -26,8 +26,10 @@ jobs:
           echo 'Run update script...'
           a=${{steps.file_changes.outputs.files_added}}
           m=${{steps.file_changes.outputs.files_modified}}
-          r=${{steps.file_changes.outputs.files_removed}}
+          d=${{steps.file_changes.outputs.files_removed}}
+          r=${{steps.file_changes.outputs.files_renamed}}
           if [ -z $a ]; then a="x"; fi
           if [ -z $m ]; then m="x"; fi
+          if [ -z $d ]; then d="x"; fi
           if [ -z $r ]; then r="x"; fi
-          python scripts/update_vocabs.py -a $a -m $m -r $r
+          python scripts/update_vocabs.py -a $a -m $m -d $d -r $r
