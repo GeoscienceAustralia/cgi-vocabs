@@ -13,6 +13,7 @@
     "MineStatus.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status",
     "MiningActivity.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
     "ProcessingActivity.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity",
+    "RawMaterialRole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role",
     "alterationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype",
     "boreholedrillingmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod",
     "compositioncategory.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory",
