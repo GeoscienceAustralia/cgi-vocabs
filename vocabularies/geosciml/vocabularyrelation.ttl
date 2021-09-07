@@ -165,4 +165,3 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/related_term>,
         <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/synonym>,
         <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/target_follows_source> .
-

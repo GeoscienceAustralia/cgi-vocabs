@@ -379,4 +379,3 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic> .
-

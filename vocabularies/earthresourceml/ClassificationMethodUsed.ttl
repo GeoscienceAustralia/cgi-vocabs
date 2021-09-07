@@ -190,4 +190,3 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
         <http://resource.geosciml.org/classifier/cgi/classification-method-used/sec-guide>,
         <http://resource.geosciml.org/classifier/cgi/classification-method-used/sme-guide>,
         <http://resource.geosciml.org/classifier/cgi/classification-method-used/unfc-code> .
-

@@ -124,4 +124,3 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
         <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/project>,
         <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/prospect>,
         <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/province> .
-

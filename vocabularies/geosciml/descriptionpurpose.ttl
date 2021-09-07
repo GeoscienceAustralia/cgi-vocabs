@@ -67,4 +67,3 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/defining_norm>,
         <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/instance>,
         <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/typical_norm> .
-

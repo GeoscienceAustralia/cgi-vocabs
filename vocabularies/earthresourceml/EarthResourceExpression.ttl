@@ -112,4 +112,3 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
         <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed>,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geochemical-anomaly>,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geophysical-anomaly> .
-

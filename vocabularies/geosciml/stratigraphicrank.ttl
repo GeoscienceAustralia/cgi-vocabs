@@ -192,4 +192,3 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/rank_not_specified>,
         <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup>,
         <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite> .
-

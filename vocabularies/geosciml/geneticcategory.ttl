@@ -358,4 +358,3 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis>,
         <http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis>,
         <http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis> .
-

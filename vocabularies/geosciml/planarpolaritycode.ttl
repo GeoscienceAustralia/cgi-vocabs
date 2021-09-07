@@ -57,4 +57,3 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/overturned>,
         <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/upright>,
         <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/vertical> .
-

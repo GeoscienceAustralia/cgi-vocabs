@@ -808,4 +808,3 @@ skos:definition "All Concepts in this vocabulary" ;
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Foliation Type vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> .
-

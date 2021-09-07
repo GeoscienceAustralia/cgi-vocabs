@@ -152,4 +152,3 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
         <http://resource.geosciml.org/classifier/cgi/earth-resource-form/structurally-transposed>,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-form/surficial>,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-form/unconformity-related> .
-

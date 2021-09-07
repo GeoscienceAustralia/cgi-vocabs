@@ -171,4 +171,3 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
         <http://resource.geosciml.org/classifier/cgi/exploration-result/mineralized-zone-identified>,
         <http://resource.geosciml.org/classifier/cgi/exploration-result/negative-feasibility-study>,
         <http://resource.geosciml.org/classifier/cgi/exploration-result/positive-feasibility-study> .
-

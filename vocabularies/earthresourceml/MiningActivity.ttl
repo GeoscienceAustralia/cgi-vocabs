@@ -199,4 +199,3 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining>,
         <http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining>,
         <http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining> .
-

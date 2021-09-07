@@ -276,4 +276,3 @@ skos:definition "All Concepts in this vocabulary" ;
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Alteration Type vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.02.xslt."@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> .
-

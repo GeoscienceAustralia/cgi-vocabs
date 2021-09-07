@@ -156,4 +156,3 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/particleshape/subhedral>,
         <http://resource.geosciml.org/classifier/cgi/particleshape/very_angular>,
         <http://resource.geosciml.org/classifier/cgi/particleshape/well_rounded> .
-
