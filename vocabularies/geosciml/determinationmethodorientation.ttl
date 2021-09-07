@@ -117,4 +117,3 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop>,
         <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/photogeologic_determination>,
         <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/three_point_determination> .
-

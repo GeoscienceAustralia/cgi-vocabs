@@ -333,4 +333,3 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
         <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-reconnaissance>,
         <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment>,
         <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/subsurface-exploration> .
-

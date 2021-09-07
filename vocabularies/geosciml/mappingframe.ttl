@@ -71,4 +71,3 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/mappingframe/surface_geology>,
         <http://resource.geosciml.org/classifier/cgi/mappingframe/top_of_basement>,
         <http://resource.geosciml.org/classifier/cgi/mappingframe/top_of_bedrock> .
-

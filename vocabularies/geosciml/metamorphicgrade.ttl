@@ -125,4 +125,3 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Metamorphic Grade vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified>,
         <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_unknown> .
-

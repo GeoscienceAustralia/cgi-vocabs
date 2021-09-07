@@ -785,4 +785,3 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing>,
         <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_chemistry>,
         <http://resource.geosciml.org/classifier/cgi/compositioncategory/volcanic_lithic> .
-
