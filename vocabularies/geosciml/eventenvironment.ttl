@@ -1567,3 +1567,4 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/extra_terrestrial_origin>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> .
+

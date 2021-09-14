@@ -80,3 +80,4 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/waste-storage/surface>,
         <http://resource.geosciml.org/classifier/cgi/waste-storage/underground>,
         <http://resource.geosciml.org/classifier/cgi/waste-storage/underwater> .
+

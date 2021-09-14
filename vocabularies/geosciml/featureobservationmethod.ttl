@@ -199,3 +199,4 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation>,
         <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method>,
         <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources> .
+

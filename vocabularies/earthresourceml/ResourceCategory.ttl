@@ -113,3 +113,4 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
         <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-indicated-inferred-mineral-resource>,
         <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-mineral-resource>,
         <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/poorly-estimated-mineral-resource> .
+

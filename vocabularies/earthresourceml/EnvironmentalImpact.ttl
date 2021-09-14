@@ -396,3 +396,4 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/heat>,
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact>,
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/vibration> .
+

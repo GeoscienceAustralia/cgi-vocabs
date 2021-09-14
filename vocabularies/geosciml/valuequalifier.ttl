@@ -127,3 +127,4 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/valuequalifier/never>,
         <http://resource.geosciml.org/classifier/cgi/valuequalifier/rare>,
         <http://resource.geosciml.org/classifier/cgi/valuequalifier/sometimes> .
+

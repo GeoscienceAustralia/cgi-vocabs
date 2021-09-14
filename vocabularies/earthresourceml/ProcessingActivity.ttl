@@ -476,3 +476,4 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment> .
+

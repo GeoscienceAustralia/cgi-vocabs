@@ -3087,3 +3087,4 @@ skos:definition "All Concepts in this vocabulary" ;
         "Vocabulary maintenence changed to SKOS with Protege v4 as tool of choice, Sept 2009"@en ;
     skos:editorialNote "Start file produced from excel spreadsheet version of SimpleLithology200811, comment period July to September 2009. Revisions in spreadsheet discussed and approved at IWG face to face, Quebec CA, Sept. 2009."@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/lithology/compound_material> .
+

@@ -387,3 +387,4 @@
         <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/interstitial_constituent>,
         <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent>,
         <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> .
+

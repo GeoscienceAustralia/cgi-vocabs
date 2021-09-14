@@ -69,3 +69,4 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/raw-material-role/gangue>,
         <http://resource.geosciml.org/classifier/cgi/raw-material-role/ore>,
         <http://resource.geosciml.org/classifier/cgi/raw-material-role/waste> .
+

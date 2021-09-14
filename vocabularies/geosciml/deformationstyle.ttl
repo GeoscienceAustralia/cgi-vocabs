@@ -62,3 +62,4 @@
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle>,
         <http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile>,
         <http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile> .
+
