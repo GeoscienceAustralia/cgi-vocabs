@@ -165,3 +165,4 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified>,
         <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_unknown>,
         <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/no_metamorphic_minerals> .
+

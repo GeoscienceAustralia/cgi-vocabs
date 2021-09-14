@@ -56,3 +56,4 @@ skos:definition "All Concepts in this vocabulary" ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Convention Code vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/conventioncode/dip_dip_direction>,
         <http://resource.geosciml.org/classifier/cgi/conventioncode/strike_dip_rhr> .
+

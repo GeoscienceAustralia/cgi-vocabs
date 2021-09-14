@@ -187,3 +187,4 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip>,
         <http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor>,
         <http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_separation_sense> .
+

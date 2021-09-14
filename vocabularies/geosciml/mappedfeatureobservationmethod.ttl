@@ -308,3 +308,4 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_elevation_data>,
         <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/published_map>,
         <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed> .
+

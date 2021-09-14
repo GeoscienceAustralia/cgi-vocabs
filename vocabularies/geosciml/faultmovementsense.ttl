@@ -189,3 +189,4 @@ skos:definition "All Concepts in this vocabulary" ;
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral>,
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral>,
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral> .
+

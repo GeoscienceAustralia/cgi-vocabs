@@ -69,3 +69,4 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/probable-ore-reserves>,
         <http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/proved-and-probable-ore-reserves>,
         <http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/proved-ore-reserves> .
+
