@@ -388,7 +388,8 @@ dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
 
     skos:changeNote "2014-02-23 Conversion to SKOS by SM Richard"@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
-        "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ;
+        "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
+        "2021-12-17 Rachel Heaven (BGS) Edits to remove trailing white space from https://linked.data.gov.au/org/cgi-gtwg sdo:name value"@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Earth Resource Environmental Impact vocabulary. Vocabulary Shepherd: Carlo Cipolloni. Compilation and review in Google doc spreadsheet; adopted 2014-01-10; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/environmental-impact/emission>,
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/habitat-modification>,
