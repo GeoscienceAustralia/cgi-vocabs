@@ -3084,7 +3084,8 @@ skos:definition "All Concepts in this vocabulary" ;
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
         "Additional revisions and updates Dec 2009, Jan 2010 based on review and comment by OneGeology Europe WP3 committee."@en,
         "Fix language labels for 'alkali feldspar trachytic rock' and for 'cobble gravel size sediment'. Change broader link on 'acidic igneous material' from 'granitoid' to 'igneous material' to fix circular links in hierarchy. SMR 2010-08-27"@en,
-        "Vocabulary maintenence changed to SKOS with Protege v4 as tool of choice, Sept 2009"@en ;
+        "Vocabulary maintenence changed to SKOS with Protege v4 as tool of choice, Sept 2009"@en,
+        "2021-12-17 Rachel Heaven (BGS) changed identifier from http://resource.geosciml.org/classifierScheme/cgi/2016.01/simplelithology to http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology (note the lower case c)"@en ;
     skos:editorialNote "Start file produced from excel spreadsheet version of SimpleLithology200811, comment period July to September 2009. Revisions in spreadsheet discussed and approved at IWG face to face, Quebec CA, Sept. 2009."@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/lithology/compound_material> .
 
