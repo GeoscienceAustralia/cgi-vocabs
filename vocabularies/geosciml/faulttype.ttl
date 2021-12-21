@@ -72,6 +72,7 @@
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:definition "A discrete surface, or zone of discrete surfaces, with some thickness, separating two rock masses across which one mass has slid past the other and characterized by brittle deformation."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/fault> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault>,
@@ -105,6 +106,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
     skos:definition "Fault with right-lateral strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and right-lateral displacement over more than half the mapped trace of the fault."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/dextralStrikeSlipFault> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:prefLabel "dextral strike slip fault"@en .
 
@@ -203,6 +205,7 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault> ;
     skos:definition "Fault that dips less than 45 degrees over more than half of the recognized extent of the fault with the hanging wall displaced from a structurally higher position relative to footwall rocks."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/lowAngleNormalFault> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/detachment_fault> ;
     skos:prefLabel "low angle normal fault"@en .
@@ -271,6 +274,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
     skos:definition "Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector at at least one location along the mapped trace of the fault, and the fault dips consistently in the same direction with the hanging wall displaced up relative to the footwall over at least half the mapped trace of the fault."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/reverseFault> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> ;
@@ -325,6 +329,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
     skos:definition "Fault with left-lateral strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and left-lateral displacement over more than half the mapped trace of the fault."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/sinistralStrikeSlipFault> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:prefLabel "sinistral strike slip fault"@en .
 
@@ -350,6 +355,7 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> ;
     skos:definition "Fault that dips less than 45 degrees over more than half of the recognized extent of the fault, with a hanging wall displaced from a structurally deeper position relative to footwall rocks."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/thrustFault> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:prefLabel "Ueberschiebung"@de,
         "thrust fault"@en,
@@ -398,5 +404,7 @@
         "đứt gãy vặn"@vi,
         "平搓断层"@zh .
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using alignment datasets created and reviewed in 2015 by James Passmore, Marcus Sen and Stephen Richard."@en .
 
