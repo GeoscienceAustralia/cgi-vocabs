@@ -27,6 +27,7 @@
     dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2018-08-03 SMR remove spurious space character at end of URI for cone_penetrometer_test_probe."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
+        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en,
         "Amended SKOS for migration to new vocabulary repository, 11-MAY-2016"@en,
         "Corrected error in \"broader\" values for hand auger, power auger, sonic core. 2-JUN-2016"@en,
         "Original SKOS implementation, 03-FEB-2016"@en ;
@@ -427,6 +428,4 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:notation "4.2.7"^^dt:LocalHierarchyKey ;
     skos:prefLabel "window sampler"@en .
-
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en .
 

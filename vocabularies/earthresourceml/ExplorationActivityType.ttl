@@ -28,7 +28,8 @@
     skos:changeNote "2014-02-23 SMR Conversion to SKOS"@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-28 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
+        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
     skos:definition "This file contains the CGI Exploration Activity Type vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to categorize an exploration activity during some time period. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Exploration Activity Type vocabulary. Vocabulary Shepherd: Mark Rattenbury. Compilation and review in Google doc spreadsheet; adopted 14/01/2014; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-surface-exploration>,
@@ -42,6 +43,7 @@
 
 <http://resource.geosciml.org/classifier/cgi/exploration-activity-type> a skos:Collection ;
     dcterms:provenance "The original vocbaulary - all its concepts"@en ;
+    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:member <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/approximate-resource-calculation>,
         <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/auger-drilling>,
@@ -77,6 +79,7 @@
     dcterms:provenance "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:definition "Exploration over a small area (1-100 km2), commonly identified from reconnaissance exploration, with closely spaced observation and sampling points."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedSurfaceExploration> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-geochemistry>,
         <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-geology>,
@@ -91,6 +94,7 @@
     dcterms:provenance "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:definition "Intermediate phase between laboratory tests and actual plant. In French, may refer to a stope as well as to a plant."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/miningPilot> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "mining pilot"@en ;
@@ -121,6 +125,7 @@
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:definition "Exploration over a large area (100-10000 km2) with widely spaced sampling or observation points."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalReconnaissance> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-geochemistry>,
         <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-geology>,
@@ -150,6 +155,7 @@
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:definition "Initial low cost techniques (trenching, destructive drilling, etc.) to constrain limits of possible in-ground resource."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/subsurfaceExploration> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/auger-drilling>,
         <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/core-drilling>,
@@ -165,6 +171,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment> ;
     skos:definition "Rough evaluation of the tonnage and grade essentially based on drill holes information, by correlation and interpolation of intersected mineralized sections."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/approximateResourceCalculation> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "04.5"^^dt:LocalHierarchyKey ;
     skos:prefLabel "approximate resource calculation"@en .
@@ -175,6 +182,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/subsurface-exploration> ;
     skos:definition "Drilling with an auger in order to collect rock or soil samples, or to carry out a physical measurement or a geological observation."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/augerDrilling> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "03.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "auger drilling"@en .
@@ -185,6 +193,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/subsurface-exploration> ;
     skos:definition "Drilling in order to collect intact rock sample cores, or to carry out a physical measurement or a geological observation. Can confirm results from obtained from percussion drilling."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/coreDrilling> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "03.4"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Kernbohrung"@de,
@@ -221,6 +230,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-surface-exploration> ;
     skos:definition "Close-spaced systematic, commonly grid-based sampling and analysis of rock, soil, stream sediment, water, gas and vegetation for the detection of abnormal concentrations of chemical elements."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedGeochemistry> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "02.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "detailed geochemistry"@en .
@@ -241,6 +251,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-surface-exploration> ;
     skos:definition "Detailed surveys (often on a grid) with the most appropriate method, in order to confirm and better delineate and characterize rock physical properties or geophysical anomalies identified during the previous phase."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedGeophysics> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "02.3"^^dt:LocalHierarchyKey ;
     skos:prefLabel "detailed geophysics"@en .
@@ -251,6 +262,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-surface-exploration> ;
     skos:definition "Close-spaced sampling and anlysis of the densest mineral fractions of stream sediment that may indicate the presence of a mineralization source upriver or upstream."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedHeavyMineralSampling> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "02.4"^^dt:LocalHierarchyKey ;
     skos:prefLabel "detailed heavy mineral sampling"@en .
@@ -295,6 +307,7 @@
     skos:altLabel "前景评价"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/ore-deposit-evaluation> ;
     skos:definition "Technical economic study aimed at assessing the possibility to launching a mine venture. When data are insufficiently precise, the study is said to be a pre-feasibility study."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/feasibilityStudyReport> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "05.4"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Durchfuehrbarkeitsstudie"@de,
@@ -321,6 +334,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment> ;
     skos:definition "Compilation and synthesis of all the available geological information in order to get an as precise as possible model of the mineral resource including genesis, type, geometry, internal structure, distribution of grades, relationships with host rocks, etc."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/geologicalInterpretation> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "04.3"^^dt:LocalHierarchyKey ;
     skos:prefLabel "geological interpretation"@en .
@@ -331,6 +345,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/ore-deposit-evaluation> ;
     skos:definition "Technique based on probability theory that is used to compute regionalized variables, the values of which depend on their position in space, such as the metal content or grade in a deposit."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/geostatisticalEstimates> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "05.3"^^dt:LocalHierarchyKey ;
     skos:prefLabel "geostatistical estimates"@en .
@@ -351,6 +366,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment> ;
     skos:definition "Technique designed to treat run of mine material. Its aim is to physically separate its constituents in order to produce a marketable product. Can be performed on core samples."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/oreBeneficiationTest> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "04.4"^^dt:LocalHierarchyKey ;
     skos:prefLabel "ore beneficiation tests"@en .
@@ -361,6 +377,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/subsurface-exploration> ;
     skos:definition "Drilling with a rotary percussion tool in order to collect rock or soil samples, or to carry out a physical measurement or a geological observation."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/percussionDrilling> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "03.3"^^dt:LocalHierarchyKey ;
     skos:prefLabel "percussion drilling"@en .
@@ -381,6 +398,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-reconnaissance> ;
     skos:definition "Wide-spaced systematic, commonly grid-based sampling and analysis of rock, soil, stream sediment, water, gas and vegetation for the detection of abnormal concentrations of chemical elements."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalGeochemistry> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "01.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "regional geochemistry"@en .
@@ -417,9 +435,8 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-reconnaissance> ;
     skos:definition "Wide-spaced sampling and analysis of the densest mineral fractions of stream sediment that may indicate the presence of a mineralization source upstream."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalHeavyMineralSampling> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ;
     skos:notation "01.4"^^dt:LocalHierarchyKey ;
     skos:prefLabel "regional heavy mineral sampling"@en .
-
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en .
 

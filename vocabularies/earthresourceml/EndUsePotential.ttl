@@ -28,7 +28,8 @@
     skos:changeNote "2014-02-23 Conversion to SKOS by SM Richard."@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
+        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
     skos:definition "This file contains the CGI End Use Potential vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to specify the end-use potential of the Earth Resource (eg for energy, fertilizer, building raw material etc). In the ERML model, a MineralOccurrence is a kind of EarthResource that has an occurrence type category and one or more associated enduse potential concepts. This vocabulary provides the range of values for the end-use potential property of MineralOccurrence. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI End Use Potential vocabulary. Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/end-use-potential/agriculture>,
@@ -45,6 +46,7 @@
 
 <http://resource.geosciml.org/classifier/cgi/end-use-potential> a skos:Collection ;
     dcterms:provenance "The original vocbaulary - all its concepts"@en ;
+    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:member <http://resource.geosciml.org/classifier/cgi/end-use-potential/abrasive-minerals>,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/agricultural-lime>,
@@ -120,6 +122,7 @@
         "构造"@zh,
         "结构"@zh ;
     skos:definition "Material used in the construction industry. Includes aggregate, dimension & ornamental stones (granite, gabbro, travertine, etc.), gypsum, anhydrite, cement limestone, limestone for lime, marble, sand and gravel."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/construction> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/end-use-potential/building-and-dimension-stone>,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/cement-making-material>,
@@ -152,6 +155,7 @@
     dcterms:provenance "ProMine EU FP7 project, BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:definition "Raw materials in the energy industry. Includes oil, gas, bituminous sandstone and limestone, oil shale, coal, lignite, peat, thorium, uranium."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/energyMinerals> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/end-use-potential/fossil-fuel-use>,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/nuclear-energy-source> ;
@@ -182,6 +186,7 @@
     dcterms:provenance "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:definition "Material used in the manufacture of a product by an industrial process, or in the treatment of a product"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/industrialMinerals> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/end-use-potential/ceramic-and-refractory>,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/chemicals>,
@@ -214,6 +219,7 @@
     dcterms:provenance "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:definition "Metal ore directly used to produce metals and minerals used in their processing"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/metalIndustry> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/end-use-potential/foundry-minerals>,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/metal-ore> ;
@@ -226,6 +232,7 @@
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:definition "Resource end use is for sale to collectors and for education"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/mineralSpecimens> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "07.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "mineral specimens"@en ;
@@ -276,6 +283,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/speciality-and-other-industrial> ;
     skos:definition "Naturally occurring abrasives."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/abrasiveMinerals> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "03.04.03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Polierstoff"@de,
@@ -292,6 +300,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/agriculture> ;
     skos:definition "Direct application of chalk, limestone or dolomite for soil conditioning"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/agriculturaLime> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "09.02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "agricultural lime"@en .
@@ -302,6 +311,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/construction> ;
     skos:definition "Natural Stone used in a block, flag or slate form for construction or decorative purposes, or artifacts, e.g. millstones."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/buildingAndDimensionStone> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "02.05.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "building and dimension stone"@en .
@@ -312,6 +322,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/construction> ;
     skos:definition "Material directly used in the manufacture of cement or mortar."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/cementMakingMaterial> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "02.02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "cement-making material"@en .
@@ -332,6 +343,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/industrial-minerals> ;
     skos:definition "Material directly used in the manufacture of a product by an industrial chemical process. Includes borates, barite, fluorite, magnesium (magnesite), sodium sulphate, sodium carbonate (trona), pyrite, sulphur, rock salt, strontium, zeolites."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/chemical> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "03.02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "chemicals"@en .
@@ -342,6 +354,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/construction> ;
     skos:definition "Any of several hard, inert materials, such as sand, gravel, slag, or crushed stone, used for mixing with a cementing or bituminous material to form concrete or asphalt or used alone, as in railroad ballast or graded fill. Excludes materials for cement making and plaster making."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/constructionAggregates> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "02.01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "construction aggregates"@en .
@@ -352,6 +365,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/speciality-and-other-industrial> ;
     skos:definition "Material has potential for use in borehole drilling processes, e.g. as a mud weight or viscosity additive."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/drillingMinerals> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "03.04.05.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "drilling minerals"@en .
@@ -362,6 +376,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/construction> ;
     skos:definition "Clay or shale with particular properties, used for a civil engineering purpose other than as a fill, e.g. liner for landfill, flood defence"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/engineeringClay> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "02.06.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "engineering clay"@en .
@@ -373,6 +388,7 @@
     skos:altLabel "rabuk"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/agriculture> ;
     skos:definition "Direct application K- or P-bearing rock as a fertiliser; rock used for chemical fertiliser production e.g. phosphate; mineral used to prevent caking of fertilizer granules"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/fertilizer> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "09.01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "fertilizers"@en,
@@ -393,6 +409,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/energy-minerals> ;
     skos:definition "Material has potential for energy production through burning"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/fossilFuelUse> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "04.1.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "fossil fuel use"@en .
@@ -404,6 +421,7 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/metal-industry>,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/speciality-and-other-industrial> ;
     skos:definition "Material used as a part of the process in the manufacture of a metallic product."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/foundryMinerals> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "03.04.02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "foundry minerals"@en .
@@ -414,6 +432,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/speciality-and-other-industrial> ;
     skos:definition "General use in the glass making industry, including fluxes."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/glassManufacturingMinerals> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "03.04.04.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "glass manufacturing minerals"@en .
@@ -424,6 +443,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/agriculture> ;
     skos:definition "Horticultural uses e.g. sand for top dressing, peat"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/horticultural> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "09.03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "horticultural"@en .
@@ -440,6 +460,7 @@
         "รงค์วัตถุ"@th ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/speciality-and-other-industrial> ;
     skos:definition "Material directly used in the treatment or enhancement of an industrial product, i.e. paper coatings."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/industrialProductTreatment> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "03.04.01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "industrial product treatment"@en,
@@ -460,6 +481,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/agriculture> ;
     skos:definition "Soil and aggregates used for landscaping"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/landscaping> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "09.03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "landscaping"@en .
@@ -496,6 +518,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/energy-minerals> ;
     skos:definition "Material has potential for energy production through use in nuclear reactor"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/nuclearEnergySource> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "04.2.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "nuclear energy source"@en .
@@ -506,6 +529,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/construction> ;
     skos:definition "Material directly used in the manufacture of a plaster or plasterboard."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/plasterAndPlasterBoard> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "02.03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "plaster and plaster board"@en .
@@ -516,6 +540,7 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/industrial-minerals> ;
     skos:definition "Includes abrasives: garnet, staurolite, corundum; asbestos (antophyllite, chrysotile, crocidolite); attapulgite, sepiolite (clay); bentonite (clay); limestone, calcite (filler); diatomite (kieselguhr); graphite; mica; perlite; quartz (massive / block for ferrosilicon); quartz (for optical and piezoelectrical use); silica sand; talc, pyrophyllite; vermiculite; wollastonite."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/specialityAndOtherIndustrialRocksAndMinerals> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/end-use-potential/abrasive-minerals>,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/drilling-minerals>,
@@ -531,9 +556,8 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/end-use-potential/construction> ;
     skos:definition "Material used as a raw material for the manufacture of structural clay products, i.e. Bricks, pipes and tiles."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/structuralClayProducts> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ;
     skos:notation "02.04.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "structural clay products"@en .
-
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en .
 
