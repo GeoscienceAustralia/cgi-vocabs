@@ -58,9 +58,27 @@
 <http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
+    skos:altLabel "periukan teregang"@id,
+        "延性变形"@zh ;
     skos:definition "Displacement across shear displacement structure largely accommodated by plastic deformation of the rock body without loss of macroscopic continuity."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
-    skos:prefLabel "ductile deformation"@en ;
+    skos:prefLabel "Dehnungsverformung"@de,
+        "ductile deformation"@en,
+        "deformacio!n du!ctil"@es,
+        "duktiilideformaatio"@fi,
+        "déformation ductile"@fr,
+        "deformasi teregang"@id,
+        "deformazione duttile"@it,
+        "延性変形"@ja,
+        "karxUcRTg;RtayénPaByWt"@km,
+        "연성변형"@ko,
+        "¡¾­¯¼ú­Á¯¤µõ©Ä©É"@lo,
+        "canggaan mulur"@ms,
+        "deformatsiya tyaguchaya"@ru,
+        "plastisk deformation"@sv,
+        "การเปลี่ยนรูปแบบยืดเป็นเส้น"@th,
+        "biến dạng dẻo (đá)"@vi,
+        "塑性变形"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> .
 
 
@@ -71,4 +89,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
     skos:prefLabel "mixed brittle and ductile"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

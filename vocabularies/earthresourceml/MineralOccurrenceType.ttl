@@ -53,17 +53,6 @@
     skos:prefLabel "Mineral Occurrence Type - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/deposit> a skos:Concept ;
-    dcterms:provenance "This vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
-    skos:altLabel "mineral deposit"@en ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/occurrence> ;
-    skos:definition "A mass of naturally occurring material in the Earth that contains an anomalous concentration of some mineral or rock type that has some potential for human utilization, without regard to mode of origin. Typically is a single, connected, genetically related body of material."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
-    skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "deposit"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/field> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
@@ -85,7 +74,13 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
     skos:note "The basis for identification as a potential site of a mineral deposit is not part of the definition, but may include surface mineral occurrences, matches with various favorability criteria, geologic, geophysical, or geochemical anomalies. A site may be considered a prospect based on evidence of previous mineral exploration activity such as excavated pits or shafts. There might not actually be a mineral occurrence associated with the prospect."@en ;
-    skos:prefLabel "mineralized zone"@en ;
+    skos:prefLabel "Erzgang"@de,
+        "mineralized zone"@en,
+        "yacimiento filoniano"@es,
+        "malmijuoni"@fi,
+        "giacimento filoniano"@it,
+        "zhila rudnaya"@ru,
+        "malmåder"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> .
 
 
@@ -127,10 +122,47 @@
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/province> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
-    skos:altLabel "metallogenic province"@en ;
+    skos:altLabel "metallogenic province"@en,
+        "mendala metalogenik"@id,
+        "成矿区"@zh ;
     skos:definition "A regional geological province characterized by mineral occurrences and/or prospects of similar style (eg, related by commodities, mineralization process, environment)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
     skos:notation "06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "province"@en ;
+    skos:prefLabel "Lagerstaettenprovinz"@de,
+        "province"@en,
+        "provincia metaloge!nica"@es,
+        "metallogeeniset provinssit"@fi,
+        "province métallogénique"@fr,
+        "propinsi metalogenik"@id,
+        "provincia metallogenica"@it,
+        "鉱床生成区"@ja,
+        "extþEdlmanCMrkEr:elah³"@km,
+        "광상생성구"@ko,
+        "À¢©Á£É¸­Âì¹½"@lo,
+        "wilayah metalogeni"@ms,
+        "provintsiya metallogenicheskaya"@ru,
+        "metallogen provins"@sv,
+        "ปริมณฑลแร่"@th,
+        "tỉnh sinh khoáng"@vi,
+        "成矿省"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> .
+
+
+<http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/deposit> a skos:Concept ;
+    dcterms:provenance "This vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
+    skos:altLabel "mineral deposit"@en ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/occurrence> ;
+    skos:definition "A mass of naturally occurring material in the Earth that contains an anomalous concentration of some mineral or rock type that has some potential for human utilization, without regard to mode of origin. Typically is a single, connected, genetically related body of material."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
+    skos:notation "01.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lagerstaette"@de,
+        "deposit"@en,
+        "yacimiento"@es,
+        "mineraaliesiintyma\"t"@fi,
+        "giacimento"@it,
+        "mestorozhdenie"@ru,
+        "mineralförekomst"@sv .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

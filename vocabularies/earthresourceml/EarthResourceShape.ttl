@@ -67,7 +67,13 @@
     skos:definition "A roughly cylindrical body, which may reduce in diameter at one end like a funnel"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "05.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "cylindrical"@en ;
+    skos:prefLabel "Pipe"@de,
+        "cylindrical"@en,
+        "pipa"@es,
+        "piiput"@fi,
+        "tubo"@it,
+        "trubka"@ru,
+        "pipe"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
 
 
@@ -89,7 +95,13 @@
     skos:definition "A body bounded by converging surfaces (at least one of which is curved), thick in the middle and thinning out toward the edges, resembling a convex lens."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "lensoidal"@en ;
+    skos:prefLabel "Linse"@de,
+        "lensoidal"@en,
+        "lentejo!n"@es,
+        "linssit"@fi,
+        "lente"@it,
+        "linza"@ru,
+        "lins"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
 
 
@@ -100,7 +112,13 @@
     skos:definition "Having the shape of a nodule or occurring in the form of nodules; e.g. \"nodular ore\" such as a colloform mineral aggregate with a bulbed surface."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "04.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "nodular"@en ;
+    skos:prefLabel "Knolle"@de,
+        "nodular"@en,
+        "no!dulo"@es,
+        "noduulit"@fi,
+        "nodulo"@it,
+        "nodul'"@ru,
+        "nodul"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
 
 
@@ -141,6 +159,14 @@
     skos:definition "A body having two dimensions that are much larger or longer than the third, e.g. a dyke-hosted or bed-hosted deposit"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "tabular"@en ;
+    skos:prefLabel "Schicht"@de,
+        "tabular"@en,
+        "estrato"@es,
+        "kerrokset"@fi,
+        "strato"@it,
+        "sloj"@ru,
+        "lager"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

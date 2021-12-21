@@ -106,15 +106,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> .
 
 
-<http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/standard_on_site_measure> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop> ;
-    skos:definition "Orientation measured using compass or other instrument directly on or at an outcrop of the structure."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
-    skos:prefLabel "standard on site measure"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/three_point_determination> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
@@ -122,6 +113,15 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
     skos:prefLabel "three point determination"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> .
+
+
+<http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/standard_on_site_measure> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop> ;
+    skos:definition "Orientation measured using compass or other instrument directly on or at an outcrop of the structure."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ;
+    skos:prefLabel "standard on site measure"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/visual_surface_estimation_on_outcrop> a skos:Concept ;

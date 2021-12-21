@@ -110,16 +110,41 @@
     skos:definition "The Earth resource, concealed or exposed, has an anomalous geophysical signature."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
     skos:notation "04.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "geophysical anomaly"@en ;
+    skos:prefLabel "geophysikalische Anomalie"@de,
+        "geophysical anomaly"@en,
+        "anomali!a geofi!sica"@es,
+        "geofysikaalinen anomalia"@fi,
+        "anomalia geofisica"@it,
+        "anomaliya geofizicheskaya"@ru,
+        "geofysisk anomali"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/gossan> a skos:Concept ;
     dcterms:provenance "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:altLabel "ゴッサン"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed> ;
     skos:definition "The surface expression of the Earth Resource is as highly weathered (oxidized) outcrop."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
     skos:notation "01.1.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "gossan"@en .
+    skos:prefLabel "eiserner Hut"@de,
+        "gossan"@en,
+        "montera hierro"@es,
+        "rautahilkka"@fi,
+        "chapeau fer"@fr,
+        "tudung besi"@id,
+        "cappello di ferro"@it,
+        "焼け"@ja,
+        "hÁÚsan"@km,
+        "산화대"@ko,
+        "Á»ÈÂ¡¦§¾­"@lo,
+        "gosan"@ms,
+        "shlyapa zheleznaya"@ru,
+        "gossan"@sv,
+        "กอสแซน"@th,
+        "mũ sắt"@vi,
+        "铁帽"@zh .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

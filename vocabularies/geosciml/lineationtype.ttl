@@ -66,6 +66,42 @@
     skos:prefLabel "Lineation Type - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> a skos:Concept ;
+    dcterms:provenance "Neuendorf et al 2005, this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
+    skos:altLabel "pergarisan"@id,
+        "リニエーション"@ja ;
+    skos:definition "Nongenetic term for a penetrative linear structure."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/crenulation_lineation>,
+        <http://resource.geosciml.org/classifier/cgi/lineationtype/flow_lineation>,
+        <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation>,
+        <http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation>,
+        <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation>,
+        <http://resource.geosciml.org/classifier/cgi/lineationtype/pencil_lineation>,
+        <http://resource.geosciml.org/classifier/cgi/lineationtype/rodding_lineation>,
+        <http://resource.geosciml.org/classifier/cgi/lineationtype/slickenline>,
+        <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
+    skos:prefLabel "Lineation"@de,
+        "lineation"@en,
+        "lineacio!n"@es,
+        "lineaatio"@fi,
+        "linéation"@fr,
+        "lineasi"@id,
+        "lineazione"@it,
+        "線構造"@ja,
+        "CaCYr/CabnÞat;Rtg;"@km,
+        "선구조"@ko,
+        "¡¾­¢ó©À¦˜­"@lo,
+        "lineasi"@ms,
+        "linejnost'"@ru,
+        "stänglighet"@sv,
+        "แนวตรง"@th,
+        "phân tuyến"@vi,
+        "划线"@zh ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> .
+
+
 <http://resource.geosciml.org/classifier/cgi/lineationtype/augen_lineation> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
@@ -184,24 +220,6 @@
     skos:prefLabel "intersection lineation"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al 2005, this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
-    skos:definition "Nongenetic term for a penetrative linear structure."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/crenulation_lineation>,
-        <http://resource.geosciml.org/classifier/cgi/lineationtype/flow_lineation>,
-        <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation>,
-        <http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation>,
-        <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation>,
-        <http://resource.geosciml.org/classifier/cgi/lineationtype/pencil_lineation>,
-        <http://resource.geosciml.org/classifier/cgi/lineationtype/rodding_lineation>,
-        <http://resource.geosciml.org/classifier/cgi/lineationtype/slickenline>,
-        <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
-    skos:prefLabel "lineation"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> .
-
-
 <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> a skos:Concept ;
     dcterms:provenance "Neuendorf et al 2005, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
@@ -298,4 +316,6 @@
         <http://resource.geosciml.org/classifier/cgi/lineationtype/slickenline>,
         <http://resource.geosciml.org/classifier/cgi/lineationtype/stretching_lineation> ;
     skos:prefLabel "tectonic lineation"@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

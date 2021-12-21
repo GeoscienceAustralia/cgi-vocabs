@@ -76,15 +76,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> .
 
 
-<http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_separation_sense> ;
-    skos:definition "The net slip of the fault lies in the dip direction of the fault."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
-    skos:prefLabel "dip slip"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction> a skos:Concept ;
     dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
@@ -105,15 +96,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> .
 
 
-<http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction> a skos:Concept ;
-    dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction> ;
-    skos:definition "An extraction fault with some displacement within the fault plane."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
-    skos:prefLabel "mixed extraction"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip> a skos:Concept ;
     dcterms:provenance "GGIC vocabularies working group (Australia), SMR"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
@@ -123,15 +105,6 @@
         <http://resource.geosciml.org/classifier/cgi/faultmovementtype/transtensional> ;
     skos:prefLabel "oblique slip"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> .
-
-
-<http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction> a skos:Concept ;
-    dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction> ;
-    skos:definition "An extraction fault with no discernible displacement within the fault plane."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
-    skos:prefLabel "pure extraction"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor> a skos:Concept ;
@@ -151,6 +124,33 @@
     skos:narrower <http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip> ;
     skos:prefLabel "strike separation sense"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> .
+
+
+<http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip> a skos:Concept ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_separation_sense> ;
+    skos:definition "The net slip of the fault lies in the dip direction of the fault."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
+    skos:prefLabel "dip slip"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction> a skos:Concept ;
+    dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction> ;
+    skos:definition "An extraction fault with some displacement within the fault plane."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
+    skos:prefLabel "mixed extraction"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction> a skos:Concept ;
+    dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction> ;
+    skos:definition "An extraction fault with no discernible displacement within the fault plane."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ;
+    skos:prefLabel "pure extraction"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip> a skos:Concept ;

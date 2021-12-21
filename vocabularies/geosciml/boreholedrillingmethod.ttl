@@ -80,19 +80,6 @@
     skos:prefLabel "Borehole Drilling Method - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling> a skos:Concept ;
-    dcterms:source "https://en.wikipedia.org/wiki/Drilling_rig#Percussion_rotary_air_blast_drilling_.28RAB.29"^^xsd:anyURI ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:altLabel "RAB drilling"@en,
-        "down-the-hole drilling"@en,
-        "percussion rotary air blast"@en ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling> ;
-    skos:definition "Percussion rotary air blast drilling (RAB) drilling is an 'open hole' rotary percussion drilling method where rock or sediment chips are derived by using a drag bit or pneumatic reciprocating piston-driven hammer, and the cuttings are blown up the outside of the drill rods by air, or a combination of air and foam, and collected at the surface. It is used most frequently in the mineral exploration industry."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:notation "2.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "rotary air blast drilling"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/air_core> a skos:Concept ;
     dcterms:source "https://en.wikipedia.org/wiki/Drilling_rig#Air_core_drilling"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
@@ -128,6 +115,104 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
 
 
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:definition "A core of sediment, soil, or rock is derived by an unspecified core drilling method."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/diamond_core>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore> ;
+    skos:notation "4"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Kernbohrung"@de,
+        "core drilling"@en,
+        "sondeo testigo"@es,
+        "syda\"nkairaus"@fi,
+        "carotaggio"@it,
+        "burenie kolonkovoe"@ru,
+        "kärnborrning"@sv ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Drilling_rig#Hydraulic_rotary_drilling"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:definition "A drilling method using a drill stem equipped with a bit that is rotated to cut and grind the rock with a fluid pumped down the stem to force cuttings up through the annular space between the stem and the wall of the hole. Oil well drilling of this type utilises tri-cone roller, carbide embedded, fixed-cutter diamond, or diamond-impregnated drill bits. This is preferred because there is no need to return intact samples to surface for assay as the objective is to reach a formation containing oil or natural gas. Sizable machinery is used, enabling depths of several kilometres to be penetrated. Rotating hollow drill pipes carry down bentonite and barite infused drilling muds to lubricate, cool, and clean the drilling bit, control downhole pressures, stabilize the wall of the borehole and remove drill cuttings."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:notation "3"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "hydraulic rotary drilling"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:definition "A drilling method whereby rock or sediment chips or fragments (cuttings) are derived by use of a percussion (hammer) method, with or without rotary action."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cable_tool_drilling>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/reverse_circulation_drilling>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_hammer_drilling> ;
+    skos:notation "2"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "percussion drilling"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:definition "An object (eg, penetrometer) inserted into the substrate that records material properties without taking physical samples."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackintosh_probe> ;
+    skos:notation "9"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Messgeraet"@de,
+        "probe"@en,
+        "sonda"@es,
+        "proobi"@fi,
+        "sonda"@it,
+        "zond"@ru,
+        "sond"@sv ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:definition "A method to extract a core or plug from the sidewall of a borehole."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_bullet>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_mechanical> ;
+    skos:notation "8"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "sidewall core"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic> a skos:Concept ;
+    dcterms:provenance "Powers et al, 2007. Construction Dewatering and Groundwater Control: New Methods and Applications"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:altLabel "vibratory"@en ;
+    skos:definition "A sonic or vibratory drill head works by sending high frequency resonant vibrations down the drill string to the drill bit, while the operator controls these frequencies to suit the specific conditions of the soil/rock geology. Vibrations may also be generated within the drill head. The frequency is generally between 50 and 180 hertz (cycles per second) and can be varied by the operator. Resonance magnifies the amplitude of the drill bit, which fluidizes the soil particles at the bit face, allowing for fast and easy penetration through most geological formations. An internal spring system isolates these vibrational forces from the rest of the drill rig."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore> ;
+    skos:notation "5"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "sonic"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Drilling_rig#Percussion_rotary_air_blast_drilling_.28RAB.29"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:altLabel "RAB drilling"@en,
+        "down-the-hole drilling"@en,
+        "percussion rotary air blast"@en ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling> ;
+    skos:definition "Percussion rotary air blast drilling (RAB) drilling is an 'open hole' rotary percussion drilling method where rock or sediment chips are derived by using a drag bit or pneumatic reciprocating piston-driven hammer, and the cuttings are blown up the outside of the drill rods by air, or a combination of air and foam, and collected at the surface. It is used most frequently in the mineral exploration industry."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:notation "2.2"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "rotary air blast drilling"@en .
+
+
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cable_tool_drilling> a skos:Concept ;
     dcterms:source "https://en.wikipedia.org/wiki/Drilling_rig#Cable_tool_drilling"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
@@ -159,19 +244,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:notation "4.1.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "conventional core"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:definition "A core of sediment, soil, or rock is derived by an unspecified core drilling method."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/diamond_core>,
-        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push>,
-        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore> ;
-    skos:notation "4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "core drilling"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
 
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/delft_sampler> a skos:Concept ;
@@ -243,16 +315,6 @@
     skos:prefLabel "hand auger"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling> a skos:Concept ;
-    dcterms:source "https://en.wikipedia.org/wiki/Drilling_rig#Hydraulic_rotary_drilling"^^xsd:anyURI ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:definition "A drilling method using a drill stem equipped with a bit that is rotated to cut and grind the rock with a fluid pumped down the stem to force cuttings up through the annular space between the stem and the wall of the hole. Oil well drilling of this type utilises tri-cone roller, carbide embedded, fixed-cutter diamond, or diamond-impregnated drill bits. This is preferred because there is no need to return intact samples to surface for assay as the objective is to reach a formation containing oil or natural gas. Sizable machinery is used, enabling depths of several kilometres to be penetrated. Rotating hollow drill pipes carry down bentonite and barite infused drilling muds to lubricate, cool, and clean the drilling bit, control downhole pressures, stabilize the wall of the borehole and remove drill cuttings."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:notation "3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "hydraulic rotary drilling"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
-
-
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/kasten_core> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
@@ -283,20 +345,6 @@
     skos:prefLabel "Mackintosh probe"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:definition "A drilling method whereby rock or sediment chips or fragments (cuttings) are derived by use of a percussion (hammer) method, with or without rotary action."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling>,
-        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cable_tool_drilling>,
-        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/reverse_circulation_drilling>,
-        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_hammer_drilling> ;
-    skos:notation "2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "percussion drilling"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
-
-
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/piston_core> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
@@ -304,7 +352,8 @@
     skos:definition "A drilling method that uses a piston to drive the core barrel. Produces high quality long cores."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:notation "4.2.6"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "piston core"@en .
+    skos:prefLabel "piston core"@en,
+        "pistongkärna"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/power_auger> a skos:Concept ;
@@ -315,18 +364,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:notation "1.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "power auger"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:definition "An object (eg, penetrometer) inserted into the substrate that records material properties without taking physical samples."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe>,
-        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackintosh_probe> ;
-    skos:notation "9"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "probe"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
 
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/reverse_circulation_drilling> a skos:Concept ;
@@ -350,18 +387,6 @@
     skos:prefLabel "rotary hammer drilling"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:definition "A method to extract a core or plug from the sidewall of a borehole."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_bullet>,
-        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_mechanical> ;
-    skos:notation "8"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "sidewall core"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
-
-
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_bullet> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
@@ -380,18 +405,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:notation "8.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sidewall core mechanical"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic> a skos:Concept ;
-    dcterms:provenance "Powers et al, 2007. Construction Dewatering and Groundwater Control: New Methods and Applications"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:altLabel "vibratory"@en ;
-    skos:definition "A sonic or vibratory drill head works by sending high frequency resonant vibrations down the drill string to the drill bit, while the operator controls these frequencies to suit the specific conditions of the soil/rock geology. Vibrations may also be generated within the drill head. The frequency is generally between 50 and 180 hertz (cycles per second) and can be varied by the operator. Resonance magnifies the amplitude of the drill bit, which fluidizes the soil particles at the bit face, allowing for fast and easy penetration through most geological formations. An internal spring system isolates these vibrational forces from the rest of the drill rig."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore> ;
-    skos:notation "5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "sonic"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
 
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore> a skos:Concept ;
@@ -414,4 +427,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:notation "4.2.7"^^dt:LocalHierarchyKey ;
     skos:prefLabel "window sampler"@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

@@ -68,17 +68,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
 
 
-<http://resource.geosciml.org/classifier/cgi/unfc/approved-for-development> a skos:Concept ;
-    dcterms:provenance "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-    skos:altLabel "proved and probable (111+112)"@en ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects> ;
-    skos:definition "Approved for Development requires that all approvals/contracts are in place, and capital funds have been committed. Construction and installation of project facilities should be underway or due to start imminently."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-    skos:notation "01.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "approved for development"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects> a skos:Concept ;
     dcterms:provenance "www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
@@ -91,6 +80,73 @@
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "commercial projects"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
+
+
+<http://resource.geosciml.org/classifier/cgi/unfc/exploration-projects> a skos:Concept ;
+    dcterms:provenance "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    skos:altLabel "exploration results (334)"@en ;
+    skos:definition "Project identiifed that has not advanced enought to categorize further."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    skos:notation "05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "exploration projects"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
+
+
+<http://resource.geosciml.org/classifier/cgi/unfc/non‐commercial-projects> a skos:Concept ;
+    dcterms:provenance "www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    skos:definition "Non‐Commercial Projects include those that are at an early stage of evaluation in addition to those that are considered unlikely to become commercially feasible developments within the foreseeable future."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/unfc/development-not-viable>,
+        <http://resource.geosciml.org/classifier/cgi/unfc/development-unclarified> ;
+    skos:notation "03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "non‐commercial projects"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
+
+
+<http://resource.geosciml.org/classifier/cgi/unfc/potentially-commercial-projects> a skos:Concept ;
+    dcterms:provenance "www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6; synonym from CRIRSCO"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    skos:altLabel "mineral resource"@en ;
+    skos:definition "Potentially Commercial Projects are expected to be developed in the foreseeable future, in that the quantities are assessed to have reasonable prospects for eventual economic extraction, but technical and/or commercial feasibility has not yet been confirmed"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/unfc/development-on-hold>,
+        <http://resource.geosciml.org/classifier/cgi/unfc/development-pending> ;
+    skos:notation "02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "mineralischer Rohstoff"@de,
+        "potentially commercial projects"@en,
+        "recurso minero"@es,
+        """mineraalivarannot
+"""@fi,
+        "mineraalivarat"@fi,
+        "ressource minérale"@fr,
+        "sumber daya mineral"@id,
+        "risorse minerarie"@it,
+        "鉱物資源"@ja,
+        "FnFanEr:"@km,
+        "광물자원"@ko,
+        "§ñ®²½¨¾¡º­Á»Èê¾©"@lo,
+        "sumber mineral"@ms,
+        "minerale grondstof"@nl,
+        "poleznye iskopaemye"@ru,
+        "mineraltillgång"@sv,
+        "ทรัพยากรแร่"@th,
+        "tài nguyên khoáng sản"@vi,
+        "mineral resource"@xx,
+        "矿产资源"@zh ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
+
+
+<http://resource.geosciml.org/classifier/cgi/unfc/approved-for-development> a skos:Concept ;
+    dcterms:provenance "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    skos:altLabel "proved and probable (111+112)"@en ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects> ;
+    skos:definition "Approved for Development requires that all approvals/contracts are in place, and capital funds have been committed. Construction and installation of project facilities should be underway or due to start imminently."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
+    skos:notation "01.2"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "approved for development"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/unfc/development-not-viable> a skos:Concept ;
@@ -135,17 +191,6 @@
     skos:prefLabel "development unclarified"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/unfc/exploration-projects> a skos:Concept ;
-    dcterms:provenance "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-    skos:altLabel "exploration results (334)"@en ;
-    skos:definition "Project identiifed that has not advanced enought to categorize further."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-    skos:notation "05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "exploration projects"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
-
-
 <http://resource.geosciml.org/classifier/cgi/unfc/justified-for-development> a skos:Concept ;
     dcterms:provenance "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
@@ -155,18 +200,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
     skos:notation "01.3"^^dt:LocalHierarchyKey ;
     skos:prefLabel "justified for development"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/unfc/non‐commercial-projects> a skos:Concept ;
-    dcterms:provenance "www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-    skos:definition "Non‐Commercial Projects include those that are at an early stage of evaluation in addition to those that are considered unlikely to become commercially feasible developments within the foreseeable future."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/unfc/development-not-viable>,
-        <http://resource.geosciml.org/classifier/cgi/unfc/development-unclarified> ;
-    skos:notation "03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "non‐commercial projects"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
 
 
 <http://resource.geosciml.org/classifier/cgi/unfc/on-production> a skos:Concept ;
@@ -179,16 +212,5 @@
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "on production"@en .
 
-
-<http://resource.geosciml.org/classifier/cgi/unfc/potentially-commercial-projects> a skos:Concept ;
-    dcterms:provenance "www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6; synonym from CRIRSCO"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-    skos:altLabel "mineral resource"@en ;
-    skos:definition "Potentially Commercial Projects are expected to be developed in the foreseeable future, in that the quantities are assessed to have reasonable prospects for eventual economic extraction, but technical and/or commercial feasibility has not yet been confirmed"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/unfc/development-on-hold>,
-        <http://resource.geosciml.org/classifier/cgi/unfc/development-pending> ;
-    skos:notation "02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "potentially commercial projects"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
+<http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

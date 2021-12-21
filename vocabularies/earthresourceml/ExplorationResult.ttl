@@ -72,26 +72,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> .
 
 
-<http://resource.geosciml.org/classifier/cgi/exploration-result/geochemical-anomaly> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area> ;
-    skos:definition "Area where geochemical properties (e.g. single or multiple element concentrations or isotope ratios) differ from surrounding areas and which may be the result of mineralisation."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
-    skos:notation "03.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "geochemical anomaly"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/exploration-result/geophysical-anomaly> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area> ;
-    skos:definition "Area where geophysical properties (e.g. radiometric, magnetic, electromagnetic, gravity) differ from surrounding areas and which may be the result of mineralisation."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
-    skos:notation "03.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "geophysical anomaly"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
@@ -103,17 +83,6 @@
     skos:notation "03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "identification of an anomalous area"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> .
-
-
-<http://resource.geosciml.org/classifier/cgi/exploration-result/key-geological-features> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
-    skos:altLabel "identification of key minerals"@en ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area> ;
-    skos:definition "Identification of particular minerals or geological features which may indicate a possible mineralized area or accompany a mineralizing process"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
-    skos:notation "03.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "key geological features"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/exploration-result/mineral-occurrences> a skos:Concept ;
@@ -185,4 +154,43 @@
     skos:notation "08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "positive feasibility study"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> .
+
+
+<http://resource.geosciml.org/classifier/cgi/exploration-result/geochemical-anomaly> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area> ;
+    skos:definition "Area where geochemical properties (e.g. single or multiple element concentrations or isotope ratios) differ from surrounding areas and which may be the result of mineralisation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
+    skos:notation "03.3"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "geochemical anomaly"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/exploration-result/geophysical-anomaly> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area> ;
+    skos:definition "Area where geophysical properties (e.g. radiometric, magnetic, electromagnetic, gravity) differ from surrounding areas and which may be the result of mineralisation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
+    skos:notation "03.2"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "geophysikalische Anomalie"@de,
+        "geophysical anomaly"@en,
+        "anomali!a geofi!sica"@es,
+        "geofysikaalinen anomalia"@fi,
+        "anomalia geofisica"@it,
+        "anomaliya geofizicheskaya"@ru,
+        "geofysisk anomali"@sv .
+
+
+<http://resource.geosciml.org/classifier/cgi/exploration-result/key-geological-features> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
+    skos:altLabel "identification of key minerals"@en ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area> ;
+    skos:definition "Identification of particular minerals or geological features which may indicate a possible mineralized area or accompany a mineralizing process"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ;
+    skos:notation "03.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "key geological features"@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

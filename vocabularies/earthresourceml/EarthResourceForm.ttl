@@ -73,10 +73,29 @@
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/discordant> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    skos:altLabel "×"@ja,
+        "부조화적"@ko,
+        "不谐合"@zh ;
     skos:definition "A mineral deposit which crosscuts stratigraphic contacts or internal structures (eg, bedding, foliation) within its host rocks (eg, vein, reef, mass, lens, pipe, column, etc.)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "discordant"@en ;
+    skos:prefLabel "diskordant"@de,
+        "discordant"@en,
+        "discordante"@es,
+        "epa\"jatkuva"@fi,
+        "discordant"@fr,
+        "timpang"@id,
+        "discordante"@it,
+        "非調和的"@ja,
+        "EdlminRsbKña"@km,
+        "부정합적"@ko,
+        "Á§¡§Éº­®Ò»È¸´Á­¸"@lo,
+        "tak selanjar"@ms,
+        "nesoglasnyj"@ru,
+        "diskordant"@sv,
+        "ไม่ร่วมแนว"@th,
+        "không phù hợp"@vi,
+        "不一致"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> .
 
 
@@ -112,27 +131,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratabound> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-form/concordant> ;
-    skos:definition "A body of mineralisation confined to a single stratigraphic unit. A stratabound deposit may contain discordant internal structures (eg, brecciation)"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratiform> ;
-    skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "stratabound"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratiform> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratabound> ;
-    skos:definition "A type of stratabound mineral deposit that is strictly coextensive with one or more sedimentary, metamorphic or igneous layers"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
-    skos:notation "01.1.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "stratiform"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/structurally-transposed> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
@@ -164,4 +162,61 @@
     skos:note "Mineralization is concordant to the unconformity, and thus concordant to whatever is above the unconformity, but if the unconformity is an angular unconformity, the resource body will be discordant to bedding below the unconformity"@en ;
     skos:prefLabel "unconformity-related"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> .
+
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratabound> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    skos:altLabel "mendapan strata bebat"@ms ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-form/concordant> ;
+    skos:definition "A body of mineralisation confined to a single stratigraphic unit. A stratabound deposit may contain discordant internal structures (eg, brecciation)"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratiform> ;
+    skos:notation "01.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "schichtgebundene Lagerstaette"@de,
+        "stratabound"@en,
+        "yacimiento estratoide"@es,
+        "kerrossidonnaiset esiintyma\"t"@fi,
+        "gîte stratoïde"@fr,
+        "endapan min dibatasi oleh unit stratigrafi"@id,
+        "giacimento stratoide"@it,
+        "層準規制鉱床"@ja,
+        "CRmkEr:mansNæanCaRsTab;²"@km,
+        "층경계상 광상"@ko,
+        "Á¹Èì¤Á»ÈÁ®®¦½ªë¾ª¾®¾¸"@lo,
+        "longgokan strata bebat"@ms,
+        "mestorozhdenie stratifitsirovannoe"@ru,
+        "stratabunden fyndighet"@sv,
+        "แหล่งแร่แบบสแทรทาบาวด์"@th,
+        "tụ khoáng phân tầng"@vi,
+        "层控矿床"@zh .
+
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratiform> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    skos:altLabel "mendapan stratifom"@ms ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratabound> ;
+    skos:definition "A type of stratabound mineral deposit that is strictly coextensive with one or more sedimentary, metamorphic or igneous layers"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
+    skos:notation "01.1.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "stratiformer Erzkoerper"@de,
+        "stratiform"@en,
+        "yacimiento estratiforme"@es,
+        "kerrosmyo\"ta\"iset esiintyma\"t"@fi,
+        "gîte stratiforme"@fr,
+        "lapisan endapan mineral"@id,
+        "giacimento stratiforme"@it,
+        "層状鉱床"@ja,
+        "CRmkEr:RsTab;"@km,
+        "층상광상"@ko,
+        "Á¹Èì¤Á»È´ó»ø®»È¾¤À¯ñ­§˜­"@lo,
+        "longgokan stratifom"@ms,
+        "mestorozhdenie stratiformnoe"@ru,
+        "stratiform fyndighet"@sv,
+        "แหล่งแร่แบบสแทรทิฟอร์ม"@th,
+        "tụ khoáng dạng tầng"@vi,
+        "层状矿床"@zh .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

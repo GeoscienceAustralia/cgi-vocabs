@@ -68,24 +68,6 @@
     skos:prefLabel "Alteration Type - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
-    skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
-    skos:prefLabel "advanced argillic alteration"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
-    skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
-    skos:prefLabel "albitic alteration"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
@@ -116,6 +98,24 @@
         <http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration> ;
     skos:prefLabel "alteration type not specified"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> .
+
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
+    skos:definition "missing"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:prefLabel "advanced argillic alteration"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
+    skos:definition "missing"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:prefLabel "albitic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration> a skos:Concept ;
@@ -187,7 +187,23 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
-    skos:prefLabel "greisen"@en .
+    skos:prefLabel "Greisen"@de,
+        "greisen"@en,
+        "greisen"@es,
+        "greisen"@fi,
+        "greisen"@fr,
+        "greisen"@id,
+        "greisen"@it,
+        "グライゼン"@ja,
+        "RbePTsilaRkanIt"@km,
+        "영운암"@ko,
+        "¡ë¾¨À§­"@lo,
+        "greisen"@ms,
+        "grejzen"@ru,
+        "greisen"@sv,
+        "ไกรเซน"@th,
+        "greisen"@vi,
+        "云英岩"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/hematitic_alteration> a skos:Concept ;
@@ -278,7 +294,17 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
-    skos:prefLabel "serpentinisation"@en .
+    skos:prefLabel "serpentinisation"@en,
+        "serpentinisation"@fr,
+        "serpentinisasi"@id,
+        "蛇紋岩化作用"@ja,
+        "Esb:g;TItkmµ"@km,
+        "사문석화작용"@ko,
+        "¡¾­À¡ó©Á»ÈÁ§¡¯ñ¤êòÄ­ª"@lo,
+        "penserpentinitan"@ms,
+        "การเกิดเซอร์เพนทีน"@th,
+        "serpentin hoá"@vi,
+        "蛇纹石化作用"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/silicification> a skos:Concept ;
@@ -287,16 +313,44 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
-    skos:prefLabel "silicification"@en .
+    skos:prefLabel "Verkieselung"@de,
+        "silicification"@en,
+        "silicificacio!n"@es,
+        "silisifikaatio"@fi,
+        "silicification"@fr,
+        "penyilikaan"@id,
+        "silicizzazione"@it,
+        "珪化作用"@ja,
+        "suIlIkatkmµ"@km,
+        "규화작용"@ko,
+        "¡¾­Áê­ê†©É¸¨Á»È§óìò¡¾"@lo,
+        "pengersikan"@ms,
+        "silitsifikatsiya"@ru,
+        "förkisling"@sv,
+        "การเกิดการแทนที่โดยซิลิกา"@th,
+        "silic hoá"@vi,
+        "硅化(作用)"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:altLabel "peruralitan"@id,
+        "次闪石化"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
-    skos:prefLabel "uralitisation"@en .
+    skos:prefLabel "uralitisation"@en,
+        "ouralitisation"@fr,
+        "uralitisasi"@id,
+        "ウラライト化作用"@ja,
+        "karpøas;bþúÚrxniCEr:Bir:ukEs‘n"@km,
+        "우랄라이트화작용"@ko,
+        "¡¾­ê†Á»ú¯óëö¡§ó­¡¾¨À¯ñ­Á»úÁº´³óÂ®­"@lo,
+        "penguralitan"@ms,
+        "การเปลี่ยนจากไพรอกซีนเป็นฮอร์นเบลนด์"@th,
+        "uralit hoá"@vi,
+        "纤闪石化"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration> a skos:Concept ;
@@ -306,4 +360,6 @@
     skos:definition "missing"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
     skos:prefLabel "zeolitic alteration"@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

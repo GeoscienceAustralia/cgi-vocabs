@@ -126,22 +126,87 @@
     skos:prefLabel "Event Process - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:definition "process that effects the geologic record"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/eventprocess/bolide_impact>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/deep_water_oxygen_depletion>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/diagenetic_process>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/extinction>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/geomagnetic_process>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_process>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/sea_level_change>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/speciation>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process>,
+        <http://resource.geosciml.org/classifier/cgi/eventprocess/weathering> ;
+    skos:prefLabel "geologic process"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> .
+
+
 <http://resource.geosciml.org/classifier/cgi/eventprocess/accretion> a skos:Concept ;
     dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "akresi"@id,
+        "pembumbunan"@id,
+        "×"@ja,
+        "결착"@ko,
+        "pertumbuhan"@ms,
+        "堆积"@zh,
+        "增生"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> ;
     skos:definition "The addition of material to a continent. Typically involves convergent or transform motion."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "accretion"@en .
+    skos:prefLabel "Anlagerung"@de,
+        "accretion"@en,
+        "acrecio!n"@es,
+        "kasvaminen"@fi,
+        "accrétion"@fr,
+        "akrasi"@id,
+        "accrescimento"@it,
+        "付加"@ja,
+        "karvivtþn_énl,ayelah³Fatu"@km,
+        "부착성장"@ko,
+        " ¡¾­--²ø­¢›­"@lo,
+        "tokokan"@ms,
+        "akkretsiya"@ru,
+        "ackretion"@sv,
+        "การงอกพอกพูน"@th,
+        "bồi kết"@vi,
+        "加积"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/alteration> a skos:Concept ;
     dcterms:provenance "Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "pengubahan"@id,
+        "交代作用"@ja,
+        "การแปรเปลี่ยน"@th ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process> ;
     skos:definition "General term for any change in the mineralogical or chemical composition of a rock. Typically related to interaction with hydrous fluids."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "alteration"@en .
+    skos:prefLabel "Umwandlung"@de,
+        "alteration"@en,
+        "alteracio!n"@es,
+        "muuttuminen"@fi,
+        "altération"@fr,
+        "alterasi"@id,
+        "alterazione"@it,
+        "変質作用"@ja,
+        "karpøas;bþÚr karEkERb"@km,
+        "변질작용"@ko,
+        " ¡¾­-¯È¼­-¦½-²¾®"@lo,
+        "perubahan"@ms,
+        "izmenenie"@ru,
+        "omvandling"@sv,
+        "การเปลี่ยนสภาพ"@th,
+        "biến đổi"@vi,
+        "蚀变(作用)"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/biological_precipitation> a skos:Concept ;
@@ -180,7 +245,13 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process> ;
     skos:definition "The deposition of mineral matter by precipitation from solution or as a result of chemical reactions. May be sedimentary or hydrothermal."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "chemical precipitation"@en .
+    skos:prefLabel "Faellung"@de,
+        "chemical precipitation"@en,
+        "precipitacio!n"@es,
+        "saostuminen"@fi,
+        "precipitazione chimica"@it,
+        "osazhdenie khimicheskoe"@ru,
+        "kemisk utfällning"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_weathering> a skos:Concept ;
@@ -193,7 +264,23 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/hydration>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/hydrolysis>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/oxidation> ;
-    skos:prefLabel "chemical weathering"@en .
+    skos:prefLabel "chemische Verwitterung"@de,
+        "chemical weathering"@en,
+        "alteracio!n qui!mica"@es,
+        "kemiallinen rapautuminen"@fi,
+        "altération chimique"@fr,
+        "pelapukan kimia"@id,
+        "alterazione chimica"@it,
+        "化学的風化作用"@ja,
+        "kareFVIeGayswkedayKImI"@km,
+        "화학적 풍화"@ko,
+        " ¡¾­-°÷-²ñ¤-ê¾¤-À£-´ó"@lo,
+        "luluhawa kimia"@ms,
+        "vyvetrivanie khimicheskoe"@ru,
+        "kemisk vittring"@sv,
+        "การผุพังทางเคมี"@th,
+        "phong hoá hoá học"@vi,
+        "化学风化"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/cometary_impact> a skos:Concept ;
@@ -208,10 +295,27 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/contact_metamorphism> a skos:Concept ;
     dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "malihan sentuh"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process> ;
     skos:definition "Metamorphism taking place in rocks at or near their contact with a genetically related body of igneous rock"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "contact metamorphism"@en .
+    skos:prefLabel "Kontaktmetamorphose"@de,
+        "contact metamorphism"@en,
+        "metamorfismo contacto"@es,
+        "kontaktimetamorfoosi"@fi,
+        "métamorphisme contact"@fr,
+        "pemalihan sentuh"@id,
+        "metamorfismo di contatto"@it,
+        "接触変成作用"@ja,
+        "kugtak;silaERbrUb"@km,
+        "접촉변성작용"@ko,
+        "¡¾­Á¯È¦½²¾®À¢©¦¿²ñ©"@lo,
+        "metamorfisme sentuh"@ms,
+        "metamorfizm kontaktovyj"@ru,
+        "kontaktmetamorfos"@sv,
+        "การแปรสภาพสัมผัส"@th,
+        "biến chất tiếp xúc"@vi,
+        "接触变质[作用]"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/continental_breakup> a skos:Concept ;
@@ -239,7 +343,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/mechanical_deposition> ;
     skos:definition "Laminar high-concentration, generally cohesionless deposition process. Flow types included liquefied flow, fluidized flow, grain flow, traction carpet or modified grain flow."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "debris flow deposition"@en .
+    skos:prefLabel "Schuttstrom"@de,
+        "debris flow deposition"@en,
+        "colada cla!stica"@es,
+        "murevirrat"@fi,
+        "colata di detrito"@it,
+        "sel'"@ru,
+        "debris flow"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/deep_water_oxygen_depletion> a skos:Concept ;
@@ -254,6 +364,11 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "pencenanggaan"@id,
+        "periukan"@id,
+        "変形作用"@ja,
+        "การเปลี่ยนลักษณะ"@th,
+        "畸变"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "Movement of rock bodies by displacement on fault or shear zones, or change in shape of a body of Earth material."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
@@ -262,7 +377,23 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/folding>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/fracturing>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/shearing> ;
-    skos:prefLabel "deformation"@en .
+    skos:prefLabel "Deformation"@de,
+        "deformation"@en,
+        "deformacio!n"@es,
+        "deformaatio"@fi,
+        "déformation"@fr,
+        "deformasi"@id,
+        "deformazione"@it,
+        "変形"@ja,
+        "kMhUcRTg;RTay"@km,
+        "변형"@ko,
+        "¡¾­¯È¼­ìñ¡¦½§½"@lo,
+        "canggaan"@ms,
+        "deformatsiya"@ru,
+        "deformation"@sv,
+        "การเปลี่ยนรูป"@th,
+        "biến dạng (đá)"@vi,
+        "变形"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation_twinning> a skos:Concept ;
@@ -277,6 +408,9 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/deposition> a skos:Concept ;
     dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "堆積"@ja,
+        "沈積"@ja,
+        "afzetting"@sv ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process> ;
     skos:definition "Accumulation of material, the constructive process of accumulation of sedimentary particles, chemical precipitation of mineral matter from solution, or the accumulation of organic material on the death of plants and animals."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
@@ -284,7 +418,23 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_precipitation>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/mechanical_deposition>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/organic_accumulation> ;
-    skos:prefLabel "deposition"@en .
+    skos:prefLabel "Ablagerung"@de,
+        "deposition"@en,
+        "depo!sito"@es,
+        "kerrostuminen"@fi,
+        "dépôt"@fr,
+        "proses mengendap"@id,
+        "deposito"@it,
+        "沈積作用"@ja,
+        "karTMlak;/cMNakBMnUk"@km,
+        "퇴적작용"@ko,
+        "¡¾­«ñ®«ö´"@lo,
+        "pelonggokan"@ms,
+        "otlozhenie"@ru,
+        "avsättning"@sv,
+        "การสะสมตัว"@th,
+        "lắng đọng"@vi,
+        "沉积[作用]"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/diagenetic_process> a skos:Concept ;
@@ -320,7 +470,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_weathering> ;
     skos:definition "The process of dissolving into a homogenous solution, as when an acidic solution dissolves limestone. In karst, refers to the process of dissolving rock to produce landforms, in contrast to solution, the chemical product of dissolution."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "dissolution"@en .
+    skos:prefLabel "Aufloesung"@de,
+        "dissolution"@en,
+        "disolucio!n"@es,
+        "liukeneminen"@fi,
+        "dissoluzione"@it,
+        "rastvorenie"@ru,
+        "upplösning"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/dissolution_creep> a skos:Concept ;
@@ -356,6 +512,11 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/erosion> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "kikisan"@id,
+        "pengikisan"@id,
+        "浸食"@ja,
+        "冲刷"@zh,
+        "冲蚀"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process> ;
     skos:definition "The process of disaggregation of rock and displacement of the resultant particles (sediment) usually by the agents of currents such as, wind, water, or ice by downward or down-slope movement in response to gravity or by living organisms (in the case of bioerosion)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
@@ -363,12 +524,31 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/mass_wasting>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/water_erosion>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/wind_erosion> ;
-    skos:prefLabel "erosion"@en .
+    skos:prefLabel "Erosion"@de,
+        "erosion"@en,
+        "erosio!n"@es,
+        "eroosio"@fi,
+        "érosion"@fr,
+        "erosi"@id,
+        "erosione"@it,
+        "浸食作用"@ja,
+        "sMNwk"@km,
+        "침식"@ko,
+        "¡¾­À§¾½À¥ˆº­"@lo,
+        "hakisan"@ms,
+        "ehroziya"@ru,
+        "erosion"@sv,
+        "การกร่อน"@th,
+        "xói mòn"@vi,
+        "侵蚀"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/eruption> a skos:Concept ;
     dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "letusan"@id,
+        "분화"@ko,
+        "爆发"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_process> ;
     skos:definition "The ejection of volcanic materials (lava, pyroclasts, and volcanic gases) onto the Earth's surface, either from a central vent or from a fissure or group of fissures"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
@@ -376,34 +556,110 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/hawaiian_eruption>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/pyroclastic_eruption>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/strombolian_eruption> ;
-    skos:prefLabel "eruption"@en .
+    skos:prefLabel "Eruption"@de,
+        "eruption"@en,
+        "erupcio!n"@es,
+        "purkaukset"@fi,
+        "éruption"@fr,
+        "erupsi"@id,
+        "eruzione"@it,
+        "噴火"@ja,
+        "karpÞúHecjénkMEGPñMePøIg"@km,
+        "폭발"@ko,
+        "¡¾­ì½À®ó©²øÄ³"@lo,
+        "letusan"@ms,
+        "izverzhenie"@ru,
+        "eruption"@sv,
+        "การประทุ"@th,
+        "phun trào"@vi,
+        "喷发"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/excavation> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "洗掘"@ja,
+        "开挖"@zh,
+        "掏蚀"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity> ;
     skos:definition "The removal of material, as in a mining operation"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "excavation"@en .
+    skos:prefLabel "Ausschachtung"@de,
+        "excavation"@en,
+        "excavacio!n"@es,
+        "excavación"@es,
+        "kaivannot"@fi,
+        "excavation"@fr,
+        "penggalian"@id,
+        "scavo"@it,
+        "scavo "@it,
+        "発掘"@ja,
+        "karCIkdI"@km,
+        "굴착"@ko,
+        "¡¾­¢÷©"@lo,
+        "penggalian"@ms,
+        "ontgraving"@nl,
+        "vyemka grunta"@ru,
+        "schaktning"@sv,
+        "การขุดเอาแร่ออกมา"@th,
+        "công trình khai đào"@vi,
+        "excavation"@xx,
+        "挖掘"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/extinction> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "pemunahan"@id,
+        "소광"@ko,
+        "消亡"@zh,
+        "灭绝"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "Process of disappearance of a species or higher taxon, so that it no longer exists anywhere or in the subsequent fossil record."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "extinction"@en .
+    skos:prefLabel "Aussterben"@de,
+        "extinction"@en,
+        "extincio!n"@es,
+        "sukupuuttoon kuoleminen"@fi,
+        "extinction"@fr,
+        "pemadaman"@id,
+        "estinzione"@it,
+        "絶滅"@ja,
+        "kavinas"@km,
+        "절멸"@ko,
+        "¡¾­¦ø­²ñ­"@lo,
+        "kepupusan"@ms,
+        "vymiranie"@ru,
+        "utdöende"@sv,
+        "สูญพันธุ์"@th,
+        "tuyệt chủng"@vi,
+        "消失"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/faulting> a skos:Concept ;
     dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "断裂运动"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation> ;
     skos:definition "The process of fracturing, frictional slip, and displacement accumulation that produces a fault"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "faulting"@en .
+    skos:prefLabel "Bruchtektonik"@de,
+        "faulting"@en,
+        "tecto!nica fractura"@es,
+        "siirros"@fi,
+        "tectonique fracturation"@fr,
+        "pensesaran"@id,
+        "fagliamento"@it,
+        "断層運動"@ja,
+        "énsañmeRbH"@km,
+        "단층작용"@ko,
+        "¡¾­Àìˆº­"@lo,
+        "sesaran"@ms,
+        "dvizhenie diz'yunktivnoe"@ru,
+        "förkastningstektonik"@sv,
+        "การเกิดรอยเลื่อน"@th,
+        "tạo đứt gãy"@vi,
+        "断层作用"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/folding> a skos:Concept ;
@@ -418,11 +674,32 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/fracturing> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "pematahan"@id,
+        "peretakan"@id,
+        "断裂作用"@ja,
+        "断裂"@zh,
+        "水力破碎"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation> ;
     skos:definition "The formation of a surface of failure resulting from stress"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/eventprocess/microfracturing> ;
-    skos:prefLabel "fracturing"@en .
+    skos:prefLabel "Bruchbildung"@de,
+        "fracturing"@en,
+        "fracturacio!n"@es,
+        "murtuminen"@fi,
+        "fracturation"@fr,
+        "pemecahan"@id,
+        "fratturazione"@it,
+        "破砕作用"@ja,
+        "bMNak;edayGMeBIGVImYy"@km,
+        "단열작용"@ko,
+        "¡¾­Áª¡¨½"@lo,
+        "meretak"@ms,
+        "treshchinovatost'"@ru,
+        "uppsprickning"@sv,
+        "การเกิดรอยแตก"@th,
+        "tạo nứt vỡ"@vi,
+        "破裂"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/frost_shattering> a skos:Concept ;
@@ -432,29 +709,6 @@
     skos:definition "Propagation of fractures due to expansion of freezing water in intergranular spaces and fractures in a rock body. Result is mechanical disintegration spliitting, or breakup of rock."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "frost shattering"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:definition "process that effects the geologic record"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/eventprocess/bolide_impact>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/deep_water_oxygen_depletion>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/diagenetic_process>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/extinction>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/geomagnetic_process>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_process>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/sea_level_change>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/speciation>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process>,
-        <http://resource.geosciml.org/classifier/cgi/eventprocess/weathering> ;
-    skos:prefLabel "geologic process"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/geomagnetic_process> a skos:Concept ;
@@ -498,22 +752,57 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "kegiatan manusia"@ms ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "Processes of human modification of the earth to produce geologic features"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/eventprocess/excavation>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/grading>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/material_transport_and_deposition> ;
-    skos:prefLabel "human activity"@en .
+    skos:prefLabel "anthropogen"@de,
+        "human activity"@en,
+        "accio!n hombre"@es,
+        "ihmisen toiminta"@fi,
+        "action homme"@fr,
+        "kegiatan manusia"@id,
+        "attivita# antropica"@it,
+        "人間活動"@ja,
+        "skmµPaBmnusSelak"@km,
+        "인류활동"@ko,
+        "¡¾­¡½ê¿¢º¤´½­÷©"@lo,
+        "aktiviti manusia"@ms,
+        "zhiznedeyatel'nost' cheloveka"@ru,
+        "männsklig aktivitet"@sv,
+        "กิจกรรมของมนุษย์"@th,
+        "hoạt động nhân sinh"@vi,
+        "人类活动"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/hydration> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "การเติมน้ำ"@th,
+        "水化[作用]"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_weathering> ;
     skos:definition "The process of absorption of water into the crystal structure of a mineral, thereby changing its volume and fracturing and loosening grains"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "hydration"@en .
+    skos:prefLabel "Hydratisierung"@de,
+        "hydration"@en,
+        "hidratacio!n"@es,
+        "hydrataatio"@fi,
+        "hydratation"@fr,
+        "hidrasi"@id,
+        "idratazione"@it,
+        "水和"@ja,
+        "karpSMnwgTwk"@km,
+        "수화작용"@ko,
+        "Ä»À©ë§ñ­"@lo,
+        "penghidratan"@ms,
+        "gidratatsiya"@ru,
+        "hydratisering"@sv,
+        "ไฮเดรชั่น"@th,
+        "hydrat hoá"@vi,
+        "水合[作用]"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/hydrolysis> a skos:Concept ;
@@ -537,10 +826,29 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/intrusion> a skos:Concept ;
     dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "terobosan"@id,
+        "貫入岩"@ja,
+        "intrusi"@ms ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_process> ;
     skos:definition "The process of emplacement of magma in pre-existing rock"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "intrusion"@en .
+    skos:prefLabel "Intrusionskoerper"@de,
+        "intrusion"@en,
+        "intrusio!n"@es,
+        "intruusiot"@fi,
+        "intrusion"@fr,
+        "penerobosan"@id,
+        "intrusione"@it,
+        "貫入"@ja,
+        "xagkñúgRsTab;EpndI¬eRCotcUl¦"@km,
+        "관입"@ko,
+        "¡¾­-Á§¡-§Éº­"@lo,
+        "perejahan"@ms,
+        "intruziya"@ru,
+        "intrusion"@sv,
+        "การแทรกซอน"@th,
+        "xâm nhập"@vi,
+        "侵入作用"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation> a skos:Concept ;
@@ -562,7 +870,23 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/intrusion>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/melting> ;
-    skos:prefLabel "magmatic process"@en .
+    skos:prefLabel "magmatisch"@de,
+        "magmatic process"@en,
+        "magma!tico"@es,
+        "magmaattinen"@fi,
+        "magmatique"@fr,
+        "kemagmaan"@id,
+        "magmatico"@it,
+        "マグマの"@ja,
+        "karekItBIma:kma:"@km,
+        "마그마의"@ko,
+        "¡ú¼¸¡ñ®¹ó­Á´ñ¡´¾"@lo,
+        "bermagma"@ms,
+        "magmaticheskij"@ru,
+        "magmatisk"@sv,
+        "เกี่ยวกับหินหนืด"@th,
+        "magma (tt)"@vi,
+        "岩浆的"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/magnetic_field_reversal> a skos:Concept ;
@@ -617,11 +941,30 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/melting> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "mencair"@id,
+        "용융"@ko,
+        "熔融的"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_process> ;
     skos:definition "change of state from a solid to a liquid"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/eventprocess/partial_melting> ;
-    skos:prefLabel "melting"@en .
+    skos:prefLabel "Aufschmelzung"@de,
+        "melting"@en,
+        "fusio!n"@es,
+        "sulaminen"@fi,
+        "fusion"@fr,
+        "meleleh"@id,
+        "fusione"@it,
+        "溶融"@ja,
+        "karrlay/karrMlay"@km,
+        "녹음"@ko,
+        "¡¾­Íº´ÁÍ¸"@lo,
+        "lebur"@ms,
+        "plavlenie"@ru,
+        "smältning"@sv,
+        "การหลอมเหลว"@th,
+        "nóng chảy"@vi,
+        "熔化的"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process> a skos:Concept ;
@@ -658,10 +1001,28 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/obduction> a skos:Concept ;
     dcterms:provenance "Neuendorf et al., 2005, http://en.wikipedia.org/wiki/Obduction, Coleman, R. G., 1971, Plate tectonic emplacement of upper mantle peridotites along continental edge: J.Geophys. Res., v75, p1212-1222."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "pencuatan"@id,
+        "仰冲作用"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> ;
     skos:definition "The overthrusting of continental crust by oceanic crust or mantle rocks at a convergent plate boundary."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "obduction"@en .
+    skos:prefLabel "Obduktion"@de,
+        "obduction"@en,
+        "obduccio!n"@es,
+        "obduktio"@fi,
+        "obduction"@fr,
+        "obdaksi"@id,
+        "obduzione"@it,
+        "オブダクション"@ja,
+        "GUbdak;süúg"@km,
+        "압등"@ko,
+        "¡¾­Â£´¢º¤À¯õº¡Âì¡"@lo,
+        "obduksi"@ms,
+        "obduktsiya"@ru,
+        "obduktion"@sv,
+        "การเกย"@th,
+        "hút trồi"@vi,
+        "逆冲作用"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/organic_accumulation> a skos:Concept ;
@@ -688,7 +1049,23 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_weathering> ;
     skos:definition "Chemical reaction that involve stripping of electrons from cations. Typicall reactions include converting sulfide minerals to oxide minerals, or increasing the oxidation state of cations in existing oxide minerals. The most commonly observed is the oxidation of Fe"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "oxidation"@en .
+    skos:prefLabel "Oxidation"@de,
+        "oxidation"@en,
+        "oxidacio!n"@es,
+        "hapettuminen"@fi,
+        "oxydation"@fr,
+        "oksidasi"@id,
+        "ossidazione"@it,
+        "酸化"@ja,
+        "GuksIudkmµ"@km,
+        "산화"@ko,
+        "¡¾­À¢í¾ÎÉ¼¤"@lo,
+        "pengoksidan"@ms,
+        "okislenie"@ru,
+        "oxidation"@sv,
+        "ออกซิเดชัน"@th,
+        "oxy hoá"@vi,
+        "氧化"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/partial_melting> a skos:Concept ;
@@ -697,12 +1074,30 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/melting> ;
     skos:definition "Process of melting involving only some of the mineral phases in a rock, to produce a mixture of melt and residual particles."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "partial melting"@en .
+    skos:prefLabel "partielle Aufschmelzung"@de,
+        "partial melting"@en,
+        "fusio!n parcial"@es,
+        "osittainen sulaminen"@fi,
+        "fusion partielle"@fr,
+        "pelelehan sebagian"@id,
+        "fusione parziale"@it,
+        "部分溶融"@ja,
+        "karrlayedayEpñk"@km,
+        "부분용융"@ko,
+        "¡¾­Íº´ÁÍ¸®¾¤¦È¸­"@lo,
+        "pencairan separa"@ms,
+        "plavlenie chastichnoe"@ru,
+        "partiell smältning"@sv,
+        "การหลอมเหลวบางส่วน"@th,
+        "nóng chảy từng phần"@vi,
+        "部分熔融"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/physical_weathering> a skos:Concept ;
     dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "¡¾­²÷²ñ¤ê¾¤³ó§ò¡"@lo,
+        "机械风化"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/weathering> ;
     skos:definition "The process of weathering by which frost action, salt-crystal growth, absorption of water, and other physical processes break down a rock to fragments, involving no chemical change"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
@@ -710,7 +1105,23 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/haloclasty>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/pressure_release_weathering>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/thermal_shock_weathering> ;
-    skos:prefLabel "physical weathering"@en .
+    skos:prefLabel "physikalische Verwitterung"@de,
+        "physical weathering"@en,
+        "alteracio!n fi!sica"@es,
+        "fysikaalinen rapautuminen"@fi,
+        "altération physique"@fr,
+        "pelapukan fisik"@id,
+        "alterazione fisica"@it,
+        "物理的風化作用"@ja,
+        "FatuGakasCarUbvnþ"@km,
+        "물리적 풍화"@ko,
+        "¡¾­²÷²ñ¤ê¾¤¡¾¨½²¾®"@lo,
+        "luluhawa fizikal"@ms,
+        "vyvetrivanie fizicheskoe"@ru,
+        "fysikalisk vittring"@sv,
+        "การผุพังอยู่กับที่โดยกายภาพ"@th,
+        "phong hoá lí học"@vi,
+        "物理风化"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/plinian_eruption> a skos:Concept ;
@@ -725,10 +1136,27 @@
 <http://resource.geosciml.org/classifier/cgi/eventprocess/polar_wander> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "地极迁移"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geomagnetic_process> ;
     skos:definition "Process of migration of the axis of the earth's dipole field relative to the rotation axis of the Earth."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "polar wander"@en .
+    skos:prefLabel "Polwanderung"@de,
+        "polar wander"@en,
+        "deriva polo"@es,
+        "napavaellus"@fi,
+        "dérive pôle"@fr,
+        "perpindahan kutub"@id,
+        "deriva del polo"@it,
+        "極移動"@ja,
+        "karbt;cuHbt;eLIgenAtMbn;b:Ul"@km,
+        "극이동"@ko,
+        "¡¾­¯È¼­Á¯¤¢º¤¢˜¸­Á´ÈÀÍñ¡Âì¡"@lo,
+        "pengembaraan kutub"@ms,
+        "peremeshchenie polyusa"@ru,
+        "polvandring"@sv,
+        "การเปลี่ยนตำแหน่งขั้วโลก"@th,
+        "dịch chuyển cực"@vi,
+        "极移"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/pressure_release_weathering> a skos:Concept ;
@@ -833,16 +1261,42 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/eruption> ;
     skos:definition "Eruption characterized by jetting of clots or \\fountains\\ of fluid, basaltic lava from a central crater"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "strombolian eruption"@en .
+    skos:prefLabel "Stromboli-Eruptionstyp"@de,
+        "strombolian eruption"@en,
+        "estromboliano"@es,
+        "strombolityyppiset purkaukset"@fi,
+        "eruzione stromboliana"@it,
+        "izverzhenie strombolianskogo tipa"@ru,
+        "stromboliska eruptionstypen"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/subduction> a skos:Concept ;
     dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "penunjaman"@id,
+        "サブダクション"@ja,
+        "junaman"@ms,
+        "消失作用"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> ;
     skos:definition "The process of one lithospheric plate descending beneath another"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "subduction"@en .
+    skos:prefLabel "Subduktion"@de,
+        "subduction"@en,
+        "subduccio!n"@es,
+        "subduktio"@fi,
+        "subduction"@fr,
+        "subdaksi"@id,
+        "subduzione"@it,
+        "沈み込み"@ja,
+        "sab;dak;siun"@km,
+        "섭입"@ko,
+        "¡¾­´÷©ªö¸¢º¤À¯õº¡Âì¡"@lo,
+        "subduksi"@ms,
+        "subduktsiya"@ru,
+        "subduktion"@sv,
+        "การมุดตัวของเปลือกโลก"@th,
+        "hút chìm"@vi,
+        "消减作用"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> a skos:Concept ;
@@ -904,35 +1358,95 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/pyroclastic_eruption> ;
     skos:definition "Eruption characterized by the explosive ejection of fragments of new lava, commonly incandescent when they leave the vent but either solid or too viscous to assume any appreciable degree of rounding during their flight through the air. With these there are often breadcrust bombs or blocks, and generally large proportions of ash"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "vulcanian eruption"@en .
+    skos:prefLabel "Vesuv-Eruptionstyp"@de,
+        "vulcanian eruption"@en,
+        "vulcaniano"@es,
+        "vesuviustyyppiset purkaukset"@fi,
+        "eruzione vulcaniana"@it,
+        "izverzhenie vulkanskogo tipa"@ru,
+        "eruption av vulcanotyp"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/water_erosion> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "pengikisan air"@id,
+        "水蚀作用"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/erosion> ;
     skos:definition "Erosion by clast impact or plucking by moving liquid water"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "water erosion"@en .
+    skos:prefLabel "Wassererosion"@de,
+        "water erosion"@en,
+        "erosio!n agua"@es,
+        "vesieroosio"@fi,
+        "érosion eau"@fr,
+        "erosi air"@id,
+        "erosione idrica"@it,
+        "水食"@ja,
+        "sMNwkénTwk"@km,
+        "수침식"@ko,
+        "¡¾­¡ñ©À§¾½¢º¤­Õ"@lo,
+        "hakisan air"@ms,
+        "ehroziya vodnaya"@ru,
+        "vattenerosion"@sv,
+        "การกัดกร่อนโดยน้ำ"@th,
+        "xói mòn do nước"@vi,
+        "流水侵蚀"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/weathering> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "風化作用"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "The process or group of processes by which earth materials exposed to atmospheric agents at or near the Earth's surface are changed in color, texture, composition, firmness, or form, with little or no transport of the loosened or altered material. Processes typically include oxidationhydration, and leaching of soluble constituents."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/eventprocess/biological_weathering>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_weathering>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/physical_weathering> ;
-    skos:prefLabel "weathering"@en .
+    skos:prefLabel "Verwitterung"@de,
+        "weathering"@en,
+        "alteracio!n meteo!rica"@es,
+        "rapautuminen"@fi,
+        "altération météorique"@fr,
+        "pelapukan"@id,
+        "alterazione meteorica"@it,
+        "風化"@ja,
+        ")atuPUtGakasFatu"@km,
+        "풍화"@ko,
+        "¡¾­°÷²ñ¤"@lo,
+        "luluhawa"@ms,
+        "vyvetrivanie"@ru,
+        "vittring"@sv,
+        "การผุพังอยู่กับที่"@th,
+        "phong hoá"@vi,
+        "风化作用"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/wind_erosion> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
+    skos:altLabel "pengikisan angin"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/erosion> ;
     skos:definition "Erosion by clast impact or plucking by moving air (wind)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
-    skos:prefLabel "wind erosion"@en .
+    skos:prefLabel "Winderosion"@de,
+        "wind erosion"@en,
+        "erosio!n eo!lica"@es,
+        "tuulieroosio"@fi,
+        "érosion éolienne"@fr,
+        "erosi angin"@id,
+        "erosione eolica"@it,
+        "風食"@ja,
+        "sMNwkedaysarxül;"@km,
+        "풍식"@ko,
+        "¡¾­¡ñ©À§¾½¥¾¡ìö´"@lo,
+        "hakisan angin"@ms,
+        "ehroziya vetrovaya"@ru,
+        "vinderosion"@sv,
+        "การกัดเซาะโดยลม"@th,
+        "xói mòn do gió"@vi,
+        "风蚀"@zh .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

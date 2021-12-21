@@ -61,17 +61,6 @@
     skos:prefLabel "Consolidation Degree - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidated> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified> ;
-    skos:definition "Particulate constituents of a compound material adhere to each other strongly enough that the aggregate can be considered a solid material in its own right."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated>,
-        <http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_consolidated> ;
-    skos:prefLabel "consolidated"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree> ;
@@ -82,6 +71,17 @@
         <http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated> ;
     skos:prefLabel "consolidation not specified"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree> .
+
+
+<http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidated> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified> ;
+    skos:definition "Particulate constituents of a compound material adhere to each other strongly enough that the aggregate can be considered a solid material in its own right."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated>,
+        <http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_consolidated> ;
+    skos:prefLabel "consolidated"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_variable> a skos:Concept ;

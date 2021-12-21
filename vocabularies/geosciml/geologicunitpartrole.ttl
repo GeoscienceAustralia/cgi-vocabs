@@ -73,6 +73,29 @@
     skos:prefLabel "Geologic Unit Part Role - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
+    skos:definition "Entire described unit consists of a single part or constituent"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
+    skos:prefLabel "only part"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> .
+
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
+    skos:definition "The geologic unit part role is not known in any greater detail. Inclusion of Only_part as a separate concept implies that this concept is the equivalent of 'proper part' in mereology."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/facies>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/unspecified_part_role> ;
+    skos:prefLabel "part of"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> .
+
+
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/bed_lithosome> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -94,10 +117,30 @@
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/concretion> a skos:Concept ;
     dcterms:provenance "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
+    skos:altLabel "コンクリーション"@ja,
+        "결괴"@ko,
+        "凝结"@zh,
+        "固结"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> ;
     skos:definition "Hard, compact mass or aggregate of mineral matter, normally subsperical but commonly oblate, disc-shaped or irregular. Formed from precipitation from solution about a nucleus or centre. Use as a geologic unit part should be restricted to concretions that are too large to consider as constituents in the rock material that composes the unit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
-    skos:prefLabel "concretion"@en .
+    skos:prefLabel "Konkretion"@de,
+        "concretion"@en,
+        "concrecio!n"@es,
+        "konkreetiot"@fi,
+        "concrétion"@fr,
+        "konkresi"@id,
+        "concrezione"@it,
+        "団塊"@ja,
+        "pÞaMg/ dMu"@km,
+        "결핵체"@ko,
+        "¡¾­¥ñ®ªö¸¡ñ­ÁÎÉ­"@lo,
+        "konkresi"@ms,
+        "konkretsiya"@ru,
+        "konkretion"@sv,
+        "มวลสารพอก"@th,
+        "kết vón"@vi,
+        "结核"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/cyclic_bedding_package> a skos:Concept ;
@@ -121,10 +164,29 @@
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/facies> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
+    skos:altLabel "層相"@ja,
+        "암상"@ko,
+        "岩相"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> ;
     skos:definition "Represents a particular body of rock that is a lateral variant of a lithostratigraphic unit, or a variant of a lithodemic unit. Contrast with lithosome in being a particular, connected body of rock, as opposed to a kind of rock body that is repeated in many places in a unit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
-    skos:prefLabel "facies"@en .
+    skos:prefLabel "Fazies"@de,
+        "facies"@en,
+        "facies"@es,
+        "fasies"@fi,
+        "faciès"@fr,
+        "fasies"@id,
+        "facies"@it,
+        "相"@ja,
+        "RTg;RTay/ lkçN³/"@km,
+        "상"@ko,
+        "§÷©ìñ¡¦½­½"@lo,
+        "fasies"@ms,
+        "fatsiya"@ru,
+        "facies"@sv,
+        "ชุดลักษณ์"@th,
+        "tướng"@vi,
+        "相"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/geologic_unit_matrix> a skos:Concept ;
@@ -139,6 +201,8 @@
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
+    skos:altLabel "包体"@zh,
+        "夹杂物"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> ;
     skos:definition "Geologic unit constituent is present as masses with generally sharp boundaries enclosed within a matrix of some other material."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -148,7 +212,26 @@
         <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants>,
         <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/tectonic_block>,
         <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/xenolith> ;
-    skos:prefLabel "inclusion"@en .
+    skos:prefLabel "Einschluss"@de,
+        "inclusion"@en,
+        "inclusio!n"@es,
+        "inclusión"@es,
+        "sulkeumat"@fi,
+        "inclusion"@fr,
+        "kepungan"@id,
+        "inclusione"@it,
+        "包有物"@ja,
+        "karbBa©Úl"@km,
+        "포유물"@ko,
+        " À¥õº-¯ö­"@lo,
+        "kepungan"@ms,
+        "insluiting"@nl,
+        "vklyuchenie"@ru,
+        "inneslutning"@sv,
+        "การเจือปน"@th,
+        "bao thể"@vi,
+        "inclusion"@xx,
+        "包裹体"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/irregular_lithosome> a skos:Concept ;
@@ -203,29 +286,6 @@
     skos:prefLabel "marker bed"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
-    skos:definition "Entire described unit consists of a single part or constituent"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
-    skos:prefLabel "only part"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> .
-
-
-<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
-    skos:definition "The geologic unit part role is not known in any greater detail. Inclusion of Only_part as a separate concept implies that this concept is the equivalent of 'proper part' in mereology."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/facies>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/unspecified_part_role> ;
-    skos:prefLabel "part of"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> .
-
-
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants> a skos:Concept ;
     dcterms:provenance "Base on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
@@ -253,7 +313,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants> ;
     skos:definition "Pendant that is demonstrably derived from the upper boundary of an igneous body."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
-    skos:prefLabel "roof pendant"@en .
+    skos:prefLabel "Batholithdach"@de,
+        "roof pendant"@en,
+        "alero"@es,
+        "katonkieleke"@fi,
+        "pendente"@it,
+        "ostanets krovli"@ru,
+        "ROOF PENDANT"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/screen> a skos:Concept ;
@@ -305,8 +371,28 @@
 <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/xenolith> a skos:Concept ;
     dcterms:provenance "Neuendorf et al. 2005, Cobbing, 2000, This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
+    skos:altLabel "batuan asing"@id,
+        "捕虏岩"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion> ;
     skos:definition "Inclusion of pre-intrusive country rock in intrusive igneous matrix, cm to about 10 meter diameter in longest dimension. Use term pendant for larger blocks."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
-    skos:prefLabel "xenolith"@en .
+    skos:prefLabel "Xenolith"@de,
+        "xenolith"@en,
+        "enclave roca"@es,
+        "ksenoliitit"@fi,
+        "enclave roche"@fr,
+        "helatan"@id,
+        "xenolite"@it,
+        "捕獲岩"@ja,
+        "ehSNUlIt"@km,
+        "포획암"@ko,
+        "¹ó­À§Â­ìò©( ¹ó­Á¯¡¯º´ )"@lo,
+        "xenolitos"@ms,
+        "ksenolit"@ru,
+        "xenolit"@sv,
+        "หินแปลกปลอม"@th,
+        "thể tù"@vi,
+        "捕虏体"@zh .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

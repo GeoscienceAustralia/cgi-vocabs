@@ -54,6 +54,26 @@
     skos:prefLabel "Metamorphic Grade - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    skos:definition "for use in normative descriptions to explicitly indicate that any metamorphic condition is allowed (including non-metamorphosed)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified>,
+        <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/not_metamorphosed> ;
+    skos:prefLabel "metamorphic grade not specified"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> .
+
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_unknown> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    skos:definition "For use in instance descriptions to indicate that no information is available on metamorphic grade"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
+    skos:prefLabel "metamorphic grade unknown"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> .
+
+
 <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade> a skos:Concept ;
     dcterms:provenance "Smulikowski et al, 2003; Fry, 1984"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
@@ -79,26 +99,6 @@
     skos:definition "Protolith structure typically obliterated. Includes rocks metamorphosed in high-temperature epidote-amphibolite, low-temperature amphibolite, and low temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, talc (magnesite, anthophyllite), mafic-hornblende, (diopside, garnet), calc-aluminous basic-plagioclase, pelite, semi-pelite -- white mica, biotite, quartz (garnet, Al-minerals)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
     skos:prefLabel "medium metamorphic grade"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-    skos:definition "for use in normative descriptions to explicitly indicate that any metamorphic condition is allowed (including non-metamorphosed)."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified>,
-        <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/not_metamorphosed> ;
-    skos:prefLabel "metamorphic grade not specified"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> .
-
-
-<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_unknown> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-    skos:definition "For use in instance descriptions to indicate that no information is available on metamorphic grade"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ;
-    skos:prefLabel "metamorphic grade unknown"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> .
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> a skos:Concept ;

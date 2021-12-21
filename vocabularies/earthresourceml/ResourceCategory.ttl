@@ -80,7 +80,13 @@
     skos:definition "That part of a Mineral Resource for which tonnage, grade and mineral content can be estimated with a low level of confidence. It is inferred from geological evidence and assumed but not verified geological and/or grade continuity. It is based on information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes which may be limited or of uncertain quality and reliability."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category> ;
     skos:notation "03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "inferred mineral resource"@en ;
+    skos:prefLabel "hergeleitetes Erz"@de,
+        "inferred mineral resource"@en,
+        "mena probable"@es,
+        "mahdollinen malmi"@fi,
+        "minerale presunto"@it,
+        "zapasy prognoznye"@ru,
+        "antagen malm"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category> .
 
 
@@ -122,4 +128,6 @@
     skos:notation "07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "poorly estimated mineral resource, poorly documented"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

@@ -47,16 +47,6 @@
     skos:prefLabel "Waste Storage - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/waste-storage/covered> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/waste-storage/surface> ;
-    skos:definition "Covered mining waste storage at ground level"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
-    skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "covered"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/waste-storage/surface> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
@@ -86,4 +76,14 @@
     skos:notation "03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "underwater"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> .
+
+
+<http://resource.geosciml.org/classifier/cgi/waste-storage/covered> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/waste-storage/surface> ;
+    skos:definition "Covered mining waste storage at ground level"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:notation "01.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "covered"@en .
 

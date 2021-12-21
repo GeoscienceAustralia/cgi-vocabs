@@ -110,6 +110,35 @@
     skos:prefLabel "Particle Type - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/particletype/cavity> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:definition "Constituent is empty space between particles in a compound material, generally filled with some sort of fluid. Cavity particle types can be used to describe porosity in a granular material."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/particletype/amygdule>,
+        <http://resource.geosciml.org/classifier/cgi/particletype/fenestra>,
+        <http://resource.geosciml.org/classifier/cgi/particletype/fluid_inclusion>,
+        <http://resource.geosciml.org/classifier/cgi/particletype/lithophysae>,
+        <http://resource.geosciml.org/classifier/cgi/particletype/pore_space>,
+        <http://resource.geosciml.org/classifier/cgi/particletype/vesicle>,
+        <http://resource.geosciml.org/classifier/cgi/particletype/vug> ;
+    skos:prefLabel "cavity"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> .
+
+
+<http://resource.geosciml.org/classifier/cgi/particletype/solid_constituent_particle> a skos:Concept ;
+    dcterms:provenance "Neuendorf et al 2005"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:definition "Particle is defined as a \\General term, used without restriction as to shape composition or internal structure, for a separable or distinct unit in a [compound material].\\ (Neuendorf et al, 2005). Unclassified solid constituent in a compound material. Note that the term particle has no size denotation as used here."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/particletype/aggregate_non-clastic_particle>,
+        <http://resource.geosciml.org/classifier/cgi/particletype/bleb>,
+        <http://resource.geosciml.org/classifier/cgi/particletype/crystalline_grain>,
+        <http://resource.geosciml.org/classifier/cgi/particletype/granular_particle> ;
+    skos:prefLabel "solid constituent particle"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> .
+
+
 <http://resource.geosciml.org/classifier/cgi/particletype/accidental_pyroclastic_fragment> a skos:Concept ;
     dcterms:provenance "Gillespie and Styles 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
@@ -168,7 +197,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/biogenic_particle> ;
     skos:definition "Granular sedimentary particle that is a \\fragmentary piece of a shell, bone, or other hard skeletal structure of an animal, plant, or protozoan. May be fossilized or non-fossilized\\. Use in situations where fossil organism can not be identified, thus 'material fossil' is inappropriate."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:prefLabel "bioclast"@en .
+    skos:prefLabel "Bioklast"@de,
+        "bioclast"@en,
+        "roca biocla!stica"@es,
+        "bioklastit"@fi,
+        "bioclasto"@it,
+        "bioklast"@ru,
+        "bioklast"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/biogenic_particle> a skos:Concept ;
@@ -191,22 +226,6 @@
     skos:definition "Generic term for a small rounded particle of uncertain origin"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
     skos:prefLabel "bleb"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/particletype/cavity> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:definition "Constituent is empty space between particles in a compound material, generally filled with some sort of fluid. Cavity particle types can be used to describe porosity in a granular material."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/particletype/amygdule>,
-        <http://resource.geosciml.org/classifier/cgi/particletype/fenestra>,
-        <http://resource.geosciml.org/classifier/cgi/particletype/fluid_inclusion>,
-        <http://resource.geosciml.org/classifier/cgi/particletype/lithophysae>,
-        <http://resource.geosciml.org/classifier/cgi/particletype/pore_space>,
-        <http://resource.geosciml.org/classifier/cgi/particletype/vesicle>,
-        <http://resource.geosciml.org/classifier/cgi/particletype/vug> ;
-    skos:prefLabel "cavity"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/coated_particle> a skos:Concept ;
@@ -242,10 +261,30 @@
 <http://resource.geosciml.org/classifier/cgi/particletype/coprolite> a skos:Concept ;
     dcterms:provenance "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:altLabel "분화석"@ko,
+        "§¾¡¢š¦ñ©"@lo,
+        "磷钙土"@zh,
+        "粪粒体"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/biogenic_particle> ;
     skos:definition "The fossilised excrement of vertebrate animals"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:prefLabel "coprolite"@en .
+    skos:prefLabel "Koprolith"@de,
+        "coprolite"@en,
+        "coprolito"@es,
+        "koproliitit"@fi,
+        "coprolite"@fr,
+        "koprolit"@id,
+        "coprolite"@it,
+        "糞石"@ja,
+        "sMNakkURbUlIt"@km,
+        "분석"@ko,
+        "Â£Â¯ëÄìª"@lo,
+        "koprolit"@ms,
+        "koprolity"@ru,
+        "koprolit"@sv,
+        "มูลสัตว์โบราณ"@th,
+        "hoá thạch phân"@vi,
+        "粪化石"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/crystal_fragment> a skos:Concept ;
@@ -275,10 +314,28 @@
 <http://resource.geosciml.org/classifier/cgi/particletype/crystallite> a skos:Concept ;
     dcterms:provenance "Williams, Turner, Gilbert 1954"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:altLabel "晶子"@ja,
+        "미세결정"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/crystalline_grain> ;
     skos:definition "Constitutent occurs as minute, spherical, rod, or hair-like forms. Typically appear isotropic in thin section."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:prefLabel "crystallite"@en .
+    skos:prefLabel "Kristallit"@de,
+        "crystallite"@en,
+        "cristalito"@es,
+        "kristalliitit"@fi,
+        "cristallite"@fr,
+        "kristalit"@id,
+        "cristallite"@it,
+        "クリスタライト"@ja,
+        "RKIsÞal;lIt"@km,
+        "결정배"@ko,
+        "£ëò¦ê¾Äìª"@lo,
+        "kristalit"@ms,
+        "kristallit"@ru,
+        "kristallit"@sv,
+        "สารประกอบก่อนตกผลึก"@th,
+        "tinh thể nhỏ"@vi,
+        "雏晶"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/epiclast> a skos:Concept ;
@@ -295,10 +352,27 @@
 <http://resource.geosciml.org/classifier/cgi/particletype/fecal_pellet> a skos:Concept ;
     dcterms:provenance "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:altLabel "糞石"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/biogenic_particle> ;
     skos:definition "An organic excrement, mainly of invertebrates, occuring especially in modern marine sediments but also fossilised in some sedimentary rocks, usually with simple ovoid form, less commonly rod-shaped."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:prefLabel "fecal pellet"@en .
+    skos:prefLabel "Kotpille"@de,
+        "fecal pellet"@en,
+        "pellet fecal"@es,
+        "kivettyneet ulosteet"@fi,
+        "pelote fécale"@fr,
+        "kotoran binatang invertebrata"@id,
+        "grumo fecale"@it,
+        "糞源ペレット"@ja,
+        "hVÚsIulenAkñúgsilakMeTckMNr"@km,
+        "분립"@ko,
+        "À´ñ©§¾¡´ø­¦ñ©"@lo,
+        "gentelan tahi"@ms,
+        "komochki fekal'nye"@ru,
+        "avföringskula"@sv,
+        "ซากมูลจุลชีวะ"@th,
+        "phân"@vi,
+        "粪粒"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/fenestra> a skos:Concept ;
@@ -322,10 +396,28 @@
 <http://resource.geosciml.org/classifier/cgi/particletype/fluid_inclusion> a skos:Concept ;
     dcterms:provenance "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:altLabel "kepungan cairan dan gas"@id,
+        "气液包裹体"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/cavity> ;
     skos:definition "A cavity within a crystal containing liquid and/or gas, formed by the entrapment in crystal irregularities of fluid, commonly that from which the mineral crystallised."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:prefLabel "fluid inclusion"@en .
+    skos:prefLabel "Fluessigkeitseinschluss"@de,
+        "fluid inclusion"@en,
+        "inclusio!n fluida"@es,
+        "fluidisulkeumat"@fi,
+        "inclusion fluide"@fr,
+        "kepungan zat alir/larutan"@id,
+        "inclusione fluida"@it,
+        "流体包有物"@ja,
+        "karbBa©Úlvtßúrav"@km,
+        "유체포유물"@ko,
+        "¦…¤À¥õº¯ö­ê¾©Á¹ì¸"@lo,
+        "kepungan bendalir"@ms,
+        "vklyuchenie gazovozhidkoe"@ru,
+        "vätskeinneslutning"@sv,
+        "สิ่งแปลกปลอมในของไหล"@th,
+        "bao thể lỏng"@vi,
+        "流体包裹体"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/fluidal_pyroclast> a skos:Concept ;
@@ -416,10 +508,30 @@
 <http://resource.geosciml.org/classifier/cgi/particletype/intraclast> a skos:Concept ;
     dcterms:provenance "NADM SLTTs 2004, Neuendorf et al., 2005, Folk, 1959"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:altLabel "盆内成炭酸塩砕屑物"@ja,
+        "인트라클라스트"@ko,
+        "¦™­¦È¸­²¾¨Ã­"@lo,
+        "内屑"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/granular_particle> ;
     skos:definition "A broad, general term introduced by Folk (1959, p. 4) for a component of limestone, representing a torn-up and re-worked fragment of a penecontemporaneous sediment (usually weakly consolidated) that has been eroded within the basin of deposition...and re-deposited there...The fragment may range in size from fine sand to gravel..."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:prefLabel "intraclast"@en .
+    skos:prefLabel "Intraklast"@de,
+        "intraclast"@en,
+        "intraclasto"@es,
+        "intraklastit"@fi,
+        "intraclaste"@fr,
+        "intraklas"@id,
+        "intraclasto"@it,
+        "イントラクラスト"@ja,
+        "karERbRbYlkMe)areTAkMNkMeTcfµI"@km,
+        "내생쇄설물"@ko,
+        "ºò­-ê-ë¾-£-ì¾-¦-ª"@lo,
+        "intraklas"@ms,
+        "intraklast"@ru,
+        "intraklast"@sv,
+        "อินทราคลาสต์"@th,
+        "vụn tại chỗ"@vi,
+        "内碎屑"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/intrusive_sheet> a skos:Concept ;
@@ -494,10 +606,29 @@
 <http://resource.geosciml.org/classifier/cgi/particletype/microlite> a skos:Concept ;
     dcterms:provenance "Williams, Turner, Gilbert 1954"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:altLabel "マイクロ石"@ja,
+        "微晶"@ja,
+        "细晶体"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/crystalline_grain> ;
     skos:definition "Constituent occurs as minute incipient crystals that display some birefringence in thin section."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:prefLabel "microlite"@en .
+    skos:prefLabel "Mikrolith"@de,
+        "microlite"@en,
+        "microlita"@es,
+        "mikroliitti"@fi,
+        "Microlite"@fr,
+        "mikrolit"@id,
+        "microlite"@it,
+        "マイクロライト"@ja,
+        "mIRkUlIt"@km,
+        "미정"@ko,
+        "Á»ÈÄ´Â¡ùÄìª"@lo,
+        "mikrolit"@ms,
+        "Mikrolit"@ru,
+        "mikrolit"@sv,
+        "แร่ไมโครไลต์"@th,
+        "microlit"@vi,
+        "微晶"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/mineral_clast> a skos:Concept ;
@@ -516,7 +647,13 @@
     skos:definition "An irregularly rounded mass of a mineral or mineral aggregate normally having a warty or knobby surface and no internal sructure, usually with a contrasting composition from the enclosing sediment or rock matrix in which it is embedded, and that can be separated as a discrete mass from the host material. Igneous nodules should be classified as 'Igneous inclusions'."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/particletype/syngenetic_nodule> ;
-    skos:prefLabel "nodule"@en .
+    skos:prefLabel "Knolle"@de,
+        "nodule"@en,
+        "no!dulo"@es,
+        "noduulit"@fi,
+        "nodulo"@it,
+        "nodul'"@ru,
+        "nodul"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/oncoid> a skos:Concept ;
@@ -534,7 +671,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/coated_particle> ;
     skos:definition "A general, nongenetic term for a particle that resembles an oolith in outer appearance and size- (Jackson, 1997, p. 447). Hallsworth and Knox (1999, p. 27) describe ooids as coated grains that typically are spherical or ellipsoidal in shape, with the degree of roundness increasing outward. Concentric to semi-concentric coats are smoothly and evenly laminated. A nucleus usually is present, and may have a composition different from the coatings. Biogenic structures are not obvious. NADMSC SLTTs (2004) considers synomous with oolith."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:prefLabel "ooid"@en .
+    skos:prefLabel "Ooid"@de,
+        "ooid"@en,
+        "ooide"@es,
+        "ooidi"@fi,
+        "ooide"@it,
+        "ooid"@ru,
+        "ooid"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/orb> a skos:Concept ;
@@ -626,10 +769,27 @@
 <http://resource.geosciml.org/classifier/cgi/particletype/schlieren> a skos:Concept ;
     dcterms:provenance "GGIPAC"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:altLabel "蚀离体，条纹"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/aggregate_non-clastic_particle> ;
     skos:definition "a tabular body, generally a few cm to a few metres long, within a plutonic rockhaving different mineral proportions and colour to the surrounding rock"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:prefLabel "schlieren"@en .
+    skos:prefLabel "Schlierengefuege"@de,
+        "schlieren"@en,
+        "schlieren"@es,
+        "schlieren"@fi,
+        "schlieren"@fr,
+        "skliren"@id,
+        "schlieren"@it,
+        "シュリーレン"@ja,
+        "søúIEr:n"@km,
+        "쉴리렌"@ko,
+        "Á°È­¹ó­ºñ¡£½­óì½©ñ®Àìò¡"@lo,
+        "sylieren"@ms,
+        "shlir"@ru,
+        "slirstruktur"@sv,
+        "แผ่นราบแร่ในหินอัคนีแทรกซอน"@th,
+        "thể dị ly"@vi,
+        "析离体"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/shard> a skos:Concept ;
@@ -641,27 +801,31 @@
     skos:prefLabel "shard"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particletype/solid_constituent_particle> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al 2005"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:definition "Particle is defined as a \\General term, used without restriction as to shape composition or internal structure, for a separable or distinct unit in a [compound material].\\ (Neuendorf et al, 2005). Unclassified solid constituent in a compound material. Note that the term particle has no size denotation as used here."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/particletype/aggregate_non-clastic_particle>,
-        <http://resource.geosciml.org/classifier/cgi/particletype/bleb>,
-        <http://resource.geosciml.org/classifier/cgi/particletype/crystalline_grain>,
-        <http://resource.geosciml.org/classifier/cgi/particletype/granular_particle> ;
-    skos:prefLabel "solid constituent particle"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> .
-
-
 <http://resource.geosciml.org/classifier/cgi/particletype/spherule> a skos:Concept ;
     dcterms:provenance "Williams, Turner, Gilbert 1954"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
+    skos:altLabel "球粒"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/particletype/aggregate_non-clastic_particle> ;
     skos:definition "A rounded or spherical mass of acicular or fibrous mineral, generally in glassy siliceous lava."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/particletype/variole> ;
-    skos:prefLabel "spherule"@en .
+    skos:prefLabel "Kuegelchen"@de,
+        "spherule"@en,
+        "esfe!rula"@es,
+        "sferulit"@fi,
+        "sphérule"@fr,
+        "tubuh yang membulat"@id,
+        "sferula"@it,
+        "球体"@ja,
+        "EsV‘rr:ul"@km,
+        "소구체"@ko,
+        "À´ñ©¡ö´"@lo,
+        "sferul"@ms,
+        "sferula"@ru,
+        "sfärul"@sv,
+        "พวกเม็ดกลม"@th,
+        "hạt cầu"@vi,
+        "小球体"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/particletype/syngenetic_nodule> a skos:Concept ;
@@ -726,4 +890,6 @@
     skos:definition "A crystal that resembles a phenocryst in an igneous rock, but that is foreign to the rock in which it occurs"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
     skos:prefLabel "xenocryst"@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

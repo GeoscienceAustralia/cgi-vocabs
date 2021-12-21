@@ -91,6 +91,53 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> .
 
 
+<http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
+    skos:definition "Formation in which more than one genetic process is dominant. This usually involves some combination of igneous, weathering, sedimentary, metamorphic, deformation or impact-related processes that better represents the origin of the material"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis>,
+        <http://resource.geosciml.org/classifier/cgi/geneticcategory/impact_genesis>,
+        <http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis>,
+        <http://resource.geosciml.org/classifier/cgi/geneticcategory/weathering_genesis> ;
+    skos:prefLabel "composite process genesis"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> .
+
+
+<http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
+    skos:definition "Formation predominantly by crystallisation from magma"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis>,
+        <http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis> ;
+    skos:prefLabel "igneous genesis"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> .
+
+
+<http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
+    skos:definition "Formation by a combination of igneous and sedimentary processes"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/geneticcategory/volcaniclastic_genesis> ;
+    skos:prefLabel "igneous sedimentary genesis"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> .
+
+
+<http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
+    skos:definition "Formation predominantly by processes of erosion, mass wasting, transportation, deposition, precipitation and biogenic production that take place in Earth's hydrosphere and atmosphere."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/geneticcategory/biological_sedimentary_genesis>,
+        <http://resource.geosciml.org/classifier/cgi/geneticcategory/chemical_sedimentary_genesis>,
+        <http://resource.geosciml.org/classifier/cgi/geneticcategory/clastic_sedimentary_genesis>,
+        <http://resource.geosciml.org/classifier/cgi/geneticcategory/diagenetic_genesis> ;
+    skos:prefLabel "sedimentary genesis"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> .
+
+
 <http://resource.geosciml.org/classifier/cgi/geneticcategory/biological_sedimentary_genesis> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
@@ -125,19 +172,6 @@
     skos:definition "Formation predominantly by accumulation of particles (clasts) derived by weathering, erosion, or fragmentation of pre-existing rock or produced by chemical or biologically-mediated precipitation."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
     skos:prefLabel "clastic sedimentary genesis"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
-    skos:definition "Formation in which more than one genetic process is dominant. This usually involves some combination of igneous, weathering, sedimentary, metamorphic, deformation or impact-related processes that better represents the origin of the material"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis>,
-        <http://resource.geosciml.org/classifier/cgi/geneticcategory/impact_genesis>,
-        <http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis>,
-        <http://resource.geosciml.org/classifier/cgi/geneticcategory/weathering_genesis> ;
-    skos:prefLabel "composite process genesis"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> .
 
 
 <http://resource.geosciml.org/classifier/cgi/geneticcategory/contact_metamorphic_genesis> a skos:Concept ;
@@ -209,17 +243,6 @@
     skos:prefLabel "igneous extrusive genesis"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
-    skos:definition "Formation predominantly by crystallisation from magma"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis>,
-        <http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis> ;
-    skos:prefLabel "igneous genesis"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> .
-
-
 <http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
@@ -229,16 +252,6 @@
     skos:narrower <http://resource.geosciml.org/classifier/cgi/geneticcategory/hypabyssal_intrusive_genesis>,
         <http://resource.geosciml.org/classifier/cgi/geneticcategory/plutonic_genesis> ;
     skos:prefLabel "igneous intrusive genesis"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
-    skos:definition "Formation by a combination of igneous and sedimentary processes"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/geneticcategory/volcaniclastic_genesis> ;
-    skos:prefLabel "igneous sedimentary genesis"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> .
 
 
 <http://resource.geosciml.org/classifier/cgi/geneticcategory/impact_genesis> a skos:Concept ;
@@ -347,19 +360,6 @@
     skos:definition "Formation predominantly by metamorphic processes affecting a large rock volume, associated with large-scale tectonic processes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
     skos:prefLabel "regional metamorphic genesis"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
-    skos:definition "Formation predominantly by processes of erosion, mass wasting, transportation, deposition, precipitation and biogenic production that take place in Earth's hydrosphere and atmosphere."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/geneticcategory/biological_sedimentary_genesis>,
-        <http://resource.geosciml.org/classifier/cgi/geneticcategory/chemical_sedimentary_genesis>,
-        <http://resource.geosciml.org/classifier/cgi/geneticcategory/clastic_sedimentary_genesis>,
-        <http://resource.geosciml.org/classifier/cgi/geneticcategory/diagenetic_genesis> ;
-    skos:prefLabel "sedimentary genesis"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> .
 
 
 <http://resource.geosciml.org/classifier/cgi/geneticcategory/subaerial_extrusive_genesis> a skos:Concept ;

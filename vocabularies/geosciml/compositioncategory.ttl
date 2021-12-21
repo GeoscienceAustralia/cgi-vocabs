@@ -177,33 +177,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/arkosic_detrital_mode> a skos:Concept ;
-    dcterms:provenance "Folk1968"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_lithic_detrital_mode> ;
-    skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the feldspar to lithic ratio is greater than 3 to 1. This corresponds to the arkose field of Folk (1968). For clastic rocks with little or no matrix and cement, rocks in this detrital mode composition category will also have quartz-feldspathic mineralogical composition."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "arkosic detrital mode"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/asphaltic> a skos:Concept ;
-    dcterms:provenance "Jackson 1997"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous> ;
-    skos:definition "Material contains a significant amount of asphalt, which is a 'dark brown to black viscous liquid or low-melting solid bitumen that consists almost entirely of carbon and hydrogen...[and] formed in oil-bearing rocks by the evaporation of volatiles...' (Jackson, 1997, p. 39)."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "asphaltic"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/barium_bearing_carbonate_chemistry> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate> ;
-    skos:definition "CO3 is the predominant anion, and greater than 5 mole percent of cations are Ba."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "barium bearing carbonate chemistry"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/bioclastic> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
@@ -211,42 +184,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "bioclastic"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing> ;
-    skos:definition "Calcium carbonate minerals are present, carbonate minerals form less than 50 percent of rock, material contains sufficient CaCO3 to react forming bubbles when hydrochloric acid is applied."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "calcareous"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous_monomeralic_carbonate> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate> ;
-    skos:definition "Carbonate minerals form greater than 75 percent of rock, and calcium carbonate minerals forms greater than 75 percent of carbonate minerals."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "calcareous monomeralic carbonate"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/calcium_rich_carbonate_chemistry> a skos:Concept ;
-    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry> ;
-    skos:definition "CO3 is the predominante anion, and the Ca is the most abundant (mole percent) cation."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "calcium rich carbonate chemistry"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/impure_calcsilicate_or_carbonate> ;
-    skos:definition "Material consists of greater than or equal to 50 percent calcsilicate or carbonate minerals and carbonate minerals less than or equal to calcsilicate minerals in mineral mode."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "calcsilicate"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate_bearing> a skos:Concept ;
@@ -261,10 +198,21 @@
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:altLabel "susunan berarang"@id ;
     skos:definition "Material containing significant carbon or hydrocarbon mineral phases, including graphite, coal, oil, gas, lignite, peat."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/asphaltic> ;
-    skos:prefLabel "carbonaceous"@en ;
+    skos:prefLabel "carbonaceous"@en,
+        "composition carbonée"@fr,
+        "komposisi berarang"@id,
+        "炭素質組成"@ja,
+        "smaFatupSMkabUn"@km,
+        "탄소질 조성"@ko,
+        "¦ú¸­¯½¡º®´ó£¾¡®º­"@lo,
+        "komposisi berkarbon"@ms,
+        "ส่วนประกอบมีคาร์บอน"@th,
+        "thành phần carbon"@vi,
+        "碳质组成"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
@@ -282,11 +230,31 @@
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate> a skos:Concept ;
     dcterms:provenance "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:altLabel "炭酸塩岩"@ja ;
     skos:definition "Material consists of greater than 50 percent calcsilicate or carbonate minerals and carbonate minerals greater than calcsilicate minerals in mineral mode. Metacarbonate of NADMSC SLTTm (2004) terminology, adopted here for non-genetic use."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/barium_bearing_carbonate_chemistry>,
         <http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate> ;
-    skos:prefLabel "carbonate"@en ;
+    skos:prefLabel "Karbonat"@de,
+        "carbonate"@en,
+        "carbonato"@es,
+        "karbonaatit"@fi,
+        "carbonate"@fr,
+        "karbonat"@id,
+        "carbonati"@it,
+        "炭酸塩"@ja,
+        "kabUNat"@km,
+        "탄산염"@ko,
+        "£¾¡Â®À­ª"@lo,
+        "karbonat"@ms,
+        "Karbonaty"@ru,
+        "karbonat"@sv,
+        """karbonat
+"""@sv,
+        "คาร์บอเนต"@th,
+        "carbonat"@vi,
+        "carbonates"@xx,
+        "碳酸岩"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
@@ -311,14 +279,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/chloride_chemistry> a skos:Concept ;
-    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:definition "Chloride is the most abundant (mole percent) anion"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "chloride chemistry"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/chloritic> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
@@ -335,24 +295,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "composition not specified"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomite_monomineralic_carbonate> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate> ;
-    skos:definition "Carbonate minerals form greater than 75 percent of rock, and dolomite forms greater than 75 percent of carbonate minerals."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "dolomite monomineralic carbonate"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomitic> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing> ;
-    skos:definition "Dolomite is present, carbonate minerals form less than 50 percent of rock."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "dolomitic"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic> a skos:Concept ;
@@ -400,16 +342,18 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:definition "Greater than accessory amount (greater than 5 percent by volume) of non-silicate iron minerals (hematite, magnetite, siderite...) are present. Rocks containing abundant iron-rich silicate minerals would use the 'Ferromagnesian' terms."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "ferruginous"@en ;
+    skos:prefLabel "ferruginous"@en,
+        "composition ferrugineuse"@fr,
+        "komposisi berbesi"@id,
+        "鉄錆組成"@ja,
+        "bnSMsilaCamYyEdkG‘uksIut"@km,
+        "철질조성"@ko,
+        "¦ú¸­¯½¡º®ê†´óÀ¹ùñ¡¯‰­"@lo,
+        "komposisi feruginus"@ms,
+        "ส่วนประกอบมีเหล็กปน"@th,
+        "thành phần sắt"@vi,
+        "铁质成分"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/fluoride_chemistry> a skos:Concept ;
-    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:definition "Fluorine is the most abundant (mole percent) anion"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "fluoride chemistry"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/halide_chemistry> a skos:Concept ;
@@ -422,15 +366,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/high_silica_chemistry> a skos:Concept ;
-    dcterms:provenance "Struik2002, SLTTs2004, This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry> ;
-    skos:definition "Containing 65 percent or more SiO2 by weight. Syn acid."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "high silica chemistry"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/impure_calcsilicate_or_carbonate> a skos:Concept ;
     dcterms:provenance "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
@@ -439,15 +374,6 @@
     skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate> ;
     skos:prefLabel "impure calcsilicate or carbonate"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/intermediate_silica_chemistry> a skos:Concept ;
-    dcterms:provenance "Struik2002, SLTTs2004, This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry> ;
-    skos:definition "Containing SiO2 in the range 52-65 percent, sometimes described as \\intermediate\\ rocks."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "intermediate silica chemistry"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/intraclastic> a skos:Concept ;
@@ -459,25 +385,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_bearing_carbonate_chemistry> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry> ;
-    skos:definition "CO3 is the predominant anion, and iron is greater than 5 mole percent of the cations (includes Fe, Mg, Mn, Ba, Sr, Ca...)."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_rich_carbonate_chemistry> ;
-    skos:prefLabel "iron bearing carbonate chemistry"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_rich_carbonate_chemistry> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_bearing_carbonate_chemistry> ;
-    skos:definition "CO3 is the predominant anion, and iron is the most abundant (mole percent) cation"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "iron rich carbonate chemistry"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
@@ -485,15 +392,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "lithic"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_arkosic_detrital_mode> a skos:Concept ;
-    dcterms:provenance "Folk1968"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_detrital_mode> ;
-    skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the ratio of lithic fragments to feldspar is between 1:1 and 1:3. This corresponds to the lithic arkose field of Folk (1968), the 75 percent quartz boundary is chosen to be consistent with quartzsose composition as defined in the mineralogic compostion terms vocabulary. Because of the abundance of lithic fragments for which the mineralogic composition is not specified, and the presence of undiscernible matrix and cement that are not incuded in the detrital mode, corresondence with the mineralogical composition terms is very approximate."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "lithic arkosic detrital mode"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_detrital_mode> a skos:Concept ;
@@ -512,33 +410,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "lithic rich detrital mode"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/low_silica_chemistry> a skos:Concept ;
-    dcterms:provenance "Struik2002, SLTTs2004, This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry> ;
-    skos:definition "Containing SiO2 in the range 44-52 percent. Syn basic."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "low silica chemistry"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/mafic> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian> ;
-    skos:definition "Material consists of greater than or equal to 40 percent and less than 90 percent ferromagnesian silicate minerals."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "mafic"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/magnesium_rich_carbonate_chemistry> a skos:Concept ;
-    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry> ;
-    skos:definition "CO3 is the predominant anion, and Mg is the most abundant (mole percent) cation."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "magnesium rich carbonate chemistry"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/metallic_oxide_bearing> a skos:Concept ;
@@ -586,26 +457,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate> ;
-    skos:definition "Rock in which carbonate minerals form greater than 75 percent of rock."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous_monomeralic_carbonate>,
-        <http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomite_monomineralic_carbonate> ;
-    skos:prefLabel "monomineralic carbonate"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/nitrate_chemistry> a skos:Concept ;
-    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/halide_chemistry> ;
-    skos:definition "Nitrate (NO3) is most abundant (mole percent) anion."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "nitrate chemistry"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/other_composition> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
@@ -620,17 +471,14 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:definition "Material predominantly composed of oxide minerals"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "oxide"@en ;
+    skos:prefLabel "Oxid"@de,
+        "oxide"@en,
+        "o!xido"@es,
+        "oksidit"@fi,
+        "ossidi"@it,
+        "Okisly"@ru,
+        "oxid"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/pelitic> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic> ;
-    skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and aluminous mineral + mica content is greater than or equal to 40 percent."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "pelitic"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/peralkaline> a skos:Concept ;
@@ -645,9 +493,26 @@
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/peraluminous> a skos:Concept ;
     dcterms:provenance "Shand 1947"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:altLabel "komposisi peralumina"@ms ;
     skos:definition "Aluminum oxide (Al2O3) greater than sum of Na, K and Ca oxide."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "peraluminous"@en ;
+    skos:prefLabel "hyperaluminiumhaltiger Chemismus"@de,
+        "peraluminous"@en,
+        "composicio!n hiperaluminosa"@es,
+        "peralumiininen koostumus"@fi,
+        "composition hyperalumineuse"@fr,
+        "komposisi peraluminium"@id,
+        "composizione peralluminosa"@it,
+        "過アルミニウム組成"@ja,
+        "smasFatuEBra:l;lUmIenIs"@km,
+        "과알루미늄 조성"@ko,
+        "¦ú¸­¯½¡º®ê†´óê¾©º¾ìø´ó­¼´Í¾¨"@lo,
+        "kandungan peralumina"@ms,
+        "plyumazitovyj (sostav)"@ru,
+        "peraluminös sammansättning"@sv,
+        "ส่วนประกอบเพอร์อะลูมินัส"@th,
+        "thành phần bão hoà nhôm"@vi,
+        "过铝质成分"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
@@ -683,7 +548,13 @@
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:definition "Grains or clasts are composed of many mineral or rock types"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "polymictic"@en ;
+    skos:prefLabel "polymiktes Gefuege"@de,
+        "polymictic"@en,
+        "polimicto"@es,
+        "polymiktinen rakenne"@fi,
+        "tessitura polimittica"@it,
+        "polimiktovyj"@ru,
+        "polymikt textur"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
@@ -699,25 +570,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzo_feldspathic> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic> ;
-    skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz + feldspar (sensu Robertson, 1999) greater than 60 percent."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose> ;
-    skos:prefLabel "quartzo feldspathic"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzo_feldspathic> ;
-    skos:definition "Material consists of greater than or equal to 75 percent quartz."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "quartzose"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose_detrital_mode> a skos:Concept ;
     dcterms:provenance "Folk1968, This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
@@ -725,15 +577,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "quartzose detrital mode"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/semi_pelitic> a skos:Concept ;
-    dcterms:provenance "NADM SLTTm 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic> ;
-    skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz+ feldspar less than 60 percent"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "semi pelitic"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry> a skos:Concept ;
@@ -788,9 +631,28 @@
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfate> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:altLabel "硫酸脂"@zh ;
     skos:definition "Material predominantly composed of sulfate minerals"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "sulfate"@en ;
+    skos:prefLabel "Sulfat"@de,
+        "sulfate"@en,
+        "sulfato"@es,
+        "sulfaatit"@fi,
+        "ion sulfate"@fr,
+        "sulfate"@fr,
+        "sulfat"@id,
+        "solfati"@it,
+        "硫酸"@ja,
+        "s‘ulhVat"@km,
+        "황산염"@ko,
+        "§ñìÀ³ª"@lo,
+        "sulfat"@ms,
+        "Sul'faty"@ru,
+        "sulfat"@sv,
+        "ซัลเฟต"@th,
+        "sulfat"@vi,
+        "sulfates"@xx,
+        "硫酸盐"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
@@ -801,15 +663,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "sulfate chemistry"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
-
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing> ;
-    skos:definition "Material predominantly composed of sulfide minerals"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "sulfide"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing> a skos:Concept ;
@@ -832,6 +685,316 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
 
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/volcanic_lithic> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:definition "Sedimentary material contains significant broken volcanic rock fragments or vitric fragments, irrespective of their pyroclastic or epiclastic origin."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "volcanic lithic"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/arkosic_detrital_mode> a skos:Concept ;
+    dcterms:provenance "Folk1968"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_lithic_detrital_mode> ;
+    skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the feldspar to lithic ratio is greater than 3 to 1. This corresponds to the arkose field of Folk (1968). For clastic rocks with little or no matrix and cement, rocks in this detrital mode composition category will also have quartz-feldspathic mineralogical composition."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "arkosic detrital mode"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/asphaltic> a skos:Concept ;
+    dcterms:provenance "Jackson 1997"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous> ;
+    skos:definition "Material contains a significant amount of asphalt, which is a 'dark brown to black viscous liquid or low-melting solid bitumen that consists almost entirely of carbon and hydrogen...[and] formed in oil-bearing rocks by the evaporation of volatiles...' (Jackson, 1997, p. 39)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "asphaltic"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/barium_bearing_carbonate_chemistry> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate> ;
+    skos:definition "CO3 is the predominant anion, and greater than 5 mole percent of cations are Ba."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "barium bearing carbonate chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:altLabel "石灰質成分"@ja,
+        "เนื้อปูน"@th ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing> ;
+    skos:definition "Calcium carbonate minerals are present, carbonate minerals form less than 50 percent of rock, material contains sufficient CaCO3 to react forming bubbles when hydrochloric acid is applied."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "calcareous"@en,
+        "composition carbonatée"@fr,
+        "bersusunan gampingan"@id,
+        "石灰質組成"@ja,
+        "smasFatufµkMe)ar"@km,
+        "석회질 조성"@ko,
+        "¦ú¸­¯½¡º®À­œº¯ø­"@lo,
+        "komposisi berkapur"@ms,
+        "ส่วนประกอบแบบคาร์บอเนต"@th,
+        "thành phần vôi"@vi,
+        "砂屑石灰岩"@zh .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous_monomeralic_carbonate> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate> ;
+    skos:definition "Carbonate minerals form greater than 75 percent of rock, and calcium carbonate minerals forms greater than 75 percent of carbonate minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "calcareous monomeralic carbonate"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/calcium_rich_carbonate_chemistry> a skos:Concept ;
+    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry> ;
+    skos:definition "CO3 is the predominante anion, and the Ca is the most abundant (mole percent) cation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "calcium rich carbonate chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/impure_calcsilicate_or_carbonate> ;
+    skos:definition "Material consists of greater than or equal to 50 percent calcsilicate or carbonate minerals and carbonate minerals less than or equal to calcsilicate minerals in mineral mode."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "calcsilicate"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/chloride_chemistry> a skos:Concept ;
+    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:definition "Chloride is the most abundant (mole percent) anion"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "chloride chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomite_monomineralic_carbonate> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate> ;
+    skos:definition "Carbonate minerals form greater than 75 percent of rock, and dolomite forms greater than 75 percent of carbonate minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "dolomite monomineralic carbonate"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomitic> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing> ;
+    skos:definition "Dolomite is present, carbonate minerals form less than 50 percent of rock."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "dolomitic"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/fluoride_chemistry> a skos:Concept ;
+    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:definition "Fluorine is the most abundant (mole percent) anion"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "fluoride chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/high_silica_chemistry> a skos:Concept ;
+    dcterms:provenance "Struik2002, SLTTs2004, This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry> ;
+    skos:definition "Containing 65 percent or more SiO2 by weight. Syn acid."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "high silica chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/intermediate_silica_chemistry> a skos:Concept ;
+    dcterms:provenance "Struik2002, SLTTs2004, This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry> ;
+    skos:definition "Containing SiO2 in the range 52-65 percent, sometimes described as \\intermediate\\ rocks."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "intermediate silica chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_bearing_carbonate_chemistry> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry> ;
+    skos:definition "CO3 is the predominant anion, and iron is greater than 5 mole percent of the cations (includes Fe, Mg, Mn, Ba, Sr, Ca...)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_rich_carbonate_chemistry> ;
+    skos:prefLabel "iron bearing carbonate chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_rich_carbonate_chemistry> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_bearing_carbonate_chemistry> ;
+    skos:definition "CO3 is the predominant anion, and iron is the most abundant (mole percent) cation"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "iron rich carbonate chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_arkosic_detrital_mode> a skos:Concept ;
+    dcterms:provenance "Folk1968"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_detrital_mode> ;
+    skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the ratio of lithic fragments to feldspar is between 1:1 and 1:3. This corresponds to the lithic arkose field of Folk (1968), the 75 percent quartz boundary is chosen to be consistent with quartzsose composition as defined in the mineralogic compostion terms vocabulary. Because of the abundance of lithic fragments for which the mineralogic composition is not specified, and the presence of undiscernible matrix and cement that are not incuded in the detrital mode, corresondence with the mineralogical composition terms is very approximate."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "lithic arkosic detrital mode"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/low_silica_chemistry> a skos:Concept ;
+    dcterms:provenance "Struik2002, SLTTs2004, This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry> ;
+    skos:definition "Containing SiO2 in the range 44-52 percent. Syn basic."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "low silica chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/mafic> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:altLabel "susunan mafik"@id ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian> ;
+    skos:definition "Material consists of greater than or equal to 40 percent and less than 90 percent ferromagnesian silicate minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "basischer Chemismus"@de,
+        "mafic"@en,
+        "composicio!n ma!fica"@es,
+        "ema\"ksinen koostumus"@fi,
+        "composition mafique"@fr,
+        "komposisi mafik"@id,
+        "composizione mafica"@it,
+        "苦鉄質組成"@ja,
+        "smasFatuma:hVik"@km,
+        "고철질 조성"@ko,
+        "¦ú¸­¯½¡º®À´±ò¡"@lo,
+        "komposisi mafik"@ms,
+        "maficheskij"@ru,
+        "mafisk sammansättning"@sv,
+        "ส่วนประกอบเมฟิก"@th,
+        "thành phần mafic"@vi,
+        "铁镁质成分"@zh .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/magnesium_rich_carbonate_chemistry> a skos:Concept ;
+    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry> ;
+    skos:definition "CO3 is the predominant anion, and Mg is the most abundant (mole percent) cation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "magnesium rich carbonate chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate> ;
+    skos:definition "Rock in which carbonate minerals form greater than 75 percent of rock."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous_monomeralic_carbonate>,
+        <http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomite_monomineralic_carbonate> ;
+    skos:prefLabel "monomineralic carbonate"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/nitrate_chemistry> a skos:Concept ;
+    dcterms:provenance "Struik etal 2002, This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/halide_chemistry> ;
+    skos:definition "Nitrate (NO3) is most abundant (mole percent) anion."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "nitrate chemistry"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/pelitic> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:altLabel "rajut pelit"@id ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic> ;
+    skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and aluminous mineral + mica content is greater than or equal to 40 percent."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "Pelit-Gefuege"@de,
+        "pelitic"@en,
+        "textura peli!tica"@es,
+        "peliittinen tekstuuri"@fi,
+        "texture pélitique"@fr,
+        "tekstur pelit"@id,
+        "tessitura pelitica"@it,
+        "泥質構造"@ja,
+        "vaynP½NÐsilaPk;"@km,
+        "이토질 조직"@ko,
+        "À­œº¹ó­À´ñ©Áì®"@lo,
+        "tekstur pelit"@ms,
+        "pelitovyj"@ru,
+        "pelitisk textur"@sv,
+        "ที่มาจากเพไลต์"@th,
+        "kiến trúc dạng bùn"@vi,
+        "泥质结构"@zh .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzo_feldspathic> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic> ;
+    skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz + feldspar (sensu Robertson, 1999) greater than 60 percent."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose> ;
+    skos:prefLabel "quartzo feldspathic"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzo_feldspathic> ;
+    skos:definition "Material consists of greater than or equal to 75 percent quartz."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "quartzose"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/semi_pelitic> a skos:Concept ;
+    dcterms:provenance "NADM SLTTm 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic> ;
+    skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz+ feldspar less than 60 percent"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "semi pelitic"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing> ;
+    skos:definition "Material predominantly composed of sulfide minerals"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:prefLabel "Sulfid"@de,
+        "sulfide"@en,
+        "sulfuro"@es,
+        "sulfidit"@fi,
+        "sulfure"@fr,
+        "zone sulfure"@fr,
+        "sulfida"@id,
+        "solfuri"@it,
+        "硫化物"@ja,
+        "s‘ulhVIt"@km,
+        "황화물"@ko,
+        "§ñìÄ³©"@lo,
+        "sulfida"@ms,
+        "Sul'fidy"@ru,
+        "sulfid"@sv,
+        "ซัลไฟด์"@th,
+        "sulfides"@us,
+        "sulfua"@vi,
+        "sulfides"@xx,
+        "硫化物"@zh .
+
+
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfosalt_chemistry> a skos:Concept ;
     dcterms:provenance "Neuendorf et al 2005, Struik 2002, This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
@@ -844,10 +1007,27 @@
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/ultramafic> a skos:Concept ;
     dcterms:provenance "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
+    skos:altLabel "lampau mafik"@ms ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian> ;
     skos:definition "Material consists of greater than 90 percent ferromagnesian silicate minerals."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "ultramafic"@en .
+    skos:prefLabel "Ultrabasit"@de,
+        "ultramafic"@en,
+        "ultrabasita"@es,
+        "ultramafiitit"@fi,
+        "ultrabasite"@fr,
+        "ultramafik"@id,
+        "roccia ultrafemica"@it,
+        "超苦鉄質岩"@ja,
+        "G‘ulRtama:hVIs"@km,
+        "초고철질물"@ko,
+        "¹ó­ºøªù¾À´³ò¡"@lo,
+        "ultramafik"@ms,
+        "ul'tramafit"@ru,
+        "ultramafisk bergart"@sv,
+        "อัลตราเมฟิก"@th,
+        "đá siêu mafic"@vi,
+        "超镁铁质"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/very_low_silica_chemistry> a skos:Concept ;
@@ -858,12 +1038,5 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "very low silica chemistry"@en .
 
-
-<http://resource.geosciml.org/classifier/cgi/compositioncategory/volcanic_lithic> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:definition "Sedimentary material contains significant broken volcanic rock fragments or vitric fragments, irrespective of their pyroclastic or epiclastic origin."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
-    skos:prefLabel "volcanic lithic"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

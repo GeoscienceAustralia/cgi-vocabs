@@ -83,14 +83,87 @@
     skos:prefLabel "Processing Activity - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:definition "Sorting process using chemical separation methods"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/adsorption>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/bioleaching>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/burning>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/calcining>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/cementation>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/crystallization>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/distillation>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrolysis>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/evaporation>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/hydrometallurgy>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/incineration>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/precipitation>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/pyrometallurgy>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/roasting>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/smelting>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/solvent-extraction> ;
+    skos:notation "03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "chemical treatment"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> .
+
+
+<http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:definition "processes using physical separation methods"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/comminution>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/liquid-solid-separation>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/particle-sizing>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting> ;
+    skos:notation "01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "physical treatment"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> .
+
+
+<http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:definition "concentraing processes that combine physical and chemical separation methods."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/agglomeration>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/coagulation>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flocculation>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flotation> ;
+    skos:notation "02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "physico-chemical treatment"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> .
+
+
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/adsorption> a skos:Concept ;
     dcterms:provenance "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:altLabel "penyerapan"@id,
+        "การดูดแนบ"@th ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Taking up of ions, molecules or colloids on the surface of a material."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "03.6"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "adsorption"@en .
+    skos:prefLabel "Adsorption"@de,
+        "adsorption"@en,
+        "adsorbcio!n"@es,
+        "adsorptio"@fi,
+        "adsorption"@fr,
+        "adsorpsi"@id,
+        "adsorbimento"@it,
+        "吸着"@ja,
+        "karRsUb /karRCab"@km,
+        "흡착"@ko,
+        " ¡¾­©ø©§ñ®"@lo,
+        "jerapan"@ms,
+        "adsorbtsiya"@ru,
+        "adsorption"@sv,
+        "การดูดซับ"@th,
+        "hấp phụ"@vi,
+        "吸附(作用)"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/agglomeration> a skos:Concept ;
@@ -151,11 +224,30 @@
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/cementation> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Cementation"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:altLabel "膠結作用"@ja,
+        "烧结"@zh,
+        "粘结"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "In metallurgy, cementation is a process in which ions are reduced to zero valence at a solid metallic interface"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "03.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "cementation"@en .
+    skos:prefLabel "Zementation"@de,
+        "cementation"@en,
+        "cementacio!n"@es,
+        "iskostuminen"@fi,
+        "cémentation"@fr,
+        "perekatan"@id,
+        "cementazione"@it,
+        "セメント作用"@ja,
+        "karbiTsIum:g;"@km,
+        "교결작용"@ko,
+        " -¡¾­-¥ñ®-ªö¸"@lo,
+        "persimenan"@ms,
+        "tsementatsiya"@ru,
+        "cementering"@sv,
+        "การประสาน"@th,
+        "gắn kết"@vi,
+        "胶结[作用]"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/centrifugal-gravity-separation> a skos:Concept ;
@@ -166,33 +258,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "01.1.2.1.4"^^dt:LocalHierarchyKey ;
     skos:prefLabel "centrifugal gravity separation"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
-    skos:definition "Sorting process using chemical separation methods"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/adsorption>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/bioleaching>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/burning>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/calcining>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/cementation>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/crystallization>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/distillation>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrolysis>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/evaporation>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/hydrometallurgy>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/incineration>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/precipitation>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/pyrometallurgy>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/roasting>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/smelting>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/solvent-extraction> ;
-    skos:notation "03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "chemical treatment"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/coagulation> a skos:Concept ;
@@ -211,22 +276,61 @@
     skos:altLabel "crushing"@en,
         "fragmentation"@en,
         "grinding"@en,
-        "pulverising"@en ;
+        "pulverising"@en,
+        "pencanaian"@ms,
+        "碎裂作用"@zh,
+        "磨快；磨锐"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment> ;
     skos:definition "Breaking solid particles to reduce their sizes; general term encompassing crushing and grinding."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "01.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "comminution"@en .
+    skos:prefLabel "Probenzerkleinerung"@de,
+        "comminution"@en,
+        "fragmentacio!n"@es,
+        "rikkoutuminen"@fi,
+        "fragmentation"@fr,
+        "pemecahan"@id,
+        "frammentazione"@it,
+        "破砕"@ja,
+        "karEbkCabMENk"@km,
+        "붕괴작용"@ko,
+        "Áª¡À¯ñ­¦š­¦È¸­"@lo,
+        "pemecahan"@ms,
+        "droblenie"@ru,
+        "fragmentering"@sv,
+        "การแตกเป็นชิ้นส่วน"@th,
+        "phân mảnh"@vi,
+        "破碎作用"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/crystallization> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Crystallization"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:altLabel "penghabluran"@id,
+        "pengkristalan"@id,
+        "結晶作用"@ja,
+        "정출작용"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Crystallization is the (natural or artificial) process of formation of solid crystals precipitating from a solution, melt or more rarely deposited directly from a gas. Crystallization is also a chemical solid-liquid separation technique, in which mass transfer of a solute from the liquid solution to a pure solid crystalline phase occurs. In chemical engineering crystallization occurs in a crystallizer. Crystallization is therefore an aspect of precipitation, obtained through a variation of the solubility conditions of the solute in the solvent, as compared to precipitation due to chemical reaction."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "03.8"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "crystallization"@en .
+    skos:prefLabel "Kristallisation"@de,
+        "crystallization"@en,
+        "cristalizacio!n"@es,
+        "kiteytyminen"@fi,
+        "cristallisation"@fr,
+        "kristalisasi"@id,
+        "cristallizzazione"@it,
+        "結晶化"@ja,
+        "eLIgRkam/PaBRkam"@km,
+        "결정작용"@ko,
+        "¡¾­À¡ó©À¯ñ­À´ñ©´½­ó"@lo,
+        "penghabluran"@ms,
+        "kristallizatsiya"@ru,
+        "kristallisering"@sv,
+        "การตกผลึก"@th,
+        "kết tinh"@vi,
+        "结晶[作用]"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/distillation> a skos:Concept ;
@@ -254,12 +358,29 @@
     dcterms:source "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:altLabel "electrorefining"@en,
-        "electrowinning"@en ;
+        "electrowinning"@en,
+        "전해"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Electrolysis: Electrowinning and electrorefining respectively involve the recovery and purification of metals using electrodeposition of metals at the cathode, and either metal dissolution or a competing oxidation reaction at the anode."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "03.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "electrolysis"@en .
+    skos:prefLabel "Elektrolyse"@de,
+        "electrolysis"@en,
+        "electro!lisis"@es,
+        "elektrolyysi"@fi,
+        "électrolyse"@fr,
+        "elektrolisis"@id,
+        "elettrolisi"@it,
+        "電気分解"@ja,
+        "GKÁIsnIviPaK"@km,
+        "전기분해"@ko,
+        "¡¾­Á¨¡ê¾©©É¸¨Ä³³É¾"@lo,
+        "elektrolisis"@ms,
+        "ehlektroliz"@ru,
+        "elektrolys"@sv,
+        "อิเล็กโทรไลซิส"@th,
+        "điện phân"@vi,
+        "电解"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrostatic-separation> a skos:Concept ;
@@ -275,32 +396,87 @@
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/evaporation> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Evaporation"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
-    skos:altLabel "drying"@en ;
+    skos:altLabel "drying"@en,
+        "蒸発"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "03.10"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "evaporation"@en .
+    skos:prefLabel "Evaporation"@de,
+        "evaporation"@en,
+        "evaporacio!n"@es,
+        "haihdunta"@fi,
+        "évaporation"@fr,
+        "penguapan"@id,
+        "evaporazione"@it,
+        "蒸発作用"@ja,
+        "rMhYt"@km,
+        "증발"@ko,
+        "¡¾­ì½À¹ó¨"@lo,
+        "penyejatan"@ms,
+        "isparenie"@ru,
+        "avdunstning"@sv,
+        "การระเหย"@th,
+        "bốc hơi"@vi,
+        "蒸发"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flocculation> a skos:Concept ;
     dcterms:provenance "B.A.Wills, T.J.Napier-Munn, Will's Mineral Processing Technology, Seventh edition, Elsevier 2006."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:altLabel "フロキュレーション"@ja,
+        "엉김"@ko,
+        "flokulasi"@ms,
+        "絮凝[作用]"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment> ;
     skos:definition "Flocculation is the coagulation between particles induced by the bridging action of long-chain organic polymers."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "02.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "flocculation"@en .
+    skos:prefLabel "Ausflockung"@de,
+        "flocculation"@en,
+        "floculacio!n"@es,
+        "flokkulaatio"@fi,
+        "floculation"@fr,
+        "penggumpalan"@id,
+        "flocculazione"@it,
+        "凝集"@ja,
+        "karkkCadMu"@km,
+        "응집"@ko,
+        "¡¾­¥ñ©À¯ñ­¡÷È´¢º¤º½­÷²¾¡"@lo,
+        "perbukuan"@ms,
+        "flokkulyatsiya"@ru,
+        "flockulering"@sv,
+        "การจับเป็นกลุ่มของอนุภาคขนาดเล็ก"@th,
+        "kết bông"@vi,
+        "凝聚[作用]"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flotation> a skos:Concept ;
     dcterms:provenance "Dictionnaire thématique des mines et carrières, SIM Editor; http://www.cpchem.com/bl/specchem/en-us/Pages/IntroductiontoMineralProcessing.aspx"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:altLabel "pengapungan"@ms,
+        "浮选法"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment> ;
     skos:definition "Process in which particles are separated according to their tendency to adhere more or less to air bubbles to form a mineralized froth: this feature is linked to the natural or designed hydrophobic property of the particle surface."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "02.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "flotation"@en .
+    skos:prefLabel "Flotation"@de,
+        "flotation"@en,
+        "flotacio!n"@es,
+        "vaahdotus"@fi,
+        "flottation"@fr,
+        "flotasi"@id,
+        "flottazione"@it,
+        "浮遊選鉱"@ja,
+        "bENþk"@km,
+        "부유선광"@ko,
+        "¡¾­ìº¨ªö¸"@lo,
+        "flotasi"@ms,
+        "flotatsiya"@ru,
+        "flotation"@sv,
+        "การลอย (แร่)"@th,
+        "tuyển nổi"@vi,
+        "浮选"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting> a skos:Concept ;
@@ -341,11 +517,28 @@
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/hydrometallurgy> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:altLabel "습식제련"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Hydrometallurgy is part of the field of extractive metallurgy involving the use of aqueous chemistry for the recovery of metals from ores, concentrates, and recycled or residual materials. Hydrometallurgy is typically divided into three general areas: leaching, solution concentration and purification, and metal recovery."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "03.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "hydrometallurgy"@en .
+    skos:prefLabel "Hydrometallurgie"@de,
+        "hydrometallurgy"@en,
+        "hidrometalurgia"@es,
+        "hydrometallurgia"@fi,
+        "hydrométallurgie"@fr,
+        "hidrometalurgi"@id,
+        "idrometallurgia"@it,
+        "湿式冶金"@ja,
+        "karsørEdkedayeRbIfamBlTwk"@km,
+        "습식야금"@ko,
+        "¡¾­Á¨¡Âì¹½©É¸¨¦¾­ì½ì¾¨"@lo,
+        "hidrometalurgi"@ms,
+        "gidrometallurgiya"@ru,
+        "hydrometallurgi"@sv,
+        "การแยกโลหะจากสินแร่ในสารละลาย"@th,
+        "thuỷ luyện kim"@vi,
+        "湿法冶金[学]"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/incineration> a skos:Concept ;
@@ -361,11 +554,31 @@
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching> a skos:Concept ;
     dcterms:provenance "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:altLabel "pelindian"@id,
+        "溶脱作用"@ja,
+        "沥滤法"@zh,
+        "浸析"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment> ;
     skos:definition "Action of chemical reagents on a material resulting in the dissolution of some of its elements."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "03.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "leaching"@en .
+    skos:prefLabel "Auswaschung"@de,
+        "leaching"@en,
+        "lavado"@es,
+        "uuttuminen"@fi,
+        "lessivage"@fr,
+        "pencucian"@id,
+        "lavaggio"@it,
+        "溶脱"@ja,
+        "Rtg/eRcaH"@km,
+        "용탈"@ko,
+        "¡¾­-À§¾½ìÉ¾¤"@lo,
+        "larut lesap"@ms,
+        "vyshchelachivanie"@ru,
+        "lakning"@sv,
+        "การชะ"@th,
+        "rửa lũa"@vi,
+        "浸出"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/liquid-solid-separation> a skos:Concept ;
@@ -402,40 +615,31 @@
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/particle-sizing> a skos:Concept ;
     dcterms:provenance "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
-    skos:altLabel "classification"@en ;
+    skos:altLabel "classification"@en,
+        "penggolongan"@id,
+        "perumpunan"@id,
+        "klasifikasi"@ms ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment> ;
     skos:definition "separation of particles of a fragmented material into several classes according to size. Typically done by means of screens or sieves: particle with a size larger than the screen or sieve opening are said to form the oversize fraction, the others form the undersize fraction."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "01.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "particle sizing"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
-    skos:definition "processes using physical separation methods"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/comminution>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/liquid-solid-separation>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/particle-sizing>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting> ;
-    skos:notation "01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "physical treatment"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> .
-
-
-<http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
-    skos:definition "concentraing processes that combine physical and chemical separation methods."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/agglomeration>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/coagulation>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flocculation>,
-        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flotation> ;
-    skos:notation "02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "physico-chemical treatment"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> .
+    skos:prefLabel "Klassifikation"@de,
+        "particle sizing"@en,
+        "clasificacio!n"@es,
+        "luokitus"@fi,
+        "classification"@fr,
+        "klasifikasi"@id,
+        "classificazione"@it,
+        "分類"@ja,
+        "karcat;lMdab;fñak;"@km,
+        "분류"@ko,
+        " ¡¾­-¥ñ©-Á®È¤"@lo,
+        "pengelasan"@ms,
+        "klassifikatsiya"@ru,
+        "klassificering"@sv,
+        "การจำแนก"@th,
+        "phân loại"@vi,
+        "分类"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/precipitation> a skos:Concept ;
@@ -501,13 +705,33 @@
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting> a skos:Concept ;
     dcterms:provenance "Based on http://en.wikipedia.org/wiki/Ore_sorting and http://en.wikipedia.org/wiki/Mineral_processing"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:altLabel "proses memilah"@id,
+        "淘汰作用"@ja,
+        "拣选"@zh,
+        "排序"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment> ;
     skos:definition "Processes that operate on particulate material to concentrate a desired component and separate it from waste material."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/manual-sorting> ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "sorting"@en .
+    skos:prefLabel "Sortierung"@de,
+        "sorting"@en,
+        "clasificacio!n granulome!trica"@es,
+        "lajittuneisuus"@fi,
+        "classement granulométrique"@fr,
+        "pemilahan"@id,
+        "classazione granulometrica"@it,
+        "分級"@ja,
+        "karcat;CaRbePT"@km,
+        "분급작용"@ko,
+        "¡¾­¥ñ©¢½Î¾©"@lo,
+        "penyisihan"@ms,
+        "otsortirovannost'"@ru,
+        "sortering"@sv,
+        "การดัดขนาด"@th,
+        "hạt trầm tích cùng loại"@vi,
+        "分选"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/stratification-jig> a skos:Concept ;
@@ -518,4 +742,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "01.1.2.1.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "stratification jig"@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

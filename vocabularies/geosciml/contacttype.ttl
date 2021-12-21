@@ -81,6 +81,27 @@
     skos:prefLabel "Contact Type - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/contacttype/contact> a skos:Concept ;
+    dcterms:provenance "adapted from Jackson, 1997, page 137, NADM C1 2004"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> ;
+    skos:definition "A surface that separates geologic units. Very general concept representing any kind of surface separating two geologic units, including primary boundaries such as depositional contacts, all kinds of unconformities, intrusive contacts, and gradational contacts, as well as faults that separate geologic units."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/contacttype/chronostratigraphic_zone_contact>,
+        <http://resource.geosciml.org/classifier/cgi/contacttype/faulted_contact>,
+        <http://resource.geosciml.org/classifier/cgi/contacttype/geologic_province_contact>,
+        <http://resource.geosciml.org/classifier/cgi/contacttype/geophysical_contact>,
+        <http://resource.geosciml.org/classifier/cgi/contacttype/glacial_stationary_line>,
+        <http://resource.geosciml.org/classifier/cgi/contacttype/lithogenetic_contact> ;
+    skos:prefLabel "Kontakt"@de,
+        "contact"@en,
+        "contacto"@es,
+        "rajapinta"@fi,
+        "contatto"@it,
+        "kontakt"@ru,
+        "kontakt"@sv ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> .
+
+
 <http://resource.geosciml.org/classifier/cgi/contacttype/alteration_facies_contact> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> ;
@@ -133,21 +154,6 @@
     skos:definition "A contact separating two geological units in which the layers are formed one above the other in order by regular, uninterrupted deposition under the same general conditions."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> ;
     skos:prefLabel "conformable contact"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/contacttype/contact> a skos:Concept ;
-    dcterms:provenance "adapted from Jackson, 1997, page 137, NADM C1 2004"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> ;
-    skos:definition "A surface that separates geologic units. Very general concept representing any kind of surface separating two geologic units, including primary boundaries such as depositional contacts, all kinds of unconformities, intrusive contacts, and gradational contacts, as well as faults that separate geologic units."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/contacttype/chronostratigraphic_zone_contact>,
-        <http://resource.geosciml.org/classifier/cgi/contacttype/faulted_contact>,
-        <http://resource.geosciml.org/classifier/cgi/contacttype/geologic_province_contact>,
-        <http://resource.geosciml.org/classifier/cgi/contacttype/geophysical_contact>,
-        <http://resource.geosciml.org/classifier/cgi/contacttype/glacial_stationary_line>,
-        <http://resource.geosciml.org/classifier/cgi/contacttype/lithogenetic_contact> ;
-    skos:prefLabel "contact"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> .
 
 
 <http://resource.geosciml.org/classifier/cgi/contacttype/deformation_zone_contact> a skos:Concept ;
@@ -438,4 +444,6 @@
     skos:definition "A lithogenetic contact separating bodies of material differentiated based on lithologic properties related to weathering."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> ;
     skos:prefLabel "weathering contact"@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

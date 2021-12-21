@@ -68,6 +68,29 @@
     skos:prefLabel "Fault Type - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/faulttype/fault> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
+    skos:definition "A discrete surface, or zone of discrete surfaces, with some thickness, separating two rock masses across which one mass has slid past the other and characterized by brittle deformation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault>,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault>,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault>,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault>,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault>,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault>,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/scissor_fault>,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
+    skos:prefLabel "Stoerung"@de,
+        "fault"@en,
+        "falla"@es,
+        "siirrokset"@fi,
+        "faglia"@it,
+        "razlom"@ru,
+        "förkastning"@sv ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> .
+
+
 <http://resource.geosciml.org/classifier/cgi/faulttype/detachment_fault> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
@@ -95,23 +118,6 @@
     skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/mixed_extraction_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/pure_extraction_fault> ;
     skos:prefLabel "extraction fault"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/faulttype/fault> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
-    skos:definition "A discrete surface, or zone of discrete surfaces, with some thickness, separating two rock masses across which one mass has slid past the other and characterized by brittle deformation."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault>,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault>,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault>,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault>,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault>,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault>,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/scissor_fault>,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
-    skos:prefLabel "fault"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> .
 
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> a skos:Concept ;
@@ -152,7 +158,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> ;
     skos:definition "Fault that dips less than 10 degrees over more than half the recognized extent of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
-    skos:prefLabel "horizontal fault"@en .
+    skos:prefLabel "Horizontalverwerfung"@de,
+        "horizontal fault"@en,
+        "falla horizontal"@es,
+        "vaakasiirros"@fi,
+        "faglia a piano orizzontale"@it,
+        "razlom gorizontal'nyj"@ru,
+        "horisontalförkastning"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/left_normal_fault> a skos:Concept ;
@@ -213,7 +225,23 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> ;
-    skos:prefLabel "normal fault"@en .
+    skos:prefLabel "Abschiebung"@de,
+        "normal fault"@en,
+        "falla normal"@es,
+        "normaalisiirrokset"@fi,
+        "faille normale"@fr,
+        "sesar normal"@id,
+        "faglia normale"@it,
+        "正断層"@ja,
+        "bMNak;RsutFmµta"@km,
+        "정단층"@ko,
+        "»º¨Àìˆº­ê¿´½©¾"@lo,
+        "sesar normal"@ms,
+        "sbros"@ru,
+        "normalförkastning"@sv,
+        "รอยเลื่อนปกติ"@th,
+        "đứt gãy thuận"@vi,
+        "正断层"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> a skos:Concept ;
@@ -246,7 +274,23 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> ;
-    skos:prefLabel "reverse fault"@en .
+    skos:prefLabel "Aufschiebung"@de,
+        "reverse fault"@en,
+        "falla inversa"@es,
+        "ka\"a\"nteissiirrokset"@fi,
+        "faille inverse"@fr,
+        "sesar kebalikan"@id,
+        "faglia inversa"@it,
+        "逆断層"@ja,
+        "bMNak;RsutbRB©aas;"@km,
+        "역단층"@ko,
+        "»º¨Àìˆº­¡ñ®"@lo,
+        "sesar songsang"@ms,
+        "sbros obrashchennyj"@ru,
+        "reversförkastning"@sv,
+        "รอยเลื่อนกลับ"@th,
+        "đứt gãy ngược"@vi,
+        "逆断层"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/right_normal_fault> a skos:Concept ;
@@ -300,19 +344,59 @@
 <http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
+    skos:altLabel "スラスト"@ja,
+        "충상단층"@ko,
+        "逆断层"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> ;
     skos:definition "Fault that dips less than 45 degrees over more than half of the recognized extent of the fault, with a hanging wall displaced from a structurally deeper position relative to footwall rocks."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
-    skos:prefLabel "thrust fault"@en .
+    skos:prefLabel "Ueberschiebung"@de,
+        "thrust fault"@en,
+        "falla cabalgamiento"@es,
+        "tyo\"nto\"siirrokset"@fi,
+        "chevauchement"@fr,
+        "sesar sungkup"@id,
+        "accavallamento"@it,
+        "衝上断層"@ja,
+        "sñameRbHEdllyecjmkeRkA"@km,
+        "쓰러스트단층"@ko,
+        "»º¨Àìˆº­´ø´ªÔ"@lo,
+        "sesar sungkup"@ms,
+        "nadvig"@ru,
+        "överskjutningsförkastning"@sv,
+        "รอยเลื่อนย้อนมุมต่ำ"@th,
+        "đứt gãy nghịch chờm"@vi,
+        "冲断层"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/wrench_fault> a skos:Concept ;
     dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
+    skos:altLabel "sesar merenggut"@id,
+        "扭断层"@zh,
+        "走向滑断层"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault>,
         <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
     skos:definition "A strike slip fault in which the fault plane dips at least 45 degrees over more than half of the recognized extent of the fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ;
-    skos:prefLabel "wrench fault"@en .
+    skos:prefLabel "steile Blattverschiebung"@de,
+        "wrench fault"@en,
+        "falla vertical desgarre"@es,
+        "va\"a\"nto\"siirrokset"@fi,
+        "faille verticale décrochement"@fr,
+        "sesar memilin"@id,
+        "faglia trascorrente verticale"@it,
+        "レンチ断層"@ja,
+        "minRtUvKña ¬xusgaM¦"@km,
+        "렌치단층"@ko,
+        "»º¨Àìˆº­À¡ó©µ¾¨¡ñ­Ä¯ª¾´Á­¸­º­"@lo,
+        "sesar rengkuh"@ms,
+        "sdvig po prostiraniyu"@ru,
+        "brant lateralförkastning"@sv,
+        "รอยเลื่อนเหลื่อมข้างแนวนอน"@th,
+        "đứt gãy vặn"@vi,
+        "平搓断层"@zh .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

@@ -59,60 +59,6 @@
     skos:prefLabel "Metamorphic Facies - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
-    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by hornblende-plagioclase (plagioclase more calcic than An17)."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:prefLabel "amphibolite metamorphic facies"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Fettes and Desmons, 2007"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
-    skos:definition "Omphacite-garnet-quartz (no plagioclase, olivine stable with garnet), assemblage for rocks of basaltic composition"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:prefLabel "eclogite metamorphic facies"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/epidote_amphibolite_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Fettes and Desmons, 2007"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
-    skos:definition "Hornblende-albite-epidote(-chlorite), assemblage for rocks of basaltic composition"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:prefLabel "epidote amphibolite metamorphic facies"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/glaucophane_schist_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
-    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by glaucophane-epidote (-garnet), glaucophane-lawsonite, or glaucophane-lawsonite-jadeite."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:prefLabel "glaucophane schist facies"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
-    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by the mineral assemblage clinopyroxene-orthopyroxene-plagioclase (olivine not stable with plagioclase or with garnet), or especially high-temperature varieties or polymorphs of minerals (e"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:prefLabel "granulite facies"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
-    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by actinolite-albite-epidote-chlorite (an epidote group mineral is the diagnostic Ca-Al silicate rather than prehnite or pumpellyite)."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
-    skos:prefLabel "greenschist metamorphic facies"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
@@ -148,6 +94,81 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:prefLabel "no metamorphic minerals"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> .
+
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies> a skos:Concept ;
+    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:altLabel "แอมฟิโบไลต์เฟชี"@th ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
+    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by hornblende-plagioclase (plagioclase more calcic than An17)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:prefLabel "amphibolite metamorphic facies"@en,
+        "faciès amphibolite"@fr,
+        "fasies amfibolit"@id,
+        "角閃岩相"@ja,
+        "BBYkGahVIb:UlIt"@km,
+        "각섬암상"@ko,
+        " §÷©ìñ¡¦½­½Áºñ´³óó-Â®Äìª"@lo,
+        "fasies amfibolit"@ms,
+        "ชุดลักษณ์แอมฟิโบไลต์"@th,
+        "tướng amphibolit"@vi,
+        "角闪岩相"@zh .
+
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies> a skos:Concept ;
+    dcterms:provenance "Fettes and Desmons, 2007"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
+    skos:definition "Omphacite-garnet-quartz (no plagioclase, olivine stable with garnet), assemblage for rocks of basaltic composition"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:prefLabel "eclogite metamorphic facies"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/epidote_amphibolite_metamorphic_facies> a skos:Concept ;
+    dcterms:provenance "Fettes and Desmons, 2007"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
+    skos:definition "Hornblende-albite-epidote(-chlorite), assemblage for rocks of basaltic composition"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:prefLabel "epidote amphibolite metamorphic facies"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/glaucophane_schist_facies> a skos:Concept ;
+    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
+    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by glaucophane-epidote (-garnet), glaucophane-lawsonite, or glaucophane-lawsonite-jadeite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:prefLabel "glaucophane schist facies"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies> a skos:Concept ;
+    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
+    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by the mineral assemblage clinopyroxene-orthopyroxene-plagioclase (olivine not stable with plagioclase or with garnet), or especially high-temperature varieties or polymorphs of minerals (e"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:prefLabel "granulite facies"@en,
+        "faciès granulite"@fr,
+        "fasies granulit"@id,
+        "グラニュライト相"@ja,
+        "RkumkNiksila b¤ silaRKab;"@km,
+        "백립암상"@ko,
+        "§÷©ìñ¡¦½­½¹ó­¡ë¾­øÄìª"@lo,
+        "fasies granulit"@ms,
+        "แกรนูไลต์เฟชี"@th,
+        "tướng granulit"@vi,
+        "麻粒岩相"@zh .
+
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies> a skos:Concept ;
+    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
+    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by actinolite-albite-epidote-chlorite (an epidote group mineral is the diagnostic Ca-Al silicate rather than prehnite or pumpellyite)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
+    skos:prefLabel "greenschist metamorphic facies"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/pyroxene_hornfels_metamorphic_facies> a skos:Concept ;

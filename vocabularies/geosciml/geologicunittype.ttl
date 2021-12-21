@@ -68,6 +68,28 @@
     skos:prefLabel "Geologic Unit Type - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
+    skos:definition "Type of geologic unit is unknown, unspecified, irrelevant, or some type not included in the vocabulary. Type makes no implication for required properties or cardinalities. This is the root concept for the type hierarchy."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/alteration_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/biostratigraphic_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/chronostratigraphic_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/geomorphologic_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/geophysical_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithologic_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/pedoderm>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/pedostratigraphic_unit>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunittype/polarity_chronostratigraphic_unit> ;
+    skos:prefLabel "geologic unit"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> .
+
+
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit> a skos:Concept ;
     dcterms:provenance "This vocabulary, Salvador, 1994, Donovon 2004 IUGS abstract."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
@@ -101,7 +123,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined based on fossil content. Five kinds of biozones are recognized by the revised NACSN (Lenz et al., 2000, Note 64, a recommended complete replacement of Articles 48 through 54 of the North American Stratigraphic Code (NACSN, 1983) accepted for publication 2000.): range biozone, interval biozone, lineage biozone, assemblage biozone, and abundance biozone. These represent different approaches to defining and recognizing biozones."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
-    skos:prefLabel "biostratigraphic unit"@en .
+    skos:prefLabel "biostratigraphische Einheit"@de,
+        "biostratigraphic unit"@en,
+        "unidad bioestratigra!fica"@es,
+        "biostratigrafinen yksikko\""@fi,
+        "unita# biostratigrafica"@it,
+        "podrazdelenie biostratigraficheskoe"@ru,
+        "biostratigrafisk enhet"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/chronostratigraphic_unit> a skos:Concept ;
@@ -110,7 +138,18 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit that includes all rocks formed during a specific interval of geologic time"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
-    skos:prefLabel "chronostratigraphic unit"@en .
+    skos:prefLabel "chronostratigraphische Einheit"@de,
+        "chronostratigraphic unit"@en,
+        "unidad cronoestratigra!fica"@es,
+        "unidad cronoestratigráfica"@es,
+        "kronostratigrafinen yksikko\""@fi,
+        "kronostratigrafinen yksikkö"@fi,
+        "unité chronostratigraphique"@fr,
+        "unita# cronostratigrafica"@it,
+        "unità cronostratigrafica"@it,
+        "podrazdelenie khronostratigraficheskoe"@ru,
+        "kronostratigrafisk enhet"@sv,
+        "chronostratigraphic units"@xx .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/deformation_unit> a skos:Concept ;
@@ -129,28 +168,6 @@
     skos:definition "Geologic unit defined by human-made genesis involving excavation. Not necessarily defined by landform (a hole...), as they could have been subsequently filled/landscaped etc. If the excavation is filled becomes an excavation with artificial ground wholly or partly superimposed on it. This sort of thing can become quite important in urban geology where an excavation can be filled and landscaped."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:prefLabel "excavation unit"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
-    skos:definition "Type of geologic unit is unknown, unspecified, irrelevant, or some type not included in the vocabulary. Type makes no implication for required properties or cardinalities. This is the root concept for the type hierarchy."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/alteration_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/biostratigraphic_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/chronostratigraphic_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/geomorphologic_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/geophysical_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithologic_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/pedoderm>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/pedostratigraphic_unit>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunittype/polarity_chronostratigraphic_unit> ;
-    skos:prefLabel "geologic unit"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/geomorphologic_unit> a skos:Concept ;
@@ -208,7 +225,13 @@
     skos:definition "Geologic unit defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties and stratigraphic relationships. Denotes a particular body of rock."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithodemic_unit> ;
-    skos:prefLabel "lithostratigraphic unit"@en .
+    skos:prefLabel "lithostratigraphische Einheit"@de,
+        "lithostratigraphic unit"@en,
+        "unidad litoestratigra!fica"@es,
+        "litostratigraafinen yksikko\""@fi,
+        "unita# litostratigrafica"@it,
+        "podrazdelenie litostratigraficheskoe"@ru,
+        "litostratigrafisk enhet"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit> a skos:Concept ;
@@ -264,4 +287,6 @@
     skos:definition "Geologic unit defined by primary magnetic-polarity record imposed whien the rock was deposited or crystallized during a specific interval of geolgoic time. Kind of chronostratigraphic unit and kind of geophysical unit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:prefLabel "polarity chronostratigraphic unit"@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

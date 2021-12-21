@@ -79,68 +79,6 @@
     skos:prefLabel "Environmental Impact - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/acid-mine-drainage> a skos:Concept ;
-    dcterms:provenance "BAT/BREF of mining tailings and waste rock (European Commission 2004). http://eippcb.jrc.ec.europa.eu/reference/BREF/mmr_adopted_0109.pdf"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/mine-drainage> ;
-    skos:definition "Mine drainage that has a pH value of less than 7.0."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:notation "01.2.1.2.1.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "acid mine drainage"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/aqueous-liquid-emission> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/liquid-emission> ;
-    skos:definition "Emission of liquids in which water is the most abundant constituent."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/subsurface-aqueous-liquid-discharge>,
-        <http://resource.geosciml.org/classifier/cgi/environmental-impact/surface-aqueous-liquid-discharge> ;
-    skos:notation "01.2.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "aqueous liquid emission"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/basic-mine-drainage> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/mine-drainage> ;
-    skos:definition "Mine drainage that has a pH value of greater than 7.0."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:notation "01.2.1.2.1.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "basic mine drainage"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/collapse> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/subsidence> ;
-    skos:definition "Collapse of surface material into underground excavations, resulting in major surface subsidence and disruption."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:notation "02.3.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "collapse"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/dam-failure> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact> ;
-    skos:definition "Breach or destruction of a large water or tailing containment structure and release of contained water that could result in downstream damage or pollution."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:notation "02.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "dam failure"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/dust> a skos:Concept ;
-    dcterms:provenance "ISO 4225 (ISO, 1994), quoted in http://www.who.int/occupational_health/publications/en/oehairbornedust3.pdf; http://ecorestoration.montana.edu/mineland/guide/problem/impacts/fugitive.htm"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/particulate-emission> ;
-    skos:definition "Emission of dust into the air. Dust is defines as small solid particles with a diameter less than 75 µm. The particles are small enough to remain suspended in the air for some time, but settle out under their own weight in still air."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:notation "01.1.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "dust"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/emission> a skos:Concept ;
     dcterms:provenance "This vocabulary. adapted from (ESH Environment, Safety and Health Thesaurus/Dictionary. U.S. Department of Energy. DOE/EH-0186, 1991. 510 p.): Any spilling, leaking, pumping, pouring, emitting, emptying, discharging, injecting, escaping, leaching, dumping, or otherwise disposing of substances into the environment."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
@@ -153,27 +91,6 @@
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "emission"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> .
-
-
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/erosion> a skos:Concept ;
-    dcterms:provenance "IGH International Glossary of Hydrology. WMO - UNESCO, 1992. 413 p."@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact> ;
-    skos:definition "Impact due to loss of material shaped by mining activities through water or wind action."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:notation "02.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "erosion"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/gaseous-emission> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/emission> ;
-    skos:definition "Emission of gaseous substance, including steam or release of gas resulting from mining activity."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/odour> ;
-    skos:notation "01.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "gaseous emission"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/habitat-modification> a skos:Concept ;
@@ -206,8 +123,207 @@
     skos:definition "Impact includes noticable thermal release from mining activity (e.g. warm water discharge, exothermic mineral reactions)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
     skos:notation "04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "heat"@en ;
+    skos:prefLabel "Waerme"@de,
+        "heat"@en,
+        "calor"@es,
+        "la\"mpo\""@fi,
+        "calore"@it,
+        "teplota"@ru,
+        "värme"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:definition "Impact due to direct physical effects of natural processes resulting from mining activity."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/dam-failure>,
+        <http://resource.geosciml.org/classifier/cgi/environmental-impact/erosion>,
+        <http://resource.geosciml.org/classifier/cgi/environmental-impact/instability>,
+        <http://resource.geosciml.org/classifier/cgi/environmental-impact/landslide>,
+        <http://resource.geosciml.org/classifier/cgi/environmental-impact/sedimentation>,
+        <http://resource.geosciml.org/classifier/cgi/environmental-impact/subsidence>,
+        <http://resource.geosciml.org/classifier/cgi/environmental-impact/visual-disturbance> ;
+    skos:notation "02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "physical impact"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/vibration> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:altLabel "getaran"@id,
+        "penggetaran"@id,
+        "摆动"@zh ;
+    skos:definition "Ground and airborne vibration (airblast) caused by resource extraction activity or by transportation associated with the mining activity or related transportation\" (eg large lorries through narrow village roads)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/noise> ;
+    skos:notation "06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Erschuetterung"@de,
+        "vibration"@en,
+        "vibracio!n"@es,
+        "va\"ra\"htely"@fi,
+        "vibration"@fr,
+        "vibrasi"@id,
+        "tremore"@it,
+        "振動"@ja,
+        "dMeNIrj½r"@km,
+        "진동"@ko,
+        "¡¾­¦ñ„­"@lo,
+        "getaran"@ms,
+        "vibratsiya"@ru,
+        "vibration"@sv,
+        "การสั่น"@th,
+        "chấn động"@vi,
+        "振动"@zh ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/acid-mine-drainage> a skos:Concept ;
+    dcterms:provenance "BAT/BREF of mining tailings and waste rock (European Commission 2004). http://eippcb.jrc.ec.europa.eu/reference/BREF/mmr_adopted_0109.pdf"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:altLabel "酸性矿山排水"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/mine-drainage> ;
+    skos:definition "Mine drainage that has a pH value of less than 7.0."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:notation "01.2.1.2.1.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "saures Grubenwasser"@de,
+        "acid mine drainage"@en,
+        "desagu\"e a!cido mina"@es,
+        "hapan kaivosvaluma"@fi,
+        "exhaure mine acide"@fr,
+        "aliran tambang asam"@id,
+        "drenaggio acido"@it,
+        "酸性鉱山排水"@ja,
+        "karbgðÚrecjsarFatuGasuItBIGNþÚgEr:"@km,
+        "산성 광산배수"@ko,
+        " ¡¾­-ì½-®¾¨-­ÕÀ¦¨ê†À¯ñ­¡ö©¥¾¡ÁÍÈ¤¢÷©£í­Á»È"@lo,
+        "saliran asid lombong"@ms,
+        "drenirovanie vod shakhtnykh sernokislykh"@ru,
+        "försurat gruvdränage"@sv,
+        "น้ำเสียจากเหมืองที่เป็นกรด"@th,
+        "thoát nước axit mỏ"@vi,
+        "酸性矿坑排水"@zh .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/aqueous-liquid-emission> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/liquid-emission> ;
+    skos:definition "Emission of liquids in which water is the most abundant constituent."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/subsurface-aqueous-liquid-discharge>,
+        <http://resource.geosciml.org/classifier/cgi/environmental-impact/surface-aqueous-liquid-discharge> ;
+    skos:notation "01.2.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "aqueous liquid emission"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/basic-mine-drainage> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/mine-drainage> ;
+    skos:definition "Mine drainage that has a pH value of greater than 7.0."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:notation "01.2.1.2.1.2"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "basic mine drainage"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/collapse> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/subsidence> ;
+    skos:definition "Collapse of surface material into underground excavations, resulting in major surface subsidence and disruption."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:notation "02.3.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Einsturz"@de,
+        "collapse"@en,
+        "hundimiento"@es,
+        "sortuminen"@fi,
+        "sprofondamento"@it,
+        "obrushenie"@ru,
+        "kollaps"@sv .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/dam-failure> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact> ;
+    skos:definition "Breach or destruction of a large water or tailing containment structure and release of contained water that could result in downstream damage or pollution."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:notation "02.4"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "dam failure"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/dust> a skos:Concept ;
+    dcterms:provenance "ISO 4225 (ISO, 1994), quoted in http://www.who.int/occupational_health/publications/en/oehairbornedust3.pdf; http://ecorestoration.montana.edu/mineland/guide/problem/impacts/fugitive.htm"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:altLabel "jenis batubara"@id,
+        "火山灰"@zh,
+        "煤尘"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/particulate-emission> ;
+    skos:definition "Emission of dust into the air. Dust is defines as small solid particles with a diameter less than 75 µm. The particles are small enough to remain suspended in the air for some time, but settle out under their own weight in still air."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:notation "01.1.2"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Staub"@de,
+        "dust"@en,
+        "polvo"@es,
+        "po\"ly"@fi,
+        "poussière"@fr,
+        "debu"@id,
+        "polvere"@it,
+        "ダスト"@ja,
+        "FUlI"@km,
+        "재"@ko,
+        "±÷È­"@lo,
+        "debu"@ms,
+        "pyl'"@ru,
+        "damm"@sv,
+        "ฝุ่น"@th,
+        "bụi"@vi,
+        "尘"@zh .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/erosion> a skos:Concept ;
+    dcterms:provenance "IGH International Glossary of Hydrology. WMO - UNESCO, 1992. 413 p."@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:altLabel "kikisan"@id,
+        "pengikisan"@id,
+        "浸食"@ja,
+        "冲刷"@zh,
+        "冲蚀"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact> ;
+    skos:definition "Impact due to loss of material shaped by mining activities through water or wind action."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:notation "02.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Erosion"@de,
+        "erosion"@en,
+        "erosio!n"@es,
+        "eroosio"@fi,
+        "érosion"@fr,
+        "erosi"@id,
+        "erosione"@it,
+        "浸食作用"@ja,
+        "sMNwk"@km,
+        "침식"@ko,
+        "¡¾­À§¾½À¥ˆº­"@lo,
+        "hakisan"@ms,
+        "ehroziya"@ru,
+        "erosion"@sv,
+        "การกร่อน"@th,
+        "xói mòn"@vi,
+        "侵蚀"@zh .
+
+
+<http://resource.geosciml.org/classifier/cgi/environmental-impact/gaseous-emission> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/emission> ;
+    skos:definition "Emission of gaseous substance, including steam or release of gas resulting from mining activity."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/odour> ;
+    skos:notation "01.3"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "gaseous emission"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/instability> a skos:Concept ;
@@ -223,12 +339,31 @@
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/landslide> a skos:Concept ;
     dcterms:provenance "ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:altLabel "slope failure"@en ;
+    skos:altLabel "slope failure"@en,
+        "斜面崩壊"@ja,
+        "地滑"@zh,
+        "山崩"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact> ;
     skos:definition "Downslope displacement of material due to excavation related to resource extraction. Includes slope failure on waste or tailings heaps."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
     skos:notation "02.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "landslide"@en .
+    skos:prefLabel "Erdrutsch"@de,
+        "landslide"@en,
+        "deslizamiento terreno"@es,
+        "maanvierema\"t"@fi,
+        "glissement terrain"@fr,
+        "longsoran"@id,
+        "frana"@it,
+        "地滑り"@ja,
+        "bMNak;dI"@km,
+        "산사태"@ko,
+        "©ò­-À¥ˆº­"@lo,
+        "gelongsoran tanah"@ms,
+        "opolzen'"@ru,
+        "skred"@sv,
+        "ดินถล่ม"@th,
+        "trượt đất"@vi,
+        "滑坡"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/liquid-emission> a skos:Concept ;
@@ -253,7 +388,17 @@
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/basic-mine-drainage>,
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/neutral-mine-drainage> ;
     skos:notation "01.2.1.2.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "mine drainage"@en .
+    skos:prefLabel "mine drainage"@en,
+        "exhaure mine"@fr,
+        "penyaliran pertambangan"@id,
+        "坑廃水"@ja,
+        "bgðÚrEr:"@km,
+        "광산배수"@ko,
+        "¡¾­ì½®¾¨­ÕµøÈ®Ò¢÷©£í­"@lo,
+        "saliran lombong"@ms,
+        "การระบายน้ำในเหมือง"@th,
+        "thoát nước mỏ"@vi,
+        "矿山排水"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/mineral-fiber-emission> a skos:Concept ;
@@ -280,11 +425,30 @@
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/noise> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:altLabel "hingar"@ms,
+        "สัญญาณรบกวน"@th,
+        "噪音"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/vibration> ;
     skos:definition "Noticable sound resulting from a mining activity, usually from machinery, processing plant or blasting."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
     skos:notation "06.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "noise"@en .
+    skos:prefLabel "Rauschen"@de,
+        "noise"@en,
+        "ruido fondo"@es,
+        "taustaha\"irio\""@fi,
+        "bruit fond"@fr,
+        "suara riuh"@id,
+        "rumore di fondo"@it,
+        "ノイズ"@ja,
+        "sUsMelg/sUr"@km,
+        "잡음"@ko,
+        "¦¼¤ìö®¡¸­"@lo,
+        "bunyi bising"@ms,
+        "shum"@ru,
+        "brus"@sv,
+        "เสี่ยง"@th,
+        "nhiễu"@vi,
+        "杂波"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/non-aqueous-liquid-emission> a skos:Concept ;
@@ -319,31 +483,34 @@
     skos:prefLabel "particulate emission"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:definition "Impact due to direct physical effects of natural processes resulting from mining activity."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/dam-failure>,
-        <http://resource.geosciml.org/classifier/cgi/environmental-impact/erosion>,
-        <http://resource.geosciml.org/classifier/cgi/environmental-impact/instability>,
-        <http://resource.geosciml.org/classifier/cgi/environmental-impact/landslide>,
-        <http://resource.geosciml.org/classifier/cgi/environmental-impact/sedimentation>,
-        <http://resource.geosciml.org/classifier/cgi/environmental-impact/subsidence>,
-        <http://resource.geosciml.org/classifier/cgi/environmental-impact/visual-disturbance> ;
-    skos:notation "02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "physical impact"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> .
-
-
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/radiation> a skos:Concept ;
     dcterms:provenance "ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:altLabel "복사"@ko,
+        "penyebaran"@ms,
+        "发光"@zh,
+        "发散"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/radioactive-emission> ;
     skos:definition "Emission on air of radionuclides substance gangerous for many health situation"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
     skos:notation "01.4.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "radiation"@en .
+    skos:prefLabel "Strahlung"@de,
+        "radiation"@en,
+        "radiacio!n"@es,
+        "sa\"teily"@fi,
+        "rayonnement"@fr,
+        "radiasi"@id,
+        "radiazione"@it,
+        "放射"@ja,
+        "karbeB©ajkMedA"@km,
+        "방사"@ko,
+        "¡¾­Á°Èìñ¤¦ó"@lo,
+        "sinaran"@ms,
+        "radiatsiya"@ru,
+        "strålning"@sv,
+        "การแผ่รังสี"@th,
+        "bức xạ"@vi,
+        "辐射"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/radioactive-emission> a skos:Concept ;
@@ -371,22 +538,63 @@
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/sedimentation> a skos:Concept ;
     dcterms:source "http://ecorestoration.montana.edu/mineland/guide/problem/impacts/erosion.htm"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:altLabel "proses pengendapan"@id,
+        "堆積"@ja,
+        "pengendapan"@ms,
+        "การตกตะกอน"@th,
+        "沉降"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact> ;
     skos:definition "Deposition of sediment eroded from resource extraction site in undesirable locations"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
     skos:notation "02.6"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "sedimentation"@en .
+    skos:prefLabel "Sedimentation"@de,
+        "sedimentation"@en,
+        "sedimentacio!n"@es,
+        "sedimentaatio"@fi,
+        "sédimentation"@fr,
+        "sedimentasi"@id,
+        "sedimentazione"@it,
+        "堆積作用"@ja,
+        "dMeNIrénkMeTckMN"@km,
+        "퇴적작용"@ko,
+        "¡¾­ªö¡ª½¡º­"@lo,
+        "pensedimenan"@ms,
+        "sedimentatsiya"@ru,
+        "sedimentation"@sv,
+        "การเกิดหินตะกอน"@th,
+        "trầm tích (quá trình)"@vi,
+        "沉积"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/subsidence> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
+    skos:altLabel "침하"@ko,
+        "amblesan"@ms,
+        "沉降"@zh,
+        "沉陷"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact> ;
     skos:definition "Settlement of land or soil through compaction of loose or excavated material"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/collapse> ;
     skos:notation "02.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "subsidence"@en .
+    skos:prefLabel "Senkung"@de,
+        "subsidence"@en,
+        "subsidencia"@es,
+        "vajoaminen"@fi,
+        "subsidence"@fr,
+        "amblasan"@id,
+        "subsidenza"@it,
+        "沈降"@ja,
+        "dMeNIrs¶b;s¶at;"@km,
+        "침강"@ko,
+        "¡¾­¨÷®ªö¸ìö¤"@lo,
+        "penurunan"@ms,
+        "opuskanie"@ru,
+        "jordskorpesänkning"@sv,
+        "การยุบตัวลง"@th,
+        "lún chìm"@vi,
+        "下沉"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/subsurface-aqueous-liquid-discharge> a skos:Concept ;
@@ -412,17 +620,6 @@
     skos:prefLabel "surface aqueous liquid discharge"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/environmental-impact/vibration> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:definition "Ground and airborne vibration (airblast) caused by resource extraction activity or by transportation associated with the mining activity or related transportation\" (eg large lorries through narrow village roads)."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/noise> ;
-    skos:notation "06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "vibration"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> .
-
-
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/visual-disturbance> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
@@ -432,4 +629,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ;
     skos:notation "05.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "visual disturbance"@en .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

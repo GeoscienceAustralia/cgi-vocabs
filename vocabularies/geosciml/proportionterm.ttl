@@ -57,6 +57,19 @@
     skos:prefLabel "Proportion Term - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/proportionterm/present> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> ;
+    skos:definition "Component is present, but proportion is unknown"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/major>,
+        <http://resource.geosciml.org/classifier/cgi/proportionterm/predominant>,
+        <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate>,
+        <http://resource.geosciml.org/classifier/cgi/proportionterm/variable> ;
+    skos:prefLabel "present"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> .
+
+
 <http://resource.geosciml.org/classifier/cgi/proportionterm/all> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> ;
@@ -106,19 +119,6 @@
     skos:prefLabel "most abundant"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/present> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> ;
-    skos:definition "Component is present, but proportion is unknown"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/major>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/predominant>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/variable> ;
-    skos:prefLabel "present"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> .
-
-
 <http://resource.geosciml.org/classifier/cgi/proportionterm/rare> a skos:Concept ;
     dcterms:provenance "this vocabulary, follows Neuendorf et al 2005 usage scoped to coal description"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> ;
@@ -155,5 +155,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
     skos:definition "Component varies in proportion throughout the described entity."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> ;
-    skos:prefLabel "variable"@en .
+    skos:prefLabel "Variable"@de,
+        "variable"@en,
+        "variable"@es,
+        "muuttujat"@fi,
+        "variabile"@it,
+        "peremennaya"@ru,
+        "variabel"@sv .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

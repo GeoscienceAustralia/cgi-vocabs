@@ -64,6 +64,17 @@
     skos:prefLabel "Particle Aspect Ratio - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/particleaspectratio/form_not_specified> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> ;
+    skos:definition "Particle form may take any or no value. For use in normative descriptions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form>,
+        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/particle_geometry_uncertain> ;
+    skos:prefLabel "form not specified"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> .
+
+
 <http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form> a skos:Concept ;
     dcterms:provenance "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> ;
@@ -123,17 +134,6 @@
     skos:definition "Particles are so elongate they are fibrous."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> ;
     skos:prefLabel "fibrous"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/form_not_specified> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> ;
-    skos:definition "Particle form may take any or no value. For use in normative descriptions."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/particle_geometry_uncertain> ;
-    skos:prefLabel "form not specified"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> .
 
 
 <http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate> a skos:Concept ;

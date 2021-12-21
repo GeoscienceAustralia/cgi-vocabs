@@ -100,15 +100,6 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
 
 
-<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inertial_survey> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed> ;
-    skos:definition "mapped feature is located by inertial survey methods"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
-    skos:prefLabel "inertial survey"@en .
-
-
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred> a skos:Concept ;
     dcterms:provenance "Federal Geographic Data Committee, 2006"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -119,6 +110,43 @@
         <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations> ;
     skos:prefLabel "inferred"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_elevation_data> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
+    skos:definition "Geomorphic features located and specified based on surface morphology determined by elevation (or bathemetry) data, e.g. DEM, LIDAR"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
+    skos:prefLabel "observed based on elevation data"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/published_map> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
+    skos:definition "Mapped feature geometry was digitized from a published map, specification of feature based on map unit explanation"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
+    skos:prefLabel "published map"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
+    skos:definition "mapped feature is located by survey methods"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inertial_survey> ;
+    skos:prefLabel "surveyed"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inertial_survey> a skos:Concept ;
+    dcterms:provenance "this vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed> ;
+    skos:definition "mapped feature is located by inertial survey methods"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
+    skos:prefLabel "inertial survey"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_aeromagnetic_survey> a skos:Concept ;
@@ -285,15 +313,6 @@
     skos:prefLabel "observed distant outcrop"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_elevation_data> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
-    skos:definition "Geomorphic features located and specified based on surface morphology determined by elevation (or bathemetry) data, e.g. DEM, LIDAR"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
-    skos:prefLabel "observed based on elevation data"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
-
-
 <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop> a skos:Concept ;
     dcterms:provenance "based on Matti et al 1997, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
@@ -322,23 +341,4 @@
     skos:definition "Phenomenon observed directly in outcrop, and located using GPS"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
     skos:prefLabel "observed outcrop gps location"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/published_map> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
-    skos:definition "Mapped feature geometry was digitized from a published map, specification of feature based on map unit explanation"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
-    skos:prefLabel "published map"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
-
-
-<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
-    skos:definition "mapped feature is located by survey methods"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inertial_survey> ;
-    skos:prefLabel "surveyed"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> .
 

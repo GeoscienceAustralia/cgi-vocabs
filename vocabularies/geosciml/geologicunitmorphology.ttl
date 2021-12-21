@@ -122,6 +122,43 @@
     skos:prefLabel "Geologic Unit Morphology - All Concepts"@en .
 
 
+<http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/planar_profile> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
+    skos:definition "Shape is defined by intersection of body with some surface, generally either a cross section or map view"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/elliptical_profile>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/equant_profile>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/irregular_profile>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/lenticular_profile>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/polygonal_profile> ;
+    skos:prefLabel "planar profile"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> .
+
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/three_dimensional_body> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
+    skos:definition "Any three dimensional body"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/blob>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/cone_segment>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/cylinder>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/discoid_anulus>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/discus>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/ellipsoid>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/hemispheroid>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/longitudinal_section_of_cylinder>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/prism>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/ribbon>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/sheet>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/tear_drop>,
+        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/wedge> ;
+    skos:prefLabel "three dimensional body"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> .
+
+
 <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/arch_morphology> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
@@ -147,7 +184,8 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "Geometric analog is convex down discoid, term generally connotes a kilometer-scale feature. Map view may be circular, elliptical, or irregular, characteristic feature is thickening from the edges towards the center. Typically used to describe a body of sedimentary rock deposited in a low area in the Earth's crust, in which case there is an implication that the top is (or was) a surface of deposition."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "basin shape"@en ;
+    skos:prefLabel "basin shape"@en,
+        "buffertzon"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/discus>,
         <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/hemispheroid> .
 
@@ -174,10 +212,28 @@
 <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/block> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
+    skos:altLabel "bangun bongkah"@id,
+        "지괴구조"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/polygonal_cylinder> ;
     skos:definition "Equant polygonal cylinder, L=W=H, definable edges separate bounding surfaces. Grades to tabular prism as one horizontal dimension becomes distinctly longer than the other, and tablet or polygonal cylinder as one vertical axis becomes distinctly shorter or longer than the horizontal axes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "block"@en .
+    skos:prefLabel "Blockstruktur"@de,
+        "block"@en,
+        "estructura bloques"@es,
+        "lohkorakenteet"@fi,
+        "structure bloc"@fr,
+        "struktur bongkah"@id,
+        "struttura a blocchi"@it,
+        "地塊構造"@ja,
+        "rcnasm<½nCabøúk"@km,
+        "암괴구조"@ko,
+        "Â£¤¦É¾¤»ø®®ìñº¡"@lo,
+        "struktur bongkah"@ms,
+        "struktura blokovaya"@ru,
+        "blockstruktur"@sv,
+        "โครงสร้างบล็อก"@th,
+        "cấu trúc khối"@vi,
+        "块状构造"@zh .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/boudin_shape> a skos:Concept ;
@@ -202,10 +258,17 @@
 <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/channel_shape> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
+    skos:altLabel "gully"@sv ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "Strongly elongate lens or ribbon with a convex downward lower surface, near planar upper surface. Morphology is equivalent to upside down arch."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "channel shape"@en ;
+    skos:prefLabel "Rinne"@de,
+        "channel shape"@en,
+        "canal natural"@es,
+        "uomat"@fi,
+        "canale"@it,
+        "ruslo"@ru,
+        "kanal"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/longitudinal_section_of_cylinder>,
         <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/ribbon> .
 
@@ -314,7 +377,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "A generally sheet-like intrusive rock body that cuts across bedding or foliation in the host rock, or intrudes massive host rock."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "dike"@en ;
+    skos:prefLabel "Dyke"@de,
+        "dike"@en,
+        "dique"@es,
+        "juonet"@fi,
+        "dicco"@it,
+        "dajka"@ru,
+        "gång"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/sheet> .
 
 
@@ -353,7 +422,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "Steep-sided disk-like body, for example and accumulation of high viscosity lava above and around a volcanic vent. A structure in which the top of the body dips gently away in all directions e.g. salt dome, extrusion dome"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "dome"@en ;
+    skos:prefLabel "Dom"@de,
+        "dome"@en,
+        "domo"@es,
+        "doomit"@fi,
+        "duomo"@it,
+        "kupol"@ru,
+        "dom"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/hemispheroid> .
 
 
@@ -457,7 +532,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "A cone segment, generally applied to surface morphology of sedimentary deposit with a gentle surface slope, radiating from a localized sediment source."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "fan"@en ;
+    skos:prefLabel "Faecher"@de,
+        "fan"@en,
+        "cono"@es,
+        "keilat"@fi,
+        "conoide"@it,
+        "vynos veeroobraznyj"@ru,
+        "kon"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/cone_segment> .
 
 
@@ -514,7 +595,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "an elongate body bounded on both sides by normal faults that dip toward each other"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "graben shape"@en ;
+    skos:prefLabel "Graben"@de,
+        "graben shape"@en,
+        "graben"@es,
+        "hautavajoamat"@fi,
+        "graben"@it,
+        "graben"@ru,
+        "gravsänka"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/tabular_prism> .
 
 
@@ -539,10 +626,29 @@
 <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/laccolith> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
+    skos:altLabel "¹ó­-ºñ¡-£½-­ó-»ø®-À¹ñ©"@lo,
+        "岩盘"@zh,
+        "菌形穹隆"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "A tabular or lenticular igneous body whose long dimensions parallel layering in the host rock, and which as a convex-up roof and a known or assumed flat floor"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "laccolith"@en ;
+    skos:prefLabel "Lakkolith"@de,
+        "laccolith"@en,
+        "lacolito"@es,
+        "lakkoliitit"@fi,
+        "laccolite"@fr,
+        "lakolit"@id,
+        "laccolite"@it,
+        "ラコリス"@ja,
+        "Lk;kUlIt"@km,
+        "병반"@ko,
+        "¹ó­Áìñ¡-Â£-ìò©"@lo,
+        "lakolitos"@ms,
+        "lakkolit"@ru,
+        "lakkolit"@sv,
+        "หินอัคนีรูปเห็ด"@th,
+        "thể nấm"@vi,
+        "岩盖"@zh ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/discus>,
         <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/sheet_ellipsoid> .
 
@@ -553,7 +659,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "Body geometry characterized by generally thin character relative to the lateral extent of the body (on order of 1:100). Thin bodies of lesser extent are lenses. Connotes a non-intrusive body, equivalent intrusive body would be dike (or sill). Denotes that body is in a sequence of similar sheet-like bodies between other rock bodies"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "layer shape"@en ;
+    skos:prefLabel "Schicht"@de,
+        "layer shape"@en,
+        "estrato"@es,
+        "kerrokset"@fi,
+        "strato"@it,
+        "sloj"@ru,
+        "lager"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/blanket_shape>,
         <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/sill_form> .
 
@@ -564,7 +676,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "A body bounded by converging surfaces (at least one of which is curved), thick in the middle and thinning out toward the edges, resembling a convex lens."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "lens"@en ;
+    skos:prefLabel "Linse"@de,
+        "lens"@en,
+        "lentejo!n"@es,
+        "linssit"@fi,
+        "lente"@it,
+        "linza"@ru,
+        "lins"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/discus> .
 
 
@@ -592,7 +710,23 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "A large, concordant, typically layered igneous intrusion whose floor is convex-down and whose roof may be convex-down or flat."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "lopolith"@en ;
+    skos:prefLabel "Lopolith"@de,
+        "lopolith"@en,
+        "lopolito"@es,
+        "lopoliitit"@fi,
+        "lopolite"@fr,
+        "lopolit"@id,
+        "lopolite"@it,
+        "ロポリス"@ja,
+        "silaEdllatsn§wgkñúgtMbn;"@km,
+        "분상암체"@ko,
+        "ÂìÂ²ìò©"@lo,
+        "lopolitos"@ms,
+        "lopolit"@ru,
+        "lopolit"@sv,
+        "หินอัคนีรูปฝักบัว"@th,
+        "thể chậu"@vi,
+        "岩盆"@zh ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/discus>,
         <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/sheet_ellipsoid> .
 
@@ -603,7 +737,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "Lense like body of rock, lateral extent less than 100m, generally flat at bottom, with stratigraphic pinch out of beds (onlap) along upper sides."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "mound"@en ;
+    skos:prefLabel "Kuppe"@de,
+        "mound"@en,
+        "cerro"@es,
+        "kumpareet"@fi,
+        "mound"@it,
+        "kholm zemlyanoj"@ru,
+        "kulle"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/discus> .
 
 
@@ -641,21 +781,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "Rock body that has a length to width ratio greater than 10 to 1, with two sub equal width dimensions."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "pipe"@en .
-
-
-<http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/planar_profile> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:definition "Shape is defined by intersection of body with some surface, generally either a cross section or map view"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/elliptical_profile>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/equant_profile>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/irregular_profile>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/lenticular_profile>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/polygonal_profile> ;
-    skos:prefLabel "planar profile"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> .
+    skos:prefLabel "Pipe"@de,
+        "pipe"@en,
+        "pipa"@es,
+        "piiput"@fi,
+        "tubo"@it,
+        "trubka"@ru,
+        "pipe"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/planar_sheet> a skos:Concept ;
@@ -732,10 +864,28 @@
 <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/ring_dyke> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
+    skos:altLabel "retas melingkar"@id,
+        "リングダイク"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "An arcuate or subcircular dyke, generally associated with a volcanic centre."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "ring dike"@en ;
+    skos:prefLabel "Ringdyke"@de,
+        "ring dike"@en,
+        "dique anular"@es,
+        "rengasjuonet"@fi,
+        "ring dyke"@fr,
+        "retas cincin"@id,
+        "filone ad anello"@it,
+        "環状岩脈"@ja,
+        "TMnb;TwkB½T§CuMvij"@km,
+        "환상암맥"@ko,
+        "²½Îñ¤¸ö¤Á¹¸­"@lo,
+        "korok gelang"@ms,
+        "dajka kol'tsevaya"@ru,
+        "ringgång"@sv,
+        "พนังวงแหวน"@th,
+        "thể tường dạng vòng"@vi,
+        "环状岩墙"@zh ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/arcuate_sheet> .
 
 
@@ -830,7 +980,13 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "Wedge-like intrusion, partly concordant, partly discordant."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "sphenolith"@en ;
+    skos:prefLabel "Sphenolithus"@de,
+        "sphenolith"@en,
+        "esfenolito"@es,
+        "sfenoliitti"@fi,
+        "sfenolite"@it,
+        "sfenolit"@ru,
+        "sfenolit"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/prism>,
         <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/wedge> .
 
@@ -880,36 +1036,19 @@
     skos:prefLabel "tear drop"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/three_dimensional_body> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:definition "Any three dimensional body"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/blob>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/cone_segment>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/cylinder>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/discoid_anulus>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/discus>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/ellipsoid>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/hemispheroid>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/longitudinal_section_of_cylinder>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/prism>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/ribbon>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/sheet>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/tear_drop>,
-        <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/wedge> ;
-    skos:prefLabel "three dimensional body"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> .
-
-
 <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/trough> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/geologic_body> ;
     skos:definition "Shape of a body of sedimentary rock deposited in an elongate depression filled with sediment. large size distinguishes from channel"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
-    skos:prefLabel "trough shape"@en ;
+    skos:prefLabel "Tiefseemulde"@de,
+        "trough shape"@en,
+        "fosa abisal alargada"@es,
+        "poimupohjat"@fi,
+        "fossa abissale allungata"@it,
+        "trog"@ru,
+        "tråg"@sv ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/longitudinal_section_of_cylinder> .
 
 
@@ -933,4 +1072,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
     skos:prefLabel "wedge"@en ;
     skos:related <http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/prism> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 

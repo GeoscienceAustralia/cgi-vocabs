@@ -69,16 +69,6 @@
     skos:prefLabel "Fault Movement Sense - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal> ;
-    skos:definition "A regional-scale low-angle normal fault."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
-    skos:prefLabel "detachment"@en,
-        "détachement"@fr .
-
-
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral> a skos:Concept ;
     dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -188,6 +178,16 @@
     skos:related <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral>,
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral> ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> .
+
+
+<http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment> a skos:Concept ;
+    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal> ;
+    skos:definition "A regional-scale low-angle normal fault."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
+    skos:prefLabel "detachment"@en,
+        "détachement"@fr .
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust> a skos:Concept ;

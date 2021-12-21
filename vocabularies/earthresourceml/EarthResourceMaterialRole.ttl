@@ -67,10 +67,29 @@
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/gangue> a skos:Concept ;
     dcterms:provenance "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    skos:altLabel "merduk"@id,
+        "tak berharga"@id,
+        "废石"@zh ;
     skos:definition "The valueless rock or mineral aggregates in an ore; that part of an ore that is not economically desirable but cannot be avoided in mining. It is separated from the ore minerals during concentration"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "gangue"@en ;
+    skos:prefLabel "Gangart"@de,
+        "gangue"@en,
+        "ganga"@es,
+        "harme"@fi,
+        "gangue"@fr,
+        "tak bernilai"@id,
+        "ganga"@it,
+        "脈石"@ja,
+        "silaEhÁg"@km,
+        "맥석"@ko,
+        "¡¾¡Á»È"@lo,
+        "gangue"@ms,
+        "poroda pustaya"@ru,
+        "gångart"@sv,
+        "แร่กาก"@th,
+        "đá mạch"@vi,
+        "脉石"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
 
 
@@ -80,7 +99,13 @@
     skos:definition "A body of rock serving as a host for other rocks or for mineral deposits; e.g. a pluton containing xenoliths, or any rock in which ore deposits occur. It is a somewhat more specific term than country rock."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
     skos:notation "03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "host rock"@en ;
+    skos:prefLabel "Wirtsgestein"@de,
+        "host rock"@en,
+        "roca hue!sped"@es,
+        "isa\"nta\"kivet"@fi,
+        "roccia ospite"@it,
+        "poroda vmeshchayushchaya"@ru,
+        "värdbergart"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
 
 
@@ -90,7 +115,18 @@
     skos:definition "The naturally occurring material from which a mineral or minerals of economic value can be extracted at a reasonable profit. Also, the mineral(s) thus extracted. The term is generally but not always used to refer to metalliferous material, and is often modified by the name of the valuable constituent, e.g., \"iron ore\"."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
     skos:notation "05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "ore"@en ;
+    skos:prefLabel "Erzrohstoff"@de,
+        "ore"@en,
+        "mena"@es,
+        "malmi"@fi,
+        "minerai"@fr,
+        "giacimento minerario"@it,
+        "erts"@nl,
+        "ruda"@ru,
+        "malm"@sv,
+        """malm
+"""@sv,
+        "ore"@xx ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
 
 
@@ -121,6 +157,14 @@
     skos:definition "The rock adjacent to, enclosing, or including a vein, layer, or dissemination of ore minerals. It is commonly altered by epigenetic processes. The term implies more specific adjacency than host rock or country rock."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
     skos:notation "04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "wall rock"@en ;
+    skos:prefLabel "Nebengestein"@de,
+        "wall rock"@en,
+        "hastial"@es,
+        "malmin sivukivet"@fi,
+        "salbanda"@it,
+        "poroda bokovaya"@ru,
+        "sidoberg"@sv ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> skos:changeNote "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that language pack required for some of the fonts, and @lo labels were incorrectly encoded in the AMTG digitised source data. They have been included regardless of this in case the encoding can be unpicked."@en .
 
