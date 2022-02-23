@@ -280,13 +280,11 @@
     skos:notation "03.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ausschachtung"@de,
         "excavation"@en,
-        "excavacio!n"@es,
         "excavación"@es,
         "kaivannot"@fi,
         "excavation"@fr,
         "penggalian"@id,
         "scavo"@it,
-        "scavo "@it,
         "発掘"@ja,
         "karCIkdI"@km,
         "굴착"@ko,

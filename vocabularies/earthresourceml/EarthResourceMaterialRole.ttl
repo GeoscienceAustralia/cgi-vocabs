@@ -125,8 +125,6 @@
         "erts"@nl,
         "ruda"@ru,
         "malm"@sv,
-        """malm
-"""@sv,
         "ore"@xx ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
 

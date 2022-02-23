@@ -118,8 +118,6 @@
     skos:prefLabel "mineralischer Rohstoff"@de,
         "potentially commercial projects"@en,
         "recurso minero"@es,
-        """mineraalivarannot
-"""@fi,
         "mineraalivarat"@fi,
         "ressource minérale"@fr,
         "sumber daya mineral"@id,

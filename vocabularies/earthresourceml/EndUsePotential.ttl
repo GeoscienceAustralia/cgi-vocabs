@@ -194,7 +194,6 @@
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Steine-Erden-Industrieminerale"@de,
         "industrial minerals"@en,
-        "sustancia u!til"@es,
         "sustancia útil"@es,
         "teollisuusmineraalit"@fi,
         "substance utile"@fr,
