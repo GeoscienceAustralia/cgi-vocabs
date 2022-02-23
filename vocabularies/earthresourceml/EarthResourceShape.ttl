@@ -98,7 +98,7 @@
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Linse"@de,
         "lensoidal"@en,
-        "lentejo!n"@es,
+        "lentejón"@es,
         "linssit"@fi,
         "lente"@it,
         "linza"@ru,
@@ -115,7 +115,7 @@
     skos:notation "04.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Knolle"@de,
         "nodular"@en,
-        "no!dulo"@es,
+        "nódulo"@es,
         "noduulit"@fi,
         "nodulo"@it,
         "nodul'"@ru,

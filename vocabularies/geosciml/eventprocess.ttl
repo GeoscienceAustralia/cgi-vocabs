@@ -168,7 +168,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Anlagerung"@de,
         "accretion"@en,
-        "acrecio!n"@es,
+        "acreción"@es,
         "kasvaminen"@fi,
         "accrétion"@fr,
         "akrasi"@id,
@@ -197,7 +197,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Umwandlung"@de,
         "alteration"@en,
-        "alteracio!n"@es,
+        "alteración"@es,
         "muuttuminen"@fi,
         "altération"@fr,
         "alterasi"@id,
@@ -256,7 +256,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Faellung"@de,
         "chemical precipitation"@en,
-        "precipitacio!n"@es,
+        "precipitación"@es,
         "saostuminen"@fi,
         "precipitazione chimica"@it,
         "osazhdenie khimicheskoe"@ru,
@@ -276,7 +276,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/oxidation> ;
     skos:prefLabel "chemische Verwitterung"@de,
         "chemical weathering"@en,
-        "alteracio!n qui!mica"@es,
+        "alteración qui!mica"@es,
         "kemiallinen rapautuminen"@fi,
         "altération chimique"@fr,
         "pelapukan kimia"@id,
@@ -396,7 +396,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/shearing> ;
     skos:prefLabel "Deformation"@de,
         "deformation"@en,
-        "deformacio!n"@es,
+        "deformación"@es,
         "deformaatio"@fi,
         "déformation"@fr,
         "deformasi"@id,
@@ -439,7 +439,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/organic_accumulation> ;
     skos:prefLabel "Ablagerung"@de,
         "deposition"@en,
-        "depo!sito"@es,
+        "depósito"@es,
         "kerrostuminen"@fi,
         "dépôt"@fr,
         "proses mengendap"@id,
@@ -495,7 +495,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Aufloesung"@de,
         "dissolution"@en,
-        "disolucio!n"@es,
+        "disolución"@es,
         "liukeneminen"@fi,
         "dissoluzione"@it,
         "rastvorenie"@ru,
@@ -553,7 +553,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/wind_erosion> ;
     skos:prefLabel "Erosion"@de,
         "erosion"@en,
-        "erosio!n"@es,
+        "erosión"@es,
         "eroosio"@fi,
         "érosion"@fr,
         "erosi"@id,
@@ -586,7 +586,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/strombolian_eruption> ;
     skos:prefLabel "Eruption"@de,
         "eruption"@en,
-        "erupcio!n"@es,
+        "erupción"@es,
         "purkaukset"@fi,
         "éruption"@fr,
         "erupsi"@id,
@@ -647,7 +647,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Aussterben"@de,
         "extinction"@en,
-        "extincio!n"@es,
+        "extinción"@es,
         "sukupuuttoon kuoleminen"@fi,
         "extinction"@fr,
         "pemadaman"@id,
@@ -674,7 +674,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Bruchtektonik"@de,
         "faulting"@en,
-        "tecto!nica fractura"@es,
+        "tectónica fractura"@es,
         "siirros"@fi,
         "tectonique fracturation"@fr,
         "pensesaran"@id,
@@ -716,7 +716,7 @@
     skos:narrower <http://resource.geosciml.org/classifier/cgi/eventprocess/microfracturing> ;
     skos:prefLabel "Bruchbildung"@de,
         "fracturing"@en,
-        "fracturacio!n"@es,
+        "fracturación"@es,
         "murtuminen"@fi,
         "fracturation"@fr,
         "pemecahan"@id,
@@ -798,7 +798,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/material_transport_and_deposition> ;
     skos:prefLabel "anthropogen"@de,
         "human activity"@en,
-        "accio!n hombre"@es,
+        "acción hombre"@es,
         "ihmisen toiminta"@fi,
         "action homme"@fr,
         "kegiatan manusia"@id,
@@ -826,7 +826,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Hydratisierung"@de,
         "hydration"@en,
-        "hidratacio!n"@es,
+        "hidratación"@es,
         "hydrataatio"@fi,
         "hydratation"@fr,
         "hidrasi"@id,
@@ -875,7 +875,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Intrusionskoerper"@de,
         "intrusion"@en,
-        "intrusio!n"@es,
+        "intrusión"@es,
         "intruusiot"@fi,
         "intrusion"@fr,
         "penerobosan"@id,
@@ -999,7 +999,7 @@
     skos:narrower <http://resource.geosciml.org/classifier/cgi/eventprocess/partial_melting> ;
     skos:prefLabel "Aufschmelzung"@de,
         "melting"@en,
-        "fusio!n"@es,
+        "fusión"@es,
         "sulaminen"@fi,
         "fusion"@fr,
         "meleleh"@id,
@@ -1061,7 +1061,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Obduktion"@de,
         "obduction"@en,
-        "obduccio!n"@es,
+        "obducción"@es,
         "obduktio"@fi,
         "obduction"@fr,
         "obdaksi"@id,
@@ -1107,7 +1107,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Oxidation"@de,
         "oxidation"@en,
-        "oxidacio!n"@es,
+        "oxidación"@es,
         "hapettuminen"@fi,
         "oxydation"@fr,
         "oksidasi"@id,
@@ -1133,7 +1133,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "partielle Aufschmelzung"@de,
         "partial melting"@en,
-        "fusio!n parcial"@es,
+        "fusión parcial"@es,
         "osittainen sulaminen"@fi,
         "fusion partielle"@fr,
         "pelelehan sebagian"@id,
@@ -1165,7 +1165,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/thermal_shock_weathering> ;
     skos:prefLabel "physikalische Verwitterung"@de,
         "physical weathering"@en,
-        "alteracio!n fi!sica"@es,
+        "alteración fi!sica"@es,
         "fysikaalinen rapautuminen"@fi,
         "altération physique"@fr,
         "pelapukan fisik"@id,
@@ -1354,7 +1354,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Subduktion"@de,
         "subduction"@en,
-        "subduccio!n"@es,
+        "subducción"@es,
         "subduktio"@fi,
         "subduction"@fr,
         "subdaksi"@id,
@@ -1456,7 +1456,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Wassererosion"@de,
         "water erosion"@en,
-        "erosio!n agua"@es,
+        "erosión agua"@es,
         "vesieroosio"@fi,
         "érosion eau"@fr,
         "erosi air"@id,
@@ -1486,7 +1486,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/physical_weathering> ;
     skos:prefLabel "Verwitterung"@de,
         "weathering"@en,
-        "alteracio!n meteo!rica"@es,
+        "alteración meteórica"@es,
         "rapautuminen"@fi,
         "altération météorique"@fr,
         "pelapukan"@id,
@@ -1513,7 +1513,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Winderosion"@de,
         "wind erosion"@en,
-        "erosio!n eo!lica"@es,
+        "erosión eólica"@es,
         "tuulieroosio"@fi,
         "érosion éolienne"@fr,
         "erosi angin"@id,

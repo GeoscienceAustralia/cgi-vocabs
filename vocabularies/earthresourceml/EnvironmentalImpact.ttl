@@ -163,7 +163,7 @@
     skos:notation "06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Erschuetterung"@de,
         "vibration"@en,
-        "vibracio!n"@es,
+        "vibración"@es,
         "va\"ra\"htely"@fi,
         "vibration"@fr,
         "vibrasi"@id,
@@ -299,7 +299,7 @@
     skos:notation "02.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Erosion"@de,
         "erosion"@en,
-        "erosio!n"@es,
+        "erosión"@es,
         "eroosio"@fi,
         "érosion"@fr,
         "erosi"@id,
@@ -497,7 +497,7 @@
     skos:notation "01.4.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Strahlung"@de,
         "radiation"@en,
-        "radiacio!n"@es,
+        "radiación"@es,
         "sa\"teily"@fi,
         "rayonnement"@fr,
         "radiasi"@id,
@@ -550,7 +550,7 @@
     skos:notation "02.6"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Sedimentation"@de,
         "sedimentation"@en,
-        "sedimentacio!n"@es,
+        "sedimentación"@es,
         "sedimentaatio"@fi,
         "sédimentation"@fr,
         "sedimentasi"@id,

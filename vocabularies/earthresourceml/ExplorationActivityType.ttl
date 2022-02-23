@@ -113,7 +113,7 @@
     skos:notation "05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lagerstaettenbewertung"@de,
         "ore deposit evaluation"@en,
-        "evaluacio!n yacimiento"@es,
+        "evaluación yacimiento"@es,
         "malmiarvio"@fi,
         "valutazione di giacimento"@it,
         "otsenka mestorozhdeniya promyshlennaya"@ru,

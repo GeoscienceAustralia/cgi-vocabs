@@ -139,7 +139,7 @@
         <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
     skos:prefLabel "Kristallisationsschieferung"@de,
         "foliation"@en,
-        "foliacio!n"@es,
+        "foliación"@es,
         "foliaatio"@fi,
         "foliation"@fr,
         "perdaunan"@id,
@@ -224,7 +224,7 @@
         <http://resource.geosciml.org/classifier/cgi/foliationtype/spaced_cleavage> ;
     skos:prefLabel "tektonische Schieferung"@de,
         "cleavage"@en,
-        "clivaje tecto!nico"@es,
+        "clivaje tectónico"@es,
         "lohkeavuus"@fi,
         "clivage tectonique"@fr,
         "belah"@id,
@@ -648,7 +648,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:prefLabel "metamorphe Differentiation"@de,
         "metamorphic differentiation layering"@en,
-        "diferenciacio!n metamo!rfica"@es,
+        "diferenciación metamórfica"@es,
         "metamorfinen differentioituminen"@fi,
         "differenziazione metamorfica"@it,
         "differentsiatsiya metamorficheskaya"@ru,
@@ -856,7 +856,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:prefLabel "Schieferspaltbarkeit"@de,
         "slaty cleavage"@en,
-        "exfoliacio!n pizarrosa"@es,
+        "exfoliación pizarrosa"@es,
         "liuskeisuuslohkeavuus"@fi,
         "clivage ardoisier"@fr,
         "belahan menyabak"@id,

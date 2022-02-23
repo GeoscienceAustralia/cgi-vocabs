@@ -85,7 +85,7 @@
         <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
     skos:prefLabel "Lineation"@de,
         "lineation"@en,
-        "lineacio!n"@es,
+        "lineación"@es,
         "lineaatio"@fi,
         "linéation"@fr,
         "lineasi"@id,

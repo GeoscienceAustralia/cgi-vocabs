@@ -146,7 +146,7 @@
     skos:notation "02.02.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Laugungsbergbau"@de,
         "in-situ recovery"@en,
-        "explotacio!n por disolucio!n"@es,
+        "explotación por disolución"@es,
         "liuotuslouhinta"@fi,
         "exploitation par dissolution"@fr,
         "penambangan larutan"@id,

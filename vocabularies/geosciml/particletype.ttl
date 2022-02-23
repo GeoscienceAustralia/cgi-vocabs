@@ -404,7 +404,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
     skos:prefLabel "Fluessigkeitseinschluss"@de,
         "fluid inclusion"@en,
-        "inclusio!n fluida"@es,
+        "inclusión fluida"@es,
         "fluidisulkeumat"@fi,
         "inclusion fluide"@fr,
         "kepungan zat alir/larutan"@id,
@@ -650,7 +650,7 @@
     skos:narrower <http://resource.geosciml.org/classifier/cgi/particletype/syngenetic_nodule> ;
     skos:prefLabel "Knolle"@de,
         "nodule"@en,
-        "no!dulo"@es,
+        "nódulo"@es,
         "noduulit"@fi,
         "nodulo"@it,
         "nodul'"@ru,

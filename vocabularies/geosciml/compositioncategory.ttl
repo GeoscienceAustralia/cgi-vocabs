@@ -472,7 +472,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "Oxid"@de,
         "oxide"@en,
-        "o!xido"@es,
+        "óxido"@es,
         "oksidit"@fi,
         "ossidi"@it,
         "Okisly"@ru,
@@ -497,7 +497,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "hyperaluminiumhaltiger Chemismus"@de,
         "peraluminous"@en,
-        "composicio!n hiperaluminosa"@es,
+        "composición hiperaluminosa"@es,
         "peralumiininen koostumus"@fi,
         "composition hyperalumineuse"@fr,
         "komposisi peraluminium"@id,
@@ -865,7 +865,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "basischer Chemismus"@de,
         "mafic"@en,
-        "composicio!n máfica"@es,
+        "composición máfica"@es,
         "ema\"ksinen koostumus"@fi,
         "composition mafique"@fr,
         "komposisi mafik"@id,

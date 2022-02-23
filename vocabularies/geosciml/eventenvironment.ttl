@@ -212,7 +212,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/ultra_high_pressure_crustal_setting> ;
     skos:prefLabel "Erdaufbau"@de,
         "earth interior setting"@en,
-        "constitucio!n Tierra"@es,
+        "constitución Tierra"@es,
         "Maan sisus"@fi,
         "interno della Terra"@it,
         "stroenie glubinnoe Zemli"@ru,
@@ -418,7 +418,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:prefLabel "anoxisches Milieu"@de,
         "anoxic setting"@en,
-        "medio ano!xico"@es,
+        "medio anóxico"@es,
         "anoksinen ympa\"risto\""@fi,
         "ambiente anossico"@it,
         "sreda anaehrobnaya"@ru,
@@ -1913,7 +1913,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:prefLabel "Subduktionszone"@de,
         "subduction zone setting"@en,
-        "zona subduccio!n"@es,
+        "zona subducción"@es,
         "subduktiovyo\"hykkeet"@fi,
         "zona di subduzione"@it,
         "zona subduktsii"@ru,

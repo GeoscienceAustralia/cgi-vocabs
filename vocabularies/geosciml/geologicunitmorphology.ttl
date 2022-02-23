@@ -679,7 +679,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ;
     skos:prefLabel "Linse"@de,
         "lens"@en,
-        "lentejo!n"@es,
+        "lentejón"@es,
         "linssit"@fi,
         "lente"@it,
         "linza"@ru,

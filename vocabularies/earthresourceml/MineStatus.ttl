@@ -233,7 +233,7 @@
     skos:notation "02.4.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Zuru\"ckhaltung"@de,
         "retention"@en,
-        "retencio!n"@es,
+        "retención"@es,
         "vedenpida\"tyskyky"@fi,
         "rétention"@fr,
         "penambatan"@id,

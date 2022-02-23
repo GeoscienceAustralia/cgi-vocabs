@@ -316,7 +316,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
     skos:prefLabel "Verkieselung"@de,
         "silicification"@en,
-        "silicificacio!n"@es,
+        "silicificación"@es,
         "silisifikaatio"@fi,
         "silicification"@fr,
         "penyilikaan"@id,

@@ -65,7 +65,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
     skos:prefLabel "Dehnungsverformung"@de,
         "ductile deformation"@en,
-        "deformacio!n du!ctil"@es,
+        "deformación du!ctil"@es,
         "duktiilideformaatio"@fi,
         "déformation ductile"@fr,
         "deformasi teregang"@id,

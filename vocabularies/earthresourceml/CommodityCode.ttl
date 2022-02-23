@@ -1222,7 +1222,7 @@
         "01.01.05.01.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "bituminöse Kohle"@de,
         "black coal"@en,
-        "carbo!n bituminoso"@es,
+        "carbón bituminoso"@es,
         "bitumihiili"@fi,
         "charbon bitumineux"@fr,
         "batubara berbitumen"@id,
@@ -1977,7 +1977,7 @@
         "01.02.11"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Korund"@de,
         "corundum"@en,
-        "corindo!n"@es,
+        "corindón"@es,
         "korundi"@fi,
         "Corindon"@fr,
         "korundum"@id,
@@ -4769,7 +4769,7 @@
         "01.03.29.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Opal"@de,
         "opal"@en,
-        "o!palo"@es,
+        "ópalo"@es,
         "opaali"@fi,
         "Opale"@fr,
         "opal"@id,
@@ -5025,7 +5025,7 @@
         "02.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Phosphor"@de,
         "phosphorous"@en,
-        "fo!sforo"@es,
+        "fósforo"@es,
         "fosfori"@fi,
         "phosphore"@fr,
         "fosfor"@id,
@@ -5317,7 +5317,7 @@
         "01.01.04.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Bims"@de,
         "pumice"@en,
-        "piedra po!mez"@es,
+        "piedra pómez"@es,
         "hohkakivi"@fi,
         "ponce"@fr,
         "batu apung"@id,
@@ -6288,7 +6288,7 @@
         "02.04.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Natriumkarbonat"@de,
         "soda ash"@en,
-        "carbonato so!dico"@es,
+        "carbonato sódico"@es,
         "natriumkarbonaatti"@fi,
         "carbonate sodium"@fr,
         "natrium karbonat"@id,
@@ -7392,7 +7392,7 @@
         "01.02.47"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Zirkon"@de,
         "zircon"@en,
-        "circo!n"@es,
+        "circón"@es,
         "zirkoni"@fi,
         "Zircon"@fr,
         "zirkon"@id,

@@ -510,7 +510,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole> ;
     skos:prefLabel "Gang"@de,
         "vein"@en,
-        "filo!n"@es,
+        "filón"@es,
         "suonet"@fi,
         "filone"@it,
         "zhila"@ru,

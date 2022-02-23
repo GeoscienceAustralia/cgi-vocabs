@@ -134,7 +134,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ;
     skos:prefLabel "Konkretion"@de,
         "concretion"@en,
-        "concrecio!n"@es,
+        "concreción"@es,
         "konkreetiot"@fi,
         "concrétion"@fr,
         "konkresi"@id,
