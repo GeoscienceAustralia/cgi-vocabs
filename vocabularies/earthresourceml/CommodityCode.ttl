@@ -450,7 +450,7 @@
         "02.04.05.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Tonerde"@de,
         "alumina"@en,
-        "alu!mina"@es,
+        "alúmina"@es,
         "alumiinioksidi"@fi,
         "alumine"@fr,
         "alumina"@id,
@@ -2520,7 +2520,7 @@
         "02.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluor"@de,
         "fluorine"@en,
-        "flu!or"@es,
+        "flúor"@es,
         "fluori"@fi,
         "fluor"@fr,
         "fluorin"@id,
