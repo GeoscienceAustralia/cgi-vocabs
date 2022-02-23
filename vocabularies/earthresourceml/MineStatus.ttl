@@ -231,7 +231,7 @@
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/retention> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
     skos:notation "02.4.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Zuru\"ckhaltung"@de,
+    skos:prefLabel "Zurückhaltung"@de,
         "retention"@en,
         "retención"@es,
         "vedenpidätyskyky"@fi,
