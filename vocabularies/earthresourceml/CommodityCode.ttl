@@ -1889,7 +1889,6 @@
         "stenkol"@sv,
         "ถ่านหิน"@th,
         "than khoáng"@vi,
-        "coal"@xx,
         "煤"@zh .
 
 
@@ -2729,7 +2728,6 @@
         "naturgas"@sv,
         "แก๊สธรรมชาติ"@th,
         "khí tự nhiên"@vi,
-        "natural gas"@xx,
         "天然气"@zh .
 
 
@@ -2802,7 +2800,6 @@
         "ädelsten"@sv,
         "อัญมณี"@th,
         "đá ngọc"@vi,
-        "gemstone"@xx,
         "宝石"@zh .
 
 
@@ -3343,7 +3340,6 @@
         "industrimineral"@sv,
         "แร่อุตสาหกรรม"@th,
         "khoáng chất công nghiệp"@vi,
-        "industrial mineral"@xx,
         "工业矿物"@zh .
 
 
@@ -4584,7 +4580,6 @@
         "nitrat"@sv,
         "ไนเตรท"@th,
         "nitrat"@vi,
-        "nitrates"@xx,
         "硝酸盐"@zh .
 
 
@@ -4678,7 +4673,6 @@
         "petroleum"@sv,
         "ปิโตรเลียม"@th,
         "dầu khí"@vi,
-        "petroleum"@xx,
         "石油"@zh .
 
 
@@ -4935,7 +4929,6 @@
         "torv"@sv,
         "พีต"@th,
         "than bùn"@vi,
-        "peat"@xx,
         "泥煤"@zh .
 
 

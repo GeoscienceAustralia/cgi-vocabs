@@ -242,7 +242,6 @@
         "inneslutning"@sv,
         "การเจือปน"@th,
         "bao thể"@vi,
-        "inclusion"@xx,
         "包裹体"@zh .
 
 

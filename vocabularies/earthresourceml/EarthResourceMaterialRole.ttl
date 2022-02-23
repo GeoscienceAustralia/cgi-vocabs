@@ -124,8 +124,7 @@
         "giacimento minerario"@it,
         "erts"@nl,
         "ruda"@ru,
-        "malm"@sv,
-        "ore"@xx ;
+        "malm"@sv;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
 
 

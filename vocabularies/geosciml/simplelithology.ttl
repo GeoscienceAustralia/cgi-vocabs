@@ -1567,7 +1567,6 @@
         "stenkol"@sv,
         "ถ่านหิน"@th,
         "than khoáng"@vi,
-        "coal"@xx,
         "煤"@zh .
 
 
@@ -3783,7 +3782,6 @@
         "torv"@sv,
         "พีต"@th,
         "than bùn"@vi,
-        "peat"@xx,
         "泥煤"@zh .
 
 
@@ -4650,7 +4648,6 @@
         "sediment"@sv,
         "ตะกอนต่างๆ"@th,
         "trầm tích"@vi,
-        "sediment"@xx,
         "沉积物"@zh .
 
 

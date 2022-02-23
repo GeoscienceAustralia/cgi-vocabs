@@ -132,7 +132,6 @@
         "mineraltillgång"@sv,
         "ทรัพยากรแร่"@th,
         "tài nguyên khoáng sản"@vi,
-        "mineral resource"@xx,
         "矿产资源"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> .
 

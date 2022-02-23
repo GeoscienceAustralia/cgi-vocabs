@@ -252,7 +252,6 @@
         "karbonat"@sv,
         "คาร์บอเนต"@th,
         "carbonat"@vi,
-        "carbonates"@xx,
         "碳酸岩"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
@@ -649,7 +648,6 @@
         "sulfat"@sv,
         "ซัลเฟต"@th,
         "sulfat"@vi,
-        "sulfates"@xx,
         "硫酸盐"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> .
 
@@ -988,7 +986,6 @@
         "ซัลไฟด์"@th,
         "sulfides"@us,
         "sulfua"@vi,
-        "sulfides"@xx,
         "硫化物"@zh .
 
 

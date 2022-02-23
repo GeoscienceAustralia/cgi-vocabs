@@ -209,7 +209,6 @@
         "industrimineral"@sv,
         "แร่อุตสาหกรรม"@th,
         "khoáng chất công nghiệp"@vi,
-        "industrial mineral"@xx,
         "工业矿物"@zh ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> .
 

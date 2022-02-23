@@ -295,7 +295,6 @@
         "schaktning"@sv,
         "การขุดเอาแร่ออกมา"@th,
         "công trình khai đào"@vi,
-        "excavation"@xx,
         "挖掘"@zh .
 
 

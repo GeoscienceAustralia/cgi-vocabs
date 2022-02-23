@@ -153,8 +153,7 @@
         "unité chronostratigraphique"@fr,
         "unità cronostratigrafica"@it,
         "podrazdelenie khronostratigraficheskoe"@ru,
-        "kronostratigrafisk enhet"@sv,
-        "chronostratigraphic units"@xx .
+        "kronostratigrafisk enhet"@sv .
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/deformation_unit> a skos:Concept ;

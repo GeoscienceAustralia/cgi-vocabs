@@ -1382,7 +1382,6 @@
         "undre manteln"@sv,
         "แมนทัลชั้นล่าง"@th,
         "manti dưới"@vi,
-        "lower mantle"@xx,
         "下地幔"@zh .
 
 
@@ -1423,7 +1422,6 @@
         "manteln"@sv,
         "แมนเทิล"@th,
         "manti"@vi,
-        "mantle"@xx,
         "地幔"@zh .
 
 
@@ -2166,7 +2164,6 @@
         "astenosfären"@sv,
         "แมนเทิลตอนบน"@th,
         "manti trên"@vi,
-        "upper mantle"@xx,
         "上地幔"@zh .
 
 
