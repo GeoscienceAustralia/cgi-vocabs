@@ -242,7 +242,7 @@
         "lithostratigraphic unit"@en,
         "unidad litoestratigráfica"@es,
         "litostratigraafinen yksikko\""@fi,
-        "unita# litostratigrafica"@it,
+        "unità litostratigrafica"@it,
         "podrazdelenie litostratigraficheskoe"@ru,
         "litostratigrafisk enhet"@sv .
 

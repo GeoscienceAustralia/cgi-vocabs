@@ -802,7 +802,7 @@
         "ihmisen toiminta"@fi,
         "action homme"@fr,
         "kegiatan manusia"@id,
-        "attivita# antropica"@it,
+        "attività antropica"@it,
         "人間活動"@ja,
         "skmµPaBmnusSelak"@km,
         "인류활동"@ko,
