@@ -605,7 +605,6 @@
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/LithologyValue/anthraciteCoal> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Anthrazit"@de,
-        "anthrazit"@de,
         "anthracite"@en,
         "antracita"@es,
         "antrasiitti"@fi,
@@ -691,7 +690,6 @@
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/LithologyValue/arenite> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Arenit"@de,
-        "arenit"@de,
         "arenite"@en,
         "arenita"@es,
         "areniitti"@fi,
@@ -1553,9 +1551,7 @@
         <http://resource.geosciml.org/classifier/cgi/lithology/bituminous_coal>,
         <http://resource.geosciml.org/classifier/cgi/lithology/lignite> ;
     skos:prefLabel "Kohle"@de,
-        "kohle"@de,
         "coal"@en,
-        "carbo!n"@es,
         "carbón"@es,
         "kivihiili"@fi,
         "charbon"@fr,
@@ -5263,7 +5259,6 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:note "In practice, it is likely that any rock for which there is suspicion that it may consist of redeposited pyroclastic material, usually based on sedimentary structures, irrespective of the presence or percentage of clearly epiclastic particles, would be called a tuffite. 50 percent cutoff with epiclastic rock is in contrast with LeMaitre et al., but is used for consistentency with other sedimentary rock categories following the pattern that the rock name reflects the predominant constituent."@en ;
     skos:prefLabel "Tuffit"@de,
-        "tuffit"@de,
         "tuffite"@en,
         "tufita"@es,
         "tuffiitti"@fi,

@@ -271,7 +271,6 @@
     skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_inclusion> ;
     skos:prefLabel "Einschluss"@de,
         "inclusion"@en,
-        "inclusio!n"@es,
         "inclusión"@es,
         "sulkeumat"@fi,
         "inclusion"@fr,

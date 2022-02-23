@@ -227,7 +227,6 @@
         <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/xenolith> ;
     skos:prefLabel "Einschluss"@de,
         "inclusion"@en,
-        "inclusio!n"@es,
         "inclusión"@es,
         "sulkeumat"@fi,
         "inclusion"@fr,
