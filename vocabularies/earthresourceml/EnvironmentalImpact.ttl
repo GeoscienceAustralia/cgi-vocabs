@@ -1,11 +1,11 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dt: <http://resource.geosciml.org/datatype/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schemà> .
 @prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchemà> .
 
 <https://linked.data.gov.au/org/cgi-gtwg> a sdo:Organization ;
     sdo:affiliation <https://linked.data.gov.au/org/cgi> ;
@@ -127,7 +127,7 @@
     skos:prefLabel "Waerme"@de,
         "heat"@en,
         "calor"@es,
-        "la\"mpo\""@fi,
+        "lämpo\""@fi,
         "calore"@it,
         "teplota"@ru,
         "värme"@sv ;
@@ -164,7 +164,7 @@
     skos:prefLabel "Erschuetterung"@de,
         "vibration"@en,
         "vibración"@es,
-        "va\"ra\"htely"@fi,
+        "värähtely"@fi,
         "vibration"@fr,
         "vibrasi"@id,
         "tremore"@it,
@@ -351,7 +351,7 @@
     skos:prefLabel "Erdrutsch"@de,
         "landslide"@en,
         "deslizamiento terreno"@es,
-        "maanvierema\"t"@fi,
+        "maanvieremät"@fi,
         "glissement terrain"@fr,
         "longsoran"@id,
         "frana"@it,
@@ -436,7 +436,7 @@
     skos:prefLabel "Rauschen"@de,
         "noise"@en,
         "ruido fondo"@es,
-        "taustaha\"irio\""@fi,
+        "taustahäirio\""@fi,
         "bruit fond"@fr,
         "suara riuh"@id,
         "rumore di fondo"@it,
@@ -498,7 +498,7 @@
     skos:prefLabel "Strahlung"@de,
         "radiation"@en,
         "radiación"@es,
-        "sa\"teily"@fi,
+        "säteily"@fi,
         "rayonnement"@fr,
         "radiasi"@id,
         "radiazione"@it,

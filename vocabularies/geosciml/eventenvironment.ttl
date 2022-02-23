@@ -1,11 +1,11 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dt: <http://resource.geosciml.org/datatype/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schemà> .
 @prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchemà> .
 
 <https://linked.data.gov.au/org/cgi-gtwg> a sdo:Organization ;
     sdo:affiliation <https://linked.data.gov.au/org/cgi> ;
@@ -419,7 +419,7 @@
     skos:prefLabel "anoxisches Milieu"@de,
         "anoxic setting"@en,
         "medio anóxico"@es,
-        "anoksinen ympa\"risto\""@fi,
+        "anoksinen ympäristo\""@fi,
         "ambiente anossico"@it,
         "sreda anaehrobnaya"@ru,
         "anaerob miljö"@sv .
@@ -470,7 +470,7 @@
     skos:prefLabel "Barrierestrand"@de,
         "barrier beach setting"@en,
         "playa barrera"@es,
-        "rantasa\"rka\"t"@fi,
+        "rantasärkät"@fi,
         "barra costiera"@it,
         "val bar'ernyj"@ru,
         "barriärkust"@sv .
@@ -532,7 +532,7 @@
     skos:prefLabel "Bathyalmilieu"@de,
         "bathyal setting"@en,
         "medio batial"@es,
-        "batyaalinen ympa\"risto\""@fi,
+        "batyaalinen ympäristo\""@fi,
         "ambiente batiale"@it,
         "batial'nyj"@ru,
         "batyal miljö"@sv .
@@ -1206,7 +1206,7 @@
     skos:prefLabel "Gezeitenmilieu"@de,
         "intertidal setting"@en,
         "medio intertidal"@es,
-        "litoraalinen ympa\"risto\""@fi,
+        "litoraalinen ympäristo\""@fi,
         "milieu intertidal"@fr,
         "lingkungan antar pasut"@id,
         "ambiente intertidale"@it,
@@ -1257,7 +1257,7 @@
     skos:prefLabel "limnisches Milieu"@de,
         "lacustrine setting"@en,
         "medio lacustre"@es,
-        "lakustrinen ympa\"risto\""@fi,
+        "lakustrinen ympäristo\""@fi,
         "milieu lacustre"@fr,
         "lingkungan lakustrin"@id,
         "ambiente lacustre"@it,
@@ -1287,7 +1287,7 @@
     skos:prefLabel "lagunaeres Milieu"@de,
         "lagoonal setting"@en,
         "medio albufera"@es,
-        "laguuniympa\"risto\""@fi,
+        "laguuniympäristo\""@fi,
         "milieu lagunaire"@fr,
         "lingkungan laguna"@id,
         "ambiente lagunare"@it,
@@ -1998,7 +1998,7 @@
     skos:prefLabel "terrestrisches Milieu"@de,
         "terrestrial setting"@en,
         "medio terrestre"@es,
-        "terrestrinen ympa\"risto\""@fi,
+        "terrestrinen ympäristo\""@fi,
         "milieu terrestre"@fr,
         "lingkungan darat"@id,
         "ambiente terrestre"@it,
@@ -2073,7 +2073,7 @@
     skos:prefLabel "Tidalmilieu"@de,
         "tidal setting"@en,
         "medio tidal"@es,
-        "vuorovesiympa\"risto\""@fi,
+        "vuorovesiympäristo\""@fi,
         "ambiente tidale"@it,
         "prilivnyj"@ru,
         "tidvattenmiljö"@sv .
@@ -2150,7 +2150,7 @@
     skos:prefLabel "oberer Erdmantel"@de,
         "upper mantle setting"@en,
         "manto globo superior"@es,
-        "yla\"vaippa"@fi,
+        "ylävaippa"@fi,
         """ylävaippa
 """@fi,
         "manteau supérieur"@fr,

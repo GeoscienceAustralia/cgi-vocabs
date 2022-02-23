@@ -103,7 +103,7 @@
     skos:prefLabel "Wirtsgestein"@de,
         "host rock"@en,
         "roca hue!sped"@es,
-        "isa\"nta\"kivet"@fi,
+        "isäntäkivet"@fi,
         "roccia ospite"@it,
         "poroda vmeshchayushchaya"@ru,
         "värdbergart"@sv ;

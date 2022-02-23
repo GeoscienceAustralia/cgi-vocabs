@@ -260,7 +260,7 @@
     skos:prefLabel "Recycling"@de,
         "recycling"@en,
         "reciclaje"@es,
-        "kierra\"tys"@fi,
+        "kierrätys"@fi,
         "recyclage"@fr,
         "pendauran"@id,
         "riciclaggio"@it,
