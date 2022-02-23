@@ -2149,8 +2149,6 @@
         "upper mantle setting"@en,
         "manto globo superior"@es,
         "ylävaippa"@fi,
-        """ylävaippa
-"""@fi,
         "manteau supérieur"@fr,
         "selubung atas"@id,
         "mantello superiore"@it,
