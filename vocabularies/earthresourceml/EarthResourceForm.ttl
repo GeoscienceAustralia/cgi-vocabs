@@ -204,7 +204,7 @@
     skos:prefLabel "stratiformer Erzkoerper"@de,
         "stratiform"@en,
         "yacimiento estratiforme"@es,
-        "kerrosmyo\"täiset esiintymät"@fi,
+        "kerrosmyötäiset esiintymät"@fi,
         "gîte stratiforme"@fr,
         "lapisan endapan mineral"@id,
         "giacimento stratiforme"@it,

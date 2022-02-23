@@ -4697,7 +4697,7 @@
     skos:prefLabel "Oelschiefer"@de,
         "oil shale"@en,
         "esquisto petrolífero"@es,
-        "o\"ljyliuske"@fi,
+        "öljyliuske"@fi,
         "schiste à huile"@fr,
         "batuan serpih"@id,
         "scisto a olio"@it,
@@ -6669,7 +6669,7 @@
     skos:prefLabel "Oelsand"@de,
         "tar sand"@en,
         "arena bituminosa"@es,
-        "o\"ljyhiekat"@fi,
+        "öljyhiekat"@fi,
         "sabbia bituminosa"@it,
         "pesok neftenosnyj"@ru,
         "oljesand"@sv .

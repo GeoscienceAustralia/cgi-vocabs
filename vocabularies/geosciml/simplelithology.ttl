@@ -3612,7 +3612,7 @@
     skos:prefLabel "Oelschiefer"@de,
         "organic bearing mudstone"@en,
         "esquisto petrolífero"@es,
-        "o\"ljyliuske"@fi,
+        "öljyliuske"@fi,
         "schiste à huile"@fr,
         "batuan serpih"@id,
         "scisto a olio"@it,

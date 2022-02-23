@@ -133,7 +133,7 @@
     skos:prefLabel "biostratigraphische Einheit"@de,
         "biostratigraphic unit"@en,
         "unidad bioestratigráfica"@es,
-        "biostratigrafinen yksikko\""@fi,
+        "biostratigrafinen yksikkö"@fi,
         "unità biostratigrafica"@it,
         "podrazdelenie biostratigraficheskoe"@ru,
         "biostratigrafisk enhet"@sv .
@@ -241,7 +241,7 @@
     skos:prefLabel "lithostratigraphische Einheit"@de,
         "lithostratigraphic unit"@en,
         "unidad litoestratigráfica"@es,
-        "litostratigraafinen yksikko\""@fi,
+        "litostratigraafinen yksikkö"@fi,
         "unità litostratigrafica"@it,
         "podrazdelenie litostratigraficheskoe"@ru,
         "litostratigrafisk enhet"@sv .
