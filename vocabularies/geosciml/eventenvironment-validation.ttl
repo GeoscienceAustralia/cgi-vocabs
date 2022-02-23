@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://resource.geosciml.org/classifier/cgi/eventenvironment/subduction_zone_setting> ;
+            sh:resultMessage "Requirement 2.1.7 Provenance for a Concept _SHOULD_ be indicated by at least one of the following properties: dcterms:provenance, dcterms:source or prov:wasDerivedFrom." ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:OrConstraintComponent ;
+            sh:sourceShape <https://w3id.org/profile/vocpub/validator/Requirement-2.3.4> ;
+            sh:value <http://resource.geosciml.org/classifier/cgi/eventenvironment/subduction_zone_setting> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://resource.geosciml.org/classifier/cgi/eventenvironment/upper_mantle> ;
+            sh:resultMessage "More than one String shares the same Language" ;
+            sh:resultPath skos:prefLabel ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:UniqueLangConstraintComponent ;
+            sh:sourceShape [ sh:minCount 1 ;
+                    sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+                    sh:path skos:prefLabel ;
+                    sh:uniqueLang true ] ] .
+
