@@ -889,7 +889,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "bituminöse Kohle"@de,
         "bituminous coal"@en,
-        "carbo!n bituminoso"@es,
+        "carbón bituminoso"@es,
         "bitumihiili"@fi,
         "charbon bitumineux"@fr,
         "batubara berbitumen"@id,
@@ -1207,7 +1207,7 @@
     skos:prefLabel "Wackestone"@de,
         "carbonate wackestone"@en,
         "wackestone"@es,
-        "?wackestone"@fi,
+        "wackestone"@fi,
         "wackestone"@fr,
         "batuwak"@id,
         "wackestone"@it,
@@ -1430,7 +1430,7 @@
     skos:note "Choice of 'clastic' is purposful. Other suggested labels for this category include siliciclastic and terrigineous clastic. Siliciclastic is considered too limiting because the category includes rocks that consists clasts of carbonate minerals, e.g. epiclastic detritus eroded from carbonate rock. Terrigineous clastic was considered and rejected first because it is considered redundant, anything that is terrigineous is clastic. Second, it is questionable if clastic sediment derived by submarine processes (fragementation by gravity sliding, faulting, or volcanic activity, with transport by sediment gravity flow or submarine currents) is terrigineous, but it is clastic and is meant to be included in this category."@en ;
     skos:prefLabel "klastisches Lockergestein"@de,
         "clastic sediment"@en,
-        "sedimento cla!stico"@es,
+        "sedimento clástico"@es,
         "klastiset sedimentit"@fi,
         "roche clastique meuble"@fr,
         "sedimen kecuran"@id,
@@ -1474,7 +1474,7 @@
     skos:note "The conglomerate, sandstone, mudstone, and wackestone categories are not defined as kinds of clastic sedimentary rocks because rocks meeting their purely grainsize based definitions might also be iron-rich, phosphatic, or carbonate. This is based on GeoSciML allowance to assign rocks to more than one lithology category. For example to categorize a rock as a clastic conglomerate requires assignment ot the 'clastic sedimentary rock' category and to the 'conglomerate' category. Particularly for fine-grained sedimentary rocks, distinction of 'intrabasinal' versus 'clastic' genesis can be very interpretive. In practice the use of clastic mudstone terminology as opposed to carbonate mudstone terminology may be dermined by a priori knowledge about the rock being categorized. If it is associated with other clastic rocks, the clastic categories will be favored, if with cabonate rocks, the carbonate categories will be favored."@en ;
     skos:prefLabel "klastisches Gestein"@de,
         "clastic sedimentary rock"@en,
-        "roca cla!stica"@es,
+        "roca clástica"@es,
         "klastiset kivilajit"@fi,
         "roccia clastica"@it,
         "poroda oblomochnaya"@ru,
@@ -1822,7 +1822,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Dolomitgestein"@de,
         "dolomite"@en,
-        "dolomi!a"@es,
+        "dolomitá"@es,
         "dolomiittikivi"@fi,
         "dolomie"@fr,
         "doloston"@id,
@@ -1988,7 +1988,7 @@
     skos:note "Need to make decision as to whether devitrified glass should be considered glass or microcrystalline framework for purposes of categorization"@en ;
     skos:prefLabel "Vulkanit"@de,
         "fine grained igneous rock"@en,
-        "roca volca!nica"@es,
+        "roca volcánica"@es,
         "vulkaniitit"@fi,
         "roccia vulcanica"@it,
         "poroda ehffuzivnaya"@ru,
@@ -2114,7 +2114,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Foid-Diorit"@de,
         "foid diorite"@en,
-        "diorita feldespatoi!dica"@es,
+        "diorita feldespatoidica"@es,
         "foididioriitti"@fi,
         "diorite feldspathoïdique"@fr,
         "foid diorit"@id,
@@ -2156,7 +2156,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Foid-Gabbro"@de,
         "foid gabbro"@en,
-        "gabro feldespatoi!dico"@es,
+        "gabro feldespatoidico"@es,
         "foidigabro"@fi,
         "gabbro feldspathoïdique"@fr,
         "foid gabro"@id,
@@ -2226,7 +2226,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Foid-Syenit"@de,
         "foid syenite"@en,
-        "sienita feldespatoi!dica"@es,
+        "sienita feldespatoidica"@es,
         "foidisyeniitti"@fi,
         "syénite feldspathoïdique"@fr,
         "foid sienit"@id,
@@ -2854,7 +2854,7 @@
         <http://resource.geosciml.org/classifier/cgi/lithology/ultramafic_igneous_rock> ;
     skos:prefLabel "Magmatit"@de,
         "igneous rock"@en,
-        "roca i!gnea"@es,
+        "roca ígnea"@es,
         "magmakivet"@fi,
         "roccia ignea"@it,
         "poroda izverzhennaya"@ru,
@@ -3157,7 +3157,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Marmor"@de,
         "marble"@en,
-        "ma!rmol"@es,
+        "mármol"@es,
         "marmorit"@fi,
         "marmo"@it,
         "mramor"@ru,
@@ -3200,7 +3200,7 @@
     skos:note "Robertson (1999) defines the boundary between diagenesis and metamorphism in sedimentary rocks as follows: “…the boundary between diagenesis and metamorphism is somewhat arbitrary and strongly dependent on the lithologies involved. For example changes take place in organic materials at lower temperatures than in rocks dominated by silicate minerals. In mudrocks, a white mica (illite) crystallinity value of &lt; 0.42D.2U obtained by X-ray diffraction analysis, is used to define the onset of metamorphism (Kisch, 1991). In this scheme, the first appearance of glaucophane, lawsonite, paragonite, prehnite, pumpellyite or stilpnomelane is taken to indicate the lower limit of metamorphism (Frey and Kisch, 1987; Bucher and Frey, 1994; Frey and Robinson, 1998). Most workers agree that such mineral growth starts at 150 ± 50° C in silicate rocks. Many lithologies may show no change in mineralogy under these conditions and hence the recognition of the onset of metamorphism will vary with bulk composition.”"@en ;
     skos:prefLabel "Metamorphit"@de,
         "metamorphic rock"@en,
-        "roca metamo!rfica"@es,
+        "roca metamórfica"@es,
         "metamorfiset kivilajit"@fi,
         "roccia metamorfica"@it,
         "poroda metamorficheskaya"@ru,
@@ -3885,7 +3885,7 @@
         <http://resource.geosciml.org/classifier/cgi/lithology/syenitoid> ;
     skos:prefLabel "Plutonit"@de,
         "phaneritic igneous rock"@en,
-        "roca pluto!nica"@es,
+        "roca plutónica"@es,
         "syva\"kivet"@fi,
         "roche grenue"@fr,
         "batuan plutonik"@id,
@@ -4078,7 +4078,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Porphyr"@de,
         "porphyry"@en,
-        "po!rfido"@es,
+        "pórfido"@es,
         "porfyyri"@fi,
         "porphyre"@fr,
         "porfir"@id,
