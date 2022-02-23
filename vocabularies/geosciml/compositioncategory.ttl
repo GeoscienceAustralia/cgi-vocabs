@@ -920,7 +920,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "Pelit-Gefuege"@de,
         "pelitic"@en,
-        "textura peli!tica"@es,
+        "textura pelítica"@es,
         "peliittinen tekstuuri"@fi,
         "texture pélitique"@fr,
         "tekstur pelit"@id,

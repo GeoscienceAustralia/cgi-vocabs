@@ -307,7 +307,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole> ;
     skos:prefLabel "Kelyphitrinde"@de,
         "kelyphitic rim"@en,
-        "corona quelifi!tica"@es,
+        "corona quelifítica"@es,
         "kelyfiittinen reuna"@fi,
         "anello chelifitico"@it,
         "kajma kelifitovaya"@ru,

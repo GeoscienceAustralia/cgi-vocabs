@@ -988,7 +988,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:prefLabel "Vorlandbecken"@de,
         "foreland setting"@en,
-        "cuenca antepai!s"@es,
+        "cuenca antepaís"@es,
         "etumaastot"@fi,
         "bassin avant pays"@fr,
         "cekungan depan"@id,

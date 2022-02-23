@@ -411,7 +411,7 @@
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Regionalgeologie"@de,
         "regional geology"@en,
-        "geologi!a regional"@es,
+        "geología regional"@es,
         "aluegeologia"@fi,
         "geologia regionale"@it,
         "geologiya regional'naya"@ru,

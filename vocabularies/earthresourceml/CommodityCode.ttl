@@ -4473,7 +4473,7 @@
         "01.01.04.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Nephelin-Syenit"@de,
         "nepheline syenite"@en,
-        "sienita nefeli!nica"@es,
+        "sienita nefelínica"@es,
         "nefeliinisyeniitti"@fi,
         "syénite néphélinique"@fr,
         "sienit nefelin"@id,
@@ -4501,7 +4501,7 @@
         "02.01.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Nickel"@de,
         "nickel"@en,
-        "ni!quel"@es,
+        "níquel"@es,
         "nikkeli"@fi,
         "nickel"@fr,
         "nikel"@id,
@@ -4696,7 +4696,7 @@
         "01.01.05.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Oelschiefer"@de,
         "oil shale"@en,
-        "esquisto petroli!fero"@es,
+        "esquisto petrolífero"@es,
         "o\"ljyliuske"@fi,
         "schiste à huile"@fr,
         "batuan serpih"@id,
@@ -5668,7 +5668,7 @@
         "01.03.07.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Rubin"@de,
         "ruby"@en,
-        "rubi!"@es,
+        "rubí"@es,
         "rubiinit"@fi,
         "rubino"@it,
         "Rubin"@ru,
@@ -6114,7 +6114,7 @@
         "01.02.37"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Siliciumdioxid-Gruppe"@de,
         "silica"@en,
-        "grupo si!lice"@es,
+        "grupo sílice"@es,
         "silikaattimineraalit"@fi,
         "groupe silice"@fr,
         "kelompok silika"@id,

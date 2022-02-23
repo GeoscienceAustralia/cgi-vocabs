@@ -3611,7 +3611,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Oelschiefer"@de,
         "organic bearing mudstone"@en,
-        "esquisto petroli!fero"@es,
+        "esquisto petrolífero"@es,
         "o\"ljyliuske"@fi,
         "schiste à huile"@fr,
         "batuan serpih"@id,
@@ -4254,7 +4254,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:prefLabel "Quarz-Diorit"@de,
         "quartz diorite"@en,
-        "diorita cuarci!fera"@es,
+        "diorita cuarcífera"@es,
         "kvartsidioriitit"@fi,
         "diorite quartzique"@fr,
         "diorit kuarsa"@id,
@@ -5099,7 +5099,7 @@
     skos:note "Definition of tholeiite and alkali basalt here are more proscriptive than those found in most reference authorities. This is to actually provide some descriptive criteria to allow assignment of rocks on a hand sample basis to the tholeiite or alkali basalt categories if detailed petrographic or chemical data are available."@en ;
     skos:prefLabel "Tholeiit-Basalt"@de,
         "tholeiitic basalt"@en,
-        "basalto tolei!tico"@es,
+        "basalto toleítico"@es,
         "tholeiittinen basaltti"@fi,
         "basalte tholéitique"@fr,
         "basal toleit"@id,

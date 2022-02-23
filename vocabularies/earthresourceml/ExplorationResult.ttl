@@ -182,7 +182,7 @@
     skos:notation "03.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "geophysikalische Anomalie"@de,
         "geophysical anomaly"@en,
-        "anomali!a geofi!sica"@es,
+        "anomalía geofísica"@es,
         "geofysikaalinen anomalia"@fi,
         "anomalia geofisica"@it,
         "anomaliya geofizicheskaya"@ru,

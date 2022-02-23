@@ -484,7 +484,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:prefLabel "Gneis-Gefuege"@de,
         "gneissic layering"@en,
-        "estructura gnei!sica"@es,
+        "estructura gneísica"@es,
         "gneissima\"inen rakenne"@fi,
         "tessitura gneissica"@it,
         "gnejsovyj"@ru,

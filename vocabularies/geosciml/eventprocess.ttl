@@ -276,7 +276,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/oxidation> ;
     skos:prefLabel "chemische Verwitterung"@de,
         "chemical weathering"@en,
-        "alteración qui!mica"@es,
+        "alteración química"@es,
         "kemiallinen rapautuminen"@fi,
         "altération chimique"@fr,
         "pelapukan kimia"@id,
@@ -1165,7 +1165,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/thermal_shock_weathering> ;
     skos:prefLabel "physikalische Verwitterung"@de,
         "physical weathering"@en,
-        "alteración fi!sica"@es,
+        "alteración física"@es,
         "fysikaalinen rapautuminen"@fi,
         "altération physique"@fr,
         "pelapukan fisik"@id,
