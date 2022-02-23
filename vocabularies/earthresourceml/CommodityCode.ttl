@@ -1874,7 +1874,6 @@
         "01.01.05.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Kohle"@de,
         "coal"@en,
-        "carbo!n"@es,
         "carbón"@es,
         "kivihiili"@fi,
         "charbon"@fr,
@@ -2717,8 +2716,6 @@
         "gaseous hydrocarbons"@en,
         "gas natural"@es,
         "maakaasu"@fi,
-        """maakaasu
-"""@fi,
         "gaz naturel"@fr,
         "gas alam"@id,
         "gas naturale"@it,
@@ -3331,7 +3328,6 @@
         "1.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Steine-Erden-Industrieminerale"@de,
         "industrial mineral"@en,
-        "sustancia u!til"@es,
         "sustancia útil"@es,
         "teollisuusmineraalit"@fi,
         "substance utile"@fr,
@@ -4576,8 +4572,6 @@
         "nitrate"@en,
         "nitrato"@es,
         "nitraatit"@fi,
-        """nitraatit
-"""@fi,
         "nitrate"@fr,
         "nitrat"@id,
         "nitrati"@it,
@@ -4669,9 +4663,7 @@
         "01.01.05.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Erdoel"@de,
         "oil"@en,
-        "petro!leo"@es,
         "petróleo"@es,
-        "maao\"ljy"@fi,
         "maaöljy"@fi,
         "pétrole"@fr,
         "minyak bumi"@id,
