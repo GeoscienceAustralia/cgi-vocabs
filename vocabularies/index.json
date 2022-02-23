@@ -48,7 +48,7 @@
     "particletype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype",
     "planarpolaritycode.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode",
     "proportionterm.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm",
-    "simplelithology.ttl": "http://resource.geosciml.org/classifierScheme/cgi/2016.01/simplelithology",
+    "simplelithology.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology",
     "stratigraphicrank.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank",
     "valuequalifier.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier",
     "vocabularyrelation.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"
