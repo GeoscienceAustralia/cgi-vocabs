@@ -262,7 +262,7 @@
     skos:notation "02.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "unterirdische Gewinnung"@de,
         "underground mining"@en,
-        "mineri!a subterra!nea"@es,
+        "mineri!a subterránea"@es,
         "maanalainen louhinta"@fi,
         "mine souterraine"@fr,
         "penambangan bawah tanah"@id,

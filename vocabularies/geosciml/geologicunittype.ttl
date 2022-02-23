@@ -132,7 +132,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:prefLabel "biostratigraphische Einheit"@de,
         "biostratigraphic unit"@en,
-        "unidad bioestratigra!fica"@es,
+        "unidad bioestratigráfica"@es,
         "biostratigrafinen yksikko\""@fi,
         "unità biostratigrafica"@it,
         "podrazdelenie biostratigraficheskoe"@ru,
@@ -240,7 +240,7 @@
     skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithodemic_unit> ;
     skos:prefLabel "lithostratigraphische Einheit"@de,
         "lithostratigraphic unit"@en,
-        "unidad litoestratigra!fica"@es,
+        "unidad litoestratigráfica"@es,
         "litostratigraafinen yksikko\""@fi,
         "unita# litostratigrafica"@it,
         "podrazdelenie litostratigraficheskoe"@ru,

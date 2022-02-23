@@ -360,7 +360,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:prefLabel "Schuttstrom"@de,
         "debris flow deposition"@en,
-        "colada cla!stica"@es,
+        "colada clástica"@es,
         "murevirrat"@fi,
         "colata di detrito"@it,
         "sel'"@ru,
@@ -915,7 +915,7 @@
         <http://resource.geosciml.org/classifier/cgi/eventprocess/melting> ;
     skos:prefLabel "magmatisch"@de,
         "magmatic process"@en,
-        "magma!tico"@es,
+        "magmático"@es,
         "magmaattinen"@fi,
         "magmatique"@fr,
         "kemagmaan"@id,

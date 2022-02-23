@@ -381,7 +381,7 @@
         "01.03.29.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Achat"@de,
         "agate"@en,
-        "a!gata"@es,
+        "ágata"@es,
         "akaatti"@fi,
         "Agate"@fr,
         "akik"@id,
@@ -592,7 +592,7 @@
         "01.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Bernstein"@de,
         "amber"@en,
-        "a!mbar"@es,
+        "ámbar"@es,
         "meripihka"@fi,
         "ambre"@fr,
         "kuning sawo"@id,
@@ -4168,7 +4168,7 @@
         "01.01.03.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Marmor"@de,
         "marble"@en,
-        "ma!rmol"@es,
+        "mármol"@es,
         "marmorit"@fi,
         "marmo"@it,
         "mramor"@ru,
@@ -4247,7 +4247,7 @@
         "02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Metall"@de,
         "metal"@en,
-        "elemento meta!lico"@es,
+        "elemento metálico"@es,
         "metallit"@fi,
         "elemento metallico"@it,
         "metall"@ru,
@@ -4801,7 +4801,7 @@
         "01.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "organische Substanz"@de,
         "organic material"@en,
-        "materia orga!nica"@es,
+        "materia orgánica"@es,
         "orgaaniset aineet"@fi,
         "matière organique"@fr,
         "material organik"@id,
@@ -6615,7 +6615,7 @@
         "02.01.24"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Tantal"@de,
         "tantalum"@en,
-        "ta!ntalo"@es,
+        "tántalo"@es,
         "tantaali"@fi,
         "tantale"@fr,
         "tantalum"@id,

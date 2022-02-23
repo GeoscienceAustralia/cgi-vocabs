@@ -865,7 +865,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ;
     skos:prefLabel "basischer Chemismus"@de,
         "mafic"@en,
-        "composicio!n ma!fica"@es,
+        "composicio!n máfica"@es,
         "ema\"ksinen koostumus"@fi,
         "composition mafique"@fr,
         "komposisi mafik"@id,

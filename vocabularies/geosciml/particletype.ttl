@@ -200,7 +200,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ;
     skos:prefLabel "Bioklast"@de,
         "bioclast"@en,
-        "roca biocla!stica"@es,
+        "roca bioclástica"@es,
         "bioklastit"@fi,
         "bioclasto"@it,
         "bioklast"@ru,

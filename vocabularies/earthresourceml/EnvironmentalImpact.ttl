@@ -191,7 +191,7 @@
     skos:notation "01.2.1.2.1.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "saures Grubenwasser"@de,
         "acid mine drainage"@en,
-        "desagu\"e a!cido mina"@es,
+        "desagu\"e ácido mina"@es,
         "hapan kaivosvaluma"@fi,
         "exhaure mine acide"@fr,
         "aliran tambang asam"@id,

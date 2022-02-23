@@ -3229,7 +3229,7 @@
     skos:note "SLTTm (2004) proposed the following criteria to distinguish hydrothermally altered or metasomatic rock from igneous rock. \"The rock is classified as metamorphic if (1) the texture has been modified such that it can no longer be considered igneous, (2) the bulk composition of the rock is inconsistent with compositions that can be derived purely from a magma and associated processes such as assimilation and differentiation, or (3) minerals inconsistent with magmatic crystallization are present.\""@en ;
     skos:prefLabel "metasomatisches Gestein"@de,
         "metasomatic rock"@en,
-        "roca metasoma!tica"@es,
+        "roca metasomática"@es,
         "metasomaattiset kivet"@fi,
         "roche métasomatique"@fr,
         "batuan lironan"@id,
@@ -3580,7 +3580,7 @@
     skos:note "Neuendorf et al. 2005 put cutoff at 30 percent skeletal remains; this is raised to 50 percent in This vocabulary for consistency with definition of other Biogenic sediment category"@en ;
     skos:prefLabel "organischer Schlamm"@de,
         "ooze"@en,
-        "barro orga!nico"@es,
+        "barro orgánico"@es,
         "orgaaninen lieju"@fi,
         "boue organique"@fr,
         "selut"@id,
@@ -3641,7 +3641,7 @@
     skos:note "The broader relation from organic rich sediment to biogenic sediment is based on the inference that organic rich material is always biogenic in origin. Biogenic is a broader category because not all biogenic materials are organic rich, for example shells or phosphatic bone."@en ;
     skos:prefLabel "organogenes Sediment"@de,
         "organic rich sediment"@en,
-        "sedimento orga!nico"@es,
+        "sedimento orgánico"@es,
         "orgaaniset sedimentit"@fi,
         "sedimento organico"@it,
         "osadki organicheskie"@ru,
@@ -4178,7 +4178,7 @@
         <http://resource.geosciml.org/classifier/cgi/lithology/tuff_breccia_agglomerate_or_pyroclastic_breccia> ;
     skos:prefLabel "pyroklastisches Gestein"@de,
         "pyroclastic rock"@en,
-        "pirocla!stico"@es,
+        "piroclástico"@es,
         "pyroklastiset kivet"@fi,
         "prodotto piroclastico"@it,
         "piroklastolit"@ru,
