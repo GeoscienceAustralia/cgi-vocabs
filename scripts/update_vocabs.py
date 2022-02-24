@@ -13,7 +13,7 @@ MAX_RETRIES = 3
 
 DB_TYPE = "graphdb"  # options: "fuseki" | "graphdb"
 # BASE_DB_URI = "http://fuseki.surroundaustralia.com/cgi-vocabs"
-BASE_DB_URI = "http://graphdb.cgi.vocabs.ga.gov.au/repositories/vocabs-cgi"
+BASE_DB_URI = "http://graphdb.vocabs.ga.gov.au/repositories/vocabs-cgi"
 # WEBSITE_URL = "http://cgi.surroundaustralia.com"
 WEBSITE_URL = "http://cgi.vocabs.ga.gov.au"
 
