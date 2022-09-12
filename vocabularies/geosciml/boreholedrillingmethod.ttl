@@ -37,7 +37,7 @@
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/box_core>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling>,
-        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_drilling>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core>,
@@ -62,7 +62,9 @@
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/geoprobe_core>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/gravity_core>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hand_auger>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_drilling>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mud_rotary_drilling>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/kasten_core>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackereth_core>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackintosh_probe>,
@@ -135,14 +137,37 @@
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
 
 
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_drilling> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Drill"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:definition "A drilling method using a drill stem equipped with a bit that is rotated"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:narrower 
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling> ,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mud_rotary_drilling> ;
+    skos:notation "3"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "rotary drilling"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
+
+
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling> a skos:Concept ;
     dcterms:source "https://en.wikipedia.org/wiki/Drilling_rig#Hydraulic_rotary_drilling"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_drilling> ;
     skos:definition "A drilling method using a drill stem equipped with a bit that is rotated to cut and grind the rock with a fluid pumped down the stem to force cuttings up through the annular space between the stem and the wall of the hole. Oil well drilling of this type utilises tri-cone roller, carbide embedded, fixed-cutter diamond, or diamond-impregnated drill bits. This is preferred because there is no need to return intact samples to surface for assay as the objective is to reach a formation containing oil or natural gas. Sizable machinery is used, enabling depths of several kilometres to be penetrated. Rotating hollow drill pipes carry down bentonite and barite infused drilling muds to lubricate, cool, and clean the drilling bit, control downhole pressures, stabilize the wall of the borehole and remove drill cuttings."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:notation "3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "hydraulic rotary drilling"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
+    skos:notation "3.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "hydraulic rotary drilling"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mud_rotary_drilling> a skos:Concept ;
+    dcterms:source "https://www.trenchlesspedia.com/definition/3681/mud-rotary-drilling"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_drilling> ;
+    skos:definition "Mud rotary drilling is a method for wellbore excavation. It involves the use of a spinning drill bit aided by a semi-fluid mixture known as mud. Mud rotary drilling is adaptable for a wide range of trenchless construction situations, and is considered the most versatile and common of drilling methods."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:notation "3.2"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "hydraulic rotary drilling"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling> a skos:Concept ;
