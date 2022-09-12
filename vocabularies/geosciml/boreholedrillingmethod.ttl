@@ -42,7 +42,8 @@
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core>,
-        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic> ;
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vacuum> ;
     skos:prefLabel "Borehole Drilling Method"@en .
 
 
@@ -80,6 +81,7 @@
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_bullet>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_mechanical>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vacuum>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/window_sampler> ;
     skos:prefLabel "Borehole Drilling Method - All Concepts"@en .
@@ -146,7 +148,7 @@
     skos:definition "Coiled tubing drilling (CTD) is a trenchless technique that uses coiled tubing spooled on a large reel instead of metal pipes. CTD is used in both mineral and petroleum industry. In the latter, CTD is commonly used in existing wellbores for re-entry drilling or sidetracking through the production tubing, for new shallow wells, deepening conventional wells and for drilling under-balanced. Complex CTD operations, including directional drilling and cased completions, require pipe handling equipment, large diameter coiled tubing, fluid handling equipment for mixing, cleaning and recirculating, provisions for handling long bottom hole assemblies (BHA) and blowout preventer (BOP) stacks."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:notation "10"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "rotary drilling"@en ;
+    skos:prefLabel "coiled tubing drilling"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
 
 
@@ -444,6 +446,16 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:notation "8.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "sidewall core mechanical"@en .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vacuum> a skos:Concept ;
+    dcterms:source "https://101sampling.com/drill-rigs/vacuum-drill/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:definition "Vacuum drilling is principally designed for mineral exploration drilling to provide a low cost, efficient recovery of uncontaminated drill samples. Vacuum Drilling systems comprise a vacuum pump, oil bath filter, sample separator, vacuum swivel and drive shaft adaptor to rotary drilling head. The vacuum pump can be driven either hydraulically or mechanically from the existing drill rig power pack. Alternatively, a separate independent drive source can be provided. Samples are removed from the rod string via the vacuum swivel mounted above the rotary head. Then, cuttings proceed to the two-stage sample separator for removal from the air stream, and are collected in the bulk sample flask. Separated air is then passed through the oil bath filter to be discharged from the vacuum pump."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:notation "11"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "vacuum"@en ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
 
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore> a skos:Concept ;
