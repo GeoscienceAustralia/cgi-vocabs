@@ -36,6 +36,7 @@
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/air_core>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/box_core>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/coiled_tubing_drilling>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_drilling>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling>,
@@ -53,6 +54,7 @@
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/box_core>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cable_tool_drilling>,
+        <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/coiled_tubing_drilling>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/conventional_core>,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling>,
@@ -134,6 +136,17 @@
         "carotaggio"@it,
         "burenie kolonkovoe"@ru,
         "kärnborrning"@sv ;
+    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/coiled_tubing_drilling> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Coiled_tubing"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:altLabel "coiling tube drilling"@en ;
+    skos:definition "Coiled tubing drilling (CTD) is a trenchless technique that uses coiled tubing spooled on a large reel instead of metal pipes. CTD is used in both mineral and petroleum industry. In the latter, CTD is commonly used in existing wellbores for re-entry drilling or sidetracking through the production tubing, for new shallow wells, deepening conventional wells and for drilling under-balanced. Complex CTD operations, including directional drilling and cased completions, require pipe handling equipment, large diameter coiled tubing, fluid handling equipment for mixing, cleaning and recirculating, provisions for handling long bottom hole assemblies (BHA) and blowout preventer (BOP) stacks."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
+    skos:notation "10"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "rotary drilling"@en ;
     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> .
 
 
