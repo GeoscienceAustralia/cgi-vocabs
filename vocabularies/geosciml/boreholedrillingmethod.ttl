@@ -182,7 +182,7 @@
     skos:definition "Mud rotary drilling is a method for wellbore excavation. It involves the use of a spinning drill bit aided by a semi-fluid mixture known as mud. Mud rotary drilling is adaptable for a wide range of trenchless construction situations, and is considered the most versatile and common of drilling methods."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:notation "3.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "hydraulic rotary drilling"@en .
+    skos:prefLabel "mud rotary drilling"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling> a skos:Concept ;
