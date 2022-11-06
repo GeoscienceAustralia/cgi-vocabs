@@ -608,6 +608,8 @@
     skos:definition "Action of chemical reagents on a material resulting in the dissolution of some of its elements."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/leaching> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-leach>,
+            <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-pulp> ;
     skos:notation "03.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Auswaschung"@de,
         "leaching"@en,
