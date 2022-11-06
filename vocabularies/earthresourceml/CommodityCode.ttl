@@ -121,6 +121,7 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/erbium>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/euclase>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/europium>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/europium-iii-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/evaporite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/feldspar>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/feldspar-gemstone>,
@@ -132,6 +133,7 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/fullers-earth>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/gadolinium>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/gallium>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/gallium-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/garnet>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/garnet-gemstone>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/gas-hydrate>,
@@ -145,8 +147,10 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/greenstone>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/gypsum>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/hafnium>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/hafnium-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/halloysite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/heavy-rare-earth-oxide>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/heavy-mineral-sand>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/heliodor>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/hematite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/hematite-gemstone>,
@@ -196,15 +200,18 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/metal>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/metalloid>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/mica>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/mineral-sand>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/miscellaneous-dimension-stones>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/molybdenite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/molybdenum>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/molybdenum-trioxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/monazite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/moonstone>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/morganite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/moss-agate>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/natural-secondary-aggregate>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/neodymium>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/neodymium-iii-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/nepheline-syenite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/nickel>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/niobium>,
@@ -233,8 +240,10 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/platinum-group>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/potash>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/potassium>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/potassium-sulfate>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/pozzolan>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/praseodymium>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/praseodymium-iii-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/precious-metal>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/prehnite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/primary-aggregate>,
@@ -276,6 +285,7 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/shell-grit>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/silica>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/silica-gemstone>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/silica-sand>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/silicon>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/sillimanite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/silver>,
@@ -301,17 +311,22 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tar-sand>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tellurium>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/terbium>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/terbium-iii-iv-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/thallium>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/thenardite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/thorium>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/thorium-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/thulium>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tin>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/tin-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/titanium>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/titanium-dioxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/topaz>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tourmaline>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tremolite-actinolite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tsavorite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tungsten>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/tungsten-trioxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/turquoise>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/uranium>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/uranium-oxide>,
@@ -1599,13 +1614,20 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/alumina>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/chrome>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/gallium-oxide>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/hafnium-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/iron-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/lithium-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/magnesia>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/molybdenum-trioxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/niobium-pentoxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/phosphorous-pentoxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/rare-earth-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tantalum-pentoxide>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/thorium-dioxide>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/tin-oxide>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/titanium-dioxide>
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/tungsten-trioxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/uranium-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/vanadium-pentoxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/yttrium-oxide>,
@@ -2428,6 +2450,15 @@
         "europi"@vi,
         "铕"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/europium-iii-oxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Europium(III)_oxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/heavy-rare-earth-oxide> ;
+    skos:definition "Oxide of europium used in electronics, converts to europium with an atomic mass ratio 0.86361."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Eu2O3"^^dt:AbbreviatedLabel,
+        "02.04.05.08.2.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "europium (III) oxide"@en .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/evaporite> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
@@ -2659,6 +2690,15 @@
         "gali"@vi,
         "镓"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/gallium-oxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Gallium(III)_oxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/chemical-oxide-product> ;
+    skos:definition "Used in semiconductors. converts to gallium with an atomic mass ratio 0.74397."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Ga2O3"^^dt:AbbreviatedLabel,
+        "02.04.05.14.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "gallium oxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/garnet> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Garnet"^^xsd:anyURI ;
@@ -3033,6 +3073,15 @@
         "hafni"@vi,
         "铪"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/hafnium-oxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Hafnium(IV)_oxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/chemical-oxide-product> ;
+    skos:definition "Used in electronics, converts to hafnium with an atomic mass ratio 0.84798"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "HfO2"^^dt:AbbreviatedLabel,
+        "02.04.05.15.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "hafnium oxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/halloysite> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Halloysite"^^xsd:anyURI ;
@@ -3069,6 +3118,8 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/rare-earth-oxide> ;
     skos:definition "As defined by IUPAC, a rare earth element (REE) or rare earth metal is one of a set of seventeen chemical elements in the periodic table, specifically the fifteen lanthanides plus scandium and yttrium.[2] Scandium and yttrium are considered rare earth elements because they tend to occur in the same ore deposits as the lanthanides and exhibit similar chemical properties."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/europium-iii-oxide>,
+          <http://resource.geosciml.org/classifier/cgi/commodity-code/terbium-iii-oxide> ;
     skos:notation "HREO"^^dt:AbbreviatedLabel,
         "02.04.05.08.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "heavy rare earth oxide"@en .
@@ -3117,6 +3168,15 @@
         "hematit"@vi,
         "赤铁矿"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/heavy-mineral-sand> a skos:Concept ;
+    dcterms:source "https://www.ga.gov.au/education/classroom-resources/minerals-energy/australian-mineral-facts/mineral-sands"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/mineral-sand> ;
+    skos:definition "The heavy fraction of a mineral sand that has a much higher density than common sand minerals such as quartz. Includes rutile, ilmenite, zircon and monazite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Mnsd"^^dt:AbbreviatedLabel,
+        "01.01.06.03.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "heavy mineral sand"@en .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/hematite-gemstone> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Hematite"^^xsd:anyURI ;
@@ -3803,6 +3863,8 @@
     skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/rare-earth-oxide> ;
     skos:definition "As defined by IUPAC, a rare earth element (REE) or rare earth metal is one of a set of seventeen chemical elements in the periodic table, specifically the fifteen lanthanides plus scandium and yttrium.[2] Scandium and yttrium are considered rare earth elements because they tend to occur in the same ore deposits as the lanthanides and exhibit similar chemical properties."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/praseodymium-iii-oxide>,
+           <http://resource.geosciml.org/classifier/cgi/commodity-code/neodymium-iii-oxide> ;
     skos:notation "LREO"^^dt:AbbreviatedLabel,
         "02.04.05.08.1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "light rare earth oxide"@en .
@@ -4285,6 +4347,16 @@
         "01.02.27"^^dt:LocalHierarchyKey ;
     skos:prefLabel "mica"@en .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/mineral-sand> a skos:Concept ;
+    dcterms:source "https://www.ga.gov.au/education/classroom-resources/minerals-energy/australian-mineral-facts/mineral-sands"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/sand> ;
+    skos:definition "Sand that contains minerals that have potential for extraction. Minerals include rutile, ilmenite, zircon, monazite, garnet, magnetite, sapphire, diamond and staurolite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/heavy-mineral-sand> ;
+    skos:notation "Mnsd"^^dt:AbbreviatedLabel,
+        "01.01.06.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "mineral sand"@en .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/miscellaneous-dimension-stones> a skos:Concept ;
     dcterms:source "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
@@ -4352,6 +4424,16 @@
         "molybden"@vi,
         "钼"@zh .
 
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code/molybdenum-trioxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Molybdenum_trioxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/chemical-oxide-product> ;
+    skos:definition "Additive to steel, most commercially used compound of molybdenum, converts to molybdenum with an atomic mass ratio 0.6666"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "MoO3"^^dt:AbbreviatedLabel,
+        "02.04.05.16.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "molybdenum trioxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/monazite> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Monazite"^^xsd:anyURI ;
@@ -4456,6 +4538,14 @@
         "neodym"@vi,
         "钕"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/neodymium-iii-oxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Neodymium(III)_oxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/light-rare-earth-oxide> ;
+    skos:definition "Oxide of neodymium, used in glass and to make solid state lasers, converts to neodymium with an atomic mass ratio 0.85735."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Nd2O3"^^dt:AbbreviatedLabel,
+        "02.04.05.08.1.2"^^dt:LocalHierarchyKey ;
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/nepheline-syenite> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
@@ -5160,6 +5250,16 @@
         "钾"@zh .
 
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/potassium-sulfate> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Potassium_sulfate"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/potash> ;
+    skos:definition "One of the potassium salts that make up potash."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "K2SO4"^^dt:AbbreviatedLabel,
+        "02.04.04.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "potassium sulfate"@en .
+
 <http://resource.geosciml.org/classifier/cgi/commodity-code/pozzolan> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Pozzolan"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
@@ -5199,6 +5299,15 @@
         "ธาตุพราซีโอไดเมียม"@th,
         "praseodym"@vi,
         "镨"@zh .
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code/praseodymium-iii-oxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Praseodymium(III)_oxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/light-rare-earth-oxide> ;
+    skos:definition "Oxide of praseodymium, used in glass and electronics, converts to praseodymium with an atomic mass ratio 0.85447."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Pr2O3"^^dt:AbbreviatedLabel,
+        "02.04.05.08.1.1"^^dt:LocalHierarchyKey ;
 
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/precious-metal> a skos:Concept ;
@@ -5797,7 +5906,10 @@
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sand> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/foundry-sand>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/frac-sand> ;
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/frac-sand>,
+         <http://resource.geosciml.org/classifier/cgi/commodity-code/mineral-sand>
+         <http://resource.geosciml.org/classifier/cgi/commodity-code/silica-sand>
+         ;
     skos:notation "Sand"^^dt:AbbreviatedLabel,
         "01.01.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Sand"@de,
@@ -6137,6 +6249,15 @@
         "01.03.29"^^dt:LocalHierarchyKey ;
     skos:prefLabel "silica-gemstone"@en .
 
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code/silica-sand> a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/sand> ;
+    skos:definition "High quality sand with silica quantity greater than 95%, used in glassmaking."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Sisd"^^dt:AbbreviatedLabel,
+        "01.01.06.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "silica sand"@en .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/silicon> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Silicon"^^xsd:anyURI ;
@@ -6811,6 +6932,15 @@
         "tori"@vi,
         "钍"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/thorium-dioxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Thorium_dioxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/chemical-oxide-product> ;
+    skos:definition "Produced as a by-product of uranium and rare earth production. Converts to thorium with an atomic mass ratio 0.879"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "ThO2"^^dt:AbbreviatedLabel,
+        "02.04.05.17.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "thorium dioxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/thulium> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Thulium"^^xsd:anyURI ;
@@ -6867,6 +6997,16 @@
         "thiếc"@vi,
         "锡"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tin-oxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Tin(IV)_oxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:altLabel "cassiterite"@en ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/chemical-oxide-product> ;
+    skos:definition "Used ceramics and glass, the main ore mineral of tin. Converts to tin with an atomic mass ratio 0.78764"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "SnO2"^^dt:AbbreviatedLabel,
+        "02.04.05.18.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "tin oxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/titanium> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Titanium"^^xsd:anyURI ;
@@ -6895,6 +7035,15 @@
         "titan"@vi,
         "钛"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/titanium-dioxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Titanium_dioxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/chemical-oxide-product> ;
+    skos:definition "Used as a pigment in paints and as a food dye. Produced mostly from rutile. Converts to titanium with an atomic mass ratio 0.5995"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "TiO2"^^dt:AbbreviatedLabel,
+        "02.04.05.19.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "titanium dioxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/topaz> a skos:Concept ;
     dcterms:source "http://www.galleries.com/Topaz"^^xsd:anyURI ;
@@ -7005,6 +7154,15 @@
         "wolfram"@vi,
         "钨"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/tungsten-trioxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Tungsten_trioxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/chemical-oxide-product> ;
+    skos:definition "Used in paints and electronics, usually the compound wolframite and scheelite mineral resources have their grade measures cited against. Converts to tungsten with an atomic mass ratio 0.7929"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "WO3"^^dt:AbbreviatedLabel,
+        "02.04.05.20.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "tungsten trioxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/turquoise> a skos:Concept ;
     dcterms:source "http://www.galleries.com/Turquoise"^^xsd:anyURI ;
