@@ -2697,7 +2697,7 @@
     skos:definition "Used in semiconductors. converts to gallium with an atomic mass ratio 0.74397."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:notation "Ga2O3"^^dt:AbbreviatedLabel,
-        "02.04.05.14.."^^dt:LocalHierarchyKey ;
+        "02.04.05.14"^^dt:LocalHierarchyKey ;
     skos:prefLabel "gallium oxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/garnet> a skos:Concept ;
@@ -3080,7 +3080,7 @@
     skos:definition "Used in electronics, converts to hafnium with an atomic mass ratio 0.84798"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:notation "HfO2"^^dt:AbbreviatedLabel,
-        "02.04.05.15.."^^dt:LocalHierarchyKey ;
+        "02.04.05.15"^^dt:LocalHierarchyKey ;
     skos:prefLabel "hafnium oxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/halloysite> a skos:Concept ;
@@ -4432,7 +4432,7 @@
     skos:definition "Additive to steel, most commercially used compound of molybdenum, converts to molybdenum with an atomic mass ratio 0.6666"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:notation "MoO3"^^dt:AbbreviatedLabel,
-        "02.04.05.16.."^^dt:LocalHierarchyKey ;
+        "02.04.05.16"^^dt:LocalHierarchyKey ;
     skos:prefLabel "molybdenum trioxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/monazite> a skos:Concept ;
@@ -5907,7 +5907,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/foundry-sand>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/frac-sand>,
-         <http://resource.geosciml.org/classifier/cgi/commodity-code/mineral-sand>
+         <http://resource.geosciml.org/classifier/cgi/commodity-code/mineral-sand>,
          <http://resource.geosciml.org/classifier/cgi/commodity-code/silica-sand>
          ;
     skos:notation "Sand"^^dt:AbbreviatedLabel,
@@ -6939,7 +6939,7 @@
     skos:definition "Produced as a by-product of uranium and rare earth production. Converts to thorium with an atomic mass ratio 0.879"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:notation "ThO2"^^dt:AbbreviatedLabel,
-        "02.04.05.17.."^^dt:LocalHierarchyKey ;
+        "02.04.05.17"^^dt:LocalHierarchyKey ;
     skos:prefLabel "thorium dioxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/thulium> a skos:Concept ;
@@ -7005,7 +7005,7 @@
     skos:definition "Used ceramics and glass, the main ore mineral of tin. Converts to tin with an atomic mass ratio 0.78764"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:notation "SnO2"^^dt:AbbreviatedLabel,
-        "02.04.05.18.."^^dt:LocalHierarchyKey ;
+        "02.04.05.18"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tin oxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/titanium> a skos:Concept ;
@@ -7042,7 +7042,7 @@
     skos:definition "Used as a pigment in paints and as a food dye. Produced mostly from rutile. Converts to titanium with an atomic mass ratio 0.5995"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:notation "TiO2"^^dt:AbbreviatedLabel,
-        "02.04.05.19.."^^dt:LocalHierarchyKey ;
+        "02.04.05.19"^^dt:LocalHierarchyKey ;
     skos:prefLabel "titanium dioxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/topaz> a skos:Concept ;
@@ -7161,7 +7161,7 @@
     skos:definition "Used in paints and electronics, usually the compound wolframite and scheelite mineral resources have their grade measures cited against. Converts to tungsten with an atomic mass ratio 0.7929"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:notation "WO3"^^dt:AbbreviatedLabel,
-        "02.04.05.20.."^^dt:LocalHierarchyKey ;
+        "02.04.05.20"^^dt:LocalHierarchyKey ;
     skos:prefLabel "tungsten trioxide"@en
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/turquoise> a skos:Concept ;
