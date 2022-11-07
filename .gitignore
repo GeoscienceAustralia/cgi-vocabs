@@ -145,6 +145,7 @@ cython_debug/
 
 # JetBrains config
 .idea/
+*.iml
 
 # Mac
 .DS_Store
