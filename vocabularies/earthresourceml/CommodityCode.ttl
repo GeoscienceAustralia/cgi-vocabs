@@ -315,7 +315,7 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/thallium>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/thenardite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/thorium>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/thorium-oxide>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/thorium-dioxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/thulium>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tin>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tin-oxide>,
@@ -5201,6 +5201,7 @@
     skos:definition "Potash is any of various salts that contain potassium in water-soluble form, the most common being potassium chloride (KCl). Mostly used in fertilizers."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/potash> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/potassium-sulfate> ;
     skos:notation "Pota"^^dt:AbbreviatedLabel,
         "02.04.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Kali"@de,
