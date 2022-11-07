@@ -1626,7 +1626,7 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tantalum-pentoxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/thorium-dioxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tin-oxide>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/titanium-dioxide>
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/titanium-dioxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/tungsten-trioxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/uranium-oxide>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/vanadium-pentoxide>,
