@@ -46,8 +46,11 @@
     skos:member <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/adsorption>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/agglomeration>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/Bayer-process>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/bioleaching>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/burning>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-leach>,
+        <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-pulp>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/calcining>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/cementation>,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/centrifugal-gravity-separation>,
@@ -198,6 +201,15 @@
     skos:notation "01.1.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "automatic sorting"@en .
 
+<http://resource.geosciml.org/classifier/cgi/mining-processing-activity/Bayer-process> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Bayer_process"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching> ;
+    skos:definition "The Bayer process is the principal industrial means of refining bauxite to produce alumina (aluminium oxide). In the Bayer process, bauxite ore is heated in a pressure vessel along with a sodium hydroxide solution (caustic soda) at a temperature of 150 to 200 °C. At these temperatures, the aluminium is dissolved as sodium aluminate (primarily [Al(OH)4]−) in an extraction process. After separation of the residue by filtering, gibbsite is precipitated when the liquid is cooled and then seeded with fine-grained aluminum hydroxide crystals from previous extractions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:notation "03.02.1"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Bayer process>"@en .
+
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/bioleaching> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Bioleaching"^^xsd:anyURI ;
@@ -218,6 +230,24 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
     skos:notation "03.14"^^dt:LocalHierarchyKey ;
     skos:prefLabel "burning"@en .
+
+<http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-leach> a skos:Concept ;
+    dcterms:source "https://www.jacobi.net/gold-recovery/carbon-in-leach/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching> ;
+    skos:definition "The carbon-in-leach process integrates leaching and carbon-in-pulp into a single unit process operation in which the leach tanks are fitted with carbon retention screens and the carbon-in-pulp tanks are eliminated. The activated carbon is added in leach, with gold adsorption occurring nearly simultaneously with gold dissolution by the cyanide solution, then the ground ore particles are introduced into the ore pulp. Cyanide leaching and precious metals adsorption onto the activated carbon occur simultaneously. The loaded activated carbon is mechanically screened to separate it from the barren ore pulp and processed to remove the precious metals and prepare it for reuse."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:notation "03.02.2"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "carbon-in-leach"@en .
+
+<http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-pulp> a skos:Concept ;
+    dcterms:source "https://www.jacobi.net/gold-recovery/carbon-in-pulp/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching> ;
+    skos:definition "With carbon-in-pulp, the ore is finely ground and the gold is solubilised using a cyanide leach in a series of tanks. The granular activated carbon is added to the leached slurry, where the carbon adsorbs the gold from the slurry solution and is then removed from the slurry by coarse screening. Often a series of five or six agitated tanks are used, where carbon and ore slurry are contacted in a staged countercurrent manner. This countercurrent operation increases the gold loading onto the carbon while maintaining a high recovery percentage."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:notation "03.02.3"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "carbon-in-pulp"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/calcining> a skos:Concept ;
@@ -588,6 +618,9 @@
     skos:definition "Action of chemical reagents on a material resulting in the dissolution of some of its elements."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/leaching> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/Bayer-process>,
+            <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-leach>,
+            <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-pulp> ;
     skos:notation "03.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Auswaschung"@de,
         "leaching"@en,
