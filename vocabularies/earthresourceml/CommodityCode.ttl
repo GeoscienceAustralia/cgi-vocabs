@@ -3120,7 +3120,7 @@
     skos:definition "As defined by IUPAC, a rare earth element (REE) or rare earth metal is one of a set of seventeen chemical elements in the periodic table, specifically the fifteen lanthanides plus scandium and yttrium.[2] Scandium and yttrium are considered rare earth elements because they tend to occur in the same ore deposits as the lanthanides and exhibit similar chemical properties."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/europium-iii-oxide>,
-          <http://resource.geosciml.org/classifier/cgi/commodity-code/terbium-iii-oxide> ;
+          <http://resource.geosciml.org/classifier/cgi/commodity-code/terbium-iii-iv-oxide> ;
     skos:notation "HREO"^^dt:AbbreviatedLabel,
         "02.04.05.08.2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "heavy rare earth oxide"@en .
@@ -6849,6 +6849,16 @@
         "terbi"@vi,
         "铽"@zh .
 
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code/terbium-iii-iv-oxide> a skos:Concept ;
+    dcterms:source "https://en.wikipedia.org/wiki/Terbium(III,IV)_oxide"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/heavy-rare-earth-oxide> ;
+    skos:definition "Oxide of terbium, converts to terbium with an atomic mass ratio 0.85. The main commercial compound of terbium."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Tb4O7"^^dt:AbbreviatedLabel,
+        "02.04.05.08.2.2"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "terbium (III,IV) oxide"@en .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/thallium> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Thallium"^^xsd:anyURI ;
