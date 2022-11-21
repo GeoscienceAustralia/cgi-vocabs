@@ -4548,7 +4548,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:notation "Nd2O3"^^dt:AbbreviatedLabel,
         "02.04.05.08.1.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Neodymium (III) oxide"@en .
+    skos:prefLabel "neodymium (III) oxide"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/nepheline-syenite> a skos:Concept ;
@@ -5313,7 +5313,7 @@
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:notation "Pr2O3"^^dt:AbbreviatedLabel,
         "02.04.05.08.1.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Praseodymium (III) oxide"@en .
+    skos:prefLabel "praseodymium (III) oxide"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/precious-metal> a skos:Concept ;
