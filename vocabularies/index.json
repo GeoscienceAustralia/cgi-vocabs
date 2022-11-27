@@ -38,6 +38,8 @@
     "geologicunitmorphology.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology",
     "geologicunitpartrole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole",
     "geologicunittype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype",
+    "gts-skos.ttl": "http://resource.geosciml.org/vocabulary/timescale/gts2020-skos",
+    "gts-chart-colours.ttl": "http://resource.geosciml.org/vocabulary/timescale/gts-chart-colours",
     "lineationtype.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype",
     "mappedfeatureobservationmethod.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod",
     "mappingframe.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe",
