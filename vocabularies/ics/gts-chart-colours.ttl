@@ -2501,7 +2501,7 @@ cs:
     dcterms:created "2021-09-30"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/ics> ;
     dcterms:identifier "chart-colours" ;
-    dcterms:modified "2022-03-13"^^xsd:date ;
+    dcterms:modified "2022-11-28"^^xsd:date ;
     dcterms:provenance """CGMW/CCGM 2008, 2013:  The conversion from the reference CMYK values to the RGB codes utilizes Adobe® Illustrator® CS3’s colour function of “Emulate Adobe® Illustrator® 6.0” (menu Edit / colour Settings / Settings).
 
  colour composition by J.M. Pellé (BRGM, France) 2008 - Technical review by C. Vinnemann (BGR, Germany)
@@ -2512,8 +2512,10 @@ cs:
  Includes 17 june - 29 July 2021 communication on Pennsylvanian subsystem CMYK colour (and an RGB conversion).
 
  Non-semantic version online at https://stratigraphy.org/chart."""@en ;
-    owl:versionIRI isc:0.1 ;
-    owl:versionInfo "This is an early draft vocabulary - alpha." ;
+    dcterms:publisher <https://linked.data.gov.au/org/ics> ;
+    dcterms:rights "© 2020 International Commission on Stratigraphy"@en ;
+    owl:versionIRI :0.1 ;
+    owl:versionInfo "Initial release" ;
     skos:definition """A vocabulary of chronostratigraphic Eonothems, Erathems, Systems, Subsytems, Series, Subseries, Stages and their official ICS chart colours.
 
  The Concepts in this vocabulary are derived from the ICS chronostratigraphic chart but give the ICS' colour notations (CMYK, RGB etc.) for each."""@en ;

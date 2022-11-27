@@ -6695,15 +6695,24 @@ isc:UpperCretaceous
     prov:wasDerivedFrom ts:gts2020 ;
 .
 
+<https://linked.data.gov.au/org/ics>
+    a sdo:Organization ;
+    sdo:name "International Commission on Stratigraphy" ;
+    sdo:url "https://stratigraphy.org"^^xsd:anyURI ;
+.
+
 cs:
     a skos:ConceptScheme ;
     dcterms:identifier "chart" ;
     dcterms:created "2020-06-05"^^xsd:date ;
-    dcterms:issued "2022-02-25"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/ics> ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2022-02-25"^^xsd:date ;
+    dcterms:modified "2022-11-28"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/ics> ;
     dcterms:rights "Original version Copyright © 2020 International Commission on Stratigraphy"@en ;
     dcterms:source "https://stratigraphy.org/chart"^^xsd:anyURI ;
+    owl:versionIRI :0.1 ;
+    owl:versionInfo "Initial release" ;
     skos:definition """This is a simplified representation of the more detailed RDF representation of the 2020 Geologic Time Scale (http://resource.geosciml.org/vocabulary/timescale/gts2020).
 
 This representation uses mainly just SKOS model elements to represent the Time Scale as a hierarchical taxonomy of Concepts and does not include the temporal relationships that the more detailed representation does. This version is optimised for simple vocabulary tooling.
