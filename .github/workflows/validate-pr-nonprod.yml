@@ -1,4 +1,6 @@
-name: Validate Vocabs on PRs to Develop
+name: Validate Vocabs Develop
+on:
+  workflow_dispatch:
 
 jobs:
   validate:
