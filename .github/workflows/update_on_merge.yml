@@ -1,4 +1,4 @@
-name: Handle updated vocabs
+name: Handle updated vocabs for Master
 on:
   push:
     branches: [ master ]
