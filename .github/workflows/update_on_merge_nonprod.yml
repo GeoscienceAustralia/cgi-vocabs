@@ -1,9 +1,5 @@
-ame: Handle updated vocabs for Develop
-on:
-  push:
-    branches: [ develop ]
+name: Handle updated vocabs for Develop
 
-  workflow_dispatch:
 jobs:
   changes:
     runs-on: ubuntu-latest

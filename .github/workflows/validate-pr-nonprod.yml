@@ -1,9 +1,4 @@
 name: Validate Vocabs on PRs to Develop
-on:
-  pull_request:
-    branches: [ develop ]
-
-  workflow_dispatch:
 
 jobs:
   validate:
