@@ -1,6 +1,7 @@
 name: Validate Vocabs Develop
 on:
   workflow_dispatch:
+    branches: [ develop ]
 
 jobs:
   validate:
