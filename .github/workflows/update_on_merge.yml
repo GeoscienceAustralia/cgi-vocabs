@@ -8,8 +8,10 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     steps:
-      - name: Bring in repo
+      - name: Bring in repo - master branch
         uses: actions/checkout@v1
+        with:
+          ref: master
       - name: install Python dependencies
         run: |
           python -m pip install -U pip
@@ -21,7 +23,9 @@ jobs:
       - name: detect file changes
         env:
             DB_USERNAME: ${{secrets.DB_USERNAME}}
-            DB_PASSWORD: ${{secrets.DB_PASSWORD}}      
+            DB_PASSWORD: ${{secrets.DB_PASSWORD}}
+            BASE_DB_URI: ${{vars.BASE_DB_URI_PROD}}
+            WEBSITE_URL: ${{vars.WEBSITE_URL_PROD}}
         run: |
           echo 'Run update script...'
           a=${{steps.file_changes.outputs.files_added}}

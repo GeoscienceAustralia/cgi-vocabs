@@ -12,10 +12,8 @@ from rdflib.namespace import RDF, SKOS
 MAX_RETRIES = 3
 
 DB_TYPE = "graphdb"  # options: "fuseki" | "graphdb"
-# BASE_DB_URI = "http://fuseki.surroundaustralia.com/cgi-vocabs"
-BASE_DB_URI = "http://graphdb.vocabs.ga.gov.au/repositories/vocabs-cgi"
-# WEBSITE_URL = "http://cgi.surroundaustralia.com"
-WEBSITE_URL = "https://cgi.vocabs.ga.gov.au"
+BASE_DB_URI = os.environ.get("BASE_DB_URI", None)
+WEBSITE_URL = os.environ.get("WEBSITE_URL", None)
 
 DB_USERNAME = os.environ.get("DB_USERNAME", None)
 DB_PASSWORD = os.environ.get("DB_PASSWORD", None)

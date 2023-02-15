@@ -24,6 +24,8 @@ jobs:
         env:
             DB_USERNAME: ${{secrets.DB_USERNAME}}
             DB_PASSWORD: ${{secrets.DB_PASSWORD}}
+            BASE_DB_URI: ${{vars.BASE_DB_URI_NONPROD}}
+            WEBSITE_URL: ${{vars.WEBSITE_URL_NONPROD}}
         run: |
           echo 'Run update script...'
           a=${{steps.file_changes.outputs.files_added}}
