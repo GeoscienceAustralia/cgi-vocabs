@@ -14,10 +14,10 @@ jobs:
           python -m pip install -U pip
           pip install -r scripts/requirements.txt
       - name: Load all vocabs Develop
-          env:
-            DB_USERNAME: ${{secrets.DB_USERNAME}}
-            DB_PASSWORD: ${{secrets.DB_PASSWORD}}
-            BASE_DB_URI: ${{vars.BASE_DB_URI_NONPROD}}
-          run: |
-            echo 'Run load script...'
-            python scripts/load_all_vocabs.py
+        env:
+          DB_USERNAME: ${{secrets.DB_USERNAME}}
+          DB_PASSWORD: ${{secrets.DB_PASSWORD}}
+          BASE_DB_URI: ${{vars.BASE_DB_URI_NONPROD}}
+        run: |
+          echo 'Run load script...'
+          python scripts/load_all_vocabs.py
