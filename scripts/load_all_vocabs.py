@@ -14,7 +14,14 @@ def main():
     # get a list of relative pathname strings of all the turtle files in the vocabularies folder
     voc_strings = glob.glob("../vocabularies/*/*.ttl")
     print(voc_strings)
+    print(len(voc_strings))
 
+    voc_dir = Path(__file__).parent.parent / "vocabularies"
+    print(voc_dir)
+    print(type(voc_dir))
+    #voc_strings2 = voc_dir.glob("**/*")
+    #print(voc_strings2)
+"""
     # build a list of Path objects using the pathname strings
     voc_paths = []
     for voc in voc_strings:
@@ -60,7 +67,7 @@ def main():
         # with an assertion error containing the response code
         if not 200 <= r2.status_code <= 300:
             print(r2.content)
-        assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)
+        assert 200 <= r2.status_code <= 300, "Status code was {}".format(r2.status_code)"""
 
 
 if __name__ == "__main__":
