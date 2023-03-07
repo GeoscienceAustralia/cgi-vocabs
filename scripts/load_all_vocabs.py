@@ -13,8 +13,11 @@ DB_PASSWORD = os.environ.get("DB_PASSWORD", None)
 def main():
     # get a list of relative pathname strings of all the turtle files in the vocabularies folder
     voc_strings = glob.glob("../vocabularies/*/*.ttl")
+    voc_strings2 = glob.glob("/home/runner/work/cgi-vocabs/cgi-vocabs/vocabularies/*/*.ttl")
     print(voc_strings)
     print(len(voc_strings))
+    print(voc_strings2)
+    print(len(voc_strings2))
 
     voc_dir = Path(__file__).parent.parent / "vocabularies"
     print(voc_dir)
