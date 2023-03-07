@@ -11,6 +11,7 @@ DB_PASSWORD = os.environ.get("DB_PASSWORD", None)
 
 # get a list of relative pathname strings of all the turtle files in the vocabularies folder
 voc_strings = glob.glob(str(Path(__file__).parent.parent / "vocabularies") + "/*/*.ttl")
+print(voc_strings)
 
 # build a list of Path objects using the pathname strings
 voc_paths = []
