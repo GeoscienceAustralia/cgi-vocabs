@@ -20,8 +20,11 @@ def main():
     print(len(voc_strings2))
 
     voc_dir = Path(__file__).parent.parent / "vocabularies"
+    voc_dir_str = str(voc_dir)
     print(voc_dir)
     print(type(voc_dir))
+    print(voc_dir_str)
+    print(type(voc_dir_str))
     #voc_strings2 = voc_dir.glob("**/*")
     #print(voc_strings2)
 """
