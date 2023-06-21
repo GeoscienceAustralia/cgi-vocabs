@@ -4691,7 +4691,7 @@
         <http://resource.geosciml.org/classifier/cgi/commodity-code/selenium>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/sulphur> ;
     skos:notation "NonMe"^^dt:AbbreviatedLabel,
-        "2.0299999999999998"^^dt:LocalHierarchyKey ;
+        "2.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "non metal"@en .
 
 
