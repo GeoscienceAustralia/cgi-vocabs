@@ -436,34 +436,6 @@
         "microclin"@vi,
         "微斜长石"@zh .
 
-<http://resource.geosciml.org/classifier/cgi/commodity-code/amber> a skos:Concept ;
-    dcterms:source "http://en.wikipedia.org/wiki/Amber"^^xsd:anyURI ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/gemstones>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/organic-material> ;
-    skos:definition "Amber is fossilized tree resin (not sap), which has been appreciated for its color and natural beauty since Neolithic times. Much valued from antiquity to the present as a gemstone, amber is made into a variety of decorative objects. Amber is used as an ingredient in perfumes, as a healing agent in folk medicine, and as jewelry."@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/amber> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:notation "Amb"^^dt:AbbreviatedLabel,
-        "01.03.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Bernstein"@de,
-        "amber"@en,
-        "ámbar"@es,
-        "meripihka"@fi,
-        "ambre"@fr,
-        "kuning sawo"@id,
-        "ambra"@it,
-        "琥珀"@ja,
-        "GaMeb"@km,
-        "호박"@ko,
-        " ºñ´-À®ó"@lo,
-        "ambar"@ms,
-        "yantar'"@ru,
-        "bärnsten"@sv,
-        "อำพัน"@th,
-        "hổ phách"@vi,
-        "琥珀"@zh .
-
 <http://resource.geosciml.org/classifier/cgi/commodity-code/amethyst> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Amethyst"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
@@ -1559,36 +1531,6 @@
         "แร่โครซิโดไลต์"@th,
         "crocidolit"@vi,
         "纤铁钠闪石"@zh .
-
-<http://resource.geosciml.org/classifier/cgi/commodity-code/crushed-rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:altLabel "crushed stone"@en,
-        "batu tergerus"@id ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/primary-aggregate> ;
-    skos:definition "Deposits quarried from a fresh face and broken by mechanical means into aggregate"@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/crushedRock> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:notation "Crush"^^dt:AbbreviatedLabel,
-        "01.01.01.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Splitt"@de,
-        "crushed rock"@en,
-        "material triturado"@es,
-        "kivimurske"@fi,
-        "matériau concassé"@fr,
-        "batu remuk"@id,
-        "roccia frantumata"@it,
-        "砕骨物"@ja,
-        "silabMEbk"@km,
-        "파쇄암"@ko,
-        "¹ó­¢ö®"@lo,
-        "batu hancur"@ms,
-        "kamen' razrushennyj"@ru,
-        "makadam"@sv,
-        "หินบด"@th,
-        "đá nghiền"@vi,
-        "碎石"@zh .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/cryolite> a skos:Concept ;
     dcterms:provenance "http://www.webmineral.com/data/Cryolite.shtml http ; http//en.wikipedia.org/wiki/Cryolite"@en ;
@@ -2892,36 +2834,6 @@
         "02.04.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "lime"@en .
 
-<http://resource.geosciml.org/classifier/cgi/commodity-code/limestone> a skos:Concept ;
-    dcterms:source "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:altLabel "石灰石"@ja,
-        "石灰石"@zh ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/dimension-stone>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock> ;
-    skos:definition "Commercial limestones are rocks of sedimentary origin that primarily are composed of calcium carbonate with or without magnesium. Included in this category are limestone, dolomite, dolomitic limestone, and travertine, which is a calcitic rock that is precipitated from hot springs."@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/limestone> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:notation "Lst"^^dt:AbbreviatedLabel,
-        "01.01.03.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Kalk"@de,
-        "limestone"@en,
-        "caliza"@es,
-        "kalkkikivi"@fi,
-        "calcaire"@fr,
-        "batugamping"@id,
-        "calcare"@it,
-        "石灰岩"@ja,
-        "silafµkMe)ar"@km,
-        "석회암"@ko,
-        "¹ó­-¯ø­"@lo,
-        "batu kapur"@ms,
-        "izvestnyak"@ru,
-        "kalksten"@sv,
-        "หินปูน"@th,
-        "đá vôi"@vi,
-        "石灰岩"@zh .
-
 <http://resource.geosciml.org/classifier/cgi/commodity-code/lithium> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Lithium"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
@@ -3052,36 +2964,6 @@
         "magie"@vi,
         "镁"@zh .
 
-<http://resource.geosciml.org/classifier/cgi/commodity-code/magnetite> a skos:Concept ;
-    dcterms:source "http://www.galleries.com/Magnetite"^^xsd:anyURI ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:altLabel "lodestone"@en,
-        "磁鉄鉱岩"@ja ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-mineral>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/iron-oxide> ;
-    skos:definition "Magnetite is an oxide of iron (as is hematite). It is not a component of ordinary rust, although it can form as iron oxidizes in a dry environment."@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnetite> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:notation "Mgt"^^dt:AbbreviatedLabel,
-        "01.02.25"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Magnetit"@de,
-        "magnetite"@en,
-        "magnetita"@es,
-        "magnetiitti"@fi,
-        "magnétite"@fr,
-        "magnetit"@id,
-        "magnetite"@it,
-        "磁鉄鉱"@ja,
-        "ma:ej:TIt"@km,
-        "자철석"@ko,
-        "Á»ÈÁ´ñ¡À¨Äêª"@lo,
-        "magnetit"@ms,
-        "magnetit"@ru,
-        "magnetit"@sv,
-        "แร่แมกนีไทต์"@th,
-        "magnetit"@vi,
-        "磁铁矿"@zh .
-
 <http://resource.geosciml.org/classifier/cgi/commodity-code/magnetite-ore> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
@@ -3175,24 +3057,6 @@
         "สินแร่แมงกานีส"@th,
         "quặng mangan"@vi,
         "锰矿石"@zh .
-
-<http://resource.geosciml.org/classifier/cgi/commodity-code/marble> a skos:Concept ;
-    dcterms:source "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/dimension-stone>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock> ;
-    skos:definition "Commercial marble includes metamorphosed limestones and serpentine rocks, all of which are capable of taking a polish. An important member of this classification is serpentine marble, which is also known as verde antique, and comprises green-to-black serpentine, which is a hydrous magnesium silicate mineral that is crisscrossed by veins of lighter minerals, such as calcite or dolomite."@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/marble> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:notation "Mrbl"^^dt:AbbreviatedLabel,
-        "01.01.03.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Marmor"@de,
-        "marble"@en,
-        "mármol"@es,
-        "marmorit"@fi,
-        "marmo"@it,
-        "mramor"@ru,
-        "marmor"@sv .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/mercury> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Mercury_(element)"^^xsd:anyURI ;
@@ -4349,18 +4213,6 @@
         "แร่โรโดไนต์"@th,
         "rodonit"@vi,
         "蔷薇辉石"@zh .
-
-<http://resource.geosciml.org/classifier/cgi/commodity-code/riprap> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/primary-aggregate> ;
-    skos:definition "Boulder size rock used to armour shorelines, streambeds, bridge abutments, pilings and other shoreline structures against scour, water or ice erosion."@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/riprap> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:notation "Rrap"^^dt:AbbreviatedLabel,
-        "01.01.01.01.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "riprap"@en .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/rose-quartz> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Rose_quartz#Rose_quartz"^^xsd:anyURI ;
@@ -6105,6 +5957,34 @@
         "zirconi"@vi,
         "锆"@zh .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/amber> a skos:Concept ;
+    dcterms:source "http://en.wikipedia.org/wiki/Amber"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/gemstones>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/organic-material> ;
+    skos:definition "Amber is fossilized tree resin (not sap), which has been appreciated for its color and natural beauty since Neolithic times. Much valued from antiquity to the present as a gemstone, amber is made into a variety of decorative objects. Amber is used as an ingredient in perfumes, as a healing agent in folk medicine, and as jewelry."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/amber> ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Amb"^^dt:AbbreviatedLabel,
+        "01.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Bernstein"@de,
+        "amber"@en,
+        "ámbar"@es,
+        "meripihka"@fi,
+        "ambre"@fr,
+        "kuning sawo"@id,
+        "ambra"@it,
+        "琥珀"@ja,
+        "GaMeb"@km,
+        "호박"@ko,
+        " ºñ´-À®ó"@lo,
+        "ambar"@ms,
+        "yantar'"@ru,
+        "bärnsten"@sv,
+        "อำพัน"@th,
+        "hổ phách"@vi,
+        "琥珀"@zh .
+
 <http://resource.geosciml.org/classifier/cgi/commodity-code/asbestos-serpentine> a skos:Concept ;
     dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
@@ -6117,6 +5997,36 @@
         "01.02.04.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "asbestos-serpentine"@en .
 
+<http://resource.geosciml.org/classifier/cgi/commodity-code/crushed-rock> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:altLabel "crushed stone"@en,
+        "batu tergerus"@id ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/primary-aggregate> ;
+    skos:definition "Deposits quarried from a fresh face and broken by mechanical means into aggregate"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/crushedRock> ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Crush"^^dt:AbbreviatedLabel,
+        "01.01.01.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Splitt"@de,
+        "crushed rock"@en,
+        "material triturado"@es,
+        "kivimurske"@fi,
+        "matériau concassé"@fr,
+        "batu remuk"@id,
+        "roccia frantumata"@it,
+        "砕骨物"@ja,
+        "silabMEbk"@km,
+        "파쇄암"@ko,
+        "¹ó­¢ö®"@lo,
+        "batu hancur"@ms,
+        "kamen' razrushennyj"@ru,
+        "makadam"@sv,
+        "หินบด"@th,
+        "đá nghiền"@vi,
+        "碎石"@zh .
+
 <http://resource.geosciml.org/classifier/cgi/commodity-code/garnet-gemstone> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Garnet"^^xsd:anyURI ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
@@ -6128,6 +6038,84 @@
     skos:notation "Gt"^^dt:AbbreviatedLabel,
         "01.03.14"^^dt:LocalHierarchyKey ;
     skos:prefLabel "garnet-gemstone"@en .
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code/limestone> a skos:Concept ;
+    dcterms:source "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:altLabel "石灰石"@ja,
+        "石灰石"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/dimension-stone>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock> ;
+    skos:definition "Commercial limestones are rocks of sedimentary origin that primarily are composed of calcium carbonate with or without magnesium. Included in this category are limestone, dolomite, dolomitic limestone, and travertine, which is a calcitic rock that is precipitated from hot springs."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/limestone> ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Lst"^^dt:AbbreviatedLabel,
+        "01.01.03.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Kalk"@de,
+        "limestone"@en,
+        "caliza"@es,
+        "kalkkikivi"@fi,
+        "calcaire"@fr,
+        "batugamping"@id,
+        "calcare"@it,
+        "石灰岩"@ja,
+        "silafµkMe)ar"@km,
+        "석회암"@ko,
+        "¹ó­-¯ø­"@lo,
+        "batu kapur"@ms,
+        "izvestnyak"@ru,
+        "kalksten"@sv,
+        "หินปูน"@th,
+        "đá vôi"@vi,
+        "石灰岩"@zh .
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code/magnetite> a skos:Concept ;
+    dcterms:source "http://www.galleries.com/Magnetite"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:altLabel "lodestone"@en,
+        "磁鉄鉱岩"@ja ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-mineral>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/iron-oxide> ;
+    skos:definition "Magnetite is an oxide of iron (as is hematite). It is not a component of ordinary rust, although it can form as iron oxidizes in a dry environment."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnetite> ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Mgt"^^dt:AbbreviatedLabel,
+        "01.02.25"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Magnetit"@de,
+        "magnetite"@en,
+        "magnetita"@es,
+        "magnetiitti"@fi,
+        "magnétite"@fr,
+        "magnetit"@id,
+        "magnetite"@it,
+        "磁鉄鉱"@ja,
+        "ma:ej:TIt"@km,
+        "자철석"@ko,
+        "Á»ÈÁ´ñ¡À¨Äêª"@lo,
+        "magnetit"@ms,
+        "magnetit"@ru,
+        "magnetit"@sv,
+        "แร่แมกนีไทต์"@th,
+        "magnetit"@vi,
+        "磁铁矿"@zh .
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code/marble> a skos:Concept ;
+    dcterms:source "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/dimension-stone>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock> ;
+    skos:definition "Commercial marble includes metamorphosed limestones and serpentine rocks, all of which are capable of taking a polish. An important member of this classification is serpentine marble, which is also known as verde antique, and comprises green-to-black serpentine, which is a hydrous magnesium silicate mineral that is crisscrossed by veins of lighter minerals, such as calcite or dolomite."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/marble> ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:notation "Mrbl"^^dt:AbbreviatedLabel,
+        "01.01.03.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Marmor"@de,
+        "marble"@en,
+        "mármol"@es,
+        "marmorit"@fi,
+        "marmo"@it,
+        "mramor"@ru,
+        "marmor"@sv .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/mineral-sand> a skos:Concept ;
     dcterms:source "https://www.ga.gov.au/education/classroom-resources/minerals-energy/australian-mineral-facts/mineral-sands"^^xsd:anyURI ;
@@ -6171,17 +6159,17 @@
         "kali carbonat"@vi,
         "碳酸钾"@zh .
 
-<http://resource.geosciml.org/classifier/cgi/commodity-code/sand-and-gravel> a skos:Concept ;
-    dcterms:provenance "BGS"@en ;
+<http://resource.geosciml.org/classifier/cgi/commodity-code/riprap> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/primary-aggregate> ;
-    skos:definition "Durable rock fragments (silicates, flints, etc) with a size range: 0.063 mm - 80mm, derived from the weathering, erosion and transport of rocks by glacial or fluvial processes. Used for aggregate purposes and construction fill."@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sandAndGravel> ;
+    skos:definition "Boulder size rock used to armour shorelines, streambeds, bridge abutments, pilings and other shoreline structures against scour, water or ice erosion."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/riprap> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:notation "SandG"^^dt:AbbreviatedLabel,
-        "01.01.01.01.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "sand and gravel"@en .
+    skos:notation "Rrap"^^dt:AbbreviatedLabel,
+        "01.01.01.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "riprap"@en .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/silica> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Silica"^^xsd:anyURI ;
@@ -6376,7 +6364,8 @@
     skos:definition "Commodity of interest is any of the sixteen known iron oxides and oxyhydroxides, extracted from the mined material, exclusive of hematite or magnetite produced as an industrial mineral."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ironOxide> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/ochre> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/magnetite>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/ochre> ;
     skos:notation "FeOx"^^dt:AbbreviatedLabel,
         "02.04.05.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "iron oxide"@en .
@@ -6420,6 +6409,19 @@
     skos:notation "REEOx"^^dt:AbbreviatedLabel,
         "02.04.05.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "rare earth oxide"@en .
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sand-and-gravel> a skos:Concept ;
+    dcterms:provenance "BGS"@en ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-rock>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/primary-aggregate> ;
+    skos:definition "Durable rock fragments (silicates, flints, etc) with a size range: 0.063 mm - 80mm, derived from the weathering, erosion and transport of rocks by glacial or fluvial processes. Used for aggregate purposes and construction fill."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sandAndGravel> ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/sand> ;
+    skos:notation "SandG"^^dt:AbbreviatedLabel,
+        "01.01.01.01.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "sand and gravel"@en .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/silica-gemstone> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Silica"^^xsd:anyURI ;
@@ -6729,7 +6731,8 @@
     skos:definition "Earth material composed of organic compounds derived from the remains of dead organisms and their waste products in the environment. Larger molecules of organic matter can be formed from the polymerization of different parts of already broken down matter."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/organicMaterial> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/carbonaceous-material>,
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/amber>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/carbonaceous-material>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/gaseous-hydrocarbons>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/liquid-hydrocarbons> ;
     skos:notation "OrgM"^^dt:AbbreviatedLabel,
@@ -6781,39 +6784,6 @@
     skos:notation "QtzGe"^^dt:AbbreviatedLabel,
         "01.03.25"^^dt:LocalHierarchyKey ;
     skos:prefLabel "quartz-gemstone"@en .
-
-<http://resource.geosciml.org/classifier/cgi/commodity-code/sand> a skos:Concept ;
-    dcterms:source "http://www.sand.org/What-is-Industrial-Sand"^^xsd:anyURI ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:altLabel "沙"@zh ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-material>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/sand-and-gravel> ;
-    skos:definition "Industrial sand is a term normally applied to high purity silica sand products with closely controlled sizing. It is a more precise product than common concrete and asphalt gravels. Silica is the name given to a group of minerals composed solely of silicon and oxygen, the two most abundant elements in the earth’s crust."@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sand> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/foundry-sand>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/frac-sand>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/mineral-sand>,
-        <http://resource.geosciml.org/classifier/cgi/commodity-code/silica-sand> ;
-    skos:notation "Sand"^^dt:AbbreviatedLabel,
-        "01.01.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Sand"@de,
-        "sand"@en,
-        "arena"@es,
-        "hiekka"@fi,
-        "sable"@fr,
-        "pasir"@id,
-        "sabbia"@it,
-        "砂"@ja,
-        "xSac;"@km,
-        "모래"@ko,
-        "§¾¨"@lo,
-        "pasir"@ms,
-        "pesok"@ru,
-        "sand"@sv,
-        "ทราย"@th,
-        "cát"@vi,
-        "砂"@zh .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/base-metal> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Base_metal"^^xsd:anyURI ;
@@ -6902,6 +6872,39 @@
     skos:notation "FME"^^dt:AbbreviatedLabel,
         "02.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "ferrous metal"@en .
+
+<http://resource.geosciml.org/classifier/cgi/commodity-code/sand> a skos:Concept ;
+    dcterms:source "http://www.sand.org/What-is-Industrial-Sand"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:altLabel "沙"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/commodity-code/industrial-material>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/sand-and-gravel> ;
+    skos:definition "Industrial sand is a term normally applied to high purity silica sand products with closely controlled sizing. It is a more precise product than common concrete and asphalt gravels. Silica is the name given to a group of minerals composed solely of silicon and oxygen, the two most abundant elements in the earth’s crust."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sand> ;
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/foundry-sand>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/frac-sand>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/mineral-sand>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/silica-sand> ;
+    skos:notation "Sand"^^dt:AbbreviatedLabel,
+        "01.01.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Sand"@de,
+        "sand"@en,
+        "arena"@es,
+        "hiekka"@fi,
+        "sable"@fr,
+        "pasir"@id,
+        "sabbia"@it,
+        "砂"@ja,
+        "xSac;"@km,
+        "모래"@ko,
+        "§¾¨"@lo,
+        "pasir"@ms,
+        "pesok"@ru,
+        "sand"@sv,
+        "ทราย"@th,
+        "cát"@vi,
+        "砂"@zh .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/clay> a skos:Concept ;
     dcterms:source "http://en.wikipedia.org/wiki/Clay"^^xsd:anyURI ;
@@ -7082,13 +7085,18 @@
     skos:definition "Different kind of rock types, which are uses for industrial purposes."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/industrialRock> ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/diatomite>,
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/commodity-code/crushed-rock>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/diatomite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/laterite>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/limestone>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/marble>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/nepheline-syenite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/perlite>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/phosphate-rock>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/pozzolan>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/pumice>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/riprap>,
+        <http://resource.geosciml.org/classifier/cgi/commodity-code/sand-and-gravel>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/shell-grit>,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/spongolite> ;
     skos:notation "IndRo"^^dt:AbbreviatedLabel,
