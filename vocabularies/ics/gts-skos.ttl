@@ -1,8 +1,10 @@
 PREFIX cs: <http://resource.geosciml.org/vocabulary/timescale/gts2020-skos>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX isc: <http://resource.geosciml.org/classifier/ics/ischart/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX ts: <http://resource.geosciml.org/vocabulary/timescale/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -6711,7 +6713,7 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/ics> ;
     dcterms:rights "Original version Copyright © 2020 International Commission on Stratigraphy"@en ;
     dcterms:source "https://stratigraphy.org/chart"^^xsd:anyURI ;
-    owl:versionIRI :0.1 ;
+    owl:versionIRI cs:0.1 ;
     owl:versionInfo "Initial release" ;
     skos:definition """This is a simplified representation of the more detailed RDF representation of the 2020 Geologic Time Scale (http://resource.geosciml.org/vocabulary/timescale/gts2020).
 
