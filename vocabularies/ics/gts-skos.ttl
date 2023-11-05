@@ -1,5 +1,5 @@
 PREFIX : <http://resource.geosciml.org/classifier/ics/ischart/>
-PREFIX cs: <https://w3id.org/profile/gts-skos>
+PREFIX cs: <http://resource.geosciml.org/vocabulary/timescale/gts2020-skos>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -6257,7 +6257,7 @@ cs:
     sdo:dateCreated "2020-06-05"^^xsd:date ;
     sdo:creator <https://linked.data.gov.au/org/ics> ;
     sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
-    sdo:dateModified "2022-11-28"^^xsd:date ;
+    sdo:dateModified "2023-11-05"^^xsd:date ;
     sdo:publisher <https://linked.data.gov.au/org/ics> ;
     sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
     sdo:copyrightNotice "Original version Copyright © 2020 International Commission on Stratigraphy"@en ;
