@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX isc: <http://resource.geosciml.org/classifier/ics/ischart/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -7563,23 +7564,21 @@ isc:UpperCretaceous
 
 <https://w3id.org/profile/gts-skos>
     a skos:ConceptScheme ;
-    owl:versionIRI <https://w3id.org/profile/gts-skos0.2> ;
-    owl:versionInfo """0.2: Includes colour information
+    dcterms:conformsTo <https://w3id.org/profile/vocpub/4.6> ;
+    owl:versionIRI <https://w3id.org/profile/gts-skos/2023-09> ;
+    owl:versionInfo "2023-09" ;
+    prov:wasDerivedFrom ts:gts2020 ;
+    skos:definition """This is a SKOS vocabulary presentation of the International Chronostratigraphic Chart with all time intervals represented as SKOS Concepts. Beginning and End ages are given for each time interval in units of Millions of Years Ago (MYA).
 
-0.1: Initial release""" ;
-    skos:definition """This is a simplified representation of the more detailed RDF representation of the 2020 Geologic Time Scale (http://resource.geosciml.org/vocabulary/timescale/gts2020).
-
-This representation uses mainly just SKOS model elements to represent the Time Scale as a hierarchical taxonomy of Concepts and does not include the temporal relationships that the more detailed representation does. This version is optimised for simple vocabulary tooling.
-
-This representation of the Time Scale uses the same objects identifiers - IRIs - as the more detailed RDF representation of the Geologic Time Scale and no conflicting data is presented so objects described here may be used interchangeably with the more detailed RDF representation."""@en ;
+Ages/Stages are indicated as being narrower than Series / Epochs which are in turn narrower than Systems / Periods, Erathems / Eras and Eonothems / Eons."""@en ;
     skos:hasTopConcept
         isc:Phanerozoic ,
         isc:Precambrian ;
-    skos:historyNote "This profile of the ICS chart as a SKOS vocabulary has been created to work well with SKOS-only data display systems" ;
-    skos:prefLabel "Geologic Time Scale (2020)"@en ;
+    skos:historyNote "This vocabulary uses IRIs created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/) with dates updated from the 2023-09 Chart (see https://stratigraphy.org/chart)" ;
+    skos:prefLabel "International Chronostratigraphic Chart"@en ;
     sdo:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
     sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
-    sdo:copyrightNotice "Original version Copyright © 2020 International Commission on Stratigraphy"@en ;
+    sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2023"@en ;
     sdo:creator <https://linked.data.gov.au/org/ics> ;
     sdo:dateCreated "2020-06-05"^^xsd:date ;
     sdo:dateModified "2022-11-28"^^xsd:date ;
