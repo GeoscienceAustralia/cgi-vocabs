@@ -1,23 +1,26 @@
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://kurrawong.ai>
+    a schema:Organization ;
+    schema:description """KurrawongAI is a small, Australian-based company enabling organisations to take control of their data.
+
+We use data modelling, data governance and data systems implementation expertise all based on Semantic Web and Knowledge Graph principles to ensure data is in the richest, most open and most extensible form it can be.
+
+We use knowledge graphs for data storage, as a transfer format, when serialised, and as inputs to advanced reasoning and data processing tasks, such as for Machine Learning and Artificial Intelligence applications.""" ;
+    schema:name "KurrawongAI" ;
+    schema:url "https://kurrawong.ai"^^xsd:anyURI ;
+.
 
 <https://linked.data.gov.au/org/cgi-gtwg>
     a schema:Organization ;
     schema:affiliation <https://linked.data.gov.au/org/cgi> ;
     schema:name "CGI Geoscience Terminology Working Group" ;
-    schema:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
-
+    schema:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI ;
+.
 
 <https://linked.data.gov.au/org/cgi>
     a schema:Organization ;
     schema:name "Commission for the Management and Application of Geoscience Information" ;
-    schema:url "http://www.cgi-iugs.org"^^xsd:anyURI .
-
-
-<https://linked.data.gov.au/org/cgi-gtwg>
-    a schema:Organization ;
-    schema:name "CGI Geoscience Terminology Working Group" ;
-    schema:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
-
-
+    schema:url "http://www.cgi-iugs.org"^^xsd:anyURI ;
+.
