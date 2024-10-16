@@ -38,7 +38,7 @@ This listing of the resources in this repository is used by the https://kurrawon
 | Resource | Location | Notes
 
 | Catalogue Definition | `catalogue.ttl` |
-| Items | `./items/*.ttl` | Multiple ttl files
-| Profile Definition | `profile.ttl` | Custom BuildingBlocks profile
+| Items | `./vocabularies/**/*.ttl` | Multiple ttl files in subfolders of `vocabularies/`
+| Profile Definition | https://github.com/RDFLib/prez/blob/main/prez/reference_data/profiles/ogc_records_profile.ttl[Prez Records Profile] | Default Prez profile for Records API
 | Context Resources | `../_background/*.ttl` | Multiple labels files for ontologies, licenses & agents
 |===
