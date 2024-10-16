@@ -198,16 +198,16 @@ cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2009-07-14 Generate SKOS encoding of vocabulary from Excel spreadsheet."@en ,
-        "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ,
-        "2010-02-08 SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en ,
-        "2010-11-28 SMR replace URN with http URI constructed according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en ,
-        "2011-02-16 SMR Add broader/narrower relations according to stratigraphic code. These are not meant to be formal isA or PartOf relations, rather should be read something like 'broader in local intention' or 'may be part of'. Add term 'complex' to vocabulary"@en ,
-        "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
-        "2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ,
-        "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-07-15 OLR: - reformat SKOS-RDF for new repository"@en ,
+        "2009-12-07 SMR: Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ,
+        "2010-02-08 SMR: Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en ,
+        "2010-11-28 SMR: replace URN with http URI constructed according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en ,
+        "2011-02-16 SMR: Add broader/narrower relations according to stratigraphic code. These are not meant to be formal isA or PartOf relations, rather should be read something like 'broader in local intention' or 'may be part of'. Add term 'complex' to vocabulary"@en ,
+        "2012-02-07 SMR: update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+        "2012-02-27 SMR: add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ,
+        "2012-11-24 SMR: Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
+        "2016-07-15 OLR: reformat SKOS-RDF for new repository"@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid"@en ;
     skos:definition "This scheme specifies concepts used to categorize the stratigraphic rank of geologic units, as compiled by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016.01 SKOS-RDF version of the CGI Stratigraphic Rank vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.02.xslt."@en ;
     skos:hasTopConcept

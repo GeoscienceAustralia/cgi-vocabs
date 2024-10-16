@@ -202,9 +202,9 @@ cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2014 - Original SKOS implementation, based on 2013-06 approved vocabulary from GTWG face-to-face meeting in St. Petersburg, Russia. SKOS-RDF generated from Excel workbook using GSML_SKOS_from_XLS_2013.xslt."@en ,
-        "2016-07-15 OLR: - Reformat SKOS to migrate to new vocabulary server. No changes to concepts."@en ,
+        "2016-07-15 OLR: Reformat SKOS to migrate to new vocabulary server. No changes to concepts."@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid"@en ;
     skos:definition "This concept scheme describes methods of classification for quantitative reporting of mineral resources, as defined by the CGI Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the \"classificationMethodUsed\" property in EarthResourceML OreMeasure elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Mineral Resource Reporting Classification Method vocabulary. Compilation in Excel spreadsheet, and converted to SKOS using GSML_SKOS_fromXLS_2016.02.xslt."@en ;
     skos:hasTopConcept

@@ -214,16 +214,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2010-02-04 SMR Start file produced from excel spreadsheet version of FeatureObservationMethod200811, using P. Golodonic xl2xml."@en ,
-        "2010-02-04 SMR Updated from 2010 01 version by adding broader categories for 'digital conversion...', Direct observation, indirect method, and 'synthesis....'"@en ,
+        "2010-02-04 SMR: Start file produced from excel spreadsheet version of FeatureObservationMethod200811, using P. Golodonic xl2xml."@en ,
+        "2010-02-04 SMR: Updated from 2010 01 version by adding broader categories for 'digital conversion...', Direct observation, indirect method, and 'synthesis....'"@en ,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ,
-        "2010-11-28 SMR replace URN with http URI identifiers according to CGI URI scheme"@en ,
-        "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
-        "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
+        "2010-11-28 SMR: replace URN with http URI identifiers according to CGI URI scheme"@en ,
+        "2012-02-07 SMR: update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+        "2012-11-24 SMR: Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
         "2016-10-18 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes to terms from the previous 2012 version."@en ,
-        "2018-08-03 SMR replace spaces with '_' in URIs for outcrop observation, direct observation, drill core observation. Also remove invisible BOM characters from beginning of file."@en ,
+        "2018-08-03 SMR: replace spaces with '_' in URIs for outcrop observation, direct observation, drill core observation. Also remove invisible BOM characters from beginning of file."@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid"@en ;
     skos:definition "This scheme contains concepts used to specify the approach to acquiring the collection of attributes to describe an individual feature instance, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Observation method is a convienence property that provides a quick approach to shortcut use of more comprehensive observation and measurement construct when data are reported using a feature view (as opposed to observation view). By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Feature Observation Method vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept

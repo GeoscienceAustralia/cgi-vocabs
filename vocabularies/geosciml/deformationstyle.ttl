@@ -69,8 +69,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-06-15 OLR: - reformat Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. No change to 2012-11 concepts. Generate new SKOS-RDF file."@en ,
+        "2012-11-24 SMR: Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
+        "2016-06-15 OLR: reformat Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. No change to 2012-11 concepts. Generate new SKOS-RDF file."@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
         "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
         "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ,

@@ -2419,17 +2419,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ,
-        "2010 11 27 SMR change identifiers from URN to http URI following CGI URI scheme"@en ,
+        "2009-12-07 SMR: Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ,
+        "2010 11 27 SMR: change identifiers from URN to http URI following CGI URI scheme"@en ,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ,
-        "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
-        "2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ,
-        "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-06-15 OLR: - reformat Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Fixed some errors in broader relations for a few terms. Generated new SKOS-RDF file."@en ,
+        "2012-02-07 SMR: update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+        "2012-02-27 SMR: add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ,
+        "2012-11-24 SMR: Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
+        "2016-06-15 OLR: reformat Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Fixed some errors in broader relations for a few terms. Generated new SKOS-RDF file."@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
         "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using alignment datasets created and reviewed in 2015 by James Passmore, Marcus Sen and Stephen Richard."@en ,
         "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
-        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid"@en ;
     skos:definition "This scheme specifies concepts used to describe the physical setting within which a GeologicEvent takes place, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. GeologicEnvironment is construed broadly to include physical settings on the Earth surface specified by climate, tectonics, physiography or geography, and settings in the Earth’s interior specified by pressure, temperature, chemical environment, or tectonics. Environments are places. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the eventEnvironment property in GeoSciML GeologicEvent features."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Event Environment vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
     skos:hasTopConcept

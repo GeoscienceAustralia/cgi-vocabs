@@ -1051,18 +1051,18 @@ cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2009-07-14: Generate SKOS encoding of vocabulary from Excel spreadsheet."@en ,
-        "2009-12-07: SMR add collections for mineralogical and sedimentary petrographic categories, improve annotation and notes on vocabulary."@en ,
-        "2010-02-08: SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en ,
+        "2009-12-07 SMR: add collections for mineralogical and sedimentary petrographic categories, improve annotation and notes on vocabulary."@en ,
+        "2010-02-08 SMR: Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en ,
         "2010-02-11: Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ,
-        "2010-11-27: SMR replace URN with http URI according to CGI URI scheme; update version number to 201211"@en ,
-        "2011-07-07: GD update the class/object properties, define topConcepts properties and inverse."@en ,
-        "2012-02-07: SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
-        "2012-02-08: SMR add owl:sameAs links to URI's using numeric values. URIs have same prefix (e.g. http://resource.geosciml.org/classifier/cgi/compositioncategory/, but numeric final values.)"@en ,
-        "2012-11-05: SMR remove named individual, extra owl:thing declarations, add skos:collection"@en ,
-        "2016-06-15: OLR - redo Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Generate new SKOS-RDF file."@en ,
+        "2010-11-27 SMR: replace URN with http URI according to CGI URI scheme; update version number to 201211"@en ,
+        "2011-07-07 GD: update the class/object properties, define topConcepts properties and inverse."@en ,
+        "2012-02-07 SMR: update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+        "2012-02-08 SMR: add owl:sameAs links to URI's using numeric values. URIs have same prefix (e.g. http://resource.geosciml.org/classifier/cgi/compositioncategory/, but numeric final values.)"@en ,
+        "2012-11-05 SMR: remove named individual, extra owl:thing declarations, add skos:collection"@en ,
+        "2016-06-15 OLR:  redo Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Generate new SKOS-RDF file."@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
         "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
-        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid"@en ;
     skos:definition "This scheme describes the concept space for Composition Category concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for populating the compositionCategory property in GeoSciML CompoundMaterialDescription elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Composition Category vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
     skos:hasTopConcept

@@ -491,7 +491,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2018-08-03 SMR remove spurious space character at end of URI for cone_penetrometer_test_probe."@en ,
+        "2018-08-03 SMR: remove spurious space character at end of URI for cone_penetrometer_test_probe."@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
         "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
         "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ,

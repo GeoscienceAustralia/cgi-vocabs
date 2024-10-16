@@ -463,15 +463,15 @@ cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2009 Revised from ContactType200811 with addition of impact_structure_boundary and volcanic_subsidence_zone_boundary, and addition of more metadata annotation"@en ,
-        "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ,
-        "2011-02-16 SMR replace URN with cgi http URI's. Last changes to fix URN for conceptScheme that was not updated in original updates."@en ,
-        "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
-        "2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ,
-        "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-06-15 OLR: - redo Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Generate new SKOS-RDF file."@en ,
+        "2009-12-07 SMR: Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ,
+        "2011-02-16 SMR: replace URN with cgi http URI's. Last changes to fix URN for conceptScheme that was not updated in original updates."@en ,
+        "2012-02-07 SMR: update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+        "2012-02-27 SMR: add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ,
+        "2012-11-24 SMR: Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
+        "2016-06-15 OLR: redo Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Generate new SKOS-RDF file."@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
         "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
-        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid"@en ;
     skos:definition "This scheme describes the concept space for Contact Type concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the contactType property in GeoSciML Contact elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Contact Type vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/contacttype/contact> ;

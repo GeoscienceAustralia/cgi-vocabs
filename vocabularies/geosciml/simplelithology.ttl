@@ -5880,13 +5880,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2009-12-14 SMR change ID and pref label from 'exotic alkalic igneous rock' to kalsilitic igneous rock to avoid confusion with 'exotic alkaline rock' based on OGE recommendation."@en ,
+        "2009-12-14 SMR: change ID and pref label from 'exotic alkalic igneous rock' to kalsilitic igneous rock to avoid confusion with 'exotic alkaline rock' based on OGE recommendation."@en ,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ,
         "2010-07-25 fix xml language notation on preferred name, update history notes to reflect that this is trunk version."@en ,
-        "2010-11-27 SMR. URIs converted to http URI using CGI uri scheme."@en ,
-        "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
-        "2012-02-27 SMR add skos:exactMatch relating concept URI in this vocabulary with URI in 201012 version."@en ,
-        "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
+        "2010-11-27 SMR: URIs converted to http URI using CGI uri scheme."@en ,
+        "2012-02-07 SMR: update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+        "2012-02-27 SMR: add skos:exactMatch relating concept URI in this vocabulary with URI in 201012 version."@en ,
+        "2012-11-24 SMR: Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
         "2016-07-22 OLR: Reformat SKOS-RDF for migration into new vocabulary server."@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
         "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using alignment datasets created and reviewed in 2015 by James Passmore, Marcus Sen and Stephen Richard."@en ,
@@ -5894,7 +5894,7 @@ cs:
         "2021-12-17 R.Heaven (BGS):  changed identifier from http://resource.geosciml.org/classifierScheme/cgi/2016.01/simplelithology to http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology (note the lower case c)"@en ,
         "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ,
         "Additional revisions and updates Dec 2009, Jan 2010 based on review and comment by OneGeology Europe WP3 committee."@en ,
-        "Fix language labels for 'alkali feldspar trachytic rock' and for 'cobble gravel size sediment'. Change broader link on 'acidic igneous material' from 'granitoid' to 'igneous material' to fix circular links in hierarchy. SMR 2010-08-27"@en ,
+        "Fix language labels for 'alkali feldspar trachytic rock' and for 'cobble gravel size sediment'. Change broader link on 'acidic igneous material' from 'granitoid' to 'igneous material' to fix circular links in hierarchy SMR: 2010-08-27"@en ,
         "Vocabulary maintenence changed to SKOS with Protege v4 as tool of choice, Sept 2009"@en ;
     skos:definition "This scheme specifies the concept space for Simple Lithology concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. This vocabulary is not designed to be a comprehensive list of all lithology terms."@en ;
     skos:editorialNote "Start file produced from excel spreadsheet version of SimpleLithology200811, comment period July to September 2009. Revisions in spreadsheet discussed and approved at IWG face to face, Quebec CA, Sept. 2009."@en ;

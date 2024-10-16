@@ -5271,11 +5271,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2016-07-18 OLR: - Reformat SKOS for migration to new vocabulary server. No changes to concepts."@en ,
+        "2016-07-18 OLR: Reformat SKOS for migration to new vocabulary server. No changes to concepts."@en ,
         "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Simple definition for silica added as missing."@en ,
         "2020-06-26 NJC tidied some definitions with random characters at the end."@en ,
         "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
-        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid"@en ;
     skos:definition "This scheme defines concepts to specify the commodity property (eg copper, gold, dimension stone) in commodity descriptions associated with Earth Resource features. The commodity terms should be compatible with the endUsePotential categories associated with a MineralOccurrence (the concrete class that implements EarthResource). The ERML model states that the commodity term vocabulary should be hierarchical, to handle the group that the commodity belongs to (eg, base metal, precious metal, industrial mineral, energy). By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016.01 version of the CGI Commodity Code vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_from_XLS_2016.02.xslt."@en ;
     skos:hasTopConcept
