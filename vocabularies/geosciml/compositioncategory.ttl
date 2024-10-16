@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/compositioncategory/argillic> ,
         <http://resource.geosciml.org/classifier/cgi/compositioncategory/arkosic_detrital_mode> ,
@@ -161,24 +161,23 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
-        "石灰質成分"@ja ,
-        "เนื้อปูน"@th ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing> ;
-    skos:definition "Calcium carbonate minerals are present, carbonate minerals form less than 50 percent of rock, material contains sufficient CaCO3 to react forming bubbles when hydrochloric acid is applied."@en ;
-    skos:historyNote "NADM SLTTm 2004"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
-        "calcareous"@en ,
         "composition carbonatée"@fr ,
         "bersusunan gampingan"@id ,
+        "石灰質成分"@ja ,
         "石灰質組成"@ja ,
         "smasFatufµkMe)ar"@km ,
         "석회질 조성"@ko ,
         "¦ú¸­¯½¡º®À­œº¯ø­"@lo ,
         "komposisi berkapur"@ms ,
         "ส่วนประกอบแบบคาร์บอเนต"@th ,
+        "เนื้อปูน"@th ,
         "thành phần vôi"@vi ,
         "砂屑石灰岩"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing> ;
+    skos:definition "Calcium carbonate minerals are present, carbonate minerals form less than 50 percent of rock, material contains sufficient CaCO3 to react forming bubbles when hydrochloric acid is applied."@en ;
+    skos:historyNote "NADM SLTTm 2004"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "calcareous"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous_monomeralic_carbonate>
@@ -287,11 +286,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/ferruginous>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "Greater than accessory amount (greater than 5 percent by volume) of non-silicate iron minerals (hematite, magnetite, siderite...) are present. Rocks containing abundant iron-rich silicate minerals would use the 'Ferromagnesian' terms."@en ;
-    skos:historyNote "This vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
-        "ferruginous"@en ,
+    skos:altLabel
         "composition ferrugineuse"@fr ,
         "komposisi berbesi"@id ,
         "鉄錆組成"@ja ,
@@ -302,6 +297,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ส่วนประกอบมีเหล็กปน"@th ,
         "thành phần sắt"@vi ,
         "铁质成分"@zh ;
+    skos:definition "Greater than accessory amount (greater than 5 percent by volume) of non-silicate iron minerals (hematite, magnetite, siderite...) are present. Rocks containing abundant iron-rich silicate minerals would use the 'Ferromagnesian' terms."@en ;
+    skos:historyNote "This vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ferruginous"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -398,18 +397,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/mafic>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "susunan mafik"@id ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian> ;
-    skos:definition "Material consists of greater than or equal to 40 percent and less than 90 percent ferromagnesian silicate minerals."@en ;
-    skos:historyNote "NADM SLTTm 2004"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "basischer Chemismus"@de ,
-        "mafic"@en ,
         "composición máfica"@es ,
         "emäksinen koostumus"@fi ,
         "composition mafique"@fr ,
         "komposisi mafik"@id ,
+        "susunan mafik"@id ,
         "composizione mafica"@it ,
         "苦鉄質組成"@ja ,
         "smasFatuma:hVik"@km ,
@@ -421,6 +415,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ส่วนประกอบเมฟิก"@th ,
         "thành phần mafic"@vi ,
         "铁镁质成分"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian> ;
+    skos:definition "Material consists of greater than or equal to 40 percent and less than 90 percent ferromagnesian silicate minerals."@en ;
+    skos:historyNote "NADM SLTTm 2004"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "mafic"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/magnesium_rich_carbonate_chemistry>
@@ -506,34 +505,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/oxide>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "Material predominantly composed of oxide minerals"@en ;
-    skos:historyNote "This vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Oxid"@de ,
-        "oxide"@en ,
         "óxido"@es ,
         "oksidit"@fi ,
         "ossidi"@it ,
         "Okisly"@ru ,
         "oxid"@sv ;
+    skos:definition "Material predominantly composed of oxide minerals"@en ;
+    skos:historyNote "This vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "oxide"@en ;
     skos:topConceptOf cs: ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/pelitic>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "rajut pelit"@id ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic> ;
-    skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and aluminous mineral + mica content is greater than or equal to 40 percent."@en ;
-    skos:historyNote "NADM SLTTm 2004"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Pelit-Gefuege"@de ,
-        "pelitic"@en ,
         "textura pelítica"@es ,
         "peliittinen tekstuuri"@fi ,
         "texture pélitique"@fr ,
+        "rajut pelit"@id ,
         "tekstur pelit"@id ,
         "tessitura pelitica"@it ,
         "泥質構造"@ja ,
@@ -546,6 +540,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ที่มาจากเพไลต์"@th ,
         "kiến trúc dạng bùn"@vi ,
         "泥质结构"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic> ;
+    skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and aluminous mineral + mica content is greater than or equal to 40 percent."@en ;
+    skos:historyNote "NADM SLTTm 2004"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "pelitic"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/peralkaline>
@@ -561,13 +560,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/peraluminous>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "komposisi peralumina"@ms ;
-    skos:definition "Aluminum oxide (Al2O3) greater than sum of Na, K and Ca oxide."@en ;
-    skos:historyNote "Shand 1947"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "hyperaluminiumhaltiger Chemismus"@de ,
-        "peraluminous"@en ,
         "composición hiperaluminosa"@es ,
         "peralumiininen koostumus"@fi ,
         "composition hyperalumineuse"@fr ,
@@ -578,11 +572,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "과알루미늄 조성"@ko ,
         "¦ú¸­¯½¡º®ê†´óê¾©º¾ìø´ó­¼´Í¾¨"@lo ,
         "kandungan peralumina"@ms ,
+        "komposisi peralumina"@ms ,
         "plyumazitovyj (sostav)"@ru ,
         "peraluminös sammansättning"@sv ,
         "ส่วนประกอบเพอร์อะลูมินัส"@th ,
         "thành phần bão hoà nhôm"@vi ,
         "过铝质成分"@zh ;
+    skos:definition "Aluminum oxide (Al2O3) greater than sum of Na, K and Ca oxide."@en ;
+    skos:historyNote "Shand 1947"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "peraluminous"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -619,17 +618,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/polymictic>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "Grains or clasts are composed of many mineral or rock types"@en ;
-    skos:historyNote "Jackson, 1997, p. 501"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "polymiktes Gefuege"@de ,
-        "polymictic"@en ,
         "polimicto"@es ,
         "polymiktinen rakenne"@fi ,
         "tessitura polimittica"@it ,
         "polimiktovyj"@ru ,
         "polymikt textur"@sv ;
+    skos:definition "Grains or clasts are composed of many mineral or rock types"@en ;
+    skos:historyNote "Jackson, 1997, p. 501"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "polymictic"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -706,13 +705,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfate>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "硫酸脂"@zh ;
-    skos:definition "Material predominantly composed of sulfate minerals"@en ;
-    skos:historyNote "This vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Sulfat"@de ,
-        "sulfate"@en ,
         "sulfato"@es ,
         "sulfaatit"@fi ,
         "sulfate"@fr ,
@@ -727,7 +721,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "sulfat"@sv ,
         "ซัลเฟต"@th ,
         "sulfat"@vi ,
-        "硫酸盐"@zh ;
+        "硫酸盐"@zh ,
+        "硫酸脂"@zh ;
+    skos:definition "Material predominantly composed of sulfate minerals"@en ;
+    skos:historyNote "This vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sulfate"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -744,13 +743,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing> ;
-    skos:definition "Material predominantly composed of sulfide minerals"@en ;
-    skos:historyNote "This vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Sulfid"@de ,
-        "sulfide"@en ,
         "sulfuro"@es ,
         "sulfidit"@fi ,
         "sulfure"@fr ,
@@ -767,6 +761,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "sulfides"@us ,
         "sulfua"@vi ,
         "硫化物"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing> ;
+    skos:definition "Material predominantly composed of sulfide minerals"@en ;
+    skos:historyNote "This vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sulfide"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfosalt_chemistry>
@@ -782,14 +781,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/ultramafic>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "lampau mafik"@ms ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian> ;
-    skos:definition "Material consists of greater than 90 percent ferromagnesian silicate minerals."@en ;
-    skos:historyNote "NADM SLTTm 2004"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Ultrabasit"@de ,
-        "ultramafic"@en ,
         "ultrabasita"@es ,
         "ultramafiitit"@fi ,
         "ultrabasite"@fr ,
@@ -799,12 +792,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "G‘ulRtama:hVIs"@km ,
         "초고철질물"@ko ,
         "¹ó­ºøªù¾À´³ò¡"@lo ,
+        "lampau mafik"@ms ,
         "ultramafik"@ms ,
         "ul'tramafit"@ru ,
         "ultramafisk bergart"@sv ,
         "อัลตราเมฟิก"@th ,
         "đá siêu mafic"@vi ,
         "超镁铁质"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian> ;
+    skos:definition "Material consists of greater than 90 percent ferromagnesian silicate minerals."@en ;
+    skos:historyNote "NADM SLTTm 2004"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ultramafic"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/very_low_silica_chemistry>
@@ -830,15 +829,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "susunan berarang"@id ;
-    skos:definition "Material containing significant carbon or hydrocarbon mineral phases, including graphite, coal, oil, gas, lignite, peat."@en ;
-    skos:historyNote "This vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/asphaltic> ;
-    skos:prefLabel
-        "carbonaceous"@en ,
+    skos:altLabel
         "composition carbonée"@fr ,
         "komposisi berarang"@id ,
+        "susunan berarang"@id ,
         "炭素質組成"@ja ,
         "smaFatupSMkabUn"@km ,
         "탄소질 조성"@ko ,
@@ -847,6 +841,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "ส่วนประกอบมีคาร์บอน"@th ,
         "thành phần carbon"@vi ,
         "碳质组成"@zh ;
+    skos:definition "Material containing significant carbon or hydrocarbon mineral phases, including graphite, coal, oil, gas, lignite, peat."@en ;
+    skos:historyNote "This vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/compositioncategory/asphaltic> ;
+    skos:prefLabel "carbonaceous"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -941,22 +940,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "炭酸塩岩"@ja ;
-    skos:definition "Material consists of greater than 50 percent calcsilicate or carbonate minerals and carbonate minerals greater than calcsilicate minerals in mineral mode. Metacarbonate of NADMSC SLTTm (2004) terminology, adopted here for non-genetic use."@en ;
-    skos:historyNote "NADM SLTTm 2004"@en ;
-    skos:inScheme cs: ;
-    skos:narrower
-        <http://resource.geosciml.org/classifier/cgi/compositioncategory/barium_bearing_carbonate_chemistry> ,
-        <http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate> ;
-    skos:prefLabel
+    skos:altLabel
         "Karbonat"@de ,
-        "carbonate"@en ,
         "carbonato"@es ,
         "karbonaatit"@fi ,
         "carbonate"@fr ,
         "karbonat"@id ,
         "carbonati"@it ,
         "炭酸塩"@ja ,
+        "炭酸塩岩"@ja ,
         "kabUNat"@km ,
         "탄산염"@ko ,
         "£¾¡Â®À­ª"@lo ,
@@ -966,6 +958,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "คาร์บอเนต"@th ,
         "carbonat"@vi ,
         "碳酸岩"@zh ;
+    skos:definition "Material consists of greater than 50 percent calcsilicate or carbonate minerals and carbonate minerals greater than calcsilicate minerals in mineral mode. Metacarbonate of NADMSC SLTTm (2004) terminology, adopted here for non-genetic use."@en ;
+    skos:historyNote "NADM SLTTm 2004"@en ;
+    skos:inScheme cs: ;
+    skos:narrower
+        <http://resource.geosciml.org/classifier/cgi/compositioncategory/barium_bearing_carbonate_chemistry> ,
+        <http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate> ;
+    skos:prefLabel "carbonate"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -1061,8 +1060,9 @@ cs:
         "2012-02-08: SMR add owl:sameAs links to URI's using numeric values. URIs have same prefix (e.g. http://resource.geosciml.org/classifier/cgi/compositioncategory/, but numeric final values.)"@en ,
         "2012-11-05: SMR remove named individual, extra owl:thing declarations, add skos:collection"@en ,
         "2016-06-15: OLR - redo Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Generate new SKOS-RDF file."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This scheme describes the concept space for Composition Category concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for populating the compositionCategory property in GeoSciML CompoundMaterialDescription elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Composition Category vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
     skos:hasTopConcept

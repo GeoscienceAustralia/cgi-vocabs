@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/deformationstyle>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle> ,
         <http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile> ,
@@ -31,18 +31,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
-        "periukan teregang"@id ,
-        "延性变形"@zh ;
-    skos:definition "Displacement across shear displacement structure largely accommodated by plastic deformation of the rock body without loss of macroscopic continuity."@en ;
-    skos:historyNote "this vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
         "Dehnungsverformung"@de ,
-        "ductile deformation"@en ,
         "deformación dúctil"@es ,
         "duktiilideformaatio"@fi ,
         "déformation ductile"@fr ,
         "deformasi teregang"@id ,
+        "periukan teregang"@id ,
         "deformazione duttile"@it ,
         "延性変形"@ja ,
         "karxUcRTg;RtayénPaByWt"@km ,
@@ -53,7 +47,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "plastisk deformation"@sv ,
         "การเปลี่ยนรูปแบบยืดเป็นเส้น"@th ,
         "biến dạng dẻo (đá)"@vi ,
-        "塑性变形"@zh ;
+        "塑性变形"@zh ,
+        "延性变形"@zh ;
+    skos:definition "Displacement across shear displacement structure largely accommodated by plastic deformation of the rock body without loss of macroscopic continuity."@en ;
+    skos:historyNote "this vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ductile deformation"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -71,9 +70,10 @@ cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-06-15 OLR - reformat Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. No change to 2012-11 concepts. Generate new SKOS-RDF file."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2016-06-15 OLR: - reformat Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. No change to 2012-11 concepts. Generate new SKOS-RDF file."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ,
         "Created 2012-04 by S.M. Richard"@en ;
     skos:definition "This scheme specifies concepts used to describe the Deformation Style of a fault or shear, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the deformationStyle property in GeoSciML ShearDisplacementStructureDescription elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Deformation Style vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;

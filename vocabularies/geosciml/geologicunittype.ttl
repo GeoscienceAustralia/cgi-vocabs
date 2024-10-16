@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit> ,
         <http://resource.geosciml.org/classifier/cgi/geologicunittype/alteration_unit> ,
@@ -70,38 +70,38 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/biostratigraphic_unit>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
-    skos:definition "Geologic unit defined based on fossil content. Five kinds of biozones are recognized by the revised NACSN (Lenz et al., 2000, Note 64, a recommended complete replacement of Articles 48 through 54 of the North American Stratigraphic Code (NACSN, 1983) accepted for publication 2000.): range biozone, interval biozone, lineage biozone, assemblage biozone, and abundance biozone. These represent different approaches to defining and recognizing biozones."@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/biostratigraphicUnit> ;
-    skos:historyNote "Lenz et al., 2000, Note 64 (see AAPG Bulletin, v. 89, no. 11, November 2005), North American Stratigraphic Code, 1983"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "biostratigraphische Einheit"@de ,
-        "biostratigraphic unit"@en ,
         "unidad bioestratigráfica"@es ,
         "biostratigrafinen yksikkö"@fi ,
         "unità biostratigrafica"@it ,
         "podrazdelenie biostratigraficheskoe"@ru ,
         "biostratigrafisk enhet"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+    skos:definition "Geologic unit defined based on fossil content. Five kinds of biozones are recognized by the revised NACSN (Lenz et al., 2000, Note 64, a recommended complete replacement of Articles 48 through 54 of the North American Stratigraphic Code (NACSN, 1983) accepted for publication 2000.): range biozone, interval biozone, lineage biozone, assemblage biozone, and abundance biozone. These represent different approaches to defining and recognizing biozones."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/biostratigraphicUnit> ;
+    skos:historyNote "Lenz et al., 2000, Note 64 (see AAPG Bulletin, v. 89, no. 11, November 2005), North American Stratigraphic Code, 1983"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "biostratigraphic unit"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/chronostratigraphic_unit>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
-    skos:definition "Geologic unit that includes all rocks formed during a specific interval of geologic time"@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/chronostratigraphicUnit> ;
-    skos:historyNote "Salvador, A., 1994, International Stratigraphic Guide, Second Edition"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "chronostratigraphische Einheit"@de ,
-        "chronostratigraphic unit"@en ,
         "unidad cronoestratigráfica"@es ,
         "kronostratigrafinen yksikkö"@fi ,
         "unité chronostratigraphique"@fr ,
         "unità cronostratigrafica"@it ,
         "podrazdelenie khronostratigraficheskoe"@ru ,
         "kronostratigrafisk enhet"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+    skos:definition "Geologic unit that includes all rocks formed during a specific interval of geologic time"@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/chronostratigraphicUnit> ;
+    skos:historyNote "Salvador, A., 1994, International Stratigraphic Guide, Second Edition"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "chronostratigraphic unit"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/deformation_unit>
@@ -228,20 +228,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "lithostratigraphische Einheit"@de ,
+        "unidad litoestratigráfica"@es ,
+        "litostratigraafinen yksikkö"@fi ,
+        "unità litostratigrafica"@it ,
+        "podrazdelenie litostratigraficheskoe"@ru ,
+        "litostratigrafisk enhet"@sv ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties and stratigraphic relationships. Denotes a particular body of rock."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithostratigraphicUnit> ;
     skos:historyNote "Salvador, A., 1994, International Stratigraphic Guide, Second Edition"@en ;
     skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithodemic_unit> ;
-    skos:prefLabel
-        "lithostratigraphische Einheit"@de ,
-        "lithostratigraphic unit"@en ,
-        "unidad litoestratigráfica"@es ,
-        "litostratigraafinen yksikkö"@fi ,
-        "unità litostratigrafica"@it ,
-        "podrazdelenie litostratigraficheskoe"@ru ,
-        "litostratigrafisk enhet"@sv ;
+    skos:prefLabel "lithostratigraphic unit"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit>
@@ -308,10 +308,11 @@ cs:
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
         "2012-02-27 SMR add exact match triples relating to URIs in 201012 vocabulary scheme"@en ,
         "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-07-15 OLR Create new SKOS version"@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using alignment datasets created and reviewed in 2015 by James Passmore, Marcus Sen and Stephen Richard."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2016-07-15 OLR: Create new SKOS version"@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using alignment datasets created and reviewed in 2015 by James Passmore, Marcus Sen and Stephen Richard."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This scheme specifies concepts used to categorize types of Geologic Unit, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Unit types are differentiated based on their defining lithological, stratigraphic, or other physical properties."@en ;
     skos:editorialNote "This file contains the CGI Geologic Unit type vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.02.xslt."@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;

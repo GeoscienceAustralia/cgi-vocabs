@@ -7,10 +7,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:historyNote "The original vocabulary - all its concepts"@en ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/alteration-halo> ,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/botanical-anomaly> ,
@@ -81,14 +81,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     skos:inScheme cs: ;
     skos:notation "04.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "geophysikalische Anomalie"@de ,
-        "geophysical anomaly"@en ,
-        "anomalía geofísica"@es ,
-        "geofysikaalinen anomalia"@fi ,
-        "anomalia geofisica"@it ,
-        "anomaliya geofizicheskaya"@ru ,
-        "geofysisk anomali"@sv ;
+    skos:prefLabel "geophysical anomaly"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,24 +94,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     skos:inScheme cs: ;
     skos:notation "01.1.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "eiserner Hut"@de ,
-        "gossan"@en ,
-        "montera hierro"@es ,
-        "rautahilkka"@fi ,
-        "chapeau fer"@fr ,
-        "tudung besi"@id ,
-        "cappello di ferro"@it ,
-        "焼け"@ja ,
-        "hÁÚsan"@km ,
-        "산화대"@ko ,
-        "Á»ÈÂ¡¦§¾­"@lo ,
-        "gosan"@ms ,
-        "shlyapa zheleznaya"@ru ,
-        "gossan"@sv ,
-        "กอสแซน"@th ,
-        "mũ sắt"@vi ,
-        "铁帽"@zh ;
+    skos:prefLabel "gossan"@en ;
 .
 
 <https://linked.data.gov.au/org/cgi>
@@ -143,9 +119,10 @@ cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2014-02-23 SMR - Original compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard."@en ,
-        "2016-07-15 OLR - Reformat SKOS for migration to new vocabulary server"@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2016-07-15 OLR: - Reformat SKOS for migration to new vocabulary server"@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This scheme describes concepts for specifying the kinds of surface expression associated with an Earth Resource, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the \"expression\" property in EarthResourceML EarthResource elements."@en ;
     skos:editorialNote "This file contains the 2016 version of CGI Earth Resource Expression Value Vocabulary. Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet, converted to SKOS-RDF using GSML_SKOS_fromXLS_2016.02.xslt, 2016-07-15."@en ;
     skos:hasTopConcept

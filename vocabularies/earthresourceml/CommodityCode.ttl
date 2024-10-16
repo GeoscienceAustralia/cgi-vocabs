@@ -7,11 +7,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code>
     a skos:Collection ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:changeNote "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:historyNote "The original vocabulary - all its concepts"@en ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/commodity-code/agate> ,
         <http://resource.geosciml.org/classifier/cgi/commodity-code/aggregate> ,
@@ -339,24 +339,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Alum"^^dt:AbbreviatedLabel ,
         "02.04.05.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Tonerde"@de ,
-        "alumina"@en ,
-        "alúmina"@es ,
-        "alumiinioksidi"@fi ,
-        "alumine"@fr ,
-        "alumina"@id ,
-        "allumina"@it ,
-        "アルミナ"@ja ,
-        "GaluymINa"@km ,
-        "알루미나"@ko ,
-        " º¾-ìø-´ó-­¾"@lo ,
-        "alumina"@ms ,
-        "glinozem"@ru ,
-        "aluminiumoxid"@sv ,
-        "อะลูมิเนียมออกไซด์"@th ,
-        "alumin"@vi ,
-        "氧化铝矾土"@zh ;
+    skos:prefLabel "alumina"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Alumina"^^xsd:anyURI ;
 .
 
@@ -370,18 +353,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Al"^^dt:AbbreviatedLabel ,
         "02.01.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "aluminium"@en ,
-        "aluminium"@fr ,
-        "aluminium"@id ,
-        "アルミニウム"@ja ,
-        "GaluymIjÚ:m"@km ,
-        "알루미늄"@ko ,
-        " ê¾©-º¾-ìø-´ó-­¼´"@lo ,
-        "aluminium"@ms ,
-        "อะลูมิเนียม"@th ,
-        "nhôm"@vi ,
-        "铝"@zh ;
+    skos:prefLabel "aluminium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Aluminium"^^xsd:anyURI ;
 .
 
@@ -396,24 +368,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Alu"^^dt:AbbreviatedLabel ,
         "01.02.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Alunit"@de ,
-        "alunite"@en ,
-        "alunita"@es ,
-        "aluniitti"@fi ,
-        "Alunite"@fr ,
-        "alunit"@id ,
-        "alunite"@it ,
-        "明礬石"@ja ,
-        "GaluynIt"@km ,
-        "명반석"@ko ,
-        " Á»ÈÈ-º¾-ìø-Ä­ª"@lo ,
-        "alunit"@ms ,
-        "Alunit"@ru ,
-        "alunit"@sv ,
-        "แร่อะลูไนต์"@th ,
-        "alunit"@vi ,
-        "明矾石(钾明矾石)"@zh ;
+    skos:prefLabel "alunite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/amazonite>
@@ -429,24 +384,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Amz"^^dt:AbbreviatedLabel ,
         "01.03.13.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Mikroklin"@de ,
-        "amazonite"@en ,
-        "microclina"@es ,
-        "mikrokliini"@fi ,
-        "Microcline"@fr ,
-        "mikrolin"@id ,
-        "microclino"@it ,
-        "微斜長石"@ja ,
-        "silaRkanIt¬mIRkUkøIn¦"@km ,
-        "미사장석"@ko ,
-        "Á»ÈÄ´Â¡ëÄ¡ì­"@lo ,
-        "mikroklin"@ms ,
-        "Mikroklin"@ru ,
-        "mikroklin"@sv ,
-        "แร่ไมโครไคลน์"@th ,
-        "microclin"@vi ,
-        "微斜长石"@zh ;
+    skos:prefLabel "amazonite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Amazonite"^^xsd:anyURI ;
 .
 
@@ -462,24 +400,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Amb"^^dt:AbbreviatedLabel ,
         "01.03.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Bernstein"@de ,
-        "amber"@en ,
-        "ámbar"@es ,
-        "meripihka"@fi ,
-        "ambre"@fr ,
-        "kuning sawo"@id ,
-        "ambra"@it ,
-        "琥珀"@ja ,
-        "GaMeb"@km ,
-        "호박"@ko ,
-        " ºñ´-À®ó"@lo ,
-        "ambar"@ms ,
-        "yantar'"@ru ,
-        "bärnsten"@sv ,
-        "อำพัน"@th ,
-        "hổ phách"@vi ,
-        "琥珀"@zh ;
+    skos:prefLabel "amber"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Amber"^^xsd:anyURI ;
 .
 
@@ -499,24 +420,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Amt"^^dt:AbbreviatedLabel ,
         "01.03.25.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Amethyst"@de ,
-        "amethyst"@en ,
-        "amatista"@es ,
-        "ametisti"@fi ,
-        "Améthyste"@fr ,
-        "ametis"@id ,
-        "ametista"@it ,
-        "紫水晶"@ja ,
-        "t,ÚgGaemTIs"@km ,
-        "자수정"@ko ,
-        " Á¡É¸-º¾-À´-ªò-¦"@lo ,
-        "batu kecubung"@ms ,
-        "Ametist"@ru ,
-        "ametist"@sv ,
-        "อะเมทิสต์"@th ,
-        "ametit"@vi ,
-        "紫晶"@zh ;
+    skos:prefLabel "amethyst"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Amethyst"^^xsd:anyURI ;
 .
 
@@ -530,24 +434,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Anda"^^dt:AbbreviatedLabel ,
         "01.02.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Andalusit"@de ,
-        "andalusite"@en ,
-        "andalucita"@es ,
-        "andalusiitti"@fi ,
-        "Andalousite"@fr ,
-        "andalusit"@id ,
-        "andalusite"@it ,
-        "紅柱石"@ja ,
-        "Gan;dalUsIut"@km ,
-        "홍주석"@ko ,
-        " Á»ÈÈ-Áºñ­-©¾-ìø-Ä§ª"@lo ,
-        "andalusit"@ms ,
-        "Andaluzit"@ru ,
-        "andalusit"@sv ,
-        "แร่แอนดาลูไซต์"@th ,
-        "andalusit"@vi ,
-        "红柱石"@zh ;
+    skos:prefLabel "andalusite"@en ;
     schema:citation "http://webmineral.com/data/Andalusite.shtml"^^xsd:anyURI ;
 .
 
@@ -561,24 +448,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Anhd"^^dt:AbbreviatedLabel ,
         "01.02.15.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Anhydrit"@de ,
-        "anhydrite"@en ,
-        "anhidrita"@es ,
-        "anhydriitti"@fi ,
-        "Anhydrite"@fr ,
-        "anhidrit"@id ,
-        "anidrite"@it ,
-        "硬石膏"@ja ,
-        "Gg;nIRdIt"@km ,
-        "경석고"@ko ,
-        " Á»ÈÁºññ­Ä»Ä©ùª"@lo ,
-        "anhidrit"@ms ,
-        "Angidrit"@ru ,
-        "anhydrit"@sv ,
-        "แร่แอนไฮไดรต์"@th ,
-        "anhydrit"@vi ,
-        "硬石膏"@zh ;
+    skos:prefLabel "anhydrite"@en ;
     schema:citation "http://www.galleries.com/Anhydrite"^^xsd:anyURI ;
 .
 
@@ -593,24 +463,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ant"^^dt:AbbreviatedLabel ,
         "01.02.04.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Anthophyllit"@de ,
-        "anthophyllite"@en ,
-        "antofilita"@es ,
-        "antofylliitti"@fi ,
-        "Anthophyllite"@fr ,
-        "antofilit"@id ,
-        "antofillite"@it ,
-        "直閃石"@ja ,
-        "Gg;tUhVIlIt"@km ,
-        "앤도필라이트"@ko ,
-        " Á»ÈÁºñ­-Âê³óÄìª"@lo ,
-        "antofilit"@ms ,
-        "Antofillit"@ru ,
-        "anthophyllit"@sv ,
-        "แร่แอนโทฟิลไลต์"@th ,
-        "anthophylit"@vi ,
-        "直闪石"@zh ;
+    skos:prefLabel "anthophyllite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/anthracite>
@@ -623,24 +476,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Anthr"^^dt:AbbreviatedLabel ,
         "01.01.05.01.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Anthrazit"@de ,
-        "anthracite"@en ,
-        "antracita"@es ,
-        "antrasiitti"@fi ,
-        "anthracite"@fr ,
-        "antrasit"@id ,
-        "antracite"@it ,
-        "無煙炭"@ja ,
-        "Gg;RtasIut"@km ,
-        "무연탄"@ko ,
-        " «È¾­-Áºñ­-ªë¾Ä§ª"@lo ,
-        "antrasit"@ms ,
-        "antratsit"@ru ,
-        "antracit"@sv ,
-        "ถ่านหินแอนทราไซต์"@th ,
-        "antracit"@vi ,
-        "无烟煤"@zh ;
+    skos:prefLabel "anthracite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Anthracite"^^xsd:anyURI ;
 .
 
@@ -657,24 +493,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sb"^^dt:AbbreviatedLabel ,
         "02.02.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Antimon"@de ,
-        "antimony"@en ,
-        "antimonio"@es ,
-        "antimoni"@fi ,
-        "antimoine"@fr ,
-        "antimon"@id ,
-        "antimonio"@it ,
-        "アンチモン"@ja ,
-        "xniCGg;TIm:UnI"@km ,
-        "안티몬"@ko ,
-        " ê¾©-ºñ¤-ªó-´º­"@lo ,
-        "antimoni"@ms ,
-        "sur'ma"@ru ,
-        "antimon"@sv ,
-        "แอนทิโมน"@th ,
-        "antimon"@vi ,
-        "锑"@zh ;
+    skos:prefLabel "antimony"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Antimony"^^xsd:anyURI ;
 .
 
@@ -689,24 +508,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Apat"^^dt:AbbreviatedLabel ,
         "01.02.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Apatit"@de ,
-        "apatite"@en ,
-        "apatito"@es ,
-        "apatiitti"@fi ,
-        "Apatite"@fr ,
-        "apatit"@id ,
-        "apatite"@it ,
-        "憐灰石"@ja ,
-        "xniCGa)a:Tit"@km ,
-        "인회석"@ko ,
-        " Á»ÈÈ-º¾-²¾Äêª"@lo ,
-        "apatit"@ms ,
-        "Apatit"@ru ,
-        "apatit"@sv ,
-        "แร่อะพาไทต์"@th ,
-        "apatit"@vi ,
-        "磷灰石"@zh ;
+    skos:prefLabel "apatite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Apatite"^^xsd:anyURI ;
 .
 
@@ -740,24 +542,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "AgM"^^dt:AbbreviatedLabel ,
         "01.03.03.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Aquamarin"@de ,
-        "aquamarine"@en ,
-        "aguamarina"@es ,
-        "akvamariini"@fi ,
-        "Aiguemarine"@fr ,
-        "akuamarin"@id ,
-        "acquamarina"@it ,
-        "アクアマリン"@ja ,
-        "xniCGakVama:rIn"@km ,
-        "남옥"@ko ,
-        " º¾-¡ö¸-´¾-ëó­"@lo ,
-        "akuamarin"@ms ,
-        "Akvamarin"@ru ,
-        "akvamarin"@sv ,
-        "อะความารีน"@th ,
-        "aquamarin"@vi ,
-        "海蓝宝石"@zh ;
+    skos:prefLabel "aquamarine"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/arsenic>
@@ -774,24 +559,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "As"^^dt:AbbreviatedLabel ,
         "02.02.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Arsen"@de ,
-        "arsenic"@en ,
-        "arse!nico"@es ,
-        "arseeni"@fi ,
-        "arsenic"@fr ,
-        "arsen"@id ,
-        "arsenico"@it ,
-        "砒"@ja ,
-        "xniCGaesnik"@km ,
-        "비소"@ko ,
-        " ê¾©-º¾¡-À§-­ò¡"@lo ,
-        "arsenik"@ms ,
-        "mysh'yak"@ru ,
-        "arsenik"@sv ,
-        "อาร์เซนิก"@th ,
-        "arsen"@vi ,
-        "砷"@zh ;
+    skos:prefLabel "arsenic"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Arsenic"^^xsd:anyURI ;
 .
 
@@ -811,24 +579,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Asph"^^dt:AbbreviatedLabel ,
         "01.01.05.03.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Asphalt"@de ,
-        "asphalt"@en ,
-        "asfalto"@es ,
-        "asfaltti"@fi ,
-        "asphalte"@fr ,
-        "aspal"@id ,
-        "asfalto"@it ,
-        "アスファルト"@ja ,
-        "GasVat"@km ,
-        "아스팔트"@ko ,
-        " º¾-¦-³¾-ì"@lo ,
-        "asfalt"@ms ,
-        "asfal't"@ru ,
-        "asfalt"@sv ,
-        "ยางมะตอย"@th ,
-        "asphalt"@vi ,
-        "沥青"@zh ;
+    skos:prefLabel "asphalt"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Asphalt"^^xsd:anyURI ;
 .
 
@@ -842,24 +593,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ba"^^dt:AbbreviatedLabel ,
         "02.01.07"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Barium"@de ,
-        "barium"@en ,
-        "bario"@es ,
-        "barium"@fi ,
-        "baryum"@fr ,
-        "barium"@id ,
-        "bario"@it ,
-        "バリウム"@ja ,
-        ")arIy:Um"@km ,
-        "바륨"@ko ,
-        "ê¾©Á®ë¼´"@lo ,
-        "barium"@ms ,
-        "barij"@ru ,
-        "barium"@sv ,
-        "ธาตุแบเรียม"@th ,
-        "bari"@vi ,
-        "钡"@zh ;
+    skos:prefLabel "barium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Barium"^^xsd:anyURI ;
 .
 
@@ -874,24 +608,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Brt"^^dt:AbbreviatedLabel ,
         "01.02.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Baryt"@de ,
-        "baryte"@en ,
-        "barita"@es ,
-        "baryytti"@fi ,
-        "Barite"@fr ,
-        "barit"@id ,
-        "barite"@it ,
-        "重晶石"@ja ,
-        ")arIt"@km ,
-        "중정석"@ko ,
-        "Á»ÈÁ®Äìª"@lo ,
-        "barit"@ms ,
-        "Barit"@ru ,
-        "baryt"@sv ,
-        "แร่แบไรต์"@th ,
-        "barit"@vi ,
-        "重晶石"@zh ;
+    skos:prefLabel "baryte"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Baryte"^^xsd:anyURI ;
 .
 
@@ -905,14 +622,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Bas"^^dt:AbbreviatedLabel ,
         "01.01.03.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Basalt"@de ,
-        "basalt"@en ,
-        "basalto"@es ,
-        "basaltit"@fi ,
-        "basalto"@it ,
-        "bazal't"@ru ,
-        "basalt"@sv ;
+    skos:prefLabel "basalt"@en ;
     schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
@@ -926,21 +636,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Baux"^^dt:AbbreviatedLabel ,
         "01.01.02.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "bauxit"@de ,
-        "bauxite"@en ,
-        "bauxite"@es ,
-        "bauxite"@fr ,
-        "bauksit"@id ,
-        "ボーキサイト"@ja ,
-        "buksIut"@km ,
-        "보크사이트"@ko ,
-        "Á»È®ö¡Ä§ª"@lo ,
-        "bauksit"@ms ,
-        "bauxit"@sv ,
-        "แร่บอกไซต์"@th ,
-        "tụ khoáng bauxit"@vi ,
-        "铝土矿"@zh ;
+    skos:prefLabel "bauxite"@en ;
     schema:citation "http://geology.com/minerals/bauxite.shtml"^^xsd:anyURI ;
 .
 
@@ -954,10 +650,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Bent"^^dt:AbbreviatedLabel ,
         "01.02.10.03.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Bentonit"@de ,
-        "bentonite"@en ,
-        "bentonit"@sv ;
+    skos:prefLabel "bentonite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Bentonite"^^xsd:anyURI ;
 .
 
@@ -971,24 +664,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Be"^^dt:AbbreviatedLabel ,
         "02.01.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Beryllium"@de ,
-        "beryllium"@en ,
-        "berilio"@es ,
-        "beryllium"@fi ,
-        "béryllium"@fr ,
-        "berilium"@id ,
-        "berillio"@it ,
-        "ベリリウム"@ja ,
-        "ebrIlüÚm"@km ,
-        "베릴륨"@ko ,
-        "ê¾©À®ëóì¼´"@lo ,
-        "berilium"@ms ,
-        "berillij"@ru ,
-        "beryllium"@sv ,
-        "เบริลเลียม"@th ,
-        "beryli"@vi ,
-        "铍"@zh ;
+    skos:prefLabel "beryllium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Beryllium"^^xsd:anyURI ;
 .
 
@@ -1005,24 +681,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Bi"^^dt:AbbreviatedLabel ,
         "02.01.08"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Wismut"@de ,
-        "bismuth"@en ,
-        "bismuto"@es ,
-        "vismutti"@fi ,
-        "bismuth"@fr ,
-        "bismut"@id ,
-        "bismuto"@it ,
-        "蒼鉛"@ja ,
-        "b‘Ísµút"@km ,
-        "비스무트"@ko ,
-        "ê¾©®ó¦´ñ©"@lo ,
-        "bismut"@ms ,
-        "vismut"@ru ,
-        "vismut"@sv ,
-        "ธาตุบิสมัท"@th ,
-        "bismut"@vi ,
-        "铋"@zh ;
+    skos:prefLabel "bismuth"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Bismuth"^^xsd:anyURI ;
 .
 
@@ -1037,24 +696,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "BlcC"^^dt:AbbreviatedLabel ,
         "01.01.05.01.01.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "bituminöse Kohle"@de ,
-        "black coal"@en ,
-        "carbón bituminoso"@es ,
-        "bitumihiili"@fi ,
-        "charbon bitumineux"@fr ,
-        "batubara berbitumen"@id ,
-        "carbone bituminoso"@it ,
-        "瀝青炭"@ja ,
-        "FüÚgfµdUckakeRbgkat"@km ,
-        "역청탄"@ko ,
-        "«ú¾­¹ó­®óêø´ó­ñ¦"@lo ,
-        "batu arang bitumen"@ms ,
-        "ugol' bituminoznyj"@ru ,
-        "bituminöst stenkol"@sv ,
-        "ถ่านหินบิทูมินัส"@th ,
-        "than bitum"@vi ,
-        "沥青煤"@zh ;
+    skos:prefLabel "black coal"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Black_coal"^^xsd:anyURI ;
 .
 
@@ -1068,14 +710,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Bor"^^dt:AbbreviatedLabel ,
         "01.02.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Borat"@de ,
-        "borate"@en ,
-        "borato"@es ,
-        "boraatit"@fi ,
-        "borati"@it ,
-        "Boraty"@ru ,
-        "borat"@sv ;
+    skos:prefLabel "borate"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Borate_minerals"^^xsd:anyURI ;
 .
 
@@ -1090,24 +725,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "B"^^dt:AbbreviatedLabel ,
         "02.02.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Bor"@de ,
-        "boron"@en ,
-        "boro"@es ,
-        "boori"@fi ,
-        "bore"@fr ,
-        "boron"@id ,
-        "boro"@it ,
-        "硼素"@ja ,
-        "b½rr:un"@km ,
-        "붕소"@ko ,
-        "ê¾©Â®ëö¤"@lo ,
-        "boron"@ms ,
-        "bor"@ru ,
-        "bor"@sv ,
-        "ธาตุโบรอน"@th ,
-        "bor"@vi ,
-        "硼"@zh ;
+    skos:prefLabel "boron"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Boron"^^xsd:anyURI ;
 .
 
@@ -1123,14 +741,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Bclay"^^dt:AbbreviatedLabel ,
         "01.02.10.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Ziegelton"@de ,
-        "brick clay"@en ,
-        "arcilla ladrillo"@es ,
-        "tiilisavi"@fi ,
-        "argilla per laterizi"@it ,
-        "glina kirpichnaya"@ru ,
-        "tegellera"@sv ;
+    skos:prefLabel "brick clay"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/bromine>
@@ -1143,24 +754,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Br"^^dt:AbbreviatedLabel ,
         "02.03.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Brom"@de ,
-        "bromine"@en ,
-        "bromo"@es ,
-        "bromi"@fi ,
-        "brome"@fr ,
-        "bromina"@id ,
-        "bromo"@it ,
-        "臭素"@ja ,
-        "RbUmIn"@km ,
-        "브롬"@ko ,
-        "Â®ù´¾¨"@lo ,
-        "bromin"@ms ,
-        "brom"@ru ,
-        "brom"@sv ,
-        "โปรมีน"@th ,
-        "brom"@vi ,
-        "溴"@zh ;
+    skos:prefLabel "bromine"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Bromine"^^xsd:anyURI ;
 .
 
@@ -1177,24 +771,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "BrnC"^^dt:AbbreviatedLabel ,
         "01.01.05.01.01.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Braunkohle"@de ,
-        "brown coal"@en ,
-        "brown coal"@es ,
-        "ruskohiili"@fi ,
-        "lignite"@fr ,
-        "batubara muda"@id ,
-        "brown coal"@it ,
-        "褐炭"@ja ,
-        "FüÚgfµ"@km ,
-        "갈탄"@ko ,
-        "«È¾­-ìò¡-Ä­ª"@lo ,
-        "lignit"@ms ,
-        "ugol' buryj"@ru ,
-        "brunkol"@sv ,
-        "ลิกไนต์"@th ,
-        "than lignit"@vi ,
-        "褐煤"@zh ;
+    skos:prefLabel "brown coal"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Brown_coal"^^xsd:anyURI ;
 .
 
@@ -1207,24 +784,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cd"^^dt:AbbreviatedLabel ,
         "02.01.09"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Cadmium"@de ,
-        "cadmium"@en ,
-        "cadmio"@es ,
-        "kadmium"@fi ,
-        "cadmium"@fr ,
-        "kadmium"@id ,
-        "cadmio"@it ,
-        "カドミウム"@ja ,
-        "kadüÚm"@km ,
-        "카드뮴"@ko ,
-        "ê¾©Á£ñ©´¼´"@lo ,
-        "kadmium"@ms ,
-        "kadmij"@ru ,
-        "kadmium"@sv ,
-        "ธาตุแคดเมียม"@th ,
-        "cadmi"@vi ,
-        "镉"@zh ;
+    skos:prefLabel "cadmium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Cadmium"^^xsd:anyURI ;
 .
 
@@ -1239,24 +799,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cal"^^dt:AbbreviatedLabel ,
         "01.02.07"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Calcit"@de ,
-        "calcite"@en ,
-        "calcita"@es ,
-        "kalsiitti"@fi ,
-        "Calcite"@fr ,
-        "kalsit"@id ,
-        "calcite"@it ,
-        "方解石"@ja ,
-        "kal;suIt"@km ,
-        "방해석"@ko ,
-        "Á»ÈÁ£­Ä§ª"@lo ,
-        "kalsit"@ms ,
-        "Kal'tsit"@ru ,
-        "kalcit"@sv ,
-        "แร่แคลไซต์"@th ,
-        "calcit"@vi ,
-        "钙质海绵纲"@zh ;
+    skos:prefLabel "calcite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/carnallite>
@@ -1269,24 +812,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Carn"^^dt:AbbreviatedLabel ,
         "01.02.15.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Carnallit"@de ,
-        "carnallite"@en ,
-        "carnalita"@es ,
-        "karnalliitti"@fi ,
-        "Carnallite"@fr ,
-        "karnalit"@id ,
-        "carnallite"@it ,
-        "カーナライト"@ja ,
-        "kaNalIt"@km ,
-        "카널라이트"@ko ,
-        "Á»È£¾¡­¾Äìª"@lo ,
-        "karnalit"@ms ,
-        "Karnallit"@ru ,
-        "carnallit"@sv ,
-        "แร่คาร์นัลไลต์"@th ,
-        "carnalit"@vi ,
-        "光卤石"@zh ;
+    skos:prefLabel "carnallite"@en ;
     schema:citation "http://www.galleries.com/Carnallite"^^xsd:anyURI ;
 .
 
@@ -1330,24 +856,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ce"^^dt:AbbreviatedLabel ,
         "02.01.03.02.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Cer"@de ,
-        "cerium"@en ,
-        "cerio"@es ,
-        "cerium"@fi ,
-        "cérium"@fr ,
-        "serium"@id ,
-        "cerio"@it ,
-        "セリウム"@ja ,
-        "esrüÚ:m"@km ,
-        "세륨"@ko ,
-        " ê¾©-§óë¼´"@lo ,
-        "serium"@ms ,
-        "tserij"@ru ,
-        "cerium"@sv ,
-        "ธาตุซีเรียม"@th ,
-        "ceri"@vi ,
-        "铈"@zh ;
+    skos:prefLabel "cerium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Cerium"^^xsd:anyURI ;
 .
 
@@ -1361,24 +870,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cs"^^dt:AbbreviatedLabel ,
         "02.01.10"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Cäsium"@de ,
-        "cesium"@en ,
-        "cesio"@es ,
-        "cesium"@fi ,
-        "césium"@fr ,
-        "sesium"@id ,
-        "cesio"@it ,
-        "セシウム"@ja ,
-        "essüÚm"@km ,
-        "세슘"@ko ,
-        " ê¾©À§-§¼´"@lo ,
-        "sesium"@ms ,
-        "tsezij"@ru ,
-        "cesium"@sv ,
-        "ธาตุซีเซียม"@th ,
-        "cesi"@vi ,
-        "铯"@zh ;
+    skos:prefLabel "cesium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Cesium"^^xsd:anyURI ;
 .
 
@@ -1395,24 +887,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Chrt"^^dt:AbbreviatedLabel ,
         "01.02.37.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kieselgestein"@de ,
-        "chert"@en ,
-        "silexita"@es ,
-        "sertti"@fi ,
-        "silexite"@fr ,
-        "rijang"@id ,
-        "silexite"@it ,
-        "チャート"@ja ,
-        "eqIt"@km ,
-        "쳐어트"@ko ,
-        " ¹ó­-À§òª"@lo ,
-        "rijang"@ms ,
-        "slanets kremnistyj"@ru ,
-        "flinta"@sv ,
-        "หินเชิร์ท"@th ,
-        "đá phiến silic"@vi ,
-        "燧石"@zh ;
+    skos:prefLabel "chert"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Chert"^^xsd:anyURI ;
 .
 
@@ -1426,14 +901,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Chlo"^^dt:AbbreviatedLabel ,
         "01.02.08"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Chlorit-Gruppe"@de ,
-        "chlorite"@en ,
-        "grupo clorita"@es ,
-        "kloriittiryhmä"@fi ,
-        "gruppo delle cloriti"@it ,
-        "Gruppa khlorita"@ru ,
-        "kloritgruppen"@sv ;
+    skos:prefLabel "chlorite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Chlorite_group"^^xsd:anyURI ;
 .
 
@@ -1464,24 +932,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Chro"^^dt:AbbreviatedLabel ,
         "01.02.09"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Chromit"@de ,
-        "chromite"@en ,
-        "cromita"@es ,
-        "kromiitti"@fi ,
-        "Chromite"@fr ,
-        "kromit"@id ,
-        "cromite"@it ,
-        "クロム鉄鉱"@ja ,
-        "RkUmIt"@km ,
-        "크롬철석"@ko ,
-        " Á»ÈÂ£ùÄ´ª"@lo ,
-        "kromit"@ms ,
-        "Khromit"@ru ,
-        "kromit"@sv ,
-        "แร่โครไมต์"@th ,
-        "cromit"@vi ,
-        "铬铁矿"@zh ;
+    skos:prefLabel "chromite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/chromium>
@@ -1494,24 +945,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cr"^^dt:AbbreviatedLabel ,
         "02.01.04.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Chrom"@de ,
-        "chromium"@en ,
-        "cromo"@es ,
-        "kromi"@fi ,
-        "chrome"@fr ,
-        "kromium"@id ,
-        "cromo"@it ,
-        "クロム"@ja ,
-        "RkUmIj:Úm"@km ,
-        "크롬"@ko ,
-        " ê¾©-Â£ù´¼´"@lo ,
-        "kromium"@ms ,
-        "khrom"@ru ,
-        "krom"@sv ,
-        "ธาตุโครเมียม"@th ,
-        "crom"@vi ,
-        "铬"@zh ;
+    skos:prefLabel "chromium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Chromium"^^xsd:anyURI ;
 .
 
@@ -1530,24 +964,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "CBrl"^^dt:AbbreviatedLabel ,
         "01.03.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Chrysoberyll"@de ,
-        "chrysoberyl"@en ,
-        "crisoberilo"@es ,
-        "krysoberylli"@fi ,
-        "Chrysobéryl"@fr ,
-        "krisoberil"@id ,
-        "crisoberillo"@it ,
-        "金緑石"@ja ,
-        "RKIsUebrIl"@km ,
-        "금록석"@ko ,
-        " Á»È-£-ëó-Â§-À®-ëó-ì"@lo ,
-        "krisoberil"@ms ,
-        "Khrizoberill"@ru ,
-        "krysoberyll"@sv ,
-        "แร่คริสโซเบริล"@th ,
-        "chrysoberyl"@vi ,
-        "金绿宝石"@zh ;
+    skos:prefLabel "chrysoberyl"@en ;
     schema:citation "http://www.galleries.com/Chrysoberyl"^^xsd:anyURI ;
 .
 
@@ -1583,24 +1000,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Chr"^^dt:AbbreviatedLabel ,
         "01.02.04.02.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Chrysotil"@de ,
-        "chrysotile"@en ,
-        "crisotilo"@es ,
-        "krysotiili"@fi ,
-        "Chrysotile"@fr ,
-        "krisotil"@id ,
-        "crisotilo"@it ,
-        "クリソタイル"@ja ,
-        "RKIsUTIt"@km ,
-        "온석면"@ko ,
-        " Á»È-£-ëó-Â§-Äêª"@lo ,
-        "krisotil"@ms ,
-        "Khrizotil"@ru ,
-        "krysolit"@sv ,
-        "แร่คริโซไทล์"@th ,
-        "chrysotil"@vi ,
-        "纤蛇纹石"@zh ;
+    skos:prefLabel "chrysotile"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/citrine>
@@ -1644,24 +1044,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Co"^^dt:AbbreviatedLabel ,
         "02.01.01.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kobalt"@de ,
-        "cobalt"@en ,
-        "cobalto"@es ,
-        "koboltti"@fi ,
-        "cobalt"@fr ,
-        "kobal"@id ,
-        "cobalto"@it ,
-        "コバルト"@ja ,
-        "Er:kU)a:l;"@km ,
-        "코발트"@ko ,
-        "ê¾©Â£®¾ìª"@lo ,
-        "kobalt"@ms ,
-        "kobal't"@ru ,
-        "kobolt"@sv ,
-        "ธาตุโคบอลต์"@th ,
-        "cobal"@vi ,
-        "钴"@zh ;
+    skos:prefLabel "cobalt"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Cobalt"^^xsd:anyURI ;
 .
 
@@ -1679,24 +1062,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cu"^^dt:AbbreviatedLabel ,
         "02.01.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kupfer"@de ,
-        "copper"@en ,
-        "cobre"@es ,
-        "kupari"@fi ,
-        "cuivre"@fr ,
-        "tembaga"@id ,
-        "rame"@it ,
-        "銅"@ja ,
-        "Tg;Edg"@km ,
-        "구리"@ko ,
-        "ê¾©êº¤"@lo ,
-        "tembaga"@ms ,
-        "med'"@ru ,
-        "koppar"@sv ,
-        "ทองแดง"@th ,
-        "đồng"@vi ,
-        "铜"@zh ;
+    skos:prefLabel "copper"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Copper"^^xsd:anyURI ;
 .
 
@@ -1711,24 +1077,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cor"^^dt:AbbreviatedLabel ,
         "01.02.11"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Korund"@de ,
-        "corundum"@en ,
-        "corindón"@es ,
-        "korundi"@fi ,
-        "Corindon"@fr ,
-        "korundum"@id ,
-        "corindone"@it ,
-        "コランダム"@ja ,
-        "Er:t,Úg"@km ,
-        "강옥"@ko ,
-        "Á¡É¸£ðëñ­©¿"@lo ,
-        "korundum"@ms ,
-        "Korund"@ru ,
-        "korund"@sv ,
-        "แร่คอรันดัม"@th ,
-        "conrindon"@vi ,
-        "刚玉"@zh ;
+    skos:prefLabel "corundum"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/crocidolite>
@@ -1746,24 +1095,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cro"^^dt:AbbreviatedLabel ,
         "01.02.04.01.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Krokydolith"@de ,
-        "crocidolite"@en ,
-        "crocidolita"@es ,
-        "krokidoliitti"@fi ,
-        "Crocidolite"@fr ,
-        "krosidolit"@id ,
-        "crocidolite"@it ,
-        "クロシドライト"@ja ,
-        "RKUsIutlIt"@km ,
-        "크로시돌라이트"@ko ,
-        "Á»ÈÂ£ë§óÂ©Äìª"@lo ,
-        "krosidolit"@ms ,
-        "Krokidolit"@ru ,
-        "krokidolit"@sv ,
-        "แร่โครซิโดไลต์"@th ,
-        "crocidolit"@vi ,
-        "纤铁钠闪石"@zh ;
+    skos:prefLabel "crocidolite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Riebeckite"^^xsd:anyURI ;
 .
 
@@ -1783,24 +1115,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Crush"^^dt:AbbreviatedLabel ,
         "01.01.01.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Splitt"@de ,
-        "crushed rock"@en ,
-        "material triturado"@es ,
-        "kivimurske"@fi ,
-        "matériau concassé"@fr ,
-        "batu remuk"@id ,
-        "roccia frantumata"@it ,
-        "砕骨物"@ja ,
-        "silabMEbk"@km ,
-        "파쇄암"@ko ,
-        "¹ó­¢ö®"@lo ,
-        "batu hancur"@ms ,
-        "kamen' razrushennyj"@ru ,
-        "makadam"@sv ,
-        "หินบด"@th ,
-        "đá nghiền"@vi ,
-        "碎石"@zh ;
+    skos:prefLabel "crushed rock"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/cryolite>
@@ -1814,24 +1129,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cryo"^^dt:AbbreviatedLabel ,
         "01.02.12"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kryolith"@de ,
-        "cryolite"@en ,
-        "criolita"@es ,
-        "kryoliitti"@fi ,
-        "Cryolite"@fr ,
-        "kriolit"@id ,
-        "criolite"@it ,
-        "氷晶石"@ja ,
-        "Er:RkIyUlIt"@km ,
-        "빙정석"@ko ,
-        "Á»È£ë¾¨ÂºÄìª"@lo ,
-        "kriolit"@ms ,
-        "Kriolit"@ru ,
-        "kryolit"@sv ,
-        "แร่ไครโอไลต์"@th ,
-        "cryolit"@vi ,
-        "冰晶石"@zh ;
+    skos:prefLabel "cryolite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/diamond>
@@ -1849,24 +1147,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Diam"^^dt:AbbreviatedLabel ,
         "01.02.13"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Diamant"@de ,
-        "diamond"@en ,
-        "diamante"@es ,
-        "timantti"@fi ,
-        "Diamant"@fr ,
-        "intan"@id ,
-        "diamante"@it ,
-        "ダイヤモンド"@ja ,
-        "eBRC"@km ,
-        "금강석"@ko ,
-        "À²ñ©"@lo ,
-        "intan"@ms ,
-        "Almaz"@ru ,
-        "diamant"@sv ,
-        "เพชร"@th ,
-        "kim cương"@vi ,
-        "金刚石"@zh ;
+    skos:prefLabel "diamond"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/diamond-gemstone>
@@ -1898,24 +1179,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Dtm"^^dt:AbbreviatedLabel ,
         "01.01.04.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Diatomit"@de ,
-        "diatomite"@en ,
-        "diatomita"@es ,
-        "piimaa"@fi ,
-        "terre diatomite"@fr ,
-        "diatomit"@id ,
-        "diatomite"@it ,
-        "珪藻岩"@ja ,
-        "Diya:tUmuIt"@km ,
-        "규조암"@ko ,
-        "Ä©º¾ÂêÄ´ª"@lo ,
-        "diatomit"@ms ,
-        "diatomit"@ru ,
-        "diatomit"@sv ,
-        "แร่ไดอะทอไมต์"@th ,
-        "diatomit"@vi ,
-        "硅藻岩"@zh ;
+    skos:prefLabel "diatomite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/diopside-enstatite>
@@ -1943,24 +1207,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Diop"^^dt:AbbreviatedLabel ,
         "01.03.10"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Dioptas"@de ,
-        "dioptase"@en ,
-        "dioptasa"@es ,
-        "dioptaasi"@fi ,
-        "Dioptase"@fr ,
-        "dioptas"@id ,
-        "diottasio"@it ,
-        "翠銅鉱"@ja ,
-        "DIyU:b)a:s;"@km ,
-        "취동석"@ko ,
-        "Á»ÈÄ©ºö®Àê¦"@lo ,
-        "dioptas"@ms ,
-        "Dioptaz"@ru ,
-        "dioptas"@sv ,
-        "แร่ไดออปเทส"@th ,
-        "dioptas"@vi ,
-        "透视石"@zh ;
+    skos:prefLabel "dioptase"@en ;
     schema:citation "http://www.galleries.com/Dioptase"^^xsd:anyURI ;
 .
 
@@ -1974,24 +1221,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Dum"^^dt:AbbreviatedLabel ,
         "01.03.11"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Dumortierit"@de ,
-        "dumortierite"@en ,
-        "dumortierita"@es ,
-        "dumortieriitti"@fi ,
-        "Dumortiérite"@fr ,
-        "dumortierit"@id ,
-        "dumortierite"@it ,
-        "デュモルティエ石"@ja ,
-        "Duym½rTIey:rIt"@km ,
-        "듀모티에라이트"@ko ,
-        "Á»ú©ø´º¡êóÄëª"@lo ,
-        "dumortierit"@ms ,
-        "D'yumorterit"@ru ,
-        "dumortierit"@sv ,
-        "แร่ดูมอร์เทียไรต์"@th ,
-        "dumortierit"@vi ,
-        "蓝线石"@zh ;
+    skos:prefLabel "dumortierite"@en ;
     schema:citation "http://www.galleries.com/Dumortierite"^^xsd:anyURI ;
 .
 
@@ -2005,24 +1235,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Dy"^^dt:AbbreviatedLabel ,
         "02.01.03.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Dysprosium"@de ,
-        "dysprosium"@en ,
-        "disprosio"@es ,
-        "dysprosium"@fi ,
-        "dysprosium"@fr ,
-        "disprosium"@id ,
-        "disprosio"@it ,
-        "ジスプロシウム"@ja ,
-        "DIRs<ÚsIuy:Um"@km ,
-        "디스프로슘"@ko ,
-        "ê¾©©ó¦½Â¯ë§¼´"@lo ,
-        "disprosium"@ms ,
-        "disprozij"@ru ,
-        "dysprosium"@sv ,
-        "ดิสโพรเซียม"@th ,
-        "dysprosi"@vi ,
-        "镝"@zh ;
+    skos:prefLabel "dysprosium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Dysprosium"^^xsd:anyURI ;
 .
 
@@ -2053,24 +1266,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Epso"^^dt:AbbreviatedLabel ,
         "01.02.14"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Epsomit"@de ,
-        "epsomite"@en ,
-        "epsomita"@es ,
-        "epsomiitti"@fi ,
-        "Epsomite"@fr ,
-        "epsomit"@id ,
-        "epsomite"@it ,
-        "瀉利塩"@ja ,
-        "eGbsUmIt"@km ,
-        "사리염"@ko ,
-        "¹óÀº®Â§Ä´ª"@lo ,
-        "epsomit"@ms ,
-        "Ehpsomit"@ru ,
-        "epsomit"@sv ,
-        "แร่เอปโซไมต์"@th ,
-        "epsomit"@vi ,
-        "泻利盐"@zh ;
+    skos:prefLabel "epsomite"@en ;
     schema:citation "http://www.galleries.com/Epsomite"^^xsd:anyURI ;
 .
 
@@ -2083,24 +1279,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Er"^^dt:AbbreviatedLabel ,
         "02.01.03.01.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Erbium"@de ,
-        "erbium"@en ,
-        "erbio"@es ,
-        "erbium"@fi ,
-        "erbium"@fr ,
-        "erbium"@id ,
-        "erbio"@it ,
-        "エルビウム"@ja ,
-        "EG‘Rb‘ÍyU:m"@km ,
-        "에르븀"@ko ,
-        "ê¾©Àºóë®¼´"@lo ,
-        "erbium"@ms ,
-        "ehrbij"@ru ,
-        "erbium"@sv ,
-        "ธาตุเออร์เบียม"@th ,
-        "erbi"@vi ,
-        "铒"@zh ;
+    skos:prefLabel "erbium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Erbium"^^xsd:anyURI ;
 .
 
@@ -2114,24 +1293,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Eucl"^^dt:AbbreviatedLabel ,
         "01.03.12"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Euklas"@de ,
-        "euclase"@en ,
-        "euclasa"@es ,
-        "euklaasi"@fi ,
-        "Euclase"@fr ,
-        "euklas"@id ,
-        "euclasio"@it ,
-        "ユークレース"@ja ,
-        "Er:yYxøas;"@km ,
-        "유클레이스"@ko ,
-        "Á»ÈµøÈÀ¡ñì¦"@lo ,
-        "euklas"@ms ,
-        "Ehvklaz"@ru ,
-        "euklas"@sv ,
-        "แร่ยูเคลส"@th ,
-        "euclas"@vi ,
-        "蓝柱石"@zh ;
+    skos:prefLabel "euclase"@en ;
     schema:citation "http://www.galleries.com/Euclase"^^xsd:anyURI ;
 .
 
@@ -2145,24 +1307,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Eu"^^dt:AbbreviatedLabel ,
         "02.01.03.01.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Europium"@de ,
-        "europium"@en ,
-        "europio"@es ,
-        "europium"@fi ,
-        "europium"@fr ,
-        "eropium"@id ,
-        "europio"@it ,
-        "ユーロピウム"@ja ,
-        "GWr:ubPIy:Um"@km ,
-        "유로퓸"@ko ,
-        "ê¾©µøÂì²¼´"@lo ,
-        "europium"@ms ,
-        "evropij"@ru ,
-        "europium"@sv ,
-        "ธาตุยูโรเพียม"@th ,
-        "europi"@vi ,
-        "铕"@zh ;
+    skos:prefLabel "europium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Europium"^^xsd:anyURI ;
 .
 
@@ -2203,24 +1348,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "F"^^dt:AbbreviatedLabel ,
         "02.03.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Fluor"@de ,
-        "fluorine"@en ,
-        "flúor"@es ,
-        "fluori"@fi ,
-        "fluor"@fr ,
-        "fluorin"@id ,
-        "fluoro"@it ,
-        "弗素"@ja ,
-        "em:SAhøúyGUrIn"@km ,
-        "플루오르"@ko ,
-        "³ìøÂºëó­"@lo ,
-        "fluorina"@ms ,
-        "ftor"@ru ,
-        "fluor"@sv ,
-        "ฟลูออรีน"@th ,
-        "flo"@vi ,
-        "氟(F)"@zh ;
+    skos:prefLabel "fluorine"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Fluorine"^^xsd:anyURI ;
 .
 
@@ -2237,24 +1365,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Fl"^^dt:AbbreviatedLabel ,
         "01.02.17"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Fluorit"@de ,
-        "fluorite"@en ,
-        "fluorita"@es ,
-        "fluoriitti"@fi ,
-        "Fluorite"@fr ,
-        "fluorit"@id ,
-        "fluorite"@it ,
-        "蛍石"@ja ,
-        "hVúyG½rrIt"@km ,
-        "형석"@ko ,
-        "Á»È³ìøÂºÄëª"@lo ,
-        "fluorit"@ms ,
-        "Flyuorit"@ru ,
-        "fluorit"@sv ,
-        "แร่ฟลูออไรด์"@th ,
-        "florit"@vi ,
-        "萤石"@zh ;
+    skos:prefLabel "fluorite"@en ;
     schema:citation "http://www.galleries.com/Fluorite"^^xsd:anyURI ;
 .
 
@@ -2297,24 +1408,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Gd"^^dt:AbbreviatedLabel ,
         "02.01.03.01.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Gadolinium"@de ,
-        "gadolinium"@en ,
-        "gadolinio"@es ,
-        "gadolinium"@fi ,
-        "gadolinium"@fr ,
-        "gadolinium"@id ,
-        "gadolinio"@it ,
-        "ガドリニウム"@ja ,
-        "haÁdUlInüÚm"@km ,
-        "가돌리늄"@ko ,
-        "ê¾©¡¾Â©­¼´"@lo ,
-        "gadolinium"@ms ,
-        "gadolinij"@ru ,
-        "gadolinium"@sv ,
-        "ธาตุแกโดลิเนียม"@th ,
-        "gadolin"@vi ,
-        "钆"@zh ;
+    skos:prefLabel "gadolinium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Gadolinium"^^xsd:anyURI ;
 .
 
@@ -2327,24 +1421,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ga"^^dt:AbbreviatedLabel ,
         "02.01.11"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Gallium"@de ,
-        "gallium"@en ,
-        "galio"@es ,
-        "gallium"@fi ,
-        "gallium"@fr ,
-        "galium"@id ,
-        "gallio"@it ,
-        "ガリウム"@ja ,
-        "hÁalüÚm"@km ,
-        "갈륨"@ko ,
-        "ê¾©¡¾ì¼´"@lo ,
-        "galium"@ms ,
-        "gallij"@ru ,
-        "gallium"@sv ,
-        "ธาตุแกลเลียม"@th ,
-        "gali"@vi ,
-        "镓"@zh ;
+    skos:prefLabel "gallium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Gallium"^^xsd:anyURI ;
 .
 
@@ -2400,24 +1477,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ge"^^dt:AbbreviatedLabel ,
         "02.02.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Germanium"@de ,
-        "germanium"@en ,
-        "germanio"@es ,
-        "germanium"@fi ,
-        "germanium"@fr ,
-        "germanium"@id ,
-        "germanio"@it ,
-        "ゲルマニウム"@ja ,
-        "ehSma:jÚ:m"@km ,
-        "게르마늄"@ko ,
-        "ê¾©À¥ó´¾­¼´"@lo ,
-        "germanium"@ms ,
-        "germanij"@ru ,
-        "germanium"@sv ,
-        "ธาตุเจอเมเนียม"@th ,
-        "german"@vi ,
-        "锗"@zh ;
+    skos:prefLabel "germanium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Germanium"^^xsd:anyURI ;
 .
 
@@ -2431,24 +1491,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Glau"^^dt:AbbreviatedLabel ,
         "01.02.19"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Glaukonit"@de ,
-        "glauconite"@en ,
-        "glauconita"@es ,
-        "glaukoniitti"@fi ,
-        "Glauconite"@fr ,
-        "glaukonit"@id ,
-        "glauconite"@it ,
-        "海緑石"@ja ,
-        "KøÚkUnIt"@km ,
-        "해록석"@ko ,
-        "Á»ÈÂ¡ìÂÄ­ª"@lo ,
-        "glaukonit"@ms ,
-        "Glaukonit"@ru ,
-        "glaukonit"@sv ,
-        "แร่กลอโคร์ไนต์"@th ,
-        "glauconit"@vi ,
-        "海绿石"@zh ;
+    skos:prefLabel "glauconite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Glauconite"^^xsd:anyURI ;
 .
 
@@ -2465,24 +1508,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Au"^^dt:AbbreviatedLabel ,
         "02.01.02.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Gold"@de ,
-        "gold"@en ,
-        "oro"@es ,
-        "kulta"@fi ,
-        "or"@fr ,
-        "emas"@id ,
-        "oro"@it ,
-        "金"@ja ,
-        "mas"@km ,
-        "금"@ko ,
-        "ê¾©£¿"@lo ,
-        "emas"@ms ,
-        "zoloto"@ru ,
-        "guld"@sv ,
-        "ทอง"@th ,
-        "vàng"@vi ,
-        "金"@zh ;
+    skos:prefLabel "gold"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Gold"^^xsd:anyURI ;
 .
 
@@ -2496,24 +1522,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Gran"^^dt:AbbreviatedLabel ,
         "01.01.03.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Granit"@de ,
-        "granite"@en ,
-        "granito"@es ,
-        "graniitit"@fi ,
-        "granite"@fr ,
-        "granit"@id ,
-        "granito"@it ,
-        "花崗岩"@ja ,
-        "silaRkanIt"@km ,
-        "화강암"@ko ,
-        "¹ó­¡ë¾Ä­ª"@lo ,
-        "granit"@ms ,
-        "granit"@ru ,
-        "granit"@sv ,
-        "หินแกรนิต"@th ,
-        "granit"@vi ,
-        "花岗岩"@zh ;
+    skos:prefLabel "granite"@en ;
     schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
@@ -2531,24 +1540,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Gr"^^dt:AbbreviatedLabel ,
         "01.02.20"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Graphit"@de ,
-        "graphite"@en ,
-        "grafito"@es ,
-        "grafiitti"@fi ,
-        "Graphite"@fr ,
-        "grafit"@id ,
-        "grafite"@it ,
-        "石墨"@ja ,
-        "RkahVIk"@km ,
-        "흑연"@ko ,
-        "Á»È¡ë¾Ä³ª"@lo ,
-        "grafit"@ms ,
-        "Grafit"@ru ,
-        "grafit"@sv ,
-        "แร่แกรไนต์"@th ,
-        "graphit"@vi ,
-        "石墨"@zh ;
+    skos:prefLabel "graphite"@en ;
     schema:citation "http://www.galleries.com/Graphite"^^xsd:anyURI ;
 .
 
@@ -2565,24 +1557,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "GreSt"^^dt:AbbreviatedLabel ,
         "01.01.03.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Gruenstein"@de ,
-        "greenstone"@en ,
-        "roca verde"@es ,
-        "vihreäkivi"@fi ,
-        "roche verte"@fr ,
-        "batu hijau"@id ,
-        "rocce verdi"@it ,
-        "グリーンストーン"@ja ,
-        "silaB’Nébtg"@km ,
-        "녹암"@ko ,
-        "¹ó­¡ëò­¦½Âª­"@lo ,
-        "batu hijau"@ms ,
-        "poroda zelenokamennaya"@ru ,
-        "grönsten"@sv ,
-        "หินกรีนสโตน"@th ,
-        "đá lục"@vi ,
-        "绿岩"@zh ;
+    skos:prefLabel "greenstone"@en ;
     schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
@@ -2596,24 +1571,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Gp"^^dt:AbbreviatedLabel ,
         "01.02.15.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Gips"@de ,
-        "gypsum"@en ,
-        "yeso"@es ,
-        "kipsi"@fi ,
-        "Gypse"@fr ,
-        "gipsum"@id ,
-        "gesso"@it ,
-        "石膏"@ja ,
-        "mñagsila"@km ,
-        "석고"@ko ,
-        "¹ó­¡¾¸"@lo ,
-        "gipsum"@ms ,
-        "Gips"@ru ,
-        "gips"@sv ,
-        "แร่ยิปซั่ม"@th ,
-        "thạch cao"@vi ,
-        "石膏"@zh ;
+    skos:prefLabel "gypsum"@en ;
     schema:citation "http://www.galleries.com/Gypsum"^^xsd:anyURI ;
 .
 
@@ -2627,24 +1585,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Hf"^^dt:AbbreviatedLabel ,
         "02.01.12"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Hafnium"@de ,
-        "hafnium"@en ,
-        "hafnio"@es ,
-        "hafnium"@fi ,
-        "hafnium"@fr ,
-        "hafnium"@id ,
-        "afnio"@it ,
-        "ハフニウム"@ja ,
-        "hahVnIdüÚm"@km ,
-        "하프늄"@ko ,
-        "ê¾©»ñ³­¼´"@lo ,
-        "hafnium"@ms ,
-        "gafnij"@ru ,
-        "hafnium"@sv ,
-        "ธาตุฮาฟเนียม"@th ,
-        "hafni"@vi ,
-        "铪"@zh ;
+    skos:prefLabel "hafnium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Hafnium"^^xsd:anyURI ;
 .
 
@@ -2672,24 +1613,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Hall"^^dt:AbbreviatedLabel ,
         "01.02.10.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Halloysit"@de ,
-        "halloysite"@en ,
-        "halloysita"@es ,
-        "halloysiitti"@fi ,
-        "Halloysite"@fr ,
-        "haloysit"@id ,
-        "halloysite"@it ,
-        "ハロイサイト"@ja ,
-        "halLÚGuIsuIt"@km ,
-        "할로이사이트"@ko ,
-        "Á»È»¾ììº¨Ä§ª"@lo ,
-        "haloisit"@ms ,
-        "Galluazit"@ru ,
-        "halloysit"@sv ,
-        "แร่ฮาลลอยไซต์"@th ,
-        "haloysit"@vi ,
-        "埃洛石"@zh ;
+    skos:prefLabel "halloysite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Halloysite"^^xsd:anyURI ;
 .
 
@@ -2735,24 +1659,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Hem"^^dt:AbbreviatedLabel ,
         "01.02.21"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Haematit"@de ,
-        "hematite"@en ,
-        "hematita"@es ,
-        "hematiitti"@fi ,
-        "hématite"@fr ,
-        "hematit"@id ,
-        "ematite"@it ,
-        "赤鉄鉱"@ja ,
-        "eGma:TIt"@km ,
-        "적철석"@ko ,
-        "Á»ÈÀ»´¾Äêª"@lo ,
-        "hematit"@ms ,
-        "Gematit"@ru ,
-        "hematit"@sv ,
-        "แร่ฮีมาไทต์"@th ,
-        "hematit"@vi ,
-        "赤铁矿"@zh ;
+    skos:prefLabel "hematite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Hematite"^^xsd:anyURI ;
 .
 
@@ -2794,24 +1701,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ho"^^dt:AbbreviatedLabel ,
         "02.01.03.01.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Holmium"@de ,
-        "holmium"@en ,
-        "holmio"@es ,
-        "holmium"@fi ,
-        "holmium"@fr ,
-        "holmium"@id ,
-        "olmio"@it ,
-        "ホルミウム"@ja ,
-        "hUlmIdüÚm"@km ,
-        "홀뮴"@ko ,
-        "ê¾©»ºì´¼´"@lo ,
-        "holmium"@ms ,
-        "gol'mij"@ru ,
-        "holmium"@sv ,
-        "ธาตุฮอลเมียม"@th ,
-        "holmi"@vi ,
-        "钬"@zh ;
+    skos:prefLabel "holmium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Holmium"^^xsd:anyURI ;
 .
 
@@ -2826,24 +1716,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ilm"^^dt:AbbreviatedLabel ,
         "01.02.26"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Ilmenit"@de ,
-        "ilmenite"@en ,
-        "ilmenita"@es ,
-        "ilmeniitti"@fi ,
-        "Ilménite"@fr ,
-        "ilmenit"@id ,
-        "ilmenite"@it ,
-        "イルメナイト"@ja ,
-        "GIulEmnnIt"@km ,
-        "티탄철석"@ko ,
-        "Á»È-ºòò-ì-´ó-Ä­ª"@lo ,
-        "ilmenit"@ms ,
-        "Il'menit"@ru ,
-        "ilmenit"@sv ,
-        "แร่อิลเมไนต์"@th ,
-        "ilmenit"@vi ,
-        "钛铁矿"@zh ;
+    skos:prefLabel "ilmenite"@en ;
     schema:citation "http://www.galleries.com/Ilmenite"^^xsd:anyURI ;
 .
 
@@ -2857,24 +1730,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "In"^^dt:AbbreviatedLabel ,
         "02.01.13"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Indium"@de ,
-        "indium"@en ,
-        "indio"@es ,
-        "indium"@fi ,
-        "indium"@fr ,
-        "indium"@id ,
-        "indio"@it ,
-        "インジウム"@ja ,
-        "GuinDIyU:m"@km ,
-        "인듐"@ko ,
-        "ê¾©-ºò­-©¼´"@lo ,
-        "indium"@ms ,
-        "indij"@ru ,
-        "indium"@sv ,
-        "ธาตุอินเดียม"@th ,
-        "indi"@vi ,
-        "铟"@zh ;
+    skos:prefLabel "indium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Indium"^^xsd:anyURI ;
 .
 
@@ -2888,24 +1744,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "I"^^dt:AbbreviatedLabel ,
         "02.03.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Jod"@de ,
-        "iodine"@en ,
-        "yodo"@es ,
-        "jodi"@fi ,
-        "iode"@fr ,
-        "yodium"@id ,
-        "iodio"@it ,
-        "ヨウ素"@ja ,
-        "GIuy:Ud"@km ,
-        "요오드"@ko ,
-        "ê¾©ÄºÂº©ò­"@lo ,
-        "iodin"@ms ,
-        "iod"@ru ,
-        "jod"@sv ,
-        "ธาตุไอโอดีน"@th ,
-        "iod"@vi ,
-        "碘"@zh ;
+    skos:prefLabel "iodine"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Iodine"^^xsd:anyURI ;
 .
 
@@ -2921,24 +1760,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cord"^^dt:AbbreviatedLabel ,
         "01.03.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Cordierit"@de ,
-        "cordierite"@en ,
-        "cordierita"@es ,
-        "kordieriitti"@fi ,
-        "Cordiérite"@fr ,
-        "kordierit"@id ,
-        "cordierite"@it ,
-        "菫青石"@ja ,
-        "k½rDIrIt"@km ,
-        "근청석"@ko ,
-        "Á»ú£º¡©óÄëª"@lo ,
-        "kordierit"@ms ,
-        "Kordierit"@ru ,
-        "cordierit"@sv ,
-        "แร่คอร์เดียไรต์"@th ,
-        "cordierit"@vi ,
-        "堇青石"@zh ;
+    skos:prefLabel "cordierite"@en ;
     schema:citation "http://www.galleries.com/Cordierite"^^xsd:anyURI ;
 .
 
@@ -2955,24 +1777,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ir"^^dt:AbbreviatedLabel ,
         "02.01.02.03.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Iridium"@de ,
-        "iridium"@en ,
-        "iridio"@es ,
-        "iridium"@fi ,
-        "iridium"@fr ,
-        "iridium"@id ,
-        "iridio"@it ,
-        "イリジウム"@ja ,
-        "GuIrIdüÚm"@km ,
-        "이리듐"@ko ,
-        "ê¾©-ºó-ëó-©¼´"@lo ,
-        "iridium"@ms ,
-        "iridij"@ru ,
-        "iridium"@sv ,
-        "ธาตุอิริเดียม"@th ,
-        "iridi"@vi ,
-        "铱"@zh ;
+    skos:prefLabel "iridium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Iridium"^^xsd:anyURI ;
 .
 
@@ -2987,24 +1792,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Fe"^^dt:AbbreviatedLabel ,
         "02.01.04.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Eisen"@de ,
-        "iron"@en ,
-        "hierro"@es ,
-        "rauta"@fi ,
-        "fer"@fr ,
-        "besi"@id ,
-        "ferro"@it ,
-        "鉄"@ja ,
-        "Edk"@km ,
-        "철"@ko ,
-        "ê¾©À¹ìñ¡"@lo ,
-        "besi"@ms ,
-        "zhelezo"@ru ,
-        "järn"@sv ,
-        "เหล็ก"@th ,
-        "sắt"@vi ,
-        "铁"@zh ;
+    skos:prefLabel "iron"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Iron"^^xsd:anyURI ;
 .
 
@@ -3038,24 +1826,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Jaro"^^dt:AbbreviatedLabel ,
         "01.02.22"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Jarosit"@de ,
-        "jarosite"@en ,
-        "jarosita"@es ,
-        "jarosiitti"@fi ,
-        "Jarosite"@fr ,
-        "jarosit"@id ,
-        "jarosite"@it ,
-        "鉄明礬石"@ja ,
-        "hSarUsuIt"@km ,
-        "자로사이트"@ko ,
-        "Á»È-¥¾-Âë-Ä§ª"@lo ,
-        "jarosit"@ms ,
-        "Yarozit"@ru ,
-        "jarosit"@sv ,
-        "แร่จาโรไซต์"@th ,
-        "jarosit"@vi ,
-        "黄钾铁矾"@zh ;
+    skos:prefLabel "jarosite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/kaolin>
@@ -3073,24 +1844,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Kaol"^^dt:AbbreviatedLabel ,
         "01.02.10.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kaolinit"@de ,
-        "kaolin"@en ,
-        "caolinita"@es ,
-        "kaoliniitti"@fi ,
-        "Kaolinite"@fr ,
-        "kaolinit"@id ,
-        "caolinite"@it ,
-        "カオリナイト"@ja ,
-        "Er:ekALaMg"@km ,
-        "캐올리나이트"@ko ,
-        "Á»È-¡¾¸-ìó-Ä­ª"@lo ,
-        "kaolinit"@ms ,
-        "Kaolinit"@ru ,
-        "kaolinit"@sv ,
-        "แร่เคโอลิไนต์"@th ,
-        "kaolinit"@vi ,
-        "高龄石"@zh ;
+    skos:prefLabel "kaolin"@en ;
     schema:citation "http://en.wikipedia.org/wiki/China_clay"^^xsd:anyURI ;
 .
 
@@ -3104,24 +1858,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Korn"^^dt:AbbreviatedLabel ,
         "01.03.17"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kornerupin"@de ,
-        "kornerupine"@en ,
-        "kornerupina"@es ,
-        "kornerupiini"@fi ,
-        "Kornerupine"@fr ,
-        "kornerupin"@id ,
-        "cornerupina"@it ,
-        "コーネルピン"@ja ,
-        "KvNWrUBIn"@km ,
-        "코르너루핀"@ko ,
-        "Á»ÈÂ£À´ëøÄ³­"@lo ,
-        "kornerupin"@ms ,
-        "Kornerupin"@ru ,
-        "kornerupin"@sv ,
-        "แร่คอร์นีรูไพน์"@th ,
-        "kornerupin"@vi ,
-        "柱晶石"@zh ;
+    skos:prefLabel "kornerupine"@en ;
     schema:citation "http://www.galleries.com/Kornerupine"^^xsd:anyURI ;
 .
 
@@ -3136,24 +1873,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Kya"^^dt:AbbreviatedLabel ,
         "01.02.01.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Disthen"@de ,
-        "kyanite"@en ,
-        "distena"@es ,
-        "kyaniitti"@fi ,
-        "Disthène"@fr ,
-        "kianit"@id ,
-        "cianite"@it ,
-        "藍晶石"@ja ,
-        "KIya:nIt"@km ,
-        "남정석"@ko ,
-        "Á»È-Ä£º¾Ä­ª"@lo ,
-        "kianit"@ms ,
-        "Disten"@ru ,
-        "kyanit"@sv ,
-        "แร่ไคยาไนต์"@th ,
-        "kyanit"@vi ,
-        "蓝晶石"@zh ;
+    skos:prefLabel "kyanite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/kyanite-gemstone>
@@ -3180,24 +1900,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "La"^^dt:AbbreviatedLabel ,
         "02.01.03.02.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Lanthan"@de ,
-        "lanthanum"@en ,
-        "lantano"@es ,
-        "lantaani"@fi ,
-        "lanthane"@fr ,
-        "lantanum"@id ,
-        "lantanio"@it ,
-        "ランタン"@ja ,
-        "Lagtanum"@km ,
-        "란탄"@ko ,
-        "ê¾©-Áìñ­-ê¾-­ñ´"@lo ,
-        "lantanum"@ms ,
-        "lantan"@ru ,
-        "lantan"@sv ,
-        "ลาทานัม"@th ,
-        "lantan"@vi ,
-        "镧"@zh ;
+    skos:prefLabel "lanthanum"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Lanthanum"^^xsd:anyURI ;
 .
 
@@ -3214,24 +1917,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Late"^^dt:AbbreviatedLabel ,
         "01.01.04.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Laterit"@de ,
-        "laterite"@en ,
-        "laterita"@es ,
-        "lateriitit"@fi ,
-        "latérite"@fr ,
-        "laterit"@id ,
-        "laterite"@it ,
-        "ラテライト"@ja ,
-        "fµ)ayeRkom"@km ,
-        "라테라이트"@ko ,
-        "¹ó­ì¾ÀªÄëª"@lo ,
-        "laterit"@ms ,
-        "laterit"@ru ,
-        "laterit"@sv ,
-        "ศิลาแลง"@th ,
-        "laterit"@vi ,
-        "砖红壤"@zh ;
+    skos:prefLabel "laterite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Laterite"^^xsd:anyURI ;
 .
 
@@ -3246,24 +1932,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Lz"^^dt:AbbreviatedLabel ,
         "01.03.19"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Lazulith"@de ,
-        "lazulite"@en ,
-        "lazulita"@es ,
-        "latsuliitti"@fi ,
-        "Lazulite"@fr ,
-        "lazulit"@id ,
-        "lazulite"@it ,
-        "天藍石"@ja ,
-        "LahSÚlIt"@km ,
-        "래줄라이트"@ko ,
-        "Á»È-ì¾-§ø-Äìª"@lo ,
-        "lazulit"@ms ,
-        "Lazulit"@ru ,
-        "lazulit"@sv ,
-        "แร่ลาซูไลต์"@th ,
-        "lazulit"@vi ,
-        "天蓝石"@zh ;
+    skos:prefLabel "lazulite"@en ;
     schema:citation "http://www.galleries.com/Lazulite"^^xsd:anyURI ;
 .
 
@@ -3281,24 +1950,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Pb"^^dt:AbbreviatedLabel ,
         "02.01.01.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Blei"@de ,
-        "lead"@en ,
-        "plomo"@es ,
-        "lyijy"@fi ,
-        "plomb"@fr ,
-        "timbal"@id ,
-        "piombo"@it ,
-        "鉛"@ja ,
-        "elahHTn;mincMlgGKÁIsnI"@km ,
-        "납"@ko ,
-        "ê¾©-§õ­"@lo ,
-        "plumbum"@ms ,
-        "svinets"@ru ,
-        "bly"@sv ,
-        "ตะกั่ว"@th ,
-        "chì"@vi ,
-        "矿脉"@zh ;
+    skos:prefLabel "lead"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Lead"^^xsd:anyURI ;
 .
 
@@ -3348,24 +2000,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Lst"^^dt:AbbreviatedLabel ,
         "01.01.03.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kalk"@de ,
-        "limestone"@en ,
-        "caliza"@es ,
-        "kalkkikivi"@fi ,
-        "calcaire"@fr ,
-        "batugamping"@id ,
-        "calcare"@it ,
-        "石灰岩"@ja ,
-        "silafµkMe)ar"@km ,
-        "석회암"@ko ,
-        "¹ó­-¯ø­"@lo ,
-        "batu kapur"@ms ,
-        "izvestnyak"@ru ,
-        "kalksten"@sv ,
-        "หินปูน"@th ,
-        "đá vôi"@vi ,
-        "石灰岩"@zh ;
+    skos:prefLabel "limestone"@en ;
     schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
@@ -3379,24 +2014,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Li"^^dt:AbbreviatedLabel ,
         "02.01.14"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Lithium"@de ,
-        "lithium"@en ,
-        "litio"@es ,
-        "litium"@fi ,
-        "lithium"@fr ,
-        "litium"@id ,
-        "litio"@it ,
-        "リチウム"@ja ,
-        "lIcUm"@km ,
-        "리튬"@ko ,
-        "ê¾©-ìóó-ê¼´"@lo ,
-        "litium"@ms ,
-        "litij"@ru ,
-        "litium"@sv ,
-        "ธาตุลิเธียม"@th ,
-        "liti"@vi ,
-        "锂"@zh ;
+    skos:prefLabel "lithium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Lithium"^^xsd:anyURI ;
 .
 
@@ -3424,24 +2042,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Lu"^^dt:AbbreviatedLabel ,
         "02.01.03.01.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Lutetium-Element"@de ,
-        "lutetium"@en ,
-        "lutecio"@es ,
-        "lutetium"@fi ,
-        "lutétium"@fr ,
-        "lutetium"@id ,
-        "lutezio"@it ,
-        "ルテチウム"@ja ,
-        "lyuetcUm"@km ,
-        "루테튬"@ko ,
-        "ê¾©ìøÀêóê¼´"@lo ,
-        "lutetium"@ms ,
-        "lyutetsij"@ru ,
-        "lutetium"@sv ,
-        "ธาตุลูทีเทียม"@th ,
-        "luteti"@vi ,
-        "镥"@zh ;
+    skos:prefLabel "lutetium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Lutetium"^^xsd:anyURI ;
 .
 
@@ -3469,24 +2070,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Magns"^^dt:AbbreviatedLabel ,
         "01.02.24"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Magnesit"@de ,
-        "magnesite"@en ,
-        "magnesita"@es ,
-        "magnesiitti"@fi ,
-        "magnésite"@fr ,
-        "magnesit"@id ,
-        "magnesite"@it ,
-        "マグネサイト"@ja ,
-        "ma:ej:suIt"@km ,
-        "마그네사이트"@ko ,
-        "Á»ÈÁ´ñ¡À¨Ä§ª"@lo ,
-        "magnesit"@ms ,
-        "Magnezit"@ru ,
-        "magnesit"@sv ,
-        "แร่แมกนีไซต์"@th ,
-        "magnesit"@vi ,
-        "菱镁矿"@zh ;
+    skos:prefLabel "magnesite"@en ;
     schema:citation "http://www.galleries.com/Magnesite"^^xsd:anyURI ;
 .
 
@@ -3500,24 +2084,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Mg"^^dt:AbbreviatedLabel ,
         "02.01.15"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Magnesium"@de ,
-        "magnesium"@en ,
-        "magnesio"@es ,
-        "magnesium"@fi ,
-        "magnésium"@fr ,
-        "magnesium"@id ,
-        "magnesio"@it ,
-        "マグネシウム"@ja ,
-        "ma:ej:süÚm"@km ,
-        "마그네슘"@ko ,
-        "ê¾©Á´ñ¡À¨§¼´"@lo ,
-        "magnesium"@ms ,
-        "magnij"@ru ,
-        "magnesium"@sv ,
-        "แมกนีเซียม"@th ,
-        "magie"@vi ,
-        "镁"@zh ;
+    skos:prefLabel "magnesium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Magnesium"^^xsd:anyURI ;
 .
 
@@ -3536,24 +2103,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Mgt"^^dt:AbbreviatedLabel ,
         "01.02.25"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Magnetit"@de ,
-        "magnetite"@en ,
-        "magnetita"@es ,
-        "magnetiitti"@fi ,
-        "magnétite"@fr ,
-        "magnetit"@id ,
-        "magnetite"@it ,
-        "磁鉄鉱"@ja ,
-        "ma:ej:TIt"@km ,
-        "자철석"@ko ,
-        "Á»ÈÁ´ñ¡À¨Äêª"@lo ,
-        "magnetit"@ms ,
-        "magnetit"@ru ,
-        "magnetit"@sv ,
-        "แร่แมกนีไทต์"@th ,
-        "magnetit"@vi ,
-        "磁铁矿"@zh ;
+    skos:prefLabel "magnetite"@en ;
     schema:citation "http://www.galleries.com/Magnetite"^^xsd:anyURI ;
 .
 
@@ -3584,24 +2134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Mal"^^dt:AbbreviatedLabel ,
         "01.03.20"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Malachit"@de ,
-        "malachite"@en ,
-        "malaquita"@es ,
-        "malakiitti"@fi ,
-        "Malachite"@fr ,
-        "malakit"@id ,
-        "malachite"@it ,
-        "孔雀石"@ja ,
-        "ma:LaXIt"@km ,
-        "공작석"@ko ,
-        "Á»È´¾ì¾Ä£ª"@lo ,
-        "malakit"@ms ,
-        "Malakhit"@ru ,
-        "malakit"@sv ,
-        "แร่มาลาไคต์"@th ,
-        "malachit"@vi ,
-        "孔雀石"@zh ;
+    skos:prefLabel "malachite"@en ;
     schema:citation "http://www.galleries.com/Malachite"^^xsd:anyURI ;
 .
 
@@ -3615,24 +2148,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Mn"^^dt:AbbreviatedLabel ,
         "02.01.04.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Mangan"@de ,
-        "manganese"@en ,
-        "manganeso"@es ,
-        "mangaani"@fi ,
-        "manganèse"@fr ,
-        "mangan"@id ,
-        "manganese"@it ,
-        "マンガン"@ja ,
-        "m:g;haÁENs"@km ,
-        "망간"@ko ,
-        "ê¾©´ñ¤¡¾­"@lo ,
-        "mangan"@ms ,
-        "marganets"@ru ,
-        "mangan"@sv ,
-        "แร่แมงกานีส"@th ,
-        "mangan"@vi ,
-        "锰"@zh ;
+    skos:prefLabel "manganese"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Manganese"^^xsd:anyURI ;
 .
 
@@ -3647,24 +2163,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "MnOr"^^dt:AbbreviatedLabel ,
         "01.01.02.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Manganerz"@de ,
-        "manganese ore"@en ,
-        "manganeso sustancia"@es ,
-        "mangaanimalmit"@fi ,
-        "manganèse substance"@fr ,
-        "bijih mangan"@id ,
-        "minerale di manganese"@it ,
-        "マンガン鉱物"@ja ,
-        "Er:m:g;hÁaENs"@km ,
-        "망간광석"@ko ,
-        "Á»È´ñ¤¡¾­"@lo ,
-        "bijih mangan"@ms ,
-        "ruda margantsevaya"@ru ,
-        "manganmalm"@sv ,
-        "สินแร่แมงกานีส"@th ,
-        "quặng mangan"@vi ,
-        "锰矿石"@zh ;
+    skos:prefLabel "manganese ore"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/marble>
@@ -3679,14 +2178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Mrbl"^^dt:AbbreviatedLabel ,
         "01.01.03.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Marmor"@de ,
-        "marble"@en ,
-        "mármol"@es ,
-        "marmorit"@fi ,
-        "marmo"@it ,
-        "mramor"@ru ,
-        "marmor"@sv ;
+    skos:prefLabel "marble"@en ;
     schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
@@ -3703,24 +2195,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Hg"^^dt:AbbreviatedLabel ,
         "02.01.16"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Quecksilber"@de ,
-        "mercury"@en ,
-        "mercurio"@es ,
-        "elohopea"@fi ,
-        "mercure"@fr ,
-        "air raksa"@id ,
-        "mercurio"@it ,
-        "水銀"@ja ,
-        ")ar:t"@km ,
-        "수은"@ko ,
-        "ê¾©®¾"@lo ,
-        "raksa"@ms ,
-        "rtut'"@ru ,
-        "kvicksilver"@sv ,
-        "ปรอท"@th ,
-        "thuỷ ngân"@vi ,
-        "汞"@zh ;
+    skos:prefLabel "mercury"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Mercury_(element)"^^xsd:anyURI ;
 .
 
@@ -3761,24 +2236,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Molyb"^^dt:AbbreviatedLabel ,
         "01.02.28"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Molybdaenit"@de ,
-        "molybdenite"@en ,
-        "molibdenita"@es ,
-        "molybdeenihohde"@fi ,
-        "Molybdénite"@fr ,
-        "molibdenit"@id ,
-        "molibdenite"@it ,
-        "輝水鉛鉱"@ja ,
-        "m:UlIbEdn"@km ,
-        "휘수연석"@ko ,
-        "Á»ÈÂ´ìò®À©Ä­ª"@lo ,
-        "molibdenit"@ms ,
-        "Molibdenit"@ru ,
-        "molybdenglans"@sv ,
-        "โมลิปดีไนต์"@th ,
-        "molybdenit"@vi ,
-        "辉钼矿"@zh ;
+    skos:prefLabel "molybdenite"@en ;
     schema:citation "http://www.galleries.com/Molybdenite"^^xsd:anyURI ;
 .
 
@@ -3792,24 +2250,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Mo"^^dt:AbbreviatedLabel ,
         "02.01.17"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Molybdaen"@de ,
-        "molybdenum"@en ,
-        "molibdeno"@es ,
-        "molybdeeni"@fi ,
-        "molybdène"@fr ,
-        "molibdenum"@id ,
-        "molibdeno"@it ,
-        "モリブデン"@ja ,
-        "eQµaHm:UlIbEdn"@km ,
-        "몰리브덴"@ko ,
-        "ê¾©Â´ìò®À©­ñ´"@lo ,
-        "molibdenum"@ms ,
-        "molibden"@ru ,
-        "molybden"@sv ,
-        "โมลิปดีนัม"@th ,
-        "molybden"@vi ,
-        "钼"@zh ;
+    skos:prefLabel "molybdenum"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Molybdenum"^^xsd:anyURI ;
 .
 
@@ -3837,24 +2278,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Monaz"^^dt:AbbreviatedLabel ,
         "01.02.29"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Monazit"@de ,
-        "monazite"@en ,
-        "monacita"@es ,
-        "monatsiitti"@fi ,
-        "Monazite"@fr ,
-        "monazit"@id ,
-        "monazite"@it ,
-        "モナズ石"@ja ,
-        "m:UNahSIút"@km ,
-        "모나자이트"@ko ,
-        "Á»ÈÂ´­¾Ä§ª"@lo ,
-        "monazit"@ms ,
-        "Monatsit"@ru ,
-        "monazit"@sv ,
-        "แร่โมนาไซต์"@th ,
-        "monazit"@vi ,
-        "独居石"@zh ;
+    skos:prefLabel "monazite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Monazite"^^xsd:anyURI ;
 .
 
@@ -3923,24 +2347,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Nd"^^dt:AbbreviatedLabel ,
         "02.01.03.02.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Neodym"@de ,
-        "neodymium"@en ,
-        "neodimio"@es ,
-        "neodyymi"@fi ,
-        "néodyme"@fr ,
-        "neodimium"@id ,
-        "neodimio"@it ,
-        "ネオジム"@ja ,
-        "eNGUDImüÚm"@km ,
-        "네오디뮴"@ko ,
-        "ê¾©­óÂº©ó´¼´"@lo ,
-        "neodimium"@ms ,
-        "neodim"@ru ,
-        "neodym"@sv ,
-        "นีโอไดเมียม"@th ,
-        "neodym"@vi ,
-        "钕"@zh ;
+    skos:prefLabel "neodymium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Neodymium"^^xsd:anyURI ;
 .
 
@@ -3969,24 +2376,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "NephS"^^dt:AbbreviatedLabel ,
         "01.01.04.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Nephelin-Syenit"@de ,
-        "nepheline syenite"@en ,
-        "sienita nefelínica"@es ,
-        "nefeliinisyeniitti"@fi ,
-        "syénite néphélinique"@fr ,
-        "sienit nefelin"@id ,
-        "sienite nefelinica"@it ,
-        "霞石閃長岩"@ja ,
-        "suIey:nIteNsValIt"@km ,
-        "하석섬장암"@ko ,
-        "¹ó­À­À³óìó­Ä§ºóÄ­ª"@lo ,
-        "syenit nefelin"@ms ,
-        "sienit nefelinovyj"@ru ,
-        "nefelinsyenit"@sv ,
-        "หินไซอีไนต์เนฟีลีน"@th ,
-        "syenit nephelin"@vi ,
-        "霞石正长岩"@zh ;
+    skos:prefLabel "nepheline syenite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/nickel>
@@ -3999,24 +2389,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ni"^^dt:AbbreviatedLabel ,
         "02.01.01.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Nickel"@de ,
-        "nickel"@en ,
-        "níquel"@es ,
-        "nikkeli"@fi ,
-        "nickel"@fr ,
-        "nikel"@id ,
-        "nichel"@it ,
-        "ニッケル"@ja ,
-        "nIEkl"@km ,
-        "니켈"@ko ,
-        "ê¾©­ò¡À¡òì"@lo ,
-        "nikel"@ms ,
-        "nikel'"@ru ,
-        "nickel"@sv ,
-        "นิกเกิล"@th ,
-        "nickel"@vi ,
-        "镍"@zh ;
+    skos:prefLabel "nickel"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Nickel"^^xsd:anyURI ;
 .
 
@@ -4030,24 +2403,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Nb"^^dt:AbbreviatedLabel ,
         "02.01.18"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Niob"@de ,
-        "niobium"@en ,
-        "niobio"@es ,
-        "niobium"@fi ,
-        "niobium"@fr ,
-        "niobium"@id ,
-        "niobio"@it ,
-        "ニオビウム"@ja ,
-        "nIGUbüÚm"@km ,
-        "니오브"@ko ,
-        "ê¾©Ä­Âº®¼´"@lo ,
-        "niobium"@ms ,
-        "niobij"@ru ,
-        "niob"@sv ,
-        "ธาตุไนโอเบียม"@th ,
-        "niobi"@vi ,
-        "铌"@zh ;
+    skos:prefLabel "niobium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Niobium"^^xsd:anyURI ;
 .
 
@@ -4076,24 +2432,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Nitr"^^dt:AbbreviatedLabel ,
         "02.04.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Nitrat"@de ,
-        "nitrate"@en ,
-        "nitrato"@es ,
-        "nitraatit"@fi ,
-        "nitrate"@fr ,
-        "nitrat"@id ,
-        "nitrati"@it ,
-        "硝酸塩"@ja ,
-        "nIRtat"@km ,
-        "질산염"@ko ,
-        "Ä­Àªù©"@lo ,
-        "nitrat"@ms ,
-        "Nitraty"@ru ,
-        "nitrat"@sv ,
-        "ไนเตรท"@th ,
-        "nitrat"@vi ,
-        "硝酸盐"@zh ;
+    skos:prefLabel "nitrate"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Nitrate"^^xsd:anyURI ;
 .
 
@@ -4110,24 +2449,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Obs"^^dt:AbbreviatedLabel ,
         "01.03.21"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Obsidian"@de ,
-        "obsidian"@en ,
-        "obsidiana"@es ,
-        "obsidiaani"@fi ,
-        "obsidienne"@fr ,
-        "obsidian"@id ,
-        "ossidiana"@it ,
-        "黒曜岩"@ja ,
-        "silaG½bsIuEdn"@km ,
-        "흑요암"@ko ,
-        "¹ó­ºö®§ó©¼­"@lo ,
-        "obsidian"@ms ,
-        "obsidian"@ru ,
-        "obsidian"@sv ,
-        "หินออปซิเดียน"@th ,
-        "obsidian"@vi ,
-        "黑曜石"@zh ;
+    skos:prefLabel "obsidian"@en ;
     schema:citation "http://www.galleries.com/Obsidian"^^xsd:anyURI ;
 .
 
@@ -4160,25 +2482,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Oil"^^dt:AbbreviatedLabel ,
         "01.01.05.03.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Erdoel"@de ,
-        "oil"@en ,
-        "petróleo"@es ,
-        "maaöljy"@fi ,
-        "pétrole"@fr ,
-        "minyak bumi"@id ,
-        "petrolio"@it ,
-        "石油"@ja ,
-        "eRbgkat"@km ,
-        "석유"@ko ,
-        "­Õ´ñ­"@lo ,
-        "petroleum"@ms ,
-        "petroleum"@nl ,
-        "neft'"@ru ,
-        "petroleum"@sv ,
-        "ปิโตรเลียม"@th ,
-        "dầu khí"@vi ,
-        "石油"@zh ;
+    skos:prefLabel "oil"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Petroleum"^^xsd:anyURI ;
 .
 
@@ -4197,24 +2501,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "OilS"^^dt:AbbreviatedLabel ,
         "01.01.05.03.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Oelschiefer"@de ,
-        "oil shale"@en ,
-        "esquisto petrolífero"@es ,
-        "öljyliuske"@fi ,
-        "schiste à huile"@fr ,
-        "batuan serpih"@id ,
-        "scisto a olio"@it ,
-        "オイルシェール"@ja ,
-        "eRbgenAkñúgsilakMeTckMN"@km ,
-        "함유세일"@ko ,
-        "¹ó­­Õ´ñ­"@lo ,
-        "syal minyak"@ms ,
-        "slanets goryuchij"@ru ,
-        "oljeskiffer"@sv ,
-        "หินน้ำมัน"@th ,
-        "đá phiến sét chứa dầu"@vi ,
-        "油页岩"@zh ;
+    skos:prefLabel "oil shale"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/olivine>
@@ -4227,14 +2514,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Olv"^^dt:AbbreviatedLabel ,
         "01.02.30"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Olivin-Gruppe"@de ,
-        "olivine"@en ,
-        "grupo olivino"@es ,
-        "oliviiniryhmä"@fi ,
-        "gruppo delle olivine"@it ,
-        "Gruppa olivina"@ru ,
-        "olivingruppen"@sv ;
+    skos:prefLabel "olivine"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Olivine"^^xsd:anyURI ;
 .
 
@@ -4280,24 +2560,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Opal"^^dt:AbbreviatedLabel ,
         "01.03.29.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Opal"@de ,
-        "opal"@en ,
-        "ópalo"@es ,
-        "opaali"@fi ,
-        "Opale"@fr ,
-        "opal"@id ,
-        "opale"@it ,
-        "オパール"@ja ,
-        "t,ÚgBak;kNþalmantMémø b¤GU)a:l;"@km ,
-        "단백석"@ko ,
-        "¹ó­Âº¯¾­"@lo ,
-        "opal"@ms ,
-        "Opal"@ru ,
-        "opal"@sv ,
-        "โอปอ"@th ,
-        "opal"@vi ,
-        "蛋白石"@zh ;
+    skos:prefLabel "opal"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Opal"^^xsd:anyURI ;
 .
 
@@ -4315,24 +2578,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Os"^^dt:AbbreviatedLabel ,
         "02.01.02.03.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Osmium"@de ,
-        "osmium"@en ,
-        "osmio"@es ,
-        "osmium"@fi ,
-        "osmium"@fr ,
-        "osmium"@id ,
-        "osmio"@it ,
-        "オスミウム"@ja ,
-        "GUsmIjÚm"@km ,
-        "오스뮴"@ko ,
-        "ê¾©Âº¦´¼´"@lo ,
-        "osmium"@ms ,
-        "osmij"@ru ,
-        "osmium"@sv ,
-        "ธาตุออสเมียม"@th ,
-        "osmi"@vi ,
-        "锇"@zh ;
+    skos:prefLabel "osmium"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/palladium>
@@ -4346,24 +2592,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Pd"^^dt:AbbreviatedLabel ,
         "02.01.02.03.6"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Palladium"@de ,
-        "palladium"@en ,
-        "paladio"@es ,
-        "palladium"@fi ,
-        "palladium"@fr ,
-        "paladium"@id ,
-        "palladio"@it ,
-        "パラジウム"@ja ,
-        ")a:LadüÚm"@km ,
-        "팔라듐"@ko ,
-        "ê¾©²¾ì¾©¼´"@lo ,
-        "paladium"@ms ,
-        "palladij"@ru ,
-        "palladium"@sv ,
-        "ธาตุแพลเลเดียม"@th ,
-        "paladi"@vi ,
-        "钯"@zh ;
+    skos:prefLabel "palladium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Palladium"^^xsd:anyURI ;
 .
 
@@ -4378,24 +2607,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Palyg"^^dt:AbbreviatedLabel ,
         "01.02.10.03.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Palygorskit"@de ,
-        "palygorskite"@en ,
-        "paligorskita"@es ,
-        "palygorskiitti"@fi ,
-        "Palygorskite"@fr ,
-        "paligorskit"@id ,
-        "palygorskite"@it ,
-        "パリゴルスカイト"@ja ,
-        ")a:l;GuIehÁasÁIt"@km ,
-        "팔리고르스카이트"@ko ,
-        "ê¾©²¾ìó¥º¡¦Ä£ª"@lo ,
-        "paligorskit"@ms ,
-        "Palygorskit"@ru ,
-        "palygorskit"@sv ,
-        "แร่พาลีกอร์สไกต์"@th ,
-        "palygorskit"@vi ,
-        "坡缕石"@zh ;
+    skos:prefLabel "palygorskite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Attapulgite"^^xsd:anyURI ;
 .
 
@@ -4413,25 +2625,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Peat"^^dt:AbbreviatedLabel ,
         "01.01.05.01.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Torf"@de ,
-        "peat"@en ,
-        "turba"@es ,
-        "turve"@fi ,
-        "tourbe"@fr ,
-        "gambut"@id ,
-        "torba"@it ,
-        "泥炭"@ja ,
-        "rukçCatiEdlBukpuy"@km ,
-        "이탄"@ko ,
-        "«ú¾­ªö´"@lo ,
-        "gambut"@ms ,
-        "veen"@nl ,
-        "torf"@ru ,
-        "torv"@sv ,
-        "พีต"@th ,
-        "than bùn"@vi ,
-        "泥煤"@zh ;
+    skos:prefLabel "peat"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Peat"^^xsd:anyURI ;
 .
 
@@ -4446,24 +2640,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Perl"^^dt:AbbreviatedLabel ,
         "01.01.04.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Perlit"@de ,
-        "perlite"@en ,
-        "perlita"@es ,
-        "perliitti"@fi ,
-        "perlite"@fr ,
-        "perlit"@id ,
-        "perlite"@it ,
-        "真珠岩"@ja ,
-        "EBlIt"@km ,
-        "진주암"@ko ,
-        "À²óÄìª"@lo ,
-        "perlit"@ms ,
-        "perlit"@ru ,
-        "perlit"@sv ,
-        "เพอร์ไลต์"@th ,
-        "perlit"@vi ,
-        "珍珠岩"@zh ;
+    skos:prefLabel "perlite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/phenakite>
@@ -4476,24 +2653,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Phen"^^dt:AbbreviatedLabel ,
         "01.03.23"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Phenakit"@de ,
-        "phenakite"@en ,
-        "fenacita"@es ,
-        "fenakiitti"@fi ,
-        "Phénacite"@fr ,
-        "fenakit"@id ,
-        "fenacite"@it ,
-        "フェナク石"@ja ,
-        "ehVNaXIt"@km ,
-        "페나카이트"@ko ,
-        "Á»úÀ³­¾Ä£ª"@lo ,
-        "fenakit"@ms ,
-        "Fenakit"@ru ,
-        "fenakit"@sv ,
-        "แร่เฟนาไกต์"@th ,
-        "phenakit"@vi ,
-        "硅铍石"@zh ;
+    skos:prefLabel "phenakite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Phenakite"^^xsd:anyURI ;
 .
 
@@ -4509,14 +2669,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "PhosR"^^dt:AbbreviatedLabel ,
         "01.01.04.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Phosphatgestein"@de ,
-        "phosphate rock"@en ,
-        "roca fosfatada"@es ,
-        "fosfaattikivet"@fi ,
-        "roccia fosfatica"@it ,
-        "poroda fosfatnaya"@ru ,
-        "fosfatbergart"@sv ;
+    skos:prefLabel "phosphate rock"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/phosphorous>
@@ -4529,24 +2682,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "P"^^dt:AbbreviatedLabel ,
         "02.03.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Phosphor"@de ,
-        "phosphorous"@en ,
-        "fósforo"@es ,
-        "fosfori"@fi ,
-        "phosphore"@fr ,
-        "fosfor"@id ,
-        "fosforo"@it ,
-        "リン"@ja ,
-        "hVÚssV½r"@km ,
-        "인"@ko ,
-        "ê¾©³ö¦³ð"@lo ,
-        "fosforus"@ms ,
-        "fosfor"@ru ,
-        "fosfor"@sv ,
-        "ฟอสฟอรัส"@th ,
-        "phospho"@vi ,
-        "磷"@zh ;
+    skos:prefLabel "phosphorous"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Phosphorus"^^xsd:anyURI ;
 .
 
@@ -4577,24 +2713,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Pt"^^dt:AbbreviatedLabel ,
         "02.01.02.03.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Platin"@de ,
-        "platinum"@en ,
-        "platino"@es ,
-        "platina"@fi ,
-        "platine"@fr ,
-        "platina"@id ,
-        "platino"@it ,
-        "白金"@ja ,
-        ")øaTIn"@km ,
-        "백금"@ko ,
-        "£¿¢¾¸"@lo ,
-        "platinum"@ms ,
-        "platina"@ru ,
-        "platina"@sv ,
-        "ธาตุแพลทินัม"@th ,
-        "platin"@vi ,
-        "铂"@zh ;
+    skos:prefLabel "platinum"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Platinum"^^xsd:anyURI ;
 .
 
@@ -4608,24 +2727,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "K"^^dt:AbbreviatedLabel ,
         "02.01.19"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kalium"@de ,
-        "potassium"@en ,
-        "potasio"@es ,
-        "kalium"@fi ,
-        "potassium"@fr ,
-        "kalium"@id ,
-        "potassio"@it ,
-        "カリウム"@ja ,
-        "b:UtasüÚm"@km ,
-        "칼륨"@ko ,
-        "ê¾©Â¯ª¾¦§¼´"@lo ,
-        "kalium"@ms ,
-        "kalij"@ru ,
-        "kalium"@sv ,
-        "ธาตุโพแทชเซียม"@th ,
-        "kali"@vi ,
-        "钾"@zh ;
+    skos:prefLabel "potassium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Potassium"^^xsd:anyURI ;
 .
 
@@ -4667,24 +2769,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Pr"^^dt:AbbreviatedLabel ,
         "02.01.03.02.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Praseodym"@de ,
-        "praseodymium"@en ,
-        "praseodimio"@es ,
-        "praseodyymi"@fi ,
-        "praséodyme"@fr ,
-        "praseodimium"@id ,
-        "praseodimio"@it ,
-        "プラセオジム"@ja ,
-        "R)aesGUDImIj:Úm"@km ,
-        "프라세오디뮴"@ko ,
-        "¯ë¾À§Âº©ó­¼´"@lo ,
-        "praseodimium"@ms ,
-        "prazeodim"@ru ,
-        "praseodym"@sv ,
-        "ธาตุพราซีโอไดเมียม"@th ,
-        "praseodym"@vi ,
-        "镨"@zh ;
+    skos:prefLabel "praseodymium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Praseodymium"^^xsd:anyURI ;
 .
 
@@ -4712,24 +2797,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Preh"^^dt:AbbreviatedLabel ,
         "01.03.24"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Prehnit"@de ,
-        "prehnite"@en ,
-        "prehnita"@es ,
-        "prehniitti"@fi ,
-        "Prehnite"@fr ,
-        "prehnit"@id ,
-        "prehnite"@it ,
-        "ぶどう石"@ja ,
-        "eRbnIt"@km ,
-        "프리나이트"@ko ,
-        "Á»úÀ¯ëÄ­ª"@lo ,
-        "prehnit"@ms ,
-        "Prenit"@ru ,
-        "prehnit"@sv ,
-        "แร่พรีห์ไนต์"@th ,
-        "prenit"@vi ,
-        "葡萄石"@zh ;
+    skos:prefLabel "prehnite"@en ;
     schema:citation "http://www.galleries.com/Prehnite"^^xsd:anyURI ;
 .
 
@@ -4743,24 +2811,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Pm"^^dt:AbbreviatedLabel ,
         "02.01.03.02.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Promethium"@de ,
-        "promethium"@en ,
-        "prometio"@es ,
-        "prometium"@fi ,
-        "prométhium"@fr ,
-        "prometium"@id ,
-        "promezio"@it ,
-        "プロメチウム"@ja ,
-        "RbUemTIy:Um"@km ,
-        "프로메튬"@ko ,
-        "ê¾©Â¯ëÀ´ê¼´"@lo ,
-        "prometium"@ms ,
-        "prometij"@ru ,
-        "prometium"@sv ,
-        "ธาตุโพรมีเธียม"@th ,
-        "prometi"@vi ,
-        "钷"@zh ;
+    skos:prefLabel "promethium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Promethium"^^xsd:anyURI ;
 .
 
@@ -4779,24 +2830,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Pumi"^^dt:AbbreviatedLabel ,
         "01.01.04.07"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Bims"@de ,
-        "pumice"@en ,
-        "piedra pómez"@es ,
-        "hohkakivi"@fi ,
-        "ponce"@fr ,
-        "batu apung"@id ,
-        "pomice"@it ,
-        "軽石"@ja ,
-        "fµxat; b¤fµBBuHPñMePøIg"@km ,
-        "부석"@ko ,
-        "¹ó­²øÄ´¦"@lo ,
-        "pumis"@ms ,
-        "pemza"@ru ,
-        "pimpsten"@sv ,
-        "หินพัมมิส"@th ,
-        "đá bọt"@vi ,
-        "浮石"@zh ;
+    skos:prefLabel "pumice"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Pumice"^^xsd:anyURI ;
 .
 
@@ -4811,24 +2845,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Py"^^dt:AbbreviatedLabel ,
         "01.02.31"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Pyrit"@de ,
-        "pyrite"@en ,
-        "pirita"@es ,
-        "rikkikiisu"@fi ,
-        "Pyrite"@fr ,
-        "pirit"@id ,
-        "pirite"@it ,
-        "黄鉄鉱"@ja ,
-        "BIruIt"@km ,
-        "황철석"@ko ,
-        "Á»ÈÄ²Äëª"@lo ,
-        "pirit"@ms ,
-        "Pirit"@ru ,
-        "svavelkis"@sv ,
-        "แร่ไพไรต์"@th ,
-        "pyrit"@vi ,
-        "黄铁矿"@zh ;
+    skos:prefLabel "pyrite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Pyrite"^^xsd:anyURI ;
 .
 
@@ -4846,24 +2863,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Pphy"^^dt:AbbreviatedLabel ,
         "01.02.01.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Pyrophyllit"@de ,
-        "pyrophyllite"@en ,
-        "pirofilita"@es ,
-        "pyrofylliitti"@fi ,
-        "Pyrophyllite"@fr ,
-        "pirofilit"@id ,
-        "pirofillite"@it ,
-        "パイロフィライト"@ja ,
-        "BIruhVIlIt"@km ,
-        "엽랍석"@ko ,
-        "Á»ÈÄ²Â»³óÄìª"@lo ,
-        "pirofilit"@ms ,
-        "Pirofillit"@ru ,
-        "pyrofyllit"@sv ,
-        "แร่ไพโรฟิลไลต์"@th ,
-        "pyrophylit"@vi ,
-        "叶蜡石"@zh ;
+    skos:prefLabel "pyrophyllite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/quartz>
@@ -4876,24 +2876,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Qtz"^^dt:AbbreviatedLabel ,
         "01.02.32"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Quarz"@de ,
-        "quartz"@en ,
-        "cuarzo"@es ,
-        "kvartsi"@fi ,
-        "Quartz"@fr ,
-        "kuarsa"@id ,
-        "quarzo"@it ,
-        "石英"@ja ,
-        "kVat"@km ,
-        "석영"@ko ,
-        "Á»È£¸ñ¡¦"@lo ,
-        "kuarza"@ms ,
-        "Kvarts"@ru ,
-        "kvarts"@sv ,
-        "แร่ควอรตซ์"@th ,
-        "thạch anh"@vi ,
-        "石英"@zh ;
+    skos:prefLabel "quartz"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Quartz"^^xsd:anyURI ;
 .
 
@@ -4907,24 +2890,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ra"^^dt:AbbreviatedLabel ,
         "02.01.20"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Radium"@de ,
-        "radium"@en ,
-        "radio"@es ,
-        "radium"@fi ,
-        "radium"@fr ,
-        "radium"@id ,
-        "radio"@it ,
-        "ラジウム"@ja ,
-        "ra:düÚm"@km ,
-        "라듐"@ko ,
-        "ê¾©ë¾©¼­"@lo ,
-        "radium"@ms ,
-        "radij"@ru ,
-        "radium"@sv ,
-        "แก๊สเรเดียม"@th ,
-        "radi"@vi ,
-        "镭"@zh ;
+    skos:prefLabel "radium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Radium"^^xsd:anyURI ;
 .
 
@@ -4966,24 +2932,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Re"^^dt:AbbreviatedLabel ,
         "02.01.21"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Rhenium"@de ,
-        "rhenium"@en ,
-        "renio"@es ,
-        "renium"@fi ,
-        "rhénium"@fr ,
-        "renium"@id ,
-        "renio"@it ,
-        "レニウム"@ja ,
-        "er:j:Úm"@km ,
-        "레늄"@ko ,
-        "Á»Èê¾©ìñ¤¦óÀë­¼´"@lo ,
-        "rhenium"@ms ,
-        "renij"@ru ,
-        "rhenium"@sv ,
-        "ธาตุรีเนียม"@th ,
-        "reni"@vi ,
-        "铼"@zh ;
+    skos:prefLabel "rhenium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Rhenium"^^xsd:anyURI ;
 .
 
@@ -4997,24 +2946,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Rh"^^dt:AbbreviatedLabel ,
         "02.01.02.03.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Rhodium"@de ,
-        "rhodium"@en ,
-        "rodio"@es ,
-        "rodium"@fi ,
-        "rhodium"@fr ,
-        "rodium"@id ,
-        "rodio"@it ,
-        "ロジウム"@ja ,
-        "rUDIyU:m"@km ,
-        "로듐"@ko ,
-        "ê¾©Âë­¼´"@lo ,
-        "rhodium"@ms ,
-        "rodij"@ru ,
-        "rodium"@sv ,
-        "ธาตุโรเดียม"@th ,
-        "rodi"@vi ,
-        "铑"@zh ;
+    skos:prefLabel "rhodium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Rhodium"^^xsd:anyURI ;
 .
 
@@ -5029,24 +2961,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Rhod"^^dt:AbbreviatedLabel ,
         "01.03.26"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Rhodonit"@de ,
-        "rhodonite"@en ,
-        "rodonita"@es ,
-        "rodoniitti"@fi ,
-        "Rhodonite"@fr ,
-        "rodonit"@id ,
-        "rodonite"@it ,
-        "薔薇輝石"@ja ,
-        "rUDUnIt"@km ,
-        "장미휘석"@ko ,
-        "Á»ÈÂëÂ©Ä­ª"@lo ,
-        "rodonit"@ms ,
-        "Rodonit"@ru ,
-        "rodonit"@sv ,
-        "แร่โรโดไนต์"@th ,
-        "rodonit"@vi ,
-        "蔷薇辉石"@zh ;
+    skos:prefLabel "rhodonite"@en ;
     schema:citation "http://www.galleries.com/Rhodonite"^^xsd:anyURI ;
 .
 
@@ -5090,24 +3005,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Rb"^^dt:AbbreviatedLabel ,
         "02.01.22"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Rubidium"@de ,
-        "rubidium"@en ,
-        "rubidio"@es ,
-        "rubidium"@fi ,
-        "rubidium"@fr ,
-        "rubidium"@id ,
-        "rubidio"@it ,
-        "ルビジウム"@ja ,
-        "rUb‘IdüÚm"@km ,
-        "루비듐"@ko ,
-        "ê¾©ëø®ó©¼´"@lo ,
-        "rubidium"@ms ,
-        "rubidij"@ru ,
-        "rubidium"@sv ,
-        "ธาตุรูบิเดียม"@th ,
-        "rubidi"@vi ,
-        "铷"@zh ;
+    skos:prefLabel "rubidium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Rubidium"^^xsd:anyURI ;
 .
 
@@ -5121,14 +3019,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Rub"^^dt:AbbreviatedLabel ,
         "01.03.07.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Rubin"@de ,
-        "ruby"@en ,
-        "rubí"@es ,
-        "rubiinit"@fi ,
-        "rubino"@it ,
-        "Rubin"@ru ,
-        "rubin"@sv ;
+    skos:prefLabel "ruby"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Rub\\\\"^^xsd:anyURI ;
 .
 
@@ -5143,24 +3034,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ru"^^dt:AbbreviatedLabel ,
         "02.01.02.03.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Ruthenium"@de ,
-        "ruthenium"@en ,
-        "rutenio"@es ,
-        "rutenium"@fi ,
-        "ruthénium"@fr ,
-        "rutenium"@id ,
-        "rutenio"@it ,
-        "ルテニウム"@ja ,
-        "rUetj:Úm"@km ,
-        "루테늄"@ko ,
-        "ê¾©ëøêò­¼´"@lo ,
-        "rutenium"@ms ,
-        "rutenij"@ru ,
-        "rutenium"@sv ,
-        "ธาตุรูทธีเนียม"@th ,
-        "ruteni"@vi ,
-        "钌"@zh ;
+    skos:prefLabel "ruthenium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Ruthenium"^^xsd:anyURI ;
 .
 
@@ -5175,24 +3049,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "TiRt"^^dt:AbbreviatedLabel ,
         "01.02.33"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Rutil"@de ,
-        "rutile"@en ,
-        "rutilo"@es ,
-        "rutiili"@fi ,
-        "Rutile"@fr ,
-        "rutil"@id ,
-        "rutilo"@it ,
-        "ルチル"@ja ,
-        "rUTIl"@km ,
-        "금홍석"@ko ,
-        "Á»ÈëøÄêì"@lo ,
-        "rutil"@ms ,
-        "Rutil"@ru ,
-        "rutil"@sv ,
-        "แร่รูไทล์"@th ,
-        "rutil"@vi ,
-        "金红石"@zh ;
+    skos:prefLabel "rutile"@en ;
     schema:citation "http://www.galleries.com/Rutile"^^xsd:anyURI ;
 .
 
@@ -5212,24 +3069,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Salt"^^dt:AbbreviatedLabel ,
         "01.02.15.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Steinsalz"@de ,
-        "salt"@en ,
-        "sal gema"@es ,
-        "suola"@fi ,
-        "sel"@fr ,
-        "garam"@id ,
-        "salgemma"@it ,
-        "塩"@ja ,
-        "GMbil"@km ,
-        "소금"@ko ,
-        "À¡õº"@lo ,
-        "garam"@ms ,
-        "sol'"@ru ,
-        "salt"@sv ,
-        "เกลือ"@th ,
-        "muối"@vi ,
-        "盐"@zh ;
+    skos:prefLabel "salt"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Salt"^^xsd:anyURI ;
 .
 
@@ -5243,24 +3083,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sm"^^dt:AbbreviatedLabel ,
         "02.01.03.02.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Samarium"@de ,
-        "samarium"@en ,
-        "samario"@es ,
-        "samarium"@fi ,
-        "samarium"@fr ,
-        "samarium"@id ,
-        "samario"@it ,
-        "サマリウム"@ja ,
-        "sama:rüÚm"@km ,
-        "사마륨"@ko ,
-        "Á»È§¾´¾ë¼´"@lo ,
-        "samarium"@ms ,
-        "samarij"@ru ,
-        "samarium"@sv ,
-        "ธาตุซามาเรียม"@th ,
-        "samari"@vi ,
-        "钐"@zh ;
+    skos:prefLabel "samarium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Samarium"^^xsd:anyURI ;
 .
 
@@ -5275,24 +3098,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "SndSt"^^dt:AbbreviatedLabel ,
         "01.01.03.07"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Sandstein"@de ,
-        "sandstone"@en ,
-        "arenisca"@es ,
-        "hiekkakivi"@fi ,
-        "grès"@fr ,
-        "batupasir"@id ,
-        "arenaria"@it ,
-        "砂岩"@ja ,
-        "silaERk"@km ,
-        "사암"@ko ,
-        "¹ó­§¾¨"@lo ,
-        "batu pasir"@ms ,
-        "peschanik"@ru ,
-        "sandsten"@sv ,
-        "หินทราย"@th ,
-        "cát kết"@vi ,
-        "砂岩"@zh ;
+    skos:prefLabel "sandstone"@en ;
     schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
@@ -5306,24 +3112,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sapon"^^dt:AbbreviatedLabel ,
         "01.02.34"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Saponit"@de ,
-        "saponite"@en ,
-        "saponita"@es ,
-        "saponiitti"@fi ,
-        "Saponite"@fr ,
-        "saponit"@id ,
-        "saponite"@it ,
-        "サポ−ナイト"@ja ,
-        "sabU:nIt"@km ,
-        "사포나이트"@ko ,
-        "Á»È§ñ®Â²Ä­ª"@lo ,
-        "saponit"@ms ,
-        "Saponit"@ru ,
-        "saponit"@sv ,
-        "แร่แซฟโฟไนต์"@th ,
-        "saponit"@vi ,
-        "皂石"@zh ;
+    skos:prefLabel "saponite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Saponite"^^xsd:anyURI ;
 .
 
@@ -5351,24 +3140,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sapph"^^dt:AbbreviatedLabel ,
         "01.03.27"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Sapphirin"@de ,
-        "sapphirine"@en ,
-        "zafirina"@es ,
-        "safiriini"@fi ,
-        "Sapphirine"@fr ,
-        "safirin"@id ,
-        "saffirina"@it ,
-        "サフィリン"@ja ,
-        "saRhIn"@km ,
-        "사피린"@ko ,
-        "Á»È§ñ³³óìò­"@lo ,
-        "safirin"@ms ,
-        "Sapfirin"@ru ,
-        "sapphirin"@sv ,
-        "แร่แซฟพิรีน"@th ,
-        "saphirin"@vi ,
-        "假蓝宝石"@zh ;
+    skos:prefLabel "sapphirine"@en ;
     schema:citation "http://www.galleries.com/Sapphire"^^xsd:anyURI ;
 .
 
@@ -5382,24 +3154,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sc"^^dt:AbbreviatedLabel ,
         "02.01.31"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Scandium"@de ,
-        "scandium"@en ,
-        "escandio"@es ,
-        "skandium"@fi ,
-        "scandium"@fr ,
-        "skandium"@id ,
-        "scandio"@it ,
-        "スカンジウム"@ja ,
-        "EsándüÚm"@km ,
-        "스칸듐"@ko ,
-        "ê¾©¦½Á¡­©¼´"@lo ,
-        "skandium"@ms ,
-        "skandij"@ru ,
-        "skandium"@sv ,
-        "ธาตุสแคนเดียม"@th ,
-        "scandi"@vi ,
-        "钪"@zh ;
+    skos:prefLabel "scandium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Scandium"^^xsd:anyURI ;
 .
 
@@ -5414,24 +3169,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Scap"^^dt:AbbreviatedLabel ,
         "01.03.28"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Skapolith-Gruppe"@de ,
-        "scapolite"@en ,
-        "grupo escapolita"@es ,
-        "skapoliittiryhmä"@fi ,
-        "groupe scapolite"@fr ,
-        "kelompok skapolit"@id ,
-        "gruppo delle scapoliti"@it ,
-        "スカポライトグループ"@ja ,
-        "RkumsáabU:lIt"@km ,
-        "주석군"@ko ,
-        "Ï¸©Á»È¦½¡¾Â²Äìª"@lo ,
-        "kumpulan skapolit"@ms ,
-        "Gruppa skapolita"@ru ,
-        "skapolitgruppen"@sv ,
-        "กลุ่มสแค็ปโพไลต์"@th ,
-        "nhóm scapolit"@vi ,
-        "方柱石族"@zh ;
+    skos:prefLabel "scapolite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Scapolite"^^xsd:anyURI ;
 .
 
@@ -5445,24 +3183,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Se"^^dt:AbbreviatedLabel ,
         "02.03.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Selen"@de ,
-        "selenium"@en ,
-        "selenio"@es ,
-        "seleeni"@fi ,
-        "sélénium"@fr ,
-        "selenium"@id ,
-        "selenio"@it ,
-        "セレン(Se)"@ja ,
-        "eseLnIy:Um"@km ,
-        "셀렌"@ko ,
-        "ê¾© À§Àì­¼´"@lo ,
-        "selenium"@ms ,
-        "selen"@ru ,
-        "selen"@sv ,
-        "ธาตุเซเลเนียม"@th ,
-        "selen"@vi ,
-        "硒"@zh ;
+    skos:prefLabel "selenium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Selenium"^^xsd:anyURI ;
 .
 
@@ -5476,24 +3197,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sepio"^^dt:AbbreviatedLabel ,
         "01.02.10.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Sepiolith"@de ,
-        "sepiolite"@en ,
-        "sepiolita"@es ,
-        "sepioliitti"@fi ,
-        "Sépiolite"@fr ,
-        "sepiolit"@id ,
-        "sepiolite"@it ,
-        "セピオライト"@ja ,
-        "esBüÚlIt"@km ,
-        "해포석"@ko ,
-        "Á»ÈÀ§¯óÂºÄìª"@lo ,
-        "sepiolit"@ms ,
-        "Sepiolit"@ru ,
-        "sepiolit"@sv ,
-        "แร่เซพิโอไรต์"@th ,
-        "sepiolit"@vi ,
-        "海泡石"@zh ;
+    skos:prefLabel "sepiolite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Sepiolite"^^xsd:anyURI ;
 .
 
@@ -5522,24 +3226,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Serp"^^dt:AbbreviatedLabel ,
         "01.02.36"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Serpentinit"@de ,
-        "serpentine"@en ,
-        "serpentinita"@es ,
-        "serpentiniitti"@fi ,
-        "serpentinite"@fr ,
-        "serpentinit"@id ,
-        "serpentinite"@it ,
-        "蛇紋岩"@ja ,
-        "Esb:g;TInIt"@km ,
-        "사문암"@ko ,
-        "¹ó­Á§¡¯ñ¤êòÄ­ª"@lo ,
-        "serpentinit"@ms ,
-        "serpentinit"@ru ,
-        "serpentinsten"@sv ,
-        "หินเซอร์เพนทิไนต์"@th ,
-        "serpentinit"@vi ,
-        "蛇纹岩"@zh ;
+    skos:prefLabel "serpentine"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Serpentine_group"^^xsd:anyURI ;
 .
 
@@ -5580,24 +3267,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Si"^^dt:AbbreviatedLabel ,
         "02.02.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Silicium"@de ,
-        "silicon"@en ,
-        "silicio"@es ,
-        "pii"@fi ,
-        "silicium"@fr ,
-        "silikon"@id ,
-        "silicio"@it ,
-        "珪素"@ja ,
-        "suIlIkug"@km ,
-        "규소"@ko ,
-        "Á»È§óìò£º­"@lo ,
-        "silikon"@ms ,
-        "kremnij"@ru ,
-        "kisel"@sv ,
-        "ซิลิกอน"@th ,
-        "silic"@vi ,
-        "硅"@zh ;
+    skos:prefLabel "silicon"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Silicon"^^xsd:anyURI ;
 .
 
@@ -5612,24 +3282,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sill"^^dt:AbbreviatedLabel ,
         "01.02.01.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Sillimanit"@de ,
-        "sillimanite"@en ,
-        "sillimanita"@es ,
-        "sillimaniitti"@fi ,
-        "Sillimanite"@fr ,
-        "silimanit"@id ,
-        "sillimanite"@it ,
-        "珪線石"@ja ,
-        "suIlIma:nIt"@km ,
-        "규선석"@ko ,
-        "Á»È§óìò´¾Ä­ª"@lo ,
-        "silimanit"@ms ,
-        "Sillimanit"@ru ,
-        "sillimanit"@sv ,
-        "แร่ซิลิมาไนต์"@th ,
-        "silimanit"@vi ,
-        "硅线石"@zh ;
+    skos:prefLabel "sillimanite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/silver>
@@ -5643,24 +3296,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ag"^^dt:AbbreviatedLabel ,
         "02.01.02.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Silber"@de ,
-        "silver"@en ,
-        "plata"@es ,
-        "hopea"@fi ,
-        "argent"@fr ,
-        "perak"@id ,
-        "argento"@it ,
-        "銀"@ja ,
-        "R)ak;"@km ,
-        "은"@ko ,
-        "À¤ó­"@lo ,
-        "perak"@ms ,
-        "serebro"@ru ,
-        "silver"@sv ,
-        "เงิน"@th ,
-        "bạc"@vi ,
-        "银"@zh ;
+    skos:prefLabel "silver"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Silver"^^xsd:anyURI ;
 .
 
@@ -5688,14 +3324,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Slt"^^dt:AbbreviatedLabel ,
         "01.01.03.08"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Tonschiefer"@de ,
-        "slate"@en ,
-        "pizarra"@es ,
-        "saviliuskeet"@fi ,
-        "ardesia"@it ,
-        "slanets krovel'nyj"@ru ,
-        "skiffer"@sv ;
+    skos:prefLabel "slate"@en ;
     schema:citation "http://minerals.usgs.gov/minerals/pubs/commodity/stone_dimension/myb1-2007-stond.pdf"^^xsd:anyURI ;
 .
 
@@ -5728,24 +3357,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Natr"^^dt:AbbreviatedLabel ,
         "02.04.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Natriumkarbonat"@de ,
-        "soda ash"@en ,
-        "carbonato sódico"@es ,
-        "natriumkarbonaatti"@fi ,
-        "carbonate sodium"@fr ,
-        "natrium karbonat"@id ,
-        "carbonato di sodio"@it ,
-        "炭酸ナトリウム"@ja ,
-        "sUdüÚmkabUNat"@km ,
-        "탄산소다"@ko ,
-        "Â§©¼´£¾Â®À­©"@lo ,
-        "sodium karbonat"@ms ,
-        "natrij uglekislyj"@ru ,
-        "natriumkarbonat"@sv ,
-        "โซเดียมคาร์บอเนต"@th ,
-        "natri carbonat"@vi ,
-        "碳酸钠"@zh ;
+    skos:prefLabel "soda ash"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Soda_ash"^^xsd:anyURI ;
 .
 
@@ -5760,24 +3372,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sod"^^dt:AbbreviatedLabel ,
         "01.03.31"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Sodalith"@de ,
-        "sodalite"@en ,
-        "sodalita"@es ,
-        "sodaliitti"@fi ,
-        "Sodalite"@fr ,
-        "sodalit"@id ,
-        "sodalite"@it ,
-        "方ソーダ石"@ja ,
-        "sUdalIt"@km ,
-        "소달라이트"@ko ,
-        "Á»ÈÂ§©¾Äìª"@lo ,
-        "sodalit"@ms ,
-        "Sodalit"@ru ,
-        "sodalit"@sv ,
-        "แร่โซดาไลต์"@th ,
-        "sodalit"@vi ,
-        "方钠石"@zh ;
+    skos:prefLabel "sodalite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Sodalite"^^xsd:anyURI ;
 .
 
@@ -5797,24 +3392,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Spec"^^dt:AbbreviatedLabel ,
         "01.03.13.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Labradorit"@de ,
-        "spectrolite"@en ,
-        "labradorita"@es ,
-        "labradoriitti"@fi ,
-        "Labradorite"@fr ,
-        "labradorit"@id ,
-        "labradorite"@it ,
-        "ラブラドライト"@ja ,
-        "LaR)adUrIt"@km ,
-        "래브라도라이트"@ko ,
-        "Á»È-ì¾®-ë¾-Â©-Äëª"@lo ,
-        "labradorit"@ms ,
-        "Labrador"@ru ,
-        "labrador"@sv ,
-        "แร่แลบราโดไรต์"@th ,
-        "labradorit"@vi ,
-        "拉长岩"@zh ;
+    skos:prefLabel "spectrolite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Spectrolite"^^xsd:anyURI ;
 .
 
@@ -5829,24 +3407,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Spin"^^dt:AbbreviatedLabel ,
         "01.02.38"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Spinell"@de ,
-        "spinel"@en ,
-        "espinela"@es ,
-        "spinelli"@fi ,
-        "Spinelle"@fr ,
-        "spinel"@id ,
-        "spinello"@it ,
-        "スピネル"@ja ,
-        "s<IENl"@km ,
-        "첨정석"@ko ,
-        "Á»È¦½¯óÀ­ì"@lo ,
-        "spinel"@ms ,
-        "Shpinel'"@ru ,
-        "spinell"@sv ,
-        "สปิเนล"@th ,
-        "spinel"@vi ,
-        "尖晶石"@zh ;
+    skos:prefLabel "spinel"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Spinel"^^xsd:anyURI ;
 .
 
@@ -5874,24 +3435,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Spod"^^dt:AbbreviatedLabel ,
         "01.03.33"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Spodumen"@de ,
-        "spodumene"@en ,
-        "espodumena"@es ,
-        "spodumeeni"@fi ,
-        "Spodumène"@fr ,
-        "spodumen"@id ,
-        "spodumene"@it ,
-        "リシア輝石"@ja ,
-        "s<ÚdUEm:n"@km ,
-        "스포듀민"@ko ,
-        "Á»È¦½Â²©ø´ò­"@lo ,
-        "spodumen"@ms ,
-        "Spodumen"@ru ,
-        "spodumen"@sv ,
-        "แร่สโพดูมีน"@th ,
-        "spodumen"@vi ,
-        "锂辉石"@zh ;
+    skos:prefLabel "spodumene"@en ;
     schema:citation "http://www.galleries.com/Spodumene"^^xsd:anyURI ;
 .
 
@@ -5919,24 +3463,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Stau"^^dt:AbbreviatedLabel ,
         "01.02.39"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Staurolith"@de ,
-        "staurolite"@en ,
-        "estaurolita"@es ,
-        "stauroliitti"@fi ,
-        "Staurolite"@fr ,
-        "staurolit"@id ,
-        "staurolite"@it ,
-        "十字石"@ja ,
-        "sþÚrU:lIt"@km ,
-        "십자석"@ko ,
-        "Á»È¦½ÂªÂëÄìª"@lo ,
-        "staurolit"@ms ,
-        "Stavrolit"@ru ,
-        "staurolit"@sv ,
-        "แร่สตอโรไลต์"@th ,
-        "staurolit"@vi ,
-        "十字石"@zh ;
+    skos:prefLabel "staurolite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Staurolite"^^xsd:anyURI ;
 .
 
@@ -5950,24 +3477,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "SrCO3"^^dt:AbbreviatedLabel ,
         "01.02.40"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Strontianit"@de ,
-        "strontianite"@en ,
-        "estroncianita"@es ,
-        "strontianiitti"@fi ,
-        "Strontianite"@fr ,
-        "strontianit"@id ,
-        "stronzianite"@it ,
-        "ストロンチアン石"@ja ,
-        "RsþÚnTIGanIt"@km ,
-        "스트론티아나이트"@ko ,
-        "Á»È¦½ªëº®êóº¾Ä­ª"@lo ,
-        "strontianit"@ms ,
-        "Strontsianit"@ru ,
-        "strontianit"@sv ,
-        "แร่สตรอนทิอาไนต์"@th ,
-        "strontianit"@vi ,
-        "菱锶矿"@zh ;
+    skos:prefLabel "strontianite"@en ;
     schema:citation "http://www.minerals.net/mineral/strontianite.aspx,"^^xsd:anyURI ;
 .
 
@@ -5981,24 +3491,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sr"^^dt:AbbreviatedLabel ,
         "02.01.23"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Strontium"@de ,
-        "strontium"@en ,
-        "estroncio"@es ,
-        "strontium"@fi ,
-        "strontium"@fr ,
-        "strontium"@id ,
-        "stronzio"@it ,
-        "ストロンチウム"@ja ,
-        "RsþÚnTIdüÚm"@km ,
-        "스트론튬"@ko ,
-        "ê¾©¦½ª»º®ê¼´"@lo ,
-        "strontium"@ms ,
-        "strontsij"@ru ,
-        "strontium"@sv ,
-        "ธาตุสทรอนเธียม"@th ,
-        "stronti"@vi ,
-        "锶"@zh ;
+    skos:prefLabel "strontium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Strontium"^^xsd:anyURI ;
 .
 
@@ -6027,24 +3520,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sylv"^^dt:AbbreviatedLabel ,
         "01.02.15.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Sylvin"@de ,
-        "sylvite"@en ,
-        "silvita"@es ,
-        "sylviini"@fi ,
-        "Sylvite"@fr ,
-        "silvit"@id ,
-        "silvite"@it ,
-        "カリ岩塩"@ja ,
-        "suIlvIt"@km ,
-        "칼리암염"@ko ,
-        "Á»È§òìÄ¸ª"@lo ,
-        "silvit"@ms ,
-        "Sil'vin"@ru ,
-        "sylvin"@sv ,
-        "แร่ซิลไวต์"@th ,
-        "sylvit"@vi ,
-        "钾盐"@zh ;
+    skos:prefLabel "sylvite"@en ;
     schema:citation "http://www.galleries.com/Sylvite"^^xsd:anyURI ;
 .
 
@@ -6061,24 +3537,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Tlc"^^dt:AbbreviatedLabel ,
         "01.02.41"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Talk"@de ,
-        "talc"@en ,
-        "talco"@es ,
-        "talkki"@fi ,
-        "Talc"@fr ,
-        "talk"@id ,
-        "talco"@it ,
-        "滑石"@ja ,
-        "t½l"@km ,
-        "활석"@ko ,
-        "Á»Èêºì¡"@lo ,
-        "talkum"@ms ,
-        "Tal'k"@ru ,
-        "talk"@sv ,
-        "แร่ทัลก์"@th ,
-        "talc"@vi ,
-        "滑石"@zh ;
+    skos:prefLabel "talc"@en ;
     schema:citation "http://www.galleries.com/Talc"^^xsd:anyURI ;
 .
 
@@ -6093,24 +3552,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ta"^^dt:AbbreviatedLabel ,
         "02.01.24"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Tantal"@de ,
-        "tantalum"@en ,
-        "tántalo"@es ,
-        "tantaali"@fi ,
-        "tantale"@fr ,
-        "tantalum"@id ,
-        "tantalio"@it ,
-        "タンタル"@ja ,
-        "tg;talüÚm"@km ,
-        "탄탈"@ko ,
-        "ê¾©Áê­ê¾ìñ´"@lo ,
-        "tantalum"@ms ,
-        "tantal"@ru ,
-        "tantal"@sv ,
-        "แร่แทนทาลัม"@th ,
-        "tantal"@vi ,
-        "钽"@zh ;
+    skos:prefLabel "tantalum"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Tantalum"^^xsd:anyURI ;
 .
 
@@ -6154,14 +3596,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "TarS"^^dt:AbbreviatedLabel ,
         "01.01.05.03.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Oelsand"@de ,
-        "tar sand"@en ,
-        "arena bituminosa"@es ,
-        "öljyhiekat"@fi ,
-        "sabbia bituminosa"@it ,
-        "pesok neftenosnyj"@ru ,
-        "oljesand"@sv ;
+    skos:prefLabel "tar sand"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/tellurium>
@@ -6174,24 +3609,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Te"^^dt:AbbreviatedLabel ,
         "02.02.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Tellur"@de ,
-        "tellurium"@en ,
-        "teluro"@es ,
-        "telluuri"@fi ,
-        "tellure"@fr ,
-        "telurium"@id ,
-        "tellurio"@it ,
-        "テルル"@ja ,
-        "etlUrüÚm"@km ,
-        "텔루르"@ko ,
-        "ê¾©Àêììøë¼´"@lo ,
-        "tellurium"@ms ,
-        "tellur"@ru ,
-        "tellur"@sv ,
-        "ธาตุเทลูเรียม"@th ,
-        "telu"@vi ,
-        "碲"@zh ;
+    skos:prefLabel "tellurium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Tellurium"^^xsd:anyURI ;
 .
 
@@ -6205,24 +3623,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Tb"^^dt:AbbreviatedLabel ,
         "02.01.03.01.07"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Terbium"@de ,
-        "terbium"@en ,
-        "terbio"@es ,
-        "terbium"@fi ,
-        "terbium"@fr ,
-        "terbium"@id ,
-        "terbio"@it ,
-        "テルビウム"@ja ,
-        "ETbüÚm"@km ,
-        "테르븀"@ko ,
-        "ê¾©Àêó®¼´"@lo ,
-        "terbium"@ms ,
-        "terbij"@ru ,
-        "terbium"@sv ,
-        "ธาตุเทอร์เบียม"@th ,
-        "terbi"@vi ,
-        "铽"@zh ;
+    skos:prefLabel "terbium"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/terbium-iii-iv-oxide>
@@ -6248,24 +3649,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Tl"^^dt:AbbreviatedLabel ,
         "02.01.25"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Thallium"@de ,
-        "thallium"@en ,
-        "talio"@es ,
-        "tallium"@fi ,
-        "thallium"@fr ,
-        "talium"@id ,
-        "tallio"@it ,
-        "タリウム"@ja ,
-        "tallüÚm"@km ,
-        "탈륨"@ko ,
-        "ê¾©êñìì¼´"@lo ,
-        "talium"@ms ,
-        "tallij"@ru ,
-        "tallium"@sv ,
-        "ธาตุแทลเลียม"@th ,
-        "tali"@vi ,
-        "铊"@zh ;
+    skos:prefLabel "thallium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Thallium"^^xsd:anyURI ;
 .
 
@@ -6285,24 +3669,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Thern"^^dt:AbbreviatedLabel ,
         "01.02.42"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Thenardit"@de ,
-        "thenardite"@en ,
-        "thenardita"@es ,
-        "thenardiitti"@fi ,
-        "Thenardite"@fr ,
-        "tenardit"@id ,
-        "thenardite"@it ,
-        "ボウショウセキ"@ja ,
-        "etNaDIt"@km ,
-        "망초석"@ko ,
-        "Á»ÈÀê­¾¡Ä©ª"@lo ,
-        "tenardit"@ms ,
-        "Tenardit"@ru ,
-        "thenardit"@sv ,
-        "แร่เธนนาร์ไดต์"@th ,
-        "thenardit"@vi ,
-        "无水芒硝"@zh ;
+    skos:prefLabel "thenardite"@en ;
     schema:citation "http://www.galleries.com/Thenardite"^^xsd:anyURI ;
 .
 
@@ -6316,24 +3683,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Th"^^dt:AbbreviatedLabel ,
         "02.01.26"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Thorium"@de ,
-        "thorium"@en ,
-        "torio"@es ,
-        "torium"@fi ,
-        "thorium"@fr ,
-        "torium"@id ,
-        "torio"@it ,
-        "トリウム"@ja ,
-        "tUrüÚm"@km ,
-        "토륨"@ko ,
-        "ê¾©Âêë¼´"@lo ,
-        "torium"@ms ,
-        "torij"@ru ,
-        "torium"@sv ,
-        "ธาตุทอเรียม"@th ,
-        "tori"@vi ,
-        "钍"@zh ;
+    skos:prefLabel "thorium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Thorium"^^xsd:anyURI ;
 .
 
@@ -6360,24 +3710,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Tm"^^dt:AbbreviatedLabel ,
         "02.01.03.01.08"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Thulium"@de ,
-        "thulium"@en ,
-        "tulio"@es ,
-        "tulium"@fi ,
-        "thulium"@fr ,
-        "tulium"@id ,
-        "tulio"@it ,
-        "ツリウム"@ja ,
-        "TuylüÚm"@km ,
-        "툴륨"@ko ,
-        "ê¾©êøì¼´"@lo ,
-        "tulium"@ms ,
-        "tulij"@ru ,
-        "tulium"@sv ,
-        "ธาตุทูเลียม"@th ,
-        "tuli"@vi ,
-        "铥"@zh ;
+    skos:prefLabel "thulium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Thulium"^^xsd:anyURI ;
 .
 
@@ -6391,24 +3724,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sn"^^dt:AbbreviatedLabel ,
         "02.01.27"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Zinn"@de ,
-        "tin"@en ,
-        "estan=o"@es ,
-        "tina"@fi ,
-        "étain"@fr ,
-        "timah"@id ,
-        "stagno"@it ,
-        "錫"@ja ,
-        "sMN)a:haMg"@km ,
-        "주석"@ko ,
-        "ê¾©¡‰¸"@lo ,
-        "timah"@ms ,
-        "olovo"@ru ,
-        "tenn"@sv ,
-        "ดีบุก"@th ,
-        "thiếc"@vi ,
-        "锡"@zh ;
+    skos:prefLabel "tin"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Tin"^^xsd:anyURI ;
 .
 
@@ -6436,24 +3752,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Ti"^^dt:AbbreviatedLabel ,
         "02.01.04.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Titan"@de ,
-        "titanium"@en ,
-        "titanio"@es ,
-        "titaani"@fi ,
-        "titane"@fr ,
-        "titanium"@id ,
-        "titanio"@it ,
-        "チタン"@ja ,
-        "Titanj:Úm"@km ,
-        "티타늄"@ko ,
-        "ê¾©ÄêÀê­¼´"@lo ,
-        "titanium"@ms ,
-        "titan"@ru ,
-        "titan"@sv ,
-        "แร่ไททะไนต์"@th ,
-        "titan"@vi ,
-        "钛"@zh ;
+    skos:prefLabel "titanium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Titanium"^^xsd:anyURI ;
 .
 
@@ -6483,24 +3782,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Tpz"^^dt:AbbreviatedLabel ,
         "01.03.35"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Topas"@de ,
-        "topaz"@en ,
-        "topacio"@es ,
-        "topaasi"@fi ,
-        "Topaze"@fr ,
-        "topas"@id ,
-        "topazio"@it ,
-        "トパズ"@ja ,
-        "tU)a:s"@km ,
-        "황옥"@ko ,
-        "Á»ËÂêÁ²ñ¦"@lo ,
-        "topaz"@ms ,
-        "Topaz"@ru ,
-        "topas"@sv ,
-        "แร่โทแพซ"@th ,
-        "topaz"@vi ,
-        "黄晶"@zh ;
+    skos:prefLabel "topaz"@en ;
     schema:citation "http://www.galleries.com/Topaz"^^xsd:anyURI ;
 .
 
@@ -6514,24 +3796,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "To"^^dt:AbbreviatedLabel ,
         "01.03.36"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Turmalin"@de ,
-        "tourmaline"@en ,
-        "turmalina"@es ,
-        "turmaliini"@fi ,
-        "Tourmaline"@fr ,
-        "turmalin"@id ,
-        "tormalina"@it ,
-        "電気石"@ja ,
-        "TYma:lIn"@km ,
-        "전기석"@ko ,
-        "Á»Èê¸¡´¾ìò­"@lo ,
-        "turmalin"@ms ,
-        "Turmalin"@ru ,
-        "turmalin"@sv ,
-        "แร่ทัวร์มาลีน"@th ,
-        "tourmalin"@vi ,
-        "电气石"@zh ;
+    skos:prefLabel "tourmaline"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Tourmaline"^^xsd:anyURI ;
 .
 
@@ -6573,24 +3838,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "W"^^dt:AbbreviatedLabel ,
         "02.01.28"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Wolfram"@de ,
-        "tungsten"@en ,
-        "tungsteno"@es ,
-        "volframi"@fi ,
-        "tungstène"@fr ,
-        "tungsten"@id ,
-        "tungsteno"@it ,
-        "タングステン"@ja ,
-        "tg;Esþn"@km ,
-        "텅스텐"@ko ,
-        "ê¾©êñ¤¦½Àª­"@lo ,
-        "tungsten"@ms ,
-        "vol'fram"@ru ,
-        "volfram"@sv ,
-        "แร่ทังสเตน"@th ,
-        "wolfram"@vi ,
-        "钨"@zh ;
+    skos:prefLabel "tungsten"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Tungsten"^^xsd:anyURI ;
 .
 
@@ -6620,24 +3868,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Turq"^^dt:AbbreviatedLabel ,
         "01.03.37"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Tuerkis"@de ,
-        "turquoise"@en ,
-        "turquesa"@es ,
-        "turkoosi"@fi ,
-        "Turquoise"@fr ,
-        "turkois"@id ,
-        "turchese"@it ,
-        "トルコ石"@ja ,
-        "xniCTYrK½r"@km ,
-        "터키석"@ko ,
-        "Á»ÈÀêó£º¨¦"@lo ,
-        "batu firuz"@ms ,
-        "Biryuza"@ru ,
-        "turkos"@sv ,
-        "เทอร์คอยส์"@th ,
-        "ngọc lam"@vi ,
-        "绿宝石"@zh ;
+    skos:prefLabel "turquoise"@en ;
     schema:citation "http://www.galleries.com/Turquoise"^^xsd:anyURI ;
 .
 
@@ -6651,24 +3882,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "U"^^dt:AbbreviatedLabel ,
         "02.01.29"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Uran"@de ,
-        "uranium"@en ,
-        "uranio"@es ,
-        "uraani"@fi ,
-        "uranium"@fr ,
-        "uranium"@id ,
-        "uranio"@it ,
-        "ウラン"@ja ,
-        "G‘uyra:jÚ:m"@km ,
-        "우라늄"@ko ,
-        "ê¾©µøì¾­¼´"@lo ,
-        "uranium"@ms ,
-        "uran (ehlem)"@ru ,
-        "uran"@sv ,
-        "ธาตุยูเรเนียม"@th ,
-        "urani"@vi ,
-        "铀"@zh ;
+    skos:prefLabel "uranium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Uranium"^^xsd:anyURI ;
 .
 
@@ -6697,24 +3911,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "V"^^dt:AbbreviatedLabel ,
         "02.01.04.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Vanadium"@de ,
-        "vanadium"@en ,
-        "vanadio"@es ,
-        "vanadiini"@fi ,
-        "vanadium"@fr ,
-        "vanadium"@id ,
-        "vanadio"@it ,
-        "バナジウム"@ja ,
-        "va:NadüÚm"@km ,
-        "바나듐"@ko ,
-        "ê¾©¸¾­¾©¼´"@lo ,
-        "vanadium"@ms ,
-        "vanadij"@ru ,
-        "vanadin"@sv ,
-        "ธาตุวานาเดียม"@th ,
-        "vanadi"@vi ,
-        "钒"@zh ;
+    skos:prefLabel "vanadium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Vanadium"^^xsd:anyURI ;
 .
 
@@ -6742,24 +3939,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Varis"^^dt:AbbreviatedLabel ,
         "01.03.38"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Variscit"@de ,
-        "variscite"@en ,
-        "variscita"@es ,
-        "variskiitti"@fi ,
-        "Variscite"@fr ,
-        "varisit"@id ,
-        "variscite"@it ,
-        "バリシア石"@ja ,
-        "va:rIsuIt"@km ,
-        "바리사이트"@ko ,
-        "Á»È¸¾ëò¦Ä§ª"@lo ,
-        "varisit"@ms ,
-        "Varistsit"@ru ,
-        "variscit"@sv ,
-        "แร่วาริสไซต์"@th ,
-        "variscit"@vi ,
-        "磷铝石"@zh ;
+    skos:prefLabel "variscite"@en ;
     schema:citation "http://www.galleries.com/Variscite"^^xsd:anyURI ;
 .
 
@@ -6773,24 +3953,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Vrm"^^dt:AbbreviatedLabel ,
         "01.02.44"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Vermiculit"@de ,
-        "vermiculite"@en ,
-        "vermiculita"@es ,
-        "vermikuliitti"@fi ,
-        "Vermiculite"@fr ,
-        "vermikulit"@id ,
-        "vermiculite"@it ,
-        "バーミキュライト"@ja ,
-        "evImIKUlIt¬RkuménxniCdI\\dæmIka¦"@km ,
-        "질석"@ko ,
-        "Á»ÈÀ¸ó´ó£øÄìª"@lo ,
-        "vermikulit"@ms ,
-        "Vermikulit"@ru ,
-        "vermiculit"@sv ,
-        "แร่เวอร์มิคิวไลต์"@th ,
-        "vermiculit"@vi ,
-        "蛭石"@zh ;
+    skos:prefLabel "vermiculite"@en ;
     schema:citation "http://www.galleries.com/Vermiculite"^^xsd:anyURI ;
 .
 
@@ -6807,24 +3970,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Vesu"^^dt:AbbreviatedLabel ,
         "01.03.39"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Vesuvian"@de ,
-        "vesuvianite"@en ,
-        "vesuvianita"@es ,
-        "vesuvianiitti"@fi ,
-        "Vesuvianite"@fr ,
-        "vesuvianit"@id ,
-        "vesuviana"@it ,
-        "ベスブ石"@ja ,
-        "ess‘UvIGannIt"@km ,
-        "베수비아나이트"@ko ,
-        "Á»È¸ó§ø¸¼­Ä­ª"@lo ,
-        "vesuvianit"@ms ,
-        "Vezuvian"@ru ,
-        "vesuvian"@sv ,
-        "แร่วีซูเวียไนต์"@th ,
-        "vesuvianit"@vi ,
-        "火山石"@zh ;
+    skos:prefLabel "vesuvianite"@en ;
     schema:citation "http://www.galleries.com/Vesuvianite"^^xsd:anyURI ;
 .
 
@@ -6839,14 +3985,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "ClyR"^^dt:AbbreviatedLabel ,
         "01.02.10.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Porzellanton"@de ,
-        "white-firing clay"@en ,
-        "arcilla blanca"@es ,
-        "valkosavi"@fi ,
-        "argilla bianca"@it ,
-        "glina belaya"@ru ,
-        "vit lera"@sv ;
+    skos:prefLabel "white-firing clay"@en ;
     schema:citation "http://www.britannica.com/EBchecked/topic/642810/whiteware"^^xsd:anyURI ;
 .
 
@@ -6861,24 +4000,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Wol"^^dt:AbbreviatedLabel ,
         "01.02.45"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Wollastonit"@de ,
-        "wollastonite"@en ,
-        "wollastonita"@es ,
-        "wollastoniitti"@fi ,
-        "Wollastonite"@fr ,
-        "wolastonit"@id ,
-        "wollastonite"@it ,
-        "珪灰石"@ja ,
-        "vulLasÞÚnIt"@km ,
-        "규회석"@ko ,
-        "Á»úÂ¸ìñ©¦ÂêÄ­"@lo ,
-        "wolastonit"@ms ,
-        "Vollastonit"@ru ,
-        "wollastonit"@sv ,
-        "แร่โวลลาสโทไนต์"@th ,
-        "wolastonit"@vi ,
-        "硅灰石"@zh ;
+    skos:prefLabel "wollastonite"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Wollastonite"^^xsd:anyURI ;
 .
 
@@ -6907,24 +4029,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Yb"^^dt:AbbreviatedLabel ,
         "02.01.03.01.10"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Ytterbium"@de ,
-        "ytterbium"@en ,
-        "iterbio"@es ,
-        "ytterbium"@fi ,
-        "ytterbium"@fr ,
-        "yterbium"@id ,
-        "itterbio"@it ,
-        "イッテルビウム"@ja ,
-        "GuIetb‘ÍyUm"@km ,
-        "이테르븀"@ko ,
-        "ê¾©ºò©Àªó®¼´"@lo ,
-        "ytterbium"@ms ,
-        "itterbij"@ru ,
-        "ytterbium"@sv ,
-        "ธาตุอิตเทอร์เบียม"@th ,
-        "yterbi"@vi ,
-        "镱"@zh ;
+    skos:prefLabel "ytterbium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Ytterbium"^^xsd:anyURI ;
 .
 
@@ -6939,24 +4044,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Y"^^dt:AbbreviatedLabel ,
         "02.01.03.01.09"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Yttrium"@de ,
-        "yttrium"@en ,
-        "itrio"@es ,
-        "yttrium"@fi ,
-        "yttrium"@fr ,
-        "ytrium"@id ,
-        "ittrio"@it ,
-        "イットリウム"@ja ,
-        "GuIRTIyUm"@km ,
-        "이트륨"@ko ,
-        "ê¾©ºò©ªë¼´"@lo ,
-        "yttrium"@ms ,
-        "ittrij"@ru ,
-        "yttrium"@sv ,
-        "ธาตุอิตเทรียม"@th ,
-        "ytri"@vi ,
-        "钇"@zh ;
+    skos:prefLabel "yttrium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Yttrium"^^xsd:anyURI ;
 .
 
@@ -6999,24 +4087,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Zn"^^dt:AbbreviatedLabel ,
         "02.01.01.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Zink"@de ,
-        "zinc"@en ,
-        "cinc"@es ,
-        "sinkki"@fi ,
-        "zinc"@fr ,
-        "seng"@id ,
-        "zinco"@it ,
-        "亜鉛"@ja ,
-        "s½gásI"@km ,
-        "아연"@ko ,
-        "ê¾©¦ñ¤¡½¦ó"@lo ,
-        "zink"@ms ,
-        "tsink"@ru ,
-        "zink"@sv ,
-        "สังกะสี"@th ,
-        "kẽm"@vi ,
-        "锌"@zh ;
+    skos:prefLabel "zinc"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Zinc"^^xsd:anyURI ;
 .
 
@@ -7030,24 +4101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Zir"^^dt:AbbreviatedLabel ,
         "01.02.47"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Zirkon"@de ,
-        "zircon"@en ,
-        "circón"@es ,
-        "zirkoni"@fi ,
-        "Zircon"@fr ,
-        "zirkon"@id ,
-        "zircone"@it ,
-        "ジルコン"@ja ,
-        "Er:xniC b¤ hSWkug"@km ,
-        "지르콘"@ko ,
-        "Á»È§¼¡¡º­"@lo ,
-        "zirkon"@ms ,
-        "Tsirkon"@ru ,
-        "zirkon"@sv ,
-        "แร่เซอร์คอน"@th ,
-        "zircon"@vi ,
-        "锆石"@zh ;
+    skos:prefLabel "zircon"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Zircon"^^xsd:anyURI ;
 .
 
@@ -7090,24 +4144,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Zr"^^dt:AbbreviatedLabel ,
         "02.01.30"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Zirkonium"@de ,
-        "zirconium"@en ,
-        "circonio"@es ,
-        "zirkonium"@fi ,
-        "zirconium"@fr ,
-        "zirkonium"@id ,
-        "zirconio"@it ,
-        "ジルコニウム"@ja ,
-        "hSWkUnIjÚm"@km ,
-        "지르코늄"@ko ,
-        "ê¾©§¼¡¡º­­¼´"@lo ,
-        "zirkonium"@ms ,
-        "tsirkonij"@ru ,
-        "zirkonium"@sv ,
-        "ธาตุเซอร์โคเนียม"@th ,
-        "zirconi"@vi ,
-        "锆"@zh ;
+    skos:prefLabel "zirconium"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Zirconium"^^xsd:anyURI ;
 .
 
@@ -7170,24 +4207,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Pota"^^dt:AbbreviatedLabel ,
         "02.04.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kali"@de ,
-        "potash"@en ,
-        "potasa"@es ,
-        "potaska"@fi ,
-        "potasse"@fr ,
-        "potas"@id ,
-        "potassa"@it ,
-        "炭酸カリウム"@ja ,
-        "b:Utas"@km ,
-        "칼리"@ko ,
-        "À¡õºÂ¯ª¾¦"@lo ,
-        "potasy"@ms ,
-        "potash"@ru ,
-        "pottaska"@sv ,
-        "แร่โพแทช"@th ,
-        "kali carbonat"@vi ,
-        "碳酸钾"@zh ;
+    skos:prefLabel "potash"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Potash"^^xsd:anyURI ;
 .
 
@@ -7218,24 +4238,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Silc"^^dt:AbbreviatedLabel ,
         "01.02.37"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Siliciumdioxid-Gruppe"@de ,
-        "silica"@en ,
-        "grupo sílice"@es ,
-        "silikaattimineraalit"@fi ,
-        "groupe silice"@fr ,
-        "kelompok silika"@id ,
-        "gruppo dei minerali dei silice"@it ,
-        "シリカグループ"@ja ,
-        "RkumsuIlIkat"@km ,
-        "규산염군"@ko ,
-        "Ï¸©Á»È§óìó¡¾"@lo ,
-        "kumpulan silika"@ms ,
-        "Kremnezem"@ru ,
-        "kiseldioxidmineralen"@sv ,
-        "กลุ่มซิลิกา"@th ,
-        "nhóm silica"@vi ,
-        "硅酸盐族"@zh ;
+    skos:prefLabel "silica"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Silica"^^xsd:anyURI ;
 .
 
@@ -7256,24 +4259,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Agt"^^dt:AbbreviatedLabel ,
         "01.03.29.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Achat"@de ,
-        "agate"@en ,
-        "ágata"@es ,
-        "akaatti"@fi ,
-        "Agate"@fr ,
-        "akik"@id ,
-        "agata"@it ,
-        "瑪瑙"@ja ,
-        "GahÁat"@km ,
-        "마노"@ko ,
-        " Á¡É¸º¾-¡ñ©"@lo ,
-        "akik"@ms ,
-        "Agat"@ru ,
-        "agat"@sv ,
-        "อะเกต"@th ,
-        "agat"@vi ,
-        "玛瑙"@zh ;
+    skos:prefLabel "agate"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/asbestos>
@@ -7295,24 +4281,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Asb"^^dt:AbbreviatedLabel ,
         "01.02.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Asbest"@de ,
-        "asbestos"@en ,
-        "asbesto"@es ,
-        "asbesti"@fi ,
-        "Amiante"@fr ,
-        "asbes"@id ,
-        "amianto"@it ,
-        "アスベスト"@ja ,
-        "Gaes,stul"@km ,
-        "석면"@ko ,
-        " º¾-¦-À®-¦-Âª-¦"@lo ,
-        "asbestos"@ms ,
-        "asbest"@ru ,
-        "asbest"@sv ,
-        "แร่ใยหิน"@th ,
-        "asbest"@vi ,
-        "石棉"@zh ;
+    skos:prefLabel "asbestos"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Asbestos"^^xsd:anyURI ;
 .
 
@@ -7413,24 +4382,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "FeOr"^^dt:AbbreviatedLabel ,
         "01.01.02.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Eisenerz"@de ,
-        "iron ore"@en ,
-        "hierro sustancia"@es ,
-        "rautamalmit"@fi ,
-        "fer substance"@fr ,
-        "bijih besi"@id ,
-        "minerali di ferro"@it ,
-        "鉄鉱石"@ja ,
-        "Er:Edk"@km ,
-        "철광석"@ko ,
-        "Á»ÈÈ-ê¾©-À¹ìñ¡"@lo ,
-        "bijih besi"@ms ,
-        "ruda zheleznaya"@ru ,
-        "järnmalm"@sv ,
-        "สินแร่เหล็ก"@th ,
-        "quặng sắt"@vi ,
-        "铁矿石"@zh ;
+    skos:prefLabel "iron ore"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Iron_ore"^^xsd:anyURI ;
 .
 
@@ -7539,24 +4491,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Aggr"^^dt:AbbreviatedLabel ,
         "01.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Zuschlagstoff"@de ,
-        "aggregate"@en ,
-        "aridos"@es ,
-        "kiviaines"@fi ,
-        "granulat"@fr ,
-        "agregrat"@id ,
-        "aggregato"@it ,
-        "骨材"@ja ,
-        "karRbmUlpþúM"@km ,
-        "골재"@ko ,
-        " ´¸­ì¸´, ¹ó­£ö®"@lo ,
-        "batu baur"@ms ,
-        "agregat"@ru ,
-        "aggregat"@sv ,
-        "มวลรวม"@th ,
-        "cốt liệu"@vi ,
-        "团块"@zh ;
+    skos:prefLabel "aggregate"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Construction_aggregate"^^xsd:anyURI ;
 .
 
@@ -7575,24 +4510,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Chlce"^^dt:AbbreviatedLabel ,
         "01.03.29.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Chalcedon"@de ,
-        "chalcedony"@en ,
-        "calcedonia"@es ,
-        "kalsedoni"@fi ,
-        "Calcédoine"@fr ,
-        "kalsedon"@id ,
-        "calcedonio"@it ,
-        "玉髄"@ja ,
-        "kal;esdUnI"@km ,
-        "옥수"@ko ,
-        " £¾-ì-À§-Â©­ó"@lo ,
-        "kalsedoni"@ms ,
-        "Khaltsedon"@ru ,
-        "kalcedon"@sv ,
-        "แคลซีโดนี"@th ,
-        "chalcedony"@vi ,
-        "玉髓"@zh ;
+    skos:prefLabel "chalcedony"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Chalcedony"^^xsd:anyURI ;
 .
 
@@ -7613,25 +4531,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Coal"^^dt:AbbreviatedLabel ,
         "01.01.05.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kohle"@de ,
-        "coal"@en ,
-        "carbón"@es ,
-        "kivihiili"@fi ,
-        "charbon"@fr ,
-        "batubara"@id ,
-        "carbone"@it ,
-        "石炭"@ja ,
-        "Er:FüÚgfµ"@km ,
-        "석탄"@ko ,
-        "«ú¾­¹ó­"@lo ,
-        "batu arang"@ms ,
-        "steenkool"@nl ,
-        "ugol'"@ru ,
-        "stenkol"@sv ,
-        "ถ่านหิน"@th ,
-        "than khoáng"@vi ,
-        "煤"@zh ;
+    skos:prefLabel "coal"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Coal"^^xsd:anyURI ;
 .
 
@@ -7704,25 +4604,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "CHgas"^^dt:AbbreviatedLabel ,
         "01.01.05.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Erdgas"@de ,
-        "gaseous hydrocarbons"@en ,
-        "gas natural"@es ,
-        "maakaasu"@fi ,
-        "gaz naturel"@fr ,
-        "gas alam"@id ,
-        "gas naturale"@it ,
-        "天然ガス"@ja ,
-        "]sµ½nFmµCati"@km ,
-        "천연가스"@ko ,
-        "Á¡ñ¦ê¿´½§¾©"@lo ,
-        "gas asli"@ms ,
-        "aardgas"@nl ,
-        "gaz prirodnyj"@ru ,
-        "naturgas"@sv ,
-        "แก๊สธรรมชาติ"@th ,
-        "khí tự nhiên"@vi ,
-        "天然气"@zh ;
+    skos:prefLabel "gaseous hydrocarbons"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Natural_gas"^^xsd:anyURI ;
 .
 
@@ -7740,14 +4622,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "PrMe"^^dt:AbbreviatedLabel ,
         "02.01.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Edelmetall"@de ,
-        "precious metal"@en ,
-        "metal precioso"@es ,
-        "jalometallit"@fi ,
-        "metallo prezioso"@it ,
-        "metall blagorodnyj"@ru ,
-        "ädelmetall"@sv ;
+    skos:prefLabel "precious metal"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Precious_metal"^^xsd:anyURI ;
 .
 
@@ -7786,24 +4661,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "And"^^dt:AbbreviatedLabel ,
         "01.02.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Alumosilikat"@de ,
-        "aluminosilicate"@en ,
-        "aluminosilicato"@es ,
-        "alumiinisilikaatit"@fi ,
-        "aluminosilicate"@fr ,
-        "aluminium silikat"@id ,
-        "allumosilicato"@it ,
-        "アルミノ珪酸塩"@ja ,
-        "GaluymINUsIulIkat"@km ,
-        "알루미늄규산염"@ko ,
-        " ¹´¸©Á»Èº¾-ìø-´óó-Â­-§ó-ìò-À¡©"@lo ,
-        "aluminosilikat"@ms ,
-        "Alyumosilikaty"@ru ,
-        "aluminiumsilikat"@sv ,
-        "อะลูมิโนซิลิเกต"@th ,
-        "aluminosilicat"@vi ,
-        "铝硅酸盐"@zh ;
+    skos:prefLabel "aluminosilicate"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Aluminosilicate"^^xsd:anyURI ;
 .
 
@@ -7822,24 +4680,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Brl"^^dt:AbbreviatedLabel ,
         "01.03.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Beryll"@de ,
-        "beryl"@en ,
-        "berilo"@es ,
-        "berylli"@fi ,
-        "Béryl"@fr ,
-        "beril"@id ,
-        "berillo"@it ,
-        "緑柱石"@ja ,
-        "xniCebrIs"@km ,
-        "녹주석"@ko ,
-        "À®ëóì"@lo ,
-        "beril"@ms ,
-        "Berill"@ru ,
-        "beryll"@sv ,
-        "แร่เบริล"@th ,
-        "beryl"@vi ,
-        "绿柱石"@zh ;
+    skos:prefLabel "beryl"@en ;
     schema:citation "http://www.galleries.com/Beryl"^^xsd:anyURI ;
 .
 
@@ -7877,24 +4718,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "OrgM"^^dt:AbbreviatedLabel ,
         "01.01.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "organische Substanz"@de ,
-        "organic material"@en ,
-        "materia orgánica"@es ,
-        "orgaaniset aineet"@fi ,
-        "matière organique"@fr ,
-        "material organik"@id ,
-        "materia organica"@it ,
-        "有機物質"@ja ,
-        "vtßúsrIragÁ"@km ,
-        "유기물"@ko ,
-        "¸ñ©«÷§ó¸½²¾®"@lo ,
-        "bahan organik"@ms ,
-        "veshchestvo organicheskoe"@ru ,
-        "organiskt material"@sv ,
-        "อินทรีย์วัสดุ"@th ,
-        "chất hữu cơ"@vi ,
-        "有机原料"@zh ;
+    skos:prefLabel "organic material"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Organic_matter"^^xsd:anyURI ;
 .
 
@@ -7954,24 +4778,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Sand"^^dt:AbbreviatedLabel ,
         "01.01.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Sand"@de ,
-        "sand"@en ,
-        "arena"@es ,
-        "hiekka"@fi ,
-        "sable"@fr ,
-        "pasir"@id ,
-        "sabbia"@it ,
-        "砂"@ja ,
-        "xSac;"@km ,
-        "모래"@ko ,
-        "§¾¨"@lo ,
-        "pasir"@ms ,
-        "pesok"@ru ,
-        "sand"@sv ,
-        "ทราย"@th ,
-        "cát"@vi ,
-        "砂"@zh ;
+    skos:prefLabel "sand"@en ;
     schema:citation "http://www.sand.org/What-is-Industrial-Sand"^^xsd:anyURI ;
 .
 
@@ -7991,14 +4798,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "BM"^^dt:AbbreviatedLabel ,
         "02.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Basismetall"@de ,
-        "base metal"@en ,
-        "metal base"@es ,
-        "perusmetallit"@fi ,
-        "metallo base"@it ,
-        "metall tsvetnoj"@ru ,
-        "basmetall"@sv ;
+    skos:prefLabel "base metal"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Base_metal"^^xsd:anyURI ;
 .
 
@@ -8042,24 +4842,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Evap"^^dt:AbbreviatedLabel ,
         "01.02.15"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Evaporit"@de ,
-        "evaporite"@en ,
-        "evaporita"@es ,
-        "evaporiitit"@fi ,
-        "évaporite"@fr ,
-        "evaporit"@id ,
-        "evaporite"@it ,
-        "蒸発岩"@ja ,
-        "GIuEv:bPUrIt"@km ,
-        "증발암"@ko ,
-        "Àº¸¾Â¯Äëª¹ó­À¡õºì½À¹ó¨"@lo ,
-        "evaporit"@ms ,
-        "ehvaporit"@ru ,
-        "evaporit"@sv ,
-        "หินเกลือระเหย"@th ,
-        "evaporit"@vi ,
-        "蒸发岩"@zh ;
+    skos:prefLabel "evaporite"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/ferrous-metal>
@@ -8102,24 +4885,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Cly"^^dt:AbbreviatedLabel ,
         "01.02.10"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Ton"@de ,
-        "clay"@en ,
-        "arcilla"@es ,
-        "savi"@fi ,
-        "argile"@fr ,
-        "lempung"@id ,
-        "argilla"@it ,
-        "粘土"@ja ,
-        "dI\\dæ"@km ,
-        "점토"@ko ,
-        " ©ò­-¹­¼¸"@lo ,
-        "tanah liat"@ms ,
-        "glina"@ru ,
-        "lera"@sv ,
-        "ดิน"@th ,
-        "sét"@vi ,
-        "粘土"@zh ;
+    skos:prefLabel "clay"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Clay"^^xsd:anyURI ;
 .
 
@@ -8182,14 +4948,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Mtlld"^^dt:AbbreviatedLabel ,
         "2.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Metalloid"@de ,
-        "metalloid"@en ,
-        "metaloide"@es ,
-        "metalloidi"@fi ,
-        "metalloide"@it ,
-        "metalloid"@ru ,
-        "metalloid"@sv ;
+    skos:prefLabel "metalloid"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Metalloid"^^xsd:anyURI ;
 .
 
@@ -8231,14 +4990,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "PGM"^^dt:AbbreviatedLabel ,
         "02.01.02.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Platinumgruppenelement"@de ,
-        "platinum group metal"@en ,
-        "mineral grupo platino"@es ,
-        "platinaryhmä"@fi ,
-        "gruppo del platino"@it ,
-        "platinoidy"@ru ,
-        "platinametallerna"@sv ;
+    skos:prefLabel "platinum group metal"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Platinum_group_metal"^^xsd:anyURI ;
 .
 
@@ -8392,14 +5144,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "Metal"^^dt:AbbreviatedLabel ,
         "02.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Metall"@de ,
-        "metal"@en ,
-        "elemento metálico"@es ,
-        "metallit"@fi ,
-        "elemento metallico"@it ,
-        "metall"@ru ,
-        "metall"@sv ;
+    skos:prefLabel "metal"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/commodity-code/gemstones>
@@ -8457,25 +5202,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "GemSt"^^dt:AbbreviatedLabel ,
         "1.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Schmuckstein"@de ,
-        "gemstone"@en ,
-        "gema"@es ,
-        "jalokivet"@fi ,
-        "gemme"@fr ,
-        "batu mulia"@id ,
-        "gemma"@it ,
-        "宝石"@ja ,
-        "t,Úgfµ"@km ,
-        "보석"@ko ,
-        "Á¡É¸¯½À¦ó©"@lo ,
-        "permata"@ms ,
-        "edelsteen"@nl ,
-        "kamen' dragotsennyj"@ru ,
-        "ädelsten"@sv ,
-        "อัญมณี"@th ,
-        "đá ngọc"@vi ,
-        "宝石"@zh ;
+    skos:prefLabel "gemstone"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Gemstone"^^xsd:anyURI ;
 .
 
@@ -8538,34 +5265,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation
         "IndMi"^^dt:AbbreviatedLabel ,
         "1.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Steine-Erden-Industrieminerale"@de ,
-        "industrial mineral"@en ,
-        "sustancia útil"@es ,
-        "teollisuusmineraalit"@fi ,
-        "substance utile"@fr ,
-        "mineral industri"@id ,
-        "sostanza utile"@it ,
-        "工業原料鉱物"@ja ,
-        "Er:]sSahkmµ"@km ,
-        "산업용 광물"@ko ,
-        "Á»È-ê¾©-º÷©-¦¾-¹½-¡¿"@lo ,
-        "mineral industri"@ms ,
-        "minerale grondstoffen voor"@nl ,
-        "syr'e nemetallicheskoe"@ru ,
-        "industrimineral"@sv ,
-        "แร่อุตสาหกรรม"@th ,
-        "khoáng chất công nghiệp"@vi ,
-        "工业矿物"@zh ;
+    skos:prefLabel "industrial mineral"@en ;
 .
 
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2016-07-18 OLR - Reformat SKOS for migration to new vocabulary server. No changes to concepts."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Simple definition for silica added as missing."@en ,
+        "2016-07-18 OLR: - Reformat SKOS for migration to new vocabulary server. No changes to concepts."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Simple definition for silica added as missing."@en ,
         "2020-06-26 NJC tidied some definitions with random characters at the end."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This scheme defines concepts to specify the commodity property (eg copper, gold, dimension stone) in commodity descriptions associated with Earth Resource features. The commodity terms should be compatible with the endUsePotential categories associated with a MineralOccurrence (the concrete class that implements EarthResource). The ERML model states that the commodity term vocabulary should be hierarchical, to handle the group that the commodity belongs to (eg, base metal, precious metal, industrial mineral, energy). By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016.01 version of the CGI Commodity Code vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_from_XLS_2016.02.xslt."@en ;
     skos:hasTopConcept
@@ -8574,7 +5284,8 @@ cs:
     skos:historyNote "The EarthResourceML standard"@en ;
     skos:prefLabel "Commodity Code"@en ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    schema:creator "CGI Geoscience Terminology Working Group. Vocabulary shepherd: Rachel Heaven/Tim McCormick." ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
     schema:dateCreated "2016-01-18"^^xsd:date ;
     schema:dateModified "2020-06-26"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/cgi-gtwg> ;
 .

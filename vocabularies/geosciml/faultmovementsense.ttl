@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment> ,
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral> ,
@@ -30,24 +30,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel "détachement"@fr ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal> ;
     skos:definition "A regional-scale low-angle normal fault."@en ;
     skos:historyNote "GGIC vocabularies working group (Australia)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel
-        "detachment"@en ,
-        "détachement"@fr ;
+    skos:prefLabel "detachment"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/generic_decollement>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel "decollement"@fr ;
     skos:definition "A large-displacement (kilometers or tens of kilometers) shallowly dipping to subhorizontal fault or shear zone."@en ;
     skos:historyNote "Neuendorf et al. 2005"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel
-        "generic decollement"@en ,
-        "decollement"@fr ;
+    skos:prefLabel "generic decollement"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -74,25 +72,23 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel "décrochement"@fr ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse> ;
     skos:definition "Reverse fault with dip typically less than 45 degrees, horizontal compression, rather than vertical displacement is characteristic."@en ;
     skos:historyNote "GGIC vocabularies working group (Australia)"@en ;
     skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust_decollement> ;
-    skos:prefLabel
-        "thrust"@en ,
-        "décrochement"@fr ;
+    skos:prefLabel "thrust"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel "dextre"@fr ;
     skos:definition "Right-lateral separation sense, in plan view, the side opposite the observer appears displaced to the right.,"@en ;
     skos:historyNote "GGIC vocabularies working group (Australia)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel
-        "dextral"@en ,
-        "dextre"@fr ;
+    skos:prefLabel "dextral"@en ;
     skos:related
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral> ,
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral> ;
@@ -181,13 +177,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel "inverse"@fr ;
     skos:definition "The hanging wall appears to have moved down relative to the footwall, dip of fault usually greater than 45 degrees."@en ;
     skos:historyNote "GGIC vocabularies working group (Australia)"@en ;
     skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust> ;
-    skos:prefLabel
-        "reverse"@en ,
-        "inverse"@fr ;
+    skos:prefLabel "reverse"@en ;
     skos:related
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral> ,
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral> ;
@@ -205,8 +200,9 @@ cs:
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
         "2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ,
         "2013-02-04 SMR Check update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions."@en ,
-        "2016-10-18 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes to terms from the previous 2012 version."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+        "2016-10-18 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes to terms from the previous 2012 version."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This scheme specifies concepts used to describe the relative direction of movement of bodies of rock across a fault (GeoSciML ShearDisplacementStructure) surface, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Examples include 'sinistral', 'dextral', 'normal', 'reverse'. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the movementSense property in GeoSciML DisplacementValue elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Fault Movement Sense vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept

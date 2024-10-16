@@ -7,10 +7,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling> ,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/air_core> ,
@@ -238,14 +238,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/piston_core>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel "pistongkärna"@sv ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push> ;
     skos:definition "A drilling method that uses a piston to drive the core barrel. Produces high quality long cores."@en ;
     skos:historyNote "This vocabulary"@en ;
     skos:inScheme cs: ;
     skos:notation "4.2.6"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "piston core"@en ,
-        "pistongkärna"@sv ;
+    skos:prefLabel "piston core"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/power_auger>
@@ -386,6 +385,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "Messgeraet"@de ,
+        "sonda"@es ,
+        "proobi"@fi ,
+        "sonda"@it ,
+        "zond"@ru ,
+        "sond"@sv ;
     skos:definition "An object (eg, penetrometer) inserted into the substrate that records material properties without taking physical samples."@en ;
     skos:historyNote "This vocabulary"@en ;
     skos:inScheme cs: ;
@@ -393,14 +399,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe> ,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackintosh_probe> ;
     skos:notation "9"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Messgeraet"@de ,
-        "probe"@en ,
-        "sonda"@es ,
-        "proobi"@fi ,
-        "sonda"@it ,
-        "zond"@ru ,
-        "sond"@sv ;
+    skos:prefLabel "probe"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -435,6 +434,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "Kernbohrung"@de ,
+        "sondeo testigo"@es ,
+        "sydänkairaus"@fi ,
+        "carotaggio"@it ,
+        "burenie kolonkovoe"@ru ,
+        "kärnborrning"@sv ;
     skos:definition "A core of sediment, soil, or rock is derived by an unspecified core drilling method."@en ;
     skos:historyNote "This vocabulary"@en ;
     skos:inScheme cs: ;
@@ -443,14 +449,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push> ,
         <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore> ;
     skos:notation "4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kernbohrung"@de ,
-        "core drilling"@en ,
-        "sondeo testigo"@es ,
-        "sydänkairaus"@fi ,
-        "carotaggio"@it ,
-        "burenie kolonkovoe"@ru ,
-        "kärnborrning"@sv ;
+    skos:prefLabel "core drilling"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -493,8 +492,9 @@ cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2018-08-03 SMR remove spurious space character at end of URI for cone_penetrometer_test_probe."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ,
         "Amended SKOS for migration to new vocabulary repository, 11-MAY-2016"@en ,
         "Corrected error in \"broader\" values for hand auger, power auger, sonic core. 2-JUN-2016"@en ,
         "Original SKOS implementation, 03-FEB-2016"@en ;

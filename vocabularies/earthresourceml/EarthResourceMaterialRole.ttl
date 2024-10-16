@@ -7,10 +7,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:historyNote "The original vocabulary - all its concepts"@en ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/alteration-product> ,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/gangue> ,
@@ -44,24 +44,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Glossary of Geology. 5th Edition, AGI - online"@en ;
     skos:inScheme cs: ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Gangart"@de ,
-        "gangue"@en ,
-        "ganga"@es ,
-        "harme"@fi ,
-        "gangue"@fr ,
-        "tak bernilai"@id ,
-        "ganga"@it ,
-        "脈石"@ja ,
-        "silaEhÁg"@km ,
-        "맥석"@ko ,
-        "¡¾¡Á»È"@lo ,
-        "gangue"@ms ,
-        "poroda pustaya"@ru ,
-        "gångart"@sv ,
-        "แร่กาก"@th ,
-        "đá mạch"@vi ,
-        "脉石"@zh ;
+    skos:prefLabel "gangue"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -72,14 +55,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Glossary of Geology. 5th Edition, AGI - online"@en ;
     skos:inScheme cs: ;
     skos:notation "03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Wirtsgestein"@de ,
-        "host rock"@en ,
-        "roca hue!sped"@es ,
-        "isäntäkivet"@fi ,
-        "roccia ospite"@it ,
-        "poroda vmeshchayushchaya"@ru ,
-        "värdbergart"@sv ;
+    skos:prefLabel "host rock"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -90,16 +66,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Glossary of Geology. 5th Edition, AGI - online"@en ;
     skos:inScheme cs: ;
     skos:notation "05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Erzrohstoff"@de ,
-        "ore"@en ,
-        "mena"@es ,
-        "malmi"@fi ,
-        "minerai"@fr ,
-        "giacimento minerario"@it ,
-        "erts"@nl ,
-        "ruda"@ru ,
-        "malm"@sv ;
+    skos:prefLabel "ore"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -133,14 +100,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Glossary of Geology. 5th Edition, AGI - online"@en ;
     skos:inScheme cs: ;
     skos:notation "04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Nebengestein"@de ,
-        "wall rock"@en ,
-        "hastial"@es ,
-        "malmin sivukivet"@fi ,
-        "salbanda"@it ,
-        "poroda bokovaya"@ru ,
-        "sidoberg"@sv ;
+    skos:prefLabel "wall rock"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -148,9 +108,10 @@ cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2014-03-19 SMR - SKOS generated from Excel workbook using GSML_SKOS_fromXLS_2014.xslt"@en ,
-        "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2016-11-28 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ,
         "Original SKOS implementation, based on 2013-06 approved vocabulary from GTWG face to face in St. Petersburg, Russia"@en ;
     skos:definition "This file contains the CGI Earth Resource Material Role vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. This scheme describes concepts used to specify the relationship of Earth materials to a resource occurrence. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Earth Resource Material Role vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;

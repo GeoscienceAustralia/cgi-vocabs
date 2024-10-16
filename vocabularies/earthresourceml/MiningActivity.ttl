@@ -7,11 +7,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity>
     a skos:Collection ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:changeNote "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:historyNote "The original vocabulary - all its concepts"@en ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining> ,
         <http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining> ,
@@ -54,24 +54,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Glossary of Geology. 5th Edition, AGI - online, adapted from chemical mining and enhanced oil recovery"@en ;
     skos:inScheme cs: ;
     skos:notation "02.02.01."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Laugungsbergbau"@de ,
-        "in-situ recovery"@en ,
-        "explotación por disolución"@es ,
-        "liuotuslouhinta"@fi ,
-        "exploitation par dissolution"@fr ,
-        "penambangan larutan"@id ,
-        "sfruttamento per dissoluzione"@it ,
-        "溶解採掘法"@ja ,
-        "karcMraj;Er:edayviFIsUluysüúg"@km ,
-        "용액체굴"@ko ,
-        "¡¾­¢÷©£í­Á»ÈÂ©¨¡¾­Ã§É¦¾­ì½ì¾¨"@lo ,
-        "perlombongan larutan"@ms ,
-        "dobycha vyshchelachivaniem"@ru ,
-        "lakningsbrytning"@sv ,
-        "การทำเหมืองโดยใช้สารละลาย"@th ,
-        "khai mỏ bằng phương pháp hoà tan"@vi ,
-        "溶解法开采"@zh ;
+    skos:prefLabel "in-situ recovery"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/quarrying>
@@ -122,24 +105,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Dictionary of Mining, Mineral and Related Terms, 1st edition"@en ;
     skos:inScheme cs: ;
     skos:notation "02.01."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "unterirdische Gewinnung"@de ,
-        "underground mining"@en ,
-        "minería subterránea"@es ,
-        "maanalainen louhinta"@fi ,
-        "mine souterraine"@fr ,
-        "penambangan bawah tanah"@id ,
-        "coltivazione in sottosuolo"@it ,
-        "抗内採掘"@ja ,
-        "GaCIvkmµEr:eRkamdI"@km ,
-        "갱내채광"@ko ,
-        "¡¾­¢÷©£í­Á»úÃªÉ©ò­"@lo ,
-        "perlombongan bawah tanah"@ms ,
-        "vyrabotka podzemnaya"@ru ,
-        "underjordsbrytning"@sv ,
-        "เหมืองใต้ดิน"@th ,
-        "khai thác ngầm"@vi ,
-        "地下开采"@zh ;
+    skos:prefLabel "underground mining"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining>
@@ -182,24 +148,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/mining-activity/quarrying> ;
     skos:notation "01.03."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Tagebau"@de ,
-        "open-pit mining"@en ,
-        "cielo abierto"@es ,
-        "avolouhinta"@fi ,
-        "ciel ouvert"@fr ,
-        "penambangan terbuka"@id ,
-        "miniera a cielo aperto"@it ,
-        "露天採掘"@ja ,
-        "GNþÚgEr:ebIk"@km ,
-        "노천채굴"@ko ,
-        "¡¾­¢÷©£í­Á®®®ÒÀ¯ò©"@lo ,
-        "lombong lelubang terbuka"@ms ,
-        "razrabotka otkrytaya"@ru ,
-        "dagbrott"@sv ,
-        "เหมืองเปิด"@th ,
-        "khai mỏ lộ thiên"@vi ,
-        "露天采矿"@zh ;
+    skos:prefLabel "open-pit mining"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging>
@@ -277,11 +226,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2014-02-23 SMR Original conversion to SKOS."@en ,
-        "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en ,
-        "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2014-02-23 SMR: Original conversion to SKOS."@en ,
+        "2015-01-08 OLR: Edits to fix typos and remove '201401' from rdf file name."@en ,
+        "2016-11-29 OLR: Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This file contains the CGI Mining Activity vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to categorize the type of mining activity (eg Open Cut, Underground Mine, multiple, unspecified) or processing activity (eg Ore Processing) or production. Using activity to distinguish between the extraction, processing and production activities allows distinguishing between ore mined/grade/recovery, ore treated/grade/recovery and produced payable/plant recovery. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Mining Activity vocabulary. Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet; adopted 9/01/2014; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept

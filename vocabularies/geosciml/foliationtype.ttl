@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/foliationtype/anastomosing_spaced_cleavage> ,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_fabric> ,
@@ -141,18 +141,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/foliationtype/cumulate_layering>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_layering> ;
-    skos:definition "Layering in igneous rocks in which layers are characterized by variation in relative proportion of magmatically crystallized minerals. Typically a pattern of mineralogical variation will be repeated many times in a vertical section with layers of relatively consistent thickness. See photos in Best [1982] p. 176-177. Gravity-stratified layers typically have mafic minerals at the base and plagioclase at the top and are interpreted to form by crystal settling in magma."@en ;
-    skos:historyNote "Carmichael et al 1974, Best 1982"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Kumulatgestein"@de ,
-        "cumulate layering"@en ,
         "acumulado"@es ,
         "kumulaatit"@fi ,
         "cumulato"@it ,
         "kumulat"@ru ,
         "kumulat"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_layering> ;
+    skos:definition "Layering in igneous rocks in which layers are characterized by variation in relative proportion of magmatically crystallized minerals. Typically a pattern of mineralogical variation will be repeated many times in a vertical section with layers of relatively consistent thickness. See photos in Best [1982] p. 176-177. Gravity-stratified layers typically have mafic minerals at the base and plagioclase at the top and are interpreted to form by crystal settling in magma."@en ;
+    skos:historyNote "Carmichael et al 1974, Best 1982"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "cumulate layering"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/discrete_cleavage>
@@ -228,18 +228,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/foliationtype/gneissic_layering>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> ;
-    skos:definition "Compositional layering in a metamorphic rock, syn. gneissic banding"@en ;
-    skos:historyNote "this vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Gneis-Gefuege"@de ,
-        "gneissic layering"@en ,
         "estructura gneísica"@es ,
         "gneissimäinen rakenne"@fi ,
         "tessitura gneissica"@it ,
         "gnejsovyj"@ru ,
         "gnejsig textur"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> ;
+    skos:definition "Compositional layering in a metamorphic rock, syn. gneissic banding"@en ;
+    skos:historyNote "this vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "gneissic layering"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_flow_foliation>
@@ -315,18 +315,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/foliationtype/mylonite_foliation>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/generic_mylonitic_foliation> ;
-    skos:definition "Generic mylonitic foliation in which 50-90 percent of rock is matrix due to tectonic grain size reduction processes. Planar fabric is very apparent due to flattening of mineral grains, development of shear surfaces, and alignment of tabular mineral grains. Lineation is typically present and easily observed."@en ;
-    skos:historyNote "SLTTm 2004, Sibson 1977"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Mylonit"@de ,
-        "mylonite foliation"@en ,
         "milonita"@es ,
         "myloniitit"@fi ,
         "milonite"@it ,
         "milonit"@ru ,
         "mylonit"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/generic_mylonitic_foliation> ;
+    skos:definition "Generic mylonitic foliation in which 50-90 percent of rock is matrix due to tectonic grain size reduction processes. Planar fabric is very apparent due to flattening of mineral grains, development of shear surfaces, and alignment of tabular mineral grains. Lineation is typically present and easily observed."@en ;
+    skos:historyNote "SLTTm 2004, Sibson 1977"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "mylonite foliation"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/parallel_bedding>
@@ -412,13 +412,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/foliationtype/slaty_cleavage>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/continuous_cleavage> ;
-    skos:definition "Continuous cleavage defined by aligned fine to very-fine grained phylosilicate mineral grains. The individual grains defining the fabric are too small to be seen by the unaided eye. Grades into phyllitic cleavage as grain size increases. Cleavage domains typically less than 100 micrometres wide, rock easily splits into slabs and thin plates."@en ;
-    skos:historyNote "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31., Jackson 1997"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Schieferspaltbarkeit"@de ,
-        "slaty cleavage"@en ,
         "exfoliación pizarrosa"@es ,
         "liuskeisuuslohkeavuus"@fi ,
         "clivage ardoisier"@fr ,
@@ -434,6 +429,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "แนวแตกเรียบหินชนวน"@th ,
         "thớ chẻ phiến"@vi ,
         "板劈理"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/continuous_cleavage> ;
+    skos:definition "Continuous cleavage defined by aligned fine to very-fine grained phylosilicate mineral grains. The individual grains defining the fabric are too small to be seen by the unaided eye. Grades into phyllitic cleavage as grain size increases. Cleavage domains typically less than 100 micrometres wide, rock easily splits into slabs and thin plates."@en ;
+    skos:historyNote "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31., Jackson 1997"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "slaty cleavage"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/solution_cleavage>
@@ -479,13 +479,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/foliationtype/ultramylonite_foliation>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/generic_mylonitic_foliation> ;
-    skos:definition "Mylonitic foliation in which greater than 90 percent of rock is matrix due to tectonic grain size reduction processes. Typically rock is very-fine grained to aphanitic, with sparse porphyroclasts, and vague to prominent lamination on a mm scale."@en ;
-    skos:historyNote "SLTTm 2004, Sibson 1977"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Ultramylonit"@de ,
-        "ultramylonite foliation"@en ,
         "ultramilonita"@es ,
         "ultramyloniitti"@fi ,
         "ultramylonite"@fr ,
@@ -501,6 +496,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "หินอัลตราไมโลไนด์"@th ,
         "siêu mylonit"@vi ,
         "超糜棱岩"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/generic_mylonitic_foliation> ;
+    skos:definition "Mylonitic foliation in which greater than 90 percent of rock is matrix due to tectonic grain size reduction processes. Typically rock is very-fine grained to aphanitic, with sparse porphyroclasts, and vague to prominent lamination on a mm scale."@en ;
+    skos:historyNote "SLTTm 2004, Sibson 1977"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "ultramylonite foliation"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/undulating_lamination>
@@ -653,20 +653,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_differentiation_layering>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "metamorphe Differentiation"@de ,
+        "diferenciación metamórfica"@es ,
+        "metamorfinen differentioituminen"@fi ,
+        "differenziazione metamorfica"@it ,
+        "differentsiatsiya metamorficheskaya"@ru ,
+        "metamorf differentiering"@sv ;
     skos:broader
         <http://resource.geosciml.org/classifier/cgi/foliationtype/compositional_layering> ,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> ;
     skos:definition "Layering defined by mineralogical variations in a rock body interpreted to be result of solid-state reactions in rock body (metamorphic segregation)."@en ;
     skos:historyNote "this vocabulary"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel
-        "metamorphe Differentiation"@de ,
-        "metamorphic differentiation layering"@en ,
-        "diferenciación metamórfica"@es ,
-        "metamorfinen differentioituminen"@fi ,
-        "differenziazione metamorfica"@it ,
-        "differentsiatsiya metamorficheskaya"@ru ,
-        "metamorf differentiering"@sv ;
+    skos:prefLabel "metamorphic differentiation layering"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/s_fabric>
@@ -684,20 +684,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/foliationtype/schistosity>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "片理面"@ja ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
-    skos:definition "A fabric defined the parallel, planar arrangement of mineral grains having a platy, lamellar, or tabular crystallographic habit that are oriented in a continuous planar or rarely a linear fabric. Schistosity is commonly, but not necessarily, a crystalloblastic foliation. Platy mineral grains typically 1 to 10 mm across (Jackson, 1997), at smaller grain size grades into phyllitic cleavage. Schistosity is typically associated with a continuous cleavage due to the tendency to part parallel to the aligned mineral grains."@en ;
-    skos:historyNote "NADM metamorphic rock vocabulary SLTTm1.0 2004"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Schieferung"@de ,
-        "schistosity"@en ,
         "esquistosidad"@es ,
         "liuskeisuus"@fi ,
         "schistosité"@fr ,
         "kesekisan"@id ,
         "scistosità"@it ,
         "片理"@ja ,
+        "片理面"@ja ,
         "suIsÞÚsuITI"@km ,
         "편리"@ko ,
         "¦½²¾®¡¾­ì¼¤ªö¸¢º¤¹ó­§ò©"@lo ,
@@ -707,6 +702,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "สภาพเรียงตัวแบบหินชีสต์"@th ,
         "thớ phiến"@vi ,
         "片理"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
+    skos:definition "A fabric defined the parallel, planar arrangement of mineral grains having a platy, lamellar, or tabular crystallographic habit that are oriented in a continuous planar or rarely a linear fabric. Schistosity is commonly, but not necessarily, a crystalloblastic foliation. Platy mineral grains typically 1 to 10 mm across (Jackson, 1997), at smaller grain size grades into phyllitic cleavage. Schistosity is typically associated with a continuous cleavage due to the tendency to part parallel to the aligned mineral grains."@en ;
+    skos:historyNote "NADM metamorphic rock vocabulary SLTTm1.0 2004"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "schistosity"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/sedimentary_layering>
@@ -953,9 +953,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
+        "Kristallisationsschieferung"@de ,
+        "foliación"@es ,
+        "foliaatio"@fi ,
+        "foliation"@fr ,
+        "perdaunan"@id ,
+        "foliazione"@it ,
         "葉状構造"@ja ,
+        "面構造"@ja ,
+        "karduHsøwk"@km ,
+        "엽리"@ko ,
+        "À¦˜­Á»Èê¾©Ã­¹ó­"@lo ,
+        "foliasi"@ms ,
+        "listovatost'"@ru ,
+        "planstruktur"@sv ,
+        "ริ้วขนาน"@th ,
         "โฟลิเอชั่น"@th ,
-        "剥理"@zh ;
+        "phân phiến"@vi ,
+        "剥理"@zh ,
+        "叶理"@zh ;
     skos:definition "Fabric defined by the planar arrangement of textural or structural features (fabric elements)."@en ;
     skos:historyNote "Jackson 1997"@en ;
     skos:inScheme cs: ;
@@ -970,24 +986,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_foliation> ,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/schistosity> ,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
-    skos:prefLabel
-        "Kristallisationsschieferung"@de ,
-        "foliation"@en ,
-        "foliación"@es ,
-        "foliaatio"@fi ,
-        "foliation"@fr ,
-        "perdaunan"@id ,
-        "foliazione"@it ,
-        "面構造"@ja ,
-        "karduHsøwk"@km ,
-        "엽리"@ko ,
-        "À¦˜­Á»Èê¾©Ã­¹ó­"@lo ,
-        "foliasi"@ms ,
-        "listovatost'"@ru ,
-        "planstruktur"@sv ,
-        "ริ้วขนาน"@th ,
-        "phân phiến"@vi ,
-        "叶理"@zh ;
+    skos:prefLabel "foliation"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -1051,9 +1050,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
+        "tektonische Schieferung"@de ,
+        "clivaje tectónico"@es ,
+        "lohkeavuus"@fi ,
+        "clivage tectonique"@fr ,
+        "belah"@id ,
+        "clivaggio tettonico"@it ,
+        "劈開"@ja ,
         "劈開面"@ja ,
+        "sñameRbH"@km ,
+        "벽개"@ko ,
         "쪼개짐"@ko ,
-        "劈理"@zh ;
+        "Á­¸Áª¡ì¼®"@lo ,
+        "ira"@ms ,
+        "klivazh"@ru ,
+        "klyvbarhet"@sv ,
+        "แนวแตกเรียบ"@th ,
+        "thớ chẻ"@vi ,
+        "劈理"@zh ,
+        "解理"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
     skos:definition "A tectonic foliation in a rock characterized by a tendency for the rock to split along a regular set of parallel or sub-parallel closely spaced surfaces. Cleavage is a more general term than schistosity because schistosity need not be present in order for a rock to display cleavage. Cleavage domains or parting surfaces are not spaced more than 5 cm apart on average (Borradaille et al., 1982)"@en ;
     skos:historyNote "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31."@en ;
@@ -1067,24 +1082,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/foliationtype/domainal_cleavage> ,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/rough_cleavage> ,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/spaced_cleavage> ;
-    skos:prefLabel
-        "tektonische Schieferung"@de ,
-        "cleavage"@en ,
-        "clivaje tectónico"@es ,
-        "lohkeavuus"@fi ,
-        "clivage tectonique"@fr ,
-        "belah"@id ,
-        "clivaggio tettonico"@it ,
-        "劈開"@ja ,
-        "sñameRbH"@km ,
-        "벽개"@ko ,
-        "Á­¸Áª¡ì¼®"@lo ,
-        "ira"@ms ,
-        "klivazh"@ru ,
-        "klyvbarhet"@sv ,
-        "แนวแตกเรียบ"@th ,
-        "thớ chẻ"@vi ,
-        "解理"@zh ;
+    skos:prefLabel "cleavage"@en ;
 .
 
 cs:
@@ -1094,10 +1092,11 @@ cs:
         "2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices#Identifier_value)"@en ,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
         "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-11-22 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. Minor corrections to hierarchy from the previous 2012 version."@en ,
+        "2016-11-22 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. Minor corrections to hierarchy from the previous 2012 version."@en ,
         "2018-08-03 SMR replace spaces with '_' in URI for ductile shear banding foliation."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This scheme specifies concepts used to describe planar fabrics in rocks, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Includes primary (eg, sedimentary and igneous) and deformation-related (eg, metamorphic and tectonic) planar fabrics. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Foliation Type vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> ;

@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_crystal> ,
         <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_inclusion> ,
@@ -192,35 +192,35 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/kelyphitic_rim>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corona> ;
-    skos:definition "Corona that consists of concentric bands with radial fibrous texture."@en ;
-    skos:historyNote "Williams,Turner and Gilbert,1954, Fettes and Desmons,2007"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Kelyphitrinde"@de ,
-        "kelyphitic rim"@en ,
         "corona quelifítica"@es ,
         "kelyfiittinen reuna"@fi ,
         "anello chelifitico"@it ,
         "kajma kelifitovaya"@ru ,
         "kelyfitisk bård"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corona> ;
+    skos:definition "Corona that consists of concentric bands with radial fibrous texture."@en ;
+    skos:historyNote "Williams,Turner and Gilbert,1954, Fettes and Desmons,2007"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "kelyphitic rim"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/layer>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
-    skos:definition "A thin sheet compositionally distinct from the surrounding material,related to primary genesis of rock,e.g. sedimentary layers,metamorphic segregation"@en ;
-    skos:historyNote "This vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Schicht"@de ,
-        "layer"@en ,
         "estrato"@es ,
         "kerrokset"@fi ,
         "strato"@it ,
         "sloj"@ru ,
         "lager"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:definition "A thin sheet compositionally distinct from the surrounding material,related to primary genesis of rock,e.g. sedimentary layers,metamorphic segregation"@en ;
+    skos:historyNote "This vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "layer"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/oikocryst>
@@ -237,31 +237,30 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
-        "オーバーグロース"@ja ,
-        "표면연정"@ko ,
-        "生长过度"@zh ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
-    skos:definition "Constituent crystallized in crystallographic continuity with some other mineral constituent,typically quartz or calcite. In a clastic rock,commonly forms cement as well,but this should be represented using two role attribute links,'overgrowth' and cement,because overgrowth does not necessarily imply cement."@en ;
-    skos:historyNote "NADM SLTTs 2004, Neuendorf et al. 2005"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
         "Ueberwachsung"@de ,
-        "overgrowth"@en ,
         "supercrecimiento"@es ,
         "päällekasvettumat"@fi ,
         "surcroissance"@fr ,
         "tumbuh timpal"@id ,
         "sovracrescita"@it ,
+        "オーバーグロース"@ja ,
         "二次成長"@ja ,
         "karlUtlas;hYskarkMNt;"@km ,
         "과성장"@ko ,
+        "표면연정"@ko ,
         "¯‰¤ºº¡À¡ò­Â²©"@lo ,
         "tumbuh-tambah"@ms ,
         "narost"@ru ,
         "överväxt"@sv ,
         "การตกผลึกซ้อน"@th ,
         "tăng trưởng quá mức"@vi ,
+        "生长过度"@zh ,
         "繁茂"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:definition "Constituent crystallized in crystallographic continuity with some other mineral constituent,typically quartz or calcite. In a clastic rock,commonly forms cement as well,but this should be represented using two role attribute links,'overgrowth' and cement,because overgrowth does not necessarily imply cement."@en ;
+    skos:historyNote "NADM SLTTs 2004, Neuendorf et al. 2005"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "overgrowth"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/phenoclast>
@@ -278,23 +277,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
-        "hablur awal/sulung"@id ,
-        "À´ñ©´½­ó©º¡"@lo ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/megacryst> ;
-    skos:definition "Constituent occurs as crystals that are distinctly larger than a groundmass of enclosing crystals. Used only in igneous rocks."@en ;
-    skos:historyNote "Neuendorf et al. 2005"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
         "Einsprengling"@de ,
-        "phenocryst"@en ,
         "fenocristal"@es ,
         "hajarakeet"@fi ,
         "phénocristal"@fr ,
         "fenokris"@id ,
+        "hablur awal/sulung"@id ,
         "fenocristallo"@it ,
         "斑晶"@ja ,
         "ehVNURKIsÞ"@km ,
         "반정"@ko ,
+        "À´ñ©´½­ó©º¡"@lo ,
         "Á»ú©º¡"@lo ,
         "fenokris"@ms ,
         "fenokristall"@ru ,
@@ -302,6 +295,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "แร่ดอก"@th ,
         "ban tinh"@vi ,
         "斑晶"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/megacryst> ;
+    skos:definition "Constituent occurs as crystals that are distinctly larger than a groundmass of enclosing crystals. Used only in igneous rocks."@en ;
+    skos:historyNote "Neuendorf et al. 2005"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "phenocryst"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/porphyroblast>
@@ -367,34 +365,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/vein>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
-    skos:definition "Thin sheet of material intruded into the rock. May be hydrothermal,magmatic,or sedimentary."@en ;
-    skos:historyNote "This vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Gang"@de ,
-        "vein"@en ,
         "filón"@es ,
         "suonet"@fi ,
         "filone"@it ,
         "zhila"@ru ,
         "åder"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:definition "Thin sheet of material intruded into the rock. May be hydrothermal,magmatic,or sedimentary."@en ;
+    skos:historyNote "This vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "vein"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/inclusion>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
-        "包体"@zh ,
-        "夹杂物"@zh ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
-    skos:definition "A fragment of older material within an igneous rock to which it may or may not be genetically related"@en ;
-    skos:historyNote "Neuendorf et al,2005"@en ;
-    skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_inclusion> ;
-    skos:prefLabel
         "Einschluss"@de ,
-        "inclusion"@en ,
         "inclusión"@es ,
         "sulkeumat"@fi ,
         "inclusion"@fr ,
@@ -410,7 +399,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "inneslutning"@sv ,
         "การเจือปน"@th ,
         "bao thể"@vi ,
-        "包裹体"@zh ;
+        "包体"@zh ,
+        "包裹体"@zh ,
+        "夹杂物"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:definition "A fragment of older material within an igneous rock to which it may or may not be genetically related"@en ;
+    skos:historyNote "Neuendorf et al,2005"@en ;
+    skos:inScheme cs: ;
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_inclusion> ;
+    skos:prefLabel "inclusion"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/orthomatrix>
@@ -468,7 +465,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/matrix>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "zat dasar"@id ;
+    skos:altLabel
+        "matrice roche"@fr ,
+        "matriks"@id ,
+        "zat dasar"@id ,
+        "基質"@ja ,
+        "ma:RTIk"@km ,
+        "기질"@ko ,
+        "À´ñ©À­œº²œ­"@lo ,
+        "matriks"@ms ,
+        "เนื้อพื้น"@th ,
+        "khối nền đá"@vi ,
+        "矩阵"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/interstitial_constituent> ;
     skos:definition "Constituent forms finer-grained material interstitial to a framework constituent. \\The finer-grained material enclosing,or filling the interstices between,the larger grains or particles of a sediment or sedimentary rock....The term refers to the relative size and disposition of the particles,and no particular particle size is implied\\ (Jackson,1997,p. 393). May be classifiable into orthomatrix,protomatrix,epimatrix,pseudomatrix,and unclassified matrix."@en ;
     skos:historyNote "NADM SLTTs 2004, Jackson,1997"@en ;
@@ -478,18 +486,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/orthomatrix> ,
         <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/protomatrix> ,
         <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/pseudomatrix> ;
-    skos:prefLabel
-        "matrix"@en ,
-        "matrice roche"@fr ,
-        "matriks"@id ,
-        "基質"@ja ,
-        "ma:RTIk"@km ,
-        "기질"@ko ,
-        "À´ñ©À­œº²œ­"@lo ,
-        "matriks"@ms ,
-        "เนื้อพื้น"@th ,
-        "khối nền đá"@vi ,
-        "矩阵"@zh ;
+    skos:prefLabel "matrix"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent>
@@ -541,9 +538,10 @@ cs:
         "2010-02-12 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
         "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-06-15 OLR Update Excel spreadsheet format to work with new XSLT. Generated new SKOS-RDF to be consistent with all CGI vocabularies. No change to 201211 concepts."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2016-06-15 OLR: Update Excel spreadsheet format to work with new XSLT. Generated new SKOS-RDF to be consistent with all CGI vocabularies. No change to 201211 concepts."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This scheme describes the concept space for Compound Material Constituent Part concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Used to categorize kinds of particles that are the constituents of a compound material. Designed for populating the ConstituentPart/role property in GeoSciML CompoundMaterialDescription elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Compound Material Constituent Part vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
     skos:hasTopConcept

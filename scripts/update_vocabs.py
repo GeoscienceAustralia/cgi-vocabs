@@ -13,12 +13,12 @@ MAX_RETRIES = 3
 
 DB_TYPE = "graphdb"  # options: "fuseki" | "graphdb"
 # BASE_DB_URI = "http://fuseki.surroundaustralia.com/cgi-vocabs"
-BASE_DB_URI = "http://graphdb.vocabs.ga.gov.au/repositories/vocabs-cgi"
+BASE_DB_URI = "http://localhost:7200/repositories/cgi-vocabs"
 # WEBSITE_URL = "http://cgi.surroundaustralia.com"
 WEBSITE_URL = "https://cgi.vocabs.ga.gov.au"
 
-DB_USERNAME = os.environ.get("DB_USERNAME", None)
-DB_PASSWORD = os.environ.get("DB_PASSWORD", None)
+DB_USERNAME = os.environ.get("DB_USERNAME", "")
+DB_PASSWORD = os.environ.get("DB_PASSWORD", "")
 
 
 def add_vocabs(vocabs: List[Path], mappings: dict):
@@ -69,7 +69,6 @@ def add_vocabs(vocabs: List[Path], mappings: dict):
 
 
 def remove_vocabs(vocabs: List[Path], mappings: dict):
-    endpoint = ""
     data = {"update": "DROP DEFAULT"}
     if DB_TYPE == "fuseki":
         endpoint = f"{BASE_DB_URI}/update"
@@ -196,6 +195,7 @@ if __name__ == "__main__":
             if f.startswith("vocabularies/") and f.endswith(".ttl"):
                 p = Path(f)
                 removed.append(p)
+
     renamed = []
     if args.renamed:
         for f in args.renamed.split(","):
@@ -207,6 +207,7 @@ if __name__ == "__main__":
     i = Path(__file__).parent.parent / "vocabularies" / "index.json"
     with open(i, "r") as f:
         mappings = json.load(f)
+
     # remove all removed and modified vocabs
     remove_vocabs(removed + modified + renamed, mappings)
 

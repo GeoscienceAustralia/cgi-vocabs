@@ -7,11 +7,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe>
     a skos:Collection ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:changeNote "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/mappingframe/base_of_quaternary> ,
         <http://resource.geosciml.org/classifier/cgi/mappingframe/surface_geology> ,
@@ -67,7 +67,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Also added Concepts as topConceptOf ConceptScheme."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Also added Concepts as topConceptOf ConceptScheme."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ,
         "Original SKOS implementation, 31-08-2017"@en ;
     skos:definition "Terms to describe the surface, horizon, or time slice at which the mapped features occur (eg, surface geology, top of bedrock), as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Adapted form the the INSPIRE vocabulary http://inspire.ec.europa.eu/codelist/MappingFrameValue. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2017.01 version of the CGI Mapping Frame vocabulary. Vocabulary Shepherd: Mark Rattenbury. Compilation and review in Google doc spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;

@@ -7,10 +7,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:historyNote "The original vocabulary - all its concepts"@en ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/earth-resource-form/concordant> ,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-form/discordant> ,
@@ -36,24 +36,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "this vocabulary"@en ;
     skos:inScheme cs: ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "diskordant"@de ,
-        "discordant"@en ,
-        "discordante"@es ,
-        "epäjatkuva"@fi ,
-        "discordant"@fr ,
-        "timpang"@id ,
-        "discordante"@it ,
-        "非調和的"@ja ,
-        "EdlminRsbKña"@km ,
-        "부정합적"@ko ,
-        "Á§¡§Éº­®Ò»È¸´Á­¸"@lo ,
-        "tak selanjar"@ms ,
-        "nesoglasnyj"@ru ,
-        "diskordant"@sv ,
-        "ไม่ร่วมแนว"@th ,
-        "không phù hợp"@vi ,
-        "不一致"@zh ;
+    skos:prefLabel "discordant"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -101,24 +84,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "this vocabulary"@en ;
     skos:inScheme cs: ;
     skos:notation "01.1.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "stratiformer Erzkoerper"@de ,
-        "stratiform"@en ,
-        "yacimiento estratiforme"@es ,
-        "kerrosmyötäiset esiintymät"@fi ,
-        "gîte stratiforme"@fr ,
-        "lapisan endapan mineral"@id ,
-        "giacimento stratiforme"@it ,
-        "層状鉱床"@ja ,
-        "CRmkEr:RsTab;"@km ,
-        "층상광상"@ko ,
-        "Á¹Èì¤Á»È´ó»ø®»È¾¤À¯ñ­§˜­"@lo ,
-        "longgokan stratifom"@ms ,
-        "mestorozhdenie stratiformnoe"@ru ,
-        "stratiform fyndighet"@sv ,
-        "แหล่งแร่แบบสแทรทิฟอร์ม"@th ,
-        "tụ khoáng dạng tầng"@vi ,
-        "层状矿床"@zh ;
+    skos:prefLabel "stratiform"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/structurally-transposed>
@@ -179,35 +145,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratiform> ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "schichtgebundene Lagerstaette"@de ,
-        "stratabound"@en ,
-        "yacimiento estratoide"@es ,
-        "kerrossidonnaiset esiintymät"@fi ,
-        "gîte stratoïde"@fr ,
-        "endapan min dibatasi oleh unit stratigrafi"@id ,
-        "giacimento stratoide"@it ,
-        "層準規制鉱床"@ja ,
-        "CRmkEr:mansNæanCaRsTab;²"@km ,
-        "층경계상 광상"@ko ,
-        "Á¹Èì¤Á»ÈÁ®®¦½ªë¾ª¾®¾¸"@lo ,
-        "longgokan strata bebat"@ms ,
-        "mestorozhdenie stratifitsirovannoe"@ru ,
-        "stratabunden fyndighet"@sv ,
-        "แหล่งแร่แบบสแทรทาบาวด์"@th ,
-        "tụ khoáng phân tầng"@vi ,
-        "层控矿床"@zh ;
+    skos:prefLabel "stratabound"@en ;
 .
 
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2014-02-23 SMR - hierarchy finalized, sourceNote set to 'this vocabulary' and skos:note added by SM Richard; converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard"@en ,
-        "2015-01-08 OLR - Edits to fix typos and remove '201401' from rdf file name."@en ,
+        "2015-01-08 OLR: - Edits to fix typos and remove '201401' from rdf file name."@en ,
         "2016-07-16 Compilation and review in Google doc spreadsheet, converted to SKOS-RDF using GSML_SKOS_fromXLS_2016.02.xslt."@en ,
-        "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2016-11-28 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This file contains the CGI Earth Resource Form vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. This scheme describes concepts specifying an orebody's typical physical and structural relationship to wallrocks and associated rocks (e.g. strataform, stratabound, cross-cutting, vein, intrusive contact etc). The vocabulary includes two sub-schemes, one that includes categories related to the concordance or discordance to host rock structure, and the second that categorizes according to association genetic structure in the host rock. The EarthResource/form property allows multiple values, so that terms from both sub-schemes might be assigned to a given instance. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Earth Resource Form vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept

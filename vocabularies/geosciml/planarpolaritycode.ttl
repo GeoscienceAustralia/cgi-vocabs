@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/planarpolaritycode>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/overturned> ,
         <http://resource.geosciml.org/classifier/cgi/planarpolaritycode/upright> ,
@@ -47,7 +47,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Also added Concepts as topConceptOf ConceptScheme."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Also added Concepts as topConceptOf ConceptScheme."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ,
         "Original SKOS implementation, 05-07-2017"@en ;
     skos:definition "This scheme describes terms that specify the facing of planar geologic features (eg, upright, overturned), as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2017 SKOS-RDF version of the CGI Planar Polarity Code vocabulary. Vocabulary Shepherd: Ollie Raymond. Compilation and review in Google doc spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;

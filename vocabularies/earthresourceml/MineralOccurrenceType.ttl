@@ -7,11 +7,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type>
     a skos:Collection ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:changeNote "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:historyNote "The original vocabulary - all its concepts"@en ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/deposit> ,
         <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/field> ,
@@ -32,14 +32,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "This vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)"@en ;
     skos:inScheme cs: ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Lagerstaette"@de ,
-        "deposit"@en ,
-        "yacimiento"@es ,
-        "mineraaliesiintymät"@fi ,
-        "giacimento"@it ,
-        "mestorozhdenie"@ru ,
-        "mineralförekomst"@sv ;
+    skos:prefLabel "deposit"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/field>
@@ -68,14 +61,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
     skos:note "The basis for identification as a potential site of a mineral deposit is not part of the definition, but may include surface mineral occurrences, matches with various favorability criteria, geologic, geophysical, or geochemical anomalies. A site may be considered a prospect based on evidence of previous mineral exploration activity such as excavated pits or shafts. There might not actually be a mineral occurrence associated with the prospect."@en ;
-    skos:prefLabel
-        "Erzgang"@de ,
-        "mineralized zone"@en ,
-        "yacimiento filoniano"@es ,
-        "malmijuoni"@fi ,
-        "giacimento filoniano"@it ,
-        "zhila rudnaya"@ru ,
-        "malmåder"@sv ;
+    skos:prefLabel "mineralized zone"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -117,24 +103,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "This vocabulary"@en ;
     skos:inScheme cs: ;
     skos:notation "06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Lagerstaettenprovinz"@de ,
-        "province"@en ,
-        "provincia metaloge!nica"@es ,
-        "metallogeeniset provinssit"@fi ,
-        "province métallogénique"@fr ,
-        "propinsi metalogenik"@id ,
-        "provincia metallogenica"@it ,
-        "鉱床生成区"@ja ,
-        "extþEdlmanCMrkEr:elah³"@km ,
-        "광상생성구"@ko ,
-        "À¢©Á£É¸­Âì¹½"@lo ,
-        "wilayah metalogeni"@ms ,
-        "provintsiya metallogenicheskaya"@ru ,
-        "metallogen provins"@sv ,
-        "ปริมณฑลแร่"@th ,
-        "tỉnh sinh khoáng"@vi ,
-        "成矿省"@zh ;
+    skos:prefLabel "province"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -156,11 +125,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2014-02-23 SMR Original conversion to SKOS."@en ,
-        "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en ,
-        "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2014-02-23 SMR: Original conversion to SKOS."@en ,
+        "2015-01-08 OLR: Edits to fix typos and remove '201401' from rdf file name."@en ,
+        "2016-11-29 OLR: Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This file contains the CGI Mineral Occurrence Type vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to categorize the type of mineral occurrence. Examples are prospect, occurrence, mineral deposit, ore deposit, field, district, mineralized zone. In the ERML model, a MineralOccurrence is a kind of EarthResource that is categorized by a MineralOccurrenceType (this vocabulary), and has at least one end use potential. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Mineral Occurrence Type vocabulary. Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet; adopted 09/01/2014; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept

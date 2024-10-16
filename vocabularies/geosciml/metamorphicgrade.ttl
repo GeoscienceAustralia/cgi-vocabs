@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicgrade>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade> ,
         <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade> ,
@@ -130,8 +130,9 @@ cs:
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
         "2012-02-27 SMR add skos:exactMatch triples relating URI in this vocabulary to URI with number tokens in 201012 vocabulary"@en ,
         "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-11-21 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes from the previous 2012 version."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+        "2016-11-21 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes from the previous 2012 version."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This file contains the CGI Metamorphic Grade vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Vocabulary for populating Metamorphic Grade property in GeoSciML metamorphic description elements. Derived from Fettes and Desmons (eds.), 2007, METAMORPHIC ROCKS: A CLASSIFICATION AND GLOSSARY OF TERMS - Recommendations of the International Union of Geological Sciences Subcommission on the Systematics of Metamorphic Rocks. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Metamorphic Grade vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept

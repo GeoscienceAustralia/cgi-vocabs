@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies> ,
         <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies> ,
@@ -30,13 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "แอมฟิโบไลต์เฟชี"@th ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
-    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by hornblende-plagioclase (plagioclase more calcic than An17)."@en ;
-    skos:historyNote "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
-        "amphibolite metamorphic facies"@en ,
+    skos:altLabel
         "faciès amphibolite"@fr ,
         "fasies amfibolit"@id ,
         "角閃岩相"@ja ,
@@ -45,8 +39,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         " §÷©ìñ¡¦½­½Áºñ´³óó-Â®Äìª"@lo ,
         "fasies amfibolit"@ms ,
         "ชุดลักษณ์แอมฟิโบไลต์"@th ,
+        "แอมฟิโบไลต์เฟชี"@th ,
         "tướng amphibolit"@vi ,
         "角闪岩相"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
+    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by hornblende-plagioclase (plagioclase more calcic than An17)."@en ;
+    skos:historyNote "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "amphibolite metamorphic facies"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies>
@@ -82,12 +82,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
-    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by the mineral assemblage clinopyroxene-orthopyroxene-plagioclase (olivine not stable with plagioclase or with garnet), or especially high-temperature varieties or polymorphs of minerals (e"@en ;
-    skos:historyNote "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
-        "granulite facies"@en ,
+    skos:altLabel
         "faciès granulite"@fr ,
         "fasies granulit"@id ,
         "グラニュライト相"@ja ,
@@ -98,6 +93,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "แกรนูไลต์เฟชี"@th ,
         "tướng granulit"@vi ,
         "麻粒岩相"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
+    skos:definition "Metamorphic facies characterized in rocks of basaltic composition by the mineral assemblage clinopyroxene-orthopyroxene-plagioclase (olivine not stable with plagioclase or with garnet), or especially high-temperature varieties or polymorphs of minerals (e"@en ;
+    skos:historyNote "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "granulite facies"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies>
@@ -199,8 +199,9 @@ cs:
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
         "2012-02-27 SMR add skos:exactMatch triples associating URIs with number token URI in 201012 version."@en ,
         "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-11-21 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. Minor corrections to hierarchy from the previous 2012 version."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+        "2016-11-21 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. Minor corrections to hierarchy from the previous 2012 version."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This file contains the CGI Metamorphic Facies vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary is based on Fettes and Desmons (eds.), 2007, METAMORPHIC ROCKS: A CLASSIFICATION AND GLOSSARY OF TERMS - Recommendations of the International Union of Geological Sciences Subcommission on the Systematics of Metamorphic Rocks. Used to populate metamorphic facies property in metamorphic descriptions. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Metamorphic Facies vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept

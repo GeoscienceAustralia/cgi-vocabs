@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/proportionterm>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/proportionterm/all> ,
         <http://resource.geosciml.org/classifier/cgi/proportionterm/dominant> ,
@@ -58,18 +58,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/proportionterm/variable>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
-    skos:definition "Component varies in proportion throughout the described entity."@en ;
-    skos:historyNote "this vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Variable"@de ,
-        "variable"@en ,
         "variable"@es ,
         "muuttujat"@fi ,
         "variabile"@it ,
         "peremennaya"@ru ,
         "variabel"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+    skos:definition "Component varies in proportion throughout the described entity."@en ;
+    skos:historyNote "this vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "variable"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/proportionterm/dominant>
@@ -154,9 +154,10 @@ cs:
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
         "2012-02-27 SMR add skos:exactMatch relating URI in this vocabulary to URI in 201012 version using numeric tokens. Update the vocabulary definition text."@en ,
         "2013-02-04 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions."@en ,
-        "2016-11-25 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to 2012 concepts."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2016-11-25 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to 2012 concepts."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This file contains the CGI Proportion Term vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. This vocabulary provides terms that may be used to qualitatively express abundance of composition parts in a geologic unit or earth material description. Quantity that specifies the fraction of the geologic unit composed of the compound material. This vocabulary is used for GeologicUnit.GeologicUnitPart.proportion, GeologicUnit.compositionPart.proportion, and for compoundMaterial.ConsituentPart.proportion. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Proportion Term vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;

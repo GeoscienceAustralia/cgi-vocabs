@@ -6,10 +6,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/faulttype>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:historyNote "this vocabulary" ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/faulttype/detachment_fault> ,
         <http://resource.geosciml.org/classifier/cgi/faulttype/dextral_strike_slip_fault> ,
@@ -62,18 +62,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/faulttype/horizontal_fault>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> ;
-    skos:definition "Fault that dips less than 10 degrees over more than half the recognized extent of the fault."@en ;
-    skos:historyNote "GGIC vocabularies working group (Australia)"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
+    skos:altLabel
         "Horizontalverwerfung"@de ,
-        "horizontal fault"@en ,
         "falla horizontal"@es ,
         "vaakasiirros"@fi ,
         "faglia a piano orizzontale"@it ,
         "razlom gorizontal'nyj"@ru ,
         "horisontalförkastning"@sv ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> ;
+    skos:definition "Fault that dips less than 10 degrees over more than half the recognized extent of the fault."@en ;
+    skos:historyNote "GGIC vocabularies working group (Australia)"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "horizontal fault"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/left_normal_fault>
@@ -185,8 +185,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
+        "Ueberschiebung"@de ,
+        "falla cabalgamiento"@es ,
+        "työntösiirrokset"@fi ,
+        "chevauchement"@fr ,
+        "sesar sungkup"@id ,
+        "accavallamento"@it ,
         "スラスト"@ja ,
+        "衝上断層"@ja ,
+        "sñameRbHEdllyecjmkeRkA"@km ,
+        "쓰러스트단층"@ko ,
         "충상단층"@ko ,
+        "»º¨Àìˆº­´ø´ªÔ"@lo ,
+        "sesar sungkup"@ms ,
+        "nadvig"@ru ,
+        "överskjutningsförkastning"@sv ,
+        "รอยเลื่อนย้อนมุมต่ำ"@th ,
+        "đứt gãy nghịch chờm"@vi ,
+        "冲断层"@zh ,
         "逆断层"@zh ;
     skos:broader
         <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> ,
@@ -195,46 +211,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/thrustFault> ;
     skos:historyNote "this vocabulary"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel
-        "Ueberschiebung"@de ,
-        "thrust fault"@en ,
-        "falla cabalgamiento"@es ,
-        "työntösiirrokset"@fi ,
-        "chevauchement"@fr ,
-        "sesar sungkup"@id ,
-        "accavallamento"@it ,
-        "衝上断層"@ja ,
-        "sñameRbHEdllyecjmkeRkA"@km ,
-        "쓰러스트단층"@ko ,
-        "»º¨Àìˆº­´ø´ªÔ"@lo ,
-        "sesar sungkup"@ms ,
-        "nadvig"@ru ,
-        "överskjutningsförkastning"@sv ,
-        "รอยเลื่อนย้อนมุมต่ำ"@th ,
-        "đứt gãy nghịch chờm"@vi ,
-        "冲断层"@zh ;
+    skos:prefLabel "thrust fault"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/wrench_fault>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
-        "sesar merenggut"@id ,
-        "扭断层"@zh ,
-        "走向滑断层"@zh ;
-    skos:broader
-        <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> ,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
-    skos:definition "A strike slip fault in which the fault plane dips at least 45 degrees over more than half of the recognized extent of the fault."@en ;
-    skos:historyNote "GGIC vocabularies working group (Australia)"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel
         "steile Blattverschiebung"@de ,
-        "wrench fault"@en ,
         "falla vertical desgarre"@es ,
         "vääntösiirrokset"@fi ,
         "faille verticale décrochement"@fr ,
         "sesar memilin"@id ,
+        "sesar merenggut"@id ,
         "faglia trascorrente verticale"@it ,
         "レンチ断層"@ja ,
         "minRtUvKña ¬xusgaM¦"@km ,
@@ -245,7 +234,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "brant lateralförkastning"@sv ,
         "รอยเลื่อนเหลื่อมข้างแนวนอน"@th ,
         "đứt gãy vặn"@vi ,
-        "平搓断层"@zh ;
+        "平搓断层"@zh ,
+        "扭断层"@zh ,
+        "走向滑断层"@zh ;
+    skos:broader
+        <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> ,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
+    skos:definition "A strike slip fault in which the fault plane dips at least 45 degrees over more than half of the recognized extent of the fault."@en ;
+    skos:historyNote "GGIC vocabularies working group (Australia)"@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "wrench fault"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault>
@@ -278,16 +276,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
-    skos:definition "Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector over more than half recognized extent of the fault, and for which the fault dips consistently in the same direction, and for which the hanging wall has been displaced down relative to the footwall."@en ;
-    skos:historyNote "this vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:narrower
-        <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault> ,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> ;
-    skos:prefLabel
+    skos:altLabel
         "Abschiebung"@de ,
-        "normal fault"@en ,
         "falla normal"@es ,
         "normaalisiirrokset"@fi ,
         "faille normale"@fr ,
@@ -303,22 +293,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "รอยเลื่อนปกติ"@th ,
         "đứt gãy thuận"@vi ,
         "正断层"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+    skos:definition "Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector over more than half recognized extent of the fault, and for which the fault dips consistently in the same direction, and for which the hanging wall has been displaced down relative to the footwall."@en ;
+    skos:historyNote "this vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:narrower
+        <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault> ,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> ;
+    skos:prefLabel "normal fault"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
-    skos:definition "Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector at at least one location along the mapped trace of the fault, and the fault dips consistently in the same direction with the hanging wall displaced up relative to the footwall over at least half the mapped trace of the fault."@en ;
-    skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/reverseFault> ;
-    skos:historyNote "this vocabulary"@en ;
-    skos:inScheme cs: ;
-    skos:narrower
-        <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse> ,
-        <http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> ;
-    skos:prefLabel
+    skos:altLabel
         "Aufschiebung"@de ,
-        "reverse fault"@en ,
         "falla inversa"@es ,
         "käänteissiirrokset"@fi ,
         "faille inverse"@fr ,
@@ -334,6 +323,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "รอยเลื่อนกลับ"@th ,
         "đứt gãy ngược"@vi ,
         "逆断层"@zh ;
+    skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+    skos:definition "Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector at at least one location along the mapped trace of the fault, and the fault dips consistently in the same direction with the hanging wall displaced up relative to the footwall over at least half the mapped trace of the fault."@en ;
+    skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/reverseFault> ;
+    skos:historyNote "this vocabulary"@en ;
+    skos:inScheme cs: ;
+    skos:narrower
+        <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse> ,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> ;
+    skos:prefLabel "reverse fault"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault>
@@ -396,6 +394,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://resource.geosciml.org/classifier/cgi/faulttype/fault>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "Stoerung"@de ,
+        "falla"@es ,
+        "siirrokset"@fi ,
+        "faglia"@it ,
+        "razlom"@ru ,
+        "förkastning"@sv ;
     skos:definition "A discrete surface, or zone of discrete surfaces, with some thickness, separating two rock masses across which one mass has slid past the other and characterized by brittle deformation."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/FaultTypeValue/fault> ;
     skos:historyNote "this vocabulary"@en ;
@@ -409,14 +414,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> ,
         <http://resource.geosciml.org/classifier/cgi/faulttype/scissor_fault> ,
         <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
-    skos:prefLabel
-        "Stoerung"@de ,
-        "fault"@en ,
-        "falla"@es ,
-        "siirrokset"@fi ,
-        "faglia"@it ,
-        "razlom"@ru ,
-        "förkastning"@sv ;
+    skos:prefLabel "fault"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -428,10 +426,11 @@ cs:
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
         "2012-10-22 SJDC adjust ConceptScheme and Collection individuals, and Concept membership, to match Best Practice emerging from ISO Ontology work. Add some version metadata."@en ,
         "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en ,
-        "2016-10-19 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes to terms from the previous 2012 version."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using alignment datasets created and reviewed in 2015 by James Passmore, Marcus Sen and Stephen Richard."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2016-10-19 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes to terms from the previous 2012 version."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using alignment datasets created and reviewed in 2015 by James Passmore, Marcus Sen and Stephen Richard."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This scheme specifies terms used to summarise the overall character of faults (ie, a summary of movement type and orientation) as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Although the terms in this vocabulary are in common usage with definitions in standard texts or glossaries like Neuendorf et al. (2005), the definitions here attempt to establish unambiguous criteria to distinguish the categories, and are thus listed with this vocabulary as the source. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the faultType property in GeoSciML ShearDisplacementStructure elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Fault Type vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;

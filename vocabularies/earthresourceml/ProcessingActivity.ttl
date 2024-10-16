@@ -7,11 +7,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity>
     a skos:Collection ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:changeNote "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:historyNote "The original vocabulary - all its concepts"@en ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/Bayer-process> ,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/adsorption> ,
@@ -81,24 +81,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     skos:inScheme cs: ;
     skos:notation "03.6"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Adsorption"@de ,
-        "adsorption"@en ,
-        "adsorbción"@es ,
-        "adsorptio"@fi ,
-        "adsorption"@fr ,
-        "adsorpsi"@id ,
-        "adsorbimento"@it ,
-        "吸着"@ja ,
-        "karRsUb /karRCab"@km ,
-        "흡착"@ko ,
-        " ¡¾­©ø©§ñ®"@lo ,
-        "jerapan"@ms ,
-        "adsorbtsiya"@ru ,
-        "adsorption"@sv ,
-        "การดูดซับ"@th ,
-        "hấp phụ"@vi ,
-        "吸附(作用)"@zh ;
+    skos:prefLabel "adsorption"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/agglomeration>
@@ -183,24 +166,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/cementation> ;
     skos:inScheme cs: ;
     skos:notation "03.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Zementation"@de ,
-        "cementation"@en ,
-        "cementación"@es ,
-        "iskostuminen"@fi ,
-        "cémentation"@fr ,
-        "perekatan"@id ,
-        "cementazione"@it ,
-        "セメント作用"@ja ,
-        "karbiTsIum:g;"@km ,
-        "교결작용"@ko ,
-        " -¡¾­-¥ñ®-ªö¸"@lo ,
-        "persimenan"@ms ,
-        "tsementatsiya"@ru ,
-        "cementering"@sv ,
-        "การประสาน"@th ,
-        "gắn kết"@vi ,
-        "胶结[作用]"@zh ;
+    skos:prefLabel "cementation"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Cementation"^^xsd:anyURI ;
 .
 
@@ -245,24 +211,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     skos:inScheme cs: ;
     skos:notation "01.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Probenzerkleinerung"@de ,
-        "comminution"@en ,
-        "fragmentación"@es ,
-        "rikkoutuminen"@fi ,
-        "fragmentation"@fr ,
-        "pemecahan"@id ,
-        "frammentazione"@it ,
-        "破砕"@ja ,
-        "karEbkCabMENk"@km ,
-        "붕괴작용"@ko ,
-        "Áª¡À¯ñ­¦š­¦È¸­"@lo ,
-        "pemecahan"@ms ,
-        "droblenie"@ru ,
-        "fragmentering"@sv ,
-        "การแตกเป็นชิ้นส่วน"@th ,
-        "phân mảnh"@vi ,
-        "破碎作用"@zh ;
+    skos:prefLabel "comminution"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/crystallization>
@@ -278,24 +227,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/crystallization> ;
     skos:inScheme cs: ;
     skos:notation "03.8"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Kristallisation"@de ,
-        "crystallization"@en ,
-        "cristalización"@es ,
-        "kiteytyminen"@fi ,
-        "cristallisation"@fr ,
-        "kristalisasi"@id ,
-        "cristallizzazione"@it ,
-        "結晶化"@ja ,
-        "eLIgRkam/PaBRkam"@km ,
-        "결정작용"@ko ,
-        "¡¾­À¡ó©À¯ñ­À´ñ©´½­ó"@lo ,
-        "penghabluran"@ms ,
-        "kristallizatsiya"@ru ,
-        "kristallisering"@sv ,
-        "การตกผลึก"@th ,
-        "kết tinh"@vi ,
-        "结晶[作用]"@zh ;
+    skos:prefLabel "crystallization"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Crystallization"^^xsd:anyURI ;
 .
 
@@ -336,24 +268,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/electrolysis> ;
     skos:inScheme cs: ;
     skos:notation "03.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Elektrolyse"@de ,
-        "electrolysis"@en ,
-        "electrólisis"@es ,
-        "elektrolyysi"@fi ,
-        "électrolyse"@fr ,
-        "elektrolisis"@id ,
-        "elettrolisi"@it ,
-        "電気分解"@ja ,
-        "GKÁIsnIviPaK"@km ,
-        "전기분해"@ko ,
-        "¡¾­Á¨¡ê¾©©É¸¨Ä³³É¾"@lo ,
-        "elektrolisis"@ms ,
-        "ehlektroliz"@ru ,
-        "elektrolys"@sv ,
-        "อิเล็กโทรไลซิส"@th ,
-        "điện phân"@vi ,
-        "电解"@zh ;
+    skos:prefLabel "electrolysis"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
 .
 
@@ -380,24 +295,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/evaporation> ;
     skos:inScheme cs: ;
     skos:notation "03.10"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Evaporation"@de ,
-        "evaporation"@en ,
-        "evaporación"@es ,
-        "haihdunta"@fi ,
-        "évaporation"@fr ,
-        "penguapan"@id ,
-        "evaporazione"@it ,
-        "蒸発作用"@ja ,
-        "rMhYt"@km ,
-        "증발"@ko ,
-        "¡¾­ì½À¹ó¨"@lo ,
-        "penyejatan"@ms ,
-        "isparenie"@ru ,
-        "avdunstning"@sv ,
-        "การระเหย"@th ,
-        "bốc hơi"@vi ,
-        "蒸发"@zh ;
+    skos:prefLabel "evaporation"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Evaporation"^^xsd:anyURI ;
 .
 
@@ -415,24 +313,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "B.A.Wills, T.J.Napier-Munn, Will's Mineral Processing Technology, Seventh edition, Elsevier 2006."@en ;
     skos:inScheme cs: ;
     skos:notation "02.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Ausflockung"@de ,
-        "flocculation"@en ,
-        "floculación"@es ,
-        "flokkulaatio"@fi ,
-        "floculation"@fr ,
-        "penggumpalan"@id ,
-        "flocculazione"@it ,
-        "凝集"@ja ,
-        "karkkCadMu"@km ,
-        "응집"@ko ,
-        "¡¾­¥ñ©À¯ñ­¡÷È´¢º¤º½­÷²¾¡"@lo ,
-        "perbukuan"@ms ,
-        "flokkulyatsiya"@ru ,
-        "flockulering"@sv ,
-        "การจับเป็นกลุ่มของอนุภาคขนาดเล็ก"@th ,
-        "kết bông"@vi ,
-        "凝聚[作用]"@zh ;
+    skos:prefLabel "flocculation"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flotation>
@@ -447,24 +328,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Dictionnaire thématique des mines et carrières, SIM Editor; http://www.cpchem.com/bl/specchem/en-us/Pages/IntroductiontoMineralProcessing.aspx"@en ;
     skos:inScheme cs: ;
     skos:notation "02.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Flotation"@de ,
-        "flotation"@en ,
-        "flotación"@es ,
-        "vaahdotus"@fi ,
-        "flottation"@fr ,
-        "flotasi"@id ,
-        "flottazione"@it ,
-        "浮遊選鉱"@ja ,
-        "bENþk"@km ,
-        "부유선광"@ko ,
-        "¡¾­ìº¨ªö¸"@lo ,
-        "flotasi"@ms ,
-        "flotatsiya"@ru ,
-        "flotation"@sv ,
-        "การลอย (แร่)"@th ,
-        "tuyển nổi"@vi ,
-        "浮选"@zh ;
+    skos:prefLabel "flotation"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravity-separation-table>
@@ -499,24 +363,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Hydrometallurgy is part of the field of extractive metallurgy involving the use of aqueous chemistry for the recovery of metals from ores, concentrates, and recycled or residual materials. Hydrometallurgy is typically divided into three general areas: leaching, solution concentration and purification, and metal recovery."@en ;
     skos:inScheme cs: ;
     skos:notation "03.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Hydrometallurgie"@de ,
-        "hydrometallurgy"@en ,
-        "hidrometalurgia"@es ,
-        "hydrometallurgia"@fi ,
-        "hydrométallurgie"@fr ,
-        "hidrometalurgi"@id ,
-        "idrometallurgia"@it ,
-        "湿式冶金"@ja ,
-        "karsørEdkedayeRbIfamBlTwk"@km ,
-        "습식야금"@ko ,
-        "¡¾­Á¨¡Âì¹½©É¸¨¦¾­ì½ì¾¨"@lo ,
-        "hidrometalurgi"@ms ,
-        "gidrometallurgiya"@ru ,
-        "hydrometallurgi"@sv ,
-        "การแยกโลหะจากสินแร่ในสารละลาย"@th ,
-        "thuỷ luyện kim"@vi ,
-        "湿法冶金[学]"@zh ;
+    skos:prefLabel "hydrometallurgy"@en ;
     schema:citation "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
 .
 
@@ -582,24 +429,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     skos:inScheme cs: ;
     skos:notation "01.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Klassifikation"@de ,
-        "particle sizing"@en ,
-        "clasificación"@es ,
-        "luokitus"@fi ,
-        "classification"@fr ,
-        "klasifikasi"@id ,
-        "classificazione"@it ,
-        "分類"@ja ,
-        "karcat;lMdab;fñak;"@km ,
-        "분류"@ko ,
-        " ¡¾­-¥ñ©-Á®È¤"@lo ,
-        "pengelasan"@ms ,
-        "klassifikatsiya"@ru ,
-        "klassificering"@sv ,
-        "การจำแนก"@th ,
-        "phân loại"@vi ,
-        "分类"@zh ;
+    skos:prefLabel "particle sizing"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/precipitation>
@@ -703,24 +533,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting> ,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/manual-sorting> ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Sortierung"@de ,
-        "sorting"@en ,
-        "clasificación granulome!trica"@es ,
-        "lajittuneisuus"@fi ,
-        "classement granulométrique"@fr ,
-        "pemilahan"@id ,
-        "classazione granulometrica"@it ,
-        "分級"@ja ,
-        "karcat;CaRbePT"@km ,
-        "분급작용"@ko ,
-        "¡¾­¥ñ©¢½Î¾©"@lo ,
-        "penyisihan"@ms ,
-        "otsortirovannost'"@ru ,
-        "sortering"@sv ,
-        "การดัดขนาด"@th ,
-        "hạt trầm tích cùng loại"@vi ,
-        "分选"@zh ;
+    skos:prefLabel "sorting"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching>
@@ -741,24 +554,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-leach> ,
         <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/carbon-in-pulp> ;
     skos:notation "03.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Auswaschung"@de ,
-        "leaching"@en ,
-        "lavado"@es ,
-        "uuttuminen"@fi ,
-        "lessivage"@fr ,
-        "pencucian"@id ,
-        "lavaggio"@it ,
-        "溶脱"@ja ,
-        "Rtg/eRcaH"@km ,
-        "용탈"@ko ,
-        "¡¾­-À§¾½ìÉ¾¤"@lo ,
-        "larut lesap"@ms ,
-        "vyshchelachivanie"@ru ,
-        "lakning"@sv ,
-        "การชะ"@th ,
-        "rửa lũa"@vi ,
-        "浸出"@zh ;
+    skos:prefLabel "leaching"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting>
@@ -863,12 +659,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2014-02-23 SMR Original conversion to SKOS."@en ,
-        "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en ,
-        "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
-        "2021-12-17 Rachel Heaven (BGS) Edits to remove trailing white space from https://linked.data.gov.au/org/cgi-gtwg schema:name value"@en ;
+        "2014-02-23 SMR: Original conversion to SKOS."@en ,
+        "2015-01-08 OLR: Edits to fix typos and remove '201401' from rdf file name."@en ,
+        "2016-11-29 OLR: Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2021-12-17 R.Heaven (BGS):  Edits to remove trailing white space from https://linked.data.gov.au/org/cgi-gtwg schema:name value"@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This file contains the CGI Processing Activity vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to categorize processing activities associated with a mining activity. A miningActivity and subsequent processingActivity provide the linkage between a minedMaterial and a mine Product. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Processing Activity vocabulary. Vocabulary Shepherd: Jouni Vuollo. Compilation and review in Google doc spreadsheet; adopted 9/01/2014; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept

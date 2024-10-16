@@ -1,0 +1,23 @@
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/org/cgi-gtwg>
+    a schema:Organization ;
+    schema:affiliation <https://linked.data.gov.au/org/cgi> ;
+    schema:name "CGI Geoscience Terminology Working Group" ;
+    schema:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
+
+
+<https://linked.data.gov.au/org/cgi>
+    a schema:Organization ;
+    schema:name "Commission for the Management and Application of Geoscience Information" ;
+    schema:url "http://www.cgi-iugs.org"^^xsd:anyURI .
+
+
+<https://linked.data.gov.au/org/cgi-gtwg>
+    a schema:Organization ;
+    schema:name "CGI Geoscience Terminology Working Group" ;
+    schema:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
+
+

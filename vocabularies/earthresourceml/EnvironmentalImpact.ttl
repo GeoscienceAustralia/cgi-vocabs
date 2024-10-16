@@ -7,10 +7,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact>
     a skos:Collection ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:historyNote "The original vocabulary - all its concepts"@en ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/acid-mine-drainage> ,
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/aqueous-liquid-emission> ,
@@ -56,24 +56,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "BAT/BREF of mining tailings and waste rock (European Commission 2004). http://eippcb.jrc.ec.europa.eu/reference/BREF/mmr_adopted_0109.pdf"@en ;
     skos:inScheme cs: ;
     skos:notation "01.2.1.2.1.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "saures Grubenwasser"@de ,
-        "acid mine drainage"@en ,
-        "desagüe ácido mina"@es ,
-        "hapan kaivosvaluma"@fi ,
-        "exhaure mine acide"@fr ,
-        "aliran tambang asam"@id ,
-        "drenaggio acido"@it ,
-        "酸性鉱山排水"@ja ,
-        "karbgðÚrecjsarFatuGasuItBIGNþÚgEr:"@km ,
-        "산성 광산배수"@ko ,
-        " ¡¾­-ì½-®¾¨-­ÕÀ¦¨ê†À¯ñ­¡ö©¥¾¡ÁÍÈ¤¢÷©£í­Á»È"@lo ,
-        "saliran asid lombong"@ms ,
-        "drenirovanie vod shakhtnykh sernokislykh"@ru ,
-        "försurat gruvdränage"@sv ,
-        "น้ำเสียจากเหมืองที่เป็นกรด"@th ,
-        "thoát nước axit mỏ"@vi ,
-        "酸性矿坑排水"@zh ;
+    skos:prefLabel "acid mine drainage"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/basic-mine-drainage>
@@ -95,14 +78,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "This vocabulary"@en ;
     skos:inScheme cs: ;
     skos:notation "02.3.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Einsturz"@de ,
-        "collapse"@en ,
-        "hundimiento"@es ,
-        "sortuminen"@fi ,
-        "sprofondamento"@it ,
-        "obrushenie"@ru ,
-        "kollaps"@sv ;
+    skos:prefLabel "collapse"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/dam-failure>
@@ -128,24 +104,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "ISO 4225 (ISO, 1994), quoted in http://www.who.int/occupational_health/publications/en/oehairbornedust3.pdf; http://ecorestoration.montana.edu/mineland/guide/problem/impacts/fugitive.htm"@en ;
     skos:inScheme cs: ;
     skos:notation "01.1.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Staub"@de ,
-        "dust"@en ,
-        "polvo"@es ,
-        "pöly"@fi ,
-        "poussière"@fr ,
-        "debu"@id ,
-        "polvere"@it ,
-        "ダスト"@ja ,
-        "FUlI"@km ,
-        "재"@ko ,
-        "±÷È­"@lo ,
-        "debu"@ms ,
-        "pyl'"@ru ,
-        "damm"@sv ,
-        "ฝุ่น"@th ,
-        "bụi"@vi ,
-        "尘"@zh ;
+    skos:prefLabel "dust"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/erosion>
@@ -162,24 +121,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "IGH International Glossary of Hydrology. WMO - UNESCO, 1992. 413 p."@en ;
     skos:inScheme cs: ;
     skos:notation "02.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Erosion"@de ,
-        "erosion"@en ,
-        "erosión"@es ,
-        "eroosio"@fi ,
-        "érosion"@fr ,
-        "erosi"@id ,
-        "erosione"@it ,
-        "浸食作用"@ja ,
-        "sMNwk"@km ,
-        "침식"@ko ,
-        "¡¾­À§¾½À¥ˆº­"@lo ,
-        "hakisan"@ms ,
-        "ehroziya"@ru ,
-        "erosion"@sv ,
-        "การกร่อน"@th ,
-        "xói mòn"@vi ,
-        "侵蚀"@zh ;
+    skos:prefLabel "erosion"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/heat>
@@ -189,14 +131,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "This vocabulary"@en ;
     skos:inScheme cs: ;
     skos:notation "04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Waerme"@de ,
-        "heat"@en ,
-        "calor"@es ,
-        "lämpö"@fi ,
-        "calore"@it ,
-        "teplota"@ru ,
-        "värme"@sv ;
+    skos:prefLabel "heat"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -224,24 +159,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index."@en ;
     skos:inScheme cs: ;
     skos:notation "02.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Erdrutsch"@de ,
-        "landslide"@en ,
-        "deslizamiento terreno"@es ,
-        "maanvieremät"@fi ,
-        "glissement terrain"@fr ,
-        "longsoran"@id ,
-        "frana"@it ,
-        "地滑り"@ja ,
-        "bMNak;dI"@km ,
-        "산사태"@ko ,
-        "©ò­-À¥ˆº­"@lo ,
-        "gelongsoran tanah"@ms ,
-        "opolzen'"@ru ,
-        "skred"@sv ,
-        "ดินถล่ม"@th ,
-        "trượt đất"@vi ,
-        "滑坡"@zh ;
+    skos:prefLabel "landslide"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/neutral-mine-drainage>
@@ -267,24 +185,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "This vocabulary"@en ;
     skos:inScheme cs: ;
     skos:notation "06.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Rauschen"@de ,
-        "noise"@en ,
-        "ruido fondo"@es ,
-        "taustahäiriö"@fi ,
-        "bruit fond"@fr ,
-        "suara riuh"@id ,
-        "rumore di fondo"@it ,
-        "ノイズ"@ja ,
-        "sUsMelg/sUr"@km ,
-        "잡음"@ko ,
-        "¦¼¤ìö®¡¸­"@lo ,
-        "bunyi bising"@ms ,
-        "shum"@ru ,
-        "brus"@sv ,
-        "เสี่ยง"@th ,
-        "nhiễu"@vi ,
-        "杂波"@zh ;
+    skos:prefLabel "noise"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/non-aqueous-liquid-emission>
@@ -333,24 +234,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Deposition of sediment eroded from resource extraction site in undesirable locations"@en ;
     skos:inScheme cs: ;
     skos:notation "02.6"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Sedimentation"@de ,
-        "sedimentation"@en ,
-        "sedimentación"@es ,
-        "sedimentaatio"@fi ,
-        "sédimentation"@fr ,
-        "sedimentasi"@id ,
-        "sedimentazione"@it ,
-        "堆積作用"@ja ,
-        "dMeNIrénkMeTckMN"@km ,
-        "퇴적작용"@ko ,
-        "¡¾­ªö¡ª½¡º­"@lo ,
-        "pensedimenan"@ms ,
-        "sedimentatsiya"@ru ,
-        "sedimentation"@sv ,
-        "การเกิดหินตะกอน"@th ,
-        "trầm tích (quá trình)"@vi ,
-        "沉积"@zh ;
+    skos:prefLabel "sedimentation"@en ;
     schema:citation "http://ecorestoration.montana.edu/mineland/guide/problem/impacts/erosion.htm"^^xsd:anyURI ;
 .
 
@@ -416,24 +300,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index."@en ;
     skos:inScheme cs: ;
     skos:notation "01.4.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Strahlung"@de ,
-        "radiation"@en ,
-        "radiación"@es ,
-        "säteily"@fi ,
-        "rayonnement"@fr ,
-        "radiasi"@id ,
-        "radiazione"@it ,
-        "放射"@ja ,
-        "karbeB©ajkMedA"@km ,
-        "방사"@ko ,
-        "¡¾­Á°Èìñ¤¦ó"@lo ,
-        "sinaran"@ms ,
-        "radiatsiya"@ru ,
-        "strålning"@sv ,
-        "การแผ่รังสี"@th ,
-        "bức xạ"@vi ,
-        "辐射"@zh ;
+    skos:prefLabel "radiation"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/radioactive-emission>
@@ -464,24 +331,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/collapse> ;
     skos:notation "02.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Senkung"@de ,
-        "subsidence"@en ,
-        "subsidencia"@es ,
-        "vajoaminen"@fi ,
-        "subsidence"@fr ,
-        "amblasan"@id ,
-        "subsidenza"@it ,
-        "沈降"@ja ,
-        "dMeNIrs¶b;s¶at;"@km ,
-        "침강"@ko ,
-        "¡¾­¨÷®ªö¸ìö¤"@lo ,
-        "penurunan"@ms ,
-        "opuskanie"@ru ,
-        "jordskorpesänkning"@sv ,
-        "การยุบตัวลง"@th ,
-        "lún chìm"@vi ,
-        "下沉"@zh ;
+    skos:prefLabel "subsidence"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/vibration>
@@ -496,24 +346,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/environmental-impact/noise> ;
     skos:notation "06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Erschuetterung"@de ,
-        "vibration"@en ,
-        "vibración"@es ,
-        "värähtely"@fi ,
-        "vibration"@fr ,
-        "vibrasi"@id ,
-        "tremore"@it ,
-        "振動"@ja ,
-        "dMeNIrj½r"@km ,
-        "진동"@ko ,
-        "¡¾­¦ñ„­"@lo ,
-        "getaran"@ms ,
-        "vibratsiya"@ru ,
-        "vibration"@sv ,
-        "การสั่น"@th ,
-        "chấn động"@vi ,
-        "振动"@zh ;
+    skos:prefLabel "vibration"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -613,18 +446,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/basic-mine-drainage> ,
         <http://resource.geosciml.org/classifier/cgi/environmental-impact/neutral-mine-drainage> ;
     skos:notation "01.2.1.2.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "mine drainage"@en ,
-        "exhaure mine"@fr ,
-        "penyaliran pertambangan"@id ,
-        "坑廃水"@ja ,
-        "bgðÚrEr:"@km ,
-        "광산배수"@ko ,
-        "¡¾­ì½®¾¨­ÕµøÈ®Ò¢÷©£í­"@lo ,
-        "saliran lombong"@ms ,
-        "การระบายน้ำในเหมือง"@th ,
-        "thoát nước mỏ"@vi ,
-        "矿山排水"@zh ;
+    skos:prefLabel "mine drainage"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/environmental-impact/emission>
@@ -666,11 +488,12 @@ cs:
     a skos:ConceptScheme ;
     skos:changeNote
         "2014-02-23 Conversion to SKOS by SM Richard"@en ,
-        "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en ,
-        "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
-        "2021-12-17 Rachel Heaven (BGS) Edits to remove trailing white space from https://linked.data.gov.au/org/cgi-gtwg schema:name value"@en ;
+        "2015-01-08 OLR: Edits to fix typos and remove '201401' from rdf file name."@en ,
+        "2016-11-28 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2021-12-17 R.Heaven (BGS):  Edits to remove trailing white space from https://linked.data.gov.au/org/cgi-gtwg schema:name value"@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This file contains the CGI Earth Resource Environmental Impact vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts for categorizing impacts associated with Earth Resource extraction activities. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Earth Resource Environmental Impact vocabulary. Vocabulary Shepherd: Carlo Cipolloni. Compilation and review in Google doc spreadsheet; adopted 2014-01-10; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept

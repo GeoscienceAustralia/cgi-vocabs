@@ -7,11 +7,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/end-use-potential>
     a skos:Collection ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:changeNote "2021-12-17 R.Heaven: BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:historyNote "The original vocabulary - all its concepts"@en ;
     skos:inScheme cs: ;
-    rdfs:isDefinedBy cs: ;
     skos:member
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/abrasive-minerals> ,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/agricultural-lime> ,
@@ -55,14 +55,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "BGS Mines and Quarries Database"@en ;
     skos:inScheme cs: ;
     skos:notation "03.04.03.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Polierstoff"@de ,
-        "abrasive minerals"@en ,
-        "abrasivo"@es ,
-        "hioma-aineet"@fi ,
-        "abrasivo"@it ,
-        "abraziv"@ru ,
-        "slipmedel"@sv ;
+    skos:prefLabel "abrasive minerals"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/end-use-potential/agricultural-lime>
@@ -170,18 +163,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "ProMine EU FP7 project, BGS Mines and Quarries Database"@en ;
     skos:inScheme cs: ;
     skos:notation "09.01.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "fertilizers"@en ,
-        "engrais"@fr ,
-        "pupuk"@id ,
-        "肥料"@ja ,
-        "CI"@km ,
-        "비료"@ko ,
-        "¯÷¨"@lo ,
-        "baja"@ms ,
-        "ปุ๋ย"@th ,
-        "phân bón"@vi ,
-        "肥料"@zh ;
+    skos:prefLabel "fertilizers"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/end-use-potential/fossil-fuel-use>
@@ -206,14 +188,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "BGS Mines and Quarries Database"@en ;
     skos:inScheme cs: ;
     skos:notation "05.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Schmuckstein"@de ,
-        "gemstone"@en ,
-        "gema"@es ,
-        "jalokivet"@fi ,
-        "gemma"@it ,
-        "kamen' dragotsennyj"@ru ,
-        "ädelsten"@sv ;
+    skos:prefLabel "gemstone"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -257,18 +232,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "BGS Mines and Quarries Database"@en ;
     skos:inScheme cs: ;
     skos:notation "03.04.01.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "industrial product treatment"@en ,
-        "pigment"@fr ,
-        "pigmen"@id ,
-        "顔料"@ja ,
-        "CatiBN’ ¬kñúgsrIragÁkay¦"@km ,
-        "색소"@ko ,
-        "¦¾­ê†À¯ñ­¦ó"@lo ,
-        "pigmen"@ms ,
-        "สารสี"@th ,
-        "chất màu"@vi ,
-        "色素"@zh ;
+    skos:prefLabel "industrial product treatment"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/end-use-potential/landscaping>
@@ -291,24 +255,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "BGS Mines and Quarries Database"@en ;
     skos:inScheme cs: ;
     skos:notation "01.01."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Erz"@de ,
-        "metal ore"@en ,
-        "metal sustancia"@es ,
-        "metallimalmit"@fi ,
-        "métal substance"@fr ,
-        "bijih logam"@id ,
-        "minerale metallico"@it ,
-        "金属鉱床"@ja ,
-        "Er:elah³"@km ,
-        "금속광석"@ko ,
-        "ÁëÈÂì¹½"@lo ,
-        "bijih logam"@ms ,
-        "ruda metallicheskikh poleznykh iskopaemykh"@ru ,
-        "malm"@sv ,
-        "สินแร่โลหะ"@th ,
-        "quặng kim loại"@vi ,
-        "金属矿"@zh ;
+    skos:prefLabel "metal ore"@en ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/end-use-potential/mineral-specimens>
@@ -369,24 +316,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "BGS Mines and Quarries Database"@en ;
     skos:inScheme cs: ;
     skos:notation "06.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Recycling"@de ,
-        "recycling"@en ,
-        "reciclaje"@es ,
-        "kierrätys"@fi ,
-        "recyclage"@fr ,
-        "pendauran"@id ,
-        "riciclaggio"@it ,
-        "リサイクリング"@ja ,
-        "karrMlayeFVImþgeTot"@km ,
-        "재순환"@ko ,
-        "¡¾­­¿´¾Ã§É£õ­ÃÏÈ"@lo ,
-        "kitar semula"@ms ,
-        "retsirkulyatsiya"@ru ,
-        "återvinning"@sv ,
-        "การหมุนเวียน"@th ,
-        "tái tuần hoàn"@vi ,
-        "回收"@zh ;
+    skos:prefLabel "recycling"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -458,25 +388,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/chemicals> ,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/speciality-and-other-industrial> ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Steine-Erden-Industrieminerale"@de ,
-        "industrial minerals"@en ,
-        "sustancia útil"@es ,
-        "teollisuusmineraalit"@fi ,
-        "substance utile"@fr ,
-        "mineral industri"@id ,
-        "sostanza utile"@it ,
-        "工業原料鉱物"@ja ,
-        "Er:]sSahkmµ"@km ,
-        "산업용 광물"@ko ,
-        "Á»È-ê¾©-º÷©-¦¾-¹½-¡¿"@lo ,
-        "mineral industri"@ms ,
-        "minerale grondstoffen voor"@nl ,
-        "syr'e nemetallicheskoe"@ru ,
-        "industrimineral"@sv ,
-        "แร่อุตสาหกรรม"@th ,
-        "khoáng chất công nghiệp"@vi ,
-        "工业矿物"@zh ;
+    skos:prefLabel "industrial minerals"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -493,24 +405,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/horticultural> ,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/landscaping> ;
     skos:notation "09.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Land- und Forstwirtschaft"@de ,
-        "agriculture"@en ,
-        "agricultura"@es ,
-        "maanviljely"@fi ,
-        "agriculture"@fr ,
-        "pertanian"@id ,
-        "agricoltura"@it ,
-        "農業"@ja ,
-        "ksikmµ"@km ,
-        "농업"@ko ,
-        " ¡½-¦ò-¡¿"@lo ,
-        "pertanian"@ms ,
-        "khozyajstvo sel'skoe"@ru ,
-        "jordbruk"@sv ,
-        "การเพาะปลูก"@th ,
-        "nông nghiệp"@vi ,
-        "农业"@zh ;
+    skos:prefLabel "agriculture"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -554,35 +449,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/plaster-and-plasterboard> ,
         <http://resource.geosciml.org/classifier/cgi/end-use-potential/structural-clay-products> ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel
-        "Ingenieurbau"@de ,
-        "construction"@en ,
-        "obra"@es ,
-        "rakentaminen"@fi ,
-        "ouvrage"@fr ,
-        "konstruksi"@id ,
-        "opera ingegneristica"@it ,
-        "建築"@ja ,
-        "sMNg;"@km ,
-        "건설"@ko ,
-        "¡¾­¡Ò¦É¾¤"@lo ,
-        "binaan"@ms ,
-        "sooruzhenie"@ru ,
-        "konstruktion"@sv ,
-        "การก่อสร้าง"@th ,
-        "xây dựng"@vi ,
-        "建造"@zh ;
+    skos:prefLabel "construction"@en ;
     skos:topConceptOf cs: ;
 .
 
 cs:
     a skos:ConceptScheme ;
     skos:changeNote
-        "2014-02-23 Conversion to SKOS by SM Richard."@en ,
-        "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en ,
-        "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
-        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
-        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ;
+        "2014-02-23 SMR: Conversion to SKOS"@en ,
+        "2015-01-08 OLR: Edits to fix typos and remove '201401' from rdf file name."@en ,
+        "2016-11-28 OLR: regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en ,
+        "2020-06-23 NJC: Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
+        "2021-12-17 R.Heaven: BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
+        "2024-10-16 NJC: update to Vbe ocPub 4.10 valid."@en ;
     skos:definition "This file contains the CGI End Use Potential vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to specify the end-use potential of the Earth Resource (eg for energy, fertilizer, building raw material etc). In the ERML model, a MineralOccurrence is a kind of EarthResource that has an occurrence type category and one or more associated enduse potential concepts. This vocabulary provides the range of values for the end-use potential property of MineralOccurrence. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI End Use Potential vocabulary. Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept
