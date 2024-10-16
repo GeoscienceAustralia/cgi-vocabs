@@ -1,0 +1,77 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://resource.geosciml.org/cgi-vocabs>
+    a dcat:Catalog ;
+    skos:historyNote "This catalogue was was created in 2024 from the long-standing listing of CGI vocabs from GeoSciML, EarthResourceML and the Chronostratigraphic Chart."@en ;
+    schema:codeRepository "https://github.com/GeoscienceAustralia/cgi-vocabs" ;
+    schema:contributor <https://kurrawong.ai> ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateCreated "2017"^^xsd:gYear ;
+    schema:dateModified "2024-10-16"^^xsd:date ;
+    schema:description """The Commission for Geoscience Information (CGI)'s vocabularies of controlled geoscience terms""" ;
+    dcterms:hasPart
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleshape> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    schema:keywords
+        "EarthResourceML" ,
+        "GeoSciML" ,
+        "Geoscience" ;
+    schema:name "CGI Vocabularies" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi-gtwg> ;
+.
