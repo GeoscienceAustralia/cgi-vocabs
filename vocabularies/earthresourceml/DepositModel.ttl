@@ -1,0 +1,3121 @@
+PREFIX : <http://resource.geosciml.org/classifier/cgi/deposit-classification/>
+PREFIX dt: <http://resource.geosciml.org/datatype/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:abyssal-pegmatite-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :pegmatite ;
+    skos:definition "Pegmatites within the upper amphibolite to low to high pressure granulite facies, concentrated in rare-earth elements (REE)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.01.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Abyssal pegmatite REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:albitite-hosted-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :alkali-calcic ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Albitite-hosted uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:algoma-type-banded-iron-formation
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanogenic ;
+    skos:definition "Chemically precipitated iron formation composed of thinly banded chert and iron minerals, with associated volcanic rocks and greywackes. It is found along volcanic arcs, chiefly Archaen  in age."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "10.02.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Algoma-type banded iron formation"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:alkalic-epithermal-gold-ag
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :epithermal ;
+    skos:definition "Alkalic type epithermal deposits are part of a family of epithermal deposits and considered a subset of low-sulfidation epithermal gold deposits. Related to alkaline igneous rocks and occur as disseminated breccia and vein hosted gold and silver."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.01.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Alkalic epithermal gold ± Ag"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:anorthosite-conduit-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :anorthosite-conduit ;
+    skos:definition "An anorthosite conduit associated nickel-copper-platinum-group elements (PGE) deposit."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.13.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Anorthosite conduit Ni-Cu-PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:anorthosite-massif-ti
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :anorthosite-massif ;
+    skos:definition "A massif-type anorthosite hosted titanium deposit."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.12.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Anorthosite massif Ti"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:apatite-intrusion-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :apatite-intrusion ;
+    skos:definition "Rare earth element mineralisation hosted by massive apatite veins. Veins and mineralisation form via magmatic-hydrothermal fluids exsolved from an alkali melt crystallising in the mid-crust."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.05.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Apatite intrusion REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:apatite-nepheline-titanite-intrusion
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "Apatite-nepheline-titanite mineralisation associated with an alkaline intrusive complex. Stockwork orebodies are hosted by nepheline syenite or foyaite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.04."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Apatite-nepheline-titanite intrusion"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:arc-u-m-intrusion-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ultramafic-and-or-mafic-intrusion ;
+    skos:definition "Ultramafic to mafic arc-related intrusions with approximate concentric zoning and nickel-copper-platinum group element mineralisation. "@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.09.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Arc U-M intrusion Ni-Cu-PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:arc-u-m-intrusion-ti-v
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ultramafic-and-or-mafic-intrusion ;
+    skos:definition "Ultramafic to mafic arc-related intrusions with approximate concentric zoning and titanium-vanadium mineralisation. "@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.09.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Arc U-M intrusion Ti-V"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:bauxite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :laterite ;
+    skos:definition "A sedimentary rock and the primary ore for aluminium, containing 15-25% aluminium. Bauxite is formed by the surface weathering of clay rocks in humid tropical to sub-tropical regions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Bauxite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:bimodal-felsic-vms
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanogenic-massive-sulfide-vms ;
+    skos:definition "Copper-zinc-lead-Au-Ag deposits formed at or near the seafloor at incipient-rifted continental margin arcs and related back-arc rifts where circulating hydrothermal fluids driven by magmatic heat are quenched through mixing with bottom waters or porewaters. Massive sulfide lenses form in a variety of shapes and sizes; they may be podlike or sheetlike and are generally stratiform. These deposits have an association with felsic and bimodal volcanic lithologies."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "10.01.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Bimodal-felsic VMS"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:bimodal-mafic-vms
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanogenic-massive-sulfide-vms ;
+    skos:definition "Copper-zinc-lead-Au-Ag deposits formed at or near the seafloor at intraoceanic volcanic arcs and related back-arc rifts where circulating hydrothermal fluids driven by magmatic heat are quenched through mixing with bottom waters or porewaters. Massive sulfide lenses form in a variety of shapes and sizes; they may be podlike or sheetlike and are generally stratiform. These deposits have an association with mafic and bimodal volcanic lithologies."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "10.01.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Bimodal-mafic VMS"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:black-shale-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :black-shale ;
+    skos:definition "A black shale hosted gold deposit."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.01.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Black shale gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:black-shale-nickel-mo-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :black-shale ;
+    skos:definition "Thin (<3-10 cm) layers of pyrite, vaesite, jordisite, and sphalerite in black shale sub-basins with associated phosphatic chert and carbonate rocks. These form in anoxic environments in continental platform or successor basin settings."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Black shale nickel ± Mo-PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:black-shale-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :black-shale ;
+    skos:definition "A black shale hosted uranium deposit. Uranium accumulations can be stratiform or stockwork, and are at low or very low grades forming an unconventional uranium resource."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Black shale uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:black-shale-vanadium-mo-ni
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :black-shale ;
+    skos:definition "A black shale hosted vanadium, molybdenum, nickel deposit."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.01.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Black shale vanadium ± Mo ± Ni"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:breccia-pipe-copper
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :breccia-pipe ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.03.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Breccia pipe copper"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:breccia-pipe-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :breccia-pipe ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Breccia pipe gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:breccia-pipe-molybdenum
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :breccia-pipe ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.03.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Breccia pipe molybdenum"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:breccia-pipe-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :breccia-pipe ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.03.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Breccia pipe REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:calcrete-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :uranium ;
+    skos:definition "A calcrete-hosted uranium deposit, where ores are disseminations, vug linings, fracture coatings, and encrustations in calcrete cemented sediments or evaporative calcrete horizons."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "03.03.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Calcrete uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:carbonate-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :uranium ;
+    skos:definition "A uranium deposit occurring in calcareous host rocks. These deposits comprise syn- and epigenetic ores forming in a variety of geological settings."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "03.03.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Carbonate uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:carbonatite-laterite-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :laterite ;
+    skos:definition "A REE deposit formed by the lateritic weathering of carbonatities. Carbonatite-hosted REE deposits are the primary source of the world's REEs."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.01.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Carbonatite laterite REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:carbonatite-nb
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :carbonatite ;
+    skos:definition "A carbonatite hosted niobium deposit."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.02.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Carbonatite Nb"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:carbonatite-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :carbonatite ;
+    skos:definition "A carbonatite hosted rare eath element (REE) deposit."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.02.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Carbonatite REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:carlin-type-au
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :carlin-type ;
+    skos:definition "Gold occuring as microscopic particles (up to 30 micrometeres) that must be identified by chemical analysis as it is not recoverable by panning."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.04.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Carlin-type Au"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:climax-type-porphyry-mo
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :porphyry ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.08.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Climax-type porphyry Mo"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:coal-peat-bog-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :uranium ;
+    skos:definition "Uranium accumulations in coal or peat-bogs. Accumulations in coal form are likely sourced from uranium-rich rocks that sometimes overly or are intercalated with the coal seams. Uranium in peat-bogs are sourced from adjacent uranium-enriched regions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "03.03.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Coal/peat/bog uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:collapse-breccia-pipe-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :collapse-breccia-pipe ;
+    skos:definition "Uranium mineralization centred on vertical collapse breccia pipes. The pipes develop in marine platform carbonates and act as a permeable conduit for upward artesian flow of basinal brines. Mixing of basinal brines with uranium-bearing oxidising waters from sandstone aquifers forms disseminated, replacement, and fracture fill uranium mineralisation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.02.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Collapse breccia pipe uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:crust-manganese
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :manganese ;
+    skos:definition "Manganese crusts form by the precipitation of manganese and iron oxides from cold, ambient ocean water on sediment-free, hard substrates in the deep ocean. They typically form at water depths 400-7000 m."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.04.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Crust manganese"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:distal-disseminated-ag-au
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :distal-disseminated ;
+    skos:definition "Carlin-type style Ag-Au deposits formed on the distal edges of magmatic-hydrotthermal systems, related to upper crustal instrusive complexes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.05.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Distal-disseminated Ag-Au"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:epithermal-be
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :epithermal ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.01.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Epithermal Be"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:epithermal-hg
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :epithermal ;
+    skos:definition "Mercury (Hg) deposit assocaited with epithermal system."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.01.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Epithermal Hg"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:epithermal-u
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :epithermal ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.01.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Epithermal U"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:epizonal-orogenic-antimony-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :orogenic ;
+    skos:definition "Antimony-bearing quartz veins hosted in deformed metamorphic terranes, formed in collisional orogenic belts at depths of less than 6 km and temperatures 150-300C."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "07.01.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Epizonal orogenic antimony ± gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:epizonal-orogenic-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :orogenic ;
+    skos:definition "Gold-bearing quartz veins hosted in deformed metamorphic terranes, formed in collisional orogenic belts at depths of less than 6 km and temperatures 150-300C."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "07.01.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Epizonal orogenic gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:epizonal-orogenic-mercury
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :orogenic ;
+    skos:definition "Mercury deposits hosted in deformed metamorphic terranes, formed in collisional orogenic belts at depths of less than 6 km and temperatures 150-300C. Cinnabar and stibnite are the dominant ore minerals with native mercury also occuring."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "07.01.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Epizonal orogenic mercury"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:erosional
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In erosional environments, gravity-driven turbulent flow of surface water or tidal- and wind-driven wave action concentrate heavy, insoluble, or hard minerals by winnowing away light, soluble, or soft minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :placer ;
+    skos:notation "01.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Erosional"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:exotic-copper
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :exotic ;
+    skos:definition "A copper deposit resulting from release by chemical weathering of soluble minerals and concentration by lateral chemical gradients and transport through paleodrainage systems."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "03.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Exotic copper"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:felsic-siliciclastic-vms
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanogenic-massive-sulfide-vms ;
+    skos:definition "Copper-zinc-lead-Au-Ag deposits formed at or near the seafloor at mature epicontinental margin arcs and related back-arc rifts where circulating hydrothermal fluids driven by magmatic heat are quenched through mixing with bottom waters or porewaters. Massive sulfide lenses form in a variety of shapes and sizes; they may be podlike or sheetlike and are generally stratiform. These deposits have an association with felsic and siliciclastic lithologies."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "10.01.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Felsic-siliciclastic VMS"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:ferroan-carbonate-polymetallic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metasomatic-iron ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.02.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Ferroan carbonate polymetallic"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:fluvial-placer-diamond
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A diamond deposit formed by modern fluvial systems transporting and concentrating diamonds."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Fluvial placer diamond"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:fluvial-placer-garnet
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A garnet deposit formed by modern fluvial systems transporting and concentrating grains of garnet."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.08"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Fluvial placer garnet"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:fluvial-placer-gemstones
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A gemstone deposit formed by modern fluvial systems transporting and concentrating gemstones."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.09"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Fluvial placer gemstones"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:fluvial-placer-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A gold deposit formed by modern fluvial systems transporting and concentrating gold."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.11"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Fluvial placer gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:fluvial-placer-niobium-tantalum
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A niobium-tantalum deposit formed by modern fluvial systems transporting and concentrating niobium-tantalum bearing minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.10"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Fluvial placer niobium-tantalum"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:fluvial-placer-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A PGE deposit formed by modern fluvial systems transporting and concentrating PGE bearing minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Fluvial placer PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:fluvial-placer-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A REE deposit formed by modern fluvial systems transporting and concentrating REE bearing minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Fluvial placer REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:fluvial-placer-tin
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A tin deposit formed by modern rivers and streams transporting and concentrating tin bearing minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.07"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Fluvial placer tin"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:fluvial-placer-tungsten
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A tungsten deposit formed by modern fluvial systems transporting and concentrating tungsten bearing minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Fluvial placer tungsten"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:greisen-be-li
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :greisen ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.09.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Greisen Be ± Li"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:greisen-sn-w-mo
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :greisen ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.09.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Greisen Sn ± W, Mo"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:greisen-w-mo-bi
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :greisen ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.09.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Greisen W-Mo ± Bi"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:heavy-mineral-sands
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "Old beach, river, or dune sands that contain concentrations of heavy minerals such as rutile, ilmenite, zircon and monazite. Heavy minerals are concentrated by wave and wind action."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.16"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Heavy mineral sands"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:hematite-dominant-ioa
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ioa ;
+    skos:definition "Iron oxide-apatite (IOA) deposits in which the dominant iron oxide mineralisation is hematite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.04.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Hematite-dominant IOA"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:hematite-dominant-iocg
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :iocg ;
+    skos:definition "Iron oxide copper-gold (IOCG) deposits in which the dominant iron oxide mineralisation is hematite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.03.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Hematite-dominant IOCG"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:high-sulfidation-hs-epithermal-silver-gold-cu
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :epithermal ;
+    skos:definition "Epithermal deposits characterised by the high sulphidation (HS) state of the sulfide mineral assemblage. The primary products of HS deposits are gold with variable amounts of silver and copper and are a major source of these elements."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "High-sulfidation (HS) epithermal silver-gold ± Cu"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:hypozonal-orogenic-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :orogenic ;
+    skos:definition "Gold-bearing quartz veins hosted in deformed metamorphic terranes, formed in collisional orogenic belts at depths greater than 12 km and temperatures exceeding 475C."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "07.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Hypozonal orogenic gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:impact-u-m-intrusion-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ultramafic-and-or-mafic-intrusion ;
+    skos:definition "Nickel-copper-PGE mineralisation associated with an impact structure. Meteorite impact with ultramafic to mafic crustal rocks generates a superheated melt sheet, dissolving all sulfides in the target rocks. During cooling the sulfides crystallise early and accumulate along the base of the melt sheet."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.09.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Impact U-M intrusion Ni-Cu-PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:intermediate-sulfidation-is-epithermal-silver-gold-zn-pb-cu-sn-mn
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :epithermal ;
+    skos:definition "Epithermal deposits characterised by the intermediate sulphidation (IS) state of the sulfide mineral assemblage. The primary products of HS deposits are silver, gold with variable amounts of zinc, lead copper, tin and manganese."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.01.07"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Intermediate-sulfidation (IS) epithermal silver-gold ± Zn, Pb, Cu, Sn, Mn"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:ion-adsorption-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :clay-supergene ;
+    skos:definition "A REE deposit formed by the adsorption of REE to the surface of the clay minerals kaolinite or halloysite through the weathering of igneous rocks (typically granites) in temperate and tropical climates."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.02.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Ion adsorption REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:irish-type-sediment-hosted-zinc-lead
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :sediment-hosted ;
+    skos:definition "Stratabound, massive sphalerite, galena, iron sulfide, and barite lenses with associate calcite, dolomite, and quartz gangue in dolomitized platformal limestones. Deposits are structurally controlled and adjacent to normal growth faults."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.03.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Irish-type sediment-hosted zinc-lead"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:iron-oxide-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metasomatic-iron ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.02.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Iron oxide gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:iron-oxide-polymetallic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metasomatic-iron ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.02.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Iron oxide polymetallic"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:iron-oxide-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metasomatic-iron ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.02.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Iron oxide uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:iron-silicate-polymetallic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metasomatic-iron ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.02.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Iron silicate polymetallic"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:iron-sulfide-polymetallic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metasomatic-iron ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.02.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Iron sulfide polymetallic"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:karst-bauxite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :laterite ;
+    skos:definition "A bauxite deposit formed by the surface weathering of clay rocks in karst landscapes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Karst bauxite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:kimberlite-diamond
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :kimberlite ;
+    skos:definition "A kimberlite hosted diamond deposit. Kimberlites are the primary source of diamonds."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.06.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Kimberlite diamond"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:kipushi-type-sediment-hosted-copper-zinc-lead
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :sediment-hosted ;
+    skos:definition "Massive base-metal sulfides and As-sulfosalts in dolomite breccias. Breccia zones are tabular or pipe-like and form in continental platform or shelf terranes with rifting. Breccias act as prosoud conduits for fluid flow, and ores are deposited in reducing environments."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.03.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Kipushi-type sediment-hosted copper-zinc-lead"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:komatiite-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :komatiite ;
+    skos:definition "Nickel-copper-platinum group element mineralisation associated with komatiitic volcanic extrusive rocks. Sulfide bodies can be lenticular, irregular enlongate to tabular, or pipelike."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.07.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Komatiite Ni-Cu-PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-brine-lithium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :brine ;
+    skos:definition "Lithium-enriched brine pore-waters in suprasealevel saline lacustrine settings, typically in arid continental high altitude volcanogenic terrains."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.02.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine brine lithium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-brine-potash
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :brine ;
+    skos:definition "Potash-enriched brine pore-waters in suprasealevel saline lacustrine settings. Derived from resurging deep basinal brines/formation waters."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.02.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine brine potash"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-clay-lithium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :clay-basin-evaporative ;
+    skos:definition "Clay-hosted lithium deposit. Mineralized clays are derived from tuffaceous sediments during closed hydrologic system diagenesis, with a likely secondary magmatic source of lithium."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.04.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine clay lithium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-evaporite-borate
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Borate deposit formed by the evaporation of saline water in lakes. Most deposits form in lakes in high-relief, active or formerly active volcanic terrains above sealevel in cooler arid conditions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.09"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine evaporite borate"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-evaporite-carnallite-bischofite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Carnallite-bischofite deposit formed by the evaporation of saline water in lakes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.08"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine evaporite carnallite-bischofite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-evaporite-magnesite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Magnesite deposit formed by the evaporation of saline water in lakes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.10"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine evaporite magnesite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-evaporite-nitrate
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Nitrate salt deposit formed by the evaporation of saline water in lakes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.11"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine evaporite nitrate"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-evaporite-potash
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Potash deposit formed by the evaporation of saline water in lakes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.07"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine evaporite potash"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-evaporite-salt
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Salt deposit formed by the evaporation of saline water in lakes. Basin floor elevations are well above sea level when salts are accumulating."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine evaporite salt"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-evaporite-trona
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Trona (soda-ash) deposit formed by the evaporation of saline water in lakes. Trona is a sodium carbonate that forms from lake waters enriched in HCO3 compared to Mg and Ca."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine evaporite trona"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-iron-formation
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :iron-formation ;
+    skos:definition "Thin beds and laminations of fine-grained hematite formed by exhalation of hydrothermal fluids into caldera lakes. Subsequent volcanic processes may disturb the bedded hematite, forming breccias."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.03.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine iron formation"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-manganese
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :manganese ;
+    skos:definition "Bedded and vein manganese oxide in sedimentary and volcanic rocks filling half-graben basins associated with detachment faulting in extensional terranes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.04.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine manganese"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lacustrine-zeolite-li-b
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :zeolite ;
+    skos:definition "Microcrystalline zeolites crystallised in relatively thick, generally nonmarine tephra sequences. Zeolites crystallised in the post-depositional environment and show a more or less vertical zonation reflecting chemical modification by vertical movement of meteoric water."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Lacustrine zeolite (± Li, B)"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:laterite-magnesite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :laterite ;
+    skos:definition "A lateritic soil hosted magnesite deposit, formed by the weathering of ultramafic rocks in humid tropical to sub-tropical conditions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.01.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Laterite magnesite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:laterite-nickel
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :laterite ;
+    skos:definition "A lateritic soil hosted nickel deposit, formed by the weathering of ultramafic rocks in humid tropical to sub-tropical conditions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.01.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Laterite nickel"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:lct-pegmatite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :pegmatite ;
+    skos:definition "Pegmatites enriched in lithium, cesium and tantalum."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.01.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "LCT pegmatite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:low-f-porphyry-mo
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :porphyry ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.08.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Low-F porphyry Mo"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:low-fe-alkali-calcic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :alkali-calcic ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Low Fe alkali-calcic"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:low-sulfidation-ls-epithermal-gold-silver
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :epithermal ;
+    skos:definition "Epithermal deposits characterised by the low sulphidation (LS) state of the sulfide mineral assemblage. The primary products of HS deposits are gold and silver."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Low-sulfidation (LS) epithermal gold-silver"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:mafic-siliciclastic-vms
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanogenic-massive-sulfide-vms ;
+    skos:definition "Copper-zinc-lead-Au-Ag deposits formed at or near the seafloor at sediment-covered ridges and related rifts where circulating hydrothermal fluids driven by magmatic heat are quenched through mixing with bottom waters or porewaters. Massive sulfide lenses form in a variety of shapes and sizes; they may be podlike or sheetlike and are generally stratiform. These deposits have an association with mafic and siliciclastic lithologies."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "10.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Mafic-siliciclastic VMS"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:mafic-ultramafic-vms
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanogenic-massive-sulfide-vms ;
+    skos:definition "Copper-zinc-lead-Au-Ag deposits formed at or near the seafloor at mid-ocean ridges or in mature back-arc basins where circulating hydrothermal fluids driven by magmatic heat are quenched through mixing with bottom waters or porewaters. Massive sulfide lenses form in a variety of shapes and sizes; they may be podlike or sheetlike and are generally stratiform. These deposits have an association with mafic and ultramafic lithologies."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "10.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Mafic-ultramafic VMS"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:magnetite-dominant-ioa
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ioa ;
+    skos:definition "Iron oxide-apatite (IOA) deposits in which the dominant iron oxide mineralisation is magnetite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.04.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Magnetite-dominant IOA"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:magnetite-dominant-iocg
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :iocg ;
+    skos:definition "Iron oxide copper-gold (IOCG) deposits in which the dominant iron oxide mineralisation is magnetite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "09.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Magnetite-dominant IOCG"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:marine-brine-potash-mg-li-and-so-on
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :brine ;
+    skos:definition "A marine brine, concentrated in potash and or magnesium and lithium salts. Derived from hydrothermally-modified marine water; today this occurs in and near active fracture zones where seawater interacts with oceanic crust at mid-ocean ridges."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.02.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Marine brine potash (± Mg, Li, and so on)"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:marine-evaporite-gypsum
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Gypsum deposit formed by the evaporation of seawater. Gypsum has been one of the most volumetrically significant marine evaporite salts since the Phanerozoic; prior to the Mesoproterozoic, free sulfate levels in the ocean were insufficent to allow gypsum precipitation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Marine evaporite gypsum"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:marine-evaporite-magnesite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Magnesite deposit formed by the evaporation of seawater."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Marine evaporite magnesite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:marine-evaporite-potash
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Potash deposit formed at the surface or in the shallow subsurface by the evaporation of seawater. As a bittern, potash typically only begins to form once seawater reaches 60-70 times its original concentration."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Marine evaporite potash"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:marine-evaporite-salt
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :evaporite ;
+    skos:definition "Salt deposit formed by the evaporation of seawater. Halite is one of the most volumetrically significant marine evaporite salts."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "04.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Marine evaporite salt"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:mesozonal-orogenic-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :orogenic ;
+    skos:definition "Gold-bearing quartz veins hosted in deformed metamorphic terranes, formed in collisional orogenic belts at depths of 6-12 km and temperatures 300-475C."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "07.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Mesozonal orogenic gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:metamorphic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In metamorphic environments, ore minerals are produced by metamorphic transformation of precursor minerals that contain valuable commodities."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :metamorphic-group ;
+    skos:notation "08.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Metamorphic"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:metamorphic-graphite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metamorphic-group ;
+    skos:definition "Graphite formed a result of maturation of organic material during sub-greenschist to granulite facies regional or contact metamorphism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "08.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Metamorphic graphite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:metamorphic-hydrothermal
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In metamorphic hydrothermal environments, elements dissolved in metamorphic (± magmatic) fluids are concentrated by physical and chemical gradients encountered along flow paths."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :orogenic ;
+    skos:notation "07.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Metamorphic hydrothermal"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:metamorphic-kyanite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metamorphic-group ;
+    skos:definition "Kyanite deposit formed by upper amphibolite facies metamorphism of aluminous sediments, followed by hydrothermal leaching and volcanic alteration."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "08.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Metamorphic kyanite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:mvt-barite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :mississippi-valley-type-mvt ;
+    skos:definition "An epigenetic barite deposit formed by replacement of dolostone and limestone by barite with lesser sphalerite, galena, pyrite, and marcasite. MVT deposits form in platform carbonate sequences commonly at the flanks of basins or in foreland thrust belts, where basinal brines source metals and sulfur from the crust and are focused by faults, fractures, collapse breccias, and lithological transitions into the overlying carbonate sequences."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.04.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "MVT barite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:mvt-fluorspar
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :mississippi-valley-type-mvt ;
+    skos:definition "An epigenetic lead-zinc(-fluorspar-barite) deposit formed in carbonate aquifer rocks where a metalliferous and fluorine-rich brine mixed with a second, likely more sulfide-rich brine. Both brines likely have deep basinal groundwater sources, likely including igneous rocks as the fluorine source, mixing at fracture zones or pinched-out confining beds and precipitating sulfides and fluorite. "@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.04.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "MVT fluorspar"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:mvt-strontium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :mississippi-valley-type-mvt ;
+    skos:definition "An epigenetic strontium deposit formed in carbonate aquifer rocks where a deep basinal brine mixed with a second, stromtium-rich brine. Both brines likely have deep basinal groundwater sources, likely including volcaniclastic sediments as the strontium source, mixing and precipitating stronium-bearing minerals including celestine. "@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.04.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "MVT strontium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:mvt-zinc-lead
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :mississippi-valley-type-mvt ;
+    skos:definition "An epigenetic lead and zinc deposit formed by replacement of dolostone and limestone by sphalerite, galena, pyrite, and marcasite, with lesser barite. MVT deposits form in platform carbonate sequences commonly at the flanks of basins or in foreland thrust belts, where basinal brines source metals and sulfur from the crust and are focused by faults, fractures, collapse breccias, and lithological transitions into the overlying carbonate sequences."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.04.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "MVT zinc-lead"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:nodular-magnesite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magnesite ;
+    skos:definition "Coarse-grained magnesite deposits occurring in carbonates as well as sandstones and other clastic sediments. Ore zones are lens-shapes, stratabound and typically stratiform."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "03.04.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Nodular magnesite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:nodule-manganese
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :manganese ;
+    skos:definition "Nodular manganese deposits are composed of ferromanganese oxidesand form by hydrogenetic or diagentic precipitation around a hard nuceleus on the surface or in the subsurface of soft seafloor sediment."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.04.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Nodule manganese"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:non-sulfide-zinc-lead-mn
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :non-sulfide ;
+    skos:definition "A non-sulfide hypogene zinc-lead deposit comprising zinc silicates and oxides, with minor sphalerite. Deposits occur primarily within carbonate rocks and may be stratiform lenses or structurally controlled veins and irregular pipes. "@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.05.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Non-sulfide zinc-lead ± Mn"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:nyf-pegmatite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :pegmatite ;
+    skos:definition "Pegmatites enriched in niobium, yttrium and flourine."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "NYF pegmatite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:oolitic-iron-formation
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :iron-formation ;
+    skos:definition "Beds rich in iron silicate and oxide minerals with oolitic texture, deposited in shallow-shelf to intertidal, clastic dominated environments. Lacks layered chert and primary siderite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.03.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Oolitic iron formation"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:ophiolite-cr
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ophiolite ;
+    skos:definition "An ophiolite hosted chromium (Cr) deposit."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.11.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Ophiolite Cr"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:ophiolite-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ophiolite ;
+    skos:definition "An ophiolite hosted nickel-copper-platinum-group elements (PGE) deposit."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.11.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Ophiolite Ni-Cu-PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:orogenic-copper-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :orogenic ;
+    skos:definition "Copper-gold-bearing pipes, lenses and veins in basin sedimentary sequences. Mineralization occurs during basin inversion and is focused into sites of dilation. Orebodies are mostly sulfidic, with some magnetite or pyrrhotite. "@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "07.01.07"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Orogenic copper ± gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:orogenic-graphite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :orogenic ;
+    skos:definition "Graphite-bearing veins and graphite-rich zones formed by precipitation from metamorphic or metasomatic C-O-H fluid. Mineralization is triggered by changes in temperature and pressure, fluid buffering, or by mixing with another fluid."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "07.01.08"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Orogenic graphite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:orogenic-silver-lead-zinc-copper-antimony
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :orogenic ;
+    skos:definition "Silver-lead-zinc-copper-antimony-bearing veins in deformed metamorphic terranes, formed in collisional orogenic belts at average depths of 6 km and temperates 250-300C. Veins are often spatially associated with a crustal-scale fault."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "07.01.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Orogenic silver-lead-zinc-copper-antimony"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:oxidized-intrusion-related-au
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :intrusion-related ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.10.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Oxidized intrusion-related Au"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:paleochannel-iron
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :paleochannel ;
+    skos:definition "Concentrations of iron bearing minerals within paleochannels."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "03.02.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Paleochannel iron"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:paleoplacer-gold-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "Placer concentrations of gold ± uranium formed in the geological past and now hosted in a consolidated rock."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.15"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Paleoplacer gold ± uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:paleoplacer-heavy-mineral-sands
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "Placer concentrations of heavy mineral sands formed in the geological past and now hosted in a consolidated rock."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.14"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Paleoplacer heavy mineral sands"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:paleoplacer-tin
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "Placer concentrations of tin bearing minerals formed in the geological past and now hosted in a consolidated rock."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.13"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Paleoplacer tin"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:peralkaline-igneous-hfse-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :peralkaline-igneous ;
+    skos:definition "High field strength and rare earth element mineralisation associated with peralkaline igneous rocks. Mineralisation is related to crystallisation of the igneous rock and late magmatic to hydrothermal fluids."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Peralkaline igneous HFSE-REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:phosphorite-group
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :phosphorite ;
+    skos:definition "A stratiform or lens-shaped sedimentary rock with a high content of phosphate minerals. Most commonly it is a bedded primary or reworked secondary marine rock composed of microcrystalline carbonate fluorapatite in the form of laminae, pellets, oolites, nodules and skeletal, shell and bone fragments. Commodities may include fluorine, REE, vanadium, uranium, and gypsum."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.02.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Phosphorite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:porphyry-au-cu
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :porphyry ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.08.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Porphyry Au ± Cu"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:porphyry-cu-au
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :porphyry ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.08.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Porphyry Cu ± Au"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:porphyry-cu-mo
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :porphyry ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.08.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Porphyry Cu-Mo"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:porphyry-sn
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :porphyry ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.08.07"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Porphyry Sn"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:porphyry-w
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :porphyry ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.08.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Porphyry W"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:reduced-intrusion-related-au
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :intrusion-related ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.10.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Reduced intrusion-related Au"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:replacement-au-ag
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :replacement ;
+    skos:definition "A gold-silver deposit formed by replacement processes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.06.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Replacement Au-Ag"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:replacement-cu
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :replacement ;
+    skos:definition "A copper deposit formed by replacement processes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.06.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Replacement Cu"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:replacement-fluorite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :replacement ;
+    skos:definition "A flourite deposit formed by replacement processes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.06.08"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Replacement fluorite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:replacement-mg
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :replacement ;
+    skos:definition "A magnesium deposit formed by replacement processes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.06.07"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Replacement Mg"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:replacement-mn
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :replacement ;
+    skos:definition "A manganese deposit formed by replacement processes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.06.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Replacement Mn"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:replacement-polymetallic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :replacement ;
+    skos:definition "A mineral deposit formed by the replacement of sedimentary rocks by metal bearing fluids associated with igneous intrusions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.06.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Replacement polymetallic"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:replacement-sn
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :replacement ;
+    skos:definition "A tin deposit formed by replacement processes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.06.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Replacement Sn"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:replacement-zn-pb
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :replacement ;
+    skos:definition "A zinc-lead deposit formed by replacement processes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.06.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Replacement Zn-Pb"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:residual-clay
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :clay-supergene ;
+    skos:definition "Clay material formed in place by the weathering of rock, derived either from the chemical decay minerals or from the removal of non-clay-mineral constituents by solution from a clay-bearing rock (such as an argillaceous limestone)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.02.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Residual clay"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:residual-placer-lead
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A lead deposit formed by the conentration of tin bearing minerals  near the parent rock via the weathering of surrounding lighter and less stable material."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Residual placer lead"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:residual-placer-tin
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A tin deposit formed by the conentration of tin bearing minerals  near the parent rock via the weathering of surrounding lighter and less stable material."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Residual placer tin"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:sandstone-hosted-zinc-lead
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :mississippi-valley-type-mvt ;
+    skos:definition "Stratabound to stratiform galena and sphalerite in multiple, thin, sheetlike ore bodies in sandstones. Sandstones may include local conglomerate, grit, siltstone, and evaporite components deposited in combined continental and marine environments during deep weathering in stable tectonic conditions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.04.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Sandstone-hosted zinc-lead"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:sandstone-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :uranium ;
+    skos:definition "Uranium accumulations in medium- to coarse-grained siliciclastic sedimentary rocks deposited in fluvial, lacustrine, or shallow-marine environments. Uranium is precipitated by reduction processes caused by the presence of agents including detrital plant debris, sulfides, ferro-magnesian minerals, sulfate-reducing bacteria, or migrating fluids."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "03.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Sandstone uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:sediment-hosted-copper-co
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :sediment-hosted ;
+    skos:definition "Disseminated, cementing, and veinlet-hosted copper minerals peneconformable with their sedimentary or metasedimentary host rocks. Ore minerals have strong lateral zoning. Host rocks are typically a reduced facies (fine grained sediments or carbonaceous dolosiltstone), fine to coarse grained sandstones, or red-bed fluvial sandstones."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Sediment-hosted copper ± Co"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:sedimentary-manganese
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :manganese ;
+    skos:definition "Laterally extensive beds of manganite, psilomelane, rhodochrosite and other manganese within marine sediments. Textures include oolites, pisolites, rhythmic laminations, slumped bedding, hard-ground fragments and fossils. These form in shallow marine settings in interior or marginal basins on stable cratons."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.04.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Sedimentary manganese"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:shoreline-placer-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :placer ;
+    skos:definition "A gold deposit formed by the concentration of gold bearing minerals on the upper parts of beaches through wave action."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "01.01.12"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Shoreline placer gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:siliciclastic-carbonate-zinc-lead
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :sediment-hosted ;
+    skos:definition "Tabular or stratiform zinc-lead orebodies hosted by marine siliciclastic or carbonate rocks of basin-sag phase sequences. Principal ore minerals sphalerite and galena precipitated from warm, saline basin brines of or just below the seafloor."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.03.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Siliciclastic-carbonate zinc-lead"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:siliciclastic-mafic-barite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :sediment-hosted ;
+    skos:definition "Fine grained and finely laminated barite in siliciclastic basin sequences, and/or barite clasts incorporated into turbidites and debris flows. Barite precipitates on or just below the seafloor from hydrothermal brines, which can migrate some distance from the discharge zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.03.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Siliciclastic-mafic barite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:siliciclastic-mafic-zinc-lead
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :sediment-hosted ;
+    skos:definition "Massive to semimassive galena, sphalerite, pyrrhotite, pyrite, and/or magnetite layers or stacked lenses hosted by thinly bedded paragneiss successions. Associated with bimodal volcanics reflecting active extensional tectonics. Host successions are generally interpreted as shallow marine environments. Host and mineralisation are strongly deformed and metamorphosed."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.03.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Siliciclastic-mafic zinc-lead"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:simple-pegmatite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :pegmatite ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Simple pegmatite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:skarn-au-cu-w
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :skarn ;
+    skos:definition "A skarn deposit containing a significant concentration of gold, copper and tungsten formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.07.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn Au ± Cu ± W"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:skarn-be-fluorite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :skarn ;
+    skos:definition "A skarn deposit containing a significant concentration of beryllium and fluorite formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.07.07"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn Be-fluorite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:skarn-cu
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :skarn ;
+    skos:definition "A skarn deposit containing a significant concentration of copper, formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.07.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn Cu"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:skarn-mo
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :skarn ;
+    skos:definition "A skarn deposit containing a significant concentration of molybdenum formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.07.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn Mo"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:skarn-sn-cu-mo
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :skarn ;
+    skos:definition "A skarn deposit containing a significant concentration of tin, copper and molybdenum, formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.07.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn Sn ± Cu ± Mo"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:skarn-u-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :skarn ;
+    skos:definition "A skarn deposit containing a significant concentration of uranium and REEs formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.07.08"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn U-REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:skarn-w-mo
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :skarn ;
+    skos:definition "A skarn deposit containing a significant concentration of tungsten and molybdenum, formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.07.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn W ± Mo"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:skarn-zn-pb-ag
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :skarn ;
+    skos:definition "A skarn deposit containing a significant concentration of zinc, lead and silver formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.07.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn Zn-Pb-Ag"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:supergene-copper
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene-group ;
+    skos:definition "A copper deposit resulting from release by chemical weathering of soluble minerals and concentration by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.03.07"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene copper"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:supergene-gold
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene-group ;
+    skos:definition "A gold deposit resulting from release by chemical weathering of soluble minerals and concentration by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.03.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene gold"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:supergene-iron
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene-group ;
+    skos:definition "A iron deposit resulting from release by chemical weathering of soluble minerals and concentration by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.03.09"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene iron"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:supergene-lead
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene-group ;
+    skos:definition "A lead deposit resulting from release by chemical weathering of soluble minerals and concentration by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.03.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene lead"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:supergene-manganese
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene-group ;
+    skos:definition "A manganese deposit resulting from release by chemical weathering of soluble minerals and concentration by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.03.08"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene manganese"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:supergene-silver
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene-group ;
+    skos:definition "A silver deposit resulting from release by chemical weathering of soluble minerals and concentration by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene silver"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:supergene-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene-group ;
+    skos:definition "A uranium deposit resulting from release by chemical weathering of soluble minerals and concentration by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.03.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:supergene-vanadium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene-group ;
+    skos:definition "A vanadium deposit resulting from release by chemical weathering of soluble minerals and concentration by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.03.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene vanadium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:supergene-zinc
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene-group ;
+    skos:definition "A zinc deposit resulting from release by chemical weathering of soluble minerals and concentration by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.03.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene zinc"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:superior-type-banded-iron-formation
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :iron-formation ;
+    skos:definition "Banded iron-rich sedimentary rock, generally laterally extensive, typically layered on a centimeter scale with siliceous beds."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Superior-type banded iron formation"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:superior-type-banded-manganese
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :manganese ;
+    skos:definition "Laminated manganese-rich sedimentary rock comprising microcrystalline Mn-bearing carbonates, braunite and hematite."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "05.04.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Superior-type banded manganese"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:u-m-conduit-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ultramafic-and-or-mafic-conduit ;
+    skos:definition "Nickel-copper-platinum group element mineralisation associated with conduits underlying ultramafic to mafic large igneous provinces. Conduits are represented by sill complexes that crystallised and cooled at shallow depths. Ore-bearing intrusions have an elongate, finger-like shapes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.10.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "U-M conduit Ni-Cu-PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:u-m-intrusion-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ultramafic-and-or-mafic-intrusion ;
+    skos:definition "Mafic to ultramafic intrusion containing a significant concentration of nickel (Ni), copper (Cu) and platinum-group elements (PGE).  Mafic to ultramafic Ni-Cu-PGE intrusions host some of the world's largest nickel deposits."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.09.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "U-M intrusion Ni-Cu-PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:u-m-layered-intrusion-cr
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ultramafic-and-or-mafic-layered-intrusion ;
+    skos:definition "A mafic-ultramafic layered intrusion containing significant concentrations of chromium (Cr)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.08.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "U-M layered intrusion Cr"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:u-m-layered-intrusion-fe-ti-v
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ultramafic-and-or-mafic-layered-intrusion ;
+    skos:definition "A mafic-ultramafic layered intrusion containing significant concentrations of iron (Fe), titatnium (Ti) and vanadium (V)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.08.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "U-M layered intrusion Fe-Ti-V"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:u-m-layered-intrusion-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ultramafic-and-or-mafic-layered-intrusion ;
+    skos:definition "A mafic-ultramafic layered intrusion containing significant concentrations of nickel (Ni), copper (Cu) and platinum-group elements (PGE)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.08.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "U-M layered intrusion Ni-Cu-PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:u-m-layered-intrusion-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :ultramafic-and-or-mafic-layered-intrusion ;
+    skos:definition "A mafic-ultramafic layered intrusion containing significant concentrations of platinum-group elements (PGE)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "12.08.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "U-M layered intrusion PGE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:unconformity-related-ree
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :unconformity-related ;
+    skos:definition "A REE deposit occurring in fault zones at and immediately above or below a prominent regional unconformity. REEs are sourced from the underlying metamorphic basement rocks and mobilised into fault zones by fluids. Mixing of fluids at the unconformity results in precipitation of REE-bearing minerals, principally xenotime."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.01.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Unconformity-related REE"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:unconformity-related-uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :unconformity-related ;
+    skos:definition "A uranium deposit ocurring at and immediately above or below an unconformity separating relatively undeformed, intracratonic sandstone basins from underlying metamorphic basement rocks. Ore bodies are structurally controlled pods, veins, breccias and replacements with extensive domains of alteration."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.01.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Unconformity-related uranium"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:underclay-overclay
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :clay-supergene ;
+    skos:definition "** doesn't describe overclays yet** Massive, non-bedded clay layers underlying horizons of coal, usually containing cracks with slickensides. Underclays are thought to represent paleosols pre-dating deposition of coal, or have formed as a result of alteration or diagenesis."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "02.02.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Underclay, overclay"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:vein-cobalt-ni
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :vein ;
+    skos:definition "Veins containing mineralised copper and or nickel."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.02.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein cobalt ± Ni"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:vein-copper
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :vein ;
+    skos:definition "Veins containing mineralised copper."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.02.03"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein copper"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:vein-five-element
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :five-element ;
+    skos:definition "Hydrothermal vein deposits dominated by nickel-copper-arsenides ± native elements. Mineralisation is not restricted to five elements but can include a wide variety of arsenides, sulfarsenides, and/or native elements. "@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "06.06.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein five-element"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:vein-fluorite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :vein ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.02.07"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein fluorite"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:vein-polymetallic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :vein ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.02.08"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein polymetallic"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:vein-replacement-nickel
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :vein ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.02.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein ± replacement nickel"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:vein-sn-polymetallic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :vein ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.02.06"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein Sn polymetallic"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:vein-tin
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :vein ;
+    skos:definition "Veins containing mineralised tin."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.02.04"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein tin"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:vein-tungsten
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :vein ;
+    skos:definition "Veins containing mineralised tungsten."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "11.02.05"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein tungsten"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:volcanic-hosted-copper
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanic-hosted ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "10.03.01"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Volcanic-hosted copper"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:volcanogenic-manganese
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanogenic ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation "10.02.02"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Volcanogenic manganese"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+<https://linked.dat.gov.au/org/cgi>
+    a sdo:Organization ;
+    sdo:name "Commission for Geoscience Information" ;
+    sdo:url "https://cgi-iugs.org"^^xsd:anyURI ;
+.
+
+<https://linked.dat.gov.au/org/ga>
+    a sdo:Organization ;
+    sdo:name "Geoscience Australia" ;
+    sdo:url "https://www.ga.gov.au"^^xsd:anyURI ;
+.
+
+:anorthosite-conduit
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "Anorthosite rocks formed by the transportation and crystallisation of anorthositic magma to the surface via conduits such as dykes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :anorthosite-conduit-ni-cu-pge ;
+    skos:notation "12.13."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Anorthosite conduit"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:anorthosite-massif
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "Large anorthosite rocks formed by the crystalisation of plagioclase in magma chambers. Massif-type anorthosites are constrained to the Proterozoic and the exact processes by which they form are disputed."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :anorthosite-massif-ti ;
+    skos:notation "12.12."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Anorthosite massif"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:apatite-intrusion
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "Massive apatite hydrothermal veins formed from high-temperature hydrothermal fluids sourced from crystallising alkali melts or possibly an enriched mantle or juvenile lower crust."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :apatite-intrusion-ree ;
+    skos:notation "12.05."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Apatite intrusion"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:carlin-type
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "Carlin-type deposits are epigeneitc,, disseminated, auriferous pyrite deposits enriched in As, Sb, Hg, Tl that are typically hosted in calcareous sedimentary rocks. They are named after a deposit near Carlin, Nevada."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :carlin-type-au ;
+    skos:notation "11.04."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Carlin-type"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:clay-basin-evaporative
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-evaporative ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :lacustrine-clay-lithium ;
+    skos:notation "04.04."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Clay (basin evaporative)"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:collapse-breccia-pipe
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-hydrothermal ;
+    skos:definition "Vertical collapse breccia pipes developed in marine platform carbonates deposited in a tectonically stable cratonic environment. Known exclusively in northwestern Arizona, USA."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :collapse-breccia-pipe-uranium ;
+    skos:notation "06.02."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Collapse breccia pipe"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:distal-disseminated
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "Carlin-type style deposits which occur on the on the distal edges of magmatic-hydrothermal systems related to upper crustal intrusive complexes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :distal-disseminated-ag-au ;
+    skos:notation "11.05."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Distal-disseminated"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:exotic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :infiltrational ;
+    skos:definition "Exotic deposits form in conjunction with supergene enrichment, but involve lateral solution movement. Solutions may be transported through paleodrainage systems up to 8 km from the source, producing new mineralisation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :exotic-copper ;
+    skos:notation "03.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Exotic"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:five-element
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-hydrothermal ;
+    skos:definition "Hydrothermal ore deposits dominated by nickel-copper-arsenides ± native elements. Mineralisation can be veins, stratabound, or replacement of the host rock, and is not restricted to five elements but can include a wide variety of arsenides, sulfarsenides, and/or native elements. "@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :vein-five-element ;
+    skos:notation "06.06."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Five-element"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:kimberlite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "An ultramafic igneous rock containing at least 35% olivine with one or more of the following in the groundmass; monticellite, phlogiopite, carbonate, serpentine, diopside. It is the primary source of diamonds."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :kimberlite-diamond ;
+    skos:notation "12.06."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Kimberlite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:komatiite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "An ultramafic volcanic rock defined as having crystallised from lava of at least 18% wt% MgO."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :komatiite-ni-cu-pge ;
+    skos:notation "12.07."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Komatiite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:magnesite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :infiltrational ;
+    skos:definition "A magnesium carbonate mineral (MgCO3)."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :nodular-magnesite ;
+    skos:notation "03.04."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Magnesite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:non-sulfide
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-hydrothermal ;
+    skos:definition "A zinc deposit where ore minerals are largely non-sulfides. They occur mostly in carbonate rocks in a range of geologic environments and form by either supergene or hypogene processes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :non-sulfide-zinc-lead-mn ;
+    skos:notation "06.05."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Non-sulfide"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:paleochannel
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :infiltrational ;
+    skos:definition "Remnants of a fluvial channel cut in older rock or sediment and filled by the younger overlying rock or sediment."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :paleochannel-iron ;
+    skos:notation "03.02."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Paleochannel"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:peralkaline-igneous
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "An igneous rock with a high (Na + K)/Al ratio. Typically enriched in alkali elements, halogens, and rare earth elements."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :peralkaline-igneous-hfse-ree ;
+    skos:notation "12.03."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Peralkaline igneous"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:phosphorite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-chemical ;
+    skos:definition "A stratiform or lens-shaped sedimentary rock with a high content of phosphate minerals. Most commonly it is a bedded primary or reworked secondary marine rock composed of microcrystalline carbonate fluorapatite in the form of laminae, pellets, oolites, nodules and skeletal, shell and bone fragments."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :phosphorite-group ;
+    skos:notation "05.02."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Phosphorite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:skarn-iron
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader
+        :metasomatic-iron ,
+        :skarn ;
+    skos:definition
+        "A skarn deposit containing a significant concentration of iron, formed by the replacement of carbonate rocks through contact metamorphism and metasomatism."@en ,
+        "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:notation
+        "09.02.07"^^dt:LocalHierarchyKey ,
+        "11.07.09"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn iron"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:ultramafic-and-or-mafic-conduit
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "Conduits underlying ultramafic to mafic large igneous provinces. Conduits are represented by sill complexes that crystallised and cooled at shallow depths."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :u-m-conduit-ni-cu-pge ;
+    skos:notation "12.10."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Ultramafic and (or) mafic conduit"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:volcanic-hosted
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanic-basin-hydrothermal ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :volcanic-hosted-copper ;
+    skos:notation "10.03."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Volcanic-hosted"@en ;
+    sdo:additionalType :DepositType ;
+.
+
+:zeolite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-evaporative ;
+    skos:definition "A group of white or colourless hydrous aluminosilicate minerals. Zeolites form by reaction between volcanic rock and ash layers and alkali groundwater, and in post-depositional environments in shallow sedimentary basins."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower :lacustrine-zeolite-li-b ;
+    skos:notation "04.03."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Zeolite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:alkali-calcic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :regional-metasomatic ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :albitite-hosted-uranium ,
+        :low-fe-alkali-calcic ;
+    skos:notation "09.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Alkali-calcic"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:carbonatite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "An igneous rock composed of at least 50% carbonate minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :carbonatite-nb ,
+        :carbonatite-ree ;
+    skos:notation "12.02."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Carbonatite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:intrusion-related
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :oxidized-intrusion-related-au ,
+        :reduced-intrusion-related-au ;
+    skos:notation "11.10."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Intrusion-related"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:ioa
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :regional-metasomatic ;
+    skos:definition "Iron oxide-apatite (IOA) deposits, also known as Kiruna-type deposits. Significant source of iron as well as phosphorus, rare earth elements, vanadium and cobalt. IOA deposits represent the copper poor endmember of iron oxide-copper-gold (IOCG) deposit types. Structurally controlled and are dominantly associated with volcanic and intrusivce rocks of intermediate composition and calc-alkaline affinity. Magnetite is the main consistituent of IOA deposits."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :hematite-dominant-ioa ,
+        :magnetite-dominant-ioa ;
+    skos:notation "09.04."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "IOA"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:iocg
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :regional-metasomatic ;
+    skos:definition "Iron oxide copper-gold (IOCG) are a group of mineral deposits characterised by magnetite and or hematite breccia zones and veins forming pipe-like and tabular orebodies hosted by subaerial volcanic, sedimentary and intrusive rocks. These deposits vary from apatite-iron (Kiruna type) to polymetallic iron, copper, uranium, gold and rare earth element-bearing (Olympic Dam-type) subtypes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :hematite-dominant-iocg ,
+        :magnetite-dominant-iocg ;
+    skos:notation "09.03."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "IOCG"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:metamorphic-group
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metamorphic ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :metamorphic-graphite ,
+        :metamorphic-kyanite ;
+    skos:notation "08.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Metamorphic"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:ophiolite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "An intact section of oceanic crust and upper mantle thrust on top of the continental lithosphere. A typical section through an ophiolite includes ultramafic rock and serpentinite, gabbro and basalt, and bedded chert or turbidite at the top."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :ophiolite-cr ,
+        :ophiolite-ni-cu-pge ;
+    skos:notation "12.11."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Ophiolite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:supergene
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In supergene environments, elements released by chemical weathering of soluble minerals are concentrated by chemical gradients associated with the downward percolation of meteoric water in the unsaturated zone."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :clay-supergene ,
+        :laterite ,
+        :supergene-group ;
+    skos:notation "02.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:unconformity-related
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-hydrothermal ;
+    skos:definition "A deposit associated with a prominent regional unconformity."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :unconformity-related-ree ,
+        :unconformity-related-uranium ;
+    skos:notation "06.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Unconformity-related"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:volcanic-basin-hydrothermal
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In volcanic basin hydrothermal environments, elements dissolved from volcanic-floored basins by heat-driven convection of seawater (± magmatic fluid) are concentrated by steep chemical and thermal gradients near seafloor vents."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :volcanic-hosted ,
+        :volcanogenic ,
+        :volcanogenic-massive-sulfide-vms ;
+    skos:notation "10.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Volcanic basin hydrothermal"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:volcanogenic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanic-basin-hydrothermal ;
+    skos:definition "Formed by processes directly connected with volcanism."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :algoma-type-banded-iron-formation ,
+        :volcanogenic-manganese ;
+    skos:notation "10.02."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Volcanogenic"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:basin-chemical
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In basin chemical environments, elements dissolved in freshwater or seawater precipitate at redox fronts in sedimentary basins."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :black-shale ,
+        :iron-formation ,
+        :manganese ,
+        :phosphorite ;
+    skos:notation "05.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Basin chemical"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:basin-evaporative
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In basin evaporative environments, elements present in closed lacustrine or silled marine basins are concentrated by evaporation in arid to hyperarid climatic zones until they precipitate from brines."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :brine ,
+        :clay-basin-evaporative ,
+        :evaporite ,
+        :zeolite ;
+    skos:notation "04.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Basin evaporative"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:brine
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-evaporative ;
+    skos:definition "Naturally occurring, unmodified, highly saline pore fluids in subsurface lithologies. Brines are a salt solution and lithium and calcium chloride brines are two common targets."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :lacustrine-brine-lithium ,
+        :lacustrine-brine-potash ,
+        :marine-brine-potash-mg-li-and-so-on ;
+    skos:notation "04.02."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Brine"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:clay-supergene
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene ;
+    skos:definition "Clays are a group of hydrated alumino-phyllosilicates or material with a particle size of less than 2 μm. Clay deposits can form through various processes including erosion, diagenesis and weathering."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :ion-adsorption-ree ,
+        :residual-clay ,
+        :underclay-overclay ;
+    skos:notation "02.02."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Clay (supergene)"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:greisen
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "A pneumatolytically altered grantitic rock composed largely of quartz, mica, and topaz. The mica is usually muscovite or lepidolite. Tourmaline, fluorite, rutile, cassiterite and wolframite are common acessory minerals."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :greisen-be-li ,
+        :greisen-sn-w-mo ,
+        :greisen-w-mo-bi ;
+    skos:notation "11.09."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Greisen"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:infiltrational
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In infiltrational environments, elements dissolved from soluble minerals by gravity-driven flow of oxidized meteoric groundwater are concentrated by chemical gradients encountered in aquifers."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :exotic ,
+        :magnesite ,
+        :paleochannel ,
+        :uranium ;
+    skos:notation "03.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Infiltrational"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:iron-formation
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-chemical ;
+    skos:definition "A chemical sedimatary rock, typically thin-bedded and or/finely laminated, containing at least 15% iron of sedimentary origin, and commonly but not necessarily containing layers of chert."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :lacustrine-iron-formation ,
+        :oolitic-iron-formation ,
+        :superior-type-banded-iron-formation ;
+    skos:notation "05.03."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Iron formation"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:regional-metasomatic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In regional metasomatic environments, elements dissolved in magmatic, metamorphic, or basinal brines are concentrated by chemical and thermal gradients encountered along heat-, tectonic-, and gravity-driven flow paths."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :alkali-calcic ,
+        :ioa ,
+        :iocg ,
+        :metasomatic-iron ;
+    skos:notation "09.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Regional metasomatic"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:black-shale
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-chemical ;
+    skos:definition "A dark, thinly laminated carbonaceous shale, exceptionally rich in organic matter (5% or more carbon content) and sulphide and commonly containing unusual concentrations of uranium, vanadium, copper, or nickel; also composed of manganese oxides."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :black-shale-gold ,
+        :black-shale-nickel-mo-pge ,
+        :black-shale-uranium ,
+        :black-shale-vanadium-mo-ni ;
+    skos:notation "05.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Black shale"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:breccia-pipe
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "A cylindrical chimney filled with breccia fragments of the country rock. Often found in mineralied epithermal systems and associated with prophyry-type mineral deposits."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :breccia-pipe-copper ,
+        :breccia-pipe-gold ,
+        :breccia-pipe-molybdenum ,
+        :breccia-pipe-ree ;
+    skos:notation "11.03."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Breccia pipe"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:pegmatite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "A very coarse grained intrusive igneous rock, usually found as irregular dykes, lenses or veins. Most grains are one cm or more in diameter. Pegmatites can be any igneous composition, though generally are granitic. Pegmatites represent the last and most hydrous portion of a magma to crystallise and hence contain high concentrations of minerals or elements present only in trace amounts in granitic rocks."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :abyssal-pegmatite-ree ,
+        :lct-pegmatite ,
+        :nyf-pegmatite ,
+        :simple-pegmatite ;
+    skos:notation "12.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Pegmatite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:ultramafic-and-or-mafic-intrusion
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "An intrusion with a mafic to ultramafic composition."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :arc-u-m-intrusion-ni-cu-pge ,
+        :arc-u-m-intrusion-ti-v ,
+        :impact-u-m-intrusion-ni-cu-pge ,
+        :u-m-intrusion-ni-cu-pge ;
+    skos:notation "12.09."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Ultramafic and (or) mafic intrusion"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:ultramafic-and-or-mafic-layered-intrusion
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic ;
+    skos:definition "Layered mafic to ultramafic intrusions formed by crystallisation of magma deep in the crust. Intrusions are primarily cumulates with sheet- to dyke-like shapes."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :u-m-layered-intrusion-cr ,
+        :u-m-layered-intrusion-fe-ti-v ,
+        :u-m-layered-intrusion-ni-cu-pge ,
+        :u-m-layered-intrusion-pge ;
+    skos:notation "12.08."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Ultramafic and (or) mafic-layered intrusion"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:uranium
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :infiltrational ;
+    skos:definition "A uranium deposit."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :calcrete-uranium ,
+        :carbonate-uranium ,
+        :coal-peat-bog-uranium ,
+        :sandstone-uranium ;
+    skos:notation "03.03."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Uranium"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:basin-hydrothermal
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In basin hydrothermal environments, elements are dissolved from minerals by gravity-driven and (or) heat-driven flow of brines produced by the evaporation of seawater or dissolution of minerals; elements are concentrated by chemical gradients encountered in basin aquifers or at the seawater-sediment interface."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :collapse-breccia-pipe ,
+        :five-element ,
+        :mississippi-valley-type-mvt ,
+        :non-sulfide ,
+        :sediment-hosted ,
+        :unconformity-related ;
+    skos:notation "06.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Basin hydrothermal"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:laterite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene ;
+    skos:definition "A soil type rich in iron and or aluminum oxides formed by extensive weathering of the parent rock. Laterites form in humid tropical to sub-tropical regions."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :bauxite ,
+        :carbonatite-laterite-ree ,
+        :karst-bauxite ,
+        :laterite-magnesite ,
+        :laterite-nickel ;
+    skos:notation "02.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Laterite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:manganese
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-chemical ;
+    skos:definition "The element manganese (Mn) is a silvery white, hard and brittle naturally occuring metal."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :crust-manganese ,
+        :lacustrine-manganese ,
+        :nodule-manganese ,
+        :sedimentary-manganese ,
+        :superior-type-banded-manganese ;
+    skos:notation "05.04."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Manganese"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:mississippi-valley-type-mvt
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-hydrothermal ;
+    skos:definition "An epigenetic lead and zinc deposit formed by replacement of dolostone and limestone by sphalerite, galena, pyrite, and marcasite; barite may be present in minor to trace amounts and fluorite is rare. MVT deposits form in platform carbonate sequences commonly at the flanks of basins or in foreland thrust belts, where basinal brines source metals and sulfur from the crust and are focused by faults, fractures, collapse breccias, and lithological transitions into the overlying carbonate sequences."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :mvt-barite ,
+        :mvt-fluorspar ,
+        :mvt-strontium ,
+        :mvt-zinc-lead ,
+        :sandstone-hosted-zinc-lead ;
+    skos:notation "06.04."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Mississippi Valley-type (MVT)"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:volcanogenic-massive-sulfide-vms
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :volcanic-basin-hydrothermal ;
+    skos:definition "Copper-zinc-lead-Au-Ag deposits formed at or near the seafloor where circulating hydrothermal fluids driven by magmatic heat are quenched through mixing with bottom waters or porewaters. Massive sulfide lenses form in a variety of shapes and sizes; they may be podlike or sheetlike and are generally stratiform."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :bimodal-felsic-vms ,
+        :bimodal-mafic-vms ,
+        :felsic-siliciclastic-vms ,
+        :mafic-siliciclastic-vms ,
+        :mafic-ultramafic-vms ;
+    skos:notation "10.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Volcanogenic massive sulfide (VMS)"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:sediment-hosted
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-hydrothermal ;
+    skos:definition "Sediment-hosted deposits can be divided into two major subtypes. The first subtype is clastic-dominated lead-zinc ores, which are hosted in shale, sandstone, siltstone, or mixed clastic rocks, or occur as carbonate replacement, within a clastic-dominated sedimentary rock sequence. This subtype includes deposits that have been traditionally referred to as sedimentary exhalative (SEDEX) deposits. The second subtype of sediment-hosted Pb-Zn deposits is the Mississippi Valley-type that occurs in platform carbonate sequences, typically in passive-margin tectonic settings."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :irish-type-sediment-hosted-zinc-lead ,
+        :kipushi-type-sediment-hosted-copper-zinc-lead ,
+        :sediment-hosted-copper-co ,
+        :siliciclastic-carbonate-zinc-lead ,
+        :siliciclastic-mafic-barite ,
+        :siliciclastic-mafic-zinc-lead ;
+    skos:notation "06.03."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Sediment-hosted"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:epithermal
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "Deposits formed in relatively near-surface magmatic hydrothermal environment associated with volcanic rocks that overlie cogenetic intrusive rocks. Generally accepted to form at temperatures <300 degrees celcius and depths of less than 1500m. Epithermal mineralisation occurs in three types, low-sulfidation, intermediate-sulfidation and high-sulfidation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :alkalic-epithermal-gold-ag ,
+        :epithermal-be ,
+        :epithermal-hg ,
+        :epithermal-u ,
+        :high-sulfidation-hs-epithermal-silver-gold-cu ,
+        :intermediate-sulfidation-is-epithermal-silver-gold-zn-pb-cu-sn-mn ,
+        :low-sulfidation-ls-epithermal-gold-silver ;
+    skos:notation "11.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Epithermal"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:metasomatic-iron
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :regional-metasomatic ;
+    skos:definition "Not yet available"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :ferroan-carbonate-polymetallic ,
+        :iron-oxide-gold ,
+        :iron-oxide-polymetallic ,
+        :iron-oxide-uranium ,
+        :iron-silicate-polymetallic ,
+        :iron-sulfide-polymetallic ,
+        :skarn-iron ;
+    skos:notation "09.02."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Metasomatic iron"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:porphyry
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "An igneous rock of any composition that contains conspicuous phenocrysts in a fine-grained groundmass; a porphyritic igneous rock."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :climax-type-porphyry-mo ,
+        :low-f-porphyry-mo ,
+        :porphyry-au-cu ,
+        :porphyry-cu-au ,
+        :porphyry-cu-mo ,
+        :porphyry-sn ,
+        :porphyry-w ;
+    skos:notation "11.08."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Porphyry"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:orogenic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :metamorphic-hydrothermal ;
+    skos:definition "Deposits of mineralized quartz veins hosted in deformed metamorphic terranes in collisional orogenic belts, divided into epizonal, mesozonal, and hypozonal deposits based on depth and temperature of formation."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :epizonal-orogenic-antimony-gold ,
+        :epizonal-orogenic-gold ,
+        :epizonal-orogenic-mercury ,
+        :hypozonal-orogenic-gold ,
+        :mesozonal-orogenic-gold ,
+        :orogenic-copper-gold ,
+        :orogenic-graphite ,
+        :orogenic-silver-lead-zinc-copper-antimony ;
+    skos:notation "07.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Orogenic"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:replacement
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "A change in mineral or composition of a mineral or mineral aggregate presumably by diffusion of new material in and old material out."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :replacement-au-ag ,
+        :replacement-cu ,
+        :replacement-fluorite ,
+        :replacement-mg ,
+        :replacement-mn ,
+        :replacement-polymetallic ,
+        :replacement-sn ,
+        :replacement-zn-pb ;
+    skos:notation "11.06."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Replacement"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:vein
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "Any fracture that contains mineralised material. Veins can display either crack-normal extension or shear displacement couple with crack normal extension."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :vein-cobalt-ni ,
+        :vein-copper ,
+        :vein-fluorite ,
+        :vein-polymetallic ,
+        :vein-replacement-nickel ,
+        :vein-sn-polymetallic ,
+        :vein-tin ,
+        :vein-tungsten ;
+    skos:notation "11.02."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Vein"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:magmatic-hydrothermal
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In magmatic hydrothermal environments, elements dissolved in magmatic fluids, brines, and vapors, or in heated external fluids, are concentrated by the steep chemical and thermal gradients around volcano-plutonic centers."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :breccia-pipe ,
+        :carlin-type ,
+        :distal-disseminated ,
+        :epithermal ,
+        :greisen ,
+        :intrusion-related ,
+        :porphyry ,
+        :replacement ,
+        :skarn ,
+        :vein ;
+    skos:notation "11.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Magmatic hydrothermal"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:skarn
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :magmatic-hydrothermal ;
+    skos:definition "A mining term for silicate gangue (amphibole, pyroxene, garnet etc.) of certain iron-ore and sulphide deposits of Archaean age, particularly those that have replaced limestone and dolomite. Its meaning has been generally expanded to include calcium-bearing silicates of any geologic age, derived from nearly pure limestone and dolomite with the introduction of large amounts of Si, Al, Fe, Mg."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :skarn-au-cu-w ,
+        :skarn-be-fluorite ,
+        :skarn-cu ,
+        :skarn-iron ,
+        :skarn-mo ,
+        :skarn-sn-cu-mo ,
+        :skarn-u-ree ,
+        :skarn-w-mo ,
+        :skarn-zn-pb-ag ;
+    skos:notation "11.07."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Skarn"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:supergene-group
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :supergene ;
+    skos:definition "The supergene group"@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :supergene-copper ,
+        :supergene-gold ,
+        :supergene-iron ,
+        :supergene-lead ,
+        :supergene-manganese ,
+        :supergene-silver ,
+        :supergene-uranium ,
+        :supergene-vanadium ,
+        :supergene-zinc ;
+    skos:notation "02.03."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Supergene"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:DepositEnvironment
+    a owl:Class ;
+    sdo:name "Mineral Deposit Environment" ;
+.
+
+:evaporite
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :basin-evaporative ;
+    skos:definition "Sediments formed by solar-driven concentration of a surface or near-surface brine. These can form in marine and lacustrine settings."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :lacustrine-evaporite-borate ,
+        :lacustrine-evaporite-carnallite-bischofite ,
+        :lacustrine-evaporite-magnesite ,
+        :lacustrine-evaporite-nitrate ,
+        :lacustrine-evaporite-potash ,
+        :lacustrine-evaporite-salt ,
+        :lacustrine-evaporite-trona ,
+        :marine-evaporite-gypsum ,
+        :marine-evaporite-magnesite ,
+        :marine-evaporite-potash ,
+        :marine-evaporite-salt ;
+    skos:notation "04.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Evaporite"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:magmatic
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:definition "In magmatic environments, ore minerals crystallize directly from igneous melts, including immiscible silicate, carbonate, sulfide, or other melts."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :anorthosite-conduit ,
+        :anorthosite-massif ,
+        :apatite-intrusion ,
+        :apatite-nepheline-titanite-intrusion ,
+        :carbonatite ,
+        :kimberlite ,
+        :komatiite ,
+        :ophiolite ,
+        :pegmatite ,
+        :peralkaline-igneous ,
+        :ultramafic-and-or-mafic-conduit ,
+        :ultramafic-and-or-mafic-intrusion ,
+        :ultramafic-and-or-mafic-layered-intrusion ;
+    skos:notation "12.."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Magmatic"@en ;
+    sdo:additionalType :DepositEnvironment ;
+.
+
+:placer
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:broader :erosional ;
+    skos:definition "A surficial mineral deposit formed by mechanical concentration of mineral particles from weathered material. The mineral is usually a heavy metal or mineral such as gold."@en ;
+    skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-classification> ;
+    skos:narrower
+        :fluvial-placer-diamond ,
+        :fluvial-placer-garnet ,
+        :fluvial-placer-gemstones ,
+        :fluvial-placer-gold ,
+        :fluvial-placer-niobium-tantalum ,
+        :fluvial-placer-pge ,
+        :fluvial-placer-ree ,
+        :fluvial-placer-tin ,
+        :fluvial-placer-tungsten ,
+        :heavy-mineral-sands ,
+        :paleoplacer-gold-uranium ,
+        :paleoplacer-heavy-mineral-sands ,
+        :paleoplacer-tin ,
+        :residual-placer-lead ,
+        :residual-placer-tin ,
+        :shoreline-placer-gold ;
+    skos:notation "01.01."^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Placer"@en ;
+    sdo:additionalType :DepositGroup ;
+.
+
+:DepositGroup
+    a owl:Class ;
+    sdo:name "Mineral Deposit Group" ;
+.
+
+:DepositType
+    a owl:Class ;
+    sdo:name "Mineral Deposit Type" ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/deposit-classification>
+    a skos:ConceptScheme ;
+    skos:definition "Minerals and groups of them from the Critical Mineral Mapping Initiative project"@en ;
+    skos:historyNote "Taken from Geoscience Australia's internal database, November 2023" ;
+    skos:prefLabel "Deposit Model Minerals"@en ;
+    sdo:copyrightNotice "(c) Commission for Geoscience Information, 2023" ;
+    sdo:creator <https://linked.dat.gov.au/org/ga> ;
+    sdo:dateCreated "2022-06-30"^^xsd:date ;
+    sdo:dateModified "2023-11-11"^^xsd:date ;
+    sdo:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    sdo:publisher <https://linked.dat.gov.au/org/cgi> ;
+.
