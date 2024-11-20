@@ -50,25 +50,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:anorthosite-conduit-ni-cu-pge
+:anorthosite-conduit-nickel-copper-pge
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :anorthosite-conduit ;
     skos:definition "An anorthosite conduit associated nickel-copper-platinum-group elements (PGE) deposit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.13.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Anorthosite conduit Ni-Cu-PGE"@en ;
+    skos:prefLabel "Anorthosite conduit nickel-copper-PGE"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:anorthosite-massif-ti
+:anorthosite-massif-titanium
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :anorthosite-massif ;
     skos:definition "A massif-type anorthosite hosted titanium deposit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.12.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Anorthosite massif Ti"@en ;
+    skos:prefLabel "Anorthosite massif titanium"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -94,25 +94,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositGroup ;
 .
 
-:arc-u-m-intrusion-ni-cu-pge
+:arc-u-m-intrusion-nickel-copper-pge
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ultramafic-and-or-mafic-intrusion ;
     skos:definition "Ultramafic to mafic arc-related intrusions with approximate concentric zoning and nickel-copper-platinum group element mineralisation. "@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.09.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Arc U-M intrusion Ni-Cu-PGE"@en ;
+    skos:prefLabel "Arc U-M intrusion nickel-copper-PGE"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:arc-u-m-intrusion-ti-v
+:arc-u-m-intrusion-titanium-vanadium
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ultramafic-and-or-mafic-intrusion ;
     skos:definition "Ultramafic to mafic arc-related intrusions with approximate concentric zoning and titanium-vanadium mineralisation. "@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.09.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Arc U-M intrusion Ti-V"@en ;
+    skos:prefLabel "Arc U-M intrusion titanium-vanadium"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -270,14 +270,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:carbonatite-nb
+:carbonatite-niobium
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :carbonatite ;
     skos:definition "A carbonatite hosted niobium deposit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.02.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Carbonatite Nb"@en ;
+    skos:prefLabel "Carbonatite niobium"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -292,25 +292,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:carlin-type-au
+:carlin-type-gold
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :carlin-type ;
     skos:definition "Gold occuring as microscopic particles (up to 30 micrometeres) that must be identified by chemical analysis as it is not recoverable by panning."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.04.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Carlin-type Au"@en ;
+    skos:prefLabel "Carlin-type gold"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:climax-type-porphyry-mo
+:climax-type-porphyry-molybdenum
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :porphyry ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.08.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Climax-type porphyry Mo"@en ;
+    skos:prefLabel "Climax-type porphyry molybdenum"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -347,47 +347,47 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:distal-disseminated-ag-au
+:distal-disseminated-silver-gold
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :distal-disseminated ;
     skos:definition "Carlin-type style Ag-Au deposits formed on the distal edges of magmatic-hydrotthermal systems, related to upper crustal instrusive complexes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.05.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Distal-disseminated Ag-Au"@en ;
+    skos:prefLabel "Distal-disseminated silver-gold"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:epithermal-be
+:epithermal-beryllium
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :epithermal ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.01.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Epithermal Be"@en ;
+    skos:prefLabel "Epithermal beryllium"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:epithermal-hg
+:epithermal-mercury
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :epithermal ;
     skos:definition "Mercury (Hg) deposit assocaited with epithermal system."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.01.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Epithermal Hg"@en ;
+    skos:prefLabel "Epithermal mercury"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:epithermal-u
+:epithermal-uranium
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :epithermal ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.01.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Epithermal U"@en ;
+    skos:prefLabel "Epithermal uranium"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -556,36 +556,36 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:greisen-be-li
+:greisen-beryllium-li
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :greisen ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.09.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Greisen Be ± Li"@en ;
+    skos:prefLabel "Greisen beryllium ± Li"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:greisen-sn-w-mo
+:greisen-tin-w-mo
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :greisen ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.09.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Greisen Sn ± W, Mo"@en ;
+    skos:prefLabel "Greisen tin ± W, Mo"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:greisen-w-mo-bi
+:greisen-tungsten-molybdenum-bi
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :greisen ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.09.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Greisen W-Mo ± Bi"@en ;
+    skos:prefLabel "Greisen tungsten-molybdenum ± Bi"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -622,7 +622,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:high-sulfidation-hs-epithermal-silver-gold-cu
+:high-sulfidation-epithermal-silver-gold-cu
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :epithermal ;
@@ -644,18 +644,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:impact-u-m-intrusion-ni-cu-pge
+:impact-u-m-intrusion-nickel-copper-pge
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ultramafic-and-or-mafic-intrusion ;
     skos:definition "Nickel-copper-PGE mineralisation associated with an impact structure. Meteorite impact with ultramafic to mafic crustal rocks generates a superheated melt sheet, dissolving all sulfides in the target rocks. During cooling the sulfides crystallise early and accumulate along the base of the melt sheet."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.09.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Impact U-M intrusion Ni-Cu-PGE"@en ;
+    skos:prefLabel "Impact U-M intrusion nickel-copper-PGE"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:intermediate-sulfidation-is-epithermal-silver-gold-zn-pb-cu-sn-mn
+:intermediate-sulfidation-epithermal-silver-gold-zn-pb-cu-sn-mn
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :epithermal ;
@@ -776,14 +776,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:komatiite-ni-cu-pge
+:komatiite-nickel-copper-pge
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :komatiite ;
     skos:definition "Nickel-copper-platinum group element mineralisation associated with komatiitic volcanic extrusive rocks. Sulfide bodies can be lenticular, irregular enlongate to tabular, or pipelike."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.07.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Komatiite Ni-Cu-PGE"@en ;
+    skos:prefLabel "Komatiite nickel-copper-PGE"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -963,29 +963,29 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:low-f-porphyry-mo
+:low-fluorine-porphyry-molybdenum
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :porphyry ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.08.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Low-F porphyry Mo"@en ;
+    skos:prefLabel "Low-fluorine porphyry molybdenum"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:low-fe-alkali-calcic
+:low-iron-alkali-calcic
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :alkali-calcic ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "09.01.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Low Fe alkali-calcic"@en ;
+    skos:prefLabel "Low iron alkali-calcic"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:low-sulfidation-ls-epithermal-gold-silver
+:low-sulfidation-epithermal-gold-silver
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :epithermal ;
@@ -1227,25 +1227,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:ophiolite-cr
+:ophiolite-chromium
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ophiolite ;
     skos:definition "An ophiolite hosted chromium (Cr) deposit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.11.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Ophiolite Cr"@en ;
+    skos:prefLabel "Ophiolite chromium"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:ophiolite-ni-cu-pge
+:ophiolite-nickel-copper-pge
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ophiolite ;
     skos:definition "An ophiolite hosted nickel-copper-platinum-group elements (PGE) deposit."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.11.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Ophiolite Ni-Cu-PGE"@en ;
+    skos:prefLabel "Ophiolite nickel-copper-PGE"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -1282,14 +1282,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:oxidized-intrusion-related-au
+:oxidized-intrusion-related-gold
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :intrusion-related ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.10.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Oxidized intrusion-related Au"@en ;
+    skos:prefLabel "Oxidized intrusion-related gold"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -1359,91 +1359,91 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:porphyry-au-cu
+:porphyry-gold-copper
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :porphyry ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.08.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Porphyry Au ± Cu"@en ;
+    skos:prefLabel "Porphyry gold ± copper"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:porphyry-cu-au
+:porphyry-copper-gold
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :porphyry ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.08.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Porphyry Cu ± Au"@en ;
+    skos:prefLabel "Porphyry copper ± gold"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:porphyry-cu-mo
+:porphyry-copper-molybdenum
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :porphyry ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.08.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Porphyry Cu-Mo"@en ;
+    skos:prefLabel "Porphyry copper-molybdenum"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:porphyry-sn
+:porphyry-tin
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :porphyry ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.08.07"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Porphyry Sn"@en ;
+    skos:prefLabel "Porphyry tin"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:porphyry-w
+:porphyry-tungsten
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :porphyry ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.08.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Porphyry W"@en ;
+    skos:prefLabel "Porphyry tungsten"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:reduced-intrusion-related-au
+:reduced-intrusion-related-gold
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :intrusion-related ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.10.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Reduced intrusion-related Au"@en ;
+    skos:prefLabel "Reduced intrusion-related gold"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:replacement-au-ag
+:replacement-gold-silver
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :replacement ;
     skos:definition "A gold-silver deposit formed by replacement processes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.06.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Replacement Au-Ag"@en ;
+    skos:prefLabel "Replacement gold-silver"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:replacement-cu
+:replacement-copper
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :replacement ;
     skos:definition "A copper deposit formed by replacement processes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.06.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Replacement Cu"@en ;
+    skos:prefLabel "Replacement copper"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -1458,25 +1458,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:replacement-mg
+:replacement-magnesium
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :replacement ;
     skos:definition "A magnesium deposit formed by replacement processes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.06.07"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Replacement Mg"@en ;
+    skos:prefLabel "Replacement magnesium"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:replacement-mn
+:replacement-manganese
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :replacement ;
     skos:definition "A manganese deposit formed by replacement processes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.06.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Replacement Mn"@en ;
+    skos:prefLabel "Replacement manganese"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -1491,25 +1491,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:replacement-sn
+:replacement-tin
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :replacement ;
     skos:definition "A tin deposit formed by replacement processes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.06.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Replacement Sn"@en ;
+    skos:prefLabel "Replacement tin"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:replacement-zn-pb
+:replacement-zinc-lead
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :replacement ;
     skos:definition "A zinc-lead deposit formed by replacement processes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.06.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Replacement Zn-Pb"@en ;
+    skos:prefLabel "Replacement zinc-lead"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -1645,91 +1645,91 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:skarn-au-cu-w
+:skarn-gold-copper-tungsten
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :skarn ;
     skos:definition "A skarn deposit containing a significant concentration of gold, copper and tungsten formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.07.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Skarn Au ± Cu ± W"@en ;
+    skos:prefLabel "Skarn gold ± copper ± tungsten"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:skarn-be-fluorite
+:skarn-beryllium-fluorite
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :skarn ;
     skos:definition "A skarn deposit containing a significant concentration of beryllium and fluorite formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.07.07"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Skarn Be-fluorite"@en ;
+    skos:prefLabel "Skarn beryllium-fluorite"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:skarn-cu
+:skarn-copper
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :skarn ;
     skos:definition "A skarn deposit containing a significant concentration of copper, formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.07.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Skarn Cu"@en ;
+    skos:prefLabel "Skarn copper"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:skarn-mo
+:skarn-molybdenum
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :skarn ;
     skos:definition "A skarn deposit containing a significant concentration of molybdenum formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.07.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Skarn Mo"@en ;
+    skos:prefLabel "Skarn molybdenum"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:skarn-sn-cu-mo
+:skarn-tin-copper-mo
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :skarn ;
     skos:definition "A skarn deposit containing a significant concentration of tin, copper and molybdenum, formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.07.03"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Skarn Sn ± Cu ± Mo"@en ;
+    skos:prefLabel "Skarn tin ± copper ± Mo"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:skarn-u-ree
+:skarn-uranium-ree
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :skarn ;
     skos:definition "A skarn deposit containing a significant concentration of uranium and REEs formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.07.08"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Skarn U-REE"@en ;
+    skos:prefLabel "Skarn uranium-REE"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:skarn-w-mo
+:skarn-tungsten-mo
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :skarn ;
     skos:definition "A skarn deposit containing a significant concentration of tungsten and molybdenum, formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.07.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Skarn W ± Mo"@en ;
+    skos:prefLabel "Skarn tungsten ± Mo"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:skarn-zn-pb-ag
+:skarn-zinc-lead-silver
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :skarn ;
     skos:definition "A skarn deposit containing a significant concentration of zinc, lead and silver formed formed by the replacement of carbonate rocks by contact metamorphism and metasomatism."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.07.05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Skarn Zn-Pb-Ag"@en ;
+    skos:prefLabel "Skarn zinc-lead-silver"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -1854,58 +1854,58 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:u-m-conduit-ni-cu-pge
+:u-m-conduit-nickel-copper-pge
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ultramafic-and-or-mafic-conduit ;
     skos:definition "Nickel-copper-platinum group element mineralisation associated with conduits underlying ultramafic to mafic large igneous provinces. Conduits are represented by sill complexes that crystallised and cooled at shallow depths. Ore-bearing intrusions have an elongate, finger-like shapes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.10.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "U-M conduit Ni-Cu-PGE"@en ;
+    skos:prefLabel "U-M conduit nickel-copper-PGE"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:u-m-intrusion-ni-cu-pge
+:u-m-intrusion-nickel-copper-pge
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ultramafic-and-or-mafic-intrusion ;
     skos:definition "Mafic to ultramafic intrusion containing a significant concentration of nickel (Ni), copper (Cu) and platinum-group elements (PGE).  Mafic to ultramafic Ni-Cu-PGE intrusions host some of the world's largest nickel deposits."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.09.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "U-M intrusion Ni-Cu-PGE"@en ;
+    skos:prefLabel "U-M intrusion nickel-copper-PGE"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:u-m-layered-intrusion-cr
+:u-m-layered-intrusion-chromium
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ultramafic-and-or-mafic-layered-intrusion ;
     skos:definition "A mafic-ultramafic layered intrusion containing significant concentrations of chromium (Cr)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.08.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "U-M layered intrusion Cr"@en ;
+    skos:prefLabel "U-M layered intrusion chromium"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:u-m-layered-intrusion-fe-ti-v
+:u-m-layered-intrusion-iron-titanium-vanadium
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ultramafic-and-or-mafic-layered-intrusion ;
     skos:definition "A mafic-ultramafic layered intrusion containing significant concentrations of iron (Fe), titatnium (Ti) and vanadium (V)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.08.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "U-M layered intrusion Fe-Ti-V"@en ;
+    skos:prefLabel "U-M layered intrusion iron-titanium-vanadium"@en ;
     sdo:additionalType :DepositType ;
 .
 
-:u-m-layered-intrusion-ni-cu-pge
+:u-m-layered-intrusion-nickel-copper-pge
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :ultramafic-and-or-mafic-layered-intrusion ;
     skos:definition "A mafic-ultramafic layered intrusion containing significant concentrations of nickel (Ni), copper (Cu) and platinum-group elements (PGE)."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "12.08.04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "U-M layered intrusion Ni-Cu-PGE"@en ;
+    skos:prefLabel "U-M layered intrusion nickel-copper-PGE"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -2019,14 +2019,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:additionalType :DepositType ;
 .
 
-:vein-sn-polymetallic
+:vein-tin-polymetallic
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:broader :vein ;
     skos:definition "Not yet available"@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation "11.02.06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Vein Sn polymetallic"@en ;
+    skos:prefLabel "Vein tin polymetallic"@en ;
     sdo:additionalType :DepositType ;
 .
 
@@ -2092,7 +2092,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :magmatic ;
     skos:definition "Anorthosite rocks formed by the transportation and crystallisation of anorthositic magma to the surface via conduits such as dykes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
-    skos:narrower :anorthosite-conduit-ni-cu-pge ;
+    skos:narrower :anorthosite-conduit-nickel-copper-pge ;
     skos:notation "12.13."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Anorthosite conduit"@en ;
     sdo:additionalType :DepositGroup ;
@@ -2104,7 +2104,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :magmatic ;
     skos:definition "Large anorthosite rocks formed by the crystalisation of plagioclase in magma chambers. Massif-type anorthosites are constrained to the Proterozoic and the exact processes by which they form are disputed."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
-    skos:narrower :anorthosite-massif-ti ;
+    skos:narrower :anorthosite-massif-titanium ;
     skos:notation "12.12."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Anorthosite massif"@en ;
     sdo:additionalType :DepositGroup ;
@@ -2128,7 +2128,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :magmatic-hydrothermal ;
     skos:definition "Carlin-type deposits are epigeneitc,, disseminated, auriferous pyrite deposits enriched in As, Sb, Hg, Tl that are typically hosted in calcareous sedimentary rocks. They are named after a deposit near Carlin, Nevada."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
-    skos:narrower :carlin-type-au ;
+    skos:narrower :carlin-type-gold ;
     skos:notation "11.04."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Carlin-type"@en ;
     sdo:additionalType :DepositGroup ;
@@ -2701,10 +2701,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "An intrusion with a mafic to ultramafic composition."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:narrower
-        :arc-u-m-intrusion-ni-cu-pge ,
-        :arc-u-m-intrusion-ti-v ,
-        :impact-u-m-intrusion-ni-cu-pge ,
-        :u-m-intrusion-ni-cu-pge ;
+        :arc-u-m-intrusion-nickel-copper-pge ,
+        :arc-u-m-intrusion-titanium-vanadium ,
+        :impact-u-m-intrusion-nickel-copper-pge ,
+        :u-m-intrusion-nickel-copper-pge ;
     skos:notation "12.09."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ultramafic and (or) mafic intrusion"@en ;
     sdo:additionalType :DepositGroup ;
@@ -2717,9 +2717,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Layered mafic to ultramafic intrusions formed by crystallisation of magma deep in the crust. Intrusions are primarily cumulates with sheet- to dyke-like shapes."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:narrower
-        :u-m-layered-intrusion-cr ,
-        :u-m-layered-intrusion-fe-ti-v ,
-        :u-m-layered-intrusion-ni-cu-pge ,
+        :u-m-layered-intrusion-chromium ,
+        :u-m-layered-intrusion-iron-titanium-vanadium ,
+        :u-m-layered-intrusion-nickel-copper-pge ,
         :u-m-layered-intrusion-pge ;
     skos:notation "12.08."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ultramafic and (or) mafic-layered intrusion"@en ;
@@ -2854,12 +2854,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:narrower
         :alkalic-epithermal-gold-ag ,
-        :epithermal-be ,
-        :epithermal-hg ,
-        :epithermal-u ,
-        :high-sulfidation-hs-epithermal-silver-gold-cu ,
-        :intermediate-sulfidation-is-epithermal-silver-gold-zn-pb-cu-sn-mn ,
-        :low-sulfidation-ls-epithermal-gold-silver ;
+        :epithermal-beryllium ,
+        :epithermal-mercury ,
+        :epithermal-uranium ,
+        :high-sulfidation-epithermal-silver-gold-cu ,
+        :intermediate-sulfidation-epithermal-silver-gold-zn-pb-cu-sn-mn ,
+        :low-sulfidation-epithermal-gold-silver ;
     skos:notation "11.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Epithermal"@en ;
     sdo:additionalType :DepositGroup ;
@@ -2891,13 +2891,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "An igneous rock of any composition that contains conspicuous phenocrysts in a fine-grained groundmass; a porphyritic igneous rock."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:narrower
-        :climax-type-porphyry-mo ,
-        :low-f-porphyry-mo ,
-        :porphyry-au-cu ,
-        :porphyry-cu-au ,
-        :porphyry-cu-mo ,
-        :porphyry-sn ,
-        :porphyry-w ;
+        :climax-type-porphyry-molybdenum ,
+        :low-fluorine-porphyry-molybdenum ,
+        :porphyry-gold-copper ,
+        :porphyry-copper-gold ,
+        :porphyry-copper-molybdenum ,
+        :porphyry-tin ,
+        :porphyry-tungsten ;
     skos:notation "11.08."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Porphyry"@en ;
     sdo:additionalType :DepositGroup ;
@@ -2930,14 +2930,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "A change in mineral or composition of a mineral or mineral aggregate presumably by diffusion of new material in and old material out."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:narrower
-        :replacement-au-ag ,
-        :replacement-cu ,
+        :replacement-gold-silver ,
+        :replacement-copper ,
         :replacement-fluorite ,
-        :replacement-mg ,
-        :replacement-mn ,
+        :replacement-magnesium ,
+        :replacement-manganese ,
         :replacement-polymetallic ,
-        :replacement-sn ,
-        :replacement-zn-pb ;
+        :replacement-tin ,
+        :replacement-zinc-lead ;
     skos:notation "11.06."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement"@en ;
     sdo:additionalType :DepositGroup ;
@@ -2955,7 +2955,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :vein-fluorite ,
         :vein-polymetallic ,
         :vein-replacement-nickel ,
-        :vein-sn-polymetallic ,
+        :vein-tin-polymetallic ,
         :vein-tin ,
         :vein-tungsten ;
     skos:notation "11.02."^^dt:LocalHierarchyKey ;
@@ -2970,15 +2970,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "A mining term for silicate gangue (amphibole, pyroxene, garnet etc.) of certain iron-ore and sulphide deposits of Archaean age, particularly those that have replaced limestone and dolomite. Its meaning has been generally expanded to include calcium-bearing silicates of any geologic age, derived from nearly pure limestone and dolomite with the introduction of large amounts of Si, Al, Fe, Mg."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:narrower
-        :skarn-au-cu-w ,
-        :skarn-be-fluorite ,
-        :skarn-cu ,
+        :skarn-gold-copper-tungsten ,
+        :skarn-beryllium-fluorite ,
+        :skarn-copper ,
         :skarn-iron ,
-        :skarn-mo ,
-        :skarn-sn-cu-mo ,
-        :skarn-u-ree ,
-        :skarn-w-mo ,
-        :skarn-zn-pb-ag ;
+        :skarn-molybdenum ,
+        :skarn-tin-copper-mo ,
+        :skarn-uranium-ree ,
+        :skarn-tungsten-mo ,
+        :skarn-zinc-lead-silver ;
     skos:notation "11.07."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn"@en ;
     sdo:additionalType :DepositGroup ;
