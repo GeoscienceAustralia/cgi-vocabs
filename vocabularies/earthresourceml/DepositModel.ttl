@@ -2321,8 +2321,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :metasomatic-iron ,
         :skarn ;
     skos:definition
-        "A skarn deposit containing a significant concentration of iron, formed by the replacement of carbonate rocks through contact metamorphism and metasomatism."@en ,
-        "Not yet available"@en ;
+        "A skarn deposit containing a significant concentration of iron, formed by the replacement of carbonate rocks through contact metamorphism and metasomatism."@en ;
     skos:inScheme <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
     skos:notation
         "09.02.07"^^dt:LocalHierarchyKey ,
