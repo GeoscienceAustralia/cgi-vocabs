@@ -2,23 +2,24 @@
 @prefix dt: <http://resource.geosciml.org/datatype/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sdo: <https://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://linked.data.gov.au/org/cgi-gtwg> a sdo:Organization ;
-    sdo:affiliation <https://linked.data.gov.au/org/cgi> ;
-    sdo:name "CGI Geoscience Terminology Working Group" ;
-    sdo:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
+<https://linked.data.gov.au/org/cgi-gtwg> a schema:Organization ;
+    schema:affiliation <https://linked.data.gov.au/org/cgi> ;
+    schema:name "CGI Geoscience Terminology Working Group" ;
+    schema:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
 
 
-<https://linked.data.gov.au/org/cgi> a sdo:Organization ;
-    sdo:name "Commission for the Management and Application of Geoscience Information" ;
-    sdo:url "http://www.cgi-iugs.org"^^xsd:anyURI .
+<https://linked.data.gov.au/org/cgi> a schema:Organization ;
+    schema:name "Commission for the Management and Application of Geoscience Information" ;
+    schema:url "http://www.cgi-iugs.org"^^xsd:anyURI .
 
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> a skos:ConceptScheme ;
+    schema:keywords "GeoSciML" ;
     dcterms:created "2009-07-14"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
     dcterms:modified "2020-06-23"^^xsd:date ;
