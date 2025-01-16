@@ -1,6 +1,7 @@
 {
     "ClassificationMethodUsed.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used",
     "CommodityCode.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code",
+    "DepositModel.ttl": "http://resource.geosciml.org/classifier/cgi/deposit-model",
     "EarthResourceExpression.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression",
     "EarthResourceForm.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form",
     "EarthResourceMaterialRole.ttl": "http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role",
