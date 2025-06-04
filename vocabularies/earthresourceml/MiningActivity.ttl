@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
-    dcterms:created "2016-11-29"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "The EarthResourceML standard"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
+    schema:dateCreated "2016-11-29"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "The EarthResourceML standard"@en ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
     skos:changeNote "2014-02-23 SMR Original conversion to SKOS."@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
@@ -32,7 +29,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity> a skos:Collection ;
-    dcterms:provenance "The original vocabulary - all its concepts"@en ;
+    schema:citation "The original vocabulary - all its concepts"@en ;
     skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:member <http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining>,
@@ -53,7 +50,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining> a skos:Concept ;
-    dcterms:provenance "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
+    schema:citation "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:definition "Mining beneath the surface of the earth."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subsurfaceMining> ;
@@ -66,7 +63,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining> a skos:Concept ;
-    dcterms:provenance "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
+    schema:citation "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:definition "Mining via surface excavations."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/surfaceMining> ;
@@ -93,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining> a skos:Concept ;
-    dcterms:provenance "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
+    schema:citation "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining> ;
     skos:definition "Extraction of a mineral product in the liquid or gaseous state from the Earth's crust by means of boreholes. Boreholes are used for mining petroleum, and for the extraction of liquid solutions of salt, sulfur, etc."@en ;
@@ -105,7 +102,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining> a skos:Concept ;
-    dcterms:provenance "http://www.britannica.com/EBchecked/topic/171297/dredgin; adapted to include all types of mineral resources, not just placer deposits (e.g. could include sulfide deposits, manganese nodules on sea floor)"@en ;
+    schema:citation "http://www.britannica.com/EBchecked/topic/171297/dredgin; adapted to include all types of mineral resources, not just placer deposits (e.g. could include sulfide deposits, manganese nodules on sea floor)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining> ;
     skos:definition "Excavation of underwater mineral resources by floating equipment. Dredging systems are classified as mechanical or hydraulic, depending on the method of material transport."@en ;
@@ -117,7 +114,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/hydraulic-mining> a skos:Concept ;
-    dcterms:provenance "Glossary of Geology. 5th Edition, AGI - online"@en ;
+    schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining> ;
     skos:definition "The recovery of desired material, generally in open pits, by means of strong jets of water"@en ;
@@ -128,7 +125,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/in-situ-recovery> a skos:Concept ;
-    dcterms:provenance "Glossary of Geology. 5th Edition, AGI - online, adapted from chemical mining and enhanced oil recovery"@en ;
+    schema:citation "Glossary of Geology. 5th Edition, AGI - online, adapted from chemical mining and enhanced oil recovery"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:altLabel "chemical mining"@en,
         "solution mining"@en,
@@ -157,7 +154,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining> a skos:Concept ;
-    dcterms:provenance "CGI/ERML 2.0"@en ;
+    schema:citation "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:altLabel "open cut mining"@en,
         "open sky mining"@en,
@@ -188,7 +185,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining>,
         <http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining> ;
@@ -199,7 +196,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/quarrying> a skos:Concept ;
-    dcterms:provenance "Glossary of Geology. 5th Edition, AGI - online"@en ;
+    schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining> ;
     skos:definition "The extraction of building stone or other valuable nonmetallic constituent from an open or surface mineral working. It is distinguished from a mine because a quarry usually is open at the top and front, and, in ordinary use of the term, by the character of the material extracted."@en ;
@@ -210,7 +207,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-remote-operated-vehicle> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining> ;
     skos:definition "not given"@en ;
@@ -221,7 +218,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-vacuum-pumping> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining> ;
     skos:definition "not given"@en ;
@@ -232,7 +229,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining> a skos:Concept ;
-    dcterms:provenance "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
+    schema:citation "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:altLabel "alluvial mining"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining> ;
@@ -244,7 +241,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mining-activity/underground-mining> a skos:Concept ;
-    dcterms:provenance "Dictionary of Mining, Mineral and Related Terms, 1st edition"@en ;
+    schema:citation "Dictionary of Mining, Mineral and Related Terms, 1st edition"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> ;
     skos:altLabel "lombong bawah tanah"@ms,
         "地下采矿"@zh ;

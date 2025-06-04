@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
-    dcterms:created "2016-11-28"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "The EarthResourceML standard"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
+    schema:dateCreated "2016-11-28"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "The EarthResourceML standard"@en ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
     skos:changeNote "2014-02-23 SMR - hierarchy finalized, sourceNote set to 'this vocabulary' and skos:note added by SM Richard; converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard"@en,
         "2015-01-08 OLR - Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-07-16 Compilation and review in Google doc spreadsheet, converted to SKOS-RDF using GSML_SKOS_fromXLS_2016.02.xslt."@en,
@@ -38,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form> a skos:Collection ;
-    dcterms:provenance "The original vocabulary - all its concepts"@en ;
+    schema:citation "The original vocabulary - all its concepts"@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:member <http://resource.geosciml.org/classifier/cgi/earth-resource-form/concordant>,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-form/discordant>,
@@ -54,7 +51,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/concordant> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:definition "A concordant or nearly concordant mineral deposit lies parallel or nearly parallel to wallrocks contacts or internal structures (bedding, foliation, etc.)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
@@ -65,7 +62,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/discordant> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:altLabel "×"@ja,
         "부조화적"@ko,
@@ -94,7 +91,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/fault-hosted> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:definition "The mineral deposit is hosted within a fault or shear zone."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
@@ -105,7 +102,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/intrusive-contact-related> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:definition "The form of the mineral deposit is controlled by an igneous intrusive contact"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
@@ -116,7 +113,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/mixed-concordant-discordant> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:definition "A subconcordant body in some places lies parallel to, and in other places crosscuts, wallrock contacts or internal structures (eg, bedding, foliation)"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
@@ -126,7 +123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/structurally-transposed> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:definition "The form of the mineral deposit has been significantly modified by post-mineralization structural modification."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
@@ -137,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/surficial> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:definition "A mineral deposit forming a surficial layer in or on its host rocks"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
@@ -148,7 +145,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/unconformity-related> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:definition "A mineral deposit whose location and form are related to an unconformity between sedimentary host rocks"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
@@ -159,7 +156,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratabound> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:altLabel "mendapan strata bebat"@ms ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-form/concordant> ;
@@ -187,7 +184,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratiform> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> ;
     skos:altLabel "mendapan stratifom"@ms ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-form/stratabound> ;

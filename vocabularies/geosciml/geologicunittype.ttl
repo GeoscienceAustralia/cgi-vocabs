@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2009-07-14"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2009-07-14"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2009-12-07. SMR add collections for mineralogical and sedimentary petrographic categories, improve annotation and notes on vocabulary. Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
@@ -38,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit>,
         <http://resource.geosciml.org/classifier/cgi/geologicunittype/alteration_unit>,
@@ -64,7 +61,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:definition "Type of geologic unit is unknown, unspecified, irrelevant, or some type not included in the vocabulary. Type makes no implication for required properties or cardinalities. This is the root concept for the type hierarchy."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/geologicUnit> ;
@@ -87,7 +84,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit> a skos:Concept ;
-    dcterms:provenance "This vocabulary, Salvador, 1994, Donovon 2004 IUGS abstract."@en ;
+    schema:citation "This vocabulary, Salvador, 1994, Donovon 2004 IUGS abstract."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined by bounding surfaces. Not necessarily stratified. Donovon (2004, IUGS abstract Florence) makes good case for use of a noncommittal term for the bounding surface. While there may be no agreement that a given stratal boundary is a discontinuity, there is consensus that all the identified boundaries are stratal surfaces. Includes: 1. Unconformity bounded units (Salvador 1994), defined by bounding stratigraphic discontinuities ('significant unconformities', unconformity is defined as surface of erosion in Salvador 1994). 2. Sequence stratigraphic unit, an allostratigraphic unit that is used to interpret the depositional origin of sedimentary strata and assumes, though this is not always stated, an implicit connection to base level change. It does this by establishing how the sequence of strata accumulated in order in the sedimentary section over a subdividing framework of surfaces."@en ;
@@ -97,7 +94,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/alteration_unit> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined by alteration process."@en ;
@@ -107,7 +104,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/artificial_ground> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit> ;
     skos:definition "Geologic unit defined by genesis involving direct human action to deposit or modify material."@en ;
@@ -117,7 +114,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/biostratigraphic_unit> a skos:Concept ;
-    dcterms:provenance "Lenz et al., 2000, Note 64 (see AAPG Bulletin, v. 89, no. 11, November 2005), North American Stratigraphic Code, 1983"@en ;
+    schema:citation "Lenz et al., 2000, Note 64 (see AAPG Bulletin, v. 89, no. 11, November 2005), North American Stratigraphic Code, 1983"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined based on fossil content. Five kinds of biozones are recognized by the revised NACSN (Lenz et al., 2000, Note 64, a recommended complete replacement of Articles 48 through 54 of the North American Stratigraphic Code (NACSN, 1983) accepted for publication 2000.): range biozone, interval biozone, lineage biozone, assemblage biozone, and abundance biozone. These represent different approaches to defining and recognizing biozones."@en ;
@@ -133,7 +130,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/chronostratigraphic_unit> a skos:Concept ;
-    dcterms:provenance "Salvador, A., 1994, International Stratigraphic Guide, Second Edition"@en ;
+    schema:citation "Salvador, A., 1994, International Stratigraphic Guide, Second Edition"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit that includes all rocks formed during a specific interval of geologic time"@en ;
@@ -150,7 +147,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/deformation_unit> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit> ;
     skos:definition "Lithotectonic unit defined by deformation style or characteristic geologic structure observable in outcrop."@en ;
@@ -160,7 +157,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/excavation_unit> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit> ;
     skos:definition "Geologic unit defined by human-made genesis involving excavation. Not necessarily defined by landform (a hole...), as they could have been subsequently filled/landscaped etc. If the excavation is filled becomes an excavation with artificial ground wholly or partly superimposed on it. This sort of thing can become quite important in urban geology where an excavation can be filled and landscaped."@en ;
@@ -179,7 +176,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/geophysical_unit> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined by its geophysical characteristics. Denotes that the properties used to define the unit are measured by intrumental techniques, not directly observable by humans, e.g. density, magnetic susceptibility, magnetization, electrical conductivity."@en ;
@@ -190,7 +187,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithodemic_unit> a skos:Concept ;
-    dcterms:provenance "North American Commission on Stratigraphic Nomenclature, 1983"@en ;
+    schema:citation "North American Commission on Stratigraphic Nomenclature, 1983"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit> ;
     skos:definition "Lithostratigraphic unit that lacks stratification"@en ;
@@ -200,7 +197,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined by genesis. The genesis is manifested by material properties, but the material is not the defining property. Example-- alluvial deposits, glacial deposits."@en ;
@@ -213,7 +210,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithologic_unit> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined by lithology independent of relationships to other units. Denotes a 'kind' of rock body characterized by lithology, e.g. basaltic rocks."@en ;
@@ -223,7 +220,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit> a skos:Concept ;
-    dcterms:provenance "Salvador, A., 1994, International Stratigraphic Guide, Second Edition"@en ;
+    schema:citation "Salvador, A., 1994, International Stratigraphic Guide, Second Edition"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties and stratigraphic relationships. Denotes a particular body of rock."@en ;
@@ -240,7 +237,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2004"@en ;
+    schema:citation "Neuendorf et al., 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined defined on basis of structural or deformation features, mutual relations, origin or historical evolution. Contained material may be igneous, sedimentary, or metamorphic."@en ;
@@ -251,7 +248,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/magnetostratigraphic_unit> a skos:Concept ;
-    dcterms:provenance "Salvador, A., 1994, International Stratigraphic Guide, Second Edition"@en ;
+    schema:citation "Salvador, A., 1994, International Stratigraphic Guide, Second Edition"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geophysical_unit> ;
     skos:definition "Geologic unit defined by magnetic characteristics."@en ;
@@ -261,7 +258,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/mass_movement_unit> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit> ;
     skos:definition "Geologic unit produced by gravity driven, down-slope displacemnt of material, and characterized by the type of movement giving rise to the deposit, and by how the individual movement types present in the deposit are related in time and space."@en ;
@@ -271,7 +268,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/pedoderm> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined based on soil development and character. Pedoderm is not a surface classification unit because soil classification requires knowledge of the soil profile, which always extends some distance beneath the surface."@en ;
@@ -281,7 +278,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/pedostratigraphic_unit> a skos:Concept ;
-    dcterms:provenance "North American Commission on Stratigraphic Nomenclature, 1983, Morrison, 1995, INQUA/ISSS newsletter, Nov. 1995http://fadr.msu.ru/inqua/nl-archive/nl-8-11/howcan.html, ISSN 0256-2340."@en ;
+    schema:citation "North American Commission on Stratigraphic Nomenclature, 1983, Morrison, 1995, INQUA/ISSS newsletter, Nov. 1995http://fadr.msu.ru/inqua/nl-archive/nl-8-11/howcan.html, ISSN 0256-2340."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit that represents a single pedologic horizon in a sequence of strata (consolidated or non-consolidated). The presence of an overlying geologic unit is required, but locally the soil horizon may be at the Earth surface (in which case is may be coincident with a Pedoderm). See discussion at https://www.seegrid.csiro.au/twiki/bin/view/CGIModel/PedostratigraphicUnit"@en ;
@@ -291,7 +288,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/geologicunittype/polarity_chronostratigraphic_unit> a skos:Concept ;
-    dcterms:provenance "North American Commission on Stratigraphic Nomenclature, 1983"@en ;
+    schema:citation "North American Commission on Stratigraphic Nomenclature, 1983"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
     skos:definition "Geologic unit defined by primary magnetic-polarity record imposed whien the rock was deposited or crystallized during a specific interval of geolgoic time. Kind of chronostratigraphic unit and kind of geophysical unit."@en ;

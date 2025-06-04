@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2017-08-31"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2017-08-31"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties. Also added Concepts as topConceptOf ConceptScheme."@en,
         "Original SKOS implementation, 31-08-2017"@en ,
@@ -31,7 +28,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/mappingframe/base_of_quaternary>,
@@ -42,7 +39,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe/base_of_quaternary> a skos:Concept ;
-    dcterms:provenance "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/baseOfQuaternary"@en ;
+    schema:citation "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/baseOfQuaternary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
     skos:definition "Base of the predominantly unconsolidated sedimentary material of Quaternary age, also referred to as superficial deposits"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MappingFrameValue/baseOfQuaternary> ;
@@ -52,7 +49,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe/surface_geology> a skos:Concept ;
-    dcterms:provenance "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/surfaceGeology"@en ;
+    schema:citation "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/surfaceGeology"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
     skos:definition "Bedrock and predominantly unconsolidated sedimentary material of Quaternary age (superficial deposits) that would be visible if the overlying soil was removed or are exposed at the topographic surface."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MappingFrameValue/surfaceGeology> ;
@@ -62,7 +59,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe/top_of_basement> a skos:Concept ;
-    dcterms:provenance "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBasement"@en ;
+    schema:citation "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBasement"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
     skos:definition "The surface in the crust of the Earth below sedimentary or volcanic deposits, or tectonically transported rock unit. What constitutes basement can depend on the context and may comprise other sedimentary, igneous and/or metamorphic rocks."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBasement> ;
@@ -72,7 +69,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe/top_of_bedrock> a skos:Concept ;
-    dcterms:provenance "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBedrock"@en ;
+    schema:citation "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBedrock"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
     skos:definition "Top surface of the usually solid rock that may either be exposed at the topographic surface or covered by other younger unconsolidated deposits of Quaternary age (superficial deposits)"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBedrock> ;

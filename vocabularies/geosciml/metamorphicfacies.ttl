@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2009-07-14"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2009-07-14"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-11-28 SMR Replace URN identifiers with http URI identifiers according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en,
@@ -34,7 +31,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies>,
         <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies>,
@@ -53,7 +50,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:definition "Metamorphosed, but facies not specified in more detail. For use in normative description to indicate that any metamorphic facies value is valid."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
@@ -72,7 +69,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_unknown> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:definition "For use in instance descriptions to indicate that no data are available to constrain metamorphic facies. May be metamorphosed or non-metamorphosed."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
@@ -81,7 +78,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/no_metamorphic_minerals> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:definition "Corresponds to non-metamorphosed condition, since metamorphic facies classification is based on mineral assemblages, absence of metamorphic minerals means that the classification does not apply."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
@@ -90,7 +87,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:altLabel "แอมฟิโบไลต์เฟชี"@th ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
@@ -110,7 +107,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Fettes and Desmons, 2007"@en ;
+    schema:citation "Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
     skos:definition "Omphacite-garnet-quartz (no plagioclase, olivine stable with garnet), assemblage for rocks of basaltic composition"@en ;
@@ -119,7 +116,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/epidote_amphibolite_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Fettes and Desmons, 2007"@en ;
+    schema:citation "Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
     skos:definition "Hornblende-albite-epidote(-chlorite), assemblage for rocks of basaltic composition"@en ;
@@ -128,7 +125,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/glaucophane_schist_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by glaucophane-epidote (-garnet), glaucophane-lawsonite, or glaucophane-lawsonite-jadeite."@en ;
@@ -137,7 +134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by the mineral assemblage clinopyroxene-orthopyroxene-plagioclase (olivine not stable with plagioclase or with garnet), or especially high-temperature varieties or polymorphs of minerals (e"@en ;
@@ -156,7 +153,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by actinolite-albite-epidote-chlorite (an epidote group mineral is the diagnostic Ca-Al silicate rather than prehnite or pumpellyite)."@en ;
@@ -165,7 +162,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/pyroxene_hornfels_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by clinopyroxene-orthopyroxene-plagioclase (olivine stable with plagioclase)."@en ;
@@ -174,7 +171,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/sanidinite_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Fettes and Desmons, 2007"@en ;
+    schema:citation "Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
     skos:definition "distinguished from the pyroxene hornfels facies by the occurrence of especially high-temperature varieties and polymorphs of minerals (eg. pigeonite, K-rich labradorite), assemblage for rocks of basaltic composition"@en ;
@@ -183,7 +180,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/subgreenschist_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by prehnite-pumpellyite, pumpellyite-actinolite, prehnite-actinolite (prehnite and pumpellyite are the diagnostic Ca-Al silicates rather than minerals of the epidote or zeolite groups)."@en ;
@@ -192,7 +189,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/zeolite_metamorphic_facies> a skos:Concept ;
-    dcterms:provenance "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
+    schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified> ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by zeolite minerals such as laumontite and heulandites (in place of other Ca-Al silicates such as prehnite, pumpellyite and epidote)."@en ;

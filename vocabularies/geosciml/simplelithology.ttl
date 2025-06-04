@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2009-07-14"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2009-07-14"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2009-12-14 SMR change ID and pref label from 'exotic alkalic igneous rock' to kalsilitic igneous rock to avoid confusion with 'exotic alkaline rock' based on OGE recommendation."@en,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-07-25 fix xml language notation on preferred name, update history notes to reflect that this is trunk version."@en,
@@ -40,7 +37,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/lithology/acidic_igneous_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/acidic_igneous_rock>,
@@ -311,7 +308,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/compound_material> a skos:Concept ;
-    dcterms:provenance "NADM C1 2004"@en ;
+    schema:citation "NADM C1 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:definition "An Earth Material composed of an aggregation of particles of Earth Material, possibly including other compound Materials. This is 'top' of lithology category hierarchy, and should be used to indicate 'any rock or unconsolidated material'."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/LithologyValue/compoundMaterial> ;
@@ -328,7 +325,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/acidic_igneous_material> a skos:Concept ;
-    dcterms:provenance "after LeMaitre et al. 2002"@en ;
+    schema:citation "after LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_material> ;
     skos:definition "Igneous material with more than 63 percent SiO2."@en ;
@@ -339,7 +336,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/acidic_igneous_rock> a skos:Concept ;
-    dcterms:provenance "after LeMaitre et al. 2002"@en ;
+    schema:citation "after LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/acidic_igneous_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
@@ -355,7 +352,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/alkali-olivine_basalt> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Basalt; Carmichael, I.S. Turner, F.J., Verhoogen, John, 1974, Igneous petrology: New York, McGraw HIll Book Co., p.42-43."@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Basalt; Carmichael, I.S. Turner, F.J., Verhoogen, John, 1974, Igneous petrology: New York, McGraw HIll Book Co., p.42-43."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/basalt> ;
     skos:definition "Alkali olivine basalt is silica-undersaturated, characterized by the absence of orthopyroxene, absence of quartz, presence of olivine, and typically contains some feldspathoid mineral, alkali feldspar or phlogopite in the groundmass. Feldspar phenocrysts typically are labradorite to andesine in composition. Augite is rich in titanium compared to augite in tholeiitic basalt. Alkali olivine basalt is relatively rich in sodium."@en ;
@@ -376,7 +373,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_granite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "granit felsfar basa"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/granitoid> ;
@@ -399,7 +396,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_rhyolite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "riolit felsfar basa"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/rhyolitoid> ;
@@ -422,7 +419,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_syenite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "sienit felsfar basa"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_syenitic_rock> ;
@@ -443,7 +440,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_syenitic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/syenitoid> ;
     skos:definition "Syenitoid with a plagioclase to total feldspar ratio of less than 0.1. QAPF fields 6, 6*, and 6'."@en ;
@@ -456,7 +453,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_trachyte> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "trakit felsfar basa"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_trachytic_rock> ;
@@ -477,7 +474,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_trachytic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/trachytoid> ;
     skos:definition "Trachytoid that has a plagioclase to total feldspar ratio less than 0.1. QAPF fields 6, 6', and 6*."@en ;
@@ -490,7 +487,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/amphibolite> a skos:Concept ;
-    dcterms:provenance "Coutinho et al. 2007, IUGS SCMR chapter 8 (http://www.bgs.ac.uk/SCMR/)"@en ;
+    schema:citation "Coutinho et al. 2007, IUGS SCMR chapter 8 (http://www.bgs.ac.uk/SCMR/)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "斜长角闪岩"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
@@ -517,7 +514,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/andesite> a skos:Concept ;
-    dcterms:provenance "after LeMaitre et al. 2002"@en ;
+    schema:citation "after LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fine_grained_igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/intermediate_composition_igneous_rock> ;
@@ -549,7 +546,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/anorthosite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "아놀소사이트"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/anorthositic_rock> ;
@@ -576,7 +573,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/anorthositic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002; This vocabulary"@en ;
+    schema:citation "LeMaitre et al. 2002; This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
     skos:definition "Leucocratic phaneritic crystalline igneous rock consisting essentially of plagioclase, often with small amounts of pyroxene. By definition, colour index M is less than 10, and plagiclase to total feldspar ratio is greater than 0.9. Less than 20 percent quartz and less than 10 percent feldspathoid in the QAPF fraction. QAPF field 10, 10*, and 10'."@en ;
@@ -590,7 +587,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/anthracite_coal> a skos:Concept ;
-    dcterms:provenance "Economic commission for Europe, committee on Sustainable Energy- United Nations (ECE-UN), 1998, International Classification of in-Seam Coals: Energy 19, 41 pp; see also Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Coal#Types_of_coal; Eberhard Lindner; Chemie für Ingenieure; Lindner Verlag Karlsruhe, S. 258"@en ;
+    schema:citation "Economic commission for Europe, committee on Sustainable Energy- United Nations (ECE-UN), 1998, International Classification of in-Seam Coals: Energy 19, 41 pp; see also Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Coal#Types_of_coal; Eberhard Lindner; Chemie für Ingenieure; Lindner Verlag Karlsruhe, S. 258"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "High rank coal"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/coal> ;
@@ -617,7 +614,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/anthropogenic_material> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/compound_material> ;
     skos:definition "Material known to have artificial (human-related) origin; insufficient information to classify in more detail."@en ;
@@ -628,7 +625,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/anthropogenic_unconsolidated_material> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/anthropogenic_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/unconsolidated_material> ;
@@ -639,7 +636,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/aphanite> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/rock> ;
     skos:definition "Rock that is too fine grained to categorize in more detail."@en ;
@@ -649,7 +646,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/aplite> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005"@en ;
+    schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
     skos:definition "Light coloured crystalline rock, characterized by a fine grained allotriomorphic-granular (aplitic, saccharoidal or xenomorphic) texture; typically granitic composition, consisting of quartz, alkali feldspar and sodic plagioclase."@en ;
@@ -675,7 +672,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/arenite> a skos:Concept ;
-    dcterms:provenance "Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p."@en ;
+    schema:citation "Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "정사암"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sandstone> ;
@@ -702,7 +699,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/ash_and_lapilli> a skos:Concept ;
-    dcterms:provenance "Schmid 1981; LeMaitre et al. 2002"@en ;
+    schema:citation "Schmid 1981; LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/tephra> ;
     skos:definition "Tephra in which less than 25 percent of fragments are greater than 64 mm in longest dimension"@en ;
@@ -712,7 +709,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/ash_breccia_bomb_or_block_tephra> a skos:Concept ;
-    dcterms:provenance "Schmid 1981; LeMaitre et al. 2002"@en ;
+    schema:citation "Schmid 1981; LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/tephra> ;
     skos:definition "Tephra in which more than 25 percent of particles are greater than 64 mm in largest dimension. Includes ash breccia, bomb tephra and block tephra of Gillespie and Styles (1999)"@en ;
@@ -722,7 +719,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/ash_tuff_lapillistone_and_lapilli_tuff> a skos:Concept ;
-    dcterms:provenance "Schmid 1981; LeMaitre et al. 2002"@en ;
+    schema:citation "Schmid 1981; LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/pyroclastic_rock> ;
     skos:definition "Pyroclastic rock in which less than 25 percent of rock by volume are more than 64 mm in longest diameter. Includes tuff, lapilli tuff, and lapillistone."@en ;
@@ -732,7 +729,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/basalt> a skos:Concept ;
-    dcterms:provenance "after LeMaitre et al. 2002"@en ;
+    schema:citation "after LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/basic_igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/fine_grained_igneous_rock> ;
@@ -755,7 +752,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/basanite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "燧石板岩"@zh,
         "试金石"@zh ;
@@ -783,7 +780,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/basanitic_foidite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foiditoid> ;
     skos:definition "Foiditoid that contains less than 90 percent feldspathoid minerals in the QAPF fraction, and has a plagioclase to total feldspar ratio that is greater than 0.5, with greater than 10 percent normative olivine."@en ;
@@ -793,7 +790,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/basic_igneous_material> a skos:Concept ;
-    dcterms:provenance "after LeMaitre et al. 2002"@en ;
+    schema:citation "after LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_material> ;
     skos:definition "Igneous material with between 45 and 52 percent SiO2."@en ;
@@ -804,7 +801,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/basic_igneous_rock> a skos:Concept ;
-    dcterms:provenance "after LeMaitre et al. 2002"@en ;
+    schema:citation "after LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/basic_igneous_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
@@ -817,7 +814,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/bauxite> a skos:Concept ;
-    dcterms:provenance "Eggleton 2001"@en ;
+    schema:citation "Eggleton 2001"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/material_formed_in_surficial_environment> ;
     skos:definition "Highly aluminous material containing abundant aluminium hydroxides (gibbsite, less commonly boehmite, diaspore) and aluminium-substituted iron oxides or hydroxides and generally minor or negligible kaolin minerals; may contain up to 20 percent quartz. commonly has a pisolitic or nodular texture, and may be cemented."@en ;
@@ -840,7 +837,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/biogenic_sediment> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sediment> ;
     skos:definition "Sediment composed of greater than 50 percent material of biogenic origin. Because the biogenic material may be skeletal remains that are not organic, all biogenic sediment is not necessarily organic-rich."@en ;
@@ -855,7 +852,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/biogenic_silica_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "based on NADM SLTT sedimentary; Hallsworth and Knox 1999"@en ;
+    schema:citation "based on NADM SLTT sedimentary; Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/non_clastic_siliceous_sedimentary_rock> ;
     skos:definition "Sedimentary rock that consists of at least 50 percent silicate mineral material, deposited directly by biological processes at the depositional surface, or in particles formed by biological processes within the basin of deposition."@en ;
@@ -868,7 +865,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/bituminous_coal> a skos:Concept ;
-    dcterms:provenance "Economic commission for Europe, committee on Sustainable Energy- United Nations (ECE-UN), 1998, International Classification of in-Seam Coals: Energy 19, 41 pp; see also http://en.wikipedia.org/wiki/Coal#Types_of_coal; Eberhard Lindner; Chemie für Ingenieure; Lindner Verlag Karlsruhe, S. 258"@en ;
+    schema:citation "Economic commission for Europe, committee on Sustainable Energy- United Nations (ECE-UN), 1998, International Classification of in-Seam Coals: Energy 19, 41 pp; see also http://en.wikipedia.org/wiki/Coal#Types_of_coal; Eberhard Lindner; Chemie für Ingenieure; Lindner Verlag Karlsruhe, S. 258"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "medium rank coal"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/coal> ;
@@ -900,7 +897,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/boninite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "無人岩"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/andesite>,
@@ -928,7 +925,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/boulder_gravel_size_sediment> a skos:Concept ;
-    dcterms:provenance "Wentworth size scale"@en ;
+    schema:citation "Wentworth size scale"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/gravel_size_sediment> ;
     skos:definition "Sediment containing greater than 30 percent boulder-size particles (greater than 256 mm in diameter)"@en ;
@@ -938,7 +935,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/boundstone> a skos:Concept ;
-    dcterms:provenance "Hallsworth and Knox 1999; SLTTs 2004"@en ;
+    schema:citation "Hallsworth and Knox 1999; SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "膠着岩"@ja,
         "결속석회암"@ko ;
@@ -966,7 +963,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/breccia> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005"@en ;
+    schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "角礫"@ja,
         "À®ùñ¡À§¨"@lo,
@@ -995,7 +992,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/breccia_gouge_series> a skos:Concept ;
-    dcterms:provenance "SLTTm 2004"@en ;
+    schema:citation "SLTTm 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fault_related_material> ;
     skos:definition "Fault material with features such as void spaces (filled or unfilled), or unconsolidated matrix material between fragments, indicating loss of cohesion during deformation. Includes fault-related breccia and gouge."@en ;
@@ -1005,7 +1002,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/calcareous_carbonate_sediment> a skos:Concept ;
-    dcterms:provenance "after Hallsworth and Knox 1999"@en ;
+    schema:citation "after Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/calcareous_carbonate_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sediment> ;
@@ -1018,7 +1015,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/calcareous_carbonate_sedimentary_material> a skos:Concept ;
-    dcterms:provenance "after Hallsworth and Knox 1999"@en ;
+    schema:citation "after Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_material> ;
     skos:definition "Carbonate sedimentary material of unspecified consolidation state with a calcite (plus aragonite) to dolomite ratio greater than 1 to 1. Includes lime-sediments, limestone and dolomitic limestone."@en ;
@@ -1030,7 +1027,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/calcareous_carbonate_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004; Hallsworth and Knox 1999"@en ;
+    schema:citation "SLTTs 2004; Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/calcareous_carbonate_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock> ;
@@ -1043,7 +1040,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_mud> a skos:Concept ;
-    dcterms:provenance "follow pattern used for clastic sand and mud categories, based on SLTTs 2004"@en ;
+    schema:citation "follow pattern used for clastic sand and mud categories, based on SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "marl"@en,
         "泥灰土"@ja,
@@ -1058,7 +1055,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_mudstone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "marlstone"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock>,
@@ -1074,7 +1071,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_ooze> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_mud>,
         <http://resource.geosciml.org/classifier/cgi/lithology/ooze> ;
@@ -1085,7 +1082,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_rich_mud> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "carbonate rich loess"@en,
         "marl"@en,
@@ -1099,7 +1096,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_rich_mudstone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "marlstone"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/generic_mudstone> ;
@@ -1113,7 +1110,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sediment> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "cebakan karbonat"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_material>,
@@ -1146,7 +1143,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_material> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_material> ;
     skos:definition "Sedimentary material in which at least 50 percent of the primary and/or recrystallized constituents are composed of one (or more) of the carbonate minerals calcite, aragonite and dolomite, in particles of intrabasinal origin."@en ;
@@ -1161,7 +1158,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
@@ -1190,7 +1187,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_wackestone> a skos:Concept ;
-    dcterms:provenance "Dunham 1962"@en ;
+    schema:citation "Dunham 1962"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "硬砂岩"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock> ;
@@ -1218,7 +1215,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/carbonatite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/exotic_composition_igneous_rock> ;
     skos:definition "Igneous rock composed of more than 50 percent modal carbonate minerals."@en ;
@@ -1244,7 +1241,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/cataclasite_series> a skos:Concept ;
-    dcterms:provenance "Sibson, 1977; Scholz, 1990; Snoke and Tullis, 1998; Barker, 1998 Appendix II; NADM SLTTm, 2004"@en ;
+    schema:citation "Sibson, 1977; Scholz, 1990; Snoke and Tullis, 1998; Barker, 1998 Appendix II; NADM SLTTm, 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/fault_related_material> ;
@@ -1255,7 +1252,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/chalk> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Chalk; C.S. Harris, 2009, unpublished web page, http://www.geologyshop.co.uk/chalk.htm"@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Chalk; C.S. Harris, 2009, unpublished web page, http://www.geologyshop.co.uk/chalk.htm"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/limestone> ;
     skos:definition "A generally soft, white, very fine-grained, extremely pure, porous limestone. It forms under marine conditions from the gradual accumulation of skeletal elements from minute planktonic green algae (cocoliths), associated with varying proportions of larger microscopic fragments of bivalves, foraminifera and ostracods. It is common to find flint and chert nodules embedded in chalk."@en ;
@@ -1282,7 +1279,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/chemical_sedimentary_material> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_material> ;
     skos:definition "Sedimentary material that consists of at least 50 percent material produced by inorganic chemical processes within the basin of deposition. Includes inorganic siliceous, carbonate, evaporite, iron-rich, and phosphatic sediment classes."@en ;
@@ -1295,7 +1292,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/chlorite_actinolite_epidote_metamorphic_rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
     skos:definition "Metamorphic rock characterized by 50 percent or more of combined chlorite, actinolite and epidote. Category for rocks generally named greenschist or greenstone."@en ;
@@ -1308,7 +1305,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/clastic_conglomerate> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005; SLTTs 2004"@en ;
+    schema:citation "Neuendorf et al. 2005; SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "conglomeratic rock"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sedimentary_rock>,
@@ -1337,7 +1334,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/clastic_mudstone> a skos:Concept ;
-    dcterms:provenance "Pettijohn et al. 1987 referenced in Hallsworth and Knox 1999."@en ;
+    schema:citation "Pettijohn et al. 1987 referenced in Hallsworth and Knox 1999."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "clastic mudstone"@en,
         "mudrock"@en,
@@ -1373,7 +1370,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sandstone> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade scale"@en ;
+    schema:citation "SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade scale"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "clastic sandstone"@en,
         "sandy rock"@en,
@@ -1406,7 +1403,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sediment> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004; Neuendorf et al. 2005"@en ;
+    schema:citation "SLTTs 2004; Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "batuan endapan kecuran"@id,
         "sedimen klstik"@ms,
@@ -1441,7 +1438,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sedimentary_material> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004; Neuendorf et al. 2005"@en ;
+    schema:citation "SLTTs 2004; Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_material> ;
     skos:definition "Sedimentary material of unspecified consolidation state in which at least 50 percent of the constituent particles were derived from erosion, weathering, or mass-wasting of pre-existing earth materials, and transported to the place of deposition by mechanical agents such as water, wind, ice and gravity."@en ;
@@ -1453,7 +1450,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004; Neuendorf et al. 2005"@en ;
+    schema:citation "SLTTs 2004; Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
@@ -1475,7 +1472,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/clay> a skos:Concept ;
-    dcterms:provenance "based on SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade scale"@en ;
+    schema:citation "based on SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade scale"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "lempung"@ms,
         "เคลย์"@th ;
@@ -1503,7 +1500,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/claystone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "变朽粘土岩"@zh,
         "泥岩"@zh ;
@@ -1532,7 +1529,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/coal> a skos:Concept ;
-    dcterms:provenance "Economic commission for Europe, committee on Sustainable Energy- United Nations (ECE-UN), 1998, International Classification of in-Seam Coals: Energy 19, 41 pp."@en ;
+    schema:citation "Economic commission for Europe, committee on Sustainable Energy- United Nations (ECE-UN), 1998, International Classification of in-Seam Coals: Energy 19, 41 pp."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "arang"@id,
         "石炭"@zh ;
@@ -1564,7 +1561,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/cobble_gravel_size_sediment> a skos:Concept ;
-    dcterms:provenance "Wentworth size scale"@en ;
+    schema:citation "Wentworth size scale"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/gravel_size_sediment> ;
     skos:definition "Sediment containing greater than 30 percent cobble-size particles (64-256 mm in diameter)"@en ;
@@ -1574,7 +1571,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_material> a skos:Concept ;
-    dcterms:provenance "SLTTm 2004"@en ;
+    schema:citation "SLTTm 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/compound_material> ;
     skos:definition "Material of unspecified consolidation state formed by geological modification of pre-existing materials outside the realm of igneous and sedimentary processes. Includes rocks formed by impact metamorphism, standard dynamothermal metamorphism, brittle deformation, weathering, metasomatism and hydrothermal alteration (diagenesis is a sedimentary process in this context)."@en ;
@@ -1588,7 +1585,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_rock> a skos:Concept ;
-    dcterms:provenance "SLTTm 2004"@en ;
+    schema:citation "SLTTm 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/rock> ;
@@ -1603,7 +1600,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/crystalline_carbonate> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock> ;
     skos:definition "Carbonate rock of indeterminate mineralogy in which diagenetic processes have obliterated any original depositional texture."@en ;
@@ -1613,7 +1610,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/dacite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/acidic_igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/fine_grained_igneous_rock> ;
@@ -1631,7 +1628,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/diamictite> a skos:Concept ;
-    dcterms:provenance "Fairbridge and Bourgeois 1978"@en ;
+    schema:citation "Fairbridge and Bourgeois 1978"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "混积岩"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sedimentary_rock> ;
@@ -1661,7 +1658,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/diamicton> a skos:Concept ;
-    dcterms:provenance "Fairbridge and Bourgeois 1978"@en ;
+    schema:citation "Fairbridge and Bourgeois 1978"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "混积物"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sediment> ;
@@ -1689,7 +1686,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/diorite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/dioritic_rock> ;
     skos:definition "Phaneritic crystalline rock consisting of intermediate plagioclase, commonly with hornblende and often with biotite or augite; colour index M less than 90, sodic plagioclase (An0-An50), no feldspathoid, and between 0 and 5 percent quartz. Includes rocks defined modally in QAPF field 10 as diorite."@en ;
@@ -1715,7 +1712,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/dioritic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/dioritoid> ;
     skos:definition "Phaneritic crystalline rock with M less than 90, consisting of intermediate plagioclase, commonly with hornblende and often with biotite or augite. A dioritoid with a plagioclase to total feldspar ratio (in the QAPF fraction) greater than 0.9. Includes rocks defined modally in QAPF fields 10, 10' and 10*."@en ;
@@ -1728,7 +1725,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/dioritoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/intermediate_composition_igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
@@ -1742,7 +1739,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/doleritic_rock> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al 2005; LeMaitre et al. 2002; Gillespie and Styles 1999"@en ;
+    schema:citation "Neuendorf et al 2005; LeMaitre et al. 2002; Gillespie and Styles 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
     skos:definition "Dark colored gabbroic (basaltic) or dioritic (andesitic) rock intermediate in grain size between basalt and gabbro and composed of plagioclase, pyroxene and opaque minerals; often with ophitic texture. Typically occurs as hypabyssal intrusions. Includes dolerite, microdiorite, diabase and microgabbro."@en ;
@@ -1761,7 +1758,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/dolomitic_or_magnesian_sedimentary_material> a skos:Concept ;
-    dcterms:provenance "after SLTTs 2004, Hallsworth and Knox 1999"@en ;
+    schema:citation "after SLTTs 2004, Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_material> ;
     skos:definition "Carbonate sedimentary material of unspecified consolidation degree with a ratio of magnesium carbonate to calcite (plus aragonite) greater than 1 to 1. Includes dolomite sediment, dolostone, lime dolostone and magnesite-stone."@en ;
@@ -1773,7 +1770,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/dolomitic_or_magnesian_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "after SLTTs 2004, Hallsworth and Knox 1999"@en ;
+    schema:citation "after SLTTs 2004, Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/dolomitic_or_magnesian_sedimentary_material> ;
@@ -1786,7 +1783,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/dolomitic_sediment> a skos:Concept ;
-    dcterms:provenance "after SLTTs 2004, Hallsworth and Knox 1999"@en ;
+    schema:citation "after SLTTs 2004, Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sediment>,
         <http://resource.geosciml.org/classifier/cgi/lithology/dolomitic_or_magnesian_sedimentary_material> ;
@@ -1799,7 +1796,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/dolostone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "dolostone"@en,
         "pure dolomitic or magnesian carbonate sedimentary rock"@en,
@@ -1832,7 +1829,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/duricrust> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/material_formed_in_surficial_environment> ;
@@ -1843,7 +1840,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/eclogite> a skos:Concept ;
-    dcterms:provenance "IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)"@en ;
+    schema:citation "IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
     skos:definition "Metamorphic rock composed of 75 percent or more (by volume) omphacite and garnet, both of which are present as major constituents, the amount of neither of them being higher than 75 percent (by volume); the presence of plagioclase precludes classification as an eclogite."@en ;
@@ -1869,7 +1866,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/evaporite> a skos:Concept ;
-    dcterms:provenance "Jackson 1997; SLTTs 2004"@en ;
+    schema:citation "Jackson 1997; SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "エバポライト"@ja,
         "蒸发盐"@zh ;
@@ -1900,7 +1897,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/exotic_alkaline_rock> a skos:Concept ;
-    dcterms:provenance "based on LeMaitre et al. 2002"@en ;
+    schema:citation "based on LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/exotic_composition_igneous_rock> ;
     skos:definition "Kimberlite, lamproite, or lamprophyre. Generally are potassic, mafic or ultramafic rocks. Olivine (commonly serpentinized in kimberlite), and phlogopite are significant constituents."@en ;
@@ -1924,7 +1921,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/exotic_composition_igneous_rock> a skos:Concept ;
-    dcterms:provenance "Gillespie and Styles 1999; LeMaitre et al. 2002"@en ;
+    schema:citation "Gillespie and Styles 1999; LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
     skos:definition "Rock with 'exotic' mineralogical, textural or field setting characteristics; typically dark colored, with abundant phenocrysts. Criteria include: presence of greater than 10 percent melilite or leucite, or presence of kalsilite, or greater than 50 percent carbonate minerals. Includes Carbonatite, Melilitic rock, Kalsilitic rocks, Kimberlite, Lamproite, Leucitic rock and Lamprophyres."@en ;
@@ -1937,7 +1934,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/exotic_evaporite> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/evaporite> ;
     skos:definition "Evaporite that is not 50 percent halite or 50 percent gypsum or anhydrite."@en ;
@@ -1948,7 +1945,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/fault_related_material> a skos:Concept ;
-    dcterms:provenance "This vocabulary; SLTTm 2004"@en ;
+    schema:citation "This vocabulary; SLTTm 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_material> ;
     skos:definition "Material formed as a result brittle faulting, composed of greater than 10 percent matrix; matrix is fine-grained material caused by tectonic grainsize reduction. Includes cohesive (cataclasite series) and non-cohesive (breccia-gouge series) material."@en ;
@@ -1961,7 +1958,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/fine_grained_igneous_rock> a skos:Concept ;
-    dcterms:provenance "Gillespie and Styles 1999; LeMaitre et al. 2002"@en ;
+    schema:citation "Gillespie and Styles 1999; LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "volcanic rock"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
@@ -1988,7 +1985,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_alkali_feldspar_syenite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_syenitic_rock> ;
     skos:definition "Alkali feldspar syenitic rock that contains 0-10 percent feldspathoid mineral and no quartz in the QAPF fraction. QAPF field 6'."@en ;
@@ -1998,7 +1995,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_alkali_feldspar_trachyte> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_trachytic_rock> ;
     skos:definition "Alkali feldspar trachytic rock that contains no quartz and between 0 and 10 percent feldspathoid mineral in the QAPF fraction. QAPF field 6'."@en ;
@@ -2008,7 +2005,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_anorthosite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/anorthositic_rock> ;
     skos:definition "Anorthositic rock that contains between 0 and 10 percent feldspathoid mineral and no quartz in the QAPF fraction. QAPF field 10'."@en ;
@@ -2018,7 +2015,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_diorite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/dioritic_rock> ;
     skos:definition "Dioritic rock that contains between 0 and 10 percent feldspathoid minerals in the QAPF fraction. QAPF field 10'."@en ;
@@ -2028,7 +2025,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_gabbro> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/gabbroic_rock> ;
     skos:definition "Gabbroic rock that contains 0-10 percent feldspathoid minerals and no quartz in the QAPF fraction. QAPF field 10'."@en ;
@@ -2038,7 +2035,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_latite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/latitic_rock> ;
     skos:definition "Latitic rock that contains no quartz and between 0 and 10 percent feldspathoid minerals in the QAPF fraction. QAPF field 8'."@en ;
@@ -2048,7 +2045,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_monzodiorite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/monzodioritic_rock> ;
     skos:definition "Monzodioritic rock that contains between 0 and 10 percent feldspathoid mineral."@en ;
@@ -2058,7 +2055,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_monzogabbro> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/monzogabbroic_rock> ;
     skos:definition "Monzogabbroic rock that contains 0 to 10 percent feldspathoid mineral in the QAPF fraction. QAPF field 9'."@en ;
@@ -2068,7 +2065,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_monzonite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/monzonitic_rock> ;
     skos:definition "Monzonitic rock that contains 0-10 percent feldspathoid mineral and no quartz in the QAPF fraction. Includes rocks defined modally in QAPF Field 8'."@en ;
@@ -2078,7 +2075,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_syenite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/syenitic_rock> ;
     skos:definition "Syenitic rock that contains between 0 and 10 percent feldspathoid mineral and no quartz in the QAPF fraction. Defined modally in QAPF Field 7'."@en ;
@@ -2088,7 +2085,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_bearing_trachyte> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/trachytic_rock> ;
     skos:definition "Trachytic rock that contains between 0 and 10 percent feldspathoid in the QAPF fraction, and no quartz. QAPF field 7'."@en ;
@@ -2098,7 +2095,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_diorite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foid_dioritoid> ;
     skos:definition "Foid dioritoid in which the plagioclase to total feldspar ratio is greater than 0.9. Includes rocks defined modally in QAPF field 14."@en ;
@@ -2124,7 +2121,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_dioritoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
     skos:definition "Phaneritic crystalline igneous rock in which M is less than 90, the plagioclase to total feldspar ratio is greater than 0.5, feldspathoid minerals form 10-60 percent of the QAPF fraction, plagioclase has anorthite content less than 50 percent. These rocks typically contain large amounts of mafic minerals. Includes rocks defined modally in QAPF fields 13 and 14."@en ;
@@ -2136,7 +2133,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_gabbro> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foid_gabbroid> ;
     skos:definition "Foid gabbroid that has a plagioclase to total feldspar ratio greater than 0.9. Includes rocks defined modally in QAPF field 14."@en ;
@@ -2166,7 +2163,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_gabbroid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
     skos:definition "Phaneritic crystalline igneous rock in which M is less than 90, the plagioclase to total feldspar ratio is greater than 0.5, feldspathoids form 10-60 percent of the QAPF fraction, and plagioclase has anorthite content greater than 50 percent. These rocks typically contain large amounts of mafic minerals. Includes rocks defined modally in QAPF fields 13 and 14."@en ;
@@ -2178,7 +2175,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_monzodiorite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foid_dioritoid> ;
     skos:definition "Foid dioritoid in which the plagioclase to total feldspar ratio is between 0.1 and 0.9. Includes rocks defined modally in QAPF field 13."@en ;
@@ -2189,7 +2186,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_monzogabbro> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foid_gabbroid> ;
     skos:definition "Foid gabbroid that has a plagioclase to total feldspar ratio between 0.5 and 0.9. Includes rocks defined modally in QAPF field 13."@en ;
@@ -2200,7 +2197,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_monzosyenite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foid_syenitoid> ;
     skos:definition "Foid syenitoid rock that has a plagioclase to total feldspar ratio of between 0.1 and 0.5. Includes rocks defined modally in QAPF Field 12."@en ;
@@ -2210,7 +2207,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_syenite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foid_syenitoid> ;
     skos:definition "Foid syenitoid that has a plagioclase to total feldspar ratio of less than 0.1. Includes rocks defined modally in QAPF field 11."@en ;
@@ -2236,7 +2233,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foid_syenitoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
     skos:definition "Phaneritic crystalline igneous rock with M less than 90, contains between 10 and 60 percent feldspathoid mineral in the QAPF fraction, and has a plagioclase to total feldspar ratio less than 0.5. Includes QAPF fields 11 and 12."@en ;
@@ -2248,7 +2245,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foidite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "似长岩"@zh,
         "副长火山岩"@zh ;
@@ -2276,7 +2273,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foiditoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "foidite (sensu lato)"@en,
         "foiditic rock"@en ;
@@ -2292,7 +2289,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foidolite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "似长深成岩"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
@@ -2323,7 +2320,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/foliated_metamorphic_rock> a skos:Concept ;
-    dcterms:provenance "based on NADM SLTT metamorphic"@en ;
+    schema:citation "based on NADM SLTT metamorphic"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
     skos:definition "Metamorphic rock in which 10 percent or more of the contained mineral grains are elements in a planar or linear fabric. Cataclastic or glassy character precludes classification with this concept."@en ;
@@ -2340,7 +2337,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/fragmental_igneous_material> a skos:Concept ;
-    dcterms:provenance "CGI concept definition task group"@en ;
+    schema:citation "CGI concept definition task group"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_material> ;
     skos:definition "igneous_material of unspecified consolidation state in which greater than 75 percent of the rock consists of fragments produced as a result of igneous rock-forming process."@en ;
@@ -2352,7 +2349,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/fragmental_igneous_rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fragmental_igneous_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
@@ -2364,7 +2361,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/framestone> a skos:Concept ;
-    dcterms:provenance "Hallsworth and Knox 1999; SLTTs 2004, Table 15-3-1"@en ;
+    schema:citation "Hallsworth and Knox 1999; SLTTs 2004, Table 15-3-1"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock> ;
     skos:definition "Carbonate reef rock consisting of a rigid framework of colonies, shells or skeletons, with internal cavities filled with fine sediment; usually created through the activities of colonial organisms."@en ;
@@ -2374,7 +2371,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/gabbro> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/gabbroic_rock> ;
     skos:definition "Gabbroic rock that contains between 0 and 5 percent quartz and no feldspathoid mineral in the QAPF fraction. Includes rocks defined modally in QAPF Field 10 as gabbro."@en ;
@@ -2391,7 +2388,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/gabbroic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/basic_igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/gabbroid> ;
@@ -2409,7 +2406,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/gabbroid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
     skos:definition "Phaneritic crystalline igneous rock that contains less than 90 percent mafic minerals, and up to 20 percent quartz or up to 10 percent feldspathoid in the QAPF fraction. The ratio of plagioclase to total feldspar is greater than 0.65, and anorthite content of the plagioclase is greater than 50 percent. Includes rocks defined modally in QAPF fields 9 and 10 and their subdivisions."@en ;
@@ -2422,7 +2419,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/generic_conglomerate> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005; SLTTs 2004; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
+    schema:citation "Neuendorf et al. 2005; SLTTs 2004; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
     skos:definition "Sedimentary rock composed of at least 30 percent rounded to subangular fragments larger than 2 mm in diameter; typically contains finer grained material in interstices between larger fragments. If more than 15 percent of the fine grained matrix is of indeterminant clastic or diagenetic origin and the fabric is matrix supported, may also be categorized as wackestone. If rock has unsorted or poorly sorted texture with a wide range of particle sizes, may also be categorized as diamictite."@en ;
@@ -2433,7 +2430,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/generic_mudstone> a skos:Concept ;
-    dcterms:provenance "Pettijohn et al. 1987 referenced in Hallsworth and Knox 1999; extrapolated from Folk, 1954, Figure 1a; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
+    schema:citation "Pettijohn et al. 1987 referenced in Hallsworth and Knox 1999; extrapolated from Folk, 1954, Figure 1a; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
     skos:definition "Sedimentary rock consisting of less than 30 percent gravel-size (2 mm) particles and with a mud to sand ratio greater than 1. Clasts may be of any composition or origin."@en ;
@@ -2451,7 +2448,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/generic_sandstone> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004; Neuendorf et al. 2005; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
+    schema:citation "SLTTs 2004; Neuendorf et al. 2005; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
     skos:definition "Sedimentary rock in which less than 30 percent of particles are greater than 2 mm in diameter (gravel) and the sand to mud ratio is at least 1."@en ;
@@ -2463,7 +2460,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/glass_rich_igneous_rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary, based on Gillespie and Styles 1999"@en ;
+    schema:citation "This vocabulary, based on Gillespie and Styles 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
     skos:definition "Igneous rock that contains greater than 50 percent massive glass."@en ;
@@ -2474,7 +2471,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/glassy_igneous_rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/glass_rich_igneous_rock> ;
     skos:definition "Igneous rock that consists of greater than 80 percent massive glass."@en ;
@@ -2486,7 +2483,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/glaucophane_lawsonite_epidote_metamorphic_rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "blauschiefer"@de ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
@@ -2501,7 +2498,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/gneiss> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005"@en ;
+    schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foliated_metamorphic_rock> ;
     skos:definition "Foliated metamorphic rock with bands or lenticles rich in granular minerals alternating with bands or lenticles rich in minerals with a flaky or elongate prismatic habit. Mylonitic foliation or well developed, continuous schistosity (greater than 50 percent of the rock consists of grains participate in a planar or linear fabric) precludes classification with this concept."@en ;
@@ -2519,7 +2516,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/grainstone> a skos:Concept ;
-    dcterms:provenance "Dunham 1962"@en ;
+    schema:citation "Dunham 1962"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "carbonate grainstone"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock> ;
@@ -2547,7 +2544,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/granite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/granitoid> ;
     skos:definition "Phaneritic crystalline rock consisting of quartz, alkali feldspar and plagioclase (typically sodic) in variable amounts, usually with biotite and/or hornblende. Includes rocks defined modally in QAPF Field 3."@en ;
@@ -2576,7 +2573,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/granitoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "granitic rock"@en,
         "granitan"@id,
@@ -2610,7 +2607,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/granodiorite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/granitoid> ;
     skos:definition "Phaneritic crystalline rock consisting essentially of quartz, sodic plagioclase and lesser amounts of alkali feldspar with minor hornblende and biotite. Includes rocks defined modally in QAPF field 4."@en ;
@@ -2636,7 +2633,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/granofels> a skos:Concept ;
-    dcterms:provenance "SLTTm 2004"@en ;
+    schema:citation "SLTTm 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
     skos:definition "Metamorphic rock with granoblastic fabric and very little or no foliation (less than 10 percent of the mineral grains in the rock are elements in a planar or linear fabric). Grainsize not specified."@en ;
@@ -2647,7 +2644,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/granulite> a skos:Concept ;
-    dcterms:provenance "Fettes and Desmons (2007). See also Wimmenauer (1985), Winkler (1979) (D.R. Bowes (1989), The Encyclopedia of Igneous and Metamorphic Petrology; Van Nostrand Reinhold ISBN: 0-442-20623-2 ; wikipedia, http://en.wikipedia.org/wiki/Granulite accessed 5/30/09"@en ;
+    schema:citation "Fettes and Desmons (2007). See also Wimmenauer (1985), Winkler (1979) (D.R. Bowes (1989), The Encyclopedia of Igneous and Metamorphic Petrology; Van Nostrand Reinhold ISBN: 0-442-20623-2 ; wikipedia, http://en.wikipedia.org/wiki/Granulite accessed 5/30/09"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "变粒岩"@zh,
         "粒变岩"@zh ;
@@ -2679,7 +2676,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/gravel> a skos:Concept ;
-    dcterms:provenance "definition of gravel from SLTTs 2004; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
+    schema:citation "definition of gravel from SLTTs 2004; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "砾石"@zh,
         "砾石层"@zh ;
@@ -2708,7 +2705,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/gravel_size_sediment> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
+    schema:citation "SLTTs 2004; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sediment> ;
     skos:definition "Sediment containing greater than 30 percent gravel-size particles (greater than 2.0 mm diameter). Composition or gensis of clasts not specified."@en ;
@@ -2722,7 +2719,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/high_magnesium_fine_grained_igneous_rocks> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fine_grained_igneous_rock> ;
     skos:definition "fine-grained igneous rock that contains unusually high concentration of MgO. For rocks that contain greater than 52 percent silica, MgO must be greater than 8 percent. For rocks containing less than 52 percent silica, MgO must be greater than 12 percent."@en ;
@@ -2736,7 +2733,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/hornblendite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/ultramafic_igneous_rock> ;
@@ -2763,7 +2760,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/hornfels> a skos:Concept ;
-    dcterms:provenance "IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)"@en ;
+    schema:citation "IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "角页岩"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/granofels> ;
@@ -2791,7 +2788,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/hybrid_sediment> a skos:Concept ;
-    dcterms:provenance "Hallsworth and Knox, 1999"@en ;
+    schema:citation "Hallsworth and Knox, 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sediment> ;
     skos:definition "Sediment that does not fit any of the other sediment composition/genesis categories. Sediment consisting of three or more components which form more than 5 percent but less than 50 precent of the material."@en ;
@@ -2801,7 +2798,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/hybrid_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "Hallsworth and Knox, 1999"@en ;
+    schema:citation "Hallsworth and Knox, 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
     skos:definition "Sedimentary rock that does not fit any of the other composition/genesis categories. Sedimentary rock consisting of three or more components which form more than 5 percent but less than 50 precent of the material."@en ;
@@ -2811,7 +2808,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/igneous_material> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/compound_material> ;
     skos:definition "Earth material formed as a result of igneous processes, eg. intrusion and cooling of magma in the crust, volcanic eruption."@en ;
@@ -2825,7 +2822,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al 2005"@en ;
+    schema:citation "Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/rock> ;
@@ -2854,7 +2851,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/impact_generated_material> a skos:Concept ;
-    dcterms:provenance "Stöffler and Grieve 2007; Jackson 1997"@en ;
+    schema:citation "Stöffler and Grieve 2007; Jackson 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_material> ;
     skos:definition "Material that contains features indicative of shock metamorphism, such as microscopic planar deformation features within grains or shatter cones, interpreted to be the result of extraterrestrial bolide impact. Includes breccias and melt rocks."@en ;
@@ -2869,7 +2866,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/impure_calcareous_carbonate_sediment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "calcareous marl"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/calcareous_carbonate_sediment>,
@@ -2881,7 +2878,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/impure_carbonate_sediment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "marl"@en,
         "泥灰土"@ja,
@@ -2896,7 +2893,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/impure_carbonate_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "marlstone"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock> ;
@@ -2910,7 +2907,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/impure_dolomitic_sediment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "dolomitic marl"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/dolomitic_sediment>,
@@ -2922,7 +2919,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/impure_dolostone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "dolomitic marlstone"@en,
         "impure dolomitic or magnesian carbonate sedimentary rock"@en,
@@ -2937,7 +2934,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/impure_limestone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "calcareous marlstone"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/calcareous_carbonate_sedimentary_rock>,
@@ -2950,7 +2947,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/intermediate_composition_igneous_material> a skos:Concept ;
-    dcterms:provenance "after LeMaitre et al. 2002"@en ;
+    schema:citation "after LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_material> ;
     skos:definition "Igneous material with between 52 and 63 percent SiO2."@en ;
@@ -2961,7 +2958,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/intermediate_composition_igneous_rock> a skos:Concept ;
-    dcterms:provenance "after LeMaitre et al. 2002"@en ;
+    schema:citation "after LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/intermediate_composition_igneous_material> ;
@@ -2974,7 +2971,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/iron_rich_sediment> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/iron_rich_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sediment> ;
@@ -2985,7 +2982,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/iron_rich_sedimentary_material> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/chemical_sedimentary_material> ;
     skos:definition "Sedimentary material of unspecified consolidation state that consists of at least 50 percent iron-bearing minerals (hematite, magnetite, limonite-group, siderite, iron-sulfides), as determined by hand-lens or petrographic analysis. Corresponds to a rock typically containing 15 percent iron by weight."@en ;
@@ -2997,7 +2994,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/iron_rich_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "Hallsworth and Knox 1999; SLTTs 2004"@en ;
+    schema:citation "Hallsworth and Knox 1999; SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/iron_rich_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
@@ -3008,7 +3005,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/kalsilitic_and_melilitic_rock> a skos:Concept ;
-    dcterms:provenance "based on LeMaitre et al. 2002"@en ;
+    schema:citation "based on LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/exotic_composition_igneous_rock> ;
     skos:definition "Igneous rock containing greater than 10 percent melilite or kalsilite. Typically undersaturated, ultrapotassic (kalsilitic rocks) or calcium-rich (melilitic rocks) mafic or ultramafic rocks."@en ;
@@ -3026,7 +3023,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/komatiitic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/high_magnesium_fine_grained_igneous_rocks>,
         <http://resource.geosciml.org/classifier/cgi/lithology/ultramafic_igneous_rock> ;
@@ -3039,7 +3036,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/latite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/latitic_rock> ;
     skos:definition "Latitic rock that contains between 0 and 5 percent quartz and no feldspathoid in the QAPF fraction. QAPF field 8."@en ;
@@ -3065,7 +3062,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/latitic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/trachytoid> ;
     skos:definition "Trachytoid that has a plagioclase to total feldspar ratio between 0.35 and 0.65. QAPF fields 8, 8' and 8*."@en ;
@@ -3078,7 +3075,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/lignite> a skos:Concept ;
-    dcterms:provenance "Economic commission for Europe, committee on Sustainable Energy- United Nations (ECE-UN), 1998, International Classification of in-Seam Coals: Energy 19, 41 pp."@en ;
+    schema:citation "Economic commission for Europe, committee on Sustainable Energy- United Nations (ECE-UN), 1998, International Classification of in-Seam Coals: Energy 19, 41 pp."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "low rank coal"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/coal> ;
@@ -3109,7 +3106,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/limestone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "石灰石"@ja,
         "石灰石"@zh ;
@@ -3141,7 +3138,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/marble> a skos:Concept ;
-    dcterms:provenance "IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/), SLTTm1.0 2004"@en ;
+    schema:citation "IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/), SLTTm1.0 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
     skos:definition "Metamorphic rock consisting of greater than 75 percent fine- to coarse-grained recrystallized calcite and/or dolomite; usually with a granoblastic, saccharoidal texture."@en ;
@@ -3157,7 +3154,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/material_formed_in_surficial_environment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_material> ;
     skos:definition "Material that is the product of weathering processes operating on pre-existing rocks or deposits, analogous to hydrothermal or metasomatic rocks, but formed at ambient Earth surface temperature and pressure."@en ;
@@ -3170,7 +3167,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> a skos:Concept ;
-    dcterms:provenance "Jackson 1997"@en ;
+    schema:citation "Jackson 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_rock> ;
     skos:definition "Rock formed by solid-state mineralogical, chemical and/or structural changes to a pre-existing rock, in response to marked changes in temperature, pressure, shearing stress and chemical environment."@en ;
@@ -3200,7 +3197,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/metasomatic_rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/composite_genesis_rock> ;
     skos:definition "Rock that has fabric and composition indicating open-system mineralogical and chemical changes in response to interaction with a fluid phase, typically water rich."@en ;
@@ -3239,7 +3236,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/mica_schist> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "sekis abrak"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/schist> ;
@@ -3267,7 +3264,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/migmatite> a skos:Concept ;
-    dcterms:provenance "Fette and Desmons (2007) (http://www.bgs.ac.uk/SCMR/)"@en ;
+    schema:citation "Fette and Desmons (2007) (http://www.bgs.ac.uk/SCMR/)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "混成岩"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
@@ -3303,7 +3300,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/monzodiorite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/monzodioritic_rock> ;
     skos:definition "Phaneritic crystalline igneous rock consisting of sodic plagioclase (An0 to An50), alkali feldspar, hornblende and biotite, with or without pyroxene, and 0 to 5 percent quartz. Includes rocks defined modally in QAPF field 9."@en ;
@@ -3329,7 +3326,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/monzodioritic_rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary; LeMaitre et al. 2002"@en ;
+    schema:citation "This vocabulary; LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/dioritoid> ;
     skos:definition "Phaneritic crystalline igneous rock consisting of sodic plagioclase (An0 to An50), alkali feldspar, hornblende and biotite, with or without pyroxene, and 0 to 10 percent feldspathoid or 0 to 20 percent quartz in the QAPF fraction. Plagioclase to total feldspar ratio in the QAPF fraction is between 0.65 and 0.9. Includes rocks defined modally in QAPF field 9, 9' and 9* as monzodiorite, foid-beaing monzodiorite, and quartz monzodiorite."@en ;
@@ -3342,7 +3339,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/monzogabbro> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002, This vocabulary"@en ;
+    schema:citation "LeMaitre et al. 2002, This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/monzogabbroic_rock> ;
     skos:definition "Monzogabbroic rock that contains between 0 an 5 percent quartz and no feldspathoid mineral in the QAPF fraction. Includes rocks defined modally in QAPF field 9 ."@en ;
@@ -3368,7 +3365,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/monzogabbroic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002, This vocabulary"@en ;
+    schema:citation "LeMaitre et al. 2002, This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/gabbroid> ;
     skos:definition "Gabbroid with a plagioclase to total feldspar ratio between 0.65 and 0.9. QAPF field 9, 9 prime and 9 asterisk"@en ;
@@ -3381,7 +3378,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/monzogranite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/granite> ;
     skos:definition "Granite that has a plagiolcase to total feldspar ratio between 0.35 and 0.65. QAPF field 3b."@en ;
@@ -3407,7 +3404,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/monzonite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/monzonitic_rock> ;
     skos:definition "Monzonitic rock that contains 0-5 percent quartz and no feldspathoid mineral in the QAPF fraction. Includes rocks defined modally in QAPF Field 8."@en ;
@@ -3433,7 +3430,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/monzonitic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/syenitoid> ;
     skos:definition "Syenitoid with a plagioclase to total feldspar ratio between 0.35 and 0.65. Includes rocks in QAPF fields 8, 8*, and 8'."@en ;
@@ -3446,7 +3443,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/mud> a skos:Concept ;
-    dcterms:provenance "definition of mud from SLTTs 2004 muddy sediment; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
+    schema:citation "definition of mud from SLTTs 2004 muddy sediment; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "이토"@ko,
         "진흙"@ko ;
@@ -3477,7 +3474,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/mud_size_sediment> a skos:Concept ;
-    dcterms:provenance "based on SLTTs 2004; Neuendorf et al. 2005; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
+    schema:citation "based on SLTTs 2004; Neuendorf et al. 2005; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sediment> ;
     skos:definition "Sediment consisting of less than 30 percent gravel-size (2 mm) particles and with a mud-size to sand-size particle ratio greater than 1. Clasts may be of any composition or origin."@en ;
@@ -3492,7 +3489,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/mylonitic_rock> a skos:Concept ;
-    dcterms:provenance "Marshak and Mitra 1988"@en ;
+    schema:citation "Marshak and Mitra 1988"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fault_related_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/foliated_metamorphic_rock> ;
@@ -3509,7 +3506,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/natural_unconsolidated_material> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/unconsolidated_material> ;
     skos:definition "Unconsolidated material known to have natural, ie. not human-made, origin."@en ;
@@ -3521,7 +3518,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/non_clastic_siliceous_sediment> a skos:Concept ;
-    dcterms:provenance "NGMDB 2008; Hallsworth and Knox 1999"@en ;
+    schema:citation "NGMDB 2008; Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/non_clastic_siliceous_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sediment> ;
@@ -3533,7 +3530,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/non_clastic_siliceous_sedimentary_material> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_material> ;
     skos:definition "Sedimentary material that consists of at least 50 percent silicate mineral material, deposited directly by chemical or biological processes at the depositional surface, or in particles formed by chemical or biological processes within the basin of deposition."@en ;
@@ -3545,7 +3542,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/non_clastic_siliceous_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/non_clastic_siliceous_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
@@ -3559,7 +3556,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/ooze> a skos:Concept ;
-    dcterms:provenance "based on Bates and Jackson 1987 and Hallsworth and Knox 1999"@en ;
+    schema:citation "based on Bates and Jackson 1987 and Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "biogenic mud"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/biogenic_sediment>,
@@ -3590,7 +3587,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/organic_bearing_mudstone> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Oil_shale"@en ;
+    schema:citation "Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Oil_shale"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "oil shale"@en,
         "batuan pembawa minyak"@id,
@@ -3621,7 +3618,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/organic_rich_sediment> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/biogenic_sediment>,
         <http://resource.geosciml.org/classifier/cgi/lithology/organic_rich_sedimentary_material> ;
@@ -3641,7 +3638,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/organic_rich_sedimentary_material> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_material> ;
     skos:definition "Sedimentary material in which 50 percent or more of the primary sedimentary material is organic carbon."@en ;
@@ -3653,7 +3650,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/organic_rich_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/organic_rich_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
@@ -3666,7 +3663,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/orthogneiss> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "火成片麻岩"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/gneiss> ;
@@ -3693,7 +3690,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/packstone> a skos:Concept ;
-    dcterms:provenance "Hallsworth and Knox 1999"@en ;
+    schema:citation "Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "batu bungkus"@id,
         "หินปูนแพคสโตน"@th ;
@@ -3722,7 +3719,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/paragneiss> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "準片麻岩"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/gneiss> ;
@@ -3749,7 +3746,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/peat> a skos:Concept ;
-    dcterms:provenance "Hallsworth and Knox 1999"@en ;
+    schema:citation "Hallsworth and Knox 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "batu bara muda"@id,
         "草炭"@ja,
@@ -3779,7 +3776,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pebble_gravel_size_sediment> a skos:Concept ;
-    dcterms:provenance "Wentworth size scale"@en ;
+    schema:citation "Wentworth size scale"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/gravel_size_sediment> ;
     skos:definition "Sediment containing greater than 30 percent pebble-size particles (2.0 -64 mm in diameter)"@en ;
@@ -3789,7 +3786,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pegmatite> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005"@en ;
+    schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "巨晶花崗岩"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
@@ -3816,7 +3813,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/peridotite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "페리도타이트"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock>,
@@ -3849,7 +3846,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005"@en ;
+    schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "coarse grained crystalline igneous rock"@en,
         "plutonic rock"@en,
@@ -3894,7 +3891,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phonolilte> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "フォノライト"@ja,
         "향석"@ko ;
@@ -3923,7 +3920,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phonolitic_basanite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/tephritoid> ;
     skos:definition "Tephritoid that has a plagioclase to total feldspar ratio between 0.5 and 0.9, and contains more than 10 percent normative (CIPW) olivine."@en ;
@@ -3933,7 +3930,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phonolitic_foidite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foiditoid> ;
     skos:definition "Foiditoid that contains less than 90 percent feldspathoid minerals in the QAPF fraction, and has a plagioclase to total feldspar ratio that is less than 0.5"@en ;
@@ -3943,7 +3940,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phonolitic_tephrite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/tephritoid> ;
     skos:definition "Tephritoid that has a plagioclase to total feldspar ratio between 0.5 and 0.9, and contains less than 10 percent normative (CIPW) olivine."@en ;
@@ -3953,7 +3950,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phonolitoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "phonolitic rock"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fine_grained_igneous_rock> ;
@@ -3966,7 +3963,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phosphate_rich_sediment> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phosphate_rich_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sediment> ;
@@ -3977,7 +3974,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phosphate_rich_sedimentary_material> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_material> ;
     skos:definition "Sedimentary material in which at least 50 percent of the primary and/or recrystallized constituents are phosphate minerals."@en ;
@@ -3989,7 +3986,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phosphorite> a skos:Concept ;
-    dcterms:provenance "HallsworthandKnox 1999, Jackson 1997"@en ;
+    schema:citation "HallsworthandKnox 1999, Jackson 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phosphate_rich_sedimentary_material>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> ;
@@ -4006,7 +4003,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phyllite> a skos:Concept ;
-    dcterms:provenance "IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)"@en ;
+    schema:citation "IUGS SCMR 2007 (http://www.bgs.ac.uk/SCMR/)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "フィライト"@ja,
         "粒硬绿泥石"@zh ;
@@ -4034,7 +4031,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/phyllonite> a skos:Concept ;
-    dcterms:provenance "NADM metamorphic rock vocabulary SLTTm1.0; Marshak and Mitra 1988"@en ;
+    schema:citation "NADM metamorphic rock vocabulary SLTTm1.0; Marshak and Mitra 1988"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "千枚糜棱岩"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/mylonitic_rock> ;
@@ -4061,7 +4058,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/porphyry> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
     skos:definition "Igneous rock that contains conspicuous phenocrysts in a finer grained groundmass; groundmass itself may be phaneritic or fine-grained."@en ;
@@ -4087,7 +4084,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pure_calcareous_carbonate_sediment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "lime sediment"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/calcareous_carbonate_sediment>,
@@ -4099,7 +4096,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pure_carbonate_mudstone> a skos:Concept ;
-    dcterms:provenance "Dunham 1962"@en ;
+    schema:citation "Dunham 1962"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/generic_mudstone>,
         <http://resource.geosciml.org/classifier/cgi/lithology/pure_carbonate_sedimentary_rock> ;
@@ -4110,7 +4107,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pure_carbonate_sediment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sediment> ;
     skos:definition "Carbonate sediment in which greater than 90 percent of the constituents are composed of one (or more) of the carbonate minerals in particles of intrabasinal origin."@en ;
@@ -4122,7 +4119,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pure_carbonate_sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock> ;
     skos:definition "Sedimentary rock in which greater than 90 percent of the primary and/or recrystallized constituents are carbonate minerals."@en ;
@@ -4135,7 +4132,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pure_dolomitic_sediment> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/dolomitic_sediment>,
         <http://resource.geosciml.org/classifier/cgi/lithology/pure_carbonate_sediment> ;
@@ -4146,7 +4143,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pyroclastic_material> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fragmental_igneous_material> ;
     skos:definition "Fragmental igneous material that consists of more than 75 percent of particles formed by disruption as a direct result of volcanic action."@en ;
@@ -4158,7 +4155,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pyroclastic_rock> a skos:Concept ;
-    dcterms:provenance "based on LeMaitre et al. 2002"@en ;
+    schema:citation "based on LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fragmental_igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/pyroclastic_material> ;
@@ -4177,7 +4174,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/pyroxenite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/ultramafic_igneous_rock> ;
@@ -4207,7 +4204,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_alkali_feldspar_syenite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_syenitic_rock> ;
     skos:definition "Alkali feldspar syenitic rock that contains 5 to 20 percent quartz and no feldspathoid in the QAPF fraction. QAPF field 6*."@en ;
@@ -4217,7 +4214,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_alkali_feldspar_trachyte> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_trachytic_rock> ;
     skos:definition "Alkali feldspar trachytic rock that contains and between 5 and 20 percent quartz mineral in the QAPF fraction. QAPF field 6*."@en ;
@@ -4227,7 +4224,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_anorthosite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/anorthositic_rock> ;
     skos:definition "Anorthositic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 10*."@en ;
@@ -4237,7 +4234,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_diorite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/dioritic_rock> ;
     skos:definition "Dioritic rock that contains between 5 to 20 percent quartz in the QAPF fraction. QAPF field 10*."@en ;
@@ -4263,7 +4260,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_gabbro> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/gabbroic_rock> ;
     skos:definition "Gabbroic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 10*."@en ;
@@ -4273,7 +4270,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_latite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/latitic_rock> ;
     skos:definition "Latitic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 8*."@en ;
@@ -4299,7 +4296,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_monzodiorite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/monzodioritic_rock> ;
     skos:definition "Monzodioritic rock that contains between 5 and 20 percent quartz."@en ;
@@ -4309,7 +4306,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_monzogabbro> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/monzogabbroic_rock> ;
     skos:definition "Monzogabbroic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 9*."@en ;
@@ -4319,7 +4316,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_monzonite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/monzonitic_rock> ;
     skos:definition "Monzonitic rock that contains 5-20 percent quartz iin the QAPF fraction. Includes rocks defined modally in QAPF Field 8*."@en ;
@@ -4345,7 +4342,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_rich_igneous_rock> a skos:Concept ;
-    dcterms:provenance "Gillespie and Styles 1999; LeMaitre et al. 2002"@en ;
+    schema:citation "Gillespie and Styles 1999; LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/acidic_igneous_rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
@@ -4359,7 +4356,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_syenite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/syenitic_rock> ;
     skos:definition "Syenitic rock that contains between 5 and 20 percent quartz in the QAPF fraction. Defined modally in QAPF Field 7*."@en ;
@@ -4385,7 +4382,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartz_trachyte> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/trachytic_rock> ;
     skos:definition "Trachytic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 7*."@en ;
@@ -4395,7 +4392,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/quartzite> a skos:Concept ;
-    dcterms:provenance "after Neuendorf et al. 2005"@en ;
+    schema:citation "after Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
     skos:definition "Metamorphic rock consisting of greater than or equal to 75 percent quartz; typically granoblastic texture."@en ;
@@ -4422,7 +4419,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/residual_material> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/material_formed_in_surficial_environment> ;
     skos:definition "Material of composite origin resulting from weathering processes at the Earth's surface, with genesis dominated by removal of chemical constituents by aqueous leaching. Miinor clastic, chemical, or organic input may also contribute. Consolidation state is not inherent in definition, but typically material is unconsolidated or weakly consolidated."@en ;
@@ -4432,7 +4429,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/rhyolite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "Liparit"@de,
         "liparita"@es,
@@ -4466,7 +4463,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/rhyolitoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "rhyolitic rock"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/acidic_igneous_rock>,
@@ -4481,7 +4478,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/rock> a skos:Concept ;
-    dcterms:provenance "Jackson, 1997; NADM C1 2004; Neuendorf et al 2005"@en ;
+    schema:citation "Jackson, 1997; NADM C1 2004; Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/compound_material> ;
     skos:definition "Consolidated aggregate of one or more EarthMaterials, or a body of undifferentiated mineral matter, or of solid organic material. Includes mineral aggregates such as granite, shale, marble; glassy matter such as obsidian; and organic material such a coal. Excludes unconsolidated materials."@en ;
@@ -4502,7 +4499,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/rock_gypsum_or_anhydrite> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/evaporite> ;
     skos:definition "Evaporite composed of at least 50 percent gypsum or anhydrite."@en ;
@@ -4512,7 +4509,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/rock_salt> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/evaporite> ;
     skos:definition "Evaporite composed of at least 50 percent halite."@en ;
@@ -4522,7 +4519,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/sand> a skos:Concept ;
-    dcterms:provenance "definition of sand from SLTTs 2004 sandy sediment; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
+    schema:citation "definition of sand from SLTTs 2004 sandy sediment; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "沙"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sediment>,
@@ -4550,7 +4547,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/sand_size_sediment> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005 ; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
+    schema:citation "Neuendorf et al. 2005 ; particle sizes defined from Krumbein phi scale (W C Krumbein and L L Sloss, Stratigraphy and Sedimentation, 2nd edition, Freeman, San Francisco, 1963; Krumbein and Pettijohn, 1938, Manual of Sedimentary Petrography: New York, Appleton Century Co., Inc.)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/sediment> ;
     skos:definition "Sediment in which less than 30 percent of particles are gravel (greater than 2 mm in diameter) and the sand to mud ratio is at least 1. composition or genesis of clasts not specified."@en ;
@@ -4561,7 +4558,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/sapropel> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005"@en ;
+    schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "サプロペル"@ja,
         "腐殖泥"@zh ;
@@ -4589,7 +4586,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/schist> a skos:Concept ;
-    dcterms:provenance "SLTTm 2004; Neuendorf et al. 2005"@en ;
+    schema:citation "SLTTm 2004; Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foliated_metamorphic_rock> ;
     skos:definition "Foliated phaneritic metamorphic rock with well developed, continuous schistosity, meaning that greater than 50 percent of the rock by volume is mineral grains with a thin tabular, lamellar, or acicular prismatic crystallographic habit that are oriented in a continuous planar or linear fabric."@en ;
@@ -4606,7 +4603,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/sediment> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "endapan"@ms ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/natural_unconsolidated_material>,
@@ -4645,7 +4642,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_material> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/compound_material> ;
     skos:definition "Material formed by accumulation of solid fragmental material deposited by air, water or ice, or material that accumulated by other natural agents such as chemical precipitation from solution or secretion by organisms. Includes both sediment and sedimentary rock. Includes epiclastic deposits. All stated composition criteria are based on the mineral/ compound material (GeoSciML term)/particulate fraction of the material, irrespective of porosity or the pore-fluid. No distinctions are made based on porosity or pore fluid composition (except organic rich sediment in which liquid hydrocarbon content may be considered)."@en ;
@@ -4663,7 +4660,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/rock>,
         <http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_material> ;
@@ -4690,7 +4687,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/serpentinite> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005"@en ;
+    schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock> ;
     skos:definition "Rock consisting of more than 75 percent serpentine-group minerals, eg. antigorite, chrysotile or lizardite; accessory chlorite, talc and magnetite may be present; derived from hydration of ferromagnesian silicate minerals such as olivine and pyroxene."@en ;
@@ -4716,7 +4713,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/shale> a skos:Concept ;
-    dcterms:provenance "NADM SLTT sedimentary, 2004"@en ;
+    schema:citation "NADM SLTT sedimentary, 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/clastic_mudstone> ;
     skos:definition "Laminated mudstone that will part or break along thin, closely spaced layers parallel to stratification."@en ;
@@ -4744,7 +4741,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/silicate_mud> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/mud_size_sediment> ;
     skos:definition "Mud size sediment that consists of less than 50 percent carbonate minerals."@en ;
@@ -4755,7 +4752,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/silicate_mudstone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/generic_mudstone> ;
     skos:definition "Mudstone that contains less than 10 percent carbonate minerals."@en ;
@@ -4767,7 +4764,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/siliceous_ooze> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/ooze>,
         <http://resource.geosciml.org/classifier/cgi/lithology/silicate_mud> ;
@@ -4778,7 +4775,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/silt> a skos:Concept ;
-    dcterms:provenance "based on SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade scale"@en ;
+    schema:citation "based on SLTTs 2004; Neuendorf et al. 2005; particle size from Wentworth grade scale"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "loess"@en,
         "뢰스"@ko,
@@ -4809,7 +4806,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/siltstone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "Silt bearing mudstone"@en,
         "실트스톤"@ko ;
@@ -4840,7 +4837,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/skarn> a skos:Concept ;
-    dcterms:provenance "Fettes and Desmons, 2007, p195"@en ;
+    schema:citation "Fettes and Desmons, 2007, p195"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "exoskarn"@en,
         "tactite"@en ;
@@ -4868,7 +4865,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/slate> a skos:Concept ;
-    dcterms:provenance "NADM metamorphic rock vocabulary SLTTm1.0; Neuendorf et al. 2005"@en ;
+    schema:citation "NADM metamorphic rock vocabulary SLTTm1.0; Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "cebakan batusabak"@id,
         "mendapan sabak"@ms ;
@@ -4896,7 +4893,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/spilite> a skos:Concept ;
-    dcterms:provenance "Fettes and Desmon, 2007; Best, M.G., 1982, Igneous and metamorphic petrology: New York, W.H. Freeman and company, p. 398; Neuendorf et al. 2005, p. 619."@en ;
+    schema:citation "Fettes and Desmon, 2007; Best, M.G., 1982, Igneous and metamorphic petrology: New York, W.H. Freeman and company, p. 398; Neuendorf et al. 2005, p. 619."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "曹長石玄武岩"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/metasomatic_rock> ;
@@ -4925,7 +4922,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/syenite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/syenitic_rock> ;
     skos:definition "Syenitic rock that contains between 0 and 5 percent quartz and no feldspathoid mineral in the QAPF fraction. Defined modally in QAPF Field 7."@en ;
@@ -4951,7 +4948,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/syenitic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/syenitoid> ;
     skos:definition "Syenitoid with a plagioclase to total feldspar ratio between 0.1 and 0.35. Includes rocks in QAPF fields 7, 7*, and 7'."@en ;
@@ -4964,7 +4961,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/syenitoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phaneritic_igneous_rock> ;
     skos:definition "Phaneritic crystalline igneous rock with M less than 90, consisting mainly of alkali feldspar and plagioclase; minor quartz or nepheline may be present, along with pyroxene, amphibole or biotite. Ratio of plagioclase to total feldspar is less than 0.65, quartz forms less than 20 percent of QAPF fraction, and feldspathoid minerals form less than 10 percent of QAPF fraction. Includes rocks classified in QAPF fields 6, 7 and 8 and their subdivisions."@en ;
@@ -4977,7 +4974,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/syenogranite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/granite> ;
     skos:definition "Granite that has a plagiolcase to total feldspar ratio between 0.10 and 0.35. QAPF field 3a."@en ;
@@ -4987,7 +4984,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/tephra> a skos:Concept ;
-    dcterms:provenance "Hallsworth and Knox 1999; LeMaitre et al. 2002"@en ;
+    schema:citation "Hallsworth and Knox 1999; LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "화산분출물"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/natural_unconsolidated_material>,
@@ -5017,7 +5014,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/tephrite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/tephritoid> ;
     skos:definition "Tephritoid that has a plagioclase to total feldspar ratio greater than 0.9, and contains less than 10 percent normative (CIPW) olivine."@en ;
@@ -5043,7 +5040,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/tephritic_foidite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/foiditoid> ;
     skos:definition "Foiditoid that contains less than 90 percent feldspathoid minerals in the QAPF fraction, and has a plagioclase to total feldspar ratio that is greater than 0.5, with less than 10 percent normative olivine"@en ;
@@ -5053,7 +5050,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/tephritic_phonolite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/phonolitoid> ;
     skos:definition "Phonolitoid that has a plagioclase to total feldspar ratio between 0.1 and 0.5. Broadly corresponds to TAS tephriphonolite of TAS field U3."@en ;
@@ -5064,7 +5061,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/tephritoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "tephritic rock"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fine_grained_igneous_rock> ;
@@ -5079,7 +5076,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/tholeiitic_basalt> a skos:Concept ;
-    dcterms:provenance "http://en.wikipedia.org/wiki/Basalt; Carmichael, I.S. Turner, F.J., Verhoogen, John, 1974, Igneous petrology: New York, McGraw HIll Book Co., p.42-43."@en ;
+    schema:citation "http://en.wikipedia.org/wiki/Basalt; Carmichael, I.S. Turner, F.J., Verhoogen, John, 1974, Igneous petrology: New York, McGraw HIll Book Co., p.42-43."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "หินโทลิติกบะซอลต์"@th ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/basalt> ;
@@ -5107,7 +5104,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/tonalite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/granitoid> ;
     skos:definition "Granitoid consisting of quartz and intermediate plagioclase, usually with biotite and amphibole. Includes rocks defined modally in QAPF field 5; ratio of plagioclase to total feldspar is greater than 0.9."@en ;
@@ -5135,7 +5132,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/trachyte> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/trachytic_rock> ;
     skos:definition "Trachytoid that has a plagioclase to total feldspar ratio between 0.1 and 0.35, between 0 and 5 percent quartz in the QAPF fraction, and no feldspathoid minerals. QAPF field 7."@en ;
@@ -5161,7 +5158,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/trachytic_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/trachytoid> ;
     skos:definition "Trachytoid that has a plagioclase to total feldspar ratio between 0.1 and 0.35. QAPF fields 7, 7', and 7*."@en ;
@@ -5175,7 +5172,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/trachytoid> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002"@en ;
+    schema:citation "LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/fine_grained_igneous_rock> ;
     skos:definition "Fine grained igneous rock than contains less than 90 percent mafic minerals, less than 10 percent feldspathoid mineral and less than 20 percent quartz in the QAPF fraction and has a plagioclase to total feldspar ratio less than 0.65. Mafic minerals typically include amphibole or mica; typically porphyritic. Includes rocks defined modally in QAPF fields 6, 7 and 8 (with subdivisions) or chemically in TAS Field T as trachyte or latite."@en ;
@@ -5198,7 +5195,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/travertine> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Travertine; Chafetz, H.S., and Folk, R.L., 1984, Travertine: Depositional morphology an dthe bacterially constructed constituents: J. Sed. Petrology, v. 126, p.57-74."@en ;
+    schema:citation "Neuendorf et al. 2005; http://en.wikipedia.org/wiki/Travertine; Chafetz, H.S., and Folk, R.L., 1984, Travertine: Depositional morphology an dthe bacterially constructed constituents: J. Sed. Petrology, v. 126, p.57-74."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "トラバーチン"@ja,
         "온천침전물"@ko ;
@@ -5230,7 +5227,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/tuff_breccia_agglomerate_or_pyroclastic_breccia> a skos:Concept ;
-    dcterms:provenance "Schmid 1981; LeMaitre et al. 2002"@en ;
+    schema:citation "Schmid 1981; LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/pyroclastic_rock> ;
     skos:definition "Pyroclastic rock in which greater than 25 percent of particles are greater than 64 mm in largest dimension. Includes agglomerate, pyroclastic breccia of Gillespie and Styles (1999)"@en ;
@@ -5240,7 +5237,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/tuffite> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002; Murawski and Meyer 1998"@en ;
+    schema:citation "LeMaitre et al. 2002; Murawski and Meyer 1998"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/rock> ;
     skos:definition "Rock consists of more than 50 percent particles of indeterminate pyroclastic or epiclastic origin and less than 75 percent particles of clearly pyroclastic origin. commonly the rock is laminated or exhibits size grading. (based on LeMaitre et al. 2002; Murawski and Meyer 1998)."@en ;
@@ -5270,7 +5267,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/ultrabasic_igneous_rock> a skos:Concept ;
-    dcterms:provenance "after LeMaitre et al. 2002"@en ;
+    schema:citation "after LeMaitre et al. 2002"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
     skos:definition "Igneous rock with less than 45 percent SiO2."@en ;
@@ -5280,7 +5277,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/ultramafic_igneous_rock> a skos:Concept ;
-    dcterms:provenance "LeMaitre et al. 2002; Gillespie and Styles 1999"@en ;
+    schema:citation "LeMaitre et al. 2002; Gillespie and Styles 1999"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock> ;
     skos:definition "Igneous rock that consists of greater than 90 percent mafic minerals."@en ;
@@ -5295,7 +5292,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/unconsolidated_material> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:altLabel "bahan tak termampatkan"@id,
         "疏松沉积物"@zh ;
@@ -5325,7 +5322,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lithology/wacke> a skos:Concept ;
-    dcterms:provenance "Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p."@en ;
+    schema:citation "Pettijohn, Potter, Siever, 1972, Sand and Sandstone: New York, Springer Verlag, 681 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lithology/clastic_sandstone> ;
     skos:definition "Clastic sandstone with more than 10 percent matrix of indeterminate detrital or diagenetic nature. Matrix is mud size silicate minerals (clay, feldspar, quartz, rock fragments, and alteration products)."@en ;

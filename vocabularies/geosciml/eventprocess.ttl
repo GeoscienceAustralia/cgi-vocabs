@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2009-07-14"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2009-07-14"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010 11 27 SMR replace URN identifiers with http URIs according to CGI URI scheme."@en,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protégé."@en,
@@ -35,7 +32,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/eventprocess/accretion>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/alteration>,
@@ -122,7 +119,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:definition "process that effects the geologic record"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/geologicProcess> ;
@@ -146,7 +143,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/accretion> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "akresi"@id,
         "pembumbunan"@id,
@@ -179,7 +176,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/alteration> a skos:Concept ;
-    dcterms:provenance "Fettes and Desmons, 2007"@en ;
+    schema:citation "Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "pengubahan"@id,
         "交代作用"@ja,
@@ -208,7 +205,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/biological_precipitation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/deposition> ;
     skos:definition "The deposition of minerals from solution by the agency of organisms"@en ;
@@ -218,7 +215,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/biological_weathering> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/weathering> ;
     skos:definition "breakdown of rocks by biological agents, e.g. the penetrating and expanding force of roots, the presence of moss and lichen causing humic acids to be retained in contact with rock, and the work of animals (worms, moles, rabbits) in modifying surface soil"@en ;
@@ -228,7 +225,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/bolide_impact> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "The impact of an extraterrestrial body on the surface of the earth"@en ;
@@ -240,7 +237,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_precipitation> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/deposition>,
         <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process> ;
@@ -257,7 +254,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_weathering> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/weathering> ;
     skos:definition "The process of weathering by which chemical reactions (hydrolysishydration, oxidation, carbonation, ion exchange, and solution) transform rocks and minerals into new chemical combinations that are stable under conditions prevailing at or near the Earth's surface, e.g. the alteration of orthoclase to kaolinite."@en ;
@@ -287,7 +284,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/cometary_impact> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/bolide_impact> ;
     skos:definition "The impact of a comet on the surface of the earth"@en ;
@@ -297,7 +294,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/contact_metamorphism> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "malihan sentuh"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process> ;
@@ -324,7 +321,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/continental_breakup> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> ;
     skos:definition "Fragmentation of a continental plate into two or more smaller plates, may involve rifting or strike slip faulting."@en ;
@@ -335,7 +332,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/continental_collision> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> ;
     skos:definition "The amalgamation of two continental plates or blocks along a convergent margin."@en ;
@@ -345,7 +342,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/debris_flow_deposition> a skos:Concept ;
-    dcterms:provenance "Postma 1986 Geology v. 14 p291-294"@en ;
+    schema:citation "Postma 1986 Geology v. 14 p291-294"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/mechanical_deposition> ;
     skos:definition "Laminar high-concentration, generally cohesionless deposition process. Flow types included liquefied flow, fluidized flow, grain flow, traction carpet or modified grain flow."@en ;
@@ -361,7 +358,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/deep_water_oxygen_depletion> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "Process of removal of oxygen from from the deep part of a body of water."@en ;
@@ -371,7 +368,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "pencenanggaan"@id,
         "periukan"@id,
@@ -407,7 +404,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation_twinning> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/ductile_flow> ;
     skos:definition "Deformation of a crystal by gliding to produce crystallographic twinning."@en ;
@@ -417,7 +414,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/deposition> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "堆積"@ja,
         "沈積"@ja,
@@ -450,7 +447,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/diagenetic_process> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "Any chemical, physical, or biological process that affects a sedimentary EarthMaterial after initial deposition, and during or after lithification, exclusive of weathering and metamorphism. [adapt. Jackson, 1997] Example processes include compaction, cementation, authigenesis, replacement, leachinghydration, and bacterial action. Includes processes that are normal in the surficial or outer part of the earth’s crust [Jackson, 1997]. Changes in a deeply buried sedimentary rock may be continuous from diagenesis into recrystallization to form a metamorphic rock. Robertson [1999] defines the boundary between diagenesis and metamorphism in sedimentary rocks as follows: \\the boundary between diagenesis and metamorphism is somewhat arbitrary and strongly dependent on the rock types involved. For example changes take place in organic materials at lower temperatures than in rocks dominated by silicate minerals. In mudrocks, a white mica (illite) crystallinity value of less than 0.42D.2U obtained by X-ray diffraction analysis, is used to define the onset of metamorphism (Kisch, 1991). In this scheme, the first appearance of glaucophane, lawsonite, paragonite, prehnite, pumpellyite or stilpnomelane is taken to indicate the lower limit of metamorphism (Frey and Kisch, 1987, Bucher and Frey, 1994, Frey and Robinson, 1998). Most workers agree that such mineral growth starts at 150 ± 50° C in silicate rocks. Many rock types may show no change in mineralogy under these conditions and hence the recognition of the onset of metamorphism will vary with bulk composition.\\"@en ;
@@ -460,7 +457,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/diffusion_creep> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/ductile_flow> ;
     skos:definition "Grain-scale, ductile deformation accomplished by the motion of atoms through crystals, along grain boundaries, and through pore fluids."@en ;
@@ -470,7 +467,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/dislocation_metamorphism> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process> ;
     skos:definition "Metamorphism concentrated along narrow belts of shearing or crushing without an appreciable rise in temperature"@en ;
@@ -480,7 +477,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/dissolution> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_weathering> ;
     skos:definition "The process of dissolving into a homogenous solution, as when an acidic solution dissolves limestone. In karst, refers to the process of dissolving rock to produce landforms, in contrast to solution, the chemical product of dissolution."@en ;
@@ -496,7 +493,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/dissolution_creep> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/ductile_flow> ;
     skos:definition "Deformation by dissolution under the effects of differential stress and its transport to a new location by movement of fluid in the rock body."@en ;
@@ -506,7 +503,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/ductile_flow> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation> ;
     skos:definition "deformation without apparent loss of continuity at the scale of observation."@en ;
@@ -519,7 +516,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/effusive_eruption> a skos:Concept ;
-    dcterms:provenance "Orton, G.J., 1996. Volcanic environments. 485-567 in Readingh.G. (ed.), Sedimentary Environments: Processes, Facies and Stratigraphy, Third Edition. Blackwell Science, Oxford"@en ;
+    schema:citation "Orton, G.J., 1996. Volcanic environments. 485-567 in Readingh.G. (ed.), Sedimentary Environments: Processes, Facies and Stratigraphy, Third Edition. Blackwell Science, Oxford"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/eruption> ;
     skos:definition "Eruptions characterized by low volatile content of the erupting magma relative to ambient pressure"@en ;
@@ -529,7 +526,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/erosion> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "kikisan"@id,
         "pengikisan"@id,
@@ -564,7 +561,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/eruption> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "letusan"@id,
         "분화"@ko,
@@ -597,7 +594,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/excavation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "洗掘"@ja,
         "开挖"@zh,
@@ -627,7 +624,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/extinction> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "pemunahan"@id,
         "소광"@ko,
@@ -657,7 +654,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/faulting> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "断裂运动"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation> ;
@@ -684,7 +681,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/folding> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation> ;
     skos:definition "Deformation in which planar surfaces become regularly curviplanar surfaces with definable limbs (zones of lower curvature) and hinges (zones of higher curvature)."@en ;
@@ -694,7 +691,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/fracturing> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "pematahan"@id,
         "peretakan"@id,
@@ -726,7 +723,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/frost_shattering> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/physical_weathering> ;
     skos:definition "Propagation of fractures due to expansion of freezing water in intergranular spaces and fractures in a rock body. Result is mechanical disintegration spliitting, or breakup of rock."@en ;
@@ -736,7 +733,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/geomagnetic_process> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "process that results in change in Earth's magnetic field"@en ;
@@ -748,7 +745,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/grading> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity> ;
     skos:definition "Leveling of earth surface by rearrangement of prexisting material"@en ;
@@ -758,7 +755,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/haloclasty> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/physical_weathering> ;
     skos:definition "Propagation of fractures in rock due to crytallization of mineral salts (typically sodium chloride) from interstitial water, or volumetrick expansion of salts in capillaries, or hydration pressure of interstitial, trapped salts. Generally results in mechanical disintegration of the rock surface."@en ;
@@ -768,7 +765,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/hawaiian_eruption> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/eruption> ;
     skos:definition "Eruption in which great quantities of extremely fluid basaltic lava are poured out, mainly issuing in lava fountains from fissures on the flanks of a volcano. Explosive phenomena are rare, but much spatter and scoria are piled into cones and mounds along the vents. Characteristic of shield volcanoes"@en ;
@@ -778,7 +775,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "kegiatan manusia"@ms ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
@@ -808,7 +805,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/hydration> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "การเติมน้ำ"@th,
         "水化[作用]"@zh ;
@@ -836,7 +833,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/hydrolysis> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_weathering> ;
     skos:definition "A decomposition reaction involving water. In geology, it commonly indicates reaction between silicate minerals and either pure water or aqueous solution. In such reactionsh"@en ;
@@ -846,7 +843,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/ice_erosion> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/erosion> ;
     skos:definition "Erosion by corrasion or plucking by moving ice."@en ;
@@ -856,7 +853,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/intrusion> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "terobosan"@id,
         "貫入岩"@ja,
@@ -885,7 +882,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_crystallisation> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_process> ;
     skos:definition "The process by which matter becomes crystalline, from a gaseous, fluid, or dispersed state"@en ;
@@ -895,7 +892,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/magmatic_process> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "A process involving melted rock (magma)."@en ;
@@ -925,7 +922,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/magnetic_field_reversal> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geomagnetic_process> ;
     skos:definition "A geomagnetic event in which the Earth's magnetic field reverses direction."@en ;
@@ -935,7 +932,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/mass_wasting> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/erosion> ;
     skos:definition "the dislodgement and downslope transport of soil and rock material under the direct application of gravitational body stresses. In contrast to other erosion processes, the debris removed by mass wasting is not carried within, on, or under another medium. The mass properties of the material being transported depend on the interaction of the soil and rock particles and on the moisture content."@en ;
@@ -945,7 +942,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/mass_wasting_deposition> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/mechanical_deposition> ;
     skos:definition "A general term for the dislodgement and downslope transport of soil and rock material under the direct application of gravitational body stresses. In contrast to other erosion processes, the debris removed by mass wasting is not carried within, on, or under another medium. The mass properties of the material being transported depend on the interaction of the soil and rock particles and on the moisture content. Mass wasting includes slow displacements, such as creep and solifluction, and rapid movements such as rockfalls, rockslides, and cohesive debris flows (Jackson, 1997, p. 392). Includes both subaerial mass-wasting processes and subaqueous mass-wasting processes."@en ;
@@ -955,7 +952,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/material_transport_and_deposition> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/human_activity> ;
     skos:definition "Transport and heaping of material, as in a land fill, mine dump, dredging operations"@en ;
@@ -965,7 +962,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/mechanical_deposition> a skos:Concept ;
-    dcterms:provenance "NADM SLTTs 2004"@en ;
+    schema:citation "NADM SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/deposition> ;
     skos:definition "Process by which material that is being transported as particles by moving air, water, ice, or other fluid comes to rest and accumulates."@en ;
@@ -979,7 +976,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/melting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "mencair"@id,
         "용융"@ko,
@@ -1009,7 +1006,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/metamorphic_process> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "Mineralogical, chemical, and structural adjustment of solid rocks to physical and chemical conditions that differ from the conditions under which the rocks in question originated, and are generally been imposed at depth, below the surface zones of weathering and cementation."@en ;
@@ -1023,7 +1020,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/meteorite_impact> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/bolide_impact> ;
     skos:definition "The impact of a meteorite on the surface of the earth"@en ;
@@ -1033,7 +1030,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/microfracturing> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/fracturing> ;
     skos:definition "Development of fractures within a single grain or cutting several grains."@en ;
@@ -1043,7 +1040,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/obduction> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005, http://en.wikipedia.org/wiki/Obduction, Coleman, R. G., 1971, Plate tectonic emplacement of upper mantle peridotites along continental edge: J.Geophys. Res., v75, p1212-1222."@en ;
+    schema:citation "Neuendorf et al., 2005, http://en.wikipedia.org/wiki/Obduction, Coleman, R. G., 1971, Plate tectonic emplacement of upper mantle peridotites along continental edge: J.Geophys. Res., v75, p1212-1222."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "pencuatan"@id,
         "仰冲作用"@zh ;
@@ -1080,7 +1077,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/orogenic_process> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "orogenesis"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> ;
@@ -1091,7 +1088,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/oxidation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/chemical_weathering> ;
     skos:definition "Chemical reaction that involve stripping of electrons from cations. Typicall reactions include converting sulfide minerals to oxide minerals, or increasing the oxidation state of cations in existing oxide minerals. The most commonly observed is the oxidation of Fe"@en ;
@@ -1117,7 +1114,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/partial_melting> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/melting> ;
     skos:definition "Process of melting involving only some of the mineral phases in a rock, to produce a mixture of melt and residual particles."@en ;
@@ -1143,7 +1140,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/physical_weathering> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "¡¾­²÷²ñ¤ê¾¤³ó§ò¡"@lo,
         "机械风化"@zh ;
@@ -1175,7 +1172,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/plinian_eruption> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/pyroclastic_eruption> ;
     skos:definition "An explosive eruption in which a steady, turbulent stream of fragmented magma and magmatic gas is released at a high velocity from a vent. Large volumes of tephra and tall eruption columns are characteristic"@en ;
@@ -1185,7 +1182,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/polar_wander> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "地极迁移"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geomagnetic_process> ;
@@ -1212,7 +1209,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/pressure_release_weathering> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/physical_weathering> ;
     skos:definition "Propagation of fractures near the surface of solid rock due to expansion related to release of confining pressure when deeply buried rock is unroofed. Fractures typically propagate along surfaces close to and subparallel to the surface of the outcrop."@en ;
@@ -1222,7 +1219,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/pyroclastic_eruption> a skos:Concept ;
-    dcterms:provenance "Orton, G.J., 1996. Volcanic environments. 485-567 in Readingh.G. (ed.), Sedimentary Environments: Processes, Facies and Stratigraphy, Third Edition. Blackwell Science, Oxford"@en ;
+    schema:citation "Orton, G.J., 1996. Volcanic environments. 485-567 in Readingh.G. (ed.), Sedimentary Environments: Processes, Facies and Stratigraphy, Third Edition. Blackwell Science, Oxford"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/eruption> ;
     skos:definition "Eruption produced by the generation and rapid expansion of a gas phase that disrupts magma, surrounding wall rock or sediment"@en ;
@@ -1234,7 +1231,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/rifting> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/continental_breakup> ;
     skos:definition "Extension of the crust to form one or more long, narrow graben of regional extent."@en ;
@@ -1244,7 +1241,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/sea_level_change> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "Process of mean sea level changing relative to some datum"@en ;
@@ -1256,7 +1253,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/sea_level_fall> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/sea_level_change> ;
     skos:definition "Process of mean sea level falling relative to some datum"@en ;
@@ -1266,7 +1263,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/sea_level_rise> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/sea_level_change> ;
     skos:definition "Process of mean sea level rising relative to some datum"@en ;
@@ -1276,7 +1273,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/sedimentary_process> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "A phenomenon that changes the distribution or physical properties of sediment at or near the earth's surface"@en ;
@@ -1288,7 +1285,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/shearing> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/deformation> ;
     skos:definition "A deformation in which contiguous parts of a body are displaced relatively to each other in a direction parallel to a surface. The surface may be a discrete fault, or the deformation may be a penetrative strain and the shear surface is a geometric abstraction."@en ;
@@ -1298,7 +1295,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/speciation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "process that results inappearance of new species"@en ;
@@ -1308,7 +1305,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/spreading> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> ;
     skos:definition "A process whereby new oceanic crust is formed by upwelling of magma at the center of mid-ocean ridges and by a moving-away of the new material from the site of upwelling at rates of one to ten centimeters per year."@en ;
@@ -1318,7 +1315,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/strombolian_eruption> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/eruption> ;
     skos:definition "Eruption characterized by jetting of clots or \\fountains\\ of fluid, basaltic lava from a central crater"@en ;
@@ -1334,7 +1331,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/subduction> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "penunjaman"@id,
         "サブダクション"@ja,
@@ -1364,7 +1361,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
     skos:definition "Processes related to the interaction between or deformation of rigid plates forming the crust of the Earth."@en ;
@@ -1382,7 +1379,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/thermal_shock_weathering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/physical_weathering> ;
     skos:definition "Propagation of fractures near the surface of solid rock due to expansion and contraction caused by temperature changes. Fractures typically propagate along surfaces close to and subparallel to the surface of the outcrop."@en ;
@@ -1392,7 +1389,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/traction_saltation_or_suspension_deposition> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/mechanical_deposition> ;
     skos:definition "Deposition of sediment from moving water or air, in which the sediment is transported by entrainment in the moving fluid. Constrast with debris flow or turbidity current deposition in which movement of fluid/sediment mixture is due to incorporation of sediment in fluid."@en ;
@@ -1402,7 +1399,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/transform_faulting> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/tectonic_process> ;
     skos:definition "A strike-slip fault that links two other faults or two other plate boundaries (e.g. two segments of a mid-ocean ridge). Transform faults often exhibit characteristics that distinguish them from transcurrent faults: (1) For transform faults formed at the same time as the faults they link, slip on the transform fault has equal magnitude at all points along the transform, slip magnitude on the transform fault can exceed the length of the transform fault, and slip does not decrease to zero at the fault termini. (2) For transform faults linking two similar features, e.g. if two mid-ocean ridge segments linked by a transform have equal spreading rates, then the length of the transform does not change as slip accrues on it."@en ;
@@ -1412,7 +1409,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/turbidity_current_deposition> a skos:Concept ;
-    dcterms:provenance "Postma 1986 Geology v. 14 p291-294"@en ;
+    schema:citation "Postma 1986 Geology v. 14 p291-294"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/mechanical_deposition> ;
     skos:definition "Deposition from a turbulent, low concentration sediment-water mixture."@en ;
@@ -1422,7 +1419,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/vulcanian_eruption> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
+    schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/pyroclastic_eruption> ;
     skos:definition "Eruption characterized by the explosive ejection of fragments of new lava, commonly incandescent when they leave the vent but either solid or too viscous to assume any appreciable degree of rounding during their flight through the air. With these there are often breadcrust bombs or blocks, and generally large proportions of ash"@en ;
@@ -1438,7 +1435,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/water_erosion> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "pengikisan air"@id,
         "水蚀作用"@zh ;
@@ -1466,7 +1463,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/weathering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "風化作用"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/geologic_process> ;
@@ -1496,7 +1493,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventprocess/wind_erosion> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> ;
     skos:altLabel "pengikisan angin"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventprocess/erosion> ;

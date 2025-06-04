@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2009-07-14"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2009-07-14"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010 11 27 SMR change identifiers from URN to http URI following CGI URI scheme"@en,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
@@ -38,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/eventenvironment/abandoned_channel>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/above_carbonate_compensation_depth_setting>,
@@ -190,7 +187,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_interior_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:definition "Geologic environments within the solid Earth."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthInteriorSetting> ;
@@ -214,7 +211,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:definition "Geologic environments on the surface of the solid Earth. Hierarchy presented here is based on assumption that a particular setting may be specified by a combination of a climatic setting with one or more process or geomorphically defined settings.."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthSurfaceSetting> ;
@@ -237,7 +234,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/extra_terrestrial_origin> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al 2005,"@en ;
+    schema:citation "Neuendorf et al 2005,"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:definition "Material originated outside of the Earth or its atmosphere."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/extraTerrestrialOrigin> ;
@@ -247,7 +244,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:definition "Setting defined by relationships to tectonic plates on or in the Earth."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tectonicSetting> ;
@@ -269,7 +266,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/abandoned_channel> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/river_plain_system_setting> ;
     skos:definition "A drainage channel along which runoff no longer occurs, as on an alluvial fan"@en ;
@@ -279,7 +276,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/above_carbonate_compensation_depth_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "Marine environment in which carbonate sediment does not dissolve before reaching the sea floor and can accumulate."@en ;
@@ -289,7 +286,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/abyssal> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:altLabel "laut dalam"@id,
         "tubir"@id,
@@ -318,7 +315,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/active_continental_margin_setting> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/plate_margin_setting> ;
     skos:definition "Plate margin setting on continental crust."@en ;
@@ -334,7 +331,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/active_spreading_center> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/plate_margin_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/plate_spreading_center> ;
@@ -348,7 +345,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/aeolian_process_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaerial_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/terrestrial_setting> ;
@@ -361,7 +358,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/algal_flat_setting> a skos:Concept ;
-    dcterms:provenance "http://www.audubonofflorida.org/main/wetlands/chp3.htm, Reading, 1978"@en ;
+    schema:citation "http://www.audubonofflorida.org/main/wetlands/chp3.htm, Reading, 1978"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/low_energy_shoreline_setting> ;
     skos:definition "Modern algal flats are found on rock or mud in areas flooded only by the highest tides and are often subject to high evaporation rates. Algal flats survive only when an area is salty enough to eliminate snails and other herbivorous animals that eat algae, yet is not so salty that the algae cannot survive. The most common species of algae found on algal flats are blue-green algae of the genera Scytonema and Schizothrix. These algae can tolerate the daily extremes in temperature and oxygen that typify conditions on the flats. Other plants sometimes found on algal flats include one-celled green algae, flagellates, diatoms, bacteria, and isolated scrubby red and black mangroves, as well as patches of saltwort. Animals include false cerith, cerion snails, fiddler crabs, and great land crabs. Flats with well developed algal mats are restricted for the most part to the Keys, with Sugarloaf and Crane Keys offering prime examples of algal flat habitat. (Audubon, 1991)"@en ;
@@ -371,7 +368,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/alluvial_fan> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/piedmont_slope_system_setting> ;
     skos:definition "A low, outspread, relatively flat to gently sloping mass of loose rock material, shaped like an open fan or a segment of a cone, deposited by a stream (esp. in a semiarid region) at the place where it issues from a narrow mountain valley upon a plain or broad valley, or where a tributary stream is near or at its junction with the main stream, or wherever a constriction in a valley abruptly ceases or the gradient of the stream suddenly decreases, it is steepest near the mouth of the valley where its apex points upstream, and it slopes gently and convexly outward with gradually decreasing gradient"@en ;
@@ -387,7 +384,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/alluvial_plain> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/piedmont_slope_system_setting> ;
     skos:definition "An assemblage landforms produced by alluvial and fluvial processes (braided streams, terraces, etc.) that form low gradient, regional ramps along the flanks of mountains and extend great distances from their sources (e.g.high Plains of North America). (NRCS GLOSSARY OF LANDFORM AND GEOLOGIC TERMS). A level or gently sloping tract or a slightly undulating land surface produced by extensive deposition of alluvium... Synonym-- wash plain,...river plain, aggraded valley plain,... (Jackson, 1997, p. 17). May include one or more River plain systems."@en ;
@@ -403,7 +400,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/anoxic_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Setting depleted in oxygen, typically subaqueous."@en ;
@@ -419,7 +416,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/arid_or_semi_arid_environment_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Setting characterized by mean annual precipitation of 10 inches (25 cm) or less. (Jackson, 1997, p. 172). Equivalent to SLTT 'Desert setting', but use 'Arid' to emphasize climatic nature of setting definition."@en ;
@@ -433,7 +430,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/back_arc_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
     skos:definition "Tectonic setting adjacent to a volcanic arc formed above a subduction zone. The back arc setting is on the opposite side of the volcanic arc from the trench at which oceanic crust is consumed in a subduction zone. Back arc setting includes terrane that is affected by plate margin and arc-related processes."@en ;
@@ -443,7 +440,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/backreef> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/biological_reef_setting> ;
     skos:definition "The landward side of a reef. The term is often used adjectivally to refer to deposits within the restricted lagoon behind a barrier reef, such as the back-reef facies of lagoonal deposits. In some places, as on a platform-edge reef tract, back reef refers to the side of the reef away from the open sea, even though no land may be nearby"@en ;
@@ -453,7 +450,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/barrier_beach> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/barrier_island_coastline_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/beach> ;
@@ -470,7 +467,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/barrier_island_coastline_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings> ;
     skos:definition "setting meant to include all the various geographic elements typically associated with a barrier island coastline, including the barrier islands, and geomorphic/geographic elements that are linked by processes associated with the presence of the island (e.g. wash over fans, inlet channel, back barrier lagoon)."@en ;
@@ -482,7 +479,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/barrier_lagoon> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/barrier_island_coastline_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/lagoonal_setting> ;
@@ -493,7 +490,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/basin_bog> a skos:Concept ;
-    dcterms:provenance "1-GE WP3; Neuendorf et al.(2005), p. 451"@en ;
+    schema:citation "1-GE WP3; Neuendorf et al.(2005), p. 451"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/bog> ;
     skos:definition "An ombrotrophic or ombrogene peat/bog whose nutrient supply is exclusively from rain water (including snow and atmospheric fallout) therefore making nutrients extremely oligotrophic"@en ;
@@ -503,7 +500,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/basin_plain_setting> a skos:Concept ;
-    dcterms:provenance "Bates & Jackson, 1987, Heezen & Laughton, 1963, Reading, 1978, p. 390"@en ;
+    schema:citation "Bates & Jackson, 1987, Heezen & Laughton, 1963, Reading, 1978, p. 390"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "Near flat areas of ocean floor, slope less than 1:1000, generally receive only distal turbidite and pelagic sediments."@en ;
@@ -513,7 +510,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/bathyal> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "The ocean environment at water depths between 200 and 3500 metres"@en ;
@@ -532,7 +529,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/beach> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings> ;
     skos:definition "The unconsolidated material at the shoreline that covers a gently sloping zone, typically with a concave profile, extending landward from the low-water line to the place where there is a definite change in material or physiographic form (such as a cliff), or to the line of permanent vegetation (usually the effective limit of the highest storm waves), at the shore of a body of water, formed and washed by waves or tides, usually covered by sand or gravel, and lacking a bare rocky surface."@en ;
@@ -549,7 +546,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/below_carbonate_compensation_depth_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "Marine environment in which water is deep enough that carbonate sediment goes into solution before it can accumulate on the sea floor."@en ;
@@ -559,7 +556,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/biological_reef_setting> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "A ridgelike or moundlike structure, layered or massive, built by sedentary calcareous organisms, esp. corals, and consisting mostly of their remains, it is wave-resistant and stands topographically above the surrounding contemporaneously deposited sediment."@en ;
@@ -572,7 +569,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/blanket_bog> a skos:Concept ;
-    dcterms:provenance "1-GE WP3; Neuendorf et al.(2005), p. 675"@en ;
+    schema:citation "1-GE WP3; Neuendorf et al.(2005), p. 675"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/bog> ;
     skos:definition "Topogeneous bog/peat whose moisture content is largely dependent on surface water. It is relatively rich in plant nutrients, nitrogen, and mineral matter, is mildly acidic to nearly neutral, and contains little or no cellulose, forms in topographic depressions with essential stagnat or non-moving minerotrophic water supply"@en ;
@@ -582,7 +579,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/bog> a skos:Concept ;
-    dcterms:provenance "Jackson, 1997, North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,"@en ;
+    schema:citation "Jackson, 1997, North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/terrestrial_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/wetland_setting> ;
@@ -601,7 +598,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/braided_channel> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/river_channel> ;
     skos:definition "A stream that divides into or follows an interlacing or tangled network of several small branching and reuniting shallow channels separated from each other by ephemeral branch islands or channel bars, resembling in plan the strands of a complex braid. Such a stream is generally believed to indicate an inability to carry all of its load, such as an overloaded and aggrading stream flowing in a wide channel on a floodplain"@en ;
@@ -611,7 +608,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/carbonate_dominated_shoreline_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings> ;
     skos:definition "A shoreline setting in which terrigenous input is minor compared to local carbonate sediment production. Constructional biogenic activity is an important element in geomorphic development."@en ;
@@ -621,7 +618,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/cave> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "A natural underground open space, it generally has a connection to the surface, is large enough for a person to enter, and extends into darkness. The most common type of cave is formed in limestone by dissolution."@en ;
@@ -637,7 +634,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/coastal_dune_field> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/dunefield> ;
     skos:definition "A dune field on low-lying land recently abandoned or built up by the sea, the dunes may ascend a cliff and travel inland."@en ;
@@ -647,7 +644,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/coastal_plain_setting> a skos:Concept ;
-    dcterms:provenance "based on Neuendorf et al, 2005, p. 125"@en ;
+    schema:citation "based on Neuendorf et al, 2005, p. 125"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaerial_setting> ;
@@ -664,7 +661,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/collisional_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_crust>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
@@ -675,7 +672,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/contact_metamorphic_origin> a skos:Concept ;
-    dcterms:provenance "NADM metamorphic rock vocabulary SLTTm1.0, 2004"@en ;
+    schema:citation "NADM metamorphic rock vocabulary SLTTm1.0, 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_interior_setting> ;
     skos:definition "Metamorphism of country rock at the contact of an igneous body."@en ;
@@ -685,7 +682,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_borderland_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "An area of the continental margin between the shoreline and the continental slope that is topographically more complex than the continental shelf. It is characterized by ridges and basins, some of which are below the depth of the continental shelf. An example is the southern California continental borderland,.... (Jackson, 1997, p. 138).."@en ;
@@ -711,7 +708,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_crust> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/crust> ;
     skos:definition "That type of the Earth's crust which underlies the continents and the continental shelves, it is equivalent to the sial and continental sima and ranges in thickness from about 25 km to more than 70 km under mountain ranges, averaging ~40 km. The density of the continental crust averages ~2.8 g/cm3 and is ~2.7 g.cm3 in the upper layer. The velocities of compressional seismic waves through it average ~6.5 km/s and are less than ~7.0 km/sec."@en ;
@@ -727,7 +724,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_rift_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/extended_terrane> ;
     skos:definition "Extended terrane in a zone of continental breakup, may include incipient oceanic crust. Examples include Red Sea, East Africa Rift, Salton Trough"@en ;
@@ -737,7 +734,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_shelf_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:altLabel "陸棚"@ja,
         "陆棚"@zh ;
@@ -765,7 +762,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/crust> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_interior_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
@@ -779,7 +776,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/cutoff_meander> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/river_plain_system_setting> ;
     skos:definition "The abandoned, bow- or horseshoe-shaped channel of a former meander, left when the stream formed a cutoff across a narrow meander neck. Note that these are typically lakes, thus also lacustrine."@en ;
@@ -789,7 +786,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/deep_sea_trench> a skos:Concept ;
-    dcterms:provenance "Reading 1978"@en ;
+    schema:citation "Reading 1978"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "Deep ocean basin with steep (average 10 degrees) slope toward land, more gentle slope (average 5 degrees) towards the sea, and abundant seismic activity on landward side of trench. Does not denote water depth, but may be very deep."@en ;
@@ -799,7 +796,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/delta_front> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/deltaic_system_setting> ;
     skos:definition "A narrow zone where deposition in deltas is most active, consisting of a continuous sheet of sand, and occurring within the effective depth of wave erosion (10 m or less). It is the zone separating the prodelta from the delta plain, and it may or may not be steep\\"@en ;
@@ -809,7 +806,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/delta_plain> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/deltaic_system_setting> ;
     skos:definition "The level or nearly level surface composing the landward part of a large or compound delta, strictly, an alluvial plain characterized by repeated channel bifurcation and divergence, multiple distributary channels, and interdistributary flood basins"@en ;
@@ -821,7 +818,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/deltaic_system_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings> ;
     skos:definition "Environments at the mouth of a river or stream that enters a standing body of water (ocean or lake). The delta forms a triangular or fan-shaped plain of considerable area. Subaerial parts of the delta are crossed by many distributaries of the main river, and commonly extend beyond the general trend of the coast. Subaqueous parts of the delta merge with the adjacent basin floor, and are progressively influenced by non-fluvial processes. Deltas result from the accumulation of sediment supplied by the river in such quantities that it is not removed by tides, waves, and currents. Adapted from the Glossary of Geology definition for delta (Jackson, 1997, p. 167)."@en ;
@@ -839,7 +836,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/distributary_channel> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/deltaic_system_setting> ;
     skos:definition "A divergent stream flowing away from the main stream and not returning to it, as in a delta or on an alluvial plain"@en ;
@@ -849,7 +846,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/distributary_mouth> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/deltaic_system_setting> ;
     skos:definition "The mouth of a delta distributary channel where fluvial discharge moves from confined to unconfined flow conditions"@en ;
@@ -859,7 +856,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/dunefield> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/aeolian_process_setting> ;
     skos:definition "Extensive deposits on sand in an area where the supply is abundant. As a characteristic, individual dunes somewhat resemble barchans but are highly irregular in shape and crowded, erg areas of the Sahara are an example."@en ;
@@ -870,7 +867,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/englacial_setting> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacier_related_setting> ;
     skos:definition "Contained, embedded, or carried within the body of a glacier or ice sheet, said of meltwater streams, till, drift, moraine"@en ;
@@ -880,7 +877,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/epicontinental_marine_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "Marine setting situated within the interior of the continent, rather than at the edge of a continent."@en ;
@@ -890,7 +887,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/estuarine_delta> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/deltaic_system_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/estuary_setting> ;
@@ -901,7 +898,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/estuarine_lagoon> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/estuary_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/lagoonal_setting> ;
@@ -912,7 +909,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/estuary_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings> ;
     skos:definition "Environments at the seaward end or the widened funnel-shaped tidal mouth of a river valley where fresh water comes into contact with seawater and where tidal effects are evident (adapted from Glossary of Geology, Jackson, 1997, p. 217)."@en ;
@@ -930,7 +927,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/extended_terrane> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
     skos:definition "Tectonic setting characterized by extension of the upper crust manifested by formation of rift valleys or basin and range physiography, with arrays of low to high angle normal faults. Modern examples include the North Sea, East Africa, and the Basin and Range of the North American Cordillera. Typically applied in continental crustal settings."@en ;
@@ -941,7 +938,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/fast_spreading_center_setting> a skos:Concept ;
-    dcterms:provenance "Macdonald 1982"@en ;
+    schema:citation "Macdonald 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/active_spreading_center> ;
     skos:definition "Spreading center at which the opening rate is greater than 100 mm per year."@en ;
@@ -951,7 +948,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/floodplain> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/river_plain_system_setting> ;
     skos:definition "The surface or strip of relatively smooth land adjacent to a river channel, constructed by the present river in its existing regimen and covered with water when the river overflows its banks. It is built of alluvium carried by the river during floods and deposited in the sluggish water beyond the influence of the swiftest current. A river has one floodplain and may have one or more terraces representing abandoned floodplains"@en ;
@@ -961,7 +958,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/forearc_setting> a skos:Concept ;
-    dcterms:provenance "1-GE WP3, Neuendorf et al.(2005), p. 249"@en ;
+    schema:citation "1-GE WP3, Neuendorf et al.(2005), p. 249"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/plate_margin_setting> ;
     skos:definition "Tectonic setting between a subduction-related trench and a volcanic arc"@en ;
@@ -971,7 +968,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/foreland_setting> a skos:Concept ;
-    dcterms:provenance "1-GE WP3, Neuendorf et al.(2005), p. 250"@en ;
+    schema:citation "1-GE WP3, Neuendorf et al.(2005), p. 250"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:altLabel "대륙전면분지"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_crust>,
@@ -999,7 +996,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/forereef> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/biological_reef_setting> ;
     skos:definition "The seaward side of a reef, the slope covered with deposits of coarse reef talus"@en ;
@@ -1009,7 +1006,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/gibber_plain> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/arid_or_semi_arid_environment_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaerial_setting>,
@@ -1021,7 +1018,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacial_outwash_plain_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacier_related_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/terrestrial_setting> ;
@@ -1032,7 +1029,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacier_lateral_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacier_related_setting> ;
     skos:definition "Settings adjacent to edges of confined glacier."@en ;
@@ -1042,7 +1039,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacier_related_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/polar_climatic_setting> ;
@@ -1059,7 +1056,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacier_terminus_setting> a skos:Concept ;
-    dcterms:provenance "NADM SLTTs, 2004"@en ;
+    schema:citation "NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/proglacial_setting> ;
     skos:definition "Region of sediment deposition due to melting of glacier ice. ablation and flow till setting."@en ;
@@ -1069,7 +1066,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/hadal> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "The deepest oceanic environment, i.e., over 6000 m in depth. Always in deep sea trench."@en ;
@@ -1079,7 +1076,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/high_pressure_low_temperature_earth_interior_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_interior_setting> ;
     skos:definition "High pressure environment characterized by geothermal gradient significantly lower than standard continental geotherm, enviornment in which blueschist facies metamorphic rocks form. Typically associated with subduction zones."@en ;
@@ -1089,7 +1086,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/hillslope_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Hawley, J.W., and Parsons, R.B. 1980. Glossary of selected geomorphic and geologic terms. Mimeo. USDA Soil Conservation Service, West National Technical Center, Portland, OR. 30 p."@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Hawley, J.W., and Parsons, R.B. 1980. Glossary of selected geomorphic and geologic terms. Mimeo. USDA Soil Conservation Service, West National Technical Center, Portland, OR. 30 p."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Earth surface setting characterized by surface slope angles high enough that gravity alone becomes a significant factor in geomorphic development, as well as base-of-slope areas influenced by hillslope processes. Hillslope activities include creep, sliding, slumping, falling, and other downslope movements caused by slope collapse induced by gravitational influence on earth materials. May be subaerial or subaqueous."@en ;
@@ -1099,7 +1096,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/hinterland_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_crust>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
@@ -1110,7 +1107,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/hot_spot_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
     skos:definition "Setting in a zone of high heat flow from the mantle. Typically identified in intraplate settings, but hot spot may also interact with active plate margins (Iceland...). Includes surface manifestations like volcanic center, but also includes crust and mantle manifestations as well."@en ;
@@ -1126,7 +1123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/humid_temperate_climatic_setting> a skos:Concept ;
-    dcterms:provenance "Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S., Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and WildlifeResources: Yale University Press, New Haven, CT. pp. 181-200."@en ;
+    schema:citation "Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S., Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and WildlifeResources: Yale University Press, New Haven, CT. pp. 181-200."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Setting with seasonal climate having hot to cold or humid to arid seasons."@en ;
@@ -1136,7 +1133,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/humid_tropical_climatic_setting> a skos:Concept ;
-    dcterms:provenance "Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S., Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and WildlifeResources: Yale University Press, New Haven, CT. pp. 181-200."@en ;
+    schema:citation "Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S., Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and WildlifeResources: Yale University Press, New Haven, CT. pp. 181-200."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Setting with hot humid climate influenced by equatorial air masses, no winter season."@en ;
@@ -1146,7 +1143,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/hypabyssal_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_interior_setting> ;
     skos:definition "Igneous environment close to the Earth's surface, characterized by more rapid cooling than plutonic setting to produce generally fine-grained intrusive igneous rock that is commonly associated with co-magmatic volcanic rocks."@en ;
@@ -1156,7 +1153,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/inactive_spreading_center> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/intraplate_tectonic_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/plate_spreading_center> ;
@@ -1167,7 +1164,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/inner_neritic> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/neritic> ;
     skos:definition "The ocean environment at depths between low tide level and 30 metres"@en ;
@@ -1177,7 +1174,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/interdistributary_bay> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/deltaic_system_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaqueous_setting> ;
@@ -1188,7 +1185,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/intertidal> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:altLabel "lingkungan litoral"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaqueous_setting>,
@@ -1216,7 +1213,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/intraplate_tectonic_setting> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
     skos:definition "Tectonically stable setting far from any active plate margins."@en ;
@@ -1228,7 +1225,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/lacustrine_delta> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/deltaic_system_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/lacustrine_setting> ;
@@ -1239,7 +1236,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/lacustrine_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:altLabel "호수환경"@ko ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/terrestrial_setting> ;
@@ -1267,7 +1264,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/lagoonal_setting> a skos:Concept ;
-    dcterms:provenance "generalize from Jackson 1997 and North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
+    schema:citation "generalize from Jackson 1997 and North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:altLabel "lingkungan goba"@id,
         "礁湖環境"@ja ;
@@ -1297,7 +1294,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/low_energy_shoreline_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings> ;
     skos:definition "Settings characterized by very low surface slope and proximity to shoreline. Generally within peritidal setting, but characterized by low surface gradients and generally low-energy sedimentary processes."@en ;
@@ -1310,7 +1307,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/low_pressure_high_temperature_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_interior_setting> ;
     skos:definition "Setting characterized by temperatures significantly higher that those associated with normal continental geothermal gradient."@en ;
@@ -1320,7 +1317,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/lower_bathyal> a skos:Concept ;
-    dcterms:provenance "Neuendorf, K.K.E., Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p., Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320"@en ;
+    schema:citation "Neuendorf, K.K.E., Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p., Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/bathyal> ;
     skos:definition "The ocean environment at depths between 1000 and 3500 metres"@en ;
@@ -1330,7 +1327,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/lower_continental_crust> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_crust> ;
     skos:definition "Continental crustal setting characterized by upper amphibolite to granulite facies metamorphism, insitu melting, residual anhydrous metamorphic rocks, and ductile flow of rock bodies."@en ;
@@ -1340,7 +1337,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/lower_delta_plain> a skos:Concept ;
-    dcterms:provenance "Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford"@en ;
+    schema:citation "Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/delta_plain>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/tidal_setting> ;
@@ -1351,7 +1348,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/lower_mantle> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:altLabel "mantel bawah"@id ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/mantle> ;
@@ -1379,7 +1376,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/lower_oceanic_crustal_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/oceanic_crust> ;
     skos:definition "Setting characterized by dominantly intrusive mafic rocks, with sheeted dike complexes in upper part and gabbroic to ultramafic intrusive or metamorphic rocks in lower part."@en ;
@@ -1389,7 +1386,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/mantle> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_interior_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
@@ -1419,7 +1416,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/marginal_marine_sabkha_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, based on Jackson 1997, Neuendorf et al. 2005"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, based on Jackson 1997, Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/arid_or_semi_arid_environment_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/low_energy_shoreline_setting> ;
@@ -1430,7 +1427,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_carbonate_platform_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "A shallow submerged plateau separated from continental landmasses, on which high biological carbonate production rates produce enough sediment to maintain the platform surface near sea level. Grades into atoll as area becomes smaller and ringing coral reefs become more prominent part of the setting."@en ;
@@ -1440,7 +1437,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Webster's Encyclopedic Unabridged Dictionary of the English Language, 2001, p. 1894."@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Webster's Encyclopedic Unabridged Dictionary of the English Language, 2001, p. 1894."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaqueous_setting> ;
     skos:definition "Setting characterized by location under the surface of the sea."@en ;
@@ -1466,7 +1463,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/meandering_channel> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/river_channel> ;
     skos:definition "Produced by a mature stream swinging from side to side as it flows across its floodplain or shifts its course laterally toward the convex side of an original curve"@en ;
@@ -1476,7 +1473,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/medium_spreading_center_setting> a skos:Concept ;
-    dcterms:provenance "Macdonald 1982"@en ;
+    schema:citation "Macdonald 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/active_spreading_center> ;
     skos:definition "Spreading center at which the opening rate is between 50 and 100 mm per year."@en ;
@@ -1486,7 +1483,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/mid_ocean_ridge_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/ocean_highland_setting> ;
     skos:definition "Ocean highland associated with a divergent continental margin (spreading center). Setting is characterized by active volcanism, locally steep reliefhydrothermal activity, and pelagic sedimentation."@en ;
@@ -1496,7 +1493,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/middle_bathyal> a skos:Concept ;
-    dcterms:provenance "Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320"@en ;
+    schema:citation "Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/bathyal> ;
     skos:definition "The ocean environment at water depths between 600 and 1000 metres"@en ;
@@ -1506,7 +1503,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/middle_continental_crust_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_crust> ;
     skos:definition "Continental crustal setting characterized by greenschist to upper amphibolite facies metamorphism, plutonic igneous rocks, and ductile deformation."@en ;
@@ -1516,7 +1513,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/middle_neritic> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/neritic> ;
     skos:definition "The ocean environment at depths between 30 and 100 metres"@en ;
@@ -1526,7 +1523,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/mud_flat_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Jackson, 1997"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, Jackson, 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/low_energy_shoreline_setting> ;
     skos:definition "A relatively level area of fine grained material (e.g. silt) along a shore (as in a sheltered estuary or chenier-plain) or around an island, alternately covered and uncovered by the tide or covered by shallow water, and barren of vegetation. Includes most tidal flats, but lacks denotation of tidal influence.."@en ;
@@ -1542,7 +1539,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/neritic> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "The ocean environment at depths between low-tide level and 200 metres, or between low-tide level and approximately the edge of the continental shelf"@en ;
@@ -1555,7 +1552,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/ocean_highland_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "Broad category for subaqueous marine settings characterized by significant relief above adjacent sea floor."@en ;
@@ -1568,7 +1565,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/oceanic_crust> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/crust> ;
     skos:definition "That type of the Earth's crust which underlies the ocean basins. The oceanic crust is 5-10 km thick, it has a density of 2.9 g/cm3, and compressional seismic-wave velocities travelling through it at 4-7.2 km/sec. Setting in crust produced by submarine volcanism at a mid ocean ridge."@en ;
@@ -1580,7 +1577,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/oceanic_plateau_setting> a skos:Concept ;
-    dcterms:provenance "Reading 1978"@en ;
+    schema:citation "Reading 1978"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/ocean_highland_setting> ;
     skos:definition "Region of elevated ocean crust that commonly rises to within 2-3 km of the surface above an abyssal sea floor that lies several km deeper. Climate and water depths are such that a marine carbonate platform does not develop."@en ;
@@ -1590,7 +1587,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/outer_neritic> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/neritic> ;
     skos:definition "The ocean environment at depths between 100 and 200 metres or between low-tide level and approximately the edge of the continental shelf"@en ;
@@ -1600,7 +1597,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/passive_continental_margin_setting> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
     skos:definition "Boundary of continental crust into oceanic crust of an oceanic basin that is not a subduction zone or transform fault system. Generally is rifted margin formed when ocean basin was initially formed."@en ;
@@ -1616,7 +1613,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/pediment_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, NRCS, 2001"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/, NRCS, 2001"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/piedmont_slope_system_setting> ;
     skos:definition "A gently sloping erosional surface developed at the foot of a receding hill or mountain slope. The surface may be essentially bare, exposing earth material that extends beneath adjacent uplands, or it may be thinly mantled with alluvium and colluvium, ultimately in transit from upland front to basin or valley lowland. In hill-foot slope terrain the mantle is designated \\pedisediment.\\ The term has been used in several geomorphic contexts: Pediments may be classed with respect to (a) landscape positions, for example, intermontane-basin piedmont or valley-border footslope surfaces (respectively, apron and terrace pediments (Cooke and Warren, 1973)), (b) type of material eroded, bedrock or regolith, or (c) combinations of the above. Compare - Piedmont slope.."@en ;
@@ -1632,7 +1629,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/piedmont_slope_system_setting> a skos:Concept ;
-    dcterms:provenance "Hawley and Parsons, 1980+F98"@en ;
+    schema:citation "Hawley and Parsons, 1980+F98"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaerial_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/terrestrial_setting> ;
@@ -1646,7 +1643,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/plate_margin_setting> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
     skos:definition "Tectonic setting at the boundary between two tectonic plates."@en ;
@@ -1662,7 +1659,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/plate_spreading_center> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/tectonic_setting> ;
     skos:definition "Tectonic setting where new oceanic crust is being or has been formed at a divergent plate boundary. Includes active and inactive spreading centers."@en ;
@@ -1674,7 +1671,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/playa_setting> a skos:Concept ;
-    dcterms:provenance "Based on Hawley and Parsons, 1980"@en ;
+    schema:citation "Based on Hawley and Parsons, 1980"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/arid_or_semi_arid_environment_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaerial_setting>,
@@ -1692,7 +1689,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/polar_climatic_setting> a skos:Concept ;
-    dcterms:provenance "Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S., Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and WildlifeResources: Yale University Press, New Haven, CT. pp. 181-200."@en ;
+    schema:citation "Cleland, D.T., Avers, P.E., McNab, W.H., Jensen, M.E., Bailey, R.G., King, T., Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S., Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and WildlifeResources: Yale University Press, New Haven, CT. pp. 181-200."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Setting with climate dominated by temperatures below the freezing temperature of water. Includes polar deserts because precipitation is generally scant at high latitude. Climate controlled by arctic air masses, cold dry environment with short summer."@en ;
@@ -1703,7 +1700,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/prodelta> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/deltaic_system_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaqueous_setting> ;
@@ -1714,7 +1711,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/proglacial_setting> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacier_related_setting> ;
     skos:definition "Immediately in front of or just beyond the outer limits of a glacier or ice sheet, generally at or near its lower end, said of lakes, streams, deposits, and other features produced by or derived from the glacier ice"@en ;
@@ -1725,7 +1722,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/reef_flat> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/biological_reef_setting> ;
     skos:definition "A stony platform of reef rock, landward of the reef crest at or above the low tide level, occasionally with patches of living coral and associated organisms, and commonly strewn with coral fragments and coral sand. It may include shallow pools, irregular gullies, low islands of sand or rubble (often vegetated, esp. by palms), and scattered colonies of the more hardy species of coral"@en ;
@@ -1735,7 +1732,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/regional_metamorphic_origin> a skos:Concept ;
-    dcterms:provenance "NADM metamorphic rock vocabulary SLTTm1.0, 2004"@en ;
+    schema:citation "NADM metamorphic rock vocabulary SLTTm1.0, 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_interior_setting> ;
     skos:definition "Metamorphism not obviously localized along contacts of igneous bodies, includes burial metamorphism and ocean ridge metamorphism"@en ;
@@ -1745,7 +1742,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/river_channel> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/river_plain_system_setting> ;
     skos:definition "The bed where a natural body of surface water flows or may flow, a natural passageway or depression of perceptible extent containing continuously or periodically flowing water, or forming a connecting link between two bodies of water, a watercourse"@en ;
@@ -1757,7 +1754,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/river_plain_system_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaerial_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/terrestrial_setting> ;
@@ -1772,7 +1769,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/rocky_coast_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings> ;
     skos:definition "Shoreline with significant relief and abundant rock outcrop."@en ;
@@ -1782,7 +1779,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/sand_plain> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/aeolian_process_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/arid_or_semi_arid_environment_setting>,
@@ -1794,7 +1791,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/seamount_setting> a skos:Concept ;
-    dcterms:provenance "Reading 1978"@en ;
+    schema:citation "Reading 1978"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/intraplate_tectonic_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/ocean_highland_setting> ;
@@ -1811,7 +1808,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings> a skos:Concept ;
-    dcterms:provenance "based on Neuendorf et al, 2005"@en ;
+    schema:citation "based on Neuendorf et al, 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Geologic settings characterized by location adjacent to the ocean or a lake. A zone of indefinite width (may be many kilometers), bordering a body of water that extends from the water line inland to the first major change in landform features. Includes settings that may be subaerial, intermittently subaqueous, or shallow subaqueous, but are intrinsically associated with the interface between land areas and water bodies."@en ;
@@ -1833,7 +1830,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/slope_rise_setting> a skos:Concept ;
-    dcterms:provenance "based on NADM SLTTs, 2004"@en ;
+    schema:citation "based on NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "The part of a subaqueous basin that is between a bordering shelf setting, which separate the basin from an adjacent landmass, and a very low-relief basin plain setting."@en ;
@@ -1843,7 +1840,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/slow_spreading_center_setting> a skos:Concept ;
-    dcterms:provenance "Macdonald 1982"@en ;
+    schema:citation "Macdonald 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/active_spreading_center> ;
     skos:definition "Spreading center at which the opening rate is less than 50 mm per year."@en ;
@@ -1853,7 +1850,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/strandplain_setting> a skos:Concept ;
-    dcterms:provenance "based on Jackson 1997, p. 626"@en ;
+    schema:citation "based on Jackson 1997, p. 626"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaerial_setting> ;
@@ -1864,7 +1861,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaerial_setting> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Setting at the interface between the solid earth and the atmosphere, includes some shallow subaqueous settings in river channels and playas. Characterized by conditions and processes, such as erosion, that exist or operate in the open air on or immediately adjacent to the land surface"@en ;
@@ -1882,7 +1879,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaqueous_setting> a skos:Concept ;
-    dcterms:provenance "based on North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,"@en ;
+    schema:citation "based on North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/,"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Setting situated in or under permanent, standing water. Used for marine and lacustrine settings, but not for fluvial settings."@en ;
@@ -1912,7 +1909,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/subglacial_setting> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacier_related_setting> ;
     skos:definition "Formed or accumulated in or by the bottom parts of a glacier or ice sheet, said of meltwater streams, till, moraine, etc."@en ;
@@ -1922,7 +1919,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/submarine_fan_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/marine_setting> ;
     skos:definition "Large fan-shaped cones of sediment on the ocean floor, generally associated with submarine canyons that provide sediment supply to build the fan.."@en ;
@@ -1938,7 +1935,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/supraglacial_setting> a skos:Concept ;
-    dcterms:provenance "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
+    schema:citation "North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/glacier_related_setting> ;
     skos:definition "Carried upon, deposited from, or pertaining to the top surface of a glacier or ice sheet, said of meltwater streams, till, drift, etc. (Jackson, 1997, p. 639). Dreimanis (1988, p. 39) recommendation that \\supraglacial\\ supersede \\superglacial\\ is followed."@en ;
@@ -1948,7 +1945,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/supratidal> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaerial_setting> ;
@@ -1959,7 +1956,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/swamp_or_marsh_setting> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al 2005, Soil Science Society of America, 1997."@en ;
+    schema:citation "Neuendorf et al 2005, Soil Science Society of America, 1997."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/wetland_setting> ;
     skos:definition "A water-saturated, periodically wet or continually flooded area with the surface not deeply submerged, essentially without the formation of peat. Marshes are characterized by sedges, cattails, rushes, or other aquatic and grasslike vegetation. Swamps are characterized by tree and brush vegetation."@en ;
@@ -1970,7 +1967,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/terrestrial_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Setting characterized by absence of direct marine influence. Most of the subaerial settings are also terrestrial, but lacustrine settings, while terrestrial, are not subaerial, so the subaerial settings are not included as subcategories."@en ;
@@ -2006,7 +2003,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/tidal_channel> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/subaqueous_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/tidal_setting> ;
@@ -2023,7 +2020,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/tidal_flat_setting> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/tidal_setting> ;
     skos:definition "An extensive, nearly horizontal, barren tract of land that is alternately covered and uncovered by the tide, and consisting of unconsolidated sediment (mostly mud and sand). It may form the top surface of a deltaic deposit."@en ;
@@ -2039,7 +2036,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/tidal_marsh> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/swamp_or_marsh_setting>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/tidal_flat_setting> ;
@@ -2051,7 +2048,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/tidal_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/shoreline_settings> ;
     skos:definition "Setting subject to tidal processes"@en ;
@@ -2071,7 +2068,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/transform_plate_boundary_setting> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/plate_margin_setting> ;
     skos:definition "Plate boundary at which the adjacent plates are moving laterally relative to each other."@en ;
@@ -2081,7 +2078,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/transitional_crust> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/crust> ;
     skos:definition "Crust formed in the transition zone between continental and oceanic crust, during the history of continental rifting that culminates in the formation of a new ocean."@en ;
@@ -2091,7 +2088,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/ultra_high_pressure_crustal_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_interior_setting> ;
     skos:definition "Setting characterized by pressures characteristic of upper mantle, but indicated by mineral assemblage in crustal composition rocks."@en ;
@@ -2101,7 +2098,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/upper_bathyal> a skos:Concept ;
-    dcterms:provenance "Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320"@en ;
+    schema:citation "Berggren, W.A. & Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/bathyal> ;
     skos:definition "The ocean environment at water depths between 200 and 600 metres"@en ;
@@ -2111,7 +2108,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/upper_continental_crustal_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/continental_crust> ;
     skos:definition "Continental crustal setting dominated by non metamorphosed to low greenschist facies metamorphic rocks, and brittle deformation."@en ;
@@ -2121,7 +2118,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/upper_delta_plain> a skos:Concept ;
-    dcterms:provenance "Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford"@en ;
+    schema:citation "Readingh.G. & Collinson, J.D., 1996. Clastic coasts. 154-231 in Readingh.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/delta_plain>,
         <http://resource.geosciml.org/classifier/cgi/eventenvironment/terrestrial_setting> ;
@@ -2132,7 +2129,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/upper_mantle> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al., 2005"@en ;
+    schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/mantle> ;
     skos:definition "That part of the mantle which lies above a depth of about 660 km and has a density of 3.4 g/cm3 to 4.0 g/cm3 with increasing depth. Similarly, P-wave velocity increases from about 8 to 11 km/sec with depth and S wave velocity increases from about 4.5 to 6 km/sec with depth. It is presumed to be peridotitic in composition. It includes the subcrustal lithosphere the asthenosphere and the transition zone,"@en ;
@@ -2159,7 +2156,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/upper_oceanic_crustal_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/oceanic_crust> ;
     skos:definition "Oceanic crustal setting dominated by extrusive rocks, abyssal oceanic sediment, with increasing mafic intrusive rock in lower part."@en ;
@@ -2169,7 +2166,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/volcanic_arc_setting> a skos:Concept ;
-    dcterms:provenance "1-GE WP3, Neuendorf et al.(2005), p. 710"@en ;
+    schema:citation "1-GE WP3, Neuendorf et al.(2005), p. 710"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/plate_margin_setting> ;
     skos:definition "A generally curvillinear belt of volcanoes above a subduction zone."@en ;
@@ -2179,7 +2176,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/eventenvironment/wetland_setting> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/eventenvironment/earth_surface_setting> ;
     skos:definition "Setting characterized by gentle surface slope, and at least intermittent presence of standing water, which may be fresh, brackish, or saline. Wetland may be terrestrial setting or shoreline setting."@en ;

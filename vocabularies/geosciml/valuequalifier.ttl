@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2009-07-14"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2009-07-14"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en,
@@ -42,7 +39,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/valuequalifier/always>,
         <http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate>,
@@ -57,7 +54,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/always> a skos:Concept ;
-    dcterms:provenance "GeoSciML UML model, definition this vocabulary"@en ;
+    schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:definition "All instances of the observed entity have this property value"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
@@ -66,7 +63,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate> a skos:Concept ;
-    dcterms:provenance "GeoSciML UML model, definition this vocabulary"@en ;
+    schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:definition "Specified value is approximate"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
@@ -75,7 +72,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/common> a skos:Concept ;
-    dcterms:provenance "GeoSciML UML model, definition this vocabulary"@en ;
+    schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:definition "Reported property value is commonly observered"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
@@ -84,7 +81,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/equalTo> a skos:Concept ;
-    dcterms:provenance "GeoSciML UML model, definition this vocabulary"@en ;
+    schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:definition "Reported property value is the observered value"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
@@ -93,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/greaterThan> a skos:Concept ;
-    dcterms:provenance "GeoSciML UML model, definition this vocabulary"@en ;
+    schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:definition "Reported property value is lower bound"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
@@ -102,7 +99,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/lessThan> a skos:Concept ;
-    dcterms:provenance "GeoSciML UML model, definition this vocabulary"@en ;
+    schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:definition "Reported property value is upper bound"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
@@ -111,7 +108,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/never> a skos:Concept ;
-    dcterms:provenance "GeoSciML UML model, definition this vocabulary"@en ;
+    schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:definition "Reported property value is never observed"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
@@ -120,7 +117,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/rare> a skos:Concept ;
-    dcterms:provenance "GeoSciML UML model, definition this vocabulary"@en ;
+    schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:definition "Reported property value is rarely observed"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
@@ -129,7 +126,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/sometimes> a skos:Concept ;
-    dcterms:provenance "GeoSciML UML model, definition this vocabulary"@en ;
+    schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
     skos:definition "Reported property value is observed occasionally"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;

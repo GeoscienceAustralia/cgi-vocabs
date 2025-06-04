@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role> a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
-    dcterms:created "2016-11-29"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "The EarthResourceML standard"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
+    schema:dateCreated "2016-11-29"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "The EarthResourceML standard"@en ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
     skos:changeNote "2014-03-19 Original SKOS implementation, SMR"@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
@@ -32,7 +29,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/raw-material-role> a skos:Collection ;
-    dcterms:provenance "The original vocabulary - all its concepts"@en ;
+    schema:citation "The original vocabulary - all its concepts"@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:member <http://resource.geosciml.org/classifier/cgi/raw-material-role/gangue>,
         <http://resource.geosciml.org/classifier/cgi/raw-material-role/ore>,
@@ -41,7 +38,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/raw-material-role/gangue> a skos:Concept ;
-    dcterms:provenance "Glossary of Geology. 5th Edition, AGI - online"@en ;
+    schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role> ;
     skos:altLabel "merduk"@id,
         "tak berharga"@id,
@@ -70,7 +67,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/raw-material-role/ore> a skos:Concept ;
-    dcterms:provenance "Glossary of Geology. 5th Edition, AGI - online"@en ;
+    schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role> ;
     skos:definition "The naturally occurring material from which a mineral or minerals of economic value can be extracted at a reasonable profit. Also, the mineral(s) thus extracted. The term is generally but not always used to refer to metalliferous material, and is often modified by the name of the valuable constituent, e.g., \"iron ore\"."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role> ;
@@ -88,7 +85,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/raw-material-role/waste> a skos:Concept ;
-    dcterms:provenance "Glossary of Geology. 5th Edition, AGI - online"@en ;
+    schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role> ;
     skos:altLabel "buangan"@id,
         "廃棄物"@ja,

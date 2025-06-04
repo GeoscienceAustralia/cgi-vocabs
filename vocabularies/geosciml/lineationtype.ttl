@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2009-07-14"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2009-07-14"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices). Create 201012 version."@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme. create 201202 version."@en,
@@ -33,7 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/lineationtype/augen_lineation>,
         <http://resource.geosciml.org/classifier/cgi/lineationtype/bedding_cleavage_intersection_lineation>,
@@ -61,7 +58,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al 2005, this vocabulary"@en ;
+    schema:citation "Neuendorf et al 2005, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:altLabel "pergarisan"@id,
         "リニエーション"@ja ;
@@ -97,7 +94,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/augen_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation>,
         <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
@@ -107,7 +104,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/bedding_cleavage_intersection_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation>,
         <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
@@ -117,7 +114,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/biotite_mineral_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> ;
     skos:definition "Mineral lineation defined by aligned elongate biotite aggregates in a foliation surface. Biotite does not have an elongate (prismatic, acicular) mineral habit, so production of lineation must reflect elongate aggregates of biotite crystals."@en ;
@@ -126,7 +123,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/cleavage_intersection_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation>,
         <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
@@ -136,7 +133,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/crenulation_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
     skos:definition "Lineation defined by small-scale wrinkles, typically of phylosillicate minerals, on another surface, typically a cleavage or schistosity. Use instead of intersection lineation if the wrinkles are the measured feature and the intersecting planar feature is not apparent."@en ;
@@ -145,7 +142,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/flow_lineation> a skos:Concept ;
-    dcterms:provenance "Geoscience Victoria, Australia"@en ;
+    schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
     skos:definition "A linear alignment of fabric elements, especially elongate or rod-shaped minerals, interpreted to have been aligned by flow of magma, lava, pyroclastic material, or diapiric flow of sedimentary rock."@en ;
@@ -154,7 +151,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/hornblende_mineral_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> ;
     skos:definition "Mineral lineation defined by aligned hornblende crystals."@en ;
@@ -163,7 +160,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
     skos:definition "Lineation defined by alignment of elongate fabric elements formed in lava or magma before complete crystallization. Some typical fabric elements are elongate phenocrysts and vesicles."@en ;
@@ -175,7 +172,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_mineral_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation>,
         <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> ;
@@ -185,7 +182,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_particle_shape_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation>,
         <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> ;
@@ -195,7 +192,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_vesicle_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation> ;
     skos:definition "lineation defined in a volcanic rock by aligned elongation direction of vesicles."@en ;
@@ -204,7 +201,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al 2005, this vocabulary"@en ;
+    schema:citation "Neuendorf et al 2005, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
     skos:definition "A lineation produced by the intersection of two planar fabrics."@en ;
@@ -215,7 +212,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al 2005, this vocabulary"@en ;
+    schema:citation "Neuendorf et al 2005, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> ;
     skos:definition "Lineation defined by alignment of elongate crystals that have a prismatic crystal habit or of monomineralic grain aggregates."@en ;
@@ -228,7 +225,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
     skos:definition "Lineation defined by alignment of long axes of prolate-shaped particles such as clasts, fossils, crystals, or phenocrysts. Particles may be polycrystalline aggregates formed by deformation of pre-existing particles. General category does not specify genesis of particles or their alignment."@en ;
@@ -242,7 +239,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/pencil_lineation> a skos:Concept ;
-    dcterms:provenance "based on Neuendorf et al 2005"@en ;
+    schema:citation "based on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
     skos:definition "Lineation defined by tendency of rock to break into long, slender pieces resembling pencils. Typically produced by intesection of bedding and cleavage or intersection of two cleavages. Fabric is generally only observed in weakly metamorphosed rocks."@en ;
@@ -251,7 +248,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/quartz_fibre_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> ;
     skos:definition "Aligned quartz fibres that define a measurable lineation"@en ;
@@ -260,7 +257,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/rodding_lineation> a skos:Concept ;
-    dcterms:provenance "Jackson 1997"@en ;
+    schema:citation "Jackson 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
     skos:definition "Linear structure in metamorphic rocks in which the stronger parts have been shaped into parallel rods (eg. vein quartz)"@en ;
@@ -269,7 +266,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/sillimanite_mineral_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> ;
     skos:definition "Mineral lineation defined by aligned sillimanite crystals."@en ;
@@ -278,7 +275,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/slickenline> a skos:Concept ;
-    dcterms:provenance "based on Neuendorf et al 2005"@en ;
+    schema:citation "based on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
     skos:definition "Lineation on a brittle slip surface defined by grooves, ridges, or striations"@en ;
@@ -287,7 +284,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/stretching_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation>,
         <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
@@ -297,7 +294,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
     skos:definition "Penetrative linear structure in a rock body defined by fabric elements that are the product of tectonic processes. Linear is used in the sense that the orientation of the structure can be represented as a line in some sufficiently small neighborhood of any point in the material containig the fabric. Penetrative denotes that the fabric elements defining the structure are repeated at distances so small, compared with the scale of the whole that they can be considered to pervade it uniformly and be present at every point (paraphrase of Turner and Weiss, 1963, p. 21)."@en ;

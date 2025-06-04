@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
-    dcterms:created "2016-11-29"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "The EarthResourceML standard"@en ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
+    schema:dateCreated "2016-11-29"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "The EarthResourceML standard"@en ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
     skos:changeNote "2014-02-23 SMR Original conversion to SKOS."@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
@@ -35,7 +32,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type> a skos:Collection ;
-    dcterms:provenance "The original vocabulary - all its concepts"@en ;
+    schema:citation "The original vocabulary - all its concepts"@en ;
     skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:member <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/deposit>,
@@ -49,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/field> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
     skos:altLabel "camp, district"@en ;
     skos:definition "An area characterized by one or more mineral occurrences that are geologically related."@en ;
@@ -62,7 +59,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/mineralized-zone> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
     skos:altLabel "lode"@en,
         "orebody"@en ;
@@ -82,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/occurrence> a skos:Concept ;
-    dcterms:provenance "This vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)"@en ;
+    schema:citation "This vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
     skos:altLabel "showing"@en ;
     skos:definition "A location at which a mineral or rock that has some potential end use is present in any concentration, in outcrop or float."@en ;
@@ -96,7 +93,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/project> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
     skos:definition "An informal grouping of mineral deposits that is commonly used by mining or exploration companies in reporting exploration results, resources/reserves, and production figures."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/project> ;
@@ -108,7 +105,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/prospect> a skos:Concept ;
-    dcterms:provenance "This vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)"@en ;
+    schema:citation "This vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
     skos:definition "A location identified as a potential site of a mineral deposit."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/prospect> ;
@@ -120,7 +117,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/province> a skos:Concept ;
-    dcterms:provenance "This vocabulary"@en ;
+    schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
     skos:altLabel "metallogenic province"@en,
         "mendala metalogenik"@id,
@@ -150,7 +147,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/deposit> a skos:Concept ;
-    dcterms:provenance "This vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)"@en ;
+    schema:citation "This vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> ;
     skos:altLabel "mineral deposit"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/occurrence> ;

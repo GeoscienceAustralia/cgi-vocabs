@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2010-02-11"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2010-02-11"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices#Identifier_value)"@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en,
@@ -33,7 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/foliationtype/anastomosing_spaced_cleavage>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_fabric>,
@@ -113,7 +110,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> a skos:Concept ;
-    dcterms:provenance "Jackson 1997"@en ;
+    schema:citation "Jackson 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:altLabel "葉状構造"@ja,
         "โฟลิเอชั่น"@th,
@@ -151,7 +148,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/anastomosing_spaced_cleavage> a skos:Concept ;
-    dcterms:provenance "Geoscience Victoria, Australia"@en ;
+    schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/spaced_cleavage> ;
     skos:definition "spaced cleavage domains branch and rejoin, creating lens-shaped microlithons."@en ;
@@ -160,7 +157,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_fabric> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004, this vocabulary"@en ;
+    schema:citation "SLTTs 2004, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_foliation> ;
     skos:definition "Fabric defined by textural or mineralogic variations in sediment produced by depositional processes. May be manifested by lamination structure within the sediment, or by layering in which the individual layers (beds) are bounded by discontinuities related to events in the depositional history."@en ;
@@ -173,7 +170,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_lamination_structure> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_fabric> ;
     skos:definition "A surface internal to the containing sediment mass defined by textural or mineralogical variation, produced by sediment deposition process, and reflecting the orientation of the original depositional surface. Syn Laminated structure (SLTTs 2004)."@en ;
@@ -190,7 +187,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/c_fabric> a skos:Concept ;
-    dcterms:provenance "Geoscience Victoria, Australia"@en ;
+    schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/ductile_shear_banding_foliation> ;
     skos:definition "Ductile shear banding foliation defined by spaced, discrete planar zones of high strain less than 1mm thick. Commonly associated with a particle flattening ('S') fabric to form a mylonitic foliation."@en ;
@@ -199,7 +196,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage> a skos:Concept ;
-    dcterms:provenance "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31."@en ;
+    schema:citation "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:altLabel "劈開面"@ja,
         "쪼개짐"@ko,
@@ -235,7 +232,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage_parallel_to_bedding> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/compound_foliation> ;
@@ -245,7 +242,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/close_joints> a skos:Concept ;
-    dcterms:provenance "Borradaile et al. 1982, This Vocabulary"@en ;
+    schema:citation "Borradaile et al. 1982, This Vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/joint_fabric> ;
@@ -255,7 +252,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/comb_layering> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005, this vocabulary"@en ;
+    schema:citation "Neuendorf et al. 2005, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/layering> ;
     skos:definition "Layering fabric defined by layers that have internal comb structure. Layer boundaries are the termination surfaces for the constituent crystals."@en ;
@@ -264,7 +261,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/compositional_layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary, submitted by British Antarctic Survey"@en ;
+    schema:citation "this vocabulary, submitted by British Antarctic Survey"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/layering> ;
     skos:definition "Layering fabric defined by layers that have different mineralogic composition."@en ;
@@ -276,7 +273,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/compound_foliation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> ;
     skos:definition "Foliation that includes fabric elements indicating classification with foliation types of different genetic origin, e.g. cleavage parallel to bedding is a compound fabric with a sedimentary foliation and a tectonic foliation. No connotation of genetic origin of fabric elements."@en ;
@@ -288,7 +285,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/compound_metamorphic_foliation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/compound_foliation> ;
     skos:definition "A compound foliation in which the constituent fabric elements are of metamorphic origin."@en ;
@@ -297,7 +294,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/continuous_cleavage> a skos:Concept ;
-    dcterms:provenance "Borradaile et al 1982"@en ;
+    schema:citation "Borradaile et al 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage> ;
     skos:definition "A cleavage that is statistically homogeneous down to the scale of individual mineral grains."@en ;
@@ -309,7 +306,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/continuous_crenulation_cleavage> a skos:Concept ;
-    dcterms:provenance "Borradaile et al 1982"@en ;
+    schema:citation "Borradaile et al 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/continuous_cleavage>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/crenulation_cleavage> ;
@@ -319,7 +316,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/crenulation_cleavage> a skos:Concept ;
-    dcterms:provenance "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31."@en ;
+    schema:citation "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage> ;
     skos:definition "Cleavage that is overprinted on an older foliation that is folded to some degree in association with development of the younger cleavage. Cleavage domains commonly associated with long limbs of crenulation folds, and hinge surfaces of folds are roughly parallel. Wavelength of crenulation folds is less than or equal to 1 cm. Cleavage defined by limbs of microfolds coincident with zones of mineral differentiation"@en ;
@@ -330,7 +327,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/crude_or_indistinct_bedding> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_fabric> ;
     skos:definition "Bedding defined by surfaces that are not distinct, e.g. by gradational grain size variations."@en ;
@@ -339,7 +336,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/cryptomicrobial_lamination> a skos:Concept ;
-    dcterms:provenance "GGIPAC"@en ;
+    schema:citation "GGIPAC"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_lamination_structure> ;
     skos:definition "Fabric defined by fine laminae formed by the trapping of grains and lime precipitation in a microbial mat."@en ;
@@ -349,7 +346,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/cumulate_layering> a skos:Concept ;
-    dcterms:provenance "Carmichael et al 1974, Best 1982"@en ;
+    schema:citation "Carmichael et al 1974, Best 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_layering> ;
     skos:definition "Layering in igneous rocks in which layers are characterized by variation in relative proportion of magmatically crystallized minerals. Typically a pattern of mineralogical variation will be repeated many times in a vertical section with layers of relatively consistent thickness. See photos in Best [1982] p. 176-177. Gravity-stratified layers typically have mafic minerals at the base and plagioclase at the top and are interpreted to form by crystal settling in magma."@en ;
@@ -364,7 +361,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/discrete_cleavage> a skos:Concept ;
-    dcterms:provenance "Borradaile et al., 1982"@en ;
+    schema:citation "Borradaile et al., 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/spaced_cleavage> ;
     skos:definition "Spaced cleavage in which cleavage domains have sharply defined edges."@en ;
@@ -373,7 +370,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/discrete_crenulation_cleavage> a skos:Concept ;
-    dcterms:provenance "Borradaile et al 1982"@en ;
+    schema:citation "Borradaile et al 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/crenulation_cleavage>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/spaced_cleavage> ;
@@ -383,7 +380,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/discrete_disjunct_spaced_cleavage> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005, Borradaile et al. 1982."@en ;
+    schema:citation "Neuendorf et al. 2005, Borradaile et al. 1982."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/spaced_cleavage> ;
     skos:definition "Disjunct spaced cleavage defined by discrete cleavage surfaces, typically in low-grade clastic rocks. Syn. Fracture cleavage."@en ;
@@ -392,7 +389,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/disjunctive_cleavage> a skos:Concept ;
-    dcterms:provenance "Borradaile et al. 1982"@en ;
+    schema:citation "Borradaile et al. 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage> ;
     skos:definition "A spaced cleavage independent of any pre-existing mineral orientation, cleavage in which there is no systematic relationship between a pre-existing preferred orientation and the superimposed cleavage. (Borradaile et al., 1982)"@en ;
@@ -401,7 +398,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/domainal_cleavage> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage> ;
     skos:definition "Fabric in which domains of more strongly developed (closely spaced) cleavage are separated by lenses of weakly or non-cleaved rock. Typically observed on outcrop scale and used for geologic unit description"@en ;
@@ -410,7 +407,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/ductile_shear_banding_foliation> a skos:Concept ;
-    dcterms:provenance "Geoscience Victoria, Australia"@en ;
+    schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
     skos:definition "Foliation defined by regularly spaced ductile shear bands at the scale of descripiton."@en ;
@@ -420,7 +417,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/eutaxitic_foliation> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005, this vocabulary"@en ;
+    schema:citation "Neuendorf et al. 2005, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_igneous_foliation> ;
     skos:definition "Foliation defined by flattened pumice clasts or glass shards, aligned elongate lithic fragments, variations in composition, vesicularity, crystallinity, grain size, spherulite and lithophysae abundance, or the degree of devitrification in a welded tuff. This term denotes interpretation that foliation formed during compaction and welding of tuff."@en ;
@@ -429,7 +426,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/fissile_lamination> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004, this vocabulary"@en ;
+    schema:citation "SLTTs 2004, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_lamination_structure> ;
     skos:definition "Diffuse to distinct lamination in mudstones and mud, defined by the alignment of clay minerals. Lacks distinct very-fine scale layering and repetition of couplets that characterize varves. Essentially a continuous cleavage parallel to bedding, but considered a sedimentary structure related to sediment compaction during diagenesis."@en ;
@@ -438,7 +435,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/flaser_structure> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005"@en ;
+    schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
     skos:definition "Tectonic foliation defined by lenses and layers of original or relatively unaltered granular minerals surrounded by a matrix of highly sheared and crushed material. No connotation of metamorphic grade."@en ;
@@ -447,7 +444,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/flow_layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/layering> ;
     skos:definition "Layering produced by flow of magma, lava, or diapiric flow of sedimentary rock. Distinction from eutaxitic foliation may be difficult."@en ;
@@ -457,7 +454,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/generic_mylonitic_foliation> a skos:Concept ;
-    dcterms:provenance "NADM metamorphic rock vocabulary SLTTm1.0 2004"@en ;
+    schema:citation "NADM metamorphic rock vocabulary SLTTm1.0 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
     skos:definition "Foliation defined by the shapes of deformed mineral grains or grain aggregates having aspect ratios greater than 1.5:1, greater than 10 percent of the rock is composed of 'matrix' showing evidence of tectonic reduction in grain size, and the foliation and matrix are interpreted to be the product of continuous, crystal-plastic deformation processes. Generic class is used when data are insufficient to determine classification to protomylontic, mylonite, or ultramylonitc foliation, or to specify that any sort of mylontic foliation may be present."@en ;
@@ -470,7 +467,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/gneissic_layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> ;
     skos:definition "Compositional layering in a metamorphic rock, syn. gneissic banding"@en ;
@@ -485,7 +482,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/grain_shape_foliation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> ;
     skos:definition "Foliation defined by the alignment of oblate particles, which may be detrital grains, crystals, or crystalline grain aggregates."@en ;
@@ -496,7 +493,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_flow_foliation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_igneous_foliation> ;
     skos:definition "Foliation interpreted to be due to flow in a body of magma or lava. Includes flow banding in lava, and foliation defined by aligned crystals in a phaneritic igneous rock.."@en ;
@@ -505,7 +502,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_lamination> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_layering>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_igneous_foliation> ;
@@ -515,7 +512,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_layering> a skos:Concept ;
-    dcterms:provenance "Geoscience Victoria, Australia"@en ;
+    schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/layering>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_igneous_foliation> ;
@@ -530,7 +527,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_textural_layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_layering> ;
     skos:definition "Layering defined by grain size/ grain shape variations resulting from crystallization processes in igneous rock, most commonly observed in pegmatite/aplite dikes or bodies, and in Laramide leucogranites of Wilderness suite in Arizona."@en ;
@@ -539,7 +536,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/imbricated_clast_fabric> a skos:Concept ;
-    dcterms:provenance "based on Neuendorf et al 2005"@en ;
+    schema:citation "based on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/grain_shape_foliation>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_foliation> ;
@@ -549,7 +546,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/impersistent_lamination> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_lamination_structure> ;
     skos:definition "Lamination defined by discontinuous surfaces"@en ;
@@ -558,7 +555,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/irregular_lamination> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_lamination_structure> ;
     skos:definition "Lamination fabric in which individual lamina or groups of lamina are warped in an irregular fashion, like a flattened peice of crumpled paper. A crude planar orientation is discernible."@en ;
@@ -567,7 +564,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/joint_fabric> a skos:Concept ;
-    dcterms:provenance "Borradaile et al 1982"@en ;
+    schema:citation "Borradaile et al 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> ;
     skos:definition "Fabric defined by parting surfaces in rock that occur in crudely parallel orientation, spaced greater than 5 cm on average if in a very regular joint set. Spacing is more variable and alignment of surfaces is cruder that cleavage. Typically applies to geologic unit description."@en ;
@@ -577,7 +574,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/laminated_metamorphic_layering> a skos:Concept ;
-    dcterms:provenance "Weiss 1972, Borradaile et al 1982, this vocabulary"@en ;
+    schema:citation "Weiss 1972, Borradaile et al 1982, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> ;
     skos:definition "Metamorphic layering in which the layers are less than 1 cm thick. See Weiss, L.E. [1972] plate 36 or Borraidaile et al [1982] plate 137A B (page 331), plate140A (page 337) for examples."@en ;
@@ -586,7 +583,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/lava_flow_banding> a skos:Concept ;
-    dcterms:provenance "GGIPAC, Australia"@en ;
+    schema:citation "GGIPAC, Australia"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/flow_layering>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_layering> ;
@@ -596,7 +593,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/layered_mylonitic_foliation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/compound_foliation>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/generic_mylonitic_foliation>,
@@ -607,7 +604,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> ;
     skos:definition "Foliation defined by stacked, differentiable, sheet-like masses of material (layers), with no denotation of the nature (composition, grain size, grain shape...) or origin (igneous, sedimentary, metamorphic) of the layers."@en ;
@@ -624,7 +621,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/low_temperature_flow_foliation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> ;
     skos:definition "Foliation interpreted to be due to flow in a body of rock (typically mudrock, salt, or anhydrite) under low-temperature (non-metamorphic) conditions, typically related to diapirism."@en ;
@@ -633,7 +630,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_differentiation_layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/compositional_layering>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> ;
@@ -649,7 +646,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/layering> ;
     skos:definition "Layering of unspecified origin in a metamorphic rock. Compositional or textural variations may be inherited from protolith, or result from metamorphic processes."@en ;
@@ -664,7 +661,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering_inherited_from_protolith> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/compositional_layering>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> ;
@@ -675,7 +672,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/mineralogical_layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/compositional_layering> ;
     skos:definition "Generic layering defined by variations in mineralogy between individual sheets of material"@en ;
@@ -684,7 +681,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/mylonite_foliation> a skos:Concept ;
-    dcterms:provenance "SLTTm 2004, Sibson 1977"@en ;
+    schema:citation "SLTTm 2004, Sibson 1977"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/generic_mylonitic_foliation> ;
     skos:definition "Generic mylonitic foliation in which 50-90 percent of rock is matrix due to tectonic grain size reduction processes. Planar fabric is very apparent due to flattening of mineral grains, development of shear surfaces, and alignment of tabular mineral grains. Lineation is typically present and easily observed."@en ;
@@ -699,7 +696,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/parallel_bedding> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004"@en ;
+    schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_fabric> ;
     skos:definition "Bedding defined by parallel surfaces. Bedding structure may be lamination or layering."@en ;
@@ -708,7 +705,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/parallel_bedding_lamination> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_lamination_structure> ;
     skos:definition "Bedding lamination structure in which all visible bedding surfaces are parallel."@en ;
@@ -717,7 +714,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/phyllitic_cleavage> a skos:Concept ;
-    dcterms:provenance "SLTTm 2004, Geoscience Victoria, Australia"@en ;
+    schema:citation "SLTTm 2004, Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/continuous_cleavage> ;
     skos:definition "Continuous cleavage in phyllitic rock, phyllosilicate mineral grains just barely visible, grain size midway between slaty cleavage and schist, typically has a satiny lustre."@en ;
@@ -726,7 +723,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/planar_lamination> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_lamination_structure> ;
     skos:definition "Lamination that is defined by planar bedding surfaces at the scale of description."@en ;
@@ -735,7 +732,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_foliation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> ;
     skos:definition "Foliation formed during original process of deposition or crystallization of an igneous or sedimentary material."@en ;
@@ -747,7 +744,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_igneous_foliation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/primary_foliation> ;
     skos:definition "Foliation interpreted to be the product of igneous processes, formed in the rock while melt was still present.."@en ;
@@ -760,7 +757,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/protomylonite_foliation> a skos:Concept ;
-    dcterms:provenance "SLTTm 2004, Sibson 1977"@en ;
+    schema:citation "SLTTm 2004, Sibson 1977"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/generic_mylonitic_foliation> ;
     skos:definition "Generic mylonitic foliation in which 10-50 percent of rock is matrix due to tectonic grain size reduction processes. Planar aspect of fabric may be quite subtle in weakly deformed rocks."@en ;
@@ -769,7 +766,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/rhythmic_layering> a skos:Concept ;
-    dcterms:provenance "Jackson 1997"@en ;
+    schema:citation "Jackson 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/igneous_layering> ;
     skos:definition "Layering in igneous rock defined by repeated gravity-stratified layers of typically mafic minerals at the base and plagioclase at the top, formed by crystal settling"@en ;
@@ -778,7 +775,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/rough_cleavage> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005, Borradaile et al, 1990"@en ;
+    schema:citation "Neuendorf et al. 2005, Borradaile et al, 1990"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage> ;
     skos:definition "Disjunct (Borradaile et al, 1990) cleavage characterized by short, discontinuous clavage surfaces, typically with concentrations of phyllosilicate minerals. Common in micaceous sandstone."@en ;
@@ -787,7 +784,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/s_fabric> a skos:Concept ;
-    dcterms:provenance "Geoscience Victoria, Australia"@en ;
+    schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/grain_shape_foliation>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
@@ -797,7 +794,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/scaly_cleavage> a skos:Concept ;
-    dcterms:provenance "Based on Jackson 1997"@en ;
+    schema:citation "Based on Jackson 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/spaced_cleavage> ;
     skos:definition "Discrete, anastomosing spaced cleavage characterized by smooth and highly polished/slickensided cleavage surfaces that intersect with one another to form lensoid flakes, scales or chips. Common in pelitic rocks in shear zones, melange, or deformed accretionary complexes."@en ;
@@ -806,7 +803,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/schistosity> a skos:Concept ;
-    dcterms:provenance "NADM metamorphic rock vocabulary SLTTm1.0 2004"@en ;
+    schema:citation "NADM metamorphic rock vocabulary SLTTm1.0 2004"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:altLabel "片理面"@ja ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
@@ -832,7 +829,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/sedimentary_layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_fabric>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/layering> ;
@@ -842,7 +839,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/slaty_cleavage> a skos:Concept ;
-    dcterms:provenance "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31., Jackson 1997"@en ;
+    schema:citation "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31., Jackson 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/continuous_cleavage> ;
     skos:definition "Continuous cleavage defined by aligned fine to very-fine grained phylosilicate mineral grains. The individual grains defining the fabric are too small to be seen by the unaided eye. Grades into phyllitic cleavage as grain size increases. Cleavage domains typically less than 100 micrometres wide, rock easily splits into slabs and thin plates."@en ;
@@ -867,7 +864,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/solution_cleavage> a skos:Concept ;
-    dcterms:provenance "Geoscience Victoria, Australia"@en ;
+    schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/spaced_cleavage> ;
     skos:definition "Spaced cleavage forming an array of parallel to anastomosing, stylolitic to smooth, fracture-like partings formed by rock dissolution. Dissolution is indicated by discontinuity and offset of primary features that intersect cleavage surfaces, and typically by accumulation of insoluble residue along cleavage surface. Syn. stylolitic cleavage, pressure solution cleavage"@en ;
@@ -876,7 +873,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/spaced_cleavage> a skos:Concept ;
-    dcterms:provenance "Borradaile et al. 1982"@en ;
+    schema:citation "Borradaile et al. 1982"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage> ;
     skos:definition "Cleavage in which cleavage domains are spaced at finite intervals as the scale of description. Microlithons of uncleaved rock separate cleavage domains."@en ;
@@ -891,7 +888,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/stromatic_layering> a skos:Concept ;
-    dcterms:provenance "Weiss 1972, Borradaile et al 1982, Neuendorf et al. 2005"@en ;
+    schema:citation "Weiss 1972, Borradaile et al 1982, Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> ;
     skos:definition "Tectonic layering in which variations that distinguish the layers are the result of melt segregation during high-grade metamorphism, some layers have magmatic/igneous mineralogy. Plates 143 and 144, Borradaile et al [1982] (page 344-347) Syn. Migmatitic layering, lit-par-lit layering"@en ;
@@ -900,7 +897,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/stromatolitic_lamination> a skos:Concept ;
-    dcterms:provenance "Based on Neuendorf et al 2005"@en ;
+    schema:citation "Based on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/cryptomicrobial_lamination> ;
     skos:definition "Lamination produced by sediment trapping, binding and or precipitation by cyanophytes (blue-green algae)"@en ;
@@ -909,7 +906,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/foliation> ;
     skos:definition "Foliation in a rock body defined by physical components related to deformation subsequent to solidification of the rock."@en ;
@@ -925,7 +922,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_layering> a skos:Concept ;
-    dcterms:provenance "Weiss 1972, Borradaile et al 1982, this vocabulary"@en ;
+    schema:citation "Weiss 1972, Borradaile et al 1982, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/layering>,
         <http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_foliation> ;
@@ -935,7 +932,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/transposed_bedding_layering> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering_inherited_from_protolith> ;
     skos:definition "Layering interpreted to have originated as sedimentary bedding that has been transposed as a result of metamorphism and deformation."@en ;
@@ -944,7 +941,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/ultramylonite_foliation> a skos:Concept ;
-    dcterms:provenance "SLTTm 2004, Sibson 1977"@en ;
+    schema:citation "SLTTm 2004, Sibson 1977"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/generic_mylonitic_foliation> ;
     skos:definition "Mylonitic foliation in which greater than 90 percent of rock is matrix due to tectonic grain size reduction processes. Typically rock is very-fine grained to aphanitic, with sparse porphyroclasts, and vague to prominent lamination on a mm scale."@en ;
@@ -969,7 +966,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/undulating_lamination> a skos:Concept ;
-    dcterms:provenance "this vocabulary"@en ;
+    schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_lamination_structure> ;
     skos:definition "Gently curviplanar or wavy bedding lamination structure"@en ;
@@ -978,7 +975,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/vague_metamorphic_layering> a skos:Concept ;
-    dcterms:provenance "Weiss 1972,Borradaile et al 1982, this vocabulary"@en ;
+    schema:citation "Weiss 1972,Borradaile et al 1982, this vocabulary"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/metamorphic_layering> ;
     skos:definition "Metamorphic layering of uncertain origin, defined by subtle mineralogical or textural variations, with gradational layer boundaries. See plate 142 in Borradaile et al [1982]."@en ;
@@ -987,7 +984,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/foliationtype/varve_lamination> a skos:Concept ;
-    dcterms:provenance "SLTTs 2004, Jackson 1997"@en ;
+    schema:citation "SLTTs 2004, Jackson 1997"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/foliationtype/bedding_lamination_structure> ;
     skos:definition "Bedding defined by distinct, parallel laminae (layers less than 1 cm thick), typically occurring in sequences of distinct couplets (e.g. dark and light color). Generally interpreted as deposited from suspension in still water, with each lamina thought to be an annual sedimentation unit. Typically consists of mud-size sediment."@en ;

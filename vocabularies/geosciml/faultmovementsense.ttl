@@ -1,4 +1,3 @@
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -7,16 +6,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
-
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
-    dcterms:created "2009-07-14"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
-    dcterms:modified "2025-06-04"^^xsd:date ;
-    dcterms:provenance "Original set of terms from the GeosciML standard" ;
-    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
-    dcterms:source "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:dateCreated "2009-07-14"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:citation "Original set of terms from the GeosciML standard" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
     skos:changeNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en,
@@ -44,7 +41,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense> a skos:Collection ;
-    dcterms:provenance "this vocabulary" ;
+    schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
     skos:member <http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment>,
         <http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral>,
@@ -63,7 +60,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "Right-lateral separation sense, in plan view, the side opposite the observer appears displaced to the right.,"@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -75,7 +72,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/generic_decollement> a skos:Concept ;
-    dcterms:provenance "Neuendorf et al. 2005"@en ;
+    schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "A large-displacement (kilometers or tens of kilometers) shallowly dipping to subhorizontal fault or shear zone."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -85,7 +82,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/no_movement_sense> a skos:Concept ;
-    dcterms:provenance "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
+    schema:citation "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "The fault-parallel displacement is effectively zero, as in an extraction fault."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -94,7 +91,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "The hanging wall appears to have moved down relative to the footwall, dip of fault usually 45-90 degrees."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -106,7 +103,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "The movement sense includes both normal and dextral components."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -117,7 +114,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "The movement sense includes both normal and sinistral components."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -128,7 +125,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "The hanging wall appears to have moved down relative to the footwall, dip of fault usually greater than 45 degrees."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -141,7 +138,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "The movement sense includes both reverse and dextral components."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -152,7 +149,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "The movement sense includes both reverse and sinistral components."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -163,7 +160,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:definition "Left-lateral separation sense, in plan view, the side opposite the observer appears displaced to the left."@en ;
     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
@@ -174,7 +171,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal> ;
     skos:definition "A regional-scale low-angle normal fault."@en ;
@@ -184,7 +181,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust> a skos:Concept ;
-    dcterms:provenance "GGIC vocabularies working group (Australia)"@en ;
+    schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse> ;
     skos:definition "Reverse fault with dip typically less than 45 degrees, horizontal compression, rather than vertical displacement is characteristic."@en ;
@@ -195,7 +192,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust_decollement> a skos:Concept ;
-    dcterms:provenance "GeoScience Victoria and others"@en ;
+    schema:citation "GeoScience Victoria and others"@en ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust> ;
     skos:definition "A regional-scale low-angle thrust fault."@en ;
