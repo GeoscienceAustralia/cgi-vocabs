@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2012-04-01"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -40,20 +40,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Deformation in fault zone has been accommodated primarily through fracturing and loss of continuity between adjacent rock bodies."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
+    skos:inScheme cs: ;
     skos:prefLabel "brittle deformation"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "periukan teregang"@id,
         "延性变形"@zh ;
     skos:definition "Displacement across shear displacement structure largely accommodated by plastic deformation of the rock body without loss of macroscopic continuity."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Dehnungsverformung"@de,
         "ductile deformation"@en,
         "deformación dúctil"@es,
@@ -71,14 +71,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "การเปลี่ยนรูปแบบยืดเป็นเส้น"@th,
         "biến dạng dẻo (đá)"@vi,
         "塑性变形"@zh ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Deformation in fault zone has been accommodated by both fracturing and plastic shape change in rock bodies."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> ;
+    skos:inScheme cs: ;
     skos:prefLabel "mixed brittle and ductile"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> .
+    skos:topConceptOf cs: .
 

@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2017-08-31"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -41,40 +41,40 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe/base_of_quaternary> a skos:Concept ;
     schema:citation "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/baseOfQuaternary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Base of the predominantly unconsolidated sedimentary material of Quaternary age, also referred to as superficial deposits"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MappingFrameValue/baseOfQuaternary> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    skos:inScheme cs: ;
     skos:notation "1"^^dt:LocalHierarchyKey ;
     skos:prefLabel "base of Quaternary"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe/surface_geology> a skos:Concept ;
     schema:citation "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/surfaceGeology"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Bedrock and predominantly unconsolidated sedimentary material of Quaternary age (superficial deposits) that would be visible if the overlying soil was removed or are exposed at the topographic surface."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MappingFrameValue/surfaceGeology> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    skos:inScheme cs: ;
     skos:notation "2"^^dt:LocalHierarchyKey ;
     skos:prefLabel "surface geology"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe/top_of_basement> a skos:Concept ;
     schema:citation "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBasement"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "The surface in the crust of the Earth below sedimentary or volcanic deposits, or tectonically transported rock unit. What constitutes basement can depend on the context and may comprise other sedimentary, igneous and/or metamorphic rocks."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBasement> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    skos:inScheme cs: ;
     skos:notation "3"^^dt:LocalHierarchyKey ;
     skos:prefLabel "top of basement"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mappingframe/top_of_bedrock> a skos:Concept ;
     schema:citation "Adapted from INSPIRE codelist http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBedrock"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Top surface of the usually solid rock that may either be exposed at the topographic surface or covered by other younger unconsolidated deposits of Quaternary age (superficial deposits)"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBedrock> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe> ;
+    skos:inScheme cs: ;
     skos:notation "4"^^dt:LocalHierarchyKey ;
     skos:prefLabel "top of bedrock"@en .
 

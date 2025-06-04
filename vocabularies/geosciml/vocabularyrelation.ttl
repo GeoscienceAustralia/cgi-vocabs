@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -58,121 +58,121 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term> a skos:Concept ;
     schema:citation "National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Link from a source term to a superordinate (more general or parent) target term. General hierarchical relationship, more specific subtype relationships (generic, instance, and whole-part) should be used whenever possible."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_generic_relation>,
         <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/instance_of>,
         <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/part_of> ;
     skos:prefLabel "broader term"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/during> a skos:Concept ;
     schema:citation "Allen and Ferguson, 1994"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Beginning and end of source interval are both after the beginning of the target interval and before the end of the target interval."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "during"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/interval_finishes> a skos:Concept ;
     schema:citation "Allen and Ferguson, 1994"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Source and target interval share same ending instant (moment in Allen and Ferguson, 1994 terms), and target interval beginning is before source interval beginning."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "interval finishes"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/interval_starts> a skos:Concept ;
     schema:citation "Allen and Ferguson, 1994"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Source and target intervals have same starting instant (moment in Allen and Ferguson, 1994 terms), and end of target interval is after end of source interval."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "interval starts"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/lexical_variant> a skos:Concept ;
     schema:citation "National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Lexical variants differ from synonyms in that synonyms are different terms for the same concept, while lexical variants are different word forms for the same expression. These forms may derive from spelling or grammatical variation or from abbreviated formats. E.g. radar antennas / antennas, radar, Romania / Rumania / Roumania, ground water / ground-water / groundwater, online / on-line pediatrics / paediatrics"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "lexical variant"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/near_synonym> a skos:Concept ;
     schema:citation "National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Near-synonyms are terms whose meanings are generally regarded as different, but which are treated as equivalents for the purposes of a controlled vocabulary. The extent to which terms are treated as near-synonyms depends in large measure upon the domain covered by the controlled vocabulary and its size. Near-synonyms may include antonyms or represent points on a continuum. Examples: sea water / salt water [variant terms] meteors / meteorites / meteoroids [points on a continuum] smoothness / roughness [antonyms] For each of these sets of near synonyms, a vocabulary developer might decide to designate one of the terms as the preferred term with the understanding that it will retrieve all content described by the other terms as well. As a general rule, terms should be treated as near-synonyms only in subject areas that are peripheral to the domain of the controlled vocabulary. When concepts can be distinguished in the controlled vocabulary domain with sufficient precision to justify their representation as separate terms, they should be individually defined and retained. If two concepts cannot be consistently and reliably differentiated from each otherhowever, a term for one concept should be selected as the preferred term and a USE reference made from the other."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "near synonym"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/related_term> a skos:Concept ;
     schema:citation "National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "\\This relationship covers associations between terms that are neither equivalent nor hierarchical, yet the terms are semantically or conceptually associated to such an extent that the link between them should be made explicit in the controlled vocabulary, on the grounds that it may suggest additional terms for use in indexing or retrieval. \\ \\As a general guideline, whenever one term is used, the other should always be implied within the common frames of reference shared by the users of the controlled vocabulary. Moreover, one of the terms is often a necessary component in any explanation or definition of the other, the term cells, for example, forms a necessary part of the definition of cytology.\\"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "related term"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/synonym> a skos:Concept ;
     schema:citation "National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "\\Synonyms are terms whose meanings are regarded as the same or nearly the same in a wide range of contexts. True synonyms are rare in natural language. Although the terms are interchangeable in many circumstances, usage can vary as a result of such factors as level of formality, professional vs. lay context, or pejorative vs. neutral vs. complimentary connotation.\\"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "synonym"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/target_follows_source> a skos:Concept ;
     schema:citation "Based on Allen and Ferguson, 1994"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Relationship for partial ordering of concepts in a vocabulary that has some sort of ordering, for example a time scale consisting of time ordinal eras (geologic time scale). Equivalent to 'Intervals meet' relation of Allen and Ferguson (1994). Intervals are conterminous. End of source interval is same time instant (moment in terms of Allen and Ferguson, 1994) as beginning of target interval."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "target follows source"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_generic_relation> a skos:Concept ;
     schema:citation "National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term> ;
     skos:definition "This relationship identifies the link between a source class term and target members or species. This type of relationship is often called 'IsA'. A simple way to apply the test for validity described above is to formulate the statement '[narrower term] is a [broader term].' This relationship is also amenable to a logical \\all-and-some\\ test. An example that passes this test is that some members of the class succulent plants are known as cacti and that all cacti, by definition and regardless of context, are succulent plants. An example that fails the test is that some members of the class 'desert plants' are known as 'cacti', some, but not all, 'cacti' are 'desert plants'. These terms should therefore be assigned to different hierarchies in the controlled vocabulary, and both terms should be assigned to the same content object when indexing a work on \\cacti as desert plants..\\ Inverse relationship 'narrower generic term' is not included in this"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/most_specific_subsuming_term> ;
     skos:prefLabel "broader generic relation"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/instance_of> a skos:Concept ;
     schema:citation "National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term> ;
     skos:definition "This relationship identifies the link between an individual instance of a category, often a proper name, and a term for a general category of things or events, expressed by a common noun. This type of relationship is also known as an 'IsA' relationship. Example: Alps/mountain regions In the above example, the Alps are assigned to subordinate positions in a hierarchy, yet they are neither kinds nor parts of mountain regions, but represent specific examples or instances."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "instance of"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/most_specific_subsuming_term> a skos:Concept ;
     schema:citation "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_generic_relation> ;
     skos:definition "First role is term, second role is most specific subsuming term. Special case of 'broader term' thesaurus relationship."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "most specific subsuming term"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/part_of> a skos:Concept ;
     schema:citation "National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06), Allen and Ferguson, 1994."@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term> ;
     skos:definition "This relationship covers situations in which one concept (source) is inherently included in another (target), regardless of context, so that the terms can be organized into logical hierarchies, with the whole treated as a broader term. This relationship can be applied to several types of term, the three types enumerated below are not intended to be exhaustive. For time interval concepts (ordinal eras) (Allen and Ferguson, 1994), this relationship subsumes ‘During’, ‘Interval starts’, and ‘Interval finishes’. Examples: brain/central nervous system/nervous system, Ottawa/Ontario/Canada, regiment/battalion/military division/army, Cambrian/Paleozoic/Phanerozoic."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> ;
+    skos:inScheme cs: ;
     skos:prefLabel "part of"@en .
 

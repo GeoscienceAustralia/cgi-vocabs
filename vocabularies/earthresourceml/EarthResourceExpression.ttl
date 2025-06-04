@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2014-01-09"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -32,9 +32,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression> a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:inScheme cs: ;
     skos:member <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/alteration-halo>,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/botanical-anomaly>,
         <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/concealed>,
@@ -47,59 +47,59 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/alteration-halo> a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "The Earth resource, concealed or exposed, has an anomalous rock alteration halo."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:inScheme cs: ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "alteration halo"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/botanical-anomaly> a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "vegetation anomaly"@en ;
     skos:definition "The Earth resource, concealed or exposed, has an anomalous botanical signature (eg, particular plant growth or absence of plants)."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:inScheme cs: ;
     skos:notation "06.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "botanical anomaly"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/concealed> a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "The Earth resource is not exposed at the Earth's surface."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:inScheme cs: ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "concealed"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed> a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "The Earth resource is exposed at the Earth's surface."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/gossan> ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "exposed"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geochemical-anomaly> a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "The Earth resource, concealed or exposed, has an anomalous geochemical signature."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:inScheme cs: ;
     skos:notation "05.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "geochemical anomaly"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geophysical-anomaly> a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel
         "geophysikalische Anomalie"@de,
         "anomalía geofísica"@es,
@@ -108,15 +108,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "anomaliya geofizicheskaya"@ru,
         "geofysisk anomali"@sv ;
     skos:definition "The Earth resource, concealed or exposed, has an anomalous geophysical signature."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:inScheme cs: ;
     skos:notation "04.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "geophysical anomaly"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/gossan> a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel
         "ゴッサン" ,
         "eiserner Hut"@de,
@@ -137,7 +137,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "铁帽"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed> ;
     skos:definition "The surface expression of the Earth Resource is as highly weathered (oxidized) outcrop."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:inScheme cs: ;
     skos:notation "01.1.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "gossan"@en .
 

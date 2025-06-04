@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -41,18 +41,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/conventioncode/dip_dip_direction> a skos:Concept ;
     schema:citation "GeoSciML v.2"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "The orientation measurement consists of a dip and a dip direction. Dip is the angle that the structural surface (eg bedding, fault plane) makes with the horizontal measured perpendicular to the strike of the structure and in the vertical plane Dip direction is the azimuth perpindicular to the strike of the structure"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> ;
+    skos:inScheme cs: ;
     skos:prefLabel "dip dip direction"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/conventioncode/strike_dip_rhr> a skos:Concept ;
     schema:citation "GeoSciML v2"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "The strike and dip of planar data is listed according to the ‘right-hand rule’ or, as one looks along the strike direction, the surface dips to the right. Dip is the angle that the structural surface (eg bedding, fault plane) makes with the horizontal measured perpindicular to the strike of the structure and in the vertical plane"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> ;
+    skos:inScheme cs: ;
     skos:prefLabel "strike dip right hand rule"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> .
+    skos:topConceptOf cs: .
 

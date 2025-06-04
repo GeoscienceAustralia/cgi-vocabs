@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-28"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -47,7 +47,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/cylindrical> a skos:Concept ;
     schema:citation "BGS Mineral Occurrence Database"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "chimney"@en,
         "funnel"@en,
         "pipe"@en,
@@ -57,7 +57,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "tube-like"@en,
         "tubular"@en ;
     skos:definition "A roughly cylindrical body, which may reduce in diameter at one end like a funnel"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    skos:inScheme cs: ;
     skos:notation "05.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Pipe"@de,
         "cylindrical"@en,
@@ -66,26 +66,26 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "tubo"@it,
         "trubka"@ru,
         "pipe"@sv ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/irregular> a skos:Concept ;
     schema:citation "From CGI GeologicUnitMorphology vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Body geometry is irregular and can not be characterized using terminology."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    skos:inScheme cs: ;
     skos:notation "07.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "irregular"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/lensoidal> a skos:Concept ;
     schema:citation "Glossary of Geology. 4th Edition, AGI + DC, adapted from"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "lens"@en,
         "lenticular"@en ;
     skos:definition "A body bounded by converging surfaces (at least one of which is curved), thick in the middle and thinning out toward the edges, resembling a convex lens."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    skos:inScheme cs: ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Linse"@de,
         "lensoidal"@en,
@@ -94,15 +94,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "lente"@it,
         "linza"@ru,
         "lins"@sv ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/nodular> a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI, definition (b)"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "nodule"@en ;
     skos:definition "Having the shape of a nodule or occurring in the form of nodules; e.g. \"nodular ore\" such as a colloform mineral aggregate with a bulbed surface."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    skos:inScheme cs: ;
     skos:notation "04.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Knolle"@de,
         "nodular"@en,
@@ -111,36 +111,36 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "nodulo"@it,
         "nodul'"@ru,
         "nodul"@sv ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/podiform> a skos:Concept ;
     schema:citation "Dictionary of Mining 2nd ed, AGI 1997, adapted from"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "pod"@en,
         "pod-like"@en ;
     skos:definition "A roughly cylindrical body having a diameter that decreases to zero at both ends like a cigar or a potato."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    skos:inScheme cs: ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "podiform"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/saddle-shaped> a skos:Concept ;
     schema:citation "This vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "reverse saddle"@en,
         "saddle reef"@en ;
     skos:definition "Having a curved form like a fold hinge"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    skos:inScheme cs: ;
     skos:notation "06.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "saddle-shaped"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/tabular> a skos:Concept ;
     schema:citation "Dictionary of Mining 2nd ed, AGI 1997, adapted from"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "blanket"@en,
         "blanket-like"@en,
         "layer"@en,
@@ -149,7 +149,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "sheet-like"@en,
         "sheeted"@en ;
     skos:definition "A body having two dimensions that are much larger or longer than the third, e.g. a dyke-hosted or bed-hosted deposit"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> ;
+    skos:inScheme cs: ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Schicht"@de,
         "tabular"@en,
@@ -158,5 +158,5 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "strato"@it,
         "sloj"@ru,
         "lager"@sv ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> .
+    skos:topConceptOf cs: .
 

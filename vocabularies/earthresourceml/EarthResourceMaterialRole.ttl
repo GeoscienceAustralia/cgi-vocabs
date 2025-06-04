@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-28"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -48,22 +48,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/alteration-product> a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "(a) Any change in the mineralogic composition of a rock brought about by physical or chemical means, esp. by the action of hydrothermal solutions; also, a secondary, i.e. supergene, change in a rock or mineral. (b) Changes in the chemical or mineralogical composition of a rock produced by weathering."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    skos:inScheme cs: ;
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "alteration product"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/gangue> a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "merduk"@id,
         "tak berharga"@id,
         "废石"@zh ;
     skos:definition "The valueless rock or mineral aggregates in an ore; that part of an ore that is not economically desirable but cannot be avoided in mining. It is separated from the ore minerals during concentration"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    skos:inScheme cs: ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Gangart"@de,
         "gangue"@en,
@@ -82,14 +82,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "แร่กาก"@th,
         "đá mạch"@vi,
         "脉石"@zh ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/host-rock> a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "A body of rock serving as a host for other rocks or for mineral deposits; e.g. a pluton containing xenoliths, or any rock in which ore deposits occur. It is a somewhat more specific term than country rock."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    skos:inScheme cs: ;
     skos:notation "03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Wirtsgestein"@de,
         "host rock"@en,
@@ -98,14 +98,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "roccia ospite"@it,
         "poroda vmeshchayushchaya"@ru,
         "värdbergart"@sv ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/ore> a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "The naturally occurring material from which a mineral or minerals of economic value can be extracted at a reasonable profit. Also, the mineral(s) thus extracted. The term is generally but not always used to refer to metalliferous material, and is often modified by the name of the valuable constituent, e.g., \"iron ore\"."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    skos:inScheme cs: ;
     skos:notation "05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Erzrohstoff"@de,
         "ore"@en,
@@ -116,35 +116,35 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "erts"@nl,
         "ruda"@ru,
         "malm"@sv;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/primary> a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Rocks of which the constituents are newly formed particles that have never been constituents of previously formed rocks and that are not the products of alteration or replacement, esp. igneous rocks formed directly by solidification from a magma"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    skos:inScheme cs: ;
     skos:notation "06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "primary"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/secondary> a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Rocks composed of particles derived from the erosion or weathering of pre-existing rocks, such as residual, chemical, or organic rocks formed of detrital, precipitated, or organically accumulated materials; specif. clastic sedimentary rocks."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    skos:inScheme cs: ;
     skos:notation "07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "secondary"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/wall-rock> a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "associated rock"@en ;
     skos:definition "The rock adjacent to, enclosing, or including a vein, layer, or dissemination of ore minerals. It is commonly altered by epigenetic processes. The term implies more specific adjacency than host rock or country rock."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> ;
+    skos:inScheme cs: ;
     skos:notation "04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Nebengestein"@de,
         "wall rock"@en,
@@ -153,5 +153,5 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "salbanda"@it,
         "poroda bokovaya"@ru,
         "sidoberg"@sv ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> .
+    skos:topConceptOf cs: .
 

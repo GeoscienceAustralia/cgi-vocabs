@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -44,27 +44,27 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/defining_norm> a skos:Concept ;
     schema:citation "GeoSciML UML model scope notes"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "A description that specifies properties sufficient to identify a new occurrence as belonging to the class represented by the description. Basically these are the 'sufficient conditions' for class membership. Used when presented with a query 'I have an outcrop with these properties, which geologic unit should I assign to the outcrop?' DefiningNorm has to do with the intension of a ControlledConcept."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
+    skos:inScheme cs: ;
     skos:prefLabel "defining norm"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/instance> a skos:Concept ;
     schema:citation "GeoSciML UML model scope notes"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "A description that is specific to a particular observed occurrence. This is 'raw data', and its classification may start out as very general. There are kinds of narrowly defined ControlledConcepts that might not allow 'instances' that are different from the DefiningNorm. It might be worth considering a different relationship between MappedFeature and an Instance GeologicEntity, with the GeologicEntity role being 'description'."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
+    skos:inScheme cs: ;
     skos:prefLabel "instance"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/typical_norm> a skos:Concept ;
     schema:citation "GeoSciML UML model scope notes"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "A description that specifies properties to be expected of some occurrence associated with the GeologicEntity. This description may include many properties that are not part of the DefiningNorm. For example, the fact that granite is typically light-colored is not a defining property, but is certainly a useful typical property. These kinds of descriptions would be used to address queries like 'This area is within a polygon classified as Podunk Formation, what sort of lithology am I most likely to encounter when I start digging?' The Podunk Formation may be defined by the presence of a certain ammonite... TypicalNorm description would be constructed as a summary over many Instance descriptions."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> ;
+    skos:inScheme cs: ;
     skos:prefLabel "typicalNorm"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> .
+    skos:topConceptOf cs: .
 

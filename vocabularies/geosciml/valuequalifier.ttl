@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -56,81 +56,81 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/always> a skos:Concept ;
     schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "All instances of the observed entity have this property value"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    skos:inScheme cs: ;
     skos:prefLabel "always"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate> a skos:Concept ;
     schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Specified value is approximate"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    skos:inScheme cs: ;
     skos:prefLabel "approximate"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/common> a skos:Concept ;
     schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Reported property value is commonly observered"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    skos:inScheme cs: ;
     skos:prefLabel "common"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/equalTo> a skos:Concept ;
     schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Reported property value is the observered value"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    skos:inScheme cs: ;
     skos:prefLabel "equalTo"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/greaterThan> a skos:Concept ;
     schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Reported property value is lower bound"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    skos:inScheme cs: ;
     skos:prefLabel "greaterThan"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/lessThan> a skos:Concept ;
     schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Reported property value is upper bound"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    skos:inScheme cs: ;
     skos:prefLabel "lessThan"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/never> a skos:Concept ;
     schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Reported property value is never observed"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    skos:inScheme cs: ;
     skos:prefLabel "never"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/rare> a skos:Concept ;
     schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Reported property value is rarely observed"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    skos:inScheme cs: ;
     skos:prefLabel "rare"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/valuequalifier/sometimes> a skos:Concept ;
     schema:citation "GeoSciML UML model, definition this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Reported property value is observed occasionally"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> ;
+    skos:inScheme cs: ;
     skos:prefLabel "sometimes"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> .
+    skos:topConceptOf cs: .
 

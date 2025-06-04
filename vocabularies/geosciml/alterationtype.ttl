@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2010-11-27"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -62,9 +62,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Rock is altered, but type not specified. Any alteration type allowed."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration>,
         <http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration>,
         <http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration>,
@@ -89,96 +89,96 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation>,
         <http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration> ;
     skos:prefLabel "alteration type not specified"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "advanced argillic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "albitic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "alunitic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/argillic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "argillic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/calcsilicate_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "calcsilicate alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/carbonate_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "carbonate alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/chloritic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "chloritic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/deuteric_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "deuteric alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/epidote_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "epidote alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/greisen> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Greisen"@de,
         "greisen"@en,
         "greisen"@es,
@@ -200,92 +200,92 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/hematitic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "hematitic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/kaolinitic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "kaolinitic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/not_altered> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "unaltered"@en ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "Rock or sediment not altered."@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "not altered"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/potassic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "potassic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/propylitic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "propylitic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/pyritic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "pyritic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/red_rock_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "red rock alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/saussuritised> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "saussuritised"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/sericitic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "sericitic alteration"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/serpentinisation> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "serpentinisation"@en,
         "serpentinisation"@fr,
         "serpentinisasi"@id,
@@ -301,10 +301,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/silicification> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Verkieselung"@de,
         "silicification"@en,
         "silicificación"@es,
@@ -326,12 +326,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "peruralitan"@id,
         "次闪石化"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "uralitisation"@en,
         "ouralitisation"@fr,
         "uralitisasi"@id,
@@ -347,9 +347,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ;
     skos:definition "missing"@en ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ;
+    skos:inScheme cs: ;
     skos:prefLabel "zeolitic alteration"@en .
 

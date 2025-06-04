@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status>
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +7,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> a skos:ConceptScheme ;
+cs: a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-29"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -51,10 +51,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/not-operating> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "A mine has been operating and then closed or suspended"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/notOperating> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/mine-status/abandoned>,
         <http://resource.geosciml.org/classifier/cgi/mine-status/care-and-maintenance>,
         <http://resource.geosciml.org/classifier/cgi/mine-status/closed>,
@@ -62,72 +62,72 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifier/cgi/mine-status/retention> ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "not operating"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/operating> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "A mine is operating"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/operating> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/mine-status/operating-continuously>,
         <http://resource.geosciml.org/classifier/cgi/mine-status/operating-intermittently> ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "operating"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/under-development> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "A mine is under development - e.g feasibilty"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/underDevelopment> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:narrower <http://resource.geosciml.org/classifier/cgi/mine-status/construction>,
         <http://resource.geosciml.org/classifier/cgi/mine-status/feasibility>,
         <http://resource.geosciml.org/classifier/cgi/mine-status/pending-approval> ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "under development"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> .
+    skos:topConceptOf cs: .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/abandoned> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/not-operating> ;
     skos:definition "A mine is abandoned - one reason or another"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/abandoned> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "02.2.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "abandoned"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/care-and-maintenance> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/not-operating> ;
     skos:definition "A mine is under care and maintenance"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/careAndMaintenance> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "02.3.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "care and maintenance"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/closed> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/not-operating> ;
     skos:definition "A mine can be closed for several reasons, e.g. technical, economical or technico-economical. For example, it may be re-opened if the price of the exploited commodity increases."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/closed> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "02.1.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "closed"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/construction> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "bangunan"@id,
         "tafsiran"@id,
         "建造"@ja,
@@ -137,7 +137,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/under-development> ;
     skos:definition "A mine is under construction after obtaining licenses/permits"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/construction> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "03.1.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ingenieurbau"@de,
         "construction"@en,
@@ -160,67 +160,67 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/feasibility> a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/under-development> ;
     skos:definition "Technical economic study aimed at assessing the possibility to launching a mine venture."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/feasibility> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "03.3.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "feasibility"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/historic> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/not-operating> ;
     skos:definition "An 'old' mine which has been exploited before 1900, e.g. during Roman times, the Middle Ages, etc."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/historic> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "02.5.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "historic"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/operating-continuously> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/operating> ;
     skos:definition "A mine is operating continuously"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/operatingContinuously> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "01.1.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "operating continuously"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/operating-intermittently> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/operating> ;
     skos:definition "A mine is operating intermittently"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/operatingIntermittently> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "01.2.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "operating intermittently"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/pending-approval> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/under-development> ;
     skos:definition "Waiting for the exploitation authorization, generally given by a State Mining Engineering Department."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/pendingApproval> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "03.2.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "pending approval"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/mine-status/retention> a skos:Concept ;
     schema:citation "this vocabulary"@en ;
-    rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    rdfs:isDefinedBy cs: ;
     skos:altLabel "保留"@zh ;
     skos:broader <http://resource.geosciml.org/classifier/cgi/mine-status/not-operating> ;
     skos:definition "A mine can be kept unexploited until the price of contained commodity(ies) makes it economical."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/retention> ;
-    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> ;
+    skos:inScheme cs: ;
     skos:notation "02.4.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Zurückhaltung"@de,
         "retention"@en,
