@@ -1,7 +1,6 @@
 PREFIX : <http://resource.geosciml.org/classifier/cgi/end-use-potential/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
