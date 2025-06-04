@@ -1,5 +1,5 @@
 PREFIX : <http://resource.geosciml.org/classifier/cmmi/deposit-model/>
-PREFIX cs: <http://resource.geosciml.org/classifier/cmmi/deposit-model/>
+PREFIX cs: <http://resource.geosciml.org/classifier/cmmi/deposit-model>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -3119,7 +3119,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:name "Mineral Deposit Type" ;
 .
 
-<http://resource.geosciml.org/classifier/cgi/deposit-model>
+cs:
     a skos:ConceptScheme ;
     skos:definition "Minerals and groups of them from the Critical Mineral Mapping Initiative project"@en ;
     skos:hasTopConcept
