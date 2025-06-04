@@ -1,3 +1,5 @@
+PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code>
+PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
