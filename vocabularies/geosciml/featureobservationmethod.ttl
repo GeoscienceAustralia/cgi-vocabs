@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2010-02-04"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2010-02-04 SMR Start file produced from excel spreadsheet version of FeatureObservationMethod200811, using P. Golodonic xl2xml."@en,
+    skos:changeNote
+        "2010-02-04 SMR Start file produced from excel spreadsheet version of FeatureObservationMethod200811, using P. Golodonic xl2xml."@en,
         "2010-02-04 SMR Updated from 2010 01 version by adding broader categories for 'digital conversion...', Direct observation, indirect method, and 'synthesis....'"@en,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-11-28 SMR replace URN with http URI identifiers according to CGI URI scheme"@en,
@@ -30,13 +32,16 @@ cs: a skos:ConceptScheme ;
         :direct_observation,
         :indirect_method,
         :synthesis_from_multiple_sources ;
-    skos:prefLabel "Observation Method (Geologic Feature)"@en .
+    skos:prefLabel "Observation Method (Geologic Feature)"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/featureobservationmethod> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :borehole_cuttings_observation,
+    skos:member
+        :borehole_cuttings_observation,
         :borehole_geophysical_log_measurements,
         :data_from_single_published_description,
         :digital_conversion_from_published_source,
@@ -52,163 +57,202 @@ cs: a skos:ConceptScheme ;
         :synthesis_from_multiple_sources,
         :synthesis_of_multiple_outcrop_observations,
         :synthesis_of_multiple_published_descriptions ;
-    skos:prefLabel "Observation Method (Geologic Feature) - All Concepts"@en .
+    skos:prefLabel "Observation Method (Geologic Feature) - All Concepts"@en
+.
 
 
-:digital_conversion_from_published_source a skos:Concept ;
+:digital_conversion_from_published_source
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Feature observation is based on published information, converted to a digital representation for database application"@en ;
     skos:inScheme cs: ;
-    skos:narrower :data_from_single_published_description,
+    skos:narrower
+        :data_from_single_published_description,
         :synthesis_of_multiple_published_descriptions ;
     skos:prefLabel "digital conversion from published source"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:direct_observation a skos:Concept ;
+:direct_observation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Feature observation is result of direct visual observation by a geologist"@en ;
     skos:inScheme cs: ;
-    skos:narrower :borehole_cuttings_observation,
+    skos:narrower
+        :borehole_cuttings_observation,
         :drill_core_observation,
         :outcrop_observation ;
     skos:prefLabel "direct observation"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:indirect_method a skos:Concept ;
+:indirect_method
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Feature observation based on inference from proxy observation"@en ;
     skos:inScheme cs: ;
-    skos:narrower :borehole_geophysical_log_measurements,
+    skos:narrower
+        :borehole_geophysical_log_measurements,
         :remotely_sensed_data ;
     skos:prefLabel "indirect method"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:synthesis_from_multiple_sources a skos:Concept ;
+:synthesis_from_multiple_sources
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Feature observation is based on a synthesis of other observations by some compiler. The compiler may be the same individual that made the source observations."@en ;
     skos:inScheme cs: ;
-    skos:narrower :synthesis_of_multiple_outcrop_observations,
+    skos:narrower
+        :synthesis_of_multiple_outcrop_observations,
         :synthesis_of_multiple_published_descriptions ;
     skos:prefLabel "synthesis from multiple sources"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:borehole_cuttings_observation a skos:Concept ;
+:borehole_cuttings_observation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct_observation ;
     skos:definition "Data based on interpretation of borehole cuttings"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "borehole cuttings observation"@en .
+    skos:prefLabel "borehole cuttings observation"@en
+.
 
 
-:borehole_geophysical_log_measurements a skos:Concept ;
+:borehole_geophysical_log_measurements
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :indirect_method ;
     skos:definition "Data based on interpretation of geophysical measurement obtained by borehole logging tools."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "borehole geophysical log measurements"@en .
+    skos:prefLabel "borehole geophysical log measurements"@en
+.
 
 
-:data_from_single_published_description a skos:Concept ;
+:data_from_single_published_description
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :digital_conversion_from_published_source ;
     skos:definition "Data are extracted from a publised description of the feature"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "data from single published description"@en .
+    skos:prefLabel "data from single published description"@en
+.
 
 
-:drill_core_observation a skos:Concept ;
+:drill_core_observation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct_observation ;
     skos:definition "Data collected through observation of a single drill core interval."@en ;
     skos:inScheme cs: ;
-    skos:narrower :drill_core_observation_estimated_values,
+    skos:narrower
+        :drill_core_observation_estimated_values,
         :drill_core_observation_measured_values ;
-    skos:prefLabel "drill core observation"@en .
+    skos:prefLabel "drill core observation"@en
+.
 
 
-:drill_core_observation_estimated_values a skos:Concept ;
+:drill_core_observation_estimated_values
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :drill_core_observation ;
     skos:definition "Values for properties are estimated by observer."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "drill core observation estimated values"@en .
+    skos:prefLabel "drill core observation estimated values"@en
+.
 
 
-:drill_core_observation_measured_values a skos:Concept ;
+:drill_core_observation_measured_values
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :drill_core_observation ;
     skos:definition "Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler, etc.)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "drill core observation measured values"@en .
+    skos:prefLabel "drill core observation measured values"@en
+.
 
 
-:outcrop_observation a skos:Concept ;
+:outcrop_observation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct_observation ;
     skos:definition "Data collected in field through direct observation of a single outcrop. Observer defines scope of 'single outcrop' - may be one point location, or averaged over an extended but connected) area, e.g. a single polygon on a map.  Direct observation may include observation using a remote camera (e.g. downhole viewer, submarine camera)"@en ;
     skos:inScheme cs: ;
-    skos:narrower :outcrop_observation_estimated_values,
+    skos:narrower
+        :outcrop_observation_estimated_values,
         :outcrop_observation_measured_values ;
-    skos:prefLabel "outcrop observation"@en .
+    skos:prefLabel "outcrop observation"@en
+.
 
 
-:outcrop_observation_estimated_values a skos:Concept ;
+:outcrop_observation_estimated_values
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :outcrop_observation ;
     skos:definition "Values for properties are estimated by observer."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "outcrop observation estimated values"@en .
+    skos:prefLabel "outcrop observation estimated values"@en
+.
 
 
-:outcrop_observation_measured_values a skos:Concept ;
+:outcrop_observation_measured_values
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :outcrop_observation ;
     skos:definition "Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler, etc.)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "outcrop observation measured values"@en .
+    skos:prefLabel "outcrop observation measured values"@en
+.
 
 
-:remotely_sensed_data a skos:Concept ;
+:remotely_sensed_data
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :indirect_method ;
     skos:definition "Geologic unit or structure characterized based on remotely sensed data."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "remotely sensed data"@en .
+    skos:prefLabel "remotely sensed data"@en
+.
 
 
-:synthesis_of_multiple_outcrop_observations a skos:Concept ;
+:synthesis_of_multiple_outcrop_observations
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :synthesis_from_multiple_sources ;
     skos:definition "Data are the result of synthesis from multiple direct observations, posibly by more than one observer"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "synthesis of multiple outcrop observations"@en .
+    skos:prefLabel "synthesis of multiple outcrop observations"@en
+.
 
 
-:synthesis_of_multiple_published_descriptions a skos:Concept ;
+:synthesis_of_multiple_published_descriptions
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :digital_conversion_from_published_source,
         :synthesis_from_multiple_sources ;
     skos:definition "Data are the result of synthesis from multiple published descriptions"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "synthesis of multiple published descriptions"@en .
+    skos:prefLabel "synthesis of multiple published descriptions"@en
+.
 

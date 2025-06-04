@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2010-02-11"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
+    skos:changeNote
+        "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices#Identifier_value)"@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en,
         "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en,
@@ -26,13 +28,16 @@ cs: a skos:ConceptScheme ;
     skos:definition "This scheme specifies concepts used to describe planar fabrics in rocks, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Includes primary (eg, sedimentary and igneous) and deformation-related (eg, metamorphic and tectonic) planar fabrics. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Foliation Type vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept :foliation ;
-    skos:prefLabel "Foliation Type"@en .
+    skos:prefLabel "Foliation Type"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/foliationtype> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/foliationtype>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :anastomosing_spaced_cleavage,
+    skos:member
+        :anastomosing_spaced_cleavage,
         :bedding_fabric,
         :bedding_lamination_structure,
         :c_fabric,
@@ -106,18 +111,22 @@ cs: a skos:ConceptScheme ;
         :undulating_lamination,
         :vague_metamorphic_layering,
         :varve_lamination ;
-    skos:prefLabel "Foliation Type - All Concepts"@en .
+    skos:prefLabel "Foliation Type - All Concepts"@en
+.
 
 
-:foliation a skos:Concept ;
+:foliation
+    a skos:Concept ;
     schema:citation "Jackson 1997"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "葉状構造"@ja,
+    skos:altLabel
+        "葉状構造"@ja,
         "โฟลิเอชั่น"@th,
         "剥理"@zh ;
     skos:definition "Fabric defined by the planar arrangement of textural or structural features (fabric elements)."@en ;
     skos:inScheme cs: ;
-    skos:narrower :cleavage,
+    skos:narrower
+        :cleavage,
         :compound_foliation,
         :ductile_shear_banding_foliation,
         :grain_shape_foliation,
@@ -127,7 +136,8 @@ cs: a skos:ConceptScheme ;
         :primary_foliation,
         :schistosity,
         :tectonic_foliation ;
-    skos:prefLabel "Kristallisationsschieferung"@de,
+    skos:prefLabel
+        "Kristallisationsschieferung"@de,
         "foliation"@en,
         "foliación"@es,
         "foliaatio"@fi,
@@ -144,38 +154,46 @@ cs: a skos:ConceptScheme ;
         "ริ้วขนาน"@th,
         "phân phiến"@vi,
         "叶理"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:anastomosing_spaced_cleavage a skos:Concept ;
+:anastomosing_spaced_cleavage
+    a skos:Concept ;
     schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :spaced_cleavage ;
     skos:definition "spaced cleavage domains branch and rejoin, creating lens-shaped microlithons."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "anastomosing spaced cleavage"@en .
+    skos:prefLabel "anastomosing spaced cleavage"@en
+.
 
 
-:bedding_fabric a skos:Concept ;
+:bedding_fabric
+    a skos:Concept ;
     schema:citation "SLTTs 2004, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :primary_foliation ;
     skos:definition "Fabric defined by textural or mineralogic variations in sediment produced by depositional processes. May be manifested by lamination structure within the sediment, or by layering in which the individual layers (beds) are bounded by discontinuities related to events in the depositional history."@en ;
     skos:inScheme cs: ;
-    skos:narrower :bedding_lamination_structure,
+    skos:narrower
+        :bedding_lamination_structure,
         :crude_or_indistinct_bedding,
         :parallel_bedding,
         :sedimentary_layering ;
-    skos:prefLabel "bedding fabric"@en .
+    skos:prefLabel "bedding fabric"@en
+.
 
 
-:bedding_lamination_structure a skos:Concept ;
+:bedding_lamination_structure
+    a skos:Concept ;
     schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_fabric ;
     skos:definition "A surface internal to the containing sediment mass defined by textural or mineralogical variation, produced by sediment deposition process, and reflecting the orientation of the original depositional surface. Syn Laminated structure (SLTTs 2004)."@en ;
     skos:inScheme cs: ;
-    skos:narrower :cryptomicrobial_lamination,
+    skos:narrower
+        :cryptomicrobial_lamination,
         :fissile_lamination,
         :impersistent_lamination,
         :irregular_lamination,
@@ -183,28 +201,34 @@ cs: a skos:ConceptScheme ;
         :planar_lamination,
         :undulating_lamination,
         :varve_lamination ;
-    skos:prefLabel "bedding lamination structure"@en .
+    skos:prefLabel "bedding lamination structure"@en
+.
 
 
-:c_fabric a skos:Concept ;
+:c_fabric
+    a skos:Concept ;
     schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ductile_shear_banding_foliation ;
     skos:definition "Ductile shear banding foliation defined by spaced, discrete planar zones of high strain less than 1mm thick. Commonly associated with a particle flattening ('S') fabric to form a mylonitic foliation."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "c fabric"@en .
+    skos:prefLabel "c fabric"@en
+.
 
 
-:cleavage a skos:Concept ;
+:cleavage
+    a skos:Concept ;
     schema:citation "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "劈開面"@ja,
+    skos:altLabel
+        "劈開面"@ja,
         "쪼개짐"@ko,
         "劈理"@zh ;
     skos:broader :tectonic_foliation ;
     skos:definition "A tectonic foliation in a rock characterized by a tendency for the rock to split along a regular set of parallel or sub-parallel closely spaced surfaces. Cleavage is a more general term than schistosity because schistosity need not be present in order for a rock to display cleavage. Cleavage domains or parting surfaces are not spaced more than 5 cm apart on average (Borradaille et al., 1982)"@en ;
     skos:inScheme cs: ;
-    skos:narrower :cleavage_parallel_to_bedding,
+    skos:narrower
+        :cleavage_parallel_to_bedding,
         :close_joints,
         :continuous_cleavage,
         :crenulation_cleavage,
@@ -228,371 +252,452 @@ cs: a skos:ConceptScheme ;
         "klyvbarhet"@sv,
         "แนวแตกเรียบ"@th,
         "thớ chẻ"@vi,
-        "解理"@zh .
+        "解理"@zh
+.
 
 
-:cleavage_parallel_to_bedding a skos:Concept ;
+:cleavage_parallel_to_bedding
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :cleavage,
         :compound_foliation ;
     skos:definition "Composite fabric in which a cleavage is developed parallel to bedding."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "cleavage parallel to bedding"@en .
+    skos:prefLabel "cleavage parallel to bedding"@en
+.
 
 
-:close_joints a skos:Concept ;
+:close_joints
+    a skos:Concept ;
     schema:citation "Borradaile et al. 1982, This Vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :cleavage,
         :joint_fabric ;
     skos:definition "Foliation defined by parting surfaces (cleavage domains) that have no apparent thickness, are spaced between 5 cm and 25 cm, and do not crenulate an older foliation. Fabric intermediate between typical cleavage and joints. Parting surfaces are regularly spaced, and penetrative on a 1-10 m scale. 5 cm upper limit on spacing of 'cleavage domains' in a 'cleavage 'fabric is suggested by Borradaile et al. [1982]."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "close joints"@en .
+    skos:prefLabel "close joints"@en
+.
 
 
-:comb_layering a skos:Concept ;
+:comb_layering
+    a skos:Concept ;
     schema:citation "Neuendorf et al. 2005, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :layering ;
     skos:definition "Layering fabric defined by layers that have internal comb structure. Layer boundaries are the termination surfaces for the constituent crystals."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "comb layering"@en .
+    skos:prefLabel "comb layering"@en
+.
 
 
-:compositional_layering a skos:Concept ;
+:compositional_layering
+    a skos:Concept ;
     schema:citation "this vocabulary, submitted by British Antarctic Survey"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :layering ;
     skos:definition "Layering fabric defined by layers that have different mineralogic composition."@en ;
     skos:inScheme cs: ;
-    skos:narrower :metamorphic_differentiation_layering,
+    skos:narrower
+        :metamorphic_differentiation_layering,
         :metamorphic_layering_inherited_from_protolith,
         :mineralogical_layering ;
-    skos:prefLabel "compositional layering"@en .
+    skos:prefLabel "compositional layering"@en
+.
 
 
-:compound_foliation a skos:Concept ;
+:compound_foliation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :foliation ;
     skos:definition "Foliation that includes fabric elements indicating classification with foliation types of different genetic origin, e.g. cleavage parallel to bedding is a compound fabric with a sedimentary foliation and a tectonic foliation. No connotation of genetic origin of fabric elements."@en ;
     skos:inScheme cs: ;
-    skos:narrower :cleavage_parallel_to_bedding,
+    skos:narrower
+        :cleavage_parallel_to_bedding,
         :compound_metamorphic_foliation,
         :layered_mylonitic_foliation ;
-    skos:prefLabel "compound foliation"@en .
+    skos:prefLabel "compound foliation"@en
+.
 
 
-:compound_metamorphic_foliation a skos:Concept ;
+:compound_metamorphic_foliation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :compound_foliation ;
     skos:definition "A compound foliation in which the constituent fabric elements are of metamorphic origin."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compound metamorphic foliation"@en .
+    skos:prefLabel "compound metamorphic foliation"@en
+.
 
 
-:continuous_cleavage a skos:Concept ;
+:continuous_cleavage
+    a skos:Concept ;
     schema:citation "Borradaile et al 1982"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :cleavage ;
     skos:definition "A cleavage that is statistically homogeneous down to the scale of individual mineral grains."@en ;
     skos:inScheme cs: ;
-    skos:narrower :continuous_crenulation_cleavage,
+    skos:narrower
+        :continuous_crenulation_cleavage,
         :phyllitic_cleavage,
         :slaty_cleavage ;
-    skos:prefLabel "continuous cleavage"@en .
+    skos:prefLabel "continuous cleavage"@en
+.
 
 
-:continuous_crenulation_cleavage a skos:Concept ;
+:continuous_crenulation_cleavage
+    a skos:Concept ;
     schema:citation "Borradaile et al 1982"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :continuous_cleavage,
         :crenulation_cleavage ;
     skos:definition "Cleavage defined by long, thin limbs of crenulation folds of pre-existing foliation, in which the boundaries between cleavage domains and lithons are gradational. Both the crenulation foliation and the crenulated (older) foliation are easily visible. Grades to spaced crenulation cleavage as boundaries of cleavage domains become sharp, and to schistosity or compositional layering as the crenulation foliation obscures the crenulated foliation to become the dominant fabric in the rock. In many rocks with continuous crenulation cleavage, the tendency to part along the cleavage may be weak, thus the rock may not technically meet the definition of 'cleavage as used in this vocabulary."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "continuous crenulation cleavage"@en .
+    skos:prefLabel "continuous crenulation cleavage"@en
+.
 
 
-:crenulation_cleavage a skos:Concept ;
+:crenulation_cleavage
+    a skos:Concept ;
     schema:citation "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :cleavage ;
     skos:definition "Cleavage that is overprinted on an older foliation that is folded to some degree in association with development of the younger cleavage. Cleavage domains commonly associated with long limbs of crenulation folds, and hinge surfaces of folds are roughly parallel. Wavelength of crenulation folds is less than or equal to 1 cm. Cleavage defined by limbs of microfolds coincident with zones of mineral differentiation"@en ;
     skos:inScheme cs: ;
-    skos:narrower :continuous_crenulation_cleavage,
+    skos:narrower
+        :continuous_crenulation_cleavage,
         :discrete_crenulation_cleavage ;
-    skos:prefLabel "crenulation cleavage"@en .
+    skos:prefLabel "crenulation cleavage"@en
+.
 
 
-:crude_or_indistinct_bedding a skos:Concept ;
+:crude_or_indistinct_bedding
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_fabric ;
     skos:definition "Bedding defined by surfaces that are not distinct, e.g. by gradational grain size variations."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "crude or indistinct bedding"@en .
+    skos:prefLabel "crude or indistinct bedding"@en
+.
 
 
-:cryptomicrobial_lamination a skos:Concept ;
+:cryptomicrobial_lamination
+    a skos:Concept ;
     schema:citation "GGIPAC"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_lamination_structure ;
     skos:definition "Fabric defined by fine laminae formed by the trapping of grains and lime precipitation in a microbial mat."@en ;
     skos:inScheme cs: ;
     skos:narrower :stromatolitic_lamination ;
-    skos:prefLabel "cryptomicrobial lamination"@en .
+    skos:prefLabel "cryptomicrobial lamination"@en
+.
 
 
-:cumulate_layering a skos:Concept ;
+:cumulate_layering
+    a skos:Concept ;
     schema:citation "Carmichael et al 1974, Best 1982"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous_layering ;
     skos:definition "Layering in igneous rocks in which layers are characterized by variation in relative proportion of magmatically crystallized minerals. Typically a pattern of mineralogical variation will be repeated many times in a vertical section with layers of relatively consistent thickness. See photos in Best [1982] p. 176-177. Gravity-stratified layers typically have mafic minerals at the base and plagioclase at the top and are interpreted to form by crystal settling in magma."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Kumulatgestein"@de,
+    skos:prefLabel
+        "Kumulatgestein"@de,
         "cumulate layering"@en,
         "acumulado"@es,
         "kumulaatit"@fi,
         "cumulato"@it,
         "kumulat"@ru,
-        "kumulat"@sv .
+        "kumulat"@sv
+.
 
 
-:discrete_cleavage a skos:Concept ;
+:discrete_cleavage
+    a skos:Concept ;
     schema:citation "Borradaile et al., 1982"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :spaced_cleavage ;
     skos:definition "Spaced cleavage in which cleavage domains have sharply defined edges."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "discrete cleavage"@en .
+    skos:prefLabel "discrete cleavage"@en
+.
 
 
-:discrete_crenulation_cleavage a skos:Concept ;
+:discrete_crenulation_cleavage
+    a skos:Concept ;
     schema:citation "Borradaile et al 1982"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :crenulation_cleavage,
         :spaced_cleavage ;
     skos:definition "Crenulation cleavage in which the cleavage domains have discrete boundaries. Amplitude of crenulation folds tends to be small."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "discrete crenulation cleavage"@en .
+    skos:prefLabel "discrete crenulation cleavage"@en
+.
 
 
-:discrete_disjunct_spaced_cleavage a skos:Concept ;
+:discrete_disjunct_spaced_cleavage
+    a skos:Concept ;
     schema:citation "Neuendorf et al. 2005, Borradaile et al. 1982."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :spaced_cleavage ;
     skos:definition "Disjunct spaced cleavage defined by discrete cleavage surfaces, typically in low-grade clastic rocks. Syn. Fracture cleavage."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "discrete disjunct spaced cleavage"@en .
+    skos:prefLabel "discrete disjunct spaced cleavage"@en
+.
 
 
-:disjunctive_cleavage a skos:Concept ;
+:disjunctive_cleavage
+    a skos:Concept ;
     schema:citation "Borradaile et al. 1982"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :cleavage ;
     skos:definition "A spaced cleavage independent of any pre-existing mineral orientation, cleavage in which there is no systematic relationship between a pre-existing preferred orientation and the superimposed cleavage. (Borradaile et al., 1982)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "disjunctive cleavage"@en .
+    skos:prefLabel "disjunctive cleavage"@en
+.
 
 
-:domainal_cleavage a skos:Concept ;
+:domainal_cleavage
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :cleavage ;
     skos:definition "Fabric in which domains of more strongly developed (closely spaced) cleavage are separated by lenses of weakly or non-cleaved rock. Typically observed on outcrop scale and used for geologic unit description"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "domainal cleavage"@en .
+    skos:prefLabel "domainal cleavage"@en
+.
 
 
-:ductile_shear_banding_foliation a skos:Concept ;
+:ductile_shear_banding_foliation
+    a skos:Concept ;
     schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_foliation ;
     skos:definition "Foliation defined by regularly spaced ductile shear bands at the scale of descripiton."@en ;
     skos:inScheme cs: ;
     skos:narrower :c_fabric ;
-    skos:prefLabel "ductile shear banding foliation"@en .
+    skos:prefLabel "ductile shear banding foliation"@en
+.
 
 
-:eutaxitic_foliation a skos:Concept ;
+:eutaxitic_foliation
+    a skos:Concept ;
     schema:citation "Neuendorf et al. 2005, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :primary_igneous_foliation ;
     skos:definition "Foliation defined by flattened pumice clasts or glass shards, aligned elongate lithic fragments, variations in composition, vesicularity, crystallinity, grain size, spherulite and lithophysae abundance, or the degree of devitrification in a welded tuff. This term denotes interpretation that foliation formed during compaction and welding of tuff."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "eutaxitic foliation"@en .
+    skos:prefLabel "eutaxitic foliation"@en
+.
 
 
-:fissile_lamination a skos:Concept ;
+:fissile_lamination
+    a skos:Concept ;
     schema:citation "SLTTs 2004, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_lamination_structure ;
     skos:definition "Diffuse to distinct lamination in mudstones and mud, defined by the alignment of clay minerals. Lacks distinct very-fine scale layering and repetition of couplets that characterize varves. Essentially a continuous cleavage parallel to bedding, but considered a sedimentary structure related to sediment compaction during diagenesis."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "fissile lamination"@en .
+    skos:prefLabel "fissile lamination"@en
+.
 
 
-:flaser_structure a skos:Concept ;
+:flaser_structure
+    a skos:Concept ;
     schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_foliation ;
     skos:definition "Tectonic foliation defined by lenses and layers of original or relatively unaltered granular minerals surrounded by a matrix of highly sheared and crushed material. No connotation of metamorphic grade."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "flaser structure"@en .
+    skos:prefLabel "flaser structure"@en
+.
 
 
-:flow_layering a skos:Concept ;
+:flow_layering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :layering ;
     skos:definition "Layering produced by flow of magma, lava, or diapiric flow of sedimentary rock. Distinction from eutaxitic foliation may be difficult."@en ;
     skos:inScheme cs: ;
     skos:narrower :lava_flow_banding ;
-    skos:prefLabel "flow layering"@en .
+    skos:prefLabel "flow layering"@en
+.
 
 
-:generic_mylonitic_foliation a skos:Concept ;
+:generic_mylonitic_foliation
+    a skos:Concept ;
     schema:citation "NADM metamorphic rock vocabulary SLTTm1.0 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_foliation ;
     skos:definition "Foliation defined by the shapes of deformed mineral grains or grain aggregates having aspect ratios greater than 1.5:1, greater than 10 percent of the rock is composed of 'matrix' showing evidence of tectonic reduction in grain size, and the foliation and matrix are interpreted to be the product of continuous, crystal-plastic deformation processes. Generic class is used when data are insufficient to determine classification to protomylontic, mylonite, or ultramylonitc foliation, or to specify that any sort of mylontic foliation may be present."@en ;
     skos:inScheme cs: ;
-    skos:narrower :layered_mylonitic_foliation,
+    skos:narrower
+        :layered_mylonitic_foliation,
         :mylonite_foliation,
         :protomylonite_foliation,
         :ultramylonite_foliation ;
-    skos:prefLabel "generic mylonitic foliation"@en .
+    skos:prefLabel "generic mylonitic foliation"@en
+.
 
 
-:gneissic_layering a skos:Concept ;
+:gneissic_layering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_layering ;
     skos:definition "Compositional layering in a metamorphic rock, syn. gneissic banding"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Gneis-Gefuege"@de,
+    skos:prefLabel
+        "Gneis-Gefuege"@de,
         "gneissic layering"@en,
         "estructura gneísica"@es,
         "gneissimäinen rakenne"@fi,
         "tessitura gneissica"@it,
         "gnejsovyj"@ru,
-        "gnejsig textur"@sv .
+        "gnejsig textur"@sv
+.
 
 
-:grain_shape_foliation a skos:Concept ;
+:grain_shape_foliation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :foliation ;
     skos:definition "Foliation defined by the alignment of oblate particles, which may be detrital grains, crystals, or crystalline grain aggregates."@en ;
     skos:inScheme cs: ;
-    skos:narrower :imbricated_clast_fabric,
+    skos:narrower
+        :imbricated_clast_fabric,
         :s_fabric ;
-    skos:prefLabel "grain shape foliation"@en .
+    skos:prefLabel "grain shape foliation"@en
+.
 
 
-:igneous_flow_foliation a skos:Concept ;
+:igneous_flow_foliation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :primary_igneous_foliation ;
     skos:definition "Foliation interpreted to be due to flow in a body of magma or lava. Includes flow banding in lava, and foliation defined by aligned crystals in a phaneritic igneous rock.."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "igneous flow foliation"@en .
+    skos:prefLabel "igneous flow foliation"@en
+.
 
 
-:igneous_lamination a skos:Concept ;
+:igneous_lamination
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous_layering,
         :primary_igneous_foliation ;
     skos:definition "Foliation defined by surfaces of textural or mineralogical variation formed by igneous processes. If the lamination surfaces are regularly spaced, they may be used to define layers."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "igneous lamination"@en .
+    skos:prefLabel "igneous lamination"@en
+.
 
 
-:igneous_layering a skos:Concept ;
+:igneous_layering
+    a skos:Concept ;
     schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :layering,
         :primary_igneous_foliation ;
     skos:definition "Layering that is the product of processes operating in magma or lava. syn. magmatic layering"@en ;
     skos:inScheme cs: ;
-    skos:narrower :cumulate_layering,
+    skos:narrower
+        :cumulate_layering,
         :igneous_lamination,
         :igneous_textural_layering,
         :lava_flow_banding,
         :rhythmic_layering ;
-    skos:prefLabel "igneous layering"@en .
+    skos:prefLabel "igneous layering"@en
+.
 
 
-:igneous_textural_layering a skos:Concept ;
+:igneous_textural_layering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous_layering ;
     skos:definition "Layering defined by grain size/ grain shape variations resulting from crystallization processes in igneous rock, most commonly observed in pegmatite/aplite dikes or bodies, and in Laramide leucogranites of Wilderness suite in Arizona."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "igneous textural layering"@en .
+    skos:prefLabel "igneous textural layering"@en
+.
 
 
-:imbricated_clast_fabric a skos:Concept ;
+:imbricated_clast_fabric
+    a skos:Concept ;
     schema:citation "based on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :grain_shape_foliation,
         :primary_foliation ;
     skos:definition "Fabric defined by long axis of tabular clasts stacked like shingles to define a surface that makes a small angle with the bedding surface. A depositional fabric formed by disk-shaped or elongate pebbles all tilted in the same direction, flat sides commonly dip upstream"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "imbricated clast fabric"@en .
+    skos:prefLabel "imbricated clast fabric"@en
+.
 
 
-:impersistent_lamination a skos:Concept ;
+:impersistent_lamination
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_lamination_structure ;
     skos:definition "Lamination defined by discontinuous surfaces"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "impersistent lamination"@en .
+    skos:prefLabel "impersistent lamination"@en
+.
 
 
-:irregular_lamination a skos:Concept ;
+:irregular_lamination
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_lamination_structure ;
     skos:definition "Lamination fabric in which individual lamina or groups of lamina are warped in an irregular fashion, like a flattened peice of crumpled paper. A crude planar orientation is discernible."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "irregular lamination"@en .
+    skos:prefLabel "irregular lamination"@en
+.
 
 
-:joint_fabric a skos:Concept ;
+:joint_fabric
+    a skos:Concept ;
     schema:citation "Borradaile et al 1982"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :foliation ;
     skos:definition "Fabric defined by parting surfaces in rock that occur in crudely parallel orientation, spaced greater than 5 cm on average if in a very regular joint set. Spacing is more variable and alignment of surfaces is cruder that cleavage. Typically applies to geologic unit description."@en ;
     skos:inScheme cs: ;
     skos:narrower :close_joints ;
-    skos:prefLabel "joint fabric"@en .
+    skos:prefLabel "joint fabric"@en
+.
 
 
-:laminated_metamorphic_layering a skos:Concept ;
+:laminated_metamorphic_layering
+    a skos:Concept ;
     schema:citation "Weiss 1972, Borradaile et al 1982, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_layering ;
     skos:definition "Metamorphic layering in which the layers are less than 1 cm thick. See Weiss, L.E. [1972] plate 36 or Borraidaile et al [1982] plate 137A B (page 331), plate140A (page 337) for examples."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "laminated metamorphic layering"@en .
+    skos:prefLabel "laminated metamorphic layering"@en
+.
 
 
-:lava_flow_banding a skos:Concept ;
+:lava_flow_banding
+    a skos:Concept ;
     schema:citation "GGIPAC, Australia"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :flow_layering,
         :igneous_layering ;
     skos:definition "Layering formed by laminar lava flow, defined by variations in composition, vesicularity, crystallinity, grainsize, spherulite and lithophysae abundance, degree of devitrification, colour, and/or parting surfaces, syn. flow lamination, flow banding"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "lava flow banding"@en .
+    skos:prefLabel "lava flow banding"@en
+.
 
 
-:layered_mylonitic_foliation a skos:Concept ;
+:layered_mylonitic_foliation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :compound_foliation,
@@ -600,16 +705,19 @@ cs: a skos:ConceptScheme ;
         :layering ;
     skos:definition "Compound foliation in which mylonitic foliation is present in rock that has continuous compositional layering. Continuous means individual layers can be traced more than 1 m."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "layered mylonitic foliation"@en .
+    skos:prefLabel "layered mylonitic foliation"@en
+.
 
 
-:layering a skos:Concept ;
+:layering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :foliation ;
     skos:definition "Foliation defined by stacked, differentiable, sheet-like masses of material (layers), with no denotation of the nature (composition, grain size, grain shape...) or origin (igneous, sedimentary, metamorphic) of the layers."@en ;
     skos:inScheme cs: ;
-    skos:narrower :comb_layering,
+    skos:narrower
+        :comb_layering,
         :compositional_layering,
         :flow_layering,
         :igneous_layering,
@@ -617,19 +725,23 @@ cs: a skos:ConceptScheme ;
         :metamorphic_layering,
         :sedimentary_layering,
         :tectonic_layering ;
-    skos:prefLabel "layering"@en .
+    skos:prefLabel "layering"@en
+.
 
 
-:low_temperature_flow_foliation a skos:Concept ;
+:low_temperature_flow_foliation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :foliation ;
     skos:definition "Foliation interpreted to be due to flow in a body of rock (typically mudrock, salt, or anhydrite) under low-temperature (non-metamorphic) conditions, typically related to diapirism."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "low temperature flow foliation"@en .
+    skos:prefLabel "low temperature flow foliation"@en
+.
 
 
-:metamorphic_differentiation_layering a skos:Concept ;
+:metamorphic_differentiation_layering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :compositional_layering,
@@ -642,25 +754,30 @@ cs: a skos:ConceptScheme ;
         "metamorfinen differentioituminen"@fi,
         "differenziazione metamorfica"@it,
         "differentsiatsiya metamorficheskaya"@ru,
-        "metamorf differentiering"@sv .
+        "metamorf differentiering"@sv
+.
 
 
-:metamorphic_layering a skos:Concept ;
+:metamorphic_layering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :layering ;
     skos:definition "Layering of unspecified origin in a metamorphic rock. Compositional or textural variations may be inherited from protolith, or result from metamorphic processes."@en ;
     skos:inScheme cs: ;
-    skos:narrower :gneissic_layering,
+    skos:narrower
+        :gneissic_layering,
         :laminated_metamorphic_layering,
         :metamorphic_differentiation_layering,
         :metamorphic_layering_inherited_from_protolith,
         :stromatic_layering,
         :vague_metamorphic_layering ;
-    skos:prefLabel "metamorphic layering"@en .
+    skos:prefLabel "metamorphic layering"@en
+.
 
 
-:metamorphic_layering_inherited_from_protolith a skos:Concept ;
+:metamorphic_layering_inherited_from_protolith
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :compositional_layering,
@@ -668,148 +785,181 @@ cs: a skos:ConceptScheme ;
     skos:definition "Metamorphic layering in which layer differntiation is relict of compositional variations in the protolith, typically heterogeneous sedimentary or volcanic rock."@en ;
     skos:inScheme cs: ;
     skos:narrower :transposed_bedding_layering ;
-    skos:prefLabel "metamorphic layering inherited from protolith"@en .
+    skos:prefLabel "metamorphic layering inherited from protolith"@en
+.
 
 
-:mineralogical_layering a skos:Concept ;
+:mineralogical_layering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :compositional_layering ;
     skos:definition "Generic layering defined by variations in mineralogy between individual sheets of material"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "mineralogical layering"@en .
+    skos:prefLabel "mineralogical layering"@en
+.
 
 
-:mylonite_foliation a skos:Concept ;
+:mylonite_foliation
+    a skos:Concept ;
     schema:citation "SLTTm 2004, Sibson 1977"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :generic_mylonitic_foliation ;
     skos:definition "Generic mylonitic foliation in which 50-90 percent of rock is matrix due to tectonic grain size reduction processes. Planar fabric is very apparent due to flattening of mineral grains, development of shear surfaces, and alignment of tabular mineral grains. Lineation is typically present and easily observed."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Mylonit"@de,
+    skos:prefLabel
+        "Mylonit"@de,
         "mylonite foliation"@en,
         "milonita"@es,
         "myloniitit"@fi,
         "milonite"@it,
         "milonit"@ru,
-        "mylonit"@sv .
+        "mylonit"@sv
+.
 
 
-:parallel_bedding a skos:Concept ;
+:parallel_bedding
+    a skos:Concept ;
     schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_fabric ;
     skos:definition "Bedding defined by parallel surfaces. Bedding structure may be lamination or layering."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "parallel bedding"@en .
+    skos:prefLabel "parallel bedding"@en
+.
 
 
-:parallel_bedding_lamination a skos:Concept ;
+:parallel_bedding_lamination
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_lamination_structure ;
     skos:definition "Bedding lamination structure in which all visible bedding surfaces are parallel."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "parallel bedding lamination"@en .
+    skos:prefLabel "parallel bedding lamination"@en
+.
 
 
-:phyllitic_cleavage a skos:Concept ;
+:phyllitic_cleavage
+    a skos:Concept ;
     schema:citation "SLTTm 2004, Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :continuous_cleavage ;
     skos:definition "Continuous cleavage in phyllitic rock, phyllosilicate mineral grains just barely visible, grain size midway between slaty cleavage and schist, typically has a satiny lustre."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "phyllitic cleavage"@en .
+    skos:prefLabel "phyllitic cleavage"@en
+.
 
 
-:planar_lamination a skos:Concept ;
+:planar_lamination
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_lamination_structure ;
     skos:definition "Lamination that is defined by planar bedding surfaces at the scale of description."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "planar lamination"@en .
+    skos:prefLabel "planar lamination"@en
+.
 
 
-:primary_foliation a skos:Concept ;
+:primary_foliation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :foliation ;
     skos:definition "Foliation formed during original process of deposition or crystallization of an igneous or sedimentary material."@en ;
     skos:inScheme cs: ;
-    skos:narrower :bedding_fabric,
+    skos:narrower
+        :bedding_fabric,
         :imbricated_clast_fabric,
         :primary_igneous_foliation ;
-    skos:prefLabel "primary foliation"@en .
+    skos:prefLabel "primary foliation"@en
+.
 
 
-:primary_igneous_foliation a skos:Concept ;
+:primary_igneous_foliation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :primary_foliation ;
     skos:definition "Foliation interpreted to be the product of igneous processes, formed in the rock while melt was still present.."@en ;
     skos:inScheme cs: ;
-    skos:narrower :eutaxitic_foliation,
+    skos:narrower
+        :eutaxitic_foliation,
         :igneous_flow_foliation,
         :igneous_lamination,
         :igneous_layering ;
-    skos:prefLabel "primary igneous foliation"@en .
+    skos:prefLabel "primary igneous foliation"@en
+.
 
 
-:protomylonite_foliation a skos:Concept ;
+:protomylonite_foliation
+    a skos:Concept ;
     schema:citation "SLTTm 2004, Sibson 1977"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :generic_mylonitic_foliation ;
     skos:definition "Generic mylonitic foliation in which 10-50 percent of rock is matrix due to tectonic grain size reduction processes. Planar aspect of fabric may be quite subtle in weakly deformed rocks."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "protomylonite foliation"@en .
+    skos:prefLabel "protomylonite foliation"@en
+.
 
 
-:rhythmic_layering a skos:Concept ;
+:rhythmic_layering
+    a skos:Concept ;
     schema:citation "Jackson 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous_layering ;
     skos:definition "Layering in igneous rock defined by repeated gravity-stratified layers of typically mafic minerals at the base and plagioclase at the top, formed by crystal settling"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "rhythmic layering"@en .
+    skos:prefLabel "rhythmic layering"@en
+.
 
 
-:rough_cleavage a skos:Concept ;
+:rough_cleavage
+    a skos:Concept ;
     schema:citation "Neuendorf et al. 2005, Borradaile et al, 1990"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :cleavage ;
     skos:definition "Disjunct (Borradaile et al, 1990) cleavage characterized by short, discontinuous clavage surfaces, typically with concentrations of phyllosilicate minerals. Common in micaceous sandstone."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "rough cleavage"@en .
+    skos:prefLabel "rough cleavage"@en
+.
 
 
-:s_fabric a skos:Concept ;
+:s_fabric
+    a skos:Concept ;
     schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :grain_shape_foliation,
         :tectonic_foliation ;
     skos:definition "Foliation in mylonite defined by alignment of tabular crystals or deformed mineral grains, often with sigmoid shape, typically curving into an associated ductile shear banding foliation (C fabric) with a consistent sense."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "s fabric"@en .
+    skos:prefLabel "s fabric"@en
+.
 
 
-:scaly_cleavage a skos:Concept ;
+:scaly_cleavage
+    a skos:Concept ;
     schema:citation "Based on Jackson 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :spaced_cleavage ;
     skos:definition "Discrete, anastomosing spaced cleavage characterized by smooth and highly polished/slickensided cleavage surfaces that intersect with one another to form lensoid flakes, scales or chips. Common in pelitic rocks in shear zones, melange, or deformed accretionary complexes."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "scaly cleavage"@en .
+    skos:prefLabel "scaly cleavage"@en
+.
 
 
-:schistosity a skos:Concept ;
+:schistosity
+    a skos:Concept ;
     schema:citation "NADM metamorphic rock vocabulary SLTTm1.0 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "片理面"@ja ;
+    skos:altLabel
+        "片理面"@ja ;
     skos:broader :tectonic_foliation ;
     skos:definition "A fabric defined the parallel, planar arrangement of mineral grains having a platy, lamellar, or tabular crystallographic habit that are oriented in a continuous planar or rarely a linear fabric. Schistosity is commonly, but not necessarily, a crystalloblastic foliation. Platy mineral grains typically 1 to 10 mm across (Jackson, 1997), at smaller grain size grades into phyllitic cleavage. Schistosity is typically associated with a continuous cleavage due to the tendency to part parallel to the aligned mineral grains."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Schieferung"@de,
+    skos:prefLabel
+        "Schieferung"@de,
         "schistosity"@en,
         "esquistosidad"@es,
         "liuskeisuus"@fi,
@@ -825,26 +975,31 @@ cs: a skos:ConceptScheme ;
         "förskiffring"@sv,
         "สภาพเรียงตัวแบบหินชีสต์"@th,
         "thớ phiến"@vi,
-        "片理"@zh .
+        "片理"@zh
+.
 
 
-:sedimentary_layering a skos:Concept ;
+:sedimentary_layering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_fabric,
         :layering ;
     skos:definition "Layering resulting from primary sedimentary processes, in which the individual layers (beds) are bounded by discontinuities related to events in the depositional history."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "sedimentary layering"@en .
+    skos:prefLabel "sedimentary layering"@en
+.
 
 
-:slaty_cleavage a skos:Concept ;
+:slaty_cleavage
+    a skos:Concept ;
     schema:citation "Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cambridge University Press, p. 24-31., Jackson 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :continuous_cleavage ;
     skos:definition "Continuous cleavage defined by aligned fine to very-fine grained phylosilicate mineral grains. The individual grains defining the fabric are too small to be seen by the unaided eye. Grades into phyllitic cleavage as grain size increases. Cleavage domains typically less than 100 micrometres wide, rock easily splits into slabs and thin plates."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Schieferspaltbarkeit"@de,
+    skos:prefLabel
+        "Schieferspaltbarkeit"@de,
         "slaty cleavage"@en,
         "exfoliación pizarrosa"@es,
         "liuskeisuuslohkeavuus"@fi,
@@ -860,93 +1015,112 @@ cs: a skos:ConceptScheme ;
         "förskiffring"@sv,
         "แนวแตกเรียบหินชนวน"@th,
         "thớ chẻ phiến"@vi,
-        "板劈理"@zh .
+        "板劈理"@zh
+.
 
 
-:solution_cleavage a skos:Concept ;
+:solution_cleavage
+    a skos:Concept ;
     schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :spaced_cleavage ;
     skos:definition "Spaced cleavage forming an array of parallel to anastomosing, stylolitic to smooth, fracture-like partings formed by rock dissolution. Dissolution is indicated by discontinuity and offset of primary features that intersect cleavage surfaces, and typically by accumulation of insoluble residue along cleavage surface. Syn. stylolitic cleavage, pressure solution cleavage"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "solution cleavage"@en .
+    skos:prefLabel "solution cleavage"@en
+.
 
 
-:spaced_cleavage a skos:Concept ;
+:spaced_cleavage
+    a skos:Concept ;
     schema:citation "Borradaile et al. 1982"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :cleavage ;
     skos:definition "Cleavage in which cleavage domains are spaced at finite intervals as the scale of description. Microlithons of uncleaved rock separate cleavage domains."@en ;
     skos:inScheme cs: ;
-    skos:narrower :anastomosing_spaced_cleavage,
+    skos:narrower
+        :anastomosing_spaced_cleavage,
         :discrete_cleavage,
         :discrete_crenulation_cleavage,
         :discrete_disjunct_spaced_cleavage,
         :scaly_cleavage,
         :solution_cleavage ;
-    skos:prefLabel "spaced cleavage"@en .
+    skos:prefLabel "spaced cleavage"@en
+.
 
 
-:stromatic_layering a skos:Concept ;
+:stromatic_layering
+    a skos:Concept ;
     schema:citation "Weiss 1972, Borradaile et al 1982, Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_layering ;
     skos:definition "Tectonic layering in which variations that distinguish the layers are the result of melt segregation during high-grade metamorphism, some layers have magmatic/igneous mineralogy. Plates 143 and 144, Borradaile et al [1982] (page 344-347) Syn. Migmatitic layering, lit-par-lit layering"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "stromatic layering"@en .
+    skos:prefLabel "stromatic layering"@en
+.
 
 
-:stromatolitic_lamination a skos:Concept ;
+:stromatolitic_lamination
+    a skos:Concept ;
     schema:citation "Based on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :cryptomicrobial_lamination ;
     skos:definition "Lamination produced by sediment trapping, binding and or precipitation by cyanophytes (blue-green algae)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "stromatolitic lamination"@en .
+    skos:prefLabel "stromatolitic lamination"@en
+.
 
 
-:tectonic_foliation a skos:Concept ;
+:tectonic_foliation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :foliation ;
     skos:definition "Foliation in a rock body defined by physical components related to deformation subsequent to solidification of the rock."@en ;
     skos:inScheme cs: ;
-    skos:narrower :cleavage,
+    skos:narrower
+        :cleavage,
         :ductile_shear_banding_foliation,
         :flaser_structure,
         :generic_mylonitic_foliation,
         :s_fabric,
         :schistosity,
         :tectonic_layering ;
-    skos:prefLabel "tectonic foliation"@en .
+    skos:prefLabel "tectonic foliation"@en
+.
 
 
-:tectonic_layering a skos:Concept ;
+:tectonic_layering
+    a skos:Concept ;
     schema:citation "Weiss 1972, Borradaile et al 1982, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :layering,
         :tectonic_foliation ;
     skos:definition "Layering defined by mineralogical or textural variations in a rock body that are interpreted to be related to deformation or metamorphism, commonly associated with layers that have sharp boundaries. Also known as gneissic foliation. See plates 142-145 (p. 342-349) in Borradaile et al [1982] and plate 46A to 49A in Weiss [1972]."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "tectonic layering"@en .
+    skos:prefLabel "tectonic layering"@en
+.
 
 
-:transposed_bedding_layering a skos:Concept ;
+:transposed_bedding_layering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_layering_inherited_from_protolith ;
     skos:definition "Layering interpreted to have originated as sedimentary bedding that has been transposed as a result of metamorphism and deformation."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "transposed bedding layering"@en .
+    skos:prefLabel "transposed bedding layering"@en
+.
 
 
-:ultramylonite_foliation a skos:Concept ;
+:ultramylonite_foliation
+    a skos:Concept ;
     schema:citation "SLTTm 2004, Sibson 1977"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :generic_mylonitic_foliation ;
     skos:definition "Mylonitic foliation in which greater than 90 percent of rock is matrix due to tectonic grain size reduction processes. Typically rock is very-fine grained to aphanitic, with sparse porphyroclasts, and vague to prominent lamination on a mm scale."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Ultramylonit"@de,
+    skos:prefLabel
+        "Ultramylonit"@de,
         "ultramylonite foliation"@en,
         "ultramilonita"@es,
         "ultramyloniitti"@fi,
@@ -962,32 +1136,39 @@ cs: a skos:ConceptScheme ;
         "ultramylonit"@sv,
         "หินอัลตราไมโลไนด์"@th,
         "siêu mylonit"@vi,
-        "超糜棱岩"@zh .
+        "超糜棱岩"@zh
+.
 
 
-:undulating_lamination a skos:Concept ;
+:undulating_lamination
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_lamination_structure ;
     skos:definition "Gently curviplanar or wavy bedding lamination structure"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "undulating lamination"@en .
+    skos:prefLabel "undulating lamination"@en
+.
 
 
-:vague_metamorphic_layering a skos:Concept ;
+:vague_metamorphic_layering
+    a skos:Concept ;
     schema:citation "Weiss 1972,Borradaile et al 1982, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_layering ;
     skos:definition "Metamorphic layering of uncertain origin, defined by subtle mineralogical or textural variations, with gradational layer boundaries. See plate 142 in Borradaile et al [1982]."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "vague metamorphic layering"@en .
+    skos:prefLabel "vague metamorphic layering"@en
+.
 
 
-:varve_lamination a skos:Concept ;
+:varve_lamination
+    a skos:Concept ;
     schema:citation "SLTTs 2004, Jackson 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bedding_lamination_structure ;
     skos:definition "Bedding defined by distinct, parallel laminae (layers less than 1 cm thick), typically occurring in sequences of distinct couplets (e.g. dark and light color). Generally interpreted as deposited from suspension in still water, with each lamina thought to be an annual sedimentation unit. Typically consists of mud-size sediment."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "varve lamination"@en .
+    skos:prefLabel "varve lamination"@en
+.
 

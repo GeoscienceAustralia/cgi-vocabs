@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
+    skos:changeNote
+        "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices). Create 201012 version."@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme. create 201202 version."@en,
         "2012-02-27 SMR add skos:exactMatch triples relating uris to number-token URI from 201012 version."@en,
@@ -26,13 +28,16 @@ cs: a skos:ConceptScheme ;
     skos:definition "This file contains the CGI Lineation Type vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Vocabulary for populating Lineation Type properties in GeoSciML GeologicStructure/Lineation elements.  By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Lineation Type vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept :lineation ;
-    skos:prefLabel "Lineation Type"@en .
+    skos:prefLabel "Lineation Type"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/lineationtype> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/lineationtype>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :augen_lineation,
+    skos:member
+        :augen_lineation,
         :bedding_cleavage_intersection_lineation,
         :biotite_mineral_lineation,
         :cleavage_intersection_lineation,
@@ -54,17 +59,21 @@ cs: a skos:ConceptScheme ;
         :slickenline,
         :stretching_lineation,
         :tectonic_lineation ;
-    skos:prefLabel "Lineation Type - All Concepts"@en .
+    skos:prefLabel "Lineation Type - All Concepts"@en
+.
 
 
-:lineation a skos:Concept ;
+:lineation
+    a skos:Concept ;
     schema:citation "Neuendorf et al 2005, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pergarisan"@id,
+    skos:altLabel
+        "pergarisan"@id,
         "リニエーション"@ja ;
     skos:definition "Nongenetic term for a penetrative linear structure."@en ;
     skos:inScheme cs: ;
-    skos:narrower :crenulation_lineation,
+    skos:narrower
+        :crenulation_lineation,
         :flow_lineation,
         :igneous_lineation,
         :intersection_lineation,
@@ -73,7 +82,8 @@ cs: a skos:ConceptScheme ;
         :rodding_lineation,
         :slickenline,
         :tectonic_lineation ;
-    skos:prefLabel "Lineation"@de,
+    skos:prefLabel
+        "Lineation"@de,
         "lineation"@en,
         "lineación"@es,
         "lineaatio"@fi,
@@ -90,221 +100,269 @@ cs: a skos:ConceptScheme ;
         "แนวตรง"@th,
         "phân tuyến"@vi,
         "划线"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:augen_lineation a skos:Concept ;
+:augen_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :particle_shape_lineation,
         :tectonic_lineation ;
     skos:definition "A shape lineation defined by elongate augen."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "augen lineation"@en .
+    skos:prefLabel "augen lineation"@en
+.
 
 
-:bedding_cleavage_intersection_lineation a skos:Concept ;
+:bedding_cleavage_intersection_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :intersection_lineation,
         :tectonic_lineation ;
     skos:definition "Lineation defined by the intersection of bedding surfaces and cleavage surfaces."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "bedding cleavage intersection lineation"@en .
+    skos:prefLabel "bedding cleavage intersection lineation"@en
+.
 
 
-:biotite_mineral_lineation a skos:Concept ;
+:biotite_mineral_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mineral_lineation ;
     skos:definition "Mineral lineation defined by aligned elongate biotite aggregates in a foliation surface. Biotite does not have an elongate (prismatic, acicular) mineral habit, so production of lineation must reflect elongate aggregates of biotite crystals."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "biotite mineral lineation"@en .
+    skos:prefLabel "biotite mineral lineation"@en
+.
 
 
-:cleavage_intersection_lineation a skos:Concept ;
+:cleavage_intersection_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :intersection_lineation,
         :tectonic_lineation ;
     skos:definition "Lineation defined by the intersection of two cleavages."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "cleavage intersection lineation"@en .
+    skos:prefLabel "cleavage intersection lineation"@en
+.
 
 
-:crenulation_lineation a skos:Concept ;
+:crenulation_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_lineation ;
     skos:definition "Lineation defined by small-scale wrinkles, typically of phylosillicate minerals, on another surface, typically a cleavage or schistosity. Use instead of intersection lineation if the wrinkles are the measured feature and the intersecting planar feature is not apparent."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "crenulation lineation"@en .
+    skos:prefLabel "crenulation lineation"@en
+.
 
 
-:flow_lineation a skos:Concept ;
+:flow_lineation
+    a skos:Concept ;
     schema:citation "Geoscience Victoria, Australia"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lineation ;
     skos:definition "A linear alignment of fabric elements, especially elongate or rod-shaped minerals, interpreted to have been aligned by flow of magma, lava, pyroclastic material, or diapiric flow of sedimentary rock."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "flow lineation"@en .
+    skos:prefLabel "flow lineation"@en
+.
 
 
-:hornblende_mineral_lineation a skos:Concept ;
+:hornblende_mineral_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mineral_lineation ;
     skos:definition "Mineral lineation defined by aligned hornblende crystals."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "hornblende mineral lineation"@en .
+    skos:prefLabel "hornblende mineral lineation"@en
+.
 
 
-:igneous_lineation a skos:Concept ;
+:igneous_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lineation ;
     skos:definition "Lineation defined by alignment of elongate fabric elements formed in lava or magma before complete crystallization. Some typical fabric elements are elongate phenocrysts and vesicles."@en ;
     skos:inScheme cs: ;
-    skos:narrower :igneous_mineral_lineation,
+    skos:narrower
+        :igneous_mineral_lineation,
         :igneous_particle_shape_lineation,
         :igneous_vesicle_lineation ;
-    skos:prefLabel "igneous lineation"@en .
+    skos:prefLabel "igneous lineation"@en
+.
 
 
-:igneous_mineral_lineation a skos:Concept ;
+:igneous_mineral_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous_lineation,
         :mineral_lineation ;
     skos:definition "Lineation in igneous rock defined by aligned crystals where there is evidence that the crystal alignment is related to process occurring before the rock was solidified."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "igneous mineral lineation"@en .
+    skos:prefLabel "igneous mineral lineation"@en
+.
 
 
-:igneous_particle_shape_lineation a skos:Concept ;
+:igneous_particle_shape_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous_lineation,
         :particle_shape_lineation ;
     skos:definition "Lineation in an igneous rock, usually welded tuff, defined by elongate objects in the rock (usually pumice pads, also elongate crystals). Descriptive--elogation may be due to deformation or to rotation/alignment of originally elongate (prolate ellipsoid) objects in the rock."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "igneous particle shape lineation"@en .
+    skos:prefLabel "igneous particle shape lineation"@en
+.
 
 
-:igneous_vesicle_lineation a skos:Concept ;
+:igneous_vesicle_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous_lineation ;
     skos:definition "lineation defined in a volcanic rock by aligned elongation direction of vesicles."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "igneous vesicle lineation"@en .
+    skos:prefLabel "igneous vesicle lineation"@en
+.
 
 
-:intersection_lineation a skos:Concept ;
+:intersection_lineation
+    a skos:Concept ;
     schema:citation "Neuendorf et al 2005, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lineation ;
     skos:definition "A lineation produced by the intersection of two planar fabrics."@en ;
     skos:inScheme cs: ;
-    skos:narrower :bedding_cleavage_intersection_lineation,
+    skos:narrower
+        :bedding_cleavage_intersection_lineation,
         :cleavage_intersection_lineation ;
-    skos:prefLabel "intersection lineation"@en .
+    skos:prefLabel "intersection lineation"@en
+.
 
 
-:mineral_lineation a skos:Concept ;
+:mineral_lineation
+    a skos:Concept ;
     schema:citation "Neuendorf et al 2005, this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :particle_shape_lineation ;
     skos:definition "Lineation defined by alignment of elongate crystals that have a prismatic crystal habit or of monomineralic grain aggregates."@en ;
     skos:inScheme cs: ;
-    skos:narrower :biotite_mineral_lineation,
+    skos:narrower
+        :biotite_mineral_lineation,
         :hornblende_mineral_lineation,
         :igneous_mineral_lineation,
         :sillimanite_mineral_lineation ;
-    skos:prefLabel "mineral lineation"@en .
+    skos:prefLabel "mineral lineation"@en
+.
 
 
-:particle_shape_lineation a skos:Concept ;
+:particle_shape_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lineation ;
     skos:definition "Lineation defined by alignment of long axes of prolate-shaped particles such as clasts, fossils, crystals, or phenocrysts. Particles may be polycrystalline aggregates formed by deformation of pre-existing particles. General category does not specify genesis of particles or their alignment."@en ;
     skos:inScheme cs: ;
-    skos:narrower :augen_lineation,
+    skos:narrower
+        :augen_lineation,
         :igneous_particle_shape_lineation,
         :mineral_lineation,
         :quartz_fibre_lineation,
         :stretching_lineation ;
-    skos:prefLabel "particle shape lineation"@en .
+    skos:prefLabel "particle shape lineation"@en
+.
 
 
-:pencil_lineation a skos:Concept ;
+:pencil_lineation
+    a skos:Concept ;
     schema:citation "based on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lineation ;
     skos:definition "Lineation defined by tendency of rock to break into long, slender pieces resembling pencils. Typically produced by intesection of bedding and cleavage or intersection of two cleavages. Fabric is generally only observed in weakly metamorphosed rocks."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "pencil lineation"@en .
+    skos:prefLabel "pencil lineation"@en
+.
 
 
-:quartz_fibre_lineation a skos:Concept ;
+:quartz_fibre_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :particle_shape_lineation ;
     skos:definition "Aligned quartz fibres that define a measurable lineation"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "quartz fibre lineation"@en .
+    skos:prefLabel "quartz fibre lineation"@en
+.
 
 
-:rodding_lineation a skos:Concept ;
+:rodding_lineation
+    a skos:Concept ;
     schema:citation "Jackson 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_lineation ;
     skos:definition "Linear structure in metamorphic rocks in which the stronger parts have been shaped into parallel rods (eg. vein quartz)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "rodding lineation"@en .
+    skos:prefLabel "rodding lineation"@en
+.
 
 
-:sillimanite_mineral_lineation a skos:Concept ;
+:sillimanite_mineral_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mineral_lineation ;
     skos:definition "Mineral lineation defined by aligned sillimanite crystals."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "sillimanite mineral lineation"@en .
+    skos:prefLabel "sillimanite mineral lineation"@en
+.
 
 
-:slickenline a skos:Concept ;
+:slickenline
+    a skos:Concept ;
     schema:citation "based on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_lineation ;
     skos:definition "Lineation on a brittle slip surface defined by grooves, ridges, or striations"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "slickenline"@en .
+    skos:prefLabel "slickenline"@en
+.
 
 
-:stretching_lineation a skos:Concept ;
+:stretching_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :particle_shape_lineation,
         :tectonic_lineation ;
     skos:definition "Lineation defined by elongate (prolate) fabric elements in which the alignment of the fabric elements, and the formation of prolate fabric elements is interpreted to be the product of crystal plastic deformation processes. Associated with mylontic foliation."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "stretching lineation"@en .
+    skos:prefLabel "stretching lineation"@en
+.
 
 
-:tectonic_lineation a skos:Concept ;
+:tectonic_lineation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lineation ;
     skos:definition "Penetrative linear structure in a rock body defined by fabric elements that are the product of tectonic processes. Linear is used in the sense that the orientation of the structure can be represented as a line in some sufficiently small neighborhood of any point in the material containig the fabric. Penetrative denotes that the fabric elements defining the structure are repeated at distances so small, compared with the scale of the whole that they can be considered to pervade it uniformly and be present at every point (paraphrase of Turner and Weiss, 1963, p. 21)."@en ;
     skos:inScheme cs: ;
-    skos:narrower :augen_lineation,
+    skos:narrower
+        :augen_lineation,
         :bedding_cleavage_intersection_lineation,
         :cleavage_intersection_lineation,
         :crenulation_lineation,
         :rodding_lineation,
         :slickenline,
         :stretching_lineation ;
-    skos:prefLabel "tectonic lineation"@en .
+    skos:prefLabel "tectonic lineation"@en
+.
 

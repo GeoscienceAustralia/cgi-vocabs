@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
+    skos:changeNote
+        "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010-11-28 SMR Replace URN with htt URI identifiers according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en,
@@ -37,13 +39,16 @@ cs: a skos:ConceptScheme ;
         :subhedral,
         :very_angular,
         :well_rounded ;
-    skos:prefLabel "Particle Shape"@en .
+    skos:prefLabel "Particle Shape"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/particleshape>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :angular,
+    skos:member
+        :angular,
         :anhedral,
         :diffuse,
         :euhedral,
@@ -55,113 +60,138 @@ cs: a skos:ConceptScheme ;
         :subhedral,
         :very_angular,
         :well_rounded ;
-    skos:prefLabel "Particle Shape - All Concepts"@en .
+    skos:prefLabel "Particle Shape - All Concepts"@en
+.
 
 
-:angular a skos:Concept ;
+:angular
+    a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle showing very little or no evidence of abrasion, with all of its edges and corners sharp, such as blocks with numerous (15-30) secondary corners and a roundness value between 0.17 and 0.25 (midpoint at 0.21)."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "angular"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:anhedral a skos:Concept ;
+:anhedral
+    a skos:Concept ;
     schema:citation "MacKenzie, W.S., Donaldson, C.H. & Guilford, C., 1982. Atlas of igneous rocks and their textures. John Wiley & Sons, New York"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Crystalline particles in a rock lack well-developed crystal faces, usually referring to igneous or metamorphic grains"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "anhedral"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:diffuse a skos:Concept ;
+:diffuse
+    a skos:Concept ;
     schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Particles in aggregate have diffuse, ill-defined boundaries"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "diffuse"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:euhedral a skos:Concept ;
+:euhedral
+    a skos:Concept ;
     schema:citation "MacKenzie, W.S., Donaldson, C.H. & Guilford, C., 1982. Atlas of igneous rocks and their textures. John Wiley & Sons, New York"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Crystalline particles in a rock are mostly bounded by perfect crystal faces, usually referring to igneous or metamorphoc grains"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "euhedral"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:resorbed a skos:Concept ;
+:resorbed
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Particles have smooth, embayed boundaries caused by resorption by the host magma"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "resorbed"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:rounded a skos:Concept ;
+:rounded
+    a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle whose original edges and corners have been smoothed off to rather broad curves and whose original faces are almost completely removed by abrasion (although some comparatively flat surfaces may be present), such as a pebble with a roundness value between 0.49 and 0.70 (midpoint at 0.59) and few (0-5) and greatly subdued secondary corners. The original shape is still readily apparent."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "rounded"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:shape_not_specified a skos:Concept ;
+:shape_not_specified
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Shape property may have any value. Use in normative definitions where shape may take any value."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "any shape"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:sub_angular a skos:Concept ;
+:sub_angular
+    a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle showing definite effects of slight abrasion, retaining its original general form, and having faces that are virtually untouched and edges and corners that are rounded off to some extent, such as a glacial boulder with numerous (10-20) secondary corners and a roundness value between 0.25 and 0.35 (midpoint at 0.300)."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sub-angular"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:sub_rounded a skos:Concept ;
+:sub_rounded
+    a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle showing considerable but incomplete abrasion and an original general form that is still discernible, and having many of its edges and corners noticeably rounded off to smooth curves, such as a cobble with a reduced number (5-10) of secondary corners, a considerably reduced area of the original faces, and a roundness value between 0.35 and 0.49 (midpoint at 0.41)."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sub-rounded"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:subhedral a skos:Concept ;
+:subhedral
+    a skos:Concept ;
     schema:citation "MacKenzie, W.S., Donaldson, C.H. & Guilford, C., 1982. Atlas of igneous rocks and their textures. John Wiley & Sons, New York"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Crystalline particles in a rock are partly bounded by crystal faces, usually referring to igneous or metamorphic grains"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "subhedral"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:very_angular a skos:Concept ;
+:very_angular
+    a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle with a roundness value between 0.12 and 0.17 (midpoint at 0.14)."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "very angular"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:well_rounded a skos:Concept ;
+:well_rounded
+    a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle whose original faces, edges, and corners have been destroyed by abrasion and whose entire surface consists of broad curves without any flat areas, specif. said of a particle with no secondary corners and a roundness value between 0.70 and 1.00 (midpoint at 0.84). The original shape may be suggested by the present form of the particle."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "well rounded"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 

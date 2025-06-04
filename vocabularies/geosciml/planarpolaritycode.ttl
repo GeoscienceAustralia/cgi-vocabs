@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2017-07-05"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -23,38 +24,48 @@ cs: a skos:ConceptScheme ;
     skos:hasTopConcept :overturned,
         :upright,
         :vertical ;
-    skos:prefLabel "Planar Polarity Code"@en .
+    skos:prefLabel "Planar Polarity Code"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/planarpolaritycode> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/planarpolaritycode>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :overturned,
+    skos:member
+        :overturned,
         :upright,
         :vertical ;
-    skos:prefLabel "Planar Polarity Code - All Concepts"@en .
+    skos:prefLabel "Planar Polarity Code - All Concepts"@en
+.
 
 
-:overturned a skos:Concept ;
+:overturned
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The feature has been overturned (ie; rotated around a horizontal or subhorizontal axis more than 90 degrees from its original orientation)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "overturned"@en .
+    skos:prefLabel "overturned"@en
+.
 
 
-:upright a skos:Concept ;
+:upright
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The feature has not been rotated around a horizontal or subhorizontal axis beyond 90 degrees from its original orientation."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "upright"@en .
+    skos:prefLabel "upright"@en
+.
 
 
-:vertical a skos:Concept ;
+:vertical
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The planar orientation of a feature is approximately vertical."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "vertical"@en .
+    skos:prefLabel "vertical"@en
+.
 

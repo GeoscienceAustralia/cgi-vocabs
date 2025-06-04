@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
+    skos:changeNote
+        "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en,
         "2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
@@ -37,13 +39,16 @@ cs: a skos:ConceptScheme ;
         :reverse_dextral,
         :reverse_sinistral,
         :sinistral ;
-    skos:prefLabel "Fault Movement Sense"@en .
+    skos:prefLabel "Fault Movement Sense"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/faultmovementsense> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/faultmovementsense>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :detachment,
+    skos:member
+        :detachment,
         :dextral,
         :generic_decollement,
         :no_movement_sense,
@@ -56,41 +61,50 @@ cs: a skos:ConceptScheme ;
         :sinistral,
         :thrust,
         :thrust_decollement ;
-    skos:prefLabel "Fault Movement Sense - All Concepts"@en .
+    skos:prefLabel "Fault Movement Sense - All Concepts"@en
+.
 
 
-:dextral a skos:Concept ;
+:dextral
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Right-lateral separation sense, in plan view, the side opposite the observer appears displaced to the right.,"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "dextral"@en,
+    skos:prefLabel
+        "dextral"@en,
         "dextre"@fr ;
     skos:related :normal_dextral,
         :reverse_dextral ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:generic_decollement a skos:Concept ;
+:generic_decollement
+    a skos:Concept ;
     schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A large-displacement (kilometers or tens of kilometers) shallowly dipping to subhorizontal fault or shear zone."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "generic decollement"@en,
         "decollement"@fr ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:no_movement_sense a skos:Concept ;
+:no_movement_sense
+    a skos:Concept ;
     schema:citation "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The fault-parallel displacement is effectively zero, as in an extraction fault."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "no movement sense"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:normal a skos:Concept ;
+:normal
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The hanging wall appears to have moved down relative to the footwall, dip of fault usually 45-90 degrees."@en ;
@@ -99,10 +113,12 @@ cs: a skos:ConceptScheme ;
     skos:prefLabel "normal"@en ;
     skos:related :normal_dextral,
         :normal_sinistral ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:normal_dextral a skos:Concept ;
+:normal_dextral
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The movement sense includes both normal and dextral components."@en ;
@@ -110,10 +126,12 @@ cs: a skos:ConceptScheme ;
     skos:prefLabel "normal dextral"@en ;
     skos:related :dextral,
         :normal ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:normal_sinistral a skos:Concept ;
+:normal_sinistral
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The movement sense includes both normal and sinistral components."@en ;
@@ -121,23 +139,28 @@ cs: a skos:ConceptScheme ;
     skos:prefLabel "normal sinistral"@en ;
     skos:related :normal,
         :sinistral ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:reverse a skos:Concept ;
+:reverse
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The hanging wall appears to have moved down relative to the footwall, dip of fault usually greater than 45 degrees."@en ;
     skos:inScheme cs: ;
     skos:narrower :thrust ;
-    skos:prefLabel "reverse"@en,
+    skos:prefLabel
+        "reverse"@en,
         "inverse"@fr ;
     skos:related :reverse_dextral,
         :reverse_sinistral ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:reverse_dextral a skos:Concept ;
+:reverse_dextral
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The movement sense includes both reverse and dextral components."@en ;
@@ -145,10 +168,12 @@ cs: a skos:ConceptScheme ;
     skos:prefLabel "reverse dextral"@en ;
     skos:related :dextral,
         :reverse ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:reverse_sinistral a skos:Concept ;
+:reverse_sinistral
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The movement sense includes both reverse and sinistral components."@en ;
@@ -156,10 +181,12 @@ cs: a skos:ConceptScheme ;
     skos:prefLabel "reverse sinistral"@en ;
     skos:related :reverse,
         :sinistral ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:sinistral a skos:Concept ;
+:sinistral
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Left-lateral separation sense, in plan view, the side opposite the observer appears displaced to the left."@en ;
@@ -167,35 +194,44 @@ cs: a skos:ConceptScheme ;
     skos:prefLabel "sinistral"@en ;
     skos:related :normal_sinistral,
         :reverse_sinistral ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:detachment a skos:Concept ;
+:detachment
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :normal ;
     skos:definition "A regional-scale low-angle normal fault."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "detachment"@en,
-        "détachement"@fr .
+    skos:prefLabel
+        "detachment"@en,
+        "détachement"@fr
+.
 
 
-:thrust a skos:Concept ;
+:thrust
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :reverse ;
     skos:definition "Reverse fault with dip typically less than 45 degrees, horizontal compression, rather than vertical displacement is characteristic."@en ;
     skos:inScheme cs: ;
     skos:narrower :thrust_decollement ;
-    skos:prefLabel "thrust"@en,
-        "décrochement"@fr .
+    skos:prefLabel
+        "thrust"@en,
+        "décrochement"@fr
+.
 
 
-:thrust_decollement a skos:Concept ;
+:thrust_decollement
+    a skos:Concept ;
     schema:citation "GeoScience Victoria and others"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :thrust ;
     skos:definition "A regional-scale low-angle thrust fault."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "thrust decollement"@en .
+    skos:prefLabel "thrust decollement"@en
+.
 

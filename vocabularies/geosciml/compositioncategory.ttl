@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-07-14: Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
+    skos:changeNote
+        "2009-07-14: Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07: SMR add collections for mineralogical and sedimentary petrographic categories, improve annotation and notes on vocabulary."@en,
         "2010-02-08: SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en,
         "2010-02-11: Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
@@ -75,13 +77,16 @@ cs: a skos:ConceptScheme ;
         :sulfide_bearing,
         :sulfide_chemistry,
         :volcanic_lithic ;
-    skos:prefLabel "Composition Category"@en .
+    skos:prefLabel "Composition Category"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/compositioncategory> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/compositioncategory>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :argillic,
+    skos:member
+        :argillic,
         :arkosic_detrital_mode,
         :asphaltic,
         :barium_bearing_carbonate_chemistry,
@@ -156,44 +161,54 @@ cs: a skos:ConceptScheme ;
         :ultramafic,
         :very_low_silica_chemistry,
         :volcanic_lithic ;
-    skos:prefLabel "Composition Category - All Concepts"@en .
+    skos:prefLabel "Composition Category - All Concepts"@en
+.
 
 
-:argillic a skos:Concept ;
+:argillic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Greater than accessory amount (greater than 5 percent by volume) of clay is present"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "argillic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:bioclastic a skos:Concept ;
+:bioclastic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Carbonate sedimentary material contains significant broken skeletal material"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "bioclastic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:calcsilicate_bearing a skos:Concept ;
+:calcsilicate_bearing
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Calcsilicate minerals of any sort are present, but less than 50 percent of rock"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "calcsilicate bearing"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:carbonaceous a skos:Concept ;
+:carbonaceous
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "susunan berarang"@id ;
+    skos:altLabel
+        "susunan berarang"@id ;
     skos:definition "Material containing significant carbon or hydrocarbon mineral phases, including graphite, coal, oil, gas, lignite, peat."@en ;
     skos:inScheme cs: ;
     skos:narrower :asphaltic ;
-    skos:prefLabel "carbonaceous"@en,
+    skos:prefLabel
+        "carbonaceous"@en,
         "composition carbonée"@fr,
         "komposisi berarang"@id,
         "炭素質組成"@ja,
@@ -204,29 +219,37 @@ cs: a skos:ConceptScheme ;
         "ส่วนประกอบมีคาร์บอน"@th,
         "thành phần carbon"@vi,
         "碳质组成"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:carbonaceous_chemistry a skos:Concept ;
+:carbonaceous_chemistry
+    a skos:Concept ;
     schema:citation "Struik2002, SLTTs2004, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Containing greater than 5 percent reduced carbon in compounds that are typically the diagenetic products of dead organisms (e.g. coal, bitumen and petroleum). 5 percent value is chosen for consistency with SLTTs usage of term carbonaceous."@en ;
     skos:inScheme cs: ;
-    skos:narrower :iron_bearing_carbonate_chemistry,
+    skos:narrower
+        :iron_bearing_carbonate_chemistry,
         :magnesium_rich_carbonate_chemistry ;
     skos:prefLabel "carbonaceous chemistry"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:carbonate a skos:Concept ;
+:carbonate
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "炭酸塩岩"@ja ;
+    skos:altLabel
+        "炭酸塩岩"@ja ;
     skos:definition "Material consists of greater than 50 percent calcsilicate or carbonate minerals and carbonate minerals greater than calcsilicate minerals in mineral mode. Metacarbonate of NADMSC SLTTm (2004) terminology, adopted here for non-genetic use."@en ;
     skos:inScheme cs: ;
-    skos:narrower :barium_bearing_carbonate_chemistry,
+    skos:narrower
+        :barium_bearing_carbonate_chemistry,
         :monomineralic_carbonate ;
-    skos:prefLabel "Karbonat"@de,
+    skos:prefLabel
+        "Karbonat"@de,
         "carbonate"@en,
         "carbonato"@es,
         "karbonaatit"@fi,
@@ -243,94 +266,115 @@ cs: a skos:ConceptScheme ;
         "คาร์บอเนต"@th,
         "carbonat"@vi,
         "碳酸岩"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:carbonate_bearing a skos:Concept ;
+:carbonate_bearing
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Carbonate minerals of any sort are present, but less than 50 percent of rock."@en ;
     skos:inScheme cs: ;
-    skos:narrower :calcareous,
+    skos:narrower
+        :calcareous,
         :dolomitic ;
     skos:prefLabel "carbonate bearing"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:carbonate_chemistry a skos:Concept ;
+:carbonate_chemistry
+    a skos:Concept ;
     schema:citation "Struik etal 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The carbonate (CO3) anion is the predominant anion (by mole percent) in chemical analysis. Sub-categories may be defined by dominant cation. Material in this chemical class overlaps with the monomineralic carbonate class, and probably overlaps with the Carbonate class in the mineralogical composition classification."@en ;
     skos:inScheme cs: ;
     skos:narrower :calcium_rich_carbonate_chemistry ;
     skos:prefLabel "carbonate chemistry"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:chloritic a skos:Concept ;
+:chloritic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Greater than accessory amount (greater than 5 percent by volume) of chlorite group minerals are present"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "chloritic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:composition_not_specified a skos:Concept ;
+:composition_not_specified
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Composition not specified. Use in normative descriptions where any composition property is allowed."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "composition not specified"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:feldspathic a skos:Concept ;
+:feldspathic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sedimentary material contains significant feldspar mineral content"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "feldspathic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:feldspathic_detrital_mode a skos:Concept ;
+:feldspathic_detrital_mode
+    a skos:Concept ;
     schema:citation "Dott1964, Folk1968"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "General sandstone petrography term for a sandstone in which the ratio of feldspar to lithic fragments is greater than 1:1 and less than 75 percent quartz is present in the detrital mode. Subsumes lithic arkosic and arkosic sandstone petrographic composition classes. Usage of modifier feldspathic is consistent with petrographic subdivisions of Dott (1964) and Williams, Turner and Gilbert (1982)"@en ;
     skos:inScheme cs: ;
     skos:narrower :lithic_arkosic_detrital_mode ;
     skos:prefLabel "feldspathic detrital mode"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:feldspathic_lithic_detrital_mode a skos:Concept ;
+:feldspathic_lithic_detrital_mode
+    a skos:Concept ;
     schema:citation "Folk1968"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the feldspar to lithic ratio is between 1 to 1 and 1 to 3. This corresponds to the feldspathic litharenite field of Folk (1968). Rocks in this class are likely to be quartzo-feldspathic in terms of mineralogical composition terms in this vocablary, but because the mineralogical composition of the lithic fraction is not constrainged, this correlation is not necessary."@en ;
     skos:inScheme cs: ;
     skos:narrower :arkosic_detrital_mode ;
     skos:prefLabel "feldspathic lithic detrital mode"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:ferromagnesian a skos:Concept ;
+:ferromagnesian
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Material consists of greater than 40 percent dark ferromagnesian silicate minerals. Standard term defined by Bates and Jackson (1987) to mean 'containing iron and magnesium'. Subsumes mafic and ultramafic."@en ;
     skos:inScheme cs: ;
-    skos:narrower :mafic,
+    skos:narrower
+        :mafic,
         :ultramafic ;
     skos:prefLabel "ferromagnesian"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:ferruginous a skos:Concept ;
+:ferruginous
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Greater than accessory amount (greater than 5 percent by volume) of non-silicate iron minerals (hematite, magnetite, siderite...) are present. Rocks containing abundant iron-rich silicate minerals would use the 'Ferromagnesian' terms."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "ferruginous"@en,
+    skos:prefLabel
+        "ferruginous"@en,
         "composition ferrugineuse"@fr,
         "komposisi berbesi"@id,
         "鉄錆組成"@ja,
@@ -341,147 +385,179 @@ cs: a skos:ConceptScheme ;
         "ส่วนประกอบมีเหล็กปน"@th,
         "thành phần sắt"@vi,
         "铁质成分"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:halide_chemistry a skos:Concept ;
+:halide_chemistry
+    a skos:Concept ;
     schema:citation "Struik etal 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "One or more of halide group elements (F, Cl, Br, I) are most abundant (mole percent) anion"@en ;
     skos:inScheme cs: ;
     skos:narrower :nitrate_chemistry ;
     skos:prefLabel "halide chemistry"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:impure_calcsilicate_or_carbonate a skos:Concept ;
+:impure_calcsilicate_or_carbonate
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Material consists of greater than 50 percent calcsilicate or carbonate minerals and relative proportion of calcsilicate and carbonate minerals is unknown or not specified."@en ;
     skos:inScheme cs: ;
     skos:narrower :calcsilicate ;
     skos:prefLabel "impure calcsilicate or carbonate"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:intraclastic a skos:Concept ;
+:intraclastic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Carbonate sedimentary material contains signficant intraclast content"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "intraclastic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:lithic a skos:Concept ;
+:lithic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sedimentary material contains significant detrital rock fragments derived by erosion from older, pre-existing rock materials"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "lithic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:lithic_detrital_mode a skos:Concept ;
+:lithic_detrital_mode
+    a skos:Concept ;
     schema:citation "Folk1968"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the lithic to feldspar ratio is greater than 3 to 1. This corresponds to the litharenite field of Folk (1968). Because the mineralogy of the lithic fragments is not constrained, the mineralogical composition is largely independent of the detrital mode composition for this class."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "lithic detrital mode"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:lithic_rich_detrital_mode a skos:Concept ;
+:lithic_rich_detrital_mode
+    a skos:Concept ;
     schema:citation "Dott1964, Folk1968"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sandstone petrographic composition term indicating that the ratio of lithic fragments to feldspar is greater than 1:1, and less than 75 percent quartz is present in the detrital mode. Because the mineralogy of the lithic fragments is not constrained, the mineralogical composition is largely independent of the detrital mode composition for this class."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "lithic rich detrital mode"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:metallic_oxide_bearing a skos:Concept ;
+:metallic_oxide_bearing
+    a skos:Concept ;
     schema:citation "Struik2002, SLTTs2004, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Greater than accessory amounts (greater than 5 percent by volume) of base metal oxide minerals such as magnetite (Fe3O4) or pyrolusite (MnO2) are present."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "metallic oxide bearing"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:metaluminous a skos:Concept ;
+:metaluminous
+    a skos:Concept ;
     schema:citation "Shand 1947"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Chemical composition term used for igneous rocks, denoting that content of aluminum oxide is greater than sodium oxide plus potassium oxide, but aluminum oxide less than sum of Na, K and Ca oxide."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "metaluminous"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:micaceous a skos:Concept ;
+:micaceous
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Greater than accessory amount (greater than 5 percent by volume) of mica group mineral are present"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "micaceous"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:mono_mineralic a skos:Concept ;
+:mono_mineralic
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Greater than 75 percent of the material consists of a single mineral species."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "mono mineralic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:monomictic a skos:Concept ;
+:monomictic
+    a skos:Concept ;
     schema:citation "Jackson 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Grains or clasts are composed of a single rock or mineral type (Jackson, 1997)"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "monomictic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:other_composition a skos:Concept ;
+:other_composition
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Composition is known but doesn’t' fit in any other category"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "other composition"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:oxide a skos:Concept ;
+:oxide
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Material predominantly composed of oxide minerals"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Oxid"@de,
+    skos:prefLabel
+        "Oxid"@de,
         "oxide"@en,
         "óxido"@es,
         "oksidit"@fi,
         "ossidi"@it,
         "Okisly"@ru,
         "oxid"@sv ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:peralkaline a skos:Concept ;
+:peralkaline
+    a skos:Concept ;
     schema:citation "Shand 1947"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Aluminum oxide (Al2O3) is less than sum of K and Na oxide."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "peralkaline"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:peraluminous a skos:Concept ;
+:peraluminous
+    a skos:Concept ;
     schema:citation "Shand 1947"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "komposisi peralumina"@ms ;
+    skos:altLabel
+        "komposisi peralumina"@ms ;
     skos:definition "Aluminum oxide (Al2O3) greater than sum of Na, K and Ca oxide."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "hyperaluminiumhaltiger Chemismus"@de,
@@ -501,37 +577,45 @@ cs: a skos:ConceptScheme ;
         "ส่วนประกอบเพอร์อะลูมินัส"@th,
         "thành phần bão hoà nhôm"@vi,
         "过铝质成分"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:petroliferous a skos:Concept ;
+:petroliferous
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Crude oil or natural gas is present, generally in trace amounts, commonly detected by smell"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "petroliferous"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:phosphate_chemistry a skos:Concept ;
+:phosphate_chemistry
+    a skos:Concept ;
     schema:citation "Struik etal 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Phosphate (PO4) is the most abundant (mole percent) anion."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "phosphate chemistry"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:phosphatic a skos:Concept ;
+:phosphatic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Greater than accessory amount (greater than 5 percent by volume) of phosphate minerals are present"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "phosphatic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:polymictic a skos:Concept ;
+:polymictic
+    a skos:Concept ;
     schema:citation "Jackson, 1997, p. 501"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Grains or clasts are composed of many mineral or rock types"@en ;
@@ -543,86 +627,106 @@ cs: a skos:ConceptScheme ;
         "tessitura polimittica"@it,
         "polimiktovyj"@ru,
         "polymikt textur"@sv ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:quartz_feldspar_pelitic a skos:Concept ;
+:quartz_feldspar_pelitic
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent."@en ;
     skos:inScheme cs: ;
-    skos:narrower :pelitic,
+    skos:narrower
+        :pelitic,
         :quartzo_feldspathic,
         :semi_pelitic ;
     skos:prefLabel "quartz feldspar pelitic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:quartzose_detrital_mode a skos:Concept ;
+:quartzose_detrital_mode
+    a skos:Concept ;
     schema:citation "Folk1968, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Detrital mineral grains in a granular rock consist of greater than 95 percent quartz. This petrographic criteria follows the most restrictive definition of the composition field at the quartz vertex of the sandstone QFL triangle (Folk, 1968). This use of term quartzose is more restrictive that that used in the mineralogical composition term vocabulary, reflecting the interpretive significance of pure quartz sandstones in sedimentary petrology."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "quartzose detrital mode"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:silicate_chemistry a skos:Concept ;
+:silicate_chemistry
+    a skos:Concept ;
     schema:citation "Neuendorf et al 2005, Struik 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Composed of minerals whose crystal structure contains SiO4 tetrahedra, either isolated or joined through one or more oxygen atoms to form groups, chains, sheets or three-dimensional structures with metallic cations. Composition ranges from 20-100 percent SiO2. Typically some Al substitutues for silica. A survey of chemical analyses in the Georock database (query FOR ALL GEOLOGICAL SETTINGS, MATERIAL: WHOLE ROCK (AND VOLCANIC GLASS), PUB. YEARS: 2005-1970), 10/10/2005, http://georoc.mpch-mainz.gwdg.de/georoc/Entry.html) discovered that the lowest silica (Si02) content for igneous rock is about 20 percent. This is consistent with the lowest silica content found for a silicate mineral is about 21 percent for a chlorite variety found by scanning the mineral analyses in Deer, Howie, and Zussman (1966)."@en ;
     skos:inScheme cs: ;
-    skos:narrower :high_silica_chemistry,
+    skos:narrower
+        :high_silica_chemistry,
         :intermediate_silica_chemistry,
         :low_silica_chemistry,
         :very_low_silica_chemistry ;
     skos:prefLabel "silicate chemistry"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:silicic a skos:Concept ;
+:silicic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Greater than accessory amount (greater than 5 percent by volume) of silica, amorphous, as quartz, or any of the silica polymorphs are present"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "silicic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:sub_feldspathic_detrital_mode a skos:Concept ;
+:sub_feldspathic_detrital_mode
+    a skos:Concept ;
     schema:citation "Folk1968"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 50 percent lithic fragments, between 75 and 95 percent quartz (thus less than 25 percent feldspar). This corresponds to the subarkose field of Folk (1968), the 75 percent quartz boundary is consistent with the quartzsose composition as defined in the mineralogic compostion terms vocabulary, but if more than a few percent 'matrix' or cement is present, this is not necessarily equivalent to the mineralogical composition term."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sub feldspathic detrital mode"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:sub_lithic_detrital_mode a skos:Concept ;
+:sub_lithic_detrital_mode
+    a skos:Concept ;
     schema:citation "Folk1968"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes more than 50 percent lithic fragments, between 75 and 95 percent quartz (thus less than 25 percent feldspar). This corresponds to the sublitharenite field of Folk (1968), the 75 percent quartz boundary is consistent with quartzsose composition as defined in the mineralogic compostion terms vocabulary."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sub lithic detrital mode"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:subaluminous a skos:Concept ;
+:subaluminous
+    a skos:Concept ;
     schema:citation "Shand 1947"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Aluminum oxide within 10 percent of sum of Na and K oxide."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "subaluminous"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:sulfate a skos:Concept ;
+:sulfate
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "硫酸脂"@zh ;
+    skos:altLabel
+        "硫酸脂"@zh ;
     skos:definition "Material predominantly composed of sulfate minerals"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Sulfat"@de,
+    skos:prefLabel
+        "Sulfat"@de,
         "sulfate"@en,
         "sulfato"@es,
         "sulfaatit"@fi,
@@ -639,83 +743,101 @@ cs: a skos:ConceptScheme ;
         "ซัลเฟต"@th,
         "sulfat"@vi,
         "硫酸盐"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:sulfate_chemistry a skos:Concept ;
+:sulfate_chemistry
+    a skos:Concept ;
     schema:citation "Struik etal 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sulfate is the most abundant anion"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sulfate chemistry"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:sulfide_bearing a skos:Concept ;
+:sulfide_bearing
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Greater than accessory amount (greater than 5 percent by volume) of sulfide mineral are present"@en ;
     skos:inScheme cs: ;
     skos:narrower :sulfide ;
     skos:prefLabel "sulfide bearing"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:sulfide_chemistry a skos:Concept ;
+:sulfide_chemistry
+    a skos:Concept ;
     schema:citation "Neuendorf et al 2005, Struik 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sulfur is the most abundant anion, cations are metals or semimetals."@en ;
     skos:inScheme cs: ;
     skos:narrower :sulfosalt_chemistry ;
     skos:prefLabel "sulfide chemistry"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:volcanic_lithic a skos:Concept ;
+:volcanic_lithic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sedimentary material contains significant broken volcanic rock fragments or vitric fragments, irrespective of their pyroclastic or epiclastic origin."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "volcanic lithic"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:arkosic_detrital_mode a skos:Concept ;
+:arkosic_detrital_mode
+    a skos:Concept ;
     schema:citation "Folk1968"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :feldspathic_lithic_detrital_mode ;
     skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the feldspar to lithic ratio is greater than 3 to 1. This corresponds to the arkose field of Folk (1968). For clastic rocks with little or no matrix and cement, rocks in this detrital mode composition category will also have quartz-feldspathic mineralogical composition."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "arkosic detrital mode"@en .
+    skos:prefLabel "arkosic detrital mode"@en
+.
 
 
-:asphaltic a skos:Concept ;
+:asphaltic
+    a skos:Concept ;
     schema:citation "Jackson 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :carbonaceous ;
     skos:definition "Material contains a significant amount of asphalt, which is a 'dark brown to black viscous liquid or low-melting solid bitumen that consists almost entirely of carbon and hydrogen...[and] formed in oil-bearing rocks by the evaporation of volatiles...' (Jackson, 1997, p. 39)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "asphaltic"@en .
+    skos:prefLabel "asphaltic"@en
+.
 
 
-:barium_bearing_carbonate_chemistry a skos:Concept ;
+:barium_bearing_carbonate_chemistry
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :carbonate ;
     skos:definition "CO3 is the predominant anion, and greater than 5 mole percent of cations are Ba."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "barium bearing carbonate chemistry"@en .
+    skos:prefLabel "barium bearing carbonate chemistry"@en
+.
 
 
-:calcareous a skos:Concept ;
+:calcareous
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "石灰質成分"@ja,
+    skos:altLabel
+        "石灰質成分"@ja,
         "เนื้อปูน"@th ;
     skos:broader :carbonate_bearing ;
     skos:definition "Calcium carbonate minerals are present, carbonate minerals form less than 50 percent of rock, material contains sufficient CaCO3 to react forming bubbles when hydrochloric acid is applied."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "calcareous"@en,
+    skos:prefLabel
+        "calcareous"@en,
         "composition carbonatée"@fr,
         "bersusunan gampingan"@id,
         "石灰質組成"@ja,
@@ -725,129 +847,158 @@ cs: a skos:ConceptScheme ;
         "komposisi berkapur"@ms,
         "ส่วนประกอบแบบคาร์บอเนต"@th,
         "thành phần vôi"@vi,
-        "砂屑石灰岩"@zh .
+        "砂屑石灰岩"@zh
+.
 
 
-:calcareous_monomeralic_carbonate a skos:Concept ;
+:calcareous_monomeralic_carbonate
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :monomineralic_carbonate ;
     skos:definition "Carbonate minerals form greater than 75 percent of rock, and calcium carbonate minerals forms greater than 75 percent of carbonate minerals."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "calcareous monomeralic carbonate"@en .
+    skos:prefLabel "calcareous monomeralic carbonate"@en
+.
 
 
-:calcium_rich_carbonate_chemistry a skos:Concept ;
+:calcium_rich_carbonate_chemistry
+    a skos:Concept ;
     schema:citation "Struik etal 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :carbonate_chemistry ;
     skos:definition "CO3 is the predominante anion, and the Ca is the most abundant (mole percent) cation."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "calcium rich carbonate chemistry"@en .
+    skos:prefLabel "calcium rich carbonate chemistry"@en
+.
 
 
-:calcsilicate a skos:Concept ;
+:calcsilicate
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :impure_calcsilicate_or_carbonate ;
     skos:definition "Material consists of greater than or equal to 50 percent calcsilicate or carbonate minerals and carbonate minerals less than or equal to calcsilicate minerals in mineral mode."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "calcsilicate"@en .
+    skos:prefLabel "calcsilicate"@en
+.
 
 
-:chloride_chemistry a skos:Concept ;
+:chloride_chemistry
+    a skos:Concept ;
     schema:citation "Struik etal 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Chloride is the most abundant (mole percent) anion"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "chloride chemistry"@en .
+    skos:prefLabel "chloride chemistry"@en
+.
 
 
-:dolomite_monomineralic_carbonate a skos:Concept ;
+:dolomite_monomineralic_carbonate
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :monomineralic_carbonate ;
     skos:definition "Carbonate minerals form greater than 75 percent of rock, and dolomite forms greater than 75 percent of carbonate minerals."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "dolomite monomineralic carbonate"@en .
+    skos:prefLabel "dolomite monomineralic carbonate"@en
+.
 
 
-:dolomitic a skos:Concept ;
+:dolomitic
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :carbonate_bearing ;
     skos:definition "Dolomite is present, carbonate minerals form less than 50 percent of rock."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "dolomitic"@en .
+    skos:prefLabel "dolomitic"@en
+.
 
 
-:fluoride_chemistry a skos:Concept ;
+:fluoride_chemistry
+    a skos:Concept ;
     schema:citation "Struik etal 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Fluorine is the most abundant (mole percent) anion"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "fluoride chemistry"@en .
+    skos:prefLabel "fluoride chemistry"@en
+.
 
 
-:high_silica_chemistry a skos:Concept ;
+:high_silica_chemistry
+    a skos:Concept ;
     schema:citation "Struik2002, SLTTs2004, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :silicate_chemistry ;
     skos:definition "Containing 65 percent or more SiO2 by weight. Syn acid."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "high silica chemistry"@en .
+    skos:prefLabel "high silica chemistry"@en
+.
 
 
-:intermediate_silica_chemistry a skos:Concept ;
+:intermediate_silica_chemistry
+    a skos:Concept ;
     schema:citation "Struik2002, SLTTs2004, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :silicate_chemistry ;
     skos:definition "Containing SiO2 in the range 52-65 percent, sometimes described as \\intermediate\\ rocks."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "intermediate silica chemistry"@en .
+    skos:prefLabel "intermediate silica chemistry"@en
+.
 
 
-:iron_bearing_carbonate_chemistry a skos:Concept ;
+:iron_bearing_carbonate_chemistry
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :carbonate_chemistry ;
     skos:definition "CO3 is the predominant anion, and iron is greater than 5 mole percent of the cations (includes Fe, Mg, Mn, Ba, Sr, Ca...)."@en ;
     skos:inScheme cs: ;
     skos:narrower :iron_rich_carbonate_chemistry ;
-    skos:prefLabel "iron bearing carbonate chemistry"@en .
+    skos:prefLabel "iron bearing carbonate chemistry"@en
+.
 
 
-:iron_rich_carbonate_chemistry a skos:Concept ;
+:iron_rich_carbonate_chemistry
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :iron_bearing_carbonate_chemistry ;
     skos:definition "CO3 is the predominant anion, and iron is the most abundant (mole percent) cation"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "iron rich carbonate chemistry"@en .
+    skos:prefLabel "iron rich carbonate chemistry"@en
+.
 
 
-:lithic_arkosic_detrital_mode a skos:Concept ;
+:lithic_arkosic_detrital_mode
+    a skos:Concept ;
     schema:citation "Folk1968"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :feldspathic_detrital_mode ;
     skos:definition "Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the ratio of lithic fragments to feldspar is between 1:1 and 1:3. This corresponds to the lithic arkose field of Folk (1968), the 75 percent quartz boundary is chosen to be consistent with quartzsose composition as defined in the mineralogic compostion terms vocabulary. Because of the abundance of lithic fragments for which the mineralogic composition is not specified, and the presence of undiscernible matrix and cement that are not incuded in the detrital mode, corresondence with the mineralogical composition terms is very approximate."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "lithic arkosic detrital mode"@en .
+    skos:prefLabel "lithic arkosic detrital mode"@en
+.
 
 
-:low_silica_chemistry a skos:Concept ;
+:low_silica_chemistry
+    a skos:Concept ;
     schema:citation "Struik2002, SLTTs2004, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :silicate_chemistry ;
     skos:definition "Containing SiO2 in the range 44-52 percent. Syn basic."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "low silica chemistry"@en .
+    skos:prefLabel "low silica chemistry"@en
+.
 
 
-:mafic a skos:Concept ;
+:mafic
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "susunan mafik"@id ;
+    skos:altLabel
+        "susunan mafik"@id ;
     skos:broader :ferromagnesian ;
     skos:definition "Material consists of greater than or equal to 40 percent and less than 90 percent ferromagnesian silicate minerals."@en ;
     skos:inScheme cs: ;
@@ -867,46 +1018,57 @@ cs: a skos:ConceptScheme ;
         "mafisk sammansättning"@sv,
         "ส่วนประกอบเมฟิก"@th,
         "thành phần mafic"@vi,
-        "铁镁质成分"@zh .
+        "铁镁质成分"@zh
+.
 
 
-:magnesium_rich_carbonate_chemistry a skos:Concept ;
+:magnesium_rich_carbonate_chemistry
+    a skos:Concept ;
     schema:citation "Struik etal 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :carbonate_chemistry ;
     skos:definition "CO3 is the predominant anion, and Mg is the most abundant (mole percent) cation."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "magnesium rich carbonate chemistry"@en .
+    skos:prefLabel "magnesium rich carbonate chemistry"@en
+.
 
 
-:monomineralic_carbonate a skos:Concept ;
+:monomineralic_carbonate
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :carbonate ;
     skos:definition "Rock in which carbonate minerals form greater than 75 percent of rock."@en ;
     skos:inScheme cs: ;
-    skos:narrower :calcareous_monomeralic_carbonate,
+    skos:narrower
+        :calcareous_monomeralic_carbonate,
         :dolomite_monomineralic_carbonate ;
-    skos:prefLabel "monomineralic carbonate"@en .
+    skos:prefLabel "monomineralic carbonate"@en
+.
 
 
-:nitrate_chemistry a skos:Concept ;
+:nitrate_chemistry
+    a skos:Concept ;
     schema:citation "Struik etal 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :halide_chemistry ;
     skos:definition "Nitrate (NO3) is most abundant (mole percent) anion."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "nitrate chemistry"@en .
+    skos:prefLabel "nitrate chemistry"@en
+.
 
 
-:pelitic a skos:Concept ;
+:pelitic
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "rajut pelit"@id ;
+    skos:altLabel
+        "rajut pelit"@id ;
     skos:broader :quartz_feldspar_pelitic ;
     skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and aluminous mineral + mica content is greater than or equal to 40 percent."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Pelit-Gefuege"@de,
+    skos:prefLabel
+        "Pelit-Gefuege"@de,
         "pelitic"@en,
         "textura pelítica"@es,
         "peliittinen tekstuuri"@fi,
@@ -922,44 +1084,53 @@ cs: a skos:ConceptScheme ;
         "pelitisk textur"@sv,
         "ที่มาจากเพไลต์"@th,
         "kiến trúc dạng bùn"@vi,
-        "泥质结构"@zh .
+        "泥质结构"@zh
+.
 
 
-:quartzo_feldspathic a skos:Concept ;
+:quartzo_feldspathic
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :quartz_feldspar_pelitic ;
     skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz + feldspar (sensu Robertson, 1999) greater than 60 percent."@en ;
     skos:inScheme cs: ;
     skos:narrower :quartzose ;
-    skos:prefLabel "quartzo feldspathic"@en .
+    skos:prefLabel "quartzo feldspathic"@en
+.
 
 
-:quartzose a skos:Concept ;
+:quartzose
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :quartzo_feldspathic ;
     skos:definition "Material consists of greater than or equal to 75 percent quartz."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "quartzose"@en .
+    skos:prefLabel "quartzose"@en
+.
 
 
-:semi_pelitic a skos:Concept ;
+:semi_pelitic
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :quartz_feldspar_pelitic ;
     skos:definition "Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz+ feldspar less than 60 percent"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "semi pelitic"@en .
+    skos:prefLabel "semi pelitic"@en
+.
 
 
-:sulfide a skos:Concept ;
+:sulfide
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :sulfide_bearing ;
     skos:definition "Material predominantly composed of sulfide minerals"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Sulfid"@de,
+    skos:prefLabel
+        "Sulfid"@de,
         "sulfide"@en,
         "sulfuro"@es,
         "sulfidit"@fi,
@@ -976,26 +1147,32 @@ cs: a skos:ConceptScheme ;
         "ซัลไฟด์"@th,
         "sulfides"@us,
         "sulfua"@vi,
-        "硫化物"@zh .
+        "硫化物"@zh
+.
 
 
-:sulfosalt_chemistry a skos:Concept ;
+:sulfosalt_chemistry
+    a skos:Concept ;
     schema:citation "Neuendorf et al 2005, Struik 2002, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :sulfide_chemistry ;
     skos:definition "Sulfide in which a semimetal (As, Sb, Bi) is present in a cation role"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "sulfosalt chemistry"@en .
+    skos:prefLabel "sulfosalt chemistry"@en
+.
 
 
-:ultramafic a skos:Concept ;
+:ultramafic
+    a skos:Concept ;
     schema:citation "NADM SLTTm 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "lampau mafik"@ms ;
+    skos:altLabel
+        "lampau mafik"@ms ;
     skos:broader :ferromagnesian ;
     skos:definition "Material consists of greater than 90 percent ferromagnesian silicate minerals."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Ultrabasit"@de,
+    skos:prefLabel
+        "Ultrabasit"@de,
         "ultramafic"@en,
         "ultrabasita"@es,
         "ultramafiitit"@fi,
@@ -1011,14 +1188,17 @@ cs: a skos:ConceptScheme ;
         "ultramafisk bergart"@sv,
         "อัลตราเมฟิก"@th,
         "đá siêu mafic"@vi,
-        "超镁铁质"@zh .
+        "超镁铁质"@zh
+.
 
 
-:very_low_silica_chemistry a skos:Concept ;
+:very_low_silica_chemistry
+    a skos:Concept ;
     schema:citation "Struik2002, SLTTs2004, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :silicate_chemistry ;
     skos:definition "Containing between about 20 and 44 percent SiO2. A survey of chemical analyses in the Georock database (query FOR ALL GEOLOGICAL SETTINGS, MATERIAL: WHOLE ROCK (AND VOLCANIC GLASS), PUB. YEARS: 2005-1970), 10/10/2005, http://georoc.mpch-mainz.gwdg. syn ultrabasic."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "very low silica chemistry"@en .
+    skos:prefLabel "very low silica chemistry"@en
+.
 

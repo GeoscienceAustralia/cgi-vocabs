@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
+    skos:changeNote
+        "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-11-28 SMR Replace URN identifiers with http URI identifiers according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en,
         "2012-02-27 SMR add skos:exactMatch triples associating URIs with number token URI in 201012 version."@en,
@@ -27,13 +29,16 @@ cs: a skos:ConceptScheme ;
     skos:hasTopConcept :metamorphic_facies_not_specified,
         :metamorphic_facies_unknown,
         :no_metamorphic_minerals ;
-    skos:prefLabel "Metamorphic Facies"@en .
+    skos:prefLabel "Metamorphic Facies"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/metamorphicfacies> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/metamorphicfacies>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :amphibolite_metamorphic_facies,
+    skos:member
+        :amphibolite_metamorphic_facies,
         :eclogite_metamorphic_facies,
         :epidote_amphibolite_metamorphic_facies,
         :glaucophane_schist_facies,
@@ -46,15 +51,18 @@ cs: a skos:ConceptScheme ;
         :sanidinite_metamorphic_facies,
         :subgreenschist_metamorphic_facies,
         :zeolite_metamorphic_facies ;
-    skos:prefLabel "Metamorphic Facies - All Concepts"@en .
+    skos:prefLabel "Metamorphic Facies - All Concepts"@en
+.
 
 
-:metamorphic_facies_not_specified a skos:Concept ;
+:metamorphic_facies_not_specified
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphosed, but facies not specified in more detail. For use in normative description to indicate that any metamorphic facies value is valid."@en ;
     skos:inScheme cs: ;
-    skos:narrower :amphibolite_metamorphic_facies,
+    skos:narrower
+        :amphibolite_metamorphic_facies,
         :eclogite_metamorphic_facies,
         :epidote_amphibolite_metamorphic_facies,
         :glaucophane_schist_facies,
@@ -65,31 +73,38 @@ cs: a skos:ConceptScheme ;
         :subgreenschist_metamorphic_facies,
         :zeolite_metamorphic_facies ;
     skos:prefLabel "metamorphic facies not specified"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:metamorphic_facies_unknown a skos:Concept ;
+:metamorphic_facies_unknown
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "For use in instance descriptions to indicate that no data are available to constrain metamorphic facies. May be metamorphosed or non-metamorphosed."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "metamorphic facies unknown"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:no_metamorphic_minerals a skos:Concept ;
+:no_metamorphic_minerals
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Corresponds to non-metamorphosed condition, since metamorphic facies classification is based on mineral assemblages, absence of metamorphic minerals means that the classification does not apply."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "no metamorphic minerals"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:amphibolite_metamorphic_facies a skos:Concept ;
+:amphibolite_metamorphic_facies
+    a skos:Concept ;
     schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "แอมฟิโบไลต์เฟชี"@th ;
+    skos:altLabel
+        "แอมฟิโบไลต์เฟชี"@th ;
     skos:broader :metamorphic_facies_not_specified ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by hornblende-plagioclase (plagioclase more calcic than An17)."@en ;
     skos:inScheme cs: ;
@@ -103,37 +118,45 @@ cs: a skos:ConceptScheme ;
         "fasies amfibolit"@ms,
         "ชุดลักษณ์แอมฟิโบไลต์"@th,
         "tướng amphibolit"@vi,
-        "角闪岩相"@zh .
+        "角闪岩相"@zh
+.
 
 
-:eclogite_metamorphic_facies a skos:Concept ;
+:eclogite_metamorphic_facies
+    a skos:Concept ;
     schema:citation "Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_facies_not_specified ;
     skos:definition "Omphacite-garnet-quartz (no plagioclase, olivine stable with garnet), assemblage for rocks of basaltic composition"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "eclogite metamorphic facies"@en .
+    skos:prefLabel "eclogite metamorphic facies"@en
+.
 
 
-:epidote_amphibolite_metamorphic_facies a skos:Concept ;
+:epidote_amphibolite_metamorphic_facies
+    a skos:Concept ;
     schema:citation "Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_facies_not_specified ;
     skos:definition "Hornblende-albite-epidote(-chlorite), assemblage for rocks of basaltic composition"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "epidote amphibolite metamorphic facies"@en .
+    skos:prefLabel "epidote amphibolite metamorphic facies"@en
+.
 
 
-:glaucophane_schist_facies a skos:Concept ;
+:glaucophane_schist_facies
+    a skos:Concept ;
     schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_facies_not_specified ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by glaucophane-epidote (-garnet), glaucophane-lawsonite, or glaucophane-lawsonite-jadeite."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "glaucophane schist facies"@en .
+    skos:prefLabel "glaucophane schist facies"@en
+.
 
 
-:granulite_facies a skos:Concept ;
+:granulite_facies
+    a skos:Concept ;
     schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_facies_not_specified ;
@@ -149,50 +172,61 @@ cs: a skos:ConceptScheme ;
         "fasies granulit"@ms,
         "แกรนูไลต์เฟชี"@th,
         "tướng granulit"@vi,
-        "麻粒岩相"@zh .
+        "麻粒岩相"@zh
+.
 
 
-:greenschist_metamorphic_facies a skos:Concept ;
+:greenschist_metamorphic_facies
+    a skos:Concept ;
     schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_facies_not_specified ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by actinolite-albite-epidote-chlorite (an epidote group mineral is the diagnostic Ca-Al silicate rather than prehnite or pumpellyite)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "greenschist metamorphic facies"@en .
+    skos:prefLabel "greenschist metamorphic facies"@en
+.
 
 
-:pyroxene_hornfels_metamorphic_facies a skos:Concept ;
+:pyroxene_hornfels_metamorphic_facies
+    a skos:Concept ;
     schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_facies_not_specified ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by clinopyroxene-orthopyroxene-plagioclase (olivine stable with plagioclase)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "pyroxene hornfels metamorphic facies"@en .
+    skos:prefLabel "pyroxene hornfels metamorphic facies"@en
+.
 
 
-:sanidinite_metamorphic_facies a skos:Concept ;
+:sanidinite_metamorphic_facies
+    a skos:Concept ;
     schema:citation "Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_facies_not_specified ;
     skos:definition "distinguished from the pyroxene hornfels facies by the occurrence of especially high-temperature varieties and polymorphs of minerals (eg. pigeonite, K-rich labradorite), assemblage for rocks of basaltic composition"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "sanidinite metamorphic facies"@en .
+    skos:prefLabel "sanidinite metamorphic facies"@en
+.
 
 
-:subgreenschist_metamorphic_facies a skos:Concept ;
+:subgreenschist_metamorphic_facies
+    a skos:Concept ;
     schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_facies_not_specified ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by prehnite-pumpellyite, pumpellyite-actinolite, prehnite-actinolite (prehnite and pumpellyite are the diagnostic Ca-Al silicates rather than minerals of the epidote or zeolite groups)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "subgreenschist metamorphic facies"@en .
+    skos:prefLabel "subgreenschist metamorphic facies"@en
+.
 
 
-:zeolite_metamorphic_facies a skos:Concept ;
+:zeolite_metamorphic_facies
+    a skos:Concept ;
     schema:citation "Smulikowski et al. 2003; Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_facies_not_specified ;
     skos:definition "Metamorphic facies characterized in rocks of basaltic composition by zeolite minerals such as laumontite and heulandites (in place of other Ca-Al silicates such as prehnite, pumpellyite and epidote)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "zeolite metamorphic facies"@en .
+    skos:prefLabel "zeolite metamorphic facies"@en
+.
 

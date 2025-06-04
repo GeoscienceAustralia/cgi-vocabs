@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
+    skos:changeNote
+        "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en,
         "2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
@@ -32,14 +34,18 @@ cs: a skos:ConceptScheme ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Geologic Unit Part Role vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept :only_part,
         :part_of ;
-    skos:prefLabel "Geologic Unit Part Role"@en .
+    skos:prefLabel "Geologic Unit Part Role"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    skos:changeNote
+        "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :bed_lithosome,
+    skos:member
+        :bed_lithosome,
         :blocks,
         :concretion,
         :cyclic_bedding_package,
@@ -63,58 +69,70 @@ cs: a skos:ConceptScheme ;
         :unspecified_part_role,
         :vein_or_dike_lithosome,
         :xenolith ;
-    skos:prefLabel "Geologic Unit Part Role - All Concepts"@en .
+    skos:prefLabel "Geologic Unit Part Role - All Concepts"@en
+.
 
 
-:only_part a skos:Concept ;
+:only_part
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Entire described unit consists of a single part or constituent"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/onlyPart> ;
     skos:inScheme cs: ;
     skos:prefLabel "only part"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:part_of a skos:Concept ;
+:part_of
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The geologic unit part role is not known in any greater detail. Inclusion of Only_part as a separate concept implies that this concept is the equivalent of 'proper part' in mereology."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/partOf> ;
     skos:inScheme cs: ;
-    skos:narrower :facies,
+    skos:narrower
+        :facies,
         :inclusion,
         :lithosome,
         :stratigraphic_part,
         :unspecified_part_role ;
     skos:prefLabel "part of"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:bed_lithosome a skos:Concept ;
+:bed_lithosome
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lithosome ;
     skos:definition "Lithosome in lithostratigraphic unit that occurs as individual beds interleaved with other constituents on the outcrop (m) scale or larger."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/bedLithosome> ;
     skos:inScheme cs: ;
-    skos:prefLabel "bed lithosome"@en .
+    skos:prefLabel "bed lithosome"@en
+.
 
 
-:blocks a skos:Concept ;
+:blocks
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inclusion ;
     skos:definition "Geologic unit constituent is present as masses with generally sharp boundaries and block-like geometry within a matrix of some other material emplaced by processes at the earth's surface--e.g. volcanic eruption or mass wasting. Implication is that blocks were derived from the same source geologic unit and emplaced in the described unit."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/blocks> ;
     skos:inScheme cs: ;
-    skos:prefLabel "blocks"@en .
+    skos:prefLabel "blocks"@en
+.
 
 
-:concretion a skos:Concept ;
+:concretion
+    a skos:Concept ;
     schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "コンクリーション"@ja,
+    skos:altLabel
+        "コンクリーション"@ja,
         "결괴"@ko,
         "凝结"@zh,
         "固结"@zh ;
@@ -122,7 +140,8 @@ cs: a skos:ConceptScheme ;
     skos:definition "Hard, compact mass or aggregate of mineral matter, normally subsperical but commonly oblate, disc-shaped or irregular. Formed from precipitation from solution about a nucleus or centre. Use as a geologic unit part should be restricted to concretions that are too large to consider as constituents in the rock material that composes the unit."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/concretion> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Konkretion"@de,
+    skos:prefLabel
+        "Konkretion"@de,
         "concretion"@en,
         "concreción"@es,
         "konkreetiot"@fi,
@@ -138,40 +157,48 @@ cs: a skos:ConceptScheme ;
         "konkretion"@sv,
         "มวลสารพอก"@th,
         "kết vón"@vi,
-        "结核"@zh .
+        "结核"@zh
+.
 
 
-:cyclic_bedding_package a skos:Concept ;
+:cyclic_bedding_package
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lithosome ;
     skos:definition "Lithosome characterized by an internal sequence of units, which is repeated in a stacked sequence, e.g. fining-upward sequence, thickening upward sequence, bouma sequence."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/cyclicBeddingPackage> ;
     skos:inScheme cs: ;
-    skos:prefLabel "cyclic bedding package"@en .
+    skos:prefLabel "cyclic bedding package"@en
+.
 
 
-:enclave a skos:Concept ;
+:enclave
+    a skos:Concept ;
     schema:citation "Cobbing, 2000, Barbarin, 1991"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inclusion ;
     skos:definition "General term for a polymineralic aggregate enclosed in a granitoid."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/enclave> ;
     skos:inScheme cs: ;
-    skos:prefLabel "enclave"@en .
+    skos:prefLabel "enclave"@en
+.
 
 
-:facies a skos:Concept ;
+:facies
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "層相"@ja,
+    skos:altLabel
+        "層相"@ja,
         "암상"@ko,
         "岩相"@zh ;
     skos:broader :part_of ;
     skos:definition "Represents a particular body of rock that is a lateral variant of a lithostratigraphic unit, or a variant of a lithodemic unit. Contrast with lithosome in being a particular, connected body of rock, as opposed to a kind of rock body that is repeated in many places in a unit."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/facies> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Fazies"@de,
+    skos:prefLabel
+        "Fazies"@de,
         "facies"@en,
         "facies"@es,
         "fasies"@fi,
@@ -187,35 +214,42 @@ cs: a skos:ConceptScheme ;
         "facies"@sv,
         "ชุดลักษณ์"@th,
         "tướng"@vi,
-        "相"@zh .
+        "相"@zh
+.
 
 
-:geologic_unit_matrix a skos:Concept ;
+:geologic_unit_matrix
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lithosome ;
     skos:definition "Lithosome in a geologic unit that is generally interstitial to other constituents, e.g. in a mass wasting deposit, melange, tuff breccia."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/geologicUnitMatrix> ;
     skos:inScheme cs: ;
-    skos:prefLabel "geologic unit matrix"@en .
+    skos:prefLabel "geologic unit matrix"@en
+.
 
 
-:inclusion a skos:Concept ;
+:inclusion
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "包体"@zh,
+    skos:altLabel
+        "包体"@zh,
         "夹杂物"@zh ;
     skos:broader :part_of ;
     skos:definition "Geologic unit constituent is present as masses with generally sharp boundaries enclosed within a matrix of some other material."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/inclusion> ;
     skos:inScheme cs: ;
-    skos:narrower :blocks,
+    skos:narrower
+        :blocks,
         :concretion,
         :enclave,
         :pendants,
         :tectonic_block,
         :xenolith ;
-    skos:prefLabel "Einschluss"@de,
+    skos:prefLabel
+        "Einschluss"@de,
         "inclusion"@en,
         "inclusión"@es,
         "sulkeumat"@fi,
@@ -232,116 +266,139 @@ cs: a skos:ConceptScheme ;
         "inneslutning"@sv,
         "การเจือปน"@th,
         "bao thể"@vi,
-        "包裹体"@zh .
+        "包裹体"@zh
+.
 
 
-:irregular_lithosome a skos:Concept ;
+:irregular_lithosome
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lithosome ;
     skos:definition "Lithosome in a mixed/heterogeneous lithodemic unit that occurs in irregular bodies within unit"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/irregularLithosome> ;
     skos:inScheme cs: ;
-    skos:prefLabel "irregular lithosome"@en .
+    skos:prefLabel "irregular lithosome"@en
+.
 
 
-:layer_lithosome a skos:Concept ;
+:layer_lithosome
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lithosome ;
     skos:definition "Lithosome in igneous or metamorphic geologic unit that occurs as layers alternating with other constituents."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/layerLithosome> ;
     skos:inScheme cs: ;
-    skos:prefLabel "layer lithosome"@en .
+    skos:prefLabel "layer lithosome"@en
+.
 
 
-:lenticular_lithosome a skos:Concept ;
+:lenticular_lithosome
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lithosome ;
     skos:definition "Lithosome occurs as discrete lense-shaped bodies, not connected with other bodies."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/lenticularLithosome> ;
     skos:inScheme cs: ;
-    skos:prefLabel "lenticular lithosome"@en .
+    skos:prefLabel "lenticular lithosome"@en
+.
 
 
-:lithosome a skos:Concept ;
+:lithosome
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :part_of ;
     skos:definition "A kind of rock body that has multiple occurrences in a single geologic unit. A mass of rock of uniform character, characterized by geometry, composition, and internal structure. Generally denotes rock mass that is the product of a particular rock forming process or related sequence of processes in the containing unit. Example--bouma sequence, point bar sequence. A particular lithosome may be characterized by the presence of blocks, but blocks are not treated as kinds of lithosome because the internal character of the blocks is determined by a separate genetic sequence from the described unit. This vocabulary generalizes the concept defined in Neuendorf et al 2005 to include bodies of igneous or metamorphic rock as well as sedimentary rock. NADM SLTTs (2004) used the term 'lithotope' with similar meaning for sedimentary rocks."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/lithosome> ;
     skos:inScheme cs: ;
-    skos:narrower :bed_lithosome,
+    skos:narrower
+        :bed_lithosome,
         :cyclic_bedding_package,
         :geologic_unit_matrix,
         :irregular_lithosome,
         :layer_lithosome,
         :lenticular_lithosome,
         :vein_or_dike_lithosome ;
-    skos:prefLabel "lithosome"@en .
+    skos:prefLabel "lithosome"@en
+.
 
 
-:marker_bed a skos:Concept ;
+:marker_bed
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :stratigraphic_part ;
     skos:definition "Stratigraphic part that is a thin laterally continuous bed within another unit."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/markerBed> ;
     skos:inScheme cs: ;
-    skos:prefLabel "marker bed"@en .
+    skos:prefLabel "marker bed"@en
+.
 
 
-:pendants a skos:Concept ;
+:pendants
+    a skos:Concept ;
     schema:citation "Base on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inclusion ;
     skos:definition "A block of wall rock material in an igneous intrusion. Pendants become xenoliths as the dimension becomes smaller than about 10 m in their longest dimension. Although term pendant has connotation of being suspended or supported from above, this is rarely demonstrable in geologic situations, and the concept here does not require connection to the wall of the containing intrusion."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/pendants> ;
     skos:inScheme cs: ;
-    skos:narrower :rafts,
+    skos:narrower
+        :rafts,
         :roof_pendant,
         :screen ;
-    skos:prefLabel "pendants"@en .
+    skos:prefLabel "pendants"@en
+.
 
 
-:rafts a skos:Concept ;
+:rafts
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :pendants ;
     skos:definition "Pendants of pre-intrusive country rock in intrusive igneous matrix that have large horizontal extent relative to their thickness"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/rafts> ;
     skos:inScheme cs: ;
-    skos:prefLabel "rafts"@en .
+    skos:prefLabel "rafts"@en
+.
 
 
-:roof_pendant a skos:Concept ;
+:roof_pendant
+    a skos:Concept ;
     schema:citation "Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :pendants ;
     skos:definition "Pendant that is demonstrably derived from the upper boundary of an igneous body."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/roofPendant> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Batholithdach"@de,
+    skos:prefLabel
+        "Batholithdach"@de,
         "roof pendant"@en,
         "alero"@es,
         "katonkieleke"@fi,
         "pendente"@it,
         "ostanets krovli"@ru,
-        "ROOF PENDANT"@sv .
+        "ROOF PENDANT"@sv
+.
 
 
-:screen a skos:Concept ;
+:screen
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :pendants ;
     skos:definition "Pendant that is a vertical sheet like pendant in an intrusive igneous rock body."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/screen> ;
     skos:inScheme cs: ;
-    skos:prefLabel "screen"@en .
+    skos:prefLabel "screen"@en
+.
 
 
-:stratigraphic_part a skos:Concept ;
+:stratigraphic_part
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :part_of ;
@@ -349,49 +406,59 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/stratigraphicPart> ;
     skos:inScheme cs: ;
     skos:narrower :marker_bed ;
-    skos:prefLabel "stratigraphic part"@en .
+    skos:prefLabel "stratigraphic part"@en
+.
 
 
-:tectonic_block a skos:Concept ;
+:tectonic_block
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inclusion ;
     skos:definition "The geologic unit part occurs as discrete masses with faulted boundaries, emplaced into the host unit by tectonic processes inside the earth, e.g. blocks in tectonic melange"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/tectonicBlock> ;
     skos:inScheme cs: ;
-    skos:prefLabel "tectonic block"@en .
+    skos:prefLabel "tectonic block"@en
+.
 
 
-:unspecified_part_role a skos:Concept ;
+:unspecified_part_role
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :part_of ;
     skos:definition "Geologic unit part with unspecified role, use in normative descriptions when any role is allowed."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/unspecifiedPartRole> ;
     skos:inScheme cs: ;
-    skos:prefLabel "unspecified part role"@en .
+    skos:prefLabel "unspecified part role"@en
+.
 
 
-:vein_or_dike_lithosome a skos:Concept ;
+:vein_or_dike_lithosome
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :lithosome ;
     skos:definition "Lithosome occurs as intrusive, sheet-like bodies within the unit as an essential part of the unit."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/veinOrDikeLithosome> ;
     skos:inScheme cs: ;
-    skos:prefLabel "vein or dike lithosome"@en .
+    skos:prefLabel "vein or dike lithosome"@en
+.
 
 
-:xenolith a skos:Concept ;
+:xenolith
+    a skos:Concept ;
     schema:citation "Neuendorf et al. 2005, Cobbing, 2000, This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "batuan asing"@id,
+    skos:altLabel
+        "batuan asing"@id,
         "捕虏岩"@zh ;
     skos:broader :inclusion ;
     skos:definition "Inclusion of pre-intrusive country rock in intrusive igneous matrix, cm to about 10 meter diameter in longest dimension. Use term pendant for larger blocks."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/xenolith> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Xenolith"@de,
+    skos:prefLabel
+        "Xenolith"@de,
         "xenolith"@en,
         "enclave roca"@es,
         "ksenoliitit"@fi,
@@ -407,5 +474,6 @@ cs: a skos:ConceptScheme ;
         "xenolit"@sv,
         "หินแปลกปลอม"@th,
         "thể tù"@vi,
-        "捕虏体"@zh .
+        "捕虏体"@zh
+.
 

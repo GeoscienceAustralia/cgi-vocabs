@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
+    skos:changeNote
+        "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en,
         "2010-02-14 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
@@ -32,13 +34,16 @@ cs: a skos:ConceptScheme ;
         :oblique_slip,
         :scissor,
         :strike_separation_sense ;
-    skos:prefLabel "Fault Movement Type"@en .
+    skos:prefLabel "Fault Movement Type"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/faultmovementtype> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/faultmovementtype>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :dip_separation_sense,
+    skos:member
+        :dip_separation_sense,
         :dip_slip,
         :extraction,
         :horizontal,
@@ -53,149 +58,183 @@ cs: a skos:ConceptScheme ;
         :transpressional,
         :transtensional,
         :wrench ;
-    skos:prefLabel "Fault Movement Type - All Concepts "@en .
+    skos:prefLabel "Fault Movement Type - All Concepts "@en
+.
 
 
-:dip_separation_sense a skos:Concept ;
+:dip_separation_sense
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A fault along which there is some separation parallel to the dip of the fault."@en ;
     skos:inScheme cs: ;
     skos:narrower :dip_slip ;
     skos:prefLabel "dip separation sense"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:extraction a skos:Concept ;
+:extraction
+    a skos:Concept ;
     schema:citation "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A fault whose two sides have approached each other substantially in the direction perpendicular to the fault."@en ;
     skos:inScheme cs: ;
-    skos:narrower :mixed_extraction,
+    skos:narrower
+        :mixed_extraction,
         :pure_extraction ;
     skos:prefLabel "extraction"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:horizontal a skos:Concept ;
+:horizontal
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The fault is horizontal."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "horizontal"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:oblique_slip a skos:Concept ;
+:oblique_slip
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia), SMR"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The net slip of the fault lies between the strike and dip directions of the fault, the slip vector rakes between 10 and 80 degrees in the plane of the fault."@en ;
     skos:inScheme cs: ;
-    skos:narrower :transpressional,
+    skos:narrower
+        :transpressional,
         :transtensional ;
     skos:prefLabel "oblique slip"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:scissor a skos:Concept ;
+:scissor
+    a skos:Concept ;
     schema:citation "Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A fault on which there is increasing offset or separation along the strike from an initial point of no offset, with reverse offset in the opposite direction."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "scissor"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:strike_separation_sense a skos:Concept ;
+:strike_separation_sense
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A fault along which there is some separation parallel to the strike of the fault."@en ;
     skos:inScheme cs: ;
     skos:narrower :strike_slip ;
     skos:prefLabel "strike separation sense"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:dip_slip a skos:Concept ;
+:dip_slip
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :dip_separation_sense ;
     skos:definition "The net slip of the fault lies in the dip direction of the fault."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "dip slip"@en .
+    skos:prefLabel "dip slip"@en
+.
 
 
-:mixed_extraction a skos:Concept ;
+:mixed_extraction
+    a skos:Concept ;
     schema:citation "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :extraction ;
     skos:definition "An extraction fault with some displacement within the fault plane."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "mixed extraction"@en .
+    skos:prefLabel "mixed extraction"@en
+.
 
 
-:pure_extraction a skos:Concept ;
+:pure_extraction
+    a skos:Concept ;
     schema:citation "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :extraction ;
     skos:definition "An extraction fault with no discernible displacement within the fault plane."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "pure extraction"@en .
+    skos:prefLabel "pure extraction"@en
+.
 
 
-:strike_slip a skos:Concept ;
+:strike_slip
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia), this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :strike_separation_sense ;
     skos:definition "The net slip of the fault (slip vector) is parallel to the strike of the fault."@en ;
     skos:inScheme cs: ;
-    skos:narrower :transcurrent,
+    skos:narrower
+        :transcurrent,
         :transform,
         :wrench ;
-    skos:prefLabel "strike slip"@en .
+    skos:prefLabel "strike slip"@en
+.
 
 
-:transcurrent a skos:Concept ;
+:transcurrent
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :strike_slip ;
     skos:definition "A large scale strike-slip fault in which the fault surface is steeply inclined."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "transcurrent"@en .
+    skos:prefLabel "transcurrent"@en
+.
 
 
-:transform a skos:Concept ;
+:transform
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :strike_slip ;
     skos:definition "A variety of strike-slip fault along which the displacement suddenly stops or changes form, typically associated with mid-ocean ridges."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "transform"@en .
+    skos:prefLabel "transform"@en
+.
 
 
-:transpressional a skos:Concept ;
+:transpressional
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :oblique_slip ;
     skos:definition "A fault along which strike-slip deformation is accompanied by a component of shortening transverse to the fault."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "transpressional"@en .
+    skos:prefLabel "transpressional"@en
+.
 
 
-:transtensional a skos:Concept ;
+:transtensional
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :oblique_slip ;
     skos:definition "A fault along which strike-slip deformation is accompanied by a component of extension transverse to the fault."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "transtensional"@en .
+    skos:prefLabel "transtensional"@en
+.
 
 
-:wrench a skos:Concept ;
+:wrench
+    a skos:Concept ;
     schema:citation "GGIC vocabularies working group (Australia)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :strike_slip ;
     skos:definition "A strike slip fault in which the faut plane is more or less vertical."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "wrench"@en .
+    skos:prefLabel "wrench"@en
+.
 

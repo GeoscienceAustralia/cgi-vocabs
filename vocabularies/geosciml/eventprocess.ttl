@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
+    skos:changeNote
+        "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010 11 27 SMR replace URN identifiers with http URIs according to CGI URI scheme."@en,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protégé."@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en,
@@ -28,13 +30,15 @@ cs: a skos:ConceptScheme ;
     skos:definition "This scheme specifies concepts used to describe the geological processes that are associated with geological events, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Event Process vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.02.xslt."@en ;
     skos:hasTopConcept :geologic_process ;
-    skos:prefLabel "Event Process"@en .
+    skos:prefLabel "Event Process"@en
+.
 
-
-<http://resource.geosciml.org/classifier/cgi/eventprocess> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/eventprocess>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :accretion,
+    skos:member
+        :accretion,
         :alteration,
         :biological_precipitation,
         :biological_weathering,
@@ -115,16 +119,19 @@ cs: a skos:ConceptScheme ;
         :water_erosion,
         :weathering,
         :wind_erosion ;
-    skos:prefLabel "Event Process - All Concepts"@en .
+    skos:prefLabel "Event Process - All Concepts"@en
+.
 
 
-:geologic_process a skos:Concept ;
+:geologic_process
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "process that effects the geologic record"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/geologicProcess> ;
     skos:inScheme cs: ;
-    skos:narrower :bolide_impact,
+    skos:narrower
+        :bolide_impact,
         :deep_water_oxygen_depletion,
         :deformation,
         :diagenetic_process,
@@ -139,13 +146,16 @@ cs: a skos:ConceptScheme ;
         :tectonic_process,
         :weathering ;
     skos:prefLabel "geologic process"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:accretion a skos:Concept ;
+:accretion
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "akresi"@id,
+    skos:altLabel
+        "akresi"@id,
         "pembumbunan"@id,
         "×"@ja,
         "결착"@ko,
@@ -156,7 +166,8 @@ cs: a skos:ConceptScheme ;
     skos:definition "The addition of material to a continent. Typically involves convergent or transform motion."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/accretion> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Anlagerung"@de,
+    skos:prefLabel
+        "Anlagerung"@de,
         "accretion"@en,
         "acreción"@es,
         "kasvaminen"@fi,
@@ -172,20 +183,24 @@ cs: a skos:ConceptScheme ;
         "ackretion"@sv,
         "การงอกพอกพูน"@th,
         "bồi kết"@vi,
-        "加积"@zh .
+        "加积"@zh
+.
 
 
-:alteration a skos:Concept ;
+:alteration
+    a skos:Concept ;
     schema:citation "Fettes and Desmons, 2007"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pengubahan"@id,
+    skos:altLabel
+        "pengubahan"@id,
         "交代作用"@ja,
         "การแปรเปลี่ยน"@th ;
     skos:broader :metamorphic_process ;
     skos:definition "General term for any change in the mineralogical or chemical composition of a rock. Typically related to interaction with hydrous fluids."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/alteration> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Umwandlung"@de,
+    skos:prefLabel
+        "Umwandlung"@de,
         "alteration"@en,
         "alteración"@es,
         "muuttuminen"@fi,
@@ -201,42 +216,51 @@ cs: a skos:ConceptScheme ;
         "omvandling"@sv,
         "การเปลี่ยนสภาพ"@th,
         "biến đổi"@vi,
-        "蚀变(作用)"@zh .
+        "蚀变(作用)"@zh
+.
 
 
-:biological_precipitation a skos:Concept ;
+:biological_precipitation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deposition ;
     skos:definition "The deposition of minerals from solution by the agency of organisms"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalPrecipitation> ;
     skos:inScheme cs: ;
-    skos:prefLabel "biological precipitation"@en .
+    skos:prefLabel "biological precipitation"@en
+.
 
 
-:biological_weathering a skos:Concept ;
+:biological_weathering
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :weathering ;
     skos:definition "breakdown of rocks by biological agents, e.g. the penetrating and expanding force of roots, the presence of moss and lichen causing humic acids to be retained in contact with rock, and the work of animals (worms, moles, rabbits) in modifying surface soil"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalWeathering> ;
     skos:inScheme cs: ;
-    skos:prefLabel "biological weathering"@en .
+    skos:prefLabel "biological weathering"@en
+.
 
 
-:bolide_impact a skos:Concept ;
+:bolide_impact
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "The impact of an extraterrestrial body on the surface of the earth"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/bolideImpact> ;
     skos:inScheme cs: ;
-    skos:narrower :cometary_impact,
+    skos:narrower
+        :cometary_impact,
         :meteorite_impact ;
-    skos:prefLabel "bolide impact"@en .
+    skos:prefLabel "bolide impact"@en
+.
 
 
-:chemical_precipitation a skos:Concept ;
+:chemical_precipitation
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deposition,
@@ -244,23 +268,27 @@ cs: a skos:ConceptScheme ;
     skos:definition "The deposition of mineral matter by precipitation from solution or as a result of chemical reactions. May be sedimentary or hydrothermal."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalPrecipitation> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Faellung"@de,
+    skos:prefLabel
+        "Faellung"@de,
         "chemical precipitation"@en,
         "precipitación"@es,
         "saostuminen"@fi,
         "precipitazione chimica"@it,
         "osazhdenie khimicheskoe"@ru,
-        "kemisk utfällning"@sv .
+        "kemisk utfällning"@sv
+.
 
 
-:chemical_weathering a skos:Concept ;
+:chemical_weathering
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :weathering ;
     skos:definition "The process of weathering by which chemical reactions (hydrolysishydration, oxidation, carbonation, ion exchange, and solution) transform rocks and minerals into new chemical combinations that are stable under conditions prevailing at or near the Earth's surface, e.g. the alteration of orthoclase to kaolinite."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalWeathering> ;
     skos:inScheme cs: ;
-    skos:narrower :dissolution,
+    skos:narrower
+        :dissolution,
         :hydration,
         :hydrolysis,
         :oxidation ;
@@ -280,28 +308,34 @@ cs: a skos:ConceptScheme ;
         "kemisk vittring"@sv,
         "การผุพังทางเคมี"@th,
         "phong hoá hoá học"@vi,
-        "化学风化"@zh .
+        "化学风化"@zh
+.
 
 
-:cometary_impact a skos:Concept ;
+:cometary_impact
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bolide_impact ;
     skos:definition "The impact of a comet on the surface of the earth"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/cometaryImpact> ;
     skos:inScheme cs: ;
-    skos:prefLabel "cometary impact"@en .
+    skos:prefLabel "cometary impact"@en
+.
 
 
-:contact_metamorphism a skos:Concept ;
+:contact_metamorphism
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "malihan sentuh"@id ;
+    skos:altLabel
+        "malihan sentuh"@id ;
     skos:broader :metamorphic_process ;
     skos:definition "Metamorphism taking place in rocks at or near their contact with a genetically related body of igneous rock"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/contactMetamorphism> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Kontaktmetamorphose"@de,
+    skos:prefLabel
+        "Kontaktmetamorphose"@de,
         "contact metamorphism"@en,
         "metamorfismo contacto"@es,
         "kontaktimetamorfoosi"@fi,
@@ -317,10 +351,12 @@ cs: a skos:ConceptScheme ;
         "kontaktmetamorfos"@sv,
         "การแปรสภาพสัมผัส"@th,
         "biến chất tiếp xúc"@vi,
-        "接触变质[作用]"@zh .
+        "接触变质[作用]"@zh
+.
 
 
-:continental_breakup a skos:Concept ;
+:continental_breakup
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_process ;
@@ -328,49 +364,59 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalBreakup> ;
     skos:inScheme cs: ;
     skos:narrower :rifting ;
-    skos:prefLabel "continental breakup"@en .
+    skos:prefLabel "continental breakup"@en
+.
 
 
-:continental_collision a skos:Concept ;
+:continental_collision
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_process ;
     skos:definition "The amalgamation of two continental plates or blocks along a convergent margin."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalCollision> ;
     skos:inScheme cs: ;
-    skos:prefLabel "continental collision"@en .
+    skos:prefLabel "continental collision"@en
+.
 
 
-:debris_flow_deposition a skos:Concept ;
+:debris_flow_deposition
+    a skos:Concept ;
     schema:citation "Postma 1986 Geology v. 14 p291-294"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mechanical_deposition ;
     skos:definition "Laminar high-concentration, generally cohesionless deposition process. Flow types included liquefied flow, fluidized flow, grain flow, traction carpet or modified grain flow."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/debrisFlowDeposition> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Schuttstrom"@de,
+    skos:prefLabel
+        "Schuttstrom"@de,
         "debris flow deposition"@en,
         "colada clástica"@es,
         "murevirrat"@fi,
         "colata di detrito"@it,
         "sel'"@ru,
-        "debris flow"@sv .
+        "debris flow"@sv
+.
 
 
-:deep_water_oxygen_depletion a skos:Concept ;
+:deep_water_oxygen_depletion
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "Process of removal of oxygen from from the deep part of a body of water."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/deepWaterOxygenDepletion> ;
     skos:inScheme cs: ;
-    skos:prefLabel "deep water oxygen depletion"@en .
+    skos:prefLabel "deep water oxygen depletion"@en
+.
 
 
-:deformation a skos:Concept ;
+:deformation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pencenanggaan"@id,
+    skos:altLabel
+        "pencenanggaan"@id,
         "periukan"@id,
         "変形作用"@ja,
         "การเปลี่ยนลักษณะ"@th,
@@ -379,12 +425,14 @@ cs: a skos:ConceptScheme ;
     skos:definition "Movement of rock bodies by displacement on fault or shear zones, or change in shape of a body of Earth material."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/deformation> ;
     skos:inScheme cs: ;
-    skos:narrower :ductile_flow,
+    skos:narrower
+        :ductile_flow,
         :faulting,
         :folding,
         :fracturing,
         :shearing ;
-    skos:prefLabel "Deformation"@de,
+    skos:prefLabel
+        "Deformation"@de,
         "deformation"@en,
         "deformación"@es,
         "deformaatio"@fi,
@@ -400,34 +448,41 @@ cs: a skos:ConceptScheme ;
         "deformation"@sv,
         "การเปลี่ยนรูป"@th,
         "biến dạng (đá)"@vi,
-        "变形"@zh .
+        "变形"@zh
+.
 
 
-:deformation_twinning a skos:Concept ;
+:deformation_twinning
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ductile_flow ;
     skos:definition "Deformation of a crystal by gliding to produce crystallographic twinning."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/deformationTwinning> ;
     skos:inScheme cs: ;
-    skos:prefLabel "deformation twinning"@en .
+    skos:prefLabel "deformation twinning"@en
+.
 
 
-:deposition a skos:Concept ;
+:deposition
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "堆積"@ja,
+    skos:altLabel
+        "堆積"@ja,
         "沈積"@ja,
         "afzetting"@sv ;
     skos:broader :sedimentary_process ;
     skos:definition "Accumulation of material, the constructive process of accumulation of sedimentary particles, chemical precipitation of mineral matter from solution, or the accumulation of organic material on the death of plants and animals."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/deposition> ;
     skos:inScheme cs: ;
-    skos:narrower :biological_precipitation,
+    skos:narrower
+        :biological_precipitation,
         :chemical_precipitation,
         :mechanical_deposition,
         :organic_accumulation ;
-    skos:prefLabel "Ablagerung"@de,
+    skos:prefLabel
+        "Ablagerung"@de,
         "deposition"@en,
         "depósito"@es,
         "kerrostuminen"@fi,
@@ -443,92 +498,111 @@ cs: a skos:ConceptScheme ;
         "avsättning"@sv,
         "การสะสมตัว"@th,
         "lắng đọng"@vi,
-        "沉积[作用]"@zh .
+        "沉积[作用]"@zh
+.
 
 
-:diagenetic_process a skos:Concept ;
+:diagenetic_process
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "Any chemical, physical, or biological process that affects a sedimentary EarthMaterial after initial deposition, and during or after lithification, exclusive of weathering and metamorphism. [adapt. Jackson, 1997] Example processes include compaction, cementation, authigenesis, replacement, leachinghydration, and bacterial action. Includes processes that are normal in the surficial or outer part of the earth’s crust [Jackson, 1997]. Changes in a deeply buried sedimentary rock may be continuous from diagenesis into recrystallization to form a metamorphic rock. Robertson [1999] defines the boundary between diagenesis and metamorphism in sedimentary rocks as follows: \\the boundary between diagenesis and metamorphism is somewhat arbitrary and strongly dependent on the rock types involved. For example changes take place in organic materials at lower temperatures than in rocks dominated by silicate minerals. In mudrocks, a white mica (illite) crystallinity value of less than 0.42D.2U obtained by X-ray diffraction analysis, is used to define the onset of metamorphism (Kisch, 1991). In this scheme, the first appearance of glaucophane, lawsonite, paragonite, prehnite, pumpellyite or stilpnomelane is taken to indicate the lower limit of metamorphism (Frey and Kisch, 1987, Bucher and Frey, 1994, Frey and Robinson, 1998). Most workers agree that such mineral growth starts at 150 ± 50° C in silicate rocks. Many rock types may show no change in mineralogy under these conditions and hence the recognition of the onset of metamorphism will vary with bulk composition.\\"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/diageneticProcess> ;
     skos:inScheme cs: ;
-    skos:prefLabel "diagenetic process"@en .
+    skos:prefLabel "diagenetic process"@en
+.
 
 
-:diffusion_creep a skos:Concept ;
+:diffusion_creep
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ductile_flow ;
     skos:definition "Grain-scale, ductile deformation accomplished by the motion of atoms through crystals, along grain boundaries, and through pore fluids."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/diffusionCreep> ;
     skos:inScheme cs: ;
-    skos:prefLabel "diffusion creep"@en .
+    skos:prefLabel "diffusion creep"@en
+.
 
 
-:dislocation_metamorphism a skos:Concept ;
+:dislocation_metamorphism
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metamorphic_process ;
     skos:definition "Metamorphism concentrated along narrow belts of shearing or crushing without an appreciable rise in temperature"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/dislocationMetamorphism> ;
     skos:inScheme cs: ;
-    skos:prefLabel "dislocation metamorphism"@en .
+    skos:prefLabel "dislocation metamorphism"@en
+.
 
 
-:dissolution a skos:Concept ;
+:dissolution
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical_weathering ;
     skos:definition "The process of dissolving into a homogenous solution, as when an acidic solution dissolves limestone. In karst, refers to the process of dissolving rock to produce landforms, in contrast to solution, the chemical product of dissolution."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolution> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Aufloesung"@de,
+    skos:prefLabel
+        "Aufloesung"@de,
         "dissolution"@en,
         "disolución"@es,
         "liukeneminen"@fi,
         "dissoluzione"@it,
         "rastvorenie"@ru,
-        "upplösning"@sv .
+        "upplösning"@sv
+.
 
 
-:dissolution_creep a skos:Concept ;
+:dissolution_creep
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ductile_flow ;
     skos:definition "Deformation by dissolution under the effects of differential stress and its transport to a new location by movement of fluid in the rock body."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolutionCreep> ;
     skos:inScheme cs: ;
-    skos:prefLabel "dissolution creep"@en .
+    skos:prefLabel "dissolution creep"@en
+.
 
 
-:ductile_flow a skos:Concept ;
+:ductile_flow
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deformation ;
     skos:definition "deformation without apparent loss of continuity at the scale of observation."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/ductileFlow> ;
     skos:inScheme cs: ;
-    skos:narrower :deformation_twinning,
+    skos:narrower
+        :deformation_twinning,
         :diffusion_creep,
         :dissolution_creep ;
-    skos:prefLabel "ductile flow"@en .
+    skos:prefLabel "ductile flow"@en
+.
 
 
-:effusive_eruption a skos:Concept ;
+:effusive_eruption
+    a skos:Concept ;
     schema:citation "Orton, G.J., 1996. Volcanic environments. 485-567 in Readingh.G. (ed.), Sedimentary Environments: Processes, Facies and Stratigraphy, Third Edition. Blackwell Science, Oxford"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :eruption ;
     skos:definition "Eruptions characterized by low volatile content of the erupting magma relative to ambient pressure"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/effusiveEruption> ;
     skos:inScheme cs: ;
-    skos:prefLabel "effusive eruption"@en .
+    skos:prefLabel "effusive eruption"@en
+.
 
 
-:erosion a skos:Concept ;
+:erosion
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "kikisan"@id,
+    skos:altLabel
+        "kikisan"@id,
         "pengikisan"@id,
         "浸食"@ja,
         "冲刷"@zh,
@@ -537,11 +611,13 @@ cs: a skos:ConceptScheme ;
     skos:definition "The process of disaggregation of rock and displacement of the resultant particles (sediment) usually by the agents of currents such as, wind, water, or ice by downward or down-slope movement in response to gravity or by living organisms (in the case of bioerosion)."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/erosion> ;
     skos:inScheme cs: ;
-    skos:narrower :ice_erosion,
+    skos:narrower
+        :ice_erosion,
         :mass_wasting,
         :water_erosion,
         :wind_erosion ;
-    skos:prefLabel "Erosion"@de,
+    skos:prefLabel
+        "Erosion"@de,
         "erosion"@en,
         "erosión"@es,
         "eroosio"@fi,
@@ -557,24 +633,29 @@ cs: a skos:ConceptScheme ;
         "erosion"@sv,
         "การกร่อน"@th,
         "xói mòn"@vi,
-        "侵蚀"@zh .
+        "侵蚀"@zh
+.
 
 
-:eruption a skos:Concept ;
+:eruption
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "letusan"@id,
+    skos:altLabel
+        "letusan"@id,
         "분화"@ko,
         "爆发"@zh ;
     skos:broader :magmatic_process ;
     skos:definition "The ejection of volcanic materials (lava, pyroclasts, and volcanic gases) onto the Earth's surface, either from a central vent or from a fissure or group of fissures"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/eruption> ;
     skos:inScheme cs: ;
-    skos:narrower :effusive_eruption,
+    skos:narrower
+        :effusive_eruption,
         :hawaiian_eruption,
         :pyroclastic_eruption,
         :strombolian_eruption ;
-    skos:prefLabel "Eruption"@de,
+    skos:prefLabel
+        "Eruption"@de,
         "eruption"@en,
         "erupción"@es,
         "purkaukset"@fi,
@@ -590,20 +671,24 @@ cs: a skos:ConceptScheme ;
         "eruption"@sv,
         "การประทุ"@th,
         "phun trào"@vi,
-        "喷发"@zh .
+        "喷发"@zh
+.
 
 
-:excavation a skos:Concept ;
+:excavation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "洗掘"@ja,
+    skos:altLabel
+        "洗掘"@ja,
         "开挖"@zh,
         "掏蚀"@zh ;
     skos:broader :human_activity ;
     skos:definition "The removal of material, as in a mining operation"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/excavation> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Ausschachtung"@de,
+    skos:prefLabel
+        "Ausschachtung"@de,
         "excavation"@en,
         "excavación"@es,
         "kaivannot"@fi,
@@ -620,13 +705,16 @@ cs: a skos:ConceptScheme ;
         "schaktning"@sv,
         "การขุดเอาแร่ออกมา"@th,
         "công trình khai đào"@vi,
-        "挖掘"@zh .
+        "挖掘"@zh
+.
 
 
-:extinction a skos:Concept ;
+:extinction
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pemunahan"@id,
+    skos:altLabel
+        "pemunahan"@id,
         "소광"@ko,
         "消亡"@zh,
         "灭绝"@zh ;
@@ -634,7 +722,8 @@ cs: a skos:ConceptScheme ;
     skos:definition "Process of disappearance of a species or higher taxon, so that it no longer exists anywhere or in the subsequent fossil record."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/extinction> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Aussterben"@de,
+    skos:prefLabel
+        "Aussterben"@de,
         "extinction"@en,
         "extinción"@es,
         "sukupuuttoon kuoleminen"@fi,
@@ -650,18 +739,22 @@ cs: a skos:ConceptScheme ;
         "utdöende"@sv,
         "สูญพันธุ์"@th,
         "tuyệt chủng"@vi,
-        "消失"@zh .
+        "消失"@zh
+.
 
 
-:faulting a skos:Concept ;
+:faulting
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "断裂运动"@zh ;
+    skos:altLabel
+        "断裂运动"@zh ;
     skos:broader :deformation ;
     skos:definition "The process of fracturing, frictional slip, and displacement accumulation that produces a fault"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/faulting> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Bruchtektonik"@de,
+    skos:prefLabel
+        "Bruchtektonik"@de,
         "faulting"@en,
         "tectónica fractura"@es,
         "siirros"@fi,
@@ -677,23 +770,28 @@ cs: a skos:ConceptScheme ;
         "förkastningstektonik"@sv,
         "การเกิดรอยเลื่อน"@th,
         "tạo đứt gãy"@vi,
-        "断层作用"@zh .
+        "断层作用"@zh
+.
 
 
-:folding a skos:Concept ;
+:folding
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deformation ;
     skos:definition "Deformation in which planar surfaces become regularly curviplanar surfaces with definable limbs (zones of lower curvature) and hinges (zones of higher curvature)."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/folding> ;
     skos:inScheme cs: ;
-    skos:prefLabel "folding"@en .
+    skos:prefLabel "folding"@en
+.
 
 
-:fracturing a skos:Concept ;
+:fracturing
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pematahan"@id,
+    skos:altLabel
+        "pematahan"@id,
         "peretakan"@id,
         "断裂作用"@ja,
         "断裂"@zh,
@@ -703,7 +801,8 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/fracturing> ;
     skos:inScheme cs: ;
     skos:narrower :microfracturing ;
-    skos:prefLabel "Bruchbildung"@de,
+    skos:prefLabel
+        "Bruchbildung"@de,
         "fracturing"@en,
         "fracturación"@es,
         "murtuminen"@fi,
@@ -719,73 +818,89 @@ cs: a skos:ConceptScheme ;
         "uppsprickning"@sv,
         "การเกิดรอยแตก"@th,
         "tạo nứt vỡ"@vi,
-        "破裂"@zh .
+        "破裂"@zh
+.
 
 
-:frost_shattering a skos:Concept ;
+:frost_shattering
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :physical_weathering ;
     skos:definition "Propagation of fractures due to expansion of freezing water in intergranular spaces and fractures in a rock body. Result is mechanical disintegration spliitting, or breakup of rock."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/frostShattering> ;
     skos:inScheme cs: ;
-    skos:prefLabel "frost shattering"@en .
+    skos:prefLabel "frost shattering"@en
+.
 
 
-:geomagnetic_process a skos:Concept ;
+:geomagnetic_process
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "process that results in change in Earth's magnetic field"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/geomagneticProcess> ;
     skos:inScheme cs: ;
-    skos:narrower :magnetic_field_reversal,
+    skos:narrower
+        :magnetic_field_reversal,
         :polar_wander ;
-    skos:prefLabel "geomagnetic process"@en .
+    skos:prefLabel "geomagnetic process"@en
+.
 
 
-:grading a skos:Concept ;
+:grading
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :human_activity ;
     skos:definition "Leveling of earth surface by rearrangement of prexisting material"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/grading> ;
     skos:inScheme cs: ;
-    skos:prefLabel "grading"@en .
+    skos:prefLabel "grading"@en
+.
 
 
-:haloclasty a skos:Concept ;
+:haloclasty
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :physical_weathering ;
     skos:definition "Propagation of fractures in rock due to crytallization of mineral salts (typically sodium chloride) from interstitial water, or volumetrick expansion of salts in capillaries, or hydration pressure of interstitial, trapped salts. Generally results in mechanical disintegration of the rock surface."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/haloclasty> ;
     skos:inScheme cs: ;
-    skos:prefLabel "haloclasty"@en .
+    skos:prefLabel "haloclasty"@en
+.
 
 
-:hawaiian_eruption a skos:Concept ;
+:hawaiian_eruption
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :eruption ;
     skos:definition "Eruption in which great quantities of extremely fluid basaltic lava are poured out, mainly issuing in lava fountains from fissures on the flanks of a volcano. Explosive phenomena are rare, but much spatter and scoria are piled into cones and mounds along the vents. Characteristic of shield volcanoes"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/hawaiianEruption> ;
     skos:inScheme cs: ;
-    skos:prefLabel "hawaiian eruption"@en .
+    skos:prefLabel "hawaiian eruption"@en
+.
 
 
-:human_activity a skos:Concept ;
+:human_activity
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "kegiatan manusia"@ms ;
+    skos:altLabel
+        "kegiatan manusia"@ms ;
     skos:broader :geologic_process ;
     skos:definition "Processes of human modification of the earth to produce geologic features"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/humanActivity> ;
     skos:inScheme cs: ;
-    skos:narrower :excavation,
+    skos:narrower
+        :excavation,
         :grading,
         :material_transport_and_deposition ;
-    skos:prefLabel "anthropogen"@de,
+    skos:prefLabel
+        "anthropogen"@de,
         "human activity"@en,
         "acción hombre"@es,
         "ihmisen toiminta"@fi,
@@ -801,19 +916,23 @@ cs: a skos:ConceptScheme ;
         "männsklig aktivitet"@sv,
         "กิจกรรมของมนุษย์"@th,
         "hoạt động nhân sinh"@vi,
-        "人类活动"@zh .
+        "人类活动"@zh
+.
 
 
-:hydration a skos:Concept ;
+:hydration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "การเติมน้ำ"@th,
+    skos:altLabel
+        "การเติมน้ำ"@th,
         "水化[作用]"@zh ;
     skos:broader :chemical_weathering ;
     skos:definition "The process of absorption of water into the crystal structure of a mineral, thereby changing its volume and fracturing and loosening grains"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/hydration> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Hydratisierung"@de,
+    skos:prefLabel
+        "Hydratisierung"@de,
         "hydration"@en,
         "hidratación"@es,
         "hydrataatio"@fi,
@@ -829,40 +948,48 @@ cs: a skos:ConceptScheme ;
         "hydratisering"@sv,
         "ไฮเดรชั่น"@th,
         "hydrat hoá"@vi,
-        "水合[作用]"@zh .
+        "水合[作用]"@zh
+.
 
 
-:hydrolysis a skos:Concept ;
+:hydrolysis
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical_weathering ;
     skos:definition "A decomposition reaction involving water. In geology, it commonly indicates reaction between silicate minerals and either pure water or aqueous solution. In such reactionsh"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/hydrolysis> ;
     skos:inScheme cs: ;
-    skos:prefLabel "hydrolysis"@en .
+    skos:prefLabel "hydrolysis"@en
+.
 
 
-:ice_erosion a skos:Concept ;
+:ice_erosion
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :erosion ;
     skos:definition "Erosion by corrasion or plucking by moving ice."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/iceErosion> ;
     skos:inScheme cs: ;
-    skos:prefLabel "ice erosion"@en .
+    skos:prefLabel "ice erosion"@en
+.
 
 
-:intrusion a skos:Concept ;
+:intrusion
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "terobosan"@id,
+    skos:altLabel
+        "terobosan"@id,
         "貫入岩"@ja,
         "intrusi"@ms ;
     skos:broader :magmatic_process ;
     skos:definition "The process of emplacement of magma in pre-existing rock"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/intrusion> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Intrusionskoerper"@de,
+    skos:prefLabel
+        "Intrusionskoerper"@de,
         "intrusion"@en,
         "intrusión"@es,
         "intruusiot"@fi,
@@ -878,31 +1005,37 @@ cs: a skos:ConceptScheme ;
         "intrusion"@sv,
         "การแทรกซอน"@th,
         "xâm nhập"@vi,
-        "侵入作用"@zh .
+        "侵入作用"@zh
+.
 
 
-:magmatic_crystallisation a skos:Concept ;
+:magmatic_crystallisation
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :magmatic_process ;
     skos:definition "The process by which matter becomes crystalline, from a gaseous, fluid, or dispersed state"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticCrystallisation> ;
     skos:inScheme cs: ;
-    skos:prefLabel "magmatic crystallisation"@en .
+    skos:prefLabel "magmatic crystallisation"@en
+.
 
 
-:magmatic_process a skos:Concept ;
+:magmatic_process
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "A process involving melted rock (magma)."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticProcess> ;
     skos:inScheme cs: ;
-    skos:narrower :eruption,
+    skos:narrower
+        :eruption,
         :intrusion,
         :magmatic_crystallisation,
         :melting ;
-    skos:prefLabel "magmatisch"@de,
+    skos:prefLabel
+        "magmatisch"@de,
         "magmatic process"@en,
         "magmático"@es,
         "magmaattinen"@fi,
@@ -918,67 +1051,81 @@ cs: a skos:ConceptScheme ;
         "magmatisk"@sv,
         "เกี่ยวกับหินหนืด"@th,
         "magma (tt)"@vi,
-        "岩浆的"@zh .
+        "岩浆的"@zh
+.
 
 
-:magnetic_field_reversal a skos:Concept ;
+:magnetic_field_reversal
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geomagnetic_process ;
     skos:definition "A geomagnetic event in which the Earth's magnetic field reverses direction."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/magneticFieldReversal> ;
     skos:inScheme cs: ;
-    skos:prefLabel "magnetic field reversal"@en .
+    skos:prefLabel "magnetic field reversal"@en
+.
 
 
-:mass_wasting a skos:Concept ;
+:mass_wasting
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :erosion ;
     skos:definition "the dislodgement and downslope transport of soil and rock material under the direct application of gravitational body stresses. In contrast to other erosion processes, the debris removed by mass wasting is not carried within, on, or under another medium. The mass properties of the material being transported depend on the interaction of the soil and rock particles and on the moisture content."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/massWasting> ;
     skos:inScheme cs: ;
-    skos:prefLabel "mass wasting"@en .
+    skos:prefLabel "mass wasting"@en
+.
 
 
-:mass_wasting_deposition a skos:Concept ;
+:mass_wasting_deposition
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mechanical_deposition ;
     skos:definition "A general term for the dislodgement and downslope transport of soil and rock material under the direct application of gravitational body stresses. In contrast to other erosion processes, the debris removed by mass wasting is not carried within, on, or under another medium. The mass properties of the material being transported depend on the interaction of the soil and rock particles and on the moisture content. Mass wasting includes slow displacements, such as creep and solifluction, and rapid movements such as rockfalls, rockslides, and cohesive debris flows (Jackson, 1997, p. 392). Includes both subaerial mass-wasting processes and subaqueous mass-wasting processes."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/massWastingDeposition> ;
     skos:inScheme cs: ;
-    skos:prefLabel "mass wasting deposition"@en .
+    skos:prefLabel "mass wasting deposition"@en
+.
 
 
-:material_transport_and_deposition a skos:Concept ;
+:material_transport_and_deposition
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :human_activity ;
     skos:definition "Transport and heaping of material, as in a land fill, mine dump, dredging operations"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/materialTransportAndDeposition> ;
     skos:inScheme cs: ;
-    skos:prefLabel "material transport and deposition"@en .
+    skos:prefLabel "material transport and deposition"@en
+.
 
 
-:mechanical_deposition a skos:Concept ;
+:mechanical_deposition
+    a skos:Concept ;
     schema:citation "NADM SLTTs 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deposition ;
     skos:definition "Process by which material that is being transported as particles by moving air, water, ice, or other fluid comes to rest and accumulates."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/mechanicalDeposition> ;
     skos:inScheme cs: ;
-    skos:narrower :debris_flow_deposition,
+    skos:narrower
+        :debris_flow_deposition,
         :mass_wasting_deposition,
         :traction_saltation_or_suspension_deposition,
         :turbidity_current_deposition ;
-    skos:prefLabel "mechanical deposition"@en .
+    skos:prefLabel "mechanical deposition"@en
+.
 
 
-:melting a skos:Concept ;
+:melting
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "mencair"@id,
+    skos:altLabel
+        "mencair"@id,
         "용융"@ko,
         "熔融的"@zh ;
     skos:broader :magmatic_process ;
@@ -986,7 +1133,8 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/melting> ;
     skos:inScheme cs: ;
     skos:narrower :partial_melting ;
-    skos:prefLabel "Aufschmelzung"@de,
+    skos:prefLabel
+        "Aufschmelzung"@de,
         "melting"@en,
         "fusión"@es,
         "sulaminen"@fi,
@@ -1002,53 +1150,64 @@ cs: a skos:ConceptScheme ;
         "smältning"@sv,
         "การหลอมเหลว"@th,
         "nóng chảy"@vi,
-        "熔化的"@zh .
+        "熔化的"@zh
+.
 
 
-:metamorphic_process a skos:Concept ;
+:metamorphic_process
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "Mineralogical, chemical, and structural adjustment of solid rocks to physical and chemical conditions that differ from the conditions under which the rocks in question originated, and are generally been imposed at depth, below the surface zones of weathering and cementation."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/metamorphicProcess> ;
     skos:inScheme cs: ;
-    skos:narrower :alteration,
+    skos:narrower
+        :alteration,
         :chemical_precipitation,
         :contact_metamorphism,
         :dislocation_metamorphism ;
-    skos:prefLabel "metamorphic process"@en .
+    skos:prefLabel "metamorphic process"@en
+.
 
 
-:meteorite_impact a skos:Concept ;
+:meteorite_impact
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bolide_impact ;
     skos:definition "The impact of a meteorite on the surface of the earth"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/meteoriteImpact> ;
     skos:inScheme cs: ;
-    skos:prefLabel "meteorite impact"@en .
+    skos:prefLabel "meteorite impact"@en
+.
 
 
-:microfracturing a skos:Concept ;
+:microfracturing
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :fracturing ;
     skos:definition "Development of fractures within a single grain or cutting several grains."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/microfracturing> ;
     skos:inScheme cs: ;
-    skos:prefLabel "microfracturing"@en .
+    skos:prefLabel "microfracturing"@en
+.
 
 
-:obduction a skos:Concept ;
+:obduction
+    a skos:Concept ;
     schema:citation "Neuendorf et al., 2005, http://en.wikipedia.org/wiki/Obduction, Coleman, R. G., 1971, Plate tectonic emplacement of upper mantle peridotites along continental edge: J.Geophys. Res., v75, p1212-1222."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pencuatan"@id,
+    skos:altLabel
+        "pencuatan"@id,
         "仰冲作用"@zh ;
     skos:broader :tectonic_process ;
     skos:definition "The overthrusting of continental crust by oceanic crust or mantle rocks at a convergent plate boundary."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/obduction> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Obduktion"@de,
+    skos:prefLabel
+        "Obduktion"@de,
         "obduction"@en,
         "obducción"@es,
         "obduktio"@fi,
@@ -1064,37 +1223,45 @@ cs: a skos:ConceptScheme ;
         "obduktion"@sv,
         "การเกย"@th,
         "hút trồi"@vi,
-        "逆冲作用"@zh .
+        "逆冲作用"@zh
+.
 
 
-:organic_accumulation a skos:Concept ;
+:organic_accumulation
+    a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deposition ;
     skos:definition "Sediment accumulation of biologically produced organic material, as in bog, coal swamps."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/organicAccumulation> ;
     skos:inScheme cs: ;
-    skos:prefLabel "organic accumulation"@en .
+    skos:prefLabel "organic accumulation"@en
+.
 
 
-:orogenic_process a skos:Concept ;
+:orogenic_process
+    a skos:Concept ;
     schema:citation "Neuendorf et al., 2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "orogenesis"@en ;
+    skos:altLabel
+        "orogenesis"@en ;
     skos:broader :tectonic_process ;
     skos:definition "Mountain building process."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/orogenicProcess> ;
     skos:inScheme cs: ;
-    skos:prefLabel "orogenic process"@en .
+    skos:prefLabel "orogenic process"@en
+.
 
 
-:oxidation a skos:Concept ;
+:oxidation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical_weathering ;
     skos:definition "Chemical reaction that involve stripping of electrons from cations. Typicall reactions include converting sulfide minerals to oxide minerals, or increasing the oxidation state of cations in existing oxide minerals. The most commonly observed is the oxidation of Fe"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/oxidation> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Oxidation"@de,
+    skos:prefLabel
+        "Oxidation"@de,
         "oxidation"@en,
         "oxidación"@es,
         "hapettuminen"@fi,
@@ -1110,10 +1277,12 @@ cs: a skos:ConceptScheme ;
         "oxidation"@sv,
         "ออกซิเดชัน"@th,
         "oxy hoá"@vi,
-        "氧化"@zh .
+        "氧化"@zh
+.
 
 
-:partial_melting a skos:Concept ;
+:partial_melting
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :melting ;
@@ -1136,19 +1305,23 @@ cs: a skos:ConceptScheme ;
         "partiell smältning"@sv,
         "การหลอมเหลวบางส่วน"@th,
         "nóng chảy từng phần"@vi,
-        "部分熔融"@zh .
+        "部分熔融"@zh
+.
 
 
-:physical_weathering a skos:Concept ;
+:physical_weathering
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "¡¾­²÷²ñ¤ê¾¤³ó§ò¡"@lo,
+    skos:altLabel
+        "¡¾­²÷²ñ¤ê¾¤³ó§ò¡"@lo,
         "机械风化"@zh ;
     skos:broader :weathering ;
     skos:definition "The process of weathering by which frost action, salt-crystal growth, absorption of water, and other physical processes break down a rock to fragments, involving no chemical change"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/physicalWeathering> ;
     skos:inScheme cs: ;
-    skos:narrower :frost_shattering,
+    skos:narrower
+        :frost_shattering,
         :haloclasty,
         :pressure_release_weathering,
         :thermal_shock_weathering ;
@@ -1168,28 +1341,34 @@ cs: a skos:ConceptScheme ;
         "fysikalisk vittring"@sv,
         "การผุพังอยู่กับที่โดยกายภาพ"@th,
         "phong hoá lí học"@vi,
-        "物理风化"@zh .
+        "物理风化"@zh
+.
 
 
-:plinian_eruption a skos:Concept ;
+:plinian_eruption
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :pyroclastic_eruption ;
     skos:definition "An explosive eruption in which a steady, turbulent stream of fragmented magma and magmatic gas is released at a high velocity from a vent. Large volumes of tephra and tall eruption columns are characteristic"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/plinianEruption> ;
     skos:inScheme cs: ;
-    skos:prefLabel "plinian eruption"@en .
+    skos:prefLabel "plinian eruption"@en
+.
 
 
-:polar_wander a skos:Concept ;
+:polar_wander
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "地极迁移"@zh ;
+    skos:altLabel
+        "地极迁移"@zh ;
     skos:broader :geomagnetic_process ;
     skos:definition "Process of migration of the axis of the earth's dipole field relative to the rotation axis of the Earth."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/polarWander> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Polwanderung"@de,
+    skos:prefLabel
+        "Polwanderung"@de,
         "polar wander"@en,
         "deriva polo"@es,
         "napavaellus"@fi,
@@ -1205,135 +1384,164 @@ cs: a skos:ConceptScheme ;
         "polvandring"@sv,
         "การเปลี่ยนตำแหน่งขั้วโลก"@th,
         "dịch chuyển cực"@vi,
-        "极移"@zh .
+        "极移"@zh
+.
 
 
-:pressure_release_weathering a skos:Concept ;
+:pressure_release_weathering
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :physical_weathering ;
     skos:definition "Propagation of fractures near the surface of solid rock due to expansion related to release of confining pressure when deeply buried rock is unroofed. Fractures typically propagate along surfaces close to and subparallel to the surface of the outcrop."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/pressureReleaseWeathering> ;
     skos:inScheme cs: ;
-    skos:prefLabel "pressure release weathering"@en .
+    skos:prefLabel "pressure release weathering"@en
+.
 
 
-:pyroclastic_eruption a skos:Concept ;
+:pyroclastic_eruption
+    a skos:Concept ;
     schema:citation "Orton, G.J., 1996. Volcanic environments. 485-567 in Readingh.G. (ed.), Sedimentary Environments: Processes, Facies and Stratigraphy, Third Edition. Blackwell Science, Oxford"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :eruption ;
     skos:definition "Eruption produced by the generation and rapid expansion of a gas phase that disrupts magma, surrounding wall rock or sediment"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/pyroclasticEruption> ;
     skos:inScheme cs: ;
-    skos:narrower :plinian_eruption,
+    skos:narrower
+        :plinian_eruption,
         :vulcanian_eruption ;
-    skos:prefLabel "pyroclastic eruption"@en .
+    skos:prefLabel "pyroclastic eruption"@en
+.
 
 
-:rifting a skos:Concept ;
+:rifting
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :continental_breakup ;
     skos:definition "Extension of the crust to form one or more long, narrow graben of regional extent."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/rifting> ;
     skos:inScheme cs: ;
-    skos:prefLabel "rifting"@en .
+    skos:prefLabel "rifting"@en
+.
 
 
-:sea_level_change a skos:Concept ;
+:sea_level_change
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "Process of mean sea level changing relative to some datum"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelChange> ;
     skos:inScheme cs: ;
-    skos:narrower :sea_level_fall,
+    skos:narrower
+        :sea_level_fall,
         :sea_level_rise ;
-    skos:prefLabel "sea level change"@en .
+    skos:prefLabel "sea level change"@en
+.
 
 
-:sea_level_fall a skos:Concept ;
+:sea_level_fall
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :sea_level_change ;
     skos:definition "Process of mean sea level falling relative to some datum"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelFall> ;
     skos:inScheme cs: ;
-    skos:prefLabel "sea level fall"@en .
+    skos:prefLabel "sea level fall"@en
+.
 
 
-:sea_level_rise a skos:Concept ;
+:sea_level_rise
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :sea_level_change ;
     skos:definition "Process of mean sea level rising relative to some datum"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelRise> ;
     skos:inScheme cs: ;
-    skos:prefLabel "sea level rise"@en .
+    skos:prefLabel "sea level rise"@en
+.
 
 
-:sedimentary_process a skos:Concept ;
+:sedimentary_process
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "A phenomenon that changes the distribution or physical properties of sediment at or near the earth's surface"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/sedimentaryProcess> ;
     skos:inScheme cs: ;
-    skos:narrower :deposition,
+    skos:narrower
+        :deposition,
         :erosion ;
-    skos:prefLabel "sedimentary process"@en .
+    skos:prefLabel "sedimentary process"@en
+.
 
 
-:shearing a skos:Concept ;
+:shearing
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deformation ;
     skos:definition "A deformation in which contiguous parts of a body are displaced relatively to each other in a direction parallel to a surface. The surface may be a discrete fault, or the deformation may be a penetrative strain and the shear surface is a geometric abstraction."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/shearing> ;
     skos:inScheme cs: ;
-    skos:prefLabel "shearing"@en .
+    skos:prefLabel "shearing"@en
+.
 
 
-:speciation a skos:Concept ;
+:speciation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "process that results inappearance of new species"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/speciation> ;
     skos:inScheme cs: ;
-    skos:prefLabel "speciation"@en .
+    skos:prefLabel "speciation"@en
+.
 
 
-:spreading a skos:Concept ;
+:spreading
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_process ;
     skos:definition "A process whereby new oceanic crust is formed by upwelling of magma at the center of mid-ocean ridges and by a moving-away of the new material from the site of upwelling at rates of one to ten centimeters per year."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/spreading> ;
     skos:inScheme cs: ;
-    skos:prefLabel "spreading"@en .
+    skos:prefLabel "spreading"@en
+.
 
 
-:strombolian_eruption a skos:Concept ;
+:strombolian_eruption
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :eruption ;
     skos:definition "Eruption characterized by jetting of clots or \\fountains\\ of fluid, basaltic lava from a central crater"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/strombolianEruption> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Stromboli-Eruptionstyp"@de,
+    skos:prefLabel
+        "Stromboli-Eruptionstyp"@de,
         "strombolian eruption"@en,
         "estromboliano"@es,
         "strombolityyppiset purkaukset"@fi,
         "eruzione stromboliana"@it,
         "izverzhenie strombolianskogo tipa"@ru,
-        "stromboliska eruptionstypen"@sv .
+        "stromboliska eruptionstypen"@sv
+.
 
 
-:subduction a skos:Concept ;
+:subduction
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "penunjaman"@id,
+    skos:altLabel
+        "penunjaman"@id,
         "サブダクション"@ja,
         "junaman"@ms,
         "消失作用"@zh ;
@@ -1341,7 +1549,8 @@ cs: a skos:ConceptScheme ;
     skos:definition "The process of one lithospheric plate descending beneath another"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/subduction> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Subduktion"@de,
+    skos:prefLabel
+        "Subduktion"@de,
         "subduction"@en,
         "subducción"@es,
         "subduktio"@fi,
@@ -1357,17 +1566,20 @@ cs: a skos:ConceptScheme ;
         "subduktion"@sv,
         "การมุดตัวของเปลือกโลก"@th,
         "hút chìm"@vi,
-        "消减作用"@zh .
+        "消减作用"@zh
+.
 
 
-:tectonic_process a skos:Concept ;
+:tectonic_process
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :geologic_process ;
     skos:definition "Processes related to the interaction between or deformation of rigid plates forming the crust of the Earth."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/tectonicProcess> ;
     skos:inScheme cs: ;
-    skos:narrower :accretion,
+    skos:narrower
+        :accretion,
         :continental_breakup,
         :continental_collision,
         :obduction,
@@ -1375,75 +1587,90 @@ cs: a skos:ConceptScheme ;
         :spreading,
         :subduction,
         :transform_faulting ;
-    skos:prefLabel "tectonic process"@en .
+    skos:prefLabel "tectonic process"@en
+.
 
 
-:thermal_shock_weathering a skos:Concept ;
+:thermal_shock_weathering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :physical_weathering ;
     skos:definition "Propagation of fractures near the surface of solid rock due to expansion and contraction caused by temperature changes. Fractures typically propagate along surfaces close to and subparallel to the surface of the outcrop."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/thermalShockWeathering> ;
     skos:inScheme cs: ;
-    skos:prefLabel "thermal shock weathering"@en .
+    skos:prefLabel "thermal shock weathering"@en
+.
 
 
-:traction_saltation_or_suspension_deposition a skos:Concept ;
+:traction_saltation_or_suspension_deposition
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mechanical_deposition ;
     skos:definition "Deposition of sediment from moving water or air, in which the sediment is transported by entrainment in the moving fluid. Constrast with debris flow or turbidity current deposition in which movement of fluid/sediment mixture is due to incorporation of sediment in fluid."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/tractionSaltationOrSuspensionDeposition> ;
     skos:inScheme cs: ;
-    skos:prefLabel "deposition from moving fluid"@en .
+    skos:prefLabel "deposition from moving fluid"@en
+.
 
 
-:transform_faulting a skos:Concept ;
+:transform_faulting
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :tectonic_process ;
     skos:definition "A strike-slip fault that links two other faults or two other plate boundaries (e.g. two segments of a mid-ocean ridge). Transform faults often exhibit characteristics that distinguish them from transcurrent faults: (1) For transform faults formed at the same time as the faults they link, slip on the transform fault has equal magnitude at all points along the transform, slip magnitude on the transform fault can exceed the length of the transform fault, and slip does not decrease to zero at the fault termini. (2) For transform faults linking two similar features, e.g. if two mid-ocean ridge segments linked by a transform have equal spreading rates, then the length of the transform does not change as slip accrues on it."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/transformFaulting> ;
     skos:inScheme cs: ;
-    skos:prefLabel "transform faulting"@en .
+    skos:prefLabel "transform faulting"@en
+.
 
 
-:turbidity_current_deposition a skos:Concept ;
+:turbidity_current_deposition
+    a skos:Concept ;
     schema:citation "Postma 1986 Geology v. 14 p291-294"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mechanical_deposition ;
     skos:definition "Deposition from a turbulent, low concentration sediment-water mixture."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/turbidityCurrentDeposition> ;
     skos:inScheme cs: ;
-    skos:prefLabel "turbidity current deposition"@en .
+    skos:prefLabel "turbidity current deposition"@en
+.
 
 
-:vulcanian_eruption a skos:Concept ;
+:vulcanian_eruption
+    a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :pyroclastic_eruption ;
     skos:definition "Eruption characterized by the explosive ejection of fragments of new lava, commonly incandescent when they leave the vent but either solid or too viscous to assume any appreciable degree of rounding during their flight through the air. With these there are often breadcrust bombs or blocks, and generally large proportions of ash"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/vulcanianEruption> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Vesuv-Eruptionstyp"@de,
+    skos:prefLabel
+        "Vesuv-Eruptionstyp"@de,
         "vulcanian eruption"@en,
         "vulcaniano"@es,
         "vesuviustyyppiset purkaukset"@fi,
         "eruzione vulcaniana"@it,
         "izverzhenie vulkanskogo tipa"@ru,
-        "eruption av vulcanotyp"@sv .
+        "eruption av vulcanotyp"@sv
+.
 
 
-:water_erosion a skos:Concept ;
+:water_erosion
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pengikisan air"@id,
+    skos:altLabel
+        "pengikisan air"@id,
         "水蚀作用"@zh ;
     skos:broader :erosion ;
     skos:definition "Erosion by clast impact or plucking by moving liquid water"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/waterErosion> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Wassererosion"@de,
+    skos:prefLabel
+        "Wassererosion"@de,
         "water erosion"@en,
         "erosión agua"@es,
         "vesieroosio"@fi,
@@ -1459,21 +1686,26 @@ cs: a skos:ConceptScheme ;
         "vattenerosion"@sv,
         "การกัดกร่อนโดยน้ำ"@th,
         "xói mòn do nước"@vi,
-        "流水侵蚀"@zh .
+        "流水侵蚀"@zh
+.
 
 
-:weathering a skos:Concept ;
+:weathering
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "風化作用"@ja ;
+    skos:altLabel
+        "風化作用"@ja ;
     skos:broader :geologic_process ;
     skos:definition "The process or group of processes by which earth materials exposed to atmospheric agents at or near the Earth's surface are changed in color, texture, composition, firmness, or form, with little or no transport of the loosened or altered material. Processes typically include oxidationhydration, and leaching of soluble constituents."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/weathering> ;
     skos:inScheme cs: ;
-    skos:narrower :biological_weathering,
+    skos:narrower
+        :biological_weathering,
         :chemical_weathering,
         :physical_weathering ;
-    skos:prefLabel "Verwitterung"@de,
+    skos:prefLabel
+        "Verwitterung"@de,
         "weathering"@en,
         "alteración meteórica"@es,
         "rapautuminen"@fi,
@@ -1489,18 +1721,22 @@ cs: a skos:ConceptScheme ;
         "vittring"@sv,
         "การผุพังอยู่กับที่"@th,
         "phong hoá"@vi,
-        "风化作用"@zh .
+        "风化作用"@zh
+.
 
 
-:wind_erosion a skos:Concept ;
+:wind_erosion
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pengikisan angin"@id ;
+    skos:altLabel
+        "pengikisan angin"@id ;
     skos:broader :erosion ;
     skos:definition "Erosion by clast impact or plucking by moving air (wind)"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EventProcessValue/windErosion> ;
     skos:inScheme cs: ;
-    skos:prefLabel "Winderosion"@de,
+    skos:prefLabel
+        "Winderosion"@de,
         "wind erosion"@en,
         "erosión eólica"@es,
         "tuulieroosio"@fi,
@@ -1516,5 +1752,6 @@ cs: a skos:ConceptScheme ;
         "vinderosion"@sv,
         "การกัดเซาะโดยลม"@th,
         "xói mòn do gió"@vi,
-        "风蚀"@zh .
+        "风蚀"@zh
+.
 

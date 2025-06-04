@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
+    skos:changeNote
+        "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2010 11 27 SMR convert identifiers from URN to http URI according to CGI URI scheme."@en,
         "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en,
         "2010-02-12 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
@@ -32,13 +34,16 @@ cs: a skos:ConceptScheme ;
         :measure_on_outcrop,
         :photogeologic_determination,
         :three_point_determination ;
-    skos:prefLabel "Orientation Determination Method"@en .
+    skos:prefLabel "Orientation Determination Method"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/determinationmethodorientation> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/determinationmethodorientation>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :calculated_average_orientation,
+    skos:member
+        :calculated_average_orientation,
         :estimate_from_air_photo,
         :estimate_from_distance,
         :measure_on_outcrop,
@@ -46,79 +51,97 @@ cs: a skos:ConceptScheme ;
         :standard_on_site_measure,
         :three_point_determination,
         :visual_surface_estimation_on_outcrop ;
-    skos:prefLabel "Orientation Determination Method - All Concepts"@en .
+    skos:prefLabel "Orientation Determination Method - All Concepts"@en
+.
 
 
-:calculated_average_orientation a skos:Concept ;
+:calculated_average_orientation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Orientation value is specified using a calculated average of a collection of related orientations (computer generalization)."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "calculated average orientation"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:estimate_from_air_photo a skos:Concept ;
+:estimate_from_air_photo
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Orientation of a geologic structure estimated based on inspection or measurements on an air photograph."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "estimate from air photo"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:estimate_from_distance a skos:Concept ;
+:estimate_from_distance
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Orientation of a geologic structure based on observation from a distance great enough to preclude direct inspection of the structure to determine orientation."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "estimate from distance"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:measure_on_outcrop a skos:Concept ;
+:measure_on_outcrop
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Orientation of surface or line is measured on an outcrop of that surface or line directly, e.g. by measuring a particular bedding surface, a 3-D exposure of a fold hinge, a particular stretched mineral grain in a foliation surface."@en ;
     skos:inScheme cs: ;
-    skos:narrower :standard_on_site_measure,
+    skos:narrower
+        :standard_on_site_measure,
         :visual_surface_estimation_on_outcrop ;
     skos:prefLabel "measure on outcrop"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:photogeologic_determination a skos:Concept ;
+:photogeologic_determination
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Orientation determined based on measurements from aerial photography or satellite imagery (in conjunction with an elevation model."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "photogeologic determination"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:three_point_determination a skos:Concept ;
+:three_point_determination
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Orientation determined by fitting a plane to three or more points located on the geologic surface of interest."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "three point determination"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:standard_on_site_measure a skos:Concept ;
+:standard_on_site_measure
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :measure_on_outcrop ;
     skos:definition "Orientation measured using compass or other instrument directly on or at an outcrop of the structure."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "standard on site measure"@en .
+    skos:prefLabel "standard on site measure"@en
+.
 
 
-:visual_surface_estimation_on_outcrop a skos:Concept ;
+:visual_surface_estimation_on_outcrop
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :measure_on_outcrop ;
     skos:definition "Orientation of a surface is measured by visually averaging across one or more outcrops in a small area--e.g. approximating dip by looking down strike of beds, approximating strike by outcrop trace of one or more beds."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "visual surface estimation on outcrop"@en .
+    skos:prefLabel "visual surface estimation on outcrop"@en
+.
 

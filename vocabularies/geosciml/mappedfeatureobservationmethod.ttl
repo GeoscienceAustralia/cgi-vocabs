@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
+    skos:changeNote
+        "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en,
@@ -33,13 +35,16 @@ cs: a skos:ConceptScheme ;
         :observed_elevation_data,
         :published_map,
         :surveyed ;
-    skos:prefLabel "Observation Method (Mapped Feature)"@en .
+    skos:prefLabel "Observation Method (Mapped Feature)"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :compilation,
+    skos:member
+        :compilation,
         :direct_observation,
         :inertial_survey,
         :inferred,
@@ -66,269 +71,330 @@ cs: a skos:ConceptScheme ;
         :observed_outcrop_gps_location,
         :published_map,
         :surveyed ;
-    skos:prefLabel "Observation Method (Mapped Feature) - All Concepts"@en .
+    skos:prefLabel "Observation Method (Mapped Feature) - All Concepts"@en
+.
 
 
-:compilation a skos:Concept ;
+:compilation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mapped feature geometry derived from one or more published or unpublished data sources, involving some interpretation or generalization by the compiler, not an exact digital reproduction of the sources."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compilation"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:direct_observation a skos:Concept ;
+:direct_observation
+    a skos:Concept ;
     schema:citation "Federal Geographic Data Committee, 2006"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Indicates that mapped feature was delineated and a specifier assigned by direct visual observation."@en ;
     skos:inScheme cs: ;
-    skos:narrower :observed_aerial_imagery,
+    skos:narrower
+        :observed_aerial_imagery,
         :observed_borehole_material,
         :observed_outcrop ;
     skos:prefLabel "direct observation"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:inferred a skos:Concept ;
+:inferred
+    a skos:Concept ;
     schema:citation "Federal Geographic Data Committee, 2006"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Indicates that mapped feature is not directly observable, location and specification based on inference from available evidence."@en ;
     skos:inScheme cs: ;
-    skos:narrower :inferred_drill_cuttings,
+    skos:narrower
+        :inferred_drill_cuttings,
         :inferred_indirect_method,
         :inferred_projection__observed_locations ;
     skos:prefLabel "inferred"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:observed_elevation_data a skos:Concept ;
+:observed_elevation_data
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Geomorphic features located and specified based on surface morphology determined by elevation (or bathemetry) data, e.g. DEM, LIDAR"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "observed based on elevation data"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:published_map a skos:Concept ;
+:published_map
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mapped feature geometry was digitized from a published map, specification of feature based on map unit explanation"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "published map"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:surveyed a skos:Concept ;
+:surveyed
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "mapped feature is located by survey methods"@en ;
     skos:inScheme cs: ;
     skos:narrower :inertial_survey ;
     skos:prefLabel "surveyed"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:inertial_survey a skos:Concept ;
+:inertial_survey
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :surveyed ;
     skos:definition "mapped feature is located by inertial survey methods"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inertial survey"@en .
+    skos:prefLabel "inertial survey"@en
+.
 
 
-:inferred_aeromagnetic_survey a skos:Concept ;
+:inferred_aeromagnetic_survey
+    a skos:Concept ;
     schema:citation "based on Matti et al 1997, definition this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred_indirect_method ;
     skos:definition "Location and specification inferred based on magnetic field data acquired by airborne sensor."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred aeromagnetic survey"@en .
+    skos:prefLabel "inferred aeromagnetic survey"@en
+.
 
 
-:inferred_borehole_geophysical_log a skos:Concept ;
+:inferred_borehole_geophysical_log
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred_indirect_method ;
     skos:definition "Location and specification inferred based on measurements made by electronic bore hole logging device(s) that measure geophysical properties."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred borehole geophysical log"@en .
+    skos:prefLabel "inferred borehole geophysical log"@en
+.
 
 
-:inferred_drill_cuttings a skos:Concept ;
+:inferred_drill_cuttings
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred ;
     skos:definition "Geologic feature in bore hole inferred based on interpretation of drill cuttings."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred drill cuttings"@en .
+    skos:prefLabel "inferred drill cuttings"@en
+.
 
 
-:inferred_gravity_data a skos:Concept ;
+:inferred_gravity_data
+    a skos:Concept ;
     schema:citation "based on Matti et al 1997, definition this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred_indirect_method ;
     skos:definition "Location and specification inferred based on measured variations in the acceleration of gravity related to mass of underlying Earth material."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred gravity data"@en .
+    skos:prefLabel "inferred gravity data"@en
+.
 
 
-:inferred_ground_magnetic_survey a skos:Concept ;
+:inferred_ground_magnetic_survey
+    a skos:Concept ;
     schema:citation "based on Matti et al 1997, definition this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred_indirect_method ;
     skos:definition "Location and specification inferred based on magnetic field data acquired by sensor on the earth surface, either at manually occupied stations, or by a vehicle-based continuously collected sensor data."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred ground magnetic survey"@en .
+    skos:prefLabel "inferred ground magnetic survey"@en
+.
 
 
-:inferred_indirect_method a skos:Concept ;
+:inferred_indirect_method
+    a skos:Concept ;
     schema:citation "based on Matti et al 1997, definition this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred ;
     skos:definition "Location and specification inferred based on properties related to lithology, e.g. geophysical or geochemical signature, vegetation, surface texture, reflectance."@en ;
     skos:inScheme cs: ;
-    skos:narrower :inferred_aeromagnetic_survey,
+    skos:narrower
+        :inferred_aeromagnetic_survey,
         :inferred_borehole_geophysical_log,
         :inferred_gravity_data,
         :inferred_ground_magnetic_survey,
         :inferred_radiometric_survey,
         :inferred_remote_sensing_imagery ;
-    skos:prefLabel "inferred using indirect method"@en .
+    skos:prefLabel "inferred using indirect method"@en
+.
 
 
-:inferred_projection__observed_locations a skos:Concept ;
+:inferred_projection__observed_locations
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred ;
     skos:definition "Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature."@en ;
     skos:inScheme cs: ;
-    skos:narrower :inferred_projection_covering_mapped_unit,
+    skos:narrower
+        :inferred_projection_covering_mapped_unit,
         :inferred_projection_unmapped_surficial_material,
         :inferred_projection_vegetation ;
-    skos:prefLabel "inferred projection between observed locations"@en .
+    skos:prefLabel "inferred projection between observed locations"@en
+.
 
 
-:inferred_projection_covering_mapped_unit a skos:Concept ;
+:inferred_projection_covering_mapped_unit
+    a skos:Concept ;
     schema:citation "Federal Geographic Data Committee, 2006"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred_projection__observed_locations ;
     skos:definition "Phenomenon inferred to exist based on continuity with observed locations, and assumption of continuity of the feature. Mappable feature is covered by mapped younger geologic unit. Concealed feature."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred projection beneath covering mapped unit"@en .
+    skos:prefLabel "inferred projection beneath covering mapped unit"@en
+.
 
 
-:inferred_projection_unmapped_surficial_material a skos:Concept ;
+:inferred_projection_unmapped_surficial_material
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred_projection__observed_locations ;
     skos:definition "Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of covering mantle of soil, talus or colluvium, not mapped as separate geologic units."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred projection beneath unmapped surficial material"@en .
+    skos:prefLabel "inferred projection beneath unmapped surficial material"@en
+.
 
 
-:inferred_projection_vegetation a skos:Concept ;
+:inferred_projection_vegetation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred_projection__observed_locations ;
     skos:definition "Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of obscuring vegetation, but inferred to crop out at surface."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred projection obscured by vegetation"@en .
+    skos:prefLabel "inferred projection obscured by vegetation"@en
+.
 
 
-:inferred_radiometric_survey a skos:Concept ;
+:inferred_radiometric_survey
+    a skos:Concept ;
     schema:citation "based on Matti et al 1997, definition this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred_indirect_method ;
     skos:definition "Location and specification inferred based on flux or intensity of radiation related to the decay of radioactive elements in observed Earth material. Use for both airborne and ground-surface based sensor."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred radiometric survey"@en .
+    skos:prefLabel "inferred radiometric survey"@en
+.
 
 
-:inferred_remote_sensing_imagery a skos:Concept ;
+:inferred_remote_sensing_imagery
+    a skos:Concept ;
     schema:citation "based on Matti et al 1997, definition this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :inferred_indirect_method ;
     skos:definition "Location and specification inferred based on spectral characteristics of light measured by airborne or satellite based sensor. Phenomenon visible on standard (visible light) air photographs are considered 'observable'."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "inferred remote sensing imagery"@en .
+    skos:prefLabel "inferred remote sensing imagery"@en
+.
 
 
-:observed_aerial_imagery a skos:Concept ;
+:observed_aerial_imagery
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct_observation ;
     skos:definition "Phenomenon observed and located using aerial imagery (standard visible light)"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "observed in aerial imagery"@en .
+    skos:prefLabel "observed in aerial imagery"@en
+.
 
 
-:observed_borehole_core a skos:Concept ;
+:observed_borehole_core
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :observed_borehole_material ;
     skos:definition "Geologic feature observed in core obtained from a borehole."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "observed in borehole core"@en .
+    skos:prefLabel "observed in borehole core"@en
+.
 
 
-:observed_borehole_cuttings a skos:Concept ;
+:observed_borehole_cuttings
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :observed_borehole_material ;
     skos:definition "Geologic feature observed in cuttings obtained from a borehole."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "observed in borehole cuttings"@en .
+    skos:prefLabel "observed in borehole cuttings"@en
+.
 
 
-:observed_borehole_material a skos:Concept ;
+:observed_borehole_material
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct_observation ;
     skos:definition "Geologic feature observed in material obtained from a borehole."@en ;
     skos:inScheme cs: ;
-    skos:narrower :observed_borehole_core,
+    skos:narrower
+        :observed_borehole_core,
         :observed_borehole_cuttings ;
-    skos:prefLabel "observed in borehole material"@en .
+    skos:prefLabel "observed in borehole material"@en
+.
 
 
-:observed_distant_outcrop a skos:Concept ;
+:observed_distant_outcrop
+    a skos:Concept ;
     schema:citation "based on Matti et al 1997, definition this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :observed_outcrop ;
     skos:definition "Phenomenon observed and located from a distance."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "observed distant outcrop"@en .
+    skos:prefLabel "observed distant outcrop"@en
+.
 
 
-:observed_outcrop a skos:Concept ;
+:observed_outcrop
+    a skos:Concept ;
     schema:citation "based on Matti et al 1997, definition this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :direct_observation ;
     skos:definition "Phenomenon observed and located directly in outcrop, geologist occupied location of phenomenon, and traced it explicitly over mapped extent."@en ;
     skos:inScheme cs: ;
-    skos:narrower :observed_distant_outcrop,
+    skos:narrower
+        :observed_distant_outcrop,
         :observed_outcrop__topographic_map_location,
         :observed_outcrop_gps_location ;
-    skos:prefLabel "observed in outcrop"@en .
+    skos:prefLabel "observed in outcrop"@en
+.
 
 
-:observed_outcrop__topographic_map_location a skos:Concept ;
+:observed_outcrop__topographic_map_location
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :observed_outcrop ;
     skos:definition "Phenomenon observed directly in outcrop, and located by positioning on a topographic base map relative to physiographic or cultural features"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "observed outcrop topographic map location"@en .
+    skos:prefLabel "observed outcrop topographic map location"@en
+.
 
 
-:observed_outcrop_gps_location a skos:Concept ;
+:observed_outcrop_gps_location
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :observed_outcrop ;
     skos:definition "Phenomenon observed directly in outcrop, and located using GPS"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "observed outcrop gps location"@en .
+    skos:prefLabel "observed outcrop gps location"@en
+.
 

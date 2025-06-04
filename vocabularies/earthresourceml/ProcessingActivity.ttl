@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-29"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-02-23 SMR Original conversion to SKOS."@en,
+    skos:changeNote
+        "2014-02-23 SMR Original conversion to SKOS."@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
@@ -26,14 +28,18 @@ cs: a skos:ConceptScheme ;
     skos:hasTopConcept :chemical-treatment,
         :physical-treatment,
         :physico-chemical-treatment ;
-    skos:prefLabel "Processing Activity"@en .
+    skos:prefLabel "Processing Activity"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/mining-processing-activity> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/mining-processing-activity>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    skos:changeNote
+        "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member :adsorption,
+    skos:member
+        :adsorption,
         :agglomeration,
         :automatic-sorting,
         :Bayer-process,
@@ -75,16 +81,19 @@ cs: a skos:ConceptScheme ;
         :solvent-extraction,
         :sorting,
         :stratification-jig ;
-    skos:prefLabel "Processing Activity - All Concepts"@en .
+    skos:prefLabel "Processing Activity - All Concepts"@en
+.
 
 
-:chemical-treatment a skos:Concept ;
+:chemical-treatment
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sorting process using chemical separation methods"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/chemicalTreatment> ;
     skos:inScheme cs: ;
-    skos:narrower :adsorption,
+    skos:narrower
+        :adsorption,
         :bioleaching,
         :burning,
         :calcining,
@@ -103,50 +112,60 @@ cs: a skos:ConceptScheme ;
         :solvent-extraction ;
     skos:notation "03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "chemical treatment"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:physical-treatment a skos:Concept ;
+:physical-treatment
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "processes using physical separation methods"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/physicalTreatment> ;
     skos:inScheme cs: ;
-    skos:narrower :comminution,
+    skos:narrower
+        :comminution,
         :liquid-solid-separation,
         :particle-sizing,
         :sorting ;
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "physical treatment"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:physico-chemical-treatment a skos:Concept ;
+:physico-chemical-treatment
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "concentraing processes that combine physical and chemical separation methods."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/physicalChemicalTreatment> ;
     skos:inScheme cs: ;
-    skos:narrower :agglomeration,
+    skos:narrower
+        :agglomeration,
         :coagulation,
         :flocculation,
         :flotation ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "physico-chemical treatment"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:adsorption a skos:Concept ;
+:adsorption
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "penyerapan"@id,
+    skos:altLabel
+        "penyerapan"@id,
         "การดูดแนบ"@th ;
     skos:broader :chemical-treatment ;
     skos:definition "Taking up of ions, molecules or colloids on the surface of a material."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/adsorption> ;
     skos:inScheme cs: ;
     skos:notation "03.6"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Adsorption"@de,
+    skos:prefLabel
+        "Adsorption"@de,
         "adsorption"@en,
         "adsorbción"@es,
         "adsorptio"@fi,
@@ -162,56 +181,68 @@ cs: a skos:ConceptScheme ;
         "adsorption"@sv,
         "การดูดซับ"@th,
         "hấp phụ"@vi,
-        "吸附(作用)"@zh .
+        "吸附(作用)"@zh
+.
 
 
-:agglomeration a skos:Concept ;
+:agglomeration
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pelletization"@en ;
+    skos:altLabel
+        "pelletization"@en ;
     skos:broader :physico-chemical-treatment ;
     skos:definition "Agglomeration: process designed to bind together finely ground particles. The result is an agglomerate or a sinter. Pelletization: process designed to produce spherical agglomerates of a few mm diameter, called pellets, through a rotating device (balling drum, balling disc) after the addition of some binding material (swelling clay, lime, cement, etc.) and water."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/agglomeration> ;
     skos:inScheme cs: ;
     skos:notation "02.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "agglomeration"@en .
+    skos:prefLabel "agglomeration"@en
+.
 
 
-:automatic-sorting a skos:Concept ;
+:automatic-sorting
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :sorting ;
     skos:definition "Automated sorting of material on the basis of physical characteristics using optical characteristics (visible spectrum, near infrared, X-ray, ultraviolet), electrical conductivity, density, magnetic susceptibility or other physical properties"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/automaticSorting> ;
     skos:inScheme cs: ;
-    skos:narrower :eddy-current-separator,
+    skos:narrower
+        :eddy-current-separator,
         :electrostatic-separation,
         :gravimetric-sorting,
         :magnetic-separation ;
     skos:notation "01.1.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "automatic sorting"@en .
+    skos:prefLabel "automatic sorting"@en
+.
 
-:Bayer-process a skos:Concept ;
+:Bayer-process
+    a skos:Concept ;
     schema:citation "https://en.wikipedia.org/wiki/Bayer_process"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :leaching ;
     skos:definition "The Bayer process is the principal industrial means of refining bauxite to produce alumina (aluminium oxide). In the Bayer process, bauxite ore is heated in a pressure vessel along with a sodium hydroxide solution (caustic soda) at a temperature of 150 to 200 °C. At these temperatures, the aluminium is dissolved as sodium aluminate (primarily [Al(OH)4]−) in an extraction process. After separation of the residue by filtering, gibbsite is precipitated when the liquid is cooled and then seeded with fine-grained aluminum hydroxide crystals from previous extractions."@en ;
     skos:inScheme cs: ;
     skos:notation "03.02.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Bayer process"@en .
+    skos:prefLabel "Bayer process"@en
+.
 
 
-:bioleaching a skos:Concept ;
+:bioleaching
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Bioleaching"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
     skos:definition "Bioleaching is the extraction of metals from their ores through the use of living organisms. This is much cleaner than the traditional heap leaching using cyanide. Bioleaching is one of several applications within biohydrometallurgy and several methods are used to recover copper, zinc, lead, arsenic, antimony, nickel, molybdenum, gold, silver, and cobalt."@en ;
     skos:inScheme cs: ;
     skos:notation "03.17"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "bioleaching"@en .
+    skos:prefLabel "bioleaching"@en
+.
 
 
-:burning a skos:Concept ;
+:burning
+    a skos:Concept ;
     schema:citation "http://www.e-goldprospecting.com/html/coal_gold_agglomeration__cga_.html"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
@@ -219,28 +250,34 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/burning> ;
     skos:inScheme cs: ;
     skos:notation "03.14"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "burning"@en .
+    skos:prefLabel "burning"@en
+.
 
-:carbon-in-leach a skos:Concept ;
+:carbon-in-leach
+    a skos:Concept ;
     schema:citation "https://www.jacobi.net/gold-recovery/carbon-in-leach/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :leaching ;
     skos:definition "The carbon-in-leach process integrates leaching and carbon-in-pulp into a single unit process operation in which the leach tanks are fitted with carbon retention screens and the carbon-in-pulp tanks are eliminated. The activated carbon is added in leach, with gold adsorption occurring nearly simultaneously with gold dissolution by the cyanide solution, then the ground ore particles are introduced into the ore pulp. Cyanide leaching and precious metals adsorption onto the activated carbon occur simultaneously. The loaded activated carbon is mechanically screened to separate it from the barren ore pulp and processed to remove the precious metals and prepare it for reuse."@en ;
     skos:inScheme cs: ;
     skos:notation "03.02.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "carbon-in-leach"@en .
+    skos:prefLabel "carbon-in-leach"@en
+.
 
-:carbon-in-pulp a skos:Concept ;
+:carbon-in-pulp
+    a skos:Concept ;
     schema:citation "https://www.jacobi.net/gold-recovery/carbon-in-pulp/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :leaching ;
     skos:definition "With carbon-in-pulp, the ore is finely ground and the gold is solubilised using a cyanide leach in a series of tanks. The granular activated carbon is added to the leached slurry, where the carbon adsorbs the gold from the slurry solution and is then removed from the slurry by coarse screening. Often a series of five or six agitated tanks are used, where carbon and ore slurry are contacted in a staged countercurrent manner. This countercurrent operation increases the gold loading onto the carbon while maintaining a high recovery percentage."@en ;
     skos:inScheme cs: ;
     skos:notation "03.02.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "carbon-in-pulp"@en .
+    skos:prefLabel "carbon-in-pulp"@en
+.
 
 
-:calcining a skos:Concept ;
+:calcining
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Calcination"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
@@ -248,13 +285,16 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/calcining> ;
     skos:inScheme cs: ;
     skos:notation "03.15"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "calcining"@en .
+    skos:prefLabel "calcining"@en
+.
 
 
-:cementation a skos:Concept ;
+:cementation
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Cementation"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "膠結作用"@ja,
+    skos:altLabel
+        "膠結作用"@ja,
         "烧结"@zh,
         "粘结"@zh ;
     skos:broader :chemical-treatment ;
@@ -262,7 +302,8 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/cementation> ;
     skos:inScheme cs: ;
     skos:notation "03.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Zementation"@de,
+    skos:prefLabel
+        "Zementation"@de,
         "cementation"@en,
         "cementación"@es,
         "iskostuminen"@fi,
@@ -278,21 +319,26 @@ cs: a skos:ConceptScheme ;
         "cementering"@sv,
         "การประสาน"@th,
         "gắn kết"@vi,
-        "胶结[作用]"@zh .
+        "胶结[作用]"@zh
+.
 
 
-:centrifugal-gravity-separation a skos:Concept ;
+:centrifugal-gravity-separation
+    a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "radial acceleration"@en ;
+    skos:altLabel
+        "radial acceleration"@en ;
     skos:broader :gravimetric-sorting ;
     skos:definition "particulate material is introduced into a fluid medium that is being rotated, denser particles move away from the center of rotation faster than lighter particles, allowing them to be concentrated."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/centrifugalGravitySeparation> ;
     skos:inScheme cs: ;
     skos:notation "01.1.2.1.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "centrifugal gravity separation"@en .
+    skos:prefLabel "centrifugal gravity separation"@en
+.
 
 
-:coagulation a skos:Concept ;
+:coagulation
+    a skos:Concept ;
     schema:citation "http://ktrungthuy.free.fr/SACH-BOOKS/Handbook%20of%20Flotation%20Reagents,%20Elsevier%20(2007),%200444530290.pdf"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :physico-chemical-treatment ;
@@ -300,13 +346,16 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/coagulation> ;
     skos:inScheme cs: ;
     skos:notation "02.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "coagulation"@en .
+    skos:prefLabel "coagulation"@en
+.
 
 
-:comminution a skos:Concept ;
+:comminution
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "crushing"@en,
+    skos:altLabel
+        "crushing"@en,
         "fragmentation"@en,
         "grinding"@en,
         "pulverising"@en,
@@ -318,7 +367,8 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/comminution> ;
     skos:inScheme cs: ;
     skos:notation "01.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Probenzerkleinerung"@de,
+    skos:prefLabel
+        "Probenzerkleinerung"@de,
         "comminution"@en,
         "fragmentación"@es,
         "rikkoutuminen"@fi,
@@ -334,13 +384,16 @@ cs: a skos:ConceptScheme ;
         "fragmentering"@sv,
         "การแตกเป็นชิ้นส่วน"@th,
         "phân mảnh"@vi,
-        "破碎作用"@zh .
+        "破碎作用"@zh
+.
 
 
-:crystallization a skos:Concept ;
+:crystallization
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Crystallization"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "penghabluran"@id,
+    skos:altLabel
+        "penghabluran"@id,
         "pengkristalan"@id,
         "結晶作用"@ja,
         "정출작용"@ko ;
@@ -349,7 +402,8 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/crystallization> ;
     skos:inScheme cs: ;
     skos:notation "03.8"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Kristallisation"@de,
+    skos:prefLabel
+        "Kristallisation"@de,
         "crystallization"@en,
         "cristalización"@es,
         "kiteytyminen"@fi,
@@ -365,10 +419,12 @@ cs: a skos:ConceptScheme ;
         "kristallisering"@sv,
         "การตกผลึก"@th,
         "kết tinh"@vi,
-        "结晶[作用]"@zh .
+        "结晶[作用]"@zh
+.
 
 
-:distillation a skos:Concept ;
+:distillation
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Distillation"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
@@ -376,25 +432,31 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/distillation> ;
     skos:inScheme cs: ;
     skos:notation "03.7"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "distillation"@en .
+    skos:prefLabel "distillation"@en
+.
 
 
-:eddy-current-separator a skos:Concept ;
+:eddy-current-separator
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Eddy_current_separator"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "foucault current separator"@en ;
+    skos:altLabel
+        "foucault current separator"@en ;
     skos:broader :automatic-sorting ;
     skos:definition "Uses an electric current induced into a conductor by changes in magnetic flux cutting through it. The effect of such currents is to induce a secondary magnetic field around the particle; this field reacts with the applied magnetic field resulting in forces that eject the conducting particle from the stream of mixed particles, providing the means for an effective separation."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/eddyCurrentSeparator> ;
     skos:inScheme cs: ;
     skos:notation "01.1.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "eddy current separator"@en .
+    skos:prefLabel "eddy current separator"@en
+.
 
 
-:electrolysis a skos:Concept ;
+:electrolysis
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "electrorefining"@en,
+    skos:altLabel
+        "electrorefining"@en,
         "electrowinning"@en,
         "전해"@ko ;
     skos:broader :chemical-treatment ;
@@ -402,7 +464,8 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/electrolysis> ;
     skos:inScheme cs: ;
     skos:notation "03.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Elektrolyse"@de,
+    skos:prefLabel
+        "Elektrolyse"@de,
         "electrolysis"@en,
         "electrólisis"@es,
         "elektrolyysi"@fi,
@@ -418,10 +481,12 @@ cs: a skos:ConceptScheme ;
         "elektrolys"@sv,
         "อิเล็กโทรไลซิส"@th,
         "điện phân"@vi,
-        "电解"@zh .
+        "电解"@zh
+.
 
 
-:electrostatic-separation a skos:Concept ;
+:electrostatic-separation
+    a skos:Concept ;
     schema:citation "B.A.Wills, T.J.Napier-Munn, Will's Mineral Processing Technology, Seventh edition, Elsevier 2006."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :automatic-sorting ;
@@ -429,20 +494,24 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/electrostaticSeparation> ;
     skos:inScheme cs: ;
     skos:notation "01.1.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "electrostatic separation"@en .
+    skos:prefLabel "electrostatic separation"@en
+.
 
 
-:evaporation a skos:Concept ;
+:evaporation
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Evaporation"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "drying"@en,
+    skos:altLabel
+        "drying"@en,
         "蒸発"@ja ;
     skos:broader :chemical-treatment ;
     skos:definition "Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/evaporation> ;
     skos:inScheme cs: ;
     skos:notation "03.10"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Evaporation"@de,
+    skos:prefLabel
+        "Evaporation"@de,
         "evaporation"@en,
         "evaporación"@es,
         "haihdunta"@fi,
@@ -458,13 +527,16 @@ cs: a skos:ConceptScheme ;
         "avdunstning"@sv,
         "การระเหย"@th,
         "bốc hơi"@vi,
-        "蒸发"@zh .
+        "蒸发"@zh
+.
 
 
-:flocculation a skos:Concept ;
+:flocculation
+    a skos:Concept ;
     schema:citation "B.A.Wills, T.J.Napier-Munn, Will's Mineral Processing Technology, Seventh edition, Elsevier 2006."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "フロキュレーション"@ja,
+    skos:altLabel
+        "フロキュレーション"@ja,
         "엉김"@ko,
         "flokulasi"@ms,
         "絮凝[作用]"@zh ;
@@ -473,7 +545,8 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/flocculation> ;
     skos:inScheme cs: ;
     skos:notation "02.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Ausflockung"@de,
+    skos:prefLabel
+        "Ausflockung"@de,
         "flocculation"@en,
         "floculación"@es,
         "flokkulaatio"@fi,
@@ -489,20 +562,24 @@ cs: a skos:ConceptScheme ;
         "flockulering"@sv,
         "การจับเป็นกลุ่มของอนุภาคขนาดเล็ก"@th,
         "kết bông"@vi,
-        "凝聚[作用]"@zh .
+        "凝聚[作用]"@zh
+.
 
 
-:flotation a skos:Concept ;
+:flotation
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor; http://www.cpchem.com/bl/specchem/en-us/Pages/IntroductiontoMineralProcessing.aspx"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pengapungan"@ms,
+    skos:altLabel
+        "pengapungan"@ms,
         "浮选法"@zh ;
     skos:broader :physico-chemical-treatment ;
     skos:definition "Process in which particles are separated according to their tendency to adhere more or less to air bubbles to form a mineralized froth: this feature is linked to the natural or designed hydrophobic property of the particle surface."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/flotation> ;
     skos:inScheme cs: ;
     skos:notation "02.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Flotation"@de,
+    skos:prefLabel
+        "Flotation"@de,
         "flotation"@en,
         "flotación"@es,
         "vaahdotus"@fi,
@@ -518,26 +595,31 @@ cs: a skos:ConceptScheme ;
         "flotation"@sv,
         "การลอย (แร่)"@th,
         "tuyển nổi"@vi,
-        "浮选"@zh .
+        "浮选"@zh
+.
 
 
-:gravimetric-sorting a skos:Concept ;
+:gravimetric-sorting
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :automatic-sorting ;
     skos:definition "Process in which the valuable particles are separated from the gangue by virtue of the difference between their specific volumes. This causes their settling rates within a medium - air or water - to be different. This process is therefore affected by particle size."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/gravimetricSorting> ;
     skos:inScheme cs: ;
-    skos:narrower :centrifugal-gravity-separation,
+    skos:narrower
+        :centrifugal-gravity-separation,
         :gravity-separation-table,
         :heavy-medium-separation,
         :sluice-concentration,
         :stratification-jig ;
     skos:notation "01.1.2.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "gravimetric sorting"@en .
+    skos:prefLabel "gravimetric sorting"@en
+.
 
 
-:gravity-separation-table a skos:Concept ;
+:gravity-separation-table
+    a skos:Concept ;
     schema:citation "http://www.motive-traction.com.au/cgi-bin/engine.pl?Page=page.html&Rec=124"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gravimetric-sorting ;
@@ -545,10 +627,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/gravitySeparationTable> ;
     skos:inScheme cs: ;
     skos:notation "01.1.2.1.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "gravity separation table"@en .
+    skos:prefLabel "gravity separation table"@en
+.
 
 
-:heavy-medium-separation a skos:Concept ;
+:heavy-medium-separation
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gravimetric-sorting ;
@@ -556,18 +640,22 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/heavyMediumSeparation> ;
     skos:inScheme cs: ;
     skos:notation "01.1.2.1.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "heavy medium separation"@en .
+    skos:prefLabel "heavy medium separation"@en
+.
 
 
-:hydrometallurgy a skos:Concept ;
+:hydrometallurgy
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "습식제련"@ko ;
+    skos:altLabel
+        "습식제련"@ko ;
     skos:broader :chemical-treatment ;
     skos:definition "Hydrometallurgy is part of the field of extractive metallurgy involving the use of aqueous chemistry for the recovery of metals from ores, concentrates, and recycled or residual materials. Hydrometallurgy is typically divided into three general areas: leaching, solution concentration and purification, and metal recovery."@en ;
     skos:inScheme cs: ;
     skos:notation "03.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Hydrometallurgie"@de,
+    skos:prefLabel
+        "Hydrometallurgie"@de,
         "hydrometallurgy"@en,
         "hidrometalurgia"@es,
         "hydrometallurgia"@fi,
@@ -583,10 +671,12 @@ cs: a skos:ConceptScheme ;
         "hydrometallurgi"@sv,
         "การแยกโลหะจากสินแร่ในสารละลาย"@th,
         "thuỷ luyện kim"@vi,
-        "湿法冶金[学]"@zh .
+        "湿法冶金[学]"@zh
+.
 
 
-:incineration a skos:Concept ;
+:incineration
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Incineration"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
@@ -594,13 +684,16 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/incineration> ;
     skos:inScheme cs: ;
     skos:notation "03.16"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "incineration"@en .
+    skos:prefLabel "incineration"@en
+.
 
 
-:leaching a skos:Concept ;
+:leaching
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pelindian"@id,
+    skos:altLabel
+        "pelindian"@id,
         "溶脱作用"@ja,
         "沥滤法"@zh,
         "浸析"@zh ;
@@ -608,11 +701,13 @@ cs: a skos:ConceptScheme ;
     skos:definition "Action of chemical reagents on a material resulting in the dissolution of some of its elements."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/leaching> ;
     skos:inScheme cs: ;
-    skos:narrower :Bayer-process,
+    skos:narrower
+        :Bayer-process,
             :carbon-in-leach,
             :carbon-in-pulp ;
     skos:notation "03.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Auswaschung"@de,
+    skos:prefLabel
+        "Auswaschung"@de,
         "leaching"@en,
         "lavado"@es,
         "uuttuminen"@fi,
@@ -628,10 +723,12 @@ cs: a skos:ConceptScheme ;
         "lakning"@sv,
         "การชะ"@th,
         "rửa lũa"@vi,
-        "浸出"@zh .
+        "浸出"@zh
+.
 
 
-:liquid-solid-separation a skos:Concept ;
+:liquid-solid-separation
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :physical-treatment ;
@@ -639,35 +736,43 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/liquidSolidSeparation> ;
     skos:inScheme cs: ;
     skos:notation "01.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "liquid-solid separation"@en .
+    skos:prefLabel "liquid-solid separation"@en
+.
 
 
-:magnetic-separation a skos:Concept ;
+:magnetic-separation
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :automatic-sorting ;
     skos:definition "Separation process based on the difference in magnetic susceptibility between minerals. A magnetic field is used either to deviate the magnetic particles from their course, or to lift the magnetic particles."@en ;
     skos:inScheme cs: ;
     skos:notation "01.1.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "magnetic separation"@en .
+    skos:prefLabel "magnetic separation"@en
+.
 
 
-:manual-sorting a skos:Concept ;
+:manual-sorting
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "handpicking"@en ;
+    skos:altLabel
+        "handpicking"@en ;
     skos:broader :sorting ;
     skos:definition "Sorting a coarse material into two or more classes on the basis of physical characteristics: appearance, colour, conductivity, fluorescence, etc., manually."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/manualSorting> ;
     skos:inScheme cs: ;
     skos:notation "01.1.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "manual sorting"@en .
+    skos:prefLabel "manual sorting"@en
+.
 
 
-:particle-sizing a skos:Concept ;
+:particle-sizing
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "classification"@en,
+    skos:altLabel
+        "classification"@en,
         "penggolongan"@id,
         "perumpunan"@id,
         "klasifikasi"@ms ;
@@ -676,7 +781,8 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/particleSizing> ;
     skos:inScheme cs: ;
     skos:notation "01.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Klassifikation"@de,
+    skos:prefLabel
+        "Klassifikation"@de,
         "particle sizing"@en,
         "clasificación"@es,
         "luokitus"@fi,
@@ -692,10 +798,12 @@ cs: a skos:ConceptScheme ;
         "klassificering"@sv,
         "การจำแนก"@th,
         "phân loại"@vi,
-        "分类"@zh .
+        "分类"@zh
+.
 
 
-:precipitation a skos:Concept ;
+:precipitation
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Hydrometallurgy"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
@@ -703,10 +811,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/precipitation> ;
     skos:inScheme cs: ;
     skos:notation "03.9"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "precipitation"@en .
+    skos:prefLabel "precipitation"@en
+.
 
 
-:pyrometallurgy a skos:Concept ;
+:pyrometallurgy
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Pyrometallurgy"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
@@ -714,10 +824,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/pyrometallurgy> ;
     skos:inScheme cs: ;
     skos:notation "03.11"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "pyrometallurgy"@en .
+    skos:prefLabel "pyrometallurgy"@en
+.
 
 
-:roasting a skos:Concept ;
+:roasting
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Roasting_(metallurgy)"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
@@ -725,10 +837,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/roasting> ;
     skos:inScheme cs: ;
     skos:notation "03.12"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "roasting"@en .
+    skos:prefLabel "roasting"@en
+.
 
 
-:sluice-concentration a skos:Concept ;
+:sluice-concentration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gravimetric-sorting ;
@@ -736,10 +850,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/sluiceConcentration> ;
     skos:inScheme cs: ;
     skos:notation "01.1.2.1.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "sluice concentration"@en .
+    skos:prefLabel "sluice concentration"@en
+.
 
 
-:smelting a skos:Concept ;
+:smelting
+    a skos:Concept ;
     schema:citation "http://en.wikipedia.org/wiki/Pyrometallurgy#Smelting"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
@@ -747,10 +863,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/smelting> ;
     skos:inScheme cs: ;
     skos:notation "03.13"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "smelting"@en .
+    skos:prefLabel "smelting"@en
+.
 
 
-:solvent-extraction a skos:Concept ;
+:solvent-extraction
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :chemical-treatment ;
@@ -758,13 +876,16 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/solventExtraction> ;
     skos:inScheme cs: ;
     skos:notation "03.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "solvent extraction"@en .
+    skos:prefLabel "solvent extraction"@en
+.
 
 
-:sorting a skos:Concept ;
+:sorting
+    a skos:Concept ;
     schema:citation "Based on http://en.wikipedia.org/wiki/Ore_sorting and http://en.wikipedia.org/wiki/Mineral_processing"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "proses memilah"@id,
+    skos:altLabel
+        "proses memilah"@id,
         "淘汰作用"@ja,
         "拣选"@zh,
         "排序"@zh ;
@@ -772,10 +893,12 @@ cs: a skos:ConceptScheme ;
     skos:definition "Processes that operate on particulate material to concentrate a desired component and separate it from waste material."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/sorting> ;
     skos:inScheme cs: ;
-    skos:narrower :automatic-sorting,
+    skos:narrower
+        :automatic-sorting,
         :manual-sorting ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Sortierung"@de,
+    skos:prefLabel
+        "Sortierung"@de,
         "sorting"@en,
         "clasificación granulome!trica"@es,
         "lajittuneisuus"@fi,
@@ -791,10 +914,12 @@ cs: a skos:ConceptScheme ;
         "sortering"@sv,
         "การดัดขนาด"@th,
         "hạt trầm tích cùng loại"@vi,
-        "分选"@zh .
+        "分选"@zh
+.
 
 
-:stratification-jig a skos:Concept ;
+:stratification-jig
+    a skos:Concept ;
     schema:citation "http://www.info-diamond.com/rough/mining-equipment-47.html; http://en.wikipedia.org/wiki/Jig_concentrators"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gravimetric-sorting ;
@@ -802,5 +927,6 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/stratificationJig> ;
     skos:inScheme cs: ;
     skos:notation "01.1.2.1.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "stratification jig"@en .
+    skos:prefLabel "stratification jig"@en
+.
 

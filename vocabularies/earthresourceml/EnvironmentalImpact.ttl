@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-28"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-02-23 Conversion to SKOS by SM Richard"@en,
+    skos:changeNote
+        "2014-02-23 Conversion to SKOS by SM Richard"@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
@@ -29,13 +31,16 @@ cs: a skos:ConceptScheme ;
         :heat,
         :physical-impact,
         :vibration ;
-    skos:prefLabel "Environmental Impact"@en .
+    skos:prefLabel "Environmental Impact"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/environmental-impact> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/environmental-impact>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member :acid-mine-drainage,
+    skos:member
+        :acid-mine-drainage,
         :aqueous-liquid-emission,
         :basic-mine-drainage,
         :collapse,
@@ -67,24 +72,29 @@ cs: a skos:ConceptScheme ;
         :surface-aqueous-liquid-discharge,
         :vibration,
         :visual-disturbance ;
-    skos:prefLabel "Environmental Impact - All Concepts"@en .
+    skos:prefLabel "Environmental Impact - All Concepts"@en
+.
 
 
-:emission a skos:Concept ;
+:emission
+    a skos:Concept ;
     schema:citation "This vocabulary. adapted from (ESH Environment, Safety and Health Thesaurus/Dictionary. U.S. Department of Energy. DOE/EH-0186, 1991. 510 p.): Any spilling, leaking, pumping, pouring, emitting, emptying, discharging, injecting, escaping, leaching, dumping, or otherwise disposing of substances into the environment."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Any release or disposal of a substance into the environment"@en ;
     skos:inScheme cs: ;
-    skos:narrower :gaseous-emission,
+    skos:narrower
+        :gaseous-emission,
         :health-impact,
         :liquid-emission,
         :particulate-emission ;
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "emission"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:habitat-modification a skos:Concept ;
+:habitat-modification
+    a skos:Concept ;
     schema:citation "ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index. Reference to a ISPRA document: Berry P., Bandini A., Dacquino C. (2011) classification of underground mining sites by means of a risk index, V.3, pp. 31-44, Quad. Ambiente e Società. [http://www.isprambiente.gov.it/contentfiles/00009100/9196-qas-3-ultimo-corretto.pdf]; Dacquino C. et al. (2006) - Italian Mining sites inventory. APAT, 2006. [http://www.isprambiente.gov.it/files/miniere/i-siti-minerari-italiani-1870-2006.pdf]; http://ecorestoration.montana.edu/mineland/guide/problem/impacts/habitat.htm"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Impact due to modification of landscape and ecosystem on or adjacent to the resource extraction site."@en ;
@@ -92,44 +102,53 @@ cs: a skos:ConceptScheme ;
     skos:narrower :visual-disturbance ;
     skos:notation "05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "habitat modification"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:health-impact a skos:Concept ;
+:health-impact
+    a skos:Concept ;
     schema:citation "ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Resource extraction activity directly or indirectly impacts the health of living organisms (human, other animals, plants...)"@en ;
     skos:inScheme cs: ;
-    skos:narrower :mineral-fiber-emission,
+    skos:narrower
+        :mineral-fiber-emission,
         :radiation,
         :radioactive-emission ;
     skos:notation "03…"^^dt:LocalHierarchyKey ;
     skos:prefLabel "health impact"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:heat a skos:Concept ;
+:heat
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Impact includes noticable thermal release from mining activity (e.g. warm water discharge, exothermic mineral reactions)."@en ;
     skos:inScheme cs: ;
     skos:notation "04"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Waerme"@de,
+    skos:prefLabel
+        "Waerme"@de,
         "heat"@en,
         "calor"@es,
         "lämpö"@fi,
         "calore"@it,
         "teplota"@ru,
         "värme"@sv ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:physical-impact a skos:Concept ;
+:physical-impact
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Impact due to direct physical effects of natural processes resulting from mining activity."@en ;
     skos:inScheme cs: ;
-    skos:narrower :dam-failure,
+    skos:narrower
+        :dam-failure,
         :erosion,
         :instability,
         :landslide,
@@ -138,20 +157,24 @@ cs: a skos:ConceptScheme ;
         :visual-disturbance ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "physical impact"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:vibration a skos:Concept ;
+:vibration
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "getaran"@id,
+    skos:altLabel
+        "getaran"@id,
         "penggetaran"@id,
         "摆动"@zh ;
     skos:definition "Ground and airborne vibration (airblast) caused by resource extraction activity or by transportation associated with the mining activity or related transportation\" (eg large lorries through narrow village roads)."@en ;
     skos:inScheme cs: ;
     skos:narrower :noise ;
     skos:notation "06"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Erschuetterung"@de,
+    skos:prefLabel
+        "Erschuetterung"@de,
         "vibration"@en,
         "vibración"@es,
         "värähtely"@fi,
@@ -168,13 +191,16 @@ cs: a skos:ConceptScheme ;
         "การสั่น"@th,
         "chấn động"@vi,
         "振动"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:acid-mine-drainage a skos:Concept ;
+:acid-mine-drainage
+    a skos:Concept ;
     schema:citation "BAT/BREF of mining tailings and waste rock (European Commission 2004). http://eippcb.jrc.ec.europa.eu/reference/BREF/mmr_adopted_0109.pdf"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "酸性矿山排水"@zh ;
+    skos:altLabel
+        "酸性矿山排水"@zh ;
     skos:broader :mine-drainage ;
     skos:definition "Mine drainage that has a pH value of less than 7.0."@en ;
     skos:inScheme cs: ;
@@ -195,68 +221,82 @@ cs: a skos:ConceptScheme ;
         "försurat gruvdränage"@sv,
         "น้ำเสียจากเหมืองที่เป็นกรด"@th,
         "thoát nước axit mỏ"@vi,
-        "酸性矿坑排水"@zh .
+        "酸性矿坑排水"@zh
+.
 
 
-:aqueous-liquid-emission a skos:Concept ;
+:aqueous-liquid-emission
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :liquid-emission ;
     skos:definition "Emission of liquids in which water is the most abundant constituent."@en ;
     skos:inScheme cs: ;
-    skos:narrower :subsurface-aqueous-liquid-discharge,
+    skos:narrower
+        :subsurface-aqueous-liquid-discharge,
         :surface-aqueous-liquid-discharge ;
     skos:notation "01.2.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "aqueous liquid emission"@en .
+    skos:prefLabel "aqueous liquid emission"@en
+.
 
 
-:basic-mine-drainage a skos:Concept ;
+:basic-mine-drainage
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mine-drainage ;
     skos:definition "Mine drainage that has a pH value of greater than 7.0."@en ;
     skos:inScheme cs: ;
     skos:notation "01.2.1.2.1.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "basic mine drainage"@en .
+    skos:prefLabel "basic mine drainage"@en
+.
 
 
-:collapse a skos:Concept ;
+:collapse
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :subsidence ;
     skos:definition "Collapse of surface material into underground excavations, resulting in major surface subsidence and disruption."@en ;
     skos:inScheme cs: ;
     skos:notation "02.3.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Einsturz"@de,
+    skos:prefLabel
+        "Einsturz"@de,
         "collapse"@en,
         "hundimiento"@es,
         "sortuminen"@fi,
         "sprofondamento"@it,
         "obrushenie"@ru,
-        "kollaps"@sv .
+        "kollaps"@sv
+.
 
 
-:dam-failure a skos:Concept ;
+:dam-failure
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :physical-impact ;
     skos:definition "Breach or destruction of a large water or tailing containment structure and release of contained water that could result in downstream damage or pollution."@en ;
     skos:inScheme cs: ;
     skos:notation "02.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "dam failure"@en .
+    skos:prefLabel "dam failure"@en
+.
 
 
-:dust a skos:Concept ;
+:dust
+    a skos:Concept ;
     schema:citation "ISO 4225 (ISO, 1994), quoted in http://www.who.int/occupational_health/publications/en/oehairbornedust3.pdf; http://ecorestoration.montana.edu/mineland/guide/problem/impacts/fugitive.htm"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "jenis batubara"@id,
+    skos:altLabel
+        "jenis batubara"@id,
         "火山灰"@zh,
         "煤尘"@zh ;
     skos:broader :particulate-emission ;
     skos:definition "Emission of dust into the air. Dust is defines as small solid particles with a diameter less than 75 µm. The particles are small enough to remain suspended in the air for some time, but settle out under their own weight in still air."@en ;
     skos:inScheme cs: ;
     skos:notation "01.1.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Staub"@de,
+    skos:prefLabel
+        "Staub"@de,
         "dust"@en,
         "polvo"@es,
         "pöly"@fi,
@@ -272,13 +312,16 @@ cs: a skos:ConceptScheme ;
         "damm"@sv,
         "ฝุ่น"@th,
         "bụi"@vi,
-        "尘"@zh .
+        "尘"@zh
+.
 
 
-:erosion a skos:Concept ;
+:erosion
+    a skos:Concept ;
     schema:citation "IGH International Glossary of Hydrology. WMO - UNESCO, 1992. 413 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "kikisan"@id,
+    skos:altLabel
+        "kikisan"@id,
         "pengikisan"@id,
         "浸食"@ja,
         "冲刷"@zh,
@@ -287,7 +330,8 @@ cs: a skos:ConceptScheme ;
     skos:definition "Impact due to loss of material shaped by mining activities through water or wind action."@en ;
     skos:inScheme cs: ;
     skos:notation "02.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Erosion"@de,
+    skos:prefLabel
+        "Erosion"@de,
         "erosion"@en,
         "erosión"@es,
         "eroosio"@fi,
@@ -303,10 +347,12 @@ cs: a skos:ConceptScheme ;
         "erosion"@sv,
         "การกร่อน"@th,
         "xói mòn"@vi,
-        "侵蚀"@zh .
+        "侵蚀"@zh
+.
 
 
-:gaseous-emission a skos:Concept ;
+:gaseous-emission
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :emission ;
@@ -314,23 +360,28 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:narrower :odour ;
     skos:notation "01.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "gaseous emission"@en .
+    skos:prefLabel "gaseous emission"@en
+.
 
 
-:instability a skos:Concept ;
+:instability
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :physical-impact ;
     skos:definition "Increased propensity for unpredictable surface displacements"@en ;
     skos:inScheme cs: ;
     skos:notation "02.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "instability"@en .
+    skos:prefLabel "instability"@en
+.
 
 
-:landslide a skos:Concept ;
+:landslide
+    a skos:Concept ;
     schema:citation "ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "slope failure"@en,
+    skos:altLabel
+        "slope failure"@en,
         "斜面崩壊"@ja,
         "地滑"@zh,
         "山崩"@zh ;
@@ -338,7 +389,8 @@ cs: a skos:ConceptScheme ;
     skos:definition "Downslope displacement of material due to excavation related to resource extraction. Includes slope failure on waste or tailings heaps."@en ;
     skos:inScheme cs: ;
     skos:notation "02.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Erdrutsch"@de,
+    skos:prefLabel
+        "Erdrutsch"@de,
         "landslide"@en,
         "deslizamiento terreno"@es,
         "maanvieremät"@fi,
@@ -354,28 +406,34 @@ cs: a skos:ConceptScheme ;
         "skred"@sv,
         "ดินถล่ม"@th,
         "trượt đất"@vi,
-        "滑坡"@zh .
+        "滑坡"@zh
+.
 
 
-:liquid-emission a skos:Concept ;
+:liquid-emission
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :emission ;
     skos:definition "Emission of liquids from resource extraction site; principal concern is likely to be toxic chemical constituents in the liquids, but these are too varied to enumerate in this vocabulary"@en ;
     skos:inScheme cs: ;
-    skos:narrower :aqueous-liquid-emission,
+    skos:narrower
+        :aqueous-liquid-emission,
         :non-aqueous-liquid-emission ;
     skos:notation "01.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "liquid emission"@en .
+    skos:prefLabel "liquid emission"@en
+.
 
 
-:mine-drainage a skos:Concept ;
+:mine-drainage
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :surface-aqueous-liquid-discharge ;
     skos:definition "Surface discharge of aqueous liquid that has interacted with mineralized rock disturbed by Earth Resource extraction activities"@en ;
     skos:inScheme cs: ;
-    skos:narrower :acid-mine-drainage,
+    skos:narrower
+        :acid-mine-drainage,
         :basic-mine-drainage,
         :neutral-mine-drainage ;
     skos:notation "01.2.1.2.1"^^dt:LocalHierarchyKey ;
@@ -389,10 +447,12 @@ cs: a skos:ConceptScheme ;
         "saliran lombong"@ms,
         "การระบายน้ำในเหมือง"@th,
         "thoát nước mỏ"@vi,
-        "矿山排水"@zh .
+        "矿山排水"@zh
+.
 
 
-:mineral-fiber-emission a skos:Concept ;
+:mineral-fiber-emission
+    a skos:Concept ;
     schema:citation "ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index. Reference to a ISPRA document: Berry P., Bandini A., Dacquino C. (2011) classification of underground mining sites by means of a risk index, V.3, pp. 31-44, Quad. Ambiente e Società. [http://www.isprambiente.gov.it/contentfiles/00009100/9196-qas-3-ultimo-corretto.pdf]; Dacquino C. et al. (2006) - Italian Mining sites inventory. APAT, 2006. [http://www.isprambiente.gov.it/files/miniere/i-siti-minerari-italiani-1870-2006.pdf]"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :health-impact,
@@ -400,30 +460,36 @@ cs: a skos:ConceptScheme ;
     skos:definition "Emission of mineral fiber particulates that are threats to respiratory health."@en ;
     skos:inScheme cs: ;
     skos:notation "01.1.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "mineral fiber emission"@en .
+    skos:prefLabel "mineral fiber emission"@en
+.
 
 
-:neutral-mine-drainage a skos:Concept ;
+:neutral-mine-drainage
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :mine-drainage ;
     skos:definition "Mine drainage that has a pH value of 7.0."@en ;
     skos:inScheme cs: ;
     skos:notation "01.2.1.2.1.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "neutral mine drainage"@en .
+    skos:prefLabel "neutral mine drainage"@en
+.
 
 
-:noise a skos:Concept ;
+:noise
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "hingar"@ms,
+    skos:altLabel
+        "hingar"@ms,
         "สัญญาณรบกวน"@th,
         "噪音"@zh ;
     skos:broader :vibration ;
     skos:definition "Noticable sound resulting from a mining activity, usually from machinery, processing plant or blasting."@en ;
     skos:inScheme cs: ;
     skos:notation "06.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Rauschen"@de,
+    skos:prefLabel
+        "Rauschen"@de,
         "noise"@en,
         "ruido fondo"@es,
         "taustahäiriö"@fi,
@@ -439,45 +505,55 @@ cs: a skos:ConceptScheme ;
         "brus"@sv,
         "เสี่ยง"@th,
         "nhiễu"@vi,
-        "杂波"@zh .
+        "杂波"@zh
+.
 
 
-:non-aqueous-liquid-emission a skos:Concept ;
+:non-aqueous-liquid-emission
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :liquid-emission ;
     skos:definition "Emission of liquid in which water is not the most abundant constituent."@en ;
     skos:inScheme cs: ;
     skos:notation "01.2.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "non-aqueous liquid emission"@en .
+    skos:prefLabel "non-aqueous liquid emission"@en
+.
 
 
-:odour a skos:Concept ;
+:odour
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :gaseous-emission ;
     skos:definition "Impact includes unpleasant smell resulting from a mining activity."@en ;
     skos:inScheme cs: ;
     skos:notation "01.3.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "odour"@en .
+    skos:prefLabel "odour"@en
+.
 
 
-:particulate-emission a skos:Concept ;
+:particulate-emission
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :emission ;
     skos:definition "Emission of suspended particulate material into the air or water"@en ;
     skos:inScheme cs: ;
-    skos:narrower :dust,
+    skos:narrower
+        :dust,
         :mineral-fiber-emission ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "particulate emission"@en .
+    skos:prefLabel "particulate emission"@en
+.
 
 
-:radiation a skos:Concept ;
+:radiation
+    a skos:Concept ;
     schema:citation "ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "복사"@ko,
+    skos:altLabel
+        "복사"@ko,
         "penyebaran"@ms,
         "发光"@zh,
         "发散"@zh ;
@@ -485,7 +561,8 @@ cs: a skos:ConceptScheme ;
     skos:definition "Emission on air of radionuclides substance gangerous for many health situation"@en ;
     skos:inScheme cs: ;
     skos:notation "01.4.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Strahlung"@de,
+    skos:prefLabel
+        "Strahlung"@de,
         "radiation"@en,
         "radiación"@es,
         "säteily"@fi,
@@ -501,10 +578,12 @@ cs: a skos:ConceptScheme ;
         "strålning"@sv,
         "การแผ่รังสี"@th,
         "bức xạ"@vi,
-        "辐射"@zh .
+        "辐射"@zh
+.
 
 
-:radioactive-emission a skos:Concept ;
+:radioactive-emission
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :emission,
@@ -513,23 +592,29 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:narrower :radiation ;
     skos:notation "01.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "radioactive emission"@en .
+    skos:prefLabel "radioactive emission"@en
+.
 
 
-:runoff-water a skos:Concept ;
+:runoff-water
+    a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "surface water effluents"@en ;
+    skos:altLabel
+        "surface water effluents"@en ;
     skos:broader :surface-aqueous-liquid-discharge ;
     skos:definition "Surface discharge of aqueous liquid sourced by rainfall that has not interacted with mineralized rock."@en ;
     skos:inScheme cs: ;
     skos:notation "01.2.1.2.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "runoff water"@en .
+    skos:prefLabel "runoff water"@en
+.
 
 
-:sedimentation a skos:Concept ;
+:sedimentation
+    a skos:Concept ;
     schema:citation "http://ecorestoration.montana.edu/mineland/guide/problem/impacts/erosion.htm"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "proses pengendapan"@id,
+    skos:altLabel
+        "proses pengendapan"@id,
         "堆積"@ja,
         "pengendapan"@ms,
         "การตกตะกอน"@th,
@@ -538,7 +623,8 @@ cs: a skos:ConceptScheme ;
     skos:definition "Deposition of sediment eroded from resource extraction site in undesirable locations"@en ;
     skos:inScheme cs: ;
     skos:notation "02.6"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Sedimentation"@de,
+    skos:prefLabel
+        "Sedimentation"@de,
         "sedimentation"@en,
         "sedimentación"@es,
         "sedimentaatio"@fi,
@@ -554,13 +640,16 @@ cs: a skos:ConceptScheme ;
         "sedimentation"@sv,
         "การเกิดหินตะกอน"@th,
         "trầm tích (quá trình)"@vi,
-        "沉积"@zh .
+        "沉积"@zh
+.
 
 
-:subsidence a skos:Concept ;
+:subsidence
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "침하"@ko,
+    skos:altLabel
+        "침하"@ko,
         "amblesan"@ms,
         "沉降"@zh,
         "沉陷"@zh ;
@@ -569,7 +658,8 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:narrower :collapse ;
     skos:notation "02.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Senkung"@de,
+    skos:prefLabel
+        "Senkung"@de,
         "subsidence"@en,
         "subsidencia"@es,
         "vajoaminen"@fi,
@@ -585,33 +675,41 @@ cs: a skos:ConceptScheme ;
         "jordskorpesänkning"@sv,
         "การยุบตัวลง"@th,
         "lún chìm"@vi,
-        "下沉"@zh .
+        "下沉"@zh
+.
 
 
-:subsurface-aqueous-liquid-discharge a skos:Concept ;
+:subsurface-aqueous-liquid-discharge
+    a skos:Concept ;
     schema:citation "IGH International Glossary of Hydrology. WMO - UNESCO, 1992. 413 p. ESD Gilpin, A. Dictionary of Environment and Sustainable Development. John Wiley and Sons. 1996. 247 p."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "groundwater effluent | seepage water"@en ;
+    skos:altLabel
+        "groundwater effluent | seepage water"@en ;
     skos:broader :aqueous-liquid-emission ;
     skos:definition "Impact of subsurface aqueous fluid emission in which liquid water is the most abundant constituent."@en ;
     skos:inScheme cs: ;
     skos:notation "01.2.1.1."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "subsurface aqueous liquid discharge"@en .
+    skos:prefLabel "subsurface aqueous liquid discharge"@en
+.
 
 
-:surface-aqueous-liquid-discharge a skos:Concept ;
+:surface-aqueous-liquid-discharge
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :aqueous-liquid-emission ;
     skos:definition "Impact of aqueous liquid emission into the subsurface."@en ;
     skos:inScheme cs: ;
-    skos:narrower :mine-drainage,
+    skos:narrower
+        :mine-drainage,
         :runoff-water ;
     skos:notation "01.2.1.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "surface aqueous liquid discharge"@en .
+    skos:prefLabel "surface aqueous liquid discharge"@en
+.
 
 
-:visual-disturbance a skos:Concept ;
+:visual-disturbance
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :habitat-modification,
@@ -619,5 +717,6 @@ cs: a skos:ConceptScheme ;
     skos:definition "Impact due to changed view, scene or visual appearance that modifies landscape resulting from mining activity."@en ;
     skos:inScheme cs: ;
     skos:notation "05.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "visual disturbance"@en .
+    skos:prefLabel "visual disturbance"@en
+.
 

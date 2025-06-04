@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2010-11-27"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2010 11 27 SMR convert URN to http URI using CGI URI scheme to make the 201012 version."@en,
+    skos:changeNote
+        "2010 11 27 SMR convert URN to http URI using CGI URI scheme to make the 201012 version."@en,
         "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme. generate 201202 version"@en,
         "2012-11-24 Original SKOS implementation."@en,
@@ -26,13 +28,16 @@ cs: a skos:ConceptScheme ;
     skos:definition "This scheme describes the concept space for Alteration Type concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for populating the alteration type property in GeoSciML alterationDescription elements. Definitions of alteration types have not been included."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Alteration Type vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.02.xslt."@en ;
     skos:hasTopConcept :alteration_not_specified ;
-    skos:prefLabel "Alteration Type"@en .
+    skos:prefLabel "Alteration Type"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/alterationtype> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/alterationtype>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :advanced_argillic_alteration,
+    skos:member
+        :advanced_argillic_alteration,
         :albitic_alteration,
         :alteration_not_specified,
         :alunitic_alteration,
@@ -56,15 +61,18 @@ cs: a skos:ConceptScheme ;
         :silicification,
         :uralitisation,
         :zeolitic_alteration ;
-    skos:prefLabel "Alteration Type - All Concepts"@en .
+    skos:prefLabel "Alteration Type - All Concepts"@en
+.
 
 
-:alteration_not_specified a skos:Concept ;
+:alteration_not_specified
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Rock is altered, but type not specified. Any alteration type allowed."@en ;
     skos:inScheme cs: ;
-    skos:narrower :advanced_argillic_alteration,
+    skos:narrower
+        :advanced_argillic_alteration,
         :albitic_alteration,
         :alunitic_alteration,
         :argillic_alteration,
@@ -88,97 +96,118 @@ cs: a skos:ConceptScheme ;
         :uralitisation,
         :zeolitic_alteration ;
     skos:prefLabel "alteration type not specified"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:advanced_argillic_alteration a skos:Concept ;
+:advanced_argillic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "advanced argillic alteration"@en .
+    skos:prefLabel "advanced argillic alteration"@en
+.
 
 
-:albitic_alteration a skos:Concept ;
+:albitic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "albitic alteration"@en .
+    skos:prefLabel "albitic alteration"@en
+.
 
 
-:alunitic_alteration a skos:Concept ;
+:alunitic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "alunitic alteration"@en .
+    skos:prefLabel "alunitic alteration"@en
+.
 
 
-:argillic_alteration a skos:Concept ;
+:argillic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "argillic alteration"@en .
+    skos:prefLabel "argillic alteration"@en
+.
 
 
-:calcsilicate_alteration a skos:Concept ;
+:calcsilicate_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "calcsilicate alteration"@en .
+    skos:prefLabel "calcsilicate alteration"@en
+.
 
 
-:carbonate_alteration a skos:Concept ;
+:carbonate_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "carbonate alteration"@en .
+    skos:prefLabel "carbonate alteration"@en
+.
 
 
-:chloritic_alteration a skos:Concept ;
+:chloritic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "chloritic alteration"@en .
+    skos:prefLabel "chloritic alteration"@en
+.
 
 
-:deuteric_alteration a skos:Concept ;
+:deuteric_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "deuteric alteration"@en .
+    skos:prefLabel "deuteric alteration"@en
+.
 
 
-:epidote_alteration a skos:Concept ;
+:epidote_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "epidote alteration"@en .
+    skos:prefLabel "epidote alteration"@en
+.
 
 
-:greisen a skos:Concept ;
+:greisen
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Greisen"@de,
+    skos:prefLabel
+        "Greisen"@de,
         "greisen"@en,
         "greisen"@es,
         "greisen"@fi,
@@ -194,98 +223,120 @@ cs: a skos:ConceptScheme ;
         "greisen"@sv,
         "ไกรเซน"@th,
         "greisen"@vi,
-        "云英岩"@zh .
+        "云英岩"@zh
+.
 
 
-:hematitic_alteration a skos:Concept ;
+:hematitic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "hematitic alteration"@en .
+    skos:prefLabel "hematitic alteration"@en
+.
 
 
-:kaolinitic_alteration a skos:Concept ;
+:kaolinitic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "kaolinitic alteration"@en .
+    skos:prefLabel "kaolinitic alteration"@en
+.
 
 
-:not_altered a skos:Concept ;
+:not_altered
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "unaltered"@en ;
+    skos:altLabel
+        "unaltered"@en ;
     skos:broader :alteration_not_specified ;
     skos:definition "Rock or sediment not altered."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "not altered"@en .
+    skos:prefLabel "not altered"@en
+.
 
 
-:potassic_alteration a skos:Concept ;
+:potassic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "potassic alteration"@en .
+    skos:prefLabel "potassic alteration"@en
+.
 
 
-:propylitic_alteration a skos:Concept ;
+:propylitic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "propylitic alteration"@en .
+    skos:prefLabel "propylitic alteration"@en
+.
 
 
-:pyritic_alteration a skos:Concept ;
+:pyritic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "pyritic alteration"@en .
+    skos:prefLabel "pyritic alteration"@en
+.
 
 
-:red_rock_alteration a skos:Concept ;
+:red_rock_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "red rock alteration"@en .
+    skos:prefLabel "red rock alteration"@en
+.
 
 
-:saussuritised a skos:Concept ;
+:saussuritised
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "saussuritised"@en .
+    skos:prefLabel "saussuritised"@en
+.
 
 
-:sericitic_alteration a skos:Concept ;
+:sericitic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "sericitic alteration"@en .
+    skos:prefLabel "sericitic alteration"@en
+.
 
 
-:serpentinisation a skos:Concept ;
+:serpentinisation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "serpentinisation"@en,
+    skos:prefLabel
+        "serpentinisation"@en,
         "serpentinisation"@fr,
         "serpentinisasi"@id,
         "蛇紋岩化作用"@ja,
@@ -295,16 +346,19 @@ cs: a skos:ConceptScheme ;
         "penserpentinitan"@ms,
         "การเกิดเซอร์เพนทีน"@th,
         "serpentin hoá"@vi,
-        "蛇纹石化作用"@zh .
+        "蛇纹石化作用"@zh
+.
 
 
-:silicification a skos:Concept ;
+:silicification
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "Verkieselung"@de,
+    skos:prefLabel
+        "Verkieselung"@de,
         "silicification"@en,
         "silicificación"@es,
         "silisifikaatio"@fi,
@@ -320,18 +374,22 @@ cs: a skos:ConceptScheme ;
         "förkisling"@sv,
         "การเกิดการแทนที่โดยซิลิกา"@th,
         "silic hoá"@vi,
-        "硅化(作用)"@zh .
+        "硅化(作用)"@zh
+.
 
 
-:uralitisation a skos:Concept ;
+:uralitisation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "peruralitan"@id,
+    skos:altLabel
+        "peruralitan"@id,
         "次闪石化"@zh ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "uralitisation"@en,
+    skos:prefLabel
+        "uralitisation"@en,
         "ouralitisation"@fr,
         "uralitisasi"@id,
         "ウラライト化作用"@ja,
@@ -341,14 +399,17 @@ cs: a skos:ConceptScheme ;
         "penguralitan"@ms,
         "การเปลี่ยนจากไพรอกซีนเป็นฮอร์นเบลนด์"@th,
         "uralit hoá"@vi,
-        "纤闪石化"@zh .
+        "纤闪石化"@zh
+.
 
 
-:zeolitic_alteration a skos:Concept ;
+:zeolitic_alteration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :alteration_not_specified ;
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "zeolitic alteration"@en .
+    skos:prefLabel "zeolitic alteration"@en
+.
 

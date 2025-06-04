@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-07-14. create rdf/skos from excel spreadsheet."@en,
+    skos:changeNote
+        "2009-07-14. create rdf/skos from excel spreadsheet."@en,
         "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en,
         "2010-02-12 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
         "2010-11-27 SMR. URIs mapped from CGI URNs in 200811 version to http URIs according to CGI URI scheme (https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices#Example_Instances)"@en,
@@ -29,13 +31,16 @@ cs: a skos:ConceptScheme ;
     skos:definition "This scheme describes the concept space for Earth Material Consolidation Degree concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for populating the consolidationDegree property in GeoSciML RockMaterialDescription elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Consolidation Degree vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
     skos:hasTopConcept :consolidation_not_specified ;
-    skos:prefLabel "Consolidation Degree"@en .
+    skos:prefLabel "Consolidation Degree"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/consolidationdegree> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/consolidationdegree>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :consolidated,
+    skos:member
+        :consolidated,
         :consolidation_not_specified,
         :consolidation_variable,
         :incipient_consolidation,
@@ -48,134 +53,165 @@ cs: a skos:ConceptScheme ;
         :variable_induration,
         :well_consolidated,
         :well_indurated ;
-    skos:prefLabel "Consolidation Degree - All Concepts"@en .
+    skos:prefLabel "Consolidation Degree - All Concepts"@en
+.
 
 
-:consolidation_not_specified a skos:Concept ;
+:consolidation_not_specified
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "In normative descriptions, indicates that consolidation state is not a determining factor in identification, it may have any value."@en ;
     skos:inScheme cs: ;
-    skos:narrower :consolidated,
+    skos:narrower
+        :consolidated,
         :consolidation_variable,
         :unconsolidated ;
     skos:prefLabel "consolidation not specified"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:consolidated a skos:Concept ;
+:consolidated
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :consolidation_not_specified ;
     skos:definition "Particulate constituents of a compound material adhere to each other strongly enough that the aggregate can be considered a solid material in its own right."@en ;
     skos:inScheme cs: ;
-    skos:narrower :indurated,
+    skos:narrower
+        :indurated,
         :well_consolidated ;
-    skos:prefLabel "consolidated"@en .
+    skos:prefLabel "consolidated"@en
+.
 
 
-:consolidation_variable a skos:Concept ;
+:consolidation_variable
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :consolidation_not_specified ;
     skos:definition "Consolidation ranges from unconsolidated to indurated on scale of description"@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "consolidation variable"@en .
+    skos:prefLabel "consolidation variable"@en
+.
 
 
-:incipient_consolidation a skos:Concept ;
+:incipient_consolidation
+    a skos:Concept ;
     schema:citation "NADM SLTTs 2004 after Bowles 1986"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :unconsolidated ;
     skos:definition "Shoveled with difficulty, relative density 0.4 - 0.7."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "incipient consolidation"@en .
+    skos:prefLabel "incipient consolidation"@en
+.
 
 
-:indurated a skos:Concept ;
+:indurated
+    a skos:Concept ;
     schema:citation "NADM SLTTs 2004 after Bowles 1987"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :consolidated ;
     skos:definition "Requires blasting or heavy equipment to loosen, Relative density 0.9-1.0. Rings to blow of hammer."@en ;
     skos:inScheme cs: ;
-    skos:narrower :moderately_indurated,
+    skos:narrower
+        :moderately_indurated,
         :slightly_indurated,
         :variable_induration,
         :well_indurated ;
-    skos:prefLabel "indurated"@en .
+    skos:prefLabel "indurated"@en
+.
 
 
-:moderately_indurated a skos:Concept ;
+:moderately_indurated
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :indurated ;
     skos:definition "Multiple blows with standard rock hammer (less than 1 kg) are required to break rock."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "moderately indurated"@en .
+    skos:prefLabel "moderately indurated"@en
+.
 
 
-:slightly_indurated a skos:Concept ;
+:slightly_indurated
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :indurated ;
     skos:definition "Rock can be broken with single blow from standard rock hammer (less than 1 kg mass)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "slightly indurated"@en .
+    skos:prefLabel "slightly indurated"@en
+.
 
 
-:unconsolidated a skos:Concept ;
+:unconsolidated
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :consolidation_not_specified ;
     skos:definition "Particulate constituents of a compound material do not adhere to each other strongly enough that the aggregate can be considered a solid in its own right."@en ;
     skos:inScheme cs: ;
-    skos:narrower :incipient_consolidation,
+    skos:narrower
+        :incipient_consolidation,
         :unconsolidated_loose,
         :unconsolidated_very_loose ;
-    skos:prefLabel "unconsolidated"@en .
+    skos:prefLabel "unconsolidated"@en
+.
 
 
-:unconsolidated_loose a skos:Concept ;
+:unconsolidated_loose
+    a skos:Concept ;
     schema:citation "NADM SLTTs 2004 after Bowles 1985"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :unconsolidated ;
     skos:definition "Easily shoveled, can be indented with fingers, Relative density 0.2-0.4."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "unconsolidated loose"@en .
+    skos:prefLabel "unconsolidated loose"@en
+.
 
 
-:unconsolidated_very_loose a skos:Concept ;
+:unconsolidated_very_loose
+    a skos:Concept ;
     schema:citation "NADM SLTTs 2004 after Bowles 1984"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :unconsolidated ;
     skos:definition "Easily indented with fingers, Relative density 0.0-0.2."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "unconsolidated very loose"@en .
+    skos:prefLabel "unconsolidated very loose"@en
+.
 
 
-:variable_induration a skos:Concept ;
+:variable_induration
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :indurated ;
     skos:definition "Material is lithified, but induration varies at scale of description."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "variable induration"@en .
+    skos:prefLabel "variable induration"@en
+.
 
 
-:well_consolidated a skos:Concept ;
+:well_consolidated
+    a skos:Concept ;
     schema:citation "NADM SLTTs 2004 after Bowles 1986"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :consolidated ;
     skos:definition "Requires pick to loosen for shoveling, relative density 0.7-0.9."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "well consolidated"@en .
+    skos:prefLabel "well consolidated"@en
+.
 
 
-:well_indurated a skos:Concept ;
+:well_indurated
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :indurated ;
     skos:definition "Particles in the rock are strongly bound together such that rock surface can only be broken with great difficulty using standard rock hammer (less than 1 kg mass)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "well indurated"@en .
+    skos:prefLabel "well indurated"@en
+.
 

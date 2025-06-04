@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-28"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-02-23 Conversion to SKOS by SM Richard."@en,
+    skos:changeNote
+        "2014-02-23 Conversion to SKOS by SM Richard."@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
@@ -31,14 +33,18 @@ cs: a skos:ConceptScheme ;
         :mineral-specimens,
         :non-metal-ore,
         :recycling ;
-    skos:prefLabel "End Use Potential"@en .
+    skos:prefLabel "End Use Potential"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/end-use-potential> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/end-use-potential>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    skos:changeNote
+        "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member :abrasive-minerals,
+    skos:member
+        :abrasive-minerals,
         :agricultural-lime,
         :agriculture,
         :building-and-dimension-stone,
@@ -68,16 +74,20 @@ cs: a skos:ConceptScheme ;
         :recycling,
         :speciality-and-other-industrial,
         :structural-clay-products ;
-    skos:prefLabel "End Use Potential - All Concepts"@en .
+    skos:prefLabel "End Use Potential - All Concepts"@en
+.
 
 
-:agriculture a skos:Concept ;
+:agriculture
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "กสิกรรม"@th ;
+    skos:altLabel
+        "กสิกรรม"@th ;
     skos:definition "Material used for agricultural or horticultural purposes as a fertiliser, soil conditioner or improver."@en ;
     skos:inScheme cs: ;
-    skos:narrower :agricultural-lime,
+    skos:narrower
+        :agricultural-lime,
         :fertilizers,
         :horticultural,
         :landscaping ;
@@ -99,13 +109,16 @@ cs: a skos:ConceptScheme ;
         "การเพาะปลูก"@th,
         "nông nghiệp"@vi,
         "农业"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:construction a skos:Concept ;
+:construction
+    a skos:Concept ;
     schema:citation "ProMine EU FP7 project, BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "bangunan"@id,
+    skos:altLabel
+        "bangunan"@id,
         "tafsiran"@id,
         "建造"@ja,
         "pembinaan"@ms,
@@ -114,14 +127,16 @@ cs: a skos:ConceptScheme ;
     skos:definition "Material used in the construction industry. Includes aggregate, dimension & ornamental stones (granite, gabbro, travertine, etc.), gypsum, anhydrite, cement limestone, limestone for lime, marble, sand and gravel."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/construction> ;
     skos:inScheme cs: ;
-    skos:narrower :building-and-dimension-stone,
+    skos:narrower
+        :building-and-dimension-stone,
         :cement-making-material,
         :construction-aggregates,
         :engineering-clay,
         :plaster-and-plasterboard,
         :structural-clay-products ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Ingenieurbau"@de,
+    skos:prefLabel
+        "Ingenieurbau"@de,
         "construction"@en,
         "obra"@es,
         "rakentaminen"@fi,
@@ -138,51 +153,62 @@ cs: a skos:ConceptScheme ;
         "การก่อสร้าง"@th,
         "xây dựng"@vi,
         "建造"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:energy-minerals a skos:Concept ;
+:energy-minerals
+    a skos:Concept ;
     schema:citation "ProMine EU FP7 project, BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Raw materials in the energy industry. Includes oil, gas, bituminous sandstone and limestone, oil shale, coal, lignite, peat, thorium, uranium."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/energyMinerals> ;
     skos:inScheme cs: ;
-    skos:narrower :fossil-fuel-use,
+    skos:narrower
+        :fossil-fuel-use,
         :nuclear-energy-source ;
     skos:notation "04.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "energy minerals"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:gemstone a skos:Concept ;
+:gemstone
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "precious stones"@en,
+    skos:altLabel
+        "precious stones"@en,
         "semi-precious stones"@en ;
     skos:definition "Precious or semi precious stones or metals for use in jewellery or decorative work"@en ;
     skos:inScheme cs: ;
     skos:notation "05.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Schmuckstein"@de,
+    skos:prefLabel
+        "Schmuckstein"@de,
         "gemstone"@en,
         "gema"@es,
         "jalokivet"@fi,
         "gemma"@it,
         "kamen' dragotsennyj"@ru,
         "ädelsten"@sv ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:industrial-minerals a skos:Concept ;
+:industrial-minerals
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Material used in the manufacture of a product by an industrial process, or in the treatment of a product"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/industrialMinerals> ;
     skos:inScheme cs: ;
-    skos:narrower :ceramic-and-refractory,
+    skos:narrower
+        :ceramic-and-refractory,
         :chemicals,
         :speciality-and-other-industrial ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Steine-Erden-Industrieminerale"@de,
+    skos:prefLabel
+        "Steine-Erden-Industrieminerale"@de,
         "industrial minerals"@en,
         "sustancia útil"@es,
         "teollisuusmineraalit"@fi,
@@ -200,23 +226,28 @@ cs: a skos:ConceptScheme ;
         "แร่อุตสาหกรรม"@th,
         "khoáng chất công nghiệp"@vi,
         "工业矿物"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:metal-industry a skos:Concept ;
+:metal-industry
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metal ore directly used to produce metals and minerals used in their processing"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/metalIndustry> ;
     skos:inScheme cs: ;
-    skos:narrower :foundry-minerals,
+    skos:narrower
+        :foundry-minerals,
         :metal-ore ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "metal industry"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:mineral-specimens a skos:Concept ;
+:mineral-specimens
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Resource end use is for sale to collectors and for education"@en ;
@@ -224,29 +255,35 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:notation "07.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "mineral specimens"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:non-metal-ore a skos:Concept ;
+:non-metal-ore
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "resource end use is extraction of non-metal elements for direct use, e.g. flourine, bromine, iodine, boron"@en ;
     skos:inScheme cs: ;
     skos:notation "08.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "non-metal ore"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:recycling a skos:Concept ;
+:recycling
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "proses daur-ulang"@id,
+    skos:altLabel
+        "proses daur-ulang"@id,
         "リサイクル"@ja,
         "재활용"@ko ;
     skos:definition "Materials recycled for either remanufacture of a similar product or for use in a different product or manner"@en ;
     skos:inScheme cs: ;
     skos:notation "06.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Recycling"@de,
+    skos:prefLabel
+        "Recycling"@de,
         "recycling"@en,
         "reciclaje"@es,
         "kierrätys"@fi,
@@ -263,10 +300,12 @@ cs: a skos:ConceptScheme ;
         "การหมุนเวียน"@th,
         "tái tuần hoàn"@vi,
         "回收"@zh ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:abrasive-minerals a skos:Concept ;
+:abrasive-minerals
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :speciality-and-other-industrial ;
@@ -274,16 +313,19 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/abrasiveMinerals> ;
     skos:inScheme cs: ;
     skos:notation "03.04.03.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Polierstoff"@de,
+    skos:prefLabel
+        "Polierstoff"@de,
         "abrasive minerals"@en,
         "abrasivo"@es,
         "hioma-aineet"@fi,
         "abrasivo"@it,
         "abraziv"@ru,
-        "slipmedel"@sv .
+        "slipmedel"@sv
+.
 
 
-:agricultural-lime a skos:Concept ;
+:agricultural-lime
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :agriculture ;
@@ -291,10 +333,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/agriculturaLime> ;
     skos:inScheme cs: ;
     skos:notation "09.02.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "agricultural lime"@en .
+    skos:prefLabel "agricultural lime"@en
+.
 
 
-:building-and-dimension-stone a skos:Concept ;
+:building-and-dimension-stone
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :construction ;
@@ -302,10 +346,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/buildingAndDimensionStone> ;
     skos:inScheme cs: ;
     skos:notation "02.05.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "building and dimension stone"@en .
+    skos:prefLabel "building and dimension stone"@en
+.
 
 
-:cement-making-material a skos:Concept ;
+:cement-making-material
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :construction ;
@@ -313,20 +359,24 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/cementMakingMaterial> ;
     skos:inScheme cs: ;
     skos:notation "02.02.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "cement-making material"@en .
+    skos:prefLabel "cement-making material"@en
+.
 
 
-:ceramic-and-refractory a skos:Concept ;
+:ceramic-and-refractory
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-minerals ;
     skos:definition "Material used as a raw material for the manufacture of ceramics and refractories, i.e. whiteware or pottery. Excludes bricks, tiles, pipes and pottery."@en ;
     skos:inScheme cs: ;
     skos:notation "03.01.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "ceramic and refractory minerals"@en .
+    skos:prefLabel "ceramic and refractory minerals"@en
+.
 
 
-:chemicals a skos:Concept ;
+:chemicals
+    a skos:Concept ;
     schema:citation "ProMine EU FP7 project, BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-minerals ;
@@ -334,10 +384,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/chemical> ;
     skos:inScheme cs: ;
     skos:notation "03.02.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "chemicals"@en .
+    skos:prefLabel "chemicals"@en
+.
 
 
-:construction-aggregates a skos:Concept ;
+:construction-aggregates
+    a skos:Concept ;
     schema:citation "adapted from Glossary of Geology. 4th Edition, AGI"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :construction ;
@@ -345,10 +397,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/constructionAggregates> ;
     skos:inScheme cs: ;
     skos:notation "02.01.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "construction aggregates"@en .
+    skos:prefLabel "construction aggregates"@en
+.
 
 
-:drilling-minerals a skos:Concept ;
+:drilling-minerals
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :speciality-and-other-industrial ;
@@ -356,10 +410,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/drillingMinerals> ;
     skos:inScheme cs: ;
     skos:notation "03.04.05.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "drilling minerals"@en .
+    skos:prefLabel "drilling minerals"@en
+.
 
 
-:engineering-clay a skos:Concept ;
+:engineering-clay
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :construction ;
@@ -367,19 +423,23 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/engineeringClay> ;
     skos:inScheme cs: ;
     skos:notation "02.06.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "engineering clay"@en .
+    skos:prefLabel "engineering clay"@en
+.
 
 
-:fertilizers a skos:Concept ;
+:fertilizers
+    a skos:Concept ;
     schema:citation "ProMine EU FP7 project, BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "rabuk"@id ;
+    skos:altLabel
+        "rabuk"@id ;
     skos:broader :agriculture ;
     skos:definition "Direct application K- or P-bearing rock as a fertiliser; rock used for chemical fertiliser production e.g. phosphate; mineral used to prevent caking of fertilizer granules"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/fertilizer> ;
     skos:inScheme cs: ;
     skos:notation "09.01.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "fertilizers"@en,
+    skos:prefLabel
+        "fertilizers"@en,
         "engrais"@fr,
         "pupuk"@id,
         "肥料"@ja,
@@ -389,10 +449,12 @@ cs: a skos:ConceptScheme ;
         "baja"@ms,
         "ปุ๋ย"@th,
         "phân bón"@vi,
-        "肥料"@zh .
+        "肥料"@zh
+.
 
 
-:fossil-fuel-use a skos:Concept ;
+:fossil-fuel-use
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :energy-minerals ;
@@ -400,10 +462,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/fossilFuelUse> ;
     skos:inScheme cs: ;
     skos:notation "04.1.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "fossil fuel use"@en .
+    skos:prefLabel "fossil fuel use"@en
+.
 
 
-:foundry-minerals a skos:Concept ;
+:foundry-minerals
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal-industry,
@@ -412,10 +476,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/foundryMinerals> ;
     skos:inScheme cs: ;
     skos:notation "03.04.02.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "foundry minerals"@en .
+    skos:prefLabel "foundry minerals"@en
+.
 
 
-:glass-manufacturing-minerals a skos:Concept ;
+:glass-manufacturing-minerals
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :speciality-and-other-industrial ;
@@ -423,10 +489,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/glassManufacturingMinerals> ;
     skos:inScheme cs: ;
     skos:notation "03.04.04.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "glass manufacturing minerals"@en .
+    skos:prefLabel "glass manufacturing minerals"@en
+.
 
 
-:horticultural a skos:Concept ;
+:horticultural
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :agriculture ;
@@ -434,13 +502,16 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/horticultural> ;
     skos:inScheme cs: ;
     skos:notation "09.03.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "horticultural"@en .
+    skos:prefLabel "horticultural"@en
+.
 
 
-:industrial-product-treatment a skos:Concept ;
+:industrial-product-treatment
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "fillers"@en,
+    skos:altLabel
+        "fillers"@en,
         "filters and absorbents"@en,
         "pigments"@en,
         "zat warna"@id,
@@ -461,10 +532,12 @@ cs: a skos:ConceptScheme ;
         "pigmen"@ms,
         "สารสี"@th,
         "chất màu"@vi,
-        "色素"@zh .
+        "色素"@zh
+.
 
 
-:landscaping a skos:Concept ;
+:landscaping
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :agriculture ;
@@ -472,17 +545,20 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/landscaping> ;
     skos:inScheme cs: ;
     skos:notation "09.03.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "landscaping"@en .
+    skos:prefLabel "landscaping"@en
+.
 
 
-:metal-ore a skos:Concept ;
+:metal-ore
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :metal-industry ;
     skos:definition "Ore concentrate of specified metal"@en ;
     skos:inScheme cs: ;
     skos:notation "01.01."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Erz"@de,
+    skos:prefLabel
+        "Erz"@de,
         "metal ore"@en,
         "metal sustancia"@es,
         "metallimalmit"@fi,
@@ -498,10 +574,12 @@ cs: a skos:ConceptScheme ;
         "malm"@sv,
         "สินแร่โลหะ"@th,
         "quặng kim loại"@vi,
-        "金属矿"@zh .
+        "金属矿"@zh
+.
 
 
-:nuclear-energy-source a skos:Concept ;
+:nuclear-energy-source
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :energy-minerals ;
@@ -509,10 +587,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/nuclearEnergySource> ;
     skos:inScheme cs: ;
     skos:notation "04.2.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "nuclear energy source"@en .
+    skos:prefLabel "nuclear energy source"@en
+.
 
 
-:plaster-and-plasterboard a skos:Concept ;
+:plaster-and-plasterboard
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :construction ;
@@ -520,26 +600,31 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/plasterAndPlasterBoard> ;
     skos:inScheme cs: ;
     skos:notation "02.03.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "plaster and plaster board"@en .
+    skos:prefLabel "plaster and plaster board"@en
+.
 
 
-:speciality-and-other-industrial a skos:Concept ;
+:speciality-and-other-industrial
+    a skos:Concept ;
     schema:citation "ProMine EU FP7 project"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :industrial-minerals ;
     skos:definition "Includes abrasives: garnet, staurolite, corundum; asbestos (antophyllite, chrysotile, crocidolite); attapulgite, sepiolite (clay); bentonite (clay); limestone, calcite (filler); diatomite (kieselguhr); graphite; mica; perlite; quartz (massive / block for ferrosilicon); quartz (for optical and piezoelectrical use); silica sand; talc, pyrophyllite; vermiculite; wollastonite."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/specialityAndOtherIndustrialRocksAndMinerals> ;
     skos:inScheme cs: ;
-    skos:narrower :abrasive-minerals,
+    skos:narrower
+        :abrasive-minerals,
         :drilling-minerals,
         :foundry-minerals,
         :glass-manufacturing-minerals,
         :industrial-product-treatment ;
     skos:notation "03.04.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "speciality and other industrial rocks and minerals"@en .
+    skos:prefLabel "speciality and other industrial rocks and minerals"@en
+.
 
 
-:structural-clay-products a skos:Concept ;
+:structural-clay-products
+    a skos:Concept ;
     schema:citation "BGS Mines and Quarries Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :construction ;
@@ -547,5 +632,6 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/EndusePotentialValue/structuralClayProducts> ;
     skos:inScheme cs: ;
     skos:notation "02.04.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "structural clay products"@en .
+    skos:prefLabel "structural clay products"@en
+.
 

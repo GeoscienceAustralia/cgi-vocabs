@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-29"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-03-19 Original SKOS implementation, SMR"@en,
+    skos:changeNote
+        "2014-03-19 Original SKOS implementation, SMR"@en,
         "2015-01-08 OLR Edits to fix typos and remove '201403' from rdf file name."@en,
         "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ,
@@ -24,20 +26,25 @@ cs: a skos:ConceptScheme ;
     skos:hasTopConcept :surface,
         :underground,
         :underwater ;
-    skos:prefLabel "Waste Storage"@en .
+    skos:prefLabel "Waste Storage"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/waste-storage> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/waste-storage>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member :covered,
+    skos:member
+        :covered,
         :surface,
         :underground,
         :underwater ;
-    skos:prefLabel "Waste Storage - All Concepts"@en .
+    skos:prefLabel "Waste Storage - All Concepts"@en
+.
 
 
-:surface a skos:Concept ;
+:surface
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining waste storage at open-sky environment (ground level)"@en ;
@@ -45,35 +52,42 @@ cs: a skos:ConceptScheme ;
     skos:narrower :covered ;
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "surface"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:underground a skos:Concept ;
+:underground
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining waste storage at underground environment"@en ;
     skos:inScheme cs: ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "underground"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:underwater a skos:Concept ;
+:underwater
+    a skos:Concept ;
     schema:citation "Australia GGIC"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining waste deposited at sea or lake floor (e.g. sea bed mining)"@en ;
     skos:inScheme cs: ;
     skos:notation "03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "underwater"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:covered a skos:Concept ;
+:covered
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :surface ;
     skos:definition "Covered mining waste storage at ground level"@en ;
     skos:inScheme cs: ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "covered"@en .
+    skos:prefLabel "covered"@en
+.
 

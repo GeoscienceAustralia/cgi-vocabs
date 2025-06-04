@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-07-14 Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
+    skos:changeNote
+        "2009-07-14 Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2010-02-08 SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en,
         "2010-11-28 SMR replace URN with http URI constructed according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en,
@@ -32,13 +34,16 @@ cs: a skos:ConceptScheme ;
         :rank_not_specified,
         :supergroup,
         :supersuite ;
-    skos:prefLabel "Stratigraphic Rank"@en .
+    skos:prefLabel "Stratigraphic Rank"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/stratigraphicrank>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :bed,
+    skos:member
+        :bed,
         :complex,
         :formation,
         :group,
@@ -52,20 +57,24 @@ cs: a skos:ConceptScheme ;
         :supergroup,
         :supersequence,
         :supersuite ;
-    skos:prefLabel "Stratigraphic Rank - All Concepts"@en .
+    skos:prefLabel "Stratigraphic Rank - All Concepts"@en
+.
 
 
-:complex a skos:Concept ;
+:complex
+    a skos:Concept ;
     schema:citation "Salvador; A.; ed. 1994. International Stratigraphic Guide: International Union of Geological Sciences; Trondheim; NO; 214 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A lithostratigraphic unit composed of diverse types of any class or classes of rock (sedimentary; igneous; metamorphic); and characterized by irregularly mixed lithology or by hightly complicated structure relations to the extent that the original sequence of the component rocks may be obscured and the individual rocks or rock sequence cannot be readily mapped."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "complex"@en ;
     skos:related :lithodeme ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:megasequence a skos:Concept ;
+:megasequence
+    a skos:Concept ;
     schema:citation "Haq; B.U.hardenbol; J.; and Vail; P.R.; 1988; Mesozoic and Cenozoic chronostratigraphy an dcycles of sea-level changes; in Wilgus; C.K.; et al.; eds; Sea-level Changes: an Integrated Approach: Society of Sedimentary Geology Special Publication 42; p. 71-108."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A succession of strata comprising two or more supersequences. A large-scale sequence-stratigraphic unit deposited during one distinct phase of basin evolution; separated by major unconformities that mark a change in fundamental basin-controlling processes."@en ;
@@ -73,19 +82,23 @@ cs: a skos:ConceptScheme ;
     skos:narrower :supersequence ;
     skos:prefLabel "megasequence"@en ;
     skos:related :supersuite ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:rank_not_specified a skos:Concept ;
+:rank_not_specified
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "unit is not part of a defined stratigraphic hierarchy."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "not specified"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:supergroup a skos:Concept ;
+:supergroup
+    a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A supergroup is a formal assemblage of related or superposed groups or of groups and formations"@en ;
@@ -93,10 +106,12 @@ cs: a skos:ConceptScheme ;
     skos:narrower :group ;
     skos:prefLabel "supergroup"@en ;
     skos:related :supersuite ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:supersuite a skos:Concept ;
+:supersuite
+    a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A formal lithodemic unit next higher in rank to suite. It comprises two or more suites having a degree of natural relationship to one another"@en ;
@@ -105,19 +120,23 @@ cs: a skos:ConceptScheme ;
     skos:prefLabel "supersuite"@en ;
     skos:related :megasequence,
         :supergroup ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:bed a skos:Concept ;
+:bed
+    a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :member ;
     skos:definition "The smallest formal lithostratigraphic unit; usually a distinctive lithic entity which can be distinguished from adjacent rocks by one or more physical characteristics."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "bed"@en .
+    skos:prefLabel "bed"@en
+.
 
 
-:formation a skos:Concept ;
+:formation
+    a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :subgroup ;
@@ -125,10 +144,12 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:narrower :member ;
     skos:prefLabel "formation"@en ;
-    skos:related :lithodeme .
+    skos:related :lithodeme
+.
 
 
-:group a skos:Concept ;
+:group
+    a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :supergroup ;
@@ -136,10 +157,12 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:narrower :subgroup ;
     skos:prefLabel "group"@en ;
-    skos:related :suite .
+    skos:related :suite
+.
 
 
-:lithodeme a skos:Concept ;
+:lithodeme
+    a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :suite ;
@@ -148,40 +171,48 @@ cs: a skos:ConceptScheme ;
     skos:prefLabel "lithodeme"@en ;
     skos:related :complex,
         :formation,
-        :sequence .
+        :sequence
+.
 
 
-:member a skos:Concept ;
+:member
+    a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :formation ;
     skos:definition "A formal lithostratigraphic unit next in rank below a formation; and always part of a formation. It is a named entity within a formation because it possesses characteristics distinguishing it from adjacent parts of the formation."@en ;
     skos:inScheme cs: ;
     skos:narrower :bed ;
-    skos:prefLabel "member"@en .
+    skos:prefLabel "member"@en
+.
 
 
-:sequence a skos:Concept ;
+:sequence
+    a skos:Concept ;
     schema:citation "Van Wagoner; J.C.; Posamentierh.W.; Mitchum; R.M.; Vail; P.R.; Sarg; J.F.; Loutit; T.S.hardenbol; J.; 1988; An overview of sequence stratigraphy and key definitions. In: Wilgus; C.K.hastings; B.S.; Kendall; C.G.St.C.; Posamentierh.W.; Ross; C.A.; Van Wagoner; J.C. (Eds.); Sea Level Changes––An Integrated Approach; vol. 42. SEPM Special Publication; pp. 39–45."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :supersequence ;
     skos:definition "A genetically related succession of strata bounded by unconformites or their correlative conformable contacts; and typically having a thickness of 10-100 metres."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sequence"@en ;
-    skos:related :lithodeme .
+    skos:related :lithodeme
+.
 
 
-:subgroup a skos:Concept ;
+:subgroup
+    a skos:Concept ;
     schema:citation "Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :group ;
     skos:definition "A subgroup is the lithostratigraphic unit next higher in rank to formation. A subgroup usually consists of several formations."@en ;
     skos:inScheme cs: ;
     skos:narrower :formation ;
-    skos:prefLabel "subgroup"@en .
+    skos:prefLabel "subgroup"@en
+.
 
 
-:suite a skos:Concept ;
+:suite
+    a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :supersuite ;
@@ -190,10 +221,12 @@ cs: a skos:ConceptScheme ;
     skos:narrower :lithodeme ;
     skos:prefLabel "suite"@en ;
     skos:related :group,
-        :supersequence .
+        :supersequence
+.
 
 
-:supersequence a skos:Concept ;
+:supersequence
+    a skos:Concept ;
     schema:citation "Haq; B.U.hardenbol; J.; and Vail; P.R.; 1988; Mesozoic and Cenozoic chronostratigraphy an dcycles of sea-level changes; in Wilgus; C.K.; et al.; eds; Sea-level Changes: an Integrated Approach: Society of Sedimentary Geology Special Publication 42; p. 71-108."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :megasequence ;
@@ -201,5 +234,6 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:narrower :sequence ;
     skos:prefLabel "supersequence"@en ;
-    skos:related :suite .
+    skos:related :suite
+.
 

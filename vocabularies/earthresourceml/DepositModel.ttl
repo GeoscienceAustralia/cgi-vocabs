@@ -1950,7 +1950,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "** doesn't describe overclays yet** Massive, non-bedded clay layers underlying horizons of coal, usually containing cracks with slickensides. Underclays are thought to represent paleosols pre-dating deposition of coal, or have formed as a result of alteration or diagenesis."@en ;
     skos:inScheme cs: ;
     skos:notation "02.02.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Underclay, overclay"@en ;
+    skos:prefLabel
+        "Underclay, overclay"@en ;
     sdo:additionalType :DepositType ;
 .
 

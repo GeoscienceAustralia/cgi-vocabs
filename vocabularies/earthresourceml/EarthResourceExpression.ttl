@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2014-01-09"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-02-23 SMR - Original compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard."@en,
+    skos:changeNote
+        "2014-02-23 SMR - Original compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard."@en,
         "2016-07-15 OLR - Reformat SKOS for migration to new vocabulary server"@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
         "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
@@ -27,55 +29,67 @@ cs: a skos:ConceptScheme ;
         :exposed,
         :geochemical-anomaly,
         :geophysical-anomaly ;
-    skos:prefLabel "Earth Resource Expression"@en .
+    skos:prefLabel "Earth Resource Expression"@en
+.
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-expression> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/earth-resource-expression>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:inScheme cs: ;
-    skos:member :alteration-halo,
+    skos:member
+        :alteration-halo,
         :botanical-anomaly,
         :concealed,
         :exposed,
         :geochemical-anomaly,
         :geophysical-anomaly,
         :gossan ;
-    skos:prefLabel "Earth Resource Expression - All Concepts"@en .
+    skos:prefLabel "Earth Resource Expression - All Concepts"@en
+.
 
 
-:alteration-halo a skos:Concept ;
+:alteration-halo
+    a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The Earth resource, concealed or exposed, has an anomalous rock alteration halo."@en ;
     skos:inScheme cs: ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "alteration halo"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:botanical-anomaly a skos:Concept ;
+:botanical-anomaly
+    a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "vegetation anomaly"@en ;
+    skos:altLabel
+        "vegetation anomaly"@en ;
     skos:definition "The Earth resource, concealed or exposed, has an anomalous botanical signature (eg, particular plant growth or absence of plants)."@en ;
     skos:inScheme cs: ;
     skos:notation "06.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "botanical anomaly"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:concealed a skos:Concept ;
+:concealed
+    a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The Earth resource is not exposed at the Earth's surface."@en ;
     skos:inScheme cs: ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "concealed"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:exposed a skos:Concept ;
+:exposed
+    a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The Earth resource is exposed at the Earth's surface."@en ;
@@ -83,20 +97,24 @@ cs: a skos:ConceptScheme ;
     skos:narrower :gossan ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "exposed"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:geochemical-anomaly a skos:Concept ;
+:geochemical-anomaly
+    a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The Earth resource, concealed or exposed, has an anomalous geochemical signature."@en ;
     skos:inScheme cs: ;
     skos:notation "05.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "geochemical anomaly"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:geophysical-anomaly a skos:Concept ;
+:geophysical-anomaly
+    a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -110,10 +128,12 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:notation "04.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "geophysical anomaly"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:gossan a skos:Concept ;
+:gossan
+    a skos:Concept ;
     schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -138,5 +158,6 @@ cs: a skos:ConceptScheme ;
     skos:definition "The surface expression of the Earth Resource is as highly weathered (oxidized) outcrop."@en ;
     skos:inScheme cs: ;
     skos:notation "01.1.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "gossan"@en .
+    skos:prefLabel "gossan"@en
+.
 

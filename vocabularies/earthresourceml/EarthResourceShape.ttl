@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-28"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-02-23 Conversion to SKOS by SM Richard."@en,
+    skos:changeNote
+        "2014-02-23 Conversion to SKOS by SM Richard."@en,
         "2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
         "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en ,
@@ -28,26 +30,32 @@ cs: a skos:ConceptScheme ;
         :podiform,
         :saddle-shaped,
         :tabular ;
-    skos:prefLabel "Earth Resource Shape"@en .
+    skos:prefLabel "Earth Resource Shape"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-shape> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/earth-resource-shape>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member :cylindrical,
+    skos:member
+        :cylindrical,
         :irregular,
         :lensoidal,
         :nodular,
         :podiform,
         :saddle-shaped,
         :tabular ;
-    skos:prefLabel "Earth Resource Shape - All Concepts"@en .
+    skos:prefLabel "Earth Resource Shape - All Concepts"@en
+.
 
 
-:cylindrical a skos:Concept ;
+:cylindrical
+    a skos:Concept ;
     schema:citation "BGS Mineral Occurrence Database"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "chimney"@en,
+    skos:altLabel
+        "chimney"@en,
         "funnel"@en,
         "pipe"@en,
         "pipe-like"@en,
@@ -58,89 +66,109 @@ cs: a skos:ConceptScheme ;
     skos:definition "A roughly cylindrical body, which may reduce in diameter at one end like a funnel"@en ;
     skos:inScheme cs: ;
     skos:notation "05.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Pipe"@de,
+    skos:prefLabel
+        "Pipe"@de,
         "cylindrical"@en,
         "pipa"@es,
         "piiput"@fi,
         "tubo"@it,
         "trubka"@ru,
         "pipe"@sv ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:irregular a skos:Concept ;
+:irregular
+    a skos:Concept ;
     schema:citation "From CGI GeologicUnitMorphology vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Body geometry is irregular and can not be characterized using terminology."@en ;
     skos:inScheme cs: ;
     skos:notation "07.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "irregular"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:lensoidal a skos:Concept ;
+:lensoidal
+    a skos:Concept ;
     schema:citation "Glossary of Geology. 4th Edition, AGI + DC, adapted from"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "lens"@en,
+    skos:altLabel
+        "lens"@en,
         "lenticular"@en ;
     skos:definition "A body bounded by converging surfaces (at least one of which is curved), thick in the middle and thinning out toward the edges, resembling a convex lens."@en ;
     skos:inScheme cs: ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Linse"@de,
+    skos:prefLabel
+        "Linse"@de,
         "lensoidal"@en,
         "lentejón"@es,
         "linssit"@fi,
         "lente"@it,
         "linza"@ru,
         "lins"@sv ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:nodular a skos:Concept ;
+:nodular
+    a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI, definition (b)"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "nodule"@en ;
+    skos:altLabel
+        "nodule"@en ;
     skos:definition "Having the shape of a nodule or occurring in the form of nodules; e.g. \"nodular ore\" such as a colloform mineral aggregate with a bulbed surface."@en ;
     skos:inScheme cs: ;
     skos:notation "04.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Knolle"@de,
+    skos:prefLabel
+        "Knolle"@de,
         "nodular"@en,
         "nódulo"@es,
         "noduulit"@fi,
         "nodulo"@it,
         "nodul'"@ru,
         "nodul"@sv ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:podiform a skos:Concept ;
+:podiform
+    a skos:Concept ;
     schema:citation "Dictionary of Mining 2nd ed, AGI 1997, adapted from"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "pod"@en,
+    skos:altLabel
+        "pod"@en,
         "pod-like"@en ;
     skos:definition "A roughly cylindrical body having a diameter that decreases to zero at both ends like a cigar or a potato."@en ;
     skos:inScheme cs: ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "podiform"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:saddle-shaped a skos:Concept ;
+:saddle-shaped
+    a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "reverse saddle"@en,
+    skos:altLabel
+        "reverse saddle"@en,
         "saddle reef"@en ;
     skos:definition "Having a curved form like a fold hinge"@en ;
     skos:inScheme cs: ;
     skos:notation "06.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "saddle-shaped"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:tabular a skos:Concept ;
+:tabular
+    a skos:Concept ;
     schema:citation "Dictionary of Mining 2nd ed, AGI 1997, adapted from"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "blanket"@en,
+    skos:altLabel
+        "blanket"@en,
         "blanket-like"@en,
         "layer"@en,
         "manto"@en,
@@ -150,12 +178,14 @@ cs: a skos:ConceptScheme ;
     skos:definition "A body having two dimensions that are much larger or longer than the third, e.g. a dyke-hosted or bed-hosted deposit"@en ;
     skos:inScheme cs: ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Schicht"@de,
+    skos:prefLabel
+        "Schicht"@de,
         "tabular"@en,
         "estrato"@es,
         "kerrokset"@fi,
         "strato"@it,
         "sloj"@ru,
         "lager"@sv ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 

@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-29"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-03-19 Original SKOS implementation, SMR"@en,
+    skos:changeNote
+        "2014-03-19 Original SKOS implementation, SMR"@en,
         "2015-01-08 OLR Edits to fix typos and remove '201403' from rdf file name."@en,
         "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
@@ -25,20 +27,26 @@ cs: a skos:ConceptScheme ;
     skos:hasTopConcept :probable-ore-reserves,
         :proved-and-probable-ore-reserves,
         :proved-ore-reserves ;
-    skos:prefLabel "Reserve Assessment Category"@en .
+    skos:prefLabel "Reserve Assessment Category"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/reserve-assessment-category> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/reserve-assessment-category>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    skos:changeNote
+        "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member :probable-ore-reserves,
+    skos:member
+        :probable-ore-reserves,
         :proved-and-probable-ore-reserves,
         :proved-ore-reserves ;
-    skos:prefLabel "Reserve Assessment Category - All Concepts"@en .
+    skos:prefLabel "Reserve Assessment Category - All Concepts"@en
+.
 
 
-:probable-ore-reserves a skos:Concept ;
+:probable-ore-reserves
+    a skos:Concept ;
     schema:citation "CRIRSCO Code; JORC 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A ‘Probable Ore Reserve’ is the economically mineable part of an Indicated, and in some circumstances, a Measured Mineral Resource. It includes diluting materials and allowances for losses which may occur when the material is mined. Appropriate assessments and studies have been carried out, and include consideration of and modification by realistically assumed mining, metallurgical, economic, marketing, legal, environmental, social and governmental factors These assessments demonstrate at the time of reporting that extraction could reasonably be justified."@en ;
@@ -46,10 +54,12 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "probable ore reserves"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:proved-and-probable-ore-reserves a skos:Concept ;
+:proved-and-probable-ore-reserves
+    a skos:Concept ;
     schema:citation "CRIRSCO Code; JORC 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A mixture of the economically mineable part of an Indicated, and a Measured Mineral Resource. It includes diluting materials and allowances for losses which may occur when the material is mined. Appropriate assessments and studies have been carried out, and include consideration of and modification by realistically assumed mining, metallurgical, economic, marketing, legal, environmental, social and governmental factors These assessments demonstrate at the time of reporting that extraction could reasonably be justified."@en ;
@@ -57,10 +67,12 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:notation "03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "proved and probable ore reserves"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:proved-ore-reserves a skos:Concept ;
+:proved-ore-reserves
+    a skos:Concept ;
     schema:citation "CRIRSCO Code; JORC 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A ‘Proved Ore Reserve’ is the economically mineable part of a Measured Mineral Resource. It includes diluting materials and allowances for losses which may occur when the material is mined. Appropriate assessments and studies have been carried out, and include consideration of and modification by realistically assumed mining, metallurgical, economic, marketing, legal, environmental, social and governmental factors. These assessments demonstrate at the time of reporting that extraction could reasonably be justified"@en ;
@@ -68,5 +80,6 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "proved ore reserves"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 

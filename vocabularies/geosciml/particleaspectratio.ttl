@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords "GeoSciML" ;
     schema:dateCreated "2009-07-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
-    skos:changeNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
+    skos:changeNote
+        "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,
         "2009-12-07. SMR add collections for mineralogical and sedimentary petrographic categories, improve annotation and notes on vocabulary."@en,
         "2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en,
@@ -28,13 +30,16 @@ cs: a skos:ConceptScheme ;
     skos:definition "This file contains the CGI Particle Aspect Ratio vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. AspectRatio describes the geometry of particles based on the ratios of lengths of long, intermediate and short axes of grains. Equates to sphericity in sedimentary rocks (ie: the degree to which the shape of a particle approximates a sphere). A quantitative specification is based on the ratio of lengths of long, intermediate and short axes of grain shape (Sneed and Folk, 1958; Zingg, 1935). This vocabulary includes terms for specifying average shape of some collection of particles.(eg: prolate, slightly flattened, very bladed, equant, acicular, tabular). Numeric shape values from Sneed and Folk (1958) are best understood by looking at the pictures of particles with the different shapes there and in Pettijohn et al. (1972). By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Particle Aspect Ratio vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
     skos:hasTopConcept :form_not_specified ;
-    skos:prefLabel "Particle Aspect Ratio"@en .
+    skos:prefLabel "Particle Aspect Ratio"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/particleaspectratio>
+    a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member :any_form,
+    skos:member
+        :any_form,
         :bladed,
         :bladed_medium,
         :compact_bladed,
@@ -51,174 +56,214 @@ cs: a skos:ConceptScheme ;
         :strongly_flattened,
         :strongly_prolate,
         :very_bladed ;
-    skos:prefLabel "Particle Aspect Ratio - All Concepts"@en .
+    skos:prefLabel "Particle Aspect Ratio - All Concepts"@en
+.
 
 
-:form_not_specified a skos:Concept ;
+:form_not_specified
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Particle form may take any or no value. For use in normative descriptions."@en ;
     skos:inScheme cs: ;
-    skos:narrower :any_form,
+    skos:narrower
+        :any_form,
         :particle_geometry_uncertain ;
     skos:prefLabel "form not specified"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:any_form a skos:Concept ;
+:any_form
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :form_not_specified ;
     skos:definition "Particle has some form, but it is not specified."@en ;
     skos:inScheme cs: ;
-    skos:narrower :bladed,
+    skos:narrower
+        :bladed,
         :equant,
         :oblate,
         :prolate ;
-    skos:prefLabel "any form"@en .
+    skos:prefLabel "any form"@en
+.
 
 
-:bladed a skos:Concept ;
+:bladed
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :any_form ;
     skos:definition "Bladed group in Sneed&Folk, (1958), S/L is less than 0.7 and (L-I)/(L-S) is between 0.33 and 0.66."@en ;
     skos:inScheme cs: ;
-    skos:narrower :bladed_medium,
+    skos:narrower
+        :bladed_medium,
         :compact_bladed,
         :very_bladed ;
-    skos:prefLabel "bladed"@en .
+    skos:prefLabel "bladed"@en
+.
 
 
-:bladed_medium a skos:Concept ;
+:bladed_medium
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bladed ;
     skos:definition "S/L is between 0.3 and 0.5 and (L-I)/(L-S) is between 0.33 and 0.66 Sneed&Folk, (1958)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "bladed medium"@en .
+    skos:prefLabel "bladed medium"@en
+.
 
 
-:compact_bladed a skos:Concept ;
+:compact_bladed
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bladed ;
     skos:definition "S/L is between 0.5 and 0.7 and (L-I)/(L-S) is between 0.33 and 0.66 Sneed&Folk, (1958)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "compact bladed"@en .
+    skos:prefLabel "compact bladed"@en
+.
 
 
-:equant a skos:Concept ;
+:equant
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :any_form ;
     skos:definition "Particles are compact in Sneed & Folk (1958), ratio of S/L is greater than 0.7."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "equant"@en .
+    skos:prefLabel "equant"@en
+.
 
 
-:fibrous a skos:Concept ;
+:fibrous
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :strongly_prolate ;
     skos:definition "Particles are so elongate they are fibrous."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "fibrous"@en .
+    skos:prefLabel "fibrous"@en
+.
 
 
-:oblate a skos:Concept ;
+:oblate
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :any_form ;
     skos:definition "Particles are in 'platy group' in Sneed&Folk, (1958), S/L is less than 0.7 and (L-I)/(L-S) is less than 0.33."@en ;
     skos:inScheme cs: ;
-    skos:narrower :oblate_medium,
+    skos:narrower
+        :oblate_medium,
         :slightly_flattened,
         :strongly_flattened ;
-    skos:prefLabel "oblate"@en .
+    skos:prefLabel "oblate"@en
+.
 
 
-:oblate_medium a skos:Concept ;
+:oblate_medium
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :oblate ;
     skos:definition "Particles are 'just platy' in Sneed&Folk, (1958), S/L is between 0.3 and 0.5 and (L-I)/(L-S) is less than 0.33."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "oblate medium"@en .
+    skos:prefLabel "oblate medium"@en
+.
 
 
-:particle_geometry_uncertain a skos:Concept ;
+:particle_geometry_uncertain
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :form_not_specified ;
     skos:definition "Particle form is uncertain or not categorizable, generally obscured by overprinting deformation, metamorphism, or alteration, but reason is not specified."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "particle form indeterminate"@en .
+    skos:prefLabel "particle form indeterminate"@en
+.
 
 
-:prolate a skos:Concept ;
+:prolate
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :any_form ;
     skos:definition "Particles are in 'elongated group' in Sneed & Folk, (1958), S/L is less than 0.7 and (L-I)/(L-S) is greater than 0.66."@en ;
     skos:inScheme cs: ;
-    skos:narrower :prolate_medium,
+    skos:narrower
+        :prolate_medium,
         :slightly_prolate,
         :strongly_prolate ;
-    skos:prefLabel "prolate"@en .
+    skos:prefLabel "prolate"@en
+.
 
 
-:prolate_medium a skos:Concept ;
+:prolate_medium
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :prolate ;
     skos:definition "Particle are 'just elongated' in Sneed&Folk, (1958), S/L is between 0.3 and 0.5 and (L-I)/(L-S) is greater than 0.66."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "prolate medium"@en .
+    skos:prefLabel "prolate medium"@en
+.
 
 
-:slightly_flattened a skos:Concept ;
+:slightly_flattened
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :oblate ;
     skos:definition "Particles are 'Compact-platy' in Sneed&Folk, (1958), S/L is between 0.5 and 0.7 and (L-I)/(L-S) is less than 0.33."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "slightly flattened"@en .
+    skos:prefLabel "slightly flattened"@en
+.
 
 
-:slightly_prolate a skos:Concept ;
+:slightly_prolate
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :prolate ;
     skos:definition "Particles are compact-elongated in Sneed&Folk, (1958), S/L is between 0.5 and 0.7 and (L-I)/(L-S) is greater than 0.66."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "slightly prolate"@en .
+    skos:prefLabel "slightly prolate"@en
+.
 
 
-:strongly_flattened a skos:Concept ;
+:strongly_flattened
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :oblate ;
     skos:definition "Particles are 'very platy' in Sneed&Folk, (1958), S/L is less than 0.3 and (L-I)/(L-S) is less than 0.33."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "strongly flattened"@en .
+    skos:prefLabel "strongly flattened"@en
+.
 
 
-:strongly_prolate a skos:Concept ;
+:strongly_prolate
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :prolate ;
     skos:definition "Particles are very elongated in Sneed&Folk, (1958), S/L is less than 0.3 and (L-I)/(L-S) is greater than 0.66."@en ;
     skos:inScheme cs: ;
     skos:narrower :fibrous ;
-    skos:prefLabel "strongly prolate"@en .
+    skos:prefLabel "strongly prolate"@en
+.
 
 
-:very_bladed a skos:Concept ;
+:very_bladed
+    a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :bladed ;
     skos:definition "S/L is less than 0.3 and (L-I)/(L-S) is between 0.33 and 0.66 Sneed&Folk, (1958)."@en ;
     skos:inScheme cs: ;
-    skos:prefLabel "very bladed"@en .
+    skos:prefLabel "very bladed"@en
+.
 

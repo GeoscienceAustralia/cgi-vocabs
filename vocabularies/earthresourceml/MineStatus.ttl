@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-29"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2013-11-29 SMR Original conversion to SKOS."@en,
+    skos:changeNote
+        "2013-11-29 SMR Original conversion to SKOS."@en,
         "2015-01-08 OLR Edits to fix typos and remove '201403' from rdf file name."@en,
         "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
@@ -25,14 +27,18 @@ cs: a skos:ConceptScheme ;
     skos:hasTopConcept :not-operating,
         :operating,
         :under-development ;
-    skos:prefLabel "Mine Status"@en .
+    skos:prefLabel "Mine Status"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/mine-status> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/mine-status>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    skos:changeNote
+        "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member :abandoned,
+    skos:member
+        :abandoned,
         :care-and-maintenance,
         :closed,
         :construction,
@@ -45,53 +51,64 @@ cs: a skos:ConceptScheme ;
         :pending-approval,
         :retention,
         :under-development ;
-    skos:prefLabel "Mine Status - All Concepts"@en .
+    skos:prefLabel "Mine Status - All Concepts"@en
+.
 
 
-:not-operating a skos:Concept ;
+:not-operating
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A mine has been operating and then closed or suspended"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/notOperating> ;
     skos:inScheme cs: ;
-    skos:narrower :abandoned,
+    skos:narrower
+        :abandoned,
         :care-and-maintenance,
         :closed,
         :historic,
         :retention ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "not operating"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:operating a skos:Concept ;
+:operating
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A mine is operating"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/operating> ;
     skos:inScheme cs: ;
-    skos:narrower :operating-continuously,
+    skos:narrower
+        :operating-continuously,
         :operating-intermittently ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "operating"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:under-development a skos:Concept ;
+:under-development
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A mine is under development - e.g feasibilty"@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/underDevelopment> ;
     skos:inScheme cs: ;
-    skos:narrower :construction,
+    skos:narrower
+        :construction,
         :feasibility,
         :pending-approval ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "under development"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:abandoned a skos:Concept ;
+:abandoned
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :not-operating ;
@@ -99,10 +116,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/abandoned> ;
     skos:inScheme cs: ;
     skos:notation "02.2.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "abandoned"@en .
+    skos:prefLabel "abandoned"@en
+.
 
 
-:care-and-maintenance a skos:Concept ;
+:care-and-maintenance
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :not-operating ;
@@ -110,10 +129,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/careAndMaintenance> ;
     skos:inScheme cs: ;
     skos:notation "02.3.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "care and maintenance"@en .
+    skos:prefLabel "care and maintenance"@en
+.
 
 
-:closed a skos:Concept ;
+:closed
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :not-operating ;
@@ -121,13 +142,16 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/closed> ;
     skos:inScheme cs: ;
     skos:notation "02.1.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "closed"@en .
+    skos:prefLabel "closed"@en
+.
 
 
-:construction a skos:Concept ;
+:construction
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "bangunan"@id,
+    skos:altLabel
+        "bangunan"@id,
         "tafsiran"@id,
         "建造"@ja,
         "pembinaan"@ms,
@@ -138,7 +162,8 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/construction> ;
     skos:inScheme cs: ;
     skos:notation "03.1.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Ingenieurbau"@de,
+    skos:prefLabel
+        "Ingenieurbau"@de,
         "construction"@en,
         "obra"@es,
         "rakentaminen"@fi,
@@ -154,10 +179,12 @@ cs: a skos:ConceptScheme ;
         "konstruktion"@sv,
         "การก่อสร้าง"@th,
         "xây dựng"@vi,
-        "建造"@zh .
+        "建造"@zh
+.
 
 
-:feasibility a skos:Concept ;
+:feasibility
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :under-development ;
@@ -165,10 +192,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/feasibility> ;
     skos:inScheme cs: ;
     skos:notation "03.3.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "feasibility"@en .
+    skos:prefLabel "feasibility"@en
+.
 
 
-:historic a skos:Concept ;
+:historic
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :not-operating ;
@@ -176,10 +205,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/historic> ;
     skos:inScheme cs: ;
     skos:notation "02.5.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "historic"@en .
+    skos:prefLabel "historic"@en
+.
 
 
-:operating-continuously a skos:Concept ;
+:operating-continuously
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :operating ;
@@ -187,10 +218,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/operatingContinuously> ;
     skos:inScheme cs: ;
     skos:notation "01.1.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "operating continuously"@en .
+    skos:prefLabel "operating continuously"@en
+.
 
 
-:operating-intermittently a skos:Concept ;
+:operating-intermittently
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :operating ;
@@ -198,10 +231,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/operatingIntermittently> ;
     skos:inScheme cs: ;
     skos:notation "01.2.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "operating intermittently"@en .
+    skos:prefLabel "operating intermittently"@en
+.
 
 
-:pending-approval a skos:Concept ;
+:pending-approval
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :under-development ;
@@ -209,13 +244,16 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/pendingApproval> ;
     skos:inScheme cs: ;
     skos:notation "03.2.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "pending approval"@en .
+    skos:prefLabel "pending approval"@en
+.
 
 
-:retention a skos:Concept ;
+:retention
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "保留"@zh ;
+    skos:altLabel
+        "保留"@zh ;
     skos:broader :not-operating ;
     skos:definition "A mine can be kept unexploited until the price of contained commodity(ies) makes it economical."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MineStatusValue/retention> ;
@@ -237,5 +275,6 @@ cs: a skos:ConceptScheme ;
         "retention"@sv,
         "การคงไว้"@th,
         "lượng nước giữ lại"@vi,
-        "滞留"@zh .
+        "滞留"@zh
+.
 

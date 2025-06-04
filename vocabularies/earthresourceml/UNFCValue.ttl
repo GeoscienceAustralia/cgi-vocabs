@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2019-06-04"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-02-23 Original SKOS implementation, SMR"@en,
+    skos:changeNote
+        "2014-02-23 Original SKOS implementation, SMR"@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2019-06-04 OLR fixed typos in narrower relations for 'commercial-projects'"@en,
@@ -28,15 +30,18 @@ cs: a skos:ConceptScheme ;
         :exploration-projects,
         :non‐commercial-projects,
         :potentially-commercial-projects ;
-    skos:prefLabel "UNFC Code"@en .
+    skos:prefLabel "UNFC Code"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/unfc> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/unfc>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "All the Concepts in this vocabulary"@en ;
     skos:inScheme cs: ;
-    skos:member :additional-quantities-in-place,
+    skos:member
+        :additional-quantities-in-place,
         :approved-for-development,
         :commercial-projects,
         :development-not-viable,
@@ -48,42 +53,52 @@ cs: a skos:ConceptScheme ;
         :non‐commercial-projects,
         :on-production,
         :potentially-commercial-projects ;
-    skos:prefLabel "UNFC Code - All Concepts"@en .
+    skos:prefLabel "UNFC Code - All Concepts"@en
+.
 
 
-:additional-quantities-in-place a skos:Concept ;
+:additional-quantities-in-place
+    a skos:Concept ;
     schema:citation "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Quantities should only be classified as Additional Quantities in Place where no technically feasible projects have been identified that could lead to the extraction of any of these quantities."@en ;
     skos:inScheme cs: ;
     skos:notation "04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "additional quantities in place"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:commercial-projects a skos:Concept ;
+:commercial-projects
+    a skos:Concept ;
     schema:citation "www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "mineral reserves"@en ;
+    skos:altLabel
+        "mineral reserves"@en ;
     skos:definition "Commercial Projects have been confirmed to be technically, economically and socially feasible."@en ;
     skos:inScheme cs: ;
-    skos:narrower :approved-for-development,
+    skos:narrower
+        :approved-for-development,
         :justified-for-development,
         :on-production ;
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "commercial projects"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:exploration-projects a skos:Concept ;
+:exploration-projects
+    a skos:Concept ;
     schema:citation "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "exploration results (334)"@en ;
+    skos:altLabel
+        "exploration results (334)"@en ;
     skos:definition "Project identiifed that has not advanced enought to categorize further."@en ;
     skos:inScheme cs: ;
     skos:notation "05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "exploration projects"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
 :non‐commercial-projects a skos:Concept ;
@@ -91,14 +106,17 @@ cs: a skos:ConceptScheme ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Non‐Commercial Projects include those that are at an early stage of evaluation in addition to those that are considered unlikely to become commercially feasible developments within the foreseeable future."@en ;
     skos:inScheme cs: ;
-    skos:narrower :development-not-viable,
+    skos:narrower
+        :development-not-viable,
         :development-unclarified ;
     skos:notation "03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "non‐commercial projects"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:potentially-commercial-projects a skos:Concept ;
+:potentially-commercial-projects
+    a skos:Concept ;
     schema:citation "www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -122,84 +140,105 @@ cs: a skos:ConceptScheme ;
         "mineral resource"@en ;
     skos:definition "Potentially Commercial Projects are expected to be developed in the foreseeable future, in that the quantities are assessed to have reasonable prospects for eventual economic extraction, but technical and/or commercial feasibility has not yet been confirmed"@en ;
     skos:inScheme cs: ;
-    skos:narrower :development-on-hold,
+    skos:narrower
+        :development-on-hold,
         :development-pending ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "potentially commercial projects"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:approved-for-development a skos:Concept ;
+:approved-for-development
+    a skos:Concept ;
     schema:citation "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "proved and probable (111+112)"@en ;
+    skos:altLabel
+        "proved and probable (111+112)"@en ;
     skos:broader :commercial-projects ;
     skos:definition "Approved for Development requires that all approvals/contracts are in place, and capital funds have been committed. Construction and installation of project facilities should be underway or due to start imminently."@en ;
     skos:inScheme cs: ;
     skos:notation "01.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "approved for development"@en .
+    skos:prefLabel "approved for development"@en
+.
 
 
-:development-not-viable a skos:Concept ;
+:development-not-viable
+    a skos:Concept ;
     schema:citation "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :non‐commercial-projects ;
     skos:definition "Development not Viable is used where a technically feasible project can be identified, but it has been assessed as being of insufficient potential to warrant any further data acquisition activities or any direct efforts to remove commercial contingencies."@en ;
     skos:inScheme cs: ;
     skos:notation "03.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "development not viable"@en .
+    skos:prefLabel "development not viable"@en
+.
 
 
-:development-on-hold a skos:Concept ;
+:development-on-hold
+    a skos:Concept ;
     schema:citation "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "indicated (222) and inferred (223)"@en ;
+    skos:altLabel
+        "indicated (222) and inferred (223)"@en ;
     skos:broader :potentially-commercial-projects ;
     skos:definition "Development On Hold is used where a project is considered to have at least a reasonable chance of achieving commerciality (i.e. there are reasonable prospects for eventual economic extraction), but where there are currently major non-technical contingencies (e.g. environmental or social issues) that need to be resolved before the project can move towards development."@en ;
     skos:inScheme cs: ;
     skos:notation "02.02"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "development on hold"@en .
+    skos:prefLabel "development on hold"@en
+.
 
 
-:development-pending a skos:Concept ;
+:development-pending
+    a skos:Concept ;
     schema:citation "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "measured (221), indicated (222), inferred (223)"@en ;
+    skos:altLabel
+        "measured (221), indicated (222), inferred (223)"@en ;
     skos:broader :potentially-commercial-projects ;
     skos:definition "Development Pending is limited to those projects that are actively subject to projectspecific technical activities, such as acquisition of additional data (e.g. appraisal drilling) or the completion of project feasibility studies and associated economic analyses designed to confirm project commerciality and/or to determine the optimum development scenario or mine plan."@en ;
     skos:inScheme cs: ;
     skos:notation "02.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "development pending"@en .
+    skos:prefLabel "development pending"@en
+.
 
 
-:development-unclarified a skos:Concept ;
+:development-unclarified
+    a skos:Concept ;
     schema:citation "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :non‐commercial-projects ;
     skos:definition "Development Unclarified is appropriate for projects that are still in the early stages of technical and commercial evaluation (e.g. a recent new discovery), and/or where significant further data acquisition will be required, in order to make a meaningful assessment of the potential for a commercial development, i.e. there is currently insufficient basis for concluding that there are reasonable prospects for eventual economic extraction."@en ;
     skos:inScheme cs: ;
     skos:notation "03.01"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "development unclarified"@en .
+    skos:prefLabel "development unclarified"@en
+.
 
 
-:justified-for-development a skos:Concept ;
+:justified-for-development
+    a skos:Concept ;
     schema:citation "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "proved and probable (111+112)"@en ;
+    skos:altLabel
+        "proved and probable (111+112)"@en ;
     skos:broader :commercial-projects ;
     skos:definition "Justified for Development requires that the project has been demonstrated to be technically feasible and commercially viable, and there must be a reasonable expectation that all necessary approvals/contracts for the project to proceed to development will be forthcoming."@en ;
     skos:inScheme cs: ;
     skos:notation "01.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "justified for development"@en .
+    skos:prefLabel "justified for development"@en
+.
 
 
-:on-production a skos:Concept ;
+:on-production
+    a skos:Concept ;
     schema:citation "http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "proved and probable (111+112)"@en ;
+    skos:altLabel
+        "proved and probable (111+112)"@en ;
     skos:broader :commercial-projects ;
     skos:definition "On Production is used where the project is actually producing/extracting and selling one or more commodities to market as at the Effective Date of the evaluation."@en ;
     skos:inScheme cs: ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "on production"@en .
+    skos:prefLabel "on production"@en
+.
 

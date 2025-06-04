@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-29"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-02-23 SMR Original conversion to SKOS."@en,
+    skos:changeNote
+        "2014-02-23 SMR Original conversion to SKOS."@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
@@ -25,14 +27,18 @@ cs: a skos:ConceptScheme ;
     skos:hasTopConcept :subsurface-mining,
         :surface-mining,
         :underwater-mining ;
-    skos:prefLabel "Mining Activity"@en .
+    skos:prefLabel "Mining Activity"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/mining-activity> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/mining-activity>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    skos:changeNote
+        "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member :borehole-mining,
+    skos:member
+        :borehole-mining,
         :dredge-mining,
         :hydraulic-mining,
         :in-situ-recovery,
@@ -46,50 +52,61 @@ cs: a skos:ConceptScheme ;
         :surface-placer-mining,
         :underground-mining,
         :underwater-mining ;
-    skos:prefLabel "Mining Activity - All Concepts"@en .
+    skos:prefLabel "Mining Activity - All Concepts"@en
+.
 
 
-:subsurface-mining a skos:Concept ;
+:subsurface-mining
+    a skos:Concept ;
     schema:citation "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining beneath the surface of the earth."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subsurfaceMining> ;
     skos:inScheme cs: ;
-    skos:narrower :borehole-mining,
+    skos:narrower
+        :borehole-mining,
         :underground-mining ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "subsurface mining"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:surface-mining a skos:Concept ;
+:surface-mining
+    a skos:Concept ;
     schema:citation "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining via surface excavations."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/surfaceMining> ;
     skos:inScheme cs: ;
-    skos:narrower :hydraulic-mining,
+    skos:narrower
+        :hydraulic-mining,
         :open-pit-mining,
         :surface-placer-mining ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "surface mining"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:underwater-mining a skos:Concept ;
+:underwater-mining
+    a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining of underwater mineral deposits at or close to the sea, lake or river bed. May be from floating or land-based platforms involving dredging or vaccuum pumping or may use remote operated vehicle (submersible)."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/underwaterMining> ;
     skos:inScheme cs: ;
-    skos:narrower :dredge-mining,
+    skos:narrower
+        :dredge-mining,
         :subaqueous-remote-operated-vehicle,
         :subaqueous-vacuum-pumping ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "underwater mining"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:borehole-mining a skos:Concept ;
+:borehole-mining
+    a skos:Concept ;
     schema:citation "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :subsurface-mining ;
@@ -98,10 +115,12 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:narrower :in-situ-recovery ;
     skos:notation "02.02."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "borehole mining"@en .
+    skos:prefLabel "borehole mining"@en
+.
 
 
-:dredge-mining a skos:Concept ;
+:dredge-mining
+    a skos:Concept ;
     schema:citation "http://www.britannica.com/EBchecked/topic/171297/dredgin; adapted to include all types of mineral resources, not just placer deposits (e.g. could include sulfide deposits, manganese nodules on sea floor)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :underwater-mining ;
@@ -110,10 +129,12 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:narrower :placer-dredging ;
     skos:notation "03.03.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "dredge mining"@en .
+    skos:prefLabel "dredge mining"@en
+.
 
 
-:hydraulic-mining a skos:Concept ;
+:hydraulic-mining
+    a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :surface-mining ;
@@ -121,20 +142,24 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/hydraulicMining> ;
     skos:inScheme cs: ;
     skos:notation "01.20."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "hydraulic mining"@en .
+    skos:prefLabel "hydraulic mining"@en
+.
 
 
-:in-situ-recovery a skos:Concept ;
+:in-situ-recovery
+    a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online, adapted from chemical mining and enhanced oil recovery"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "chemical mining"@en,
+    skos:altLabel
+        "chemical mining"@en,
         "solution mining"@en,
         "underground gasification"@en ;
     skos:broader :borehole-mining ;
     skos:definition "The extraction of valuable constituents of an orebody in place from boreholes using thermal, miscible, and chemical methods e.g. by dissolution, leaching, underground gasification"@en ;
     skos:inScheme cs: ;
     skos:notation "02.02.01."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Laugungsbergbau"@de,
+    skos:prefLabel
+        "Laugungsbergbau"@de,
         "in-situ recovery"@en,
         "explotación por disolución"@es,
         "liuotuslouhinta"@fi,
@@ -150,13 +175,16 @@ cs: a skos:ConceptScheme ;
         "lakningsbrytning"@sv,
         "การทำเหมืองโดยใช้สารละลาย"@th,
         "khai mỏ bằng phương pháp hoà tan"@vi,
-        "溶解法开采"@zh .
+        "溶解法开采"@zh
+.
 
 
-:open-pit-mining a skos:Concept ;
+:open-pit-mining
+    a skos:Concept ;
     schema:citation "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "open cut mining"@en,
+    skos:altLabel
+        "open cut mining"@en,
         "open sky mining"@en,
         "open-cast mining"@en,
         "strip mining"@en ;
@@ -165,7 +193,8 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:narrower :quarrying ;
     skos:notation "01.03."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Tagebau"@de,
+    skos:prefLabel
+        "Tagebau"@de,
         "open-pit mining"@en,
         "cielo abierto"@es,
         "avolouhinta"@fi,
@@ -181,10 +210,12 @@ cs: a skos:ConceptScheme ;
         "dagbrott"@sv,
         "เหมืองเปิด"@th,
         "khai mỏ lộ thiên"@vi,
-        "露天采矿"@zh .
+        "露天采矿"@zh
+.
 
 
-:placer-dredging a skos:Concept ;
+:placer-dredging
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :dredge-mining,
@@ -192,10 +223,12 @@ cs: a skos:ConceptScheme ;
     skos:definition "The extraction of minerals from an underwater placer deposit by the use of floating equipment for scooping or suction"@en ;
     skos:inScheme cs: ;
     skos:notation "01.01.01."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "placer dredging"@en .
+    skos:prefLabel "placer dredging"@en
+.
 
 
-:quarrying a skos:Concept ;
+:quarrying
+    a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :open-pit-mining ;
@@ -203,10 +236,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/quarry> ;
     skos:inScheme cs: ;
     skos:notation "01.03.01."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "quarrying"@en .
+    skos:prefLabel "quarrying"@en
+.
 
 
-:subaqueous-remote-operated-vehicle a skos:Concept ;
+:subaqueous-remote-operated-vehicle
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :underwater-mining ;
@@ -214,10 +249,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subaqueousRemoteOperatedVehicle> ;
     skos:inScheme cs: ;
     skos:notation "03.02.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "subaqueous remote operated vehicle"@en .
+    skos:prefLabel "subaqueous remote operated vehicle"@en
+.
 
 
-:subaqueous-vacuum-pumping a skos:Concept ;
+:subaqueous-vacuum-pumping
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :underwater-mining ;
@@ -225,25 +262,31 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subaqueousVacuumPumping> ;
     skos:inScheme cs: ;
     skos:notation "03.01.."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "subaqueous vacuum pumping"@en .
+    skos:prefLabel "subaqueous vacuum pumping"@en
+.
 
 
-:surface-placer-mining a skos:Concept ;
+:surface-placer-mining
+    a skos:Concept ;
     schema:citation "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "alluvial mining"@en ;
+    skos:altLabel
+        "alluvial mining"@en ;
     skos:broader :surface-mining ;
     skos:definition "The extraction of heavy mineral from beach or sand-bank deposits by concentration in running water. It includes ground sluicing, panning, shoveling gravel into a sluice, scraping by power scraper and excavation by dragline, dredge or other mechanized equipment."@en ;
     skos:inScheme cs: ;
     skos:narrower :placer-dredging ;
     skos:notation "01.01."^^dt:LocalHierarchyKey ;
-    skos:prefLabel "surface placer mining"@en .
+    skos:prefLabel "surface placer mining"@en
+.
 
 
-:underground-mining a skos:Concept ;
+:underground-mining
+    a skos:Concept ;
     schema:citation "Dictionary of Mining, Mineral and Related Terms, 1st edition"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "lombong bawah tanah"@ms,
+    skos:altLabel
+        "lombong bawah tanah"@ms,
         "地下采矿"@zh ;
     skos:broader :subsurface-mining ;
     skos:definition "A mineral extraction activity in which ore is extracted from the subsurface via underground mine workings (adits, shafts, drifts, stopes, etc.)."@en ;
@@ -266,5 +309,6 @@ cs: a skos:ConceptScheme ;
         "underjordsbrytning"@sv,
         "เหมืองใต้ดิน"@th,
         "khai thác ngầm"@vi,
-        "地下开采"@zh .
+        "地下开采"@zh
+.
 

@@ -6,7 +6,8 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-cs: a skos:ConceptScheme ;
+cs:
+    a skos:ConceptScheme ;
     schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
     schema:dateCreated "2016-11-28"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
@@ -14,7 +15,8 @@ cs: a skos:ConceptScheme ;
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
-    skos:changeNote "2014-02-23 SMR Conversion to SKOS"@en,
+    skos:changeNote
+        "2014-02-23 SMR Conversion to SKOS"@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
         "2016-11-28 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
         "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
@@ -28,14 +30,18 @@ cs: a skos:ConceptScheme ;
         :regional-reconnaissance,
         :resource-assessment,
         :subsurface-exploration ;
-    skos:prefLabel "Exploration Activity Type"@en .
+    skos:prefLabel "Exploration Activity Type"@en
+.
 
 
-<http://resource.geosciml.org/classifier/cgi/exploration-activity-type> a skos:Collection ;
+<http://resource.geosciml.org/classifier/cgi/exploration-activity-type>
+    a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
-    skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
+    skos:changeNote
+        "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member :approximate-resource-calculation,
+    skos:member
+        :approximate-resource-calculation,
         :auger-drilling,
         :core-drilling,
         :core-drilling-assessment,
@@ -62,25 +68,30 @@ cs: a skos:ConceptScheme ;
         :regional-reconnaissance,
         :resource-assessment,
         :subsurface-exploration ;
-    skos:prefLabel "Exploration Activity Type - All Concepts"@en .
+    skos:prefLabel "Exploration Activity Type - All Concepts"@en
+.
 
 
-:detailed-surface-exploration a skos:Concept ;
+:detailed-surface-exploration
+    a skos:Concept ;
     schema:citation "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Exploration over a small area (1-100 km2), commonly identified from reconnaissance exploration, with closely spaced observation and sampling points."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedSurfaceExploration> ;
     skos:inScheme cs: ;
-    skos:narrower :detailed-geochemistry,
+    skos:narrower
+        :detailed-geochemistry,
         :detailed-geology,
         :detailed-geophysics,
         :detailed-heavy-mineral-sampling ;
     skos:notation "02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "detailed surface exploration"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:mining-pilot a skos:Concept ;
+:mining-pilot
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Intermediate phase between laboratory tests and actual plant. In French, may refer to a stope as well as to a plant."@en ;
@@ -88,75 +99,90 @@ cs: a skos:ConceptScheme ;
     skos:inScheme cs: ;
     skos:notation "06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "mining pilot"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:ore-deposit-evaluation a skos:Concept ;
+:ore-deposit-evaluation
+    a skos:Concept ;
     schema:citation "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "This the final phase of evaluation. Knowledge of the deposit must be as precise as possible, hence systematic core drilling and eventually reconnaissance mining workings. This phase should lead on to a Go/No Go decision (possibly revisable, depending on e.g. prevailing economical conditions) based on a feasibility study report."@en ;
     skos:inScheme cs: ;
-    skos:narrower :core-drilling-systematic,
+    skos:narrower
+        :core-drilling-systematic,
         :feasibility-study,
         :geostatistical-estimates,
         :mine-workings-reconnaissance ;
     skos:notation "05"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Lagerstaettenbewertung"@de,
+    skos:prefLabel
+        "Lagerstaettenbewertung"@de,
         "ore deposit evaluation"@en,
         "evaluación yacimiento"@es,
         "malmiarvio"@fi,
         "valutazione di giacimento"@it,
         "otsenka mestorozhdeniya promyshlennaya"@ru,
         "fyndighetsutvärdering"@sv ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:regional-reconnaissance a skos:Concept ;
+:regional-reconnaissance
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Exploration over a large area (100-10000 km2) with widely spaced sampling or observation points."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalReconnaissance> ;
     skos:inScheme cs: ;
-    skos:narrower :regional-geochemistry,
+    skos:narrower
+        :regional-geochemistry,
         :regional-geology,
         :regional-geophysics,
         :regional-heavy-mineral-sampling ;
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "regional reconnaissance"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:resource-assessment a skos:Concept ;
+:resource-assessment
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Preliminary delineation of the envelope of an orebody. Logging of cores, sampling of mineralized sections allow to better understand the distinctive features of the deposit, the physical properties of the ore, and an approximate calculation of the resource."@en ;
     skos:inScheme cs: ;
-    skos:narrower :approximate-resource-calculation,
+    skos:narrower
+        :approximate-resource-calculation,
         :core-drilling-assessment,
         :geological-interpretation,
         :ore-beneficiation-tests,
         :percussion-drilling-assessment ;
     skos:notation "04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "resource assessment"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:subsurface-exploration a skos:Concept ;
+:subsurface-exploration
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Initial low cost techniques (trenching, destructive drilling, etc.) to constrain limits of possible in-ground resource."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/subsurfaceExploration> ;
     skos:inScheme cs: ;
-    skos:narrower :auger-drilling,
+    skos:narrower
+        :auger-drilling,
         :core-drilling,
         :excavation,
         :percussion-drilling ;
     skos:notation "03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "subsurface exploration"@en ;
-    skos:topConceptOf cs: .
+    skos:topConceptOf cs:
+.
 
 
-:approximate-resource-calculation a skos:Concept ;
+:approximate-resource-calculation
+    a skos:Concept ;
     schema:citation "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :resource-assessment ;
@@ -164,10 +190,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/approximateResourceCalculation> ;
     skos:inScheme cs: ;
     skos:notation "04.5"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "approximate resource calculation"@en .
+    skos:prefLabel "approximate resource calculation"@en
+.
 
 
-:auger-drilling a skos:Concept ;
+:auger-drilling
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :subsurface-exploration ;
@@ -175,10 +203,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/augerDrilling> ;
     skos:inScheme cs: ;
     skos:notation "03.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "auger drilling"@en .
+    skos:prefLabel "auger drilling"@en
+.
 
 
-:core-drilling a skos:Concept ;
+:core-drilling
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :subsurface-exploration ;
@@ -186,36 +216,43 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/coreDrilling> ;
     skos:inScheme cs: ;
     skos:notation "03.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Kernbohrung"@de,
+    skos:prefLabel
+        "Kernbohrung"@de,
         "core drilling"@en,
         "sondeo testigo"@es,
         "sydänkairaus"@fi,
         "carotaggio"@it,
         "burenie kolonkovoe"@ru,
-        "kärnborrning"@sv .
+        "kärnborrning"@sv
+.
 
 
-:core-drilling-assessment a skos:Concept ;
+:core-drilling-assessment
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :resource-assessment ;
     skos:definition "Drilling in order to collect intact rock sample cores, or to carry out a physical measurement or a geological observation. Can confirm results from obtained from percussion drilling."@en ;
     skos:inScheme cs: ;
     skos:notation "04.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "core drilling assessment"@en .
+    skos:prefLabel "core drilling assessment"@en
+.
 
 
-:core-drilling-systematic a skos:Concept ;
+:core-drilling-systematic
+    a skos:Concept ;
     schema:citation "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ore-deposit-evaluation ;
     skos:definition "Close-spaced systematic drilling in order to collect intact rock sample cores, with the aim to get very detailed information on the whole deposit and first quality samples."@en ;
     skos:inScheme cs: ;
     skos:notation "05.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "core drilling systematic"@en .
+    skos:prefLabel "core drilling systematic"@en
+.
 
 
-:detailed-geochemistry a skos:Concept ;
+:detailed-geochemistry
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :detailed-surface-exploration ;
@@ -223,20 +260,24 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedGeochemistry> ;
     skos:inScheme cs: ;
     skos:notation "02.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "detailed geochemistry"@en .
+    skos:prefLabel "detailed geochemistry"@en
+.
 
 
-:detailed-geology a skos:Concept ;
+:detailed-geology
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :detailed-surface-exploration ;
     skos:definition "Detailed geological mapping of an area of interest which may include sampling of rock outcrops and soil."@en ;
     skos:inScheme cs: ;
     skos:notation "02.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "detailed geology"@en .
+    skos:prefLabel "detailed geology"@en
+.
 
 
-:detailed-geophysics a skos:Concept ;
+:detailed-geophysics
+    a skos:Concept ;
     schema:citation "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :detailed-surface-exploration ;
@@ -244,10 +285,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedGeophysics> ;
     skos:inScheme cs: ;
     skos:notation "02.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "detailed geophysics"@en .
+    skos:prefLabel "detailed geophysics"@en
+.
 
 
-:detailed-heavy-mineral-sampling a skos:Concept ;
+:detailed-heavy-mineral-sampling
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :detailed-surface-exploration ;
@@ -255,20 +298,24 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedHeavyMineralSampling> ;
     skos:inScheme cs: ;
     skos:notation "02.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "detailed heavy mineral sampling"@en .
+    skos:prefLabel "detailed heavy mineral sampling"@en
+.
 
 
-:excavation a skos:Concept ;
+:excavation
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "洗掘"@ja,
+    skos:altLabel
+        "洗掘"@ja,
         "开挖"@zh,
         "掏蚀"@zh ;
     skos:broader :subsurface-exploration ;
     skos:definition "Purposely dug shallow trench or pit from which samples can be taken."@en ;
     skos:inScheme cs: ;
     skos:notation "03.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Ausschachtung"@de,
+    skos:prefLabel
+        "Ausschachtung"@de,
         "excavation"@en,
         "excavación"@es,
         "kaivannot"@fi,
@@ -285,19 +332,23 @@ cs: a skos:ConceptScheme ;
         "schaktning"@sv,
         "การขุดเอาแร่ออกมา"@th,
         "công trình khai đào"@vi,
-        "挖掘"@zh .
+        "挖掘"@zh
+.
 
 
-:feasibility-study a skos:Concept ;
+:feasibility-study
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:altLabel "前景评价"@zh ;
+    skos:altLabel
+        "前景评价"@zh ;
     skos:broader :ore-deposit-evaluation ;
     skos:definition "Technical economic study aimed at assessing the possibility to launching a mine venture. When data are insufficiently precise, the study is said to be a pre-feasibility study."@en ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/feasibilityStudyReport> ;
     skos:inScheme cs: ;
     skos:notation "05.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Durchfuehrbarkeitsstudie"@de,
+    skos:prefLabel
+        "Durchfuehrbarkeitsstudie"@de,
         "feasibility study"@en,
         "estudio factibilidad"@es,
         "toteutettavuustutkimukset"@fi,
@@ -313,10 +364,12 @@ cs: a skos:ConceptScheme ;
         "genomförbarhetsstudie"@sv,
         "การศึกษาความเป็นไปได้"@th,
         "nghiên cứu khả thi"@vi,
-        "远景评价"@zh .
+        "远景评价"@zh
+.
 
 
-:geological-interpretation a skos:Concept ;
+:geological-interpretation
+    a skos:Concept ;
     schema:citation "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :resource-assessment ;
@@ -324,10 +377,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/geologicalInterpretation> ;
     skos:inScheme cs: ;
     skos:notation "04.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "geological interpretation"@en .
+    skos:prefLabel "geological interpretation"@en
+.
 
 
-:geostatistical-estimates a skos:Concept ;
+:geostatistical-estimates
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ore-deposit-evaluation ;
@@ -335,20 +390,24 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/geostatisticalEstimates> ;
     skos:inScheme cs: ;
     skos:notation "05.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "geostatistical estimates"@en .
+    skos:prefLabel "geostatistical estimates"@en
+.
 
 
-:mine-workings-reconnaissance a skos:Concept ;
+:mine-workings-reconnaissance
+    a skos:Concept ;
     schema:citation "CGI/ERML 2.0"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :ore-deposit-evaluation ;
     skos:definition "Reconnaissance workings aimed at getting a better understanding of the deposit, and allowing to get large ore samples for detailed beneficiation tests."@en ;
     skos:inScheme cs: ;
     skos:notation "05.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "mine workings reconnaissance"@en .
+    skos:prefLabel "mine workings reconnaissance"@en
+.
 
 
-:ore-beneficiation-tests a skos:Concept ;
+:ore-beneficiation-tests
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor + DC"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :resource-assessment ;
@@ -356,10 +415,12 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/oreBeneficiationTest> ;
     skos:inScheme cs: ;
     skos:notation "04.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "ore beneficiation tests"@en .
+    skos:prefLabel "ore beneficiation tests"@en
+.
 
 
-:percussion-drilling a skos:Concept ;
+:percussion-drilling
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :subsurface-exploration ;
@@ -367,20 +428,24 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/percussionDrilling> ;
     skos:inScheme cs: ;
     skos:notation "03.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "percussion drilling"@en .
+    skos:prefLabel "percussion drilling"@en
+.
 
 
-:percussion-drilling-assessment a skos:Concept ;
+:percussion-drilling-assessment
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :resource-assessment ;
     skos:definition "Drilling with a rotary percussion tool in order to collect rock or soil samples to delineate an orebody."@en ;
     skos:inScheme cs: ;
     skos:notation "04.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "percussion drilling assessment"@en .
+    skos:prefLabel "percussion drilling assessment"@en
+.
 
 
-:regional-geochemistry a skos:Concept ;
+:regional-geochemistry
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :regional-reconnaissance ;
@@ -388,36 +453,43 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalGeochemistry> ;
     skos:inScheme cs: ;
     skos:notation "01.2"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "regional geochemistry"@en .
+    skos:prefLabel "regional geochemistry"@en
+.
 
 
-:regional-geology a skos:Concept ;
+:regional-geology
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :regional-reconnaissance ;
     skos:definition "Geological observations that may lead to the compilation of a preliminary geological map of the main rock units, structures and known mineral occurrences."@en ;
     skos:inScheme cs: ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Regionalgeologie"@de,
+    skos:prefLabel
+        "Regionalgeologie"@de,
         "regional geology"@en,
         "geología regional"@es,
         "aluegeologia"@fi,
         "geologia regionale"@it,
         "geologiya regional'naya"@ru,
-        "regionalgeologi"@sv .
+        "regionalgeologi"@sv
+.
 
 
-:regional-geophysics a skos:Concept ;
+:regional-geophysics
+    a skos:Concept ;
     schema:citation "Dictionnaire thématique des mines et carrières, SIM Editor."@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :regional-reconnaissance ;
     skos:definition "Exploration technique over a wide area, using airborne, ground or ship-based equipment for the measurement of physical properties: electric conductivity, spontaneous or induced polarization, electromagnetism, magnetic intensity susceptibility, stray currents (magnetotelluric currents method), speed of transmission of shockwaves (seismic method), specific weight and gravity (gravimetric method), radioactivity, reflectance at various wave length (infrared, radar)."@en ;
     skos:inScheme cs: ;
     skos:notation "01.3"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "regional geophysics"@en .
+    skos:prefLabel "regional geophysics"@en
+.
 
 
-:regional-heavy-mineral-sampling a skos:Concept ;
+:regional-heavy-mineral-sampling
+    a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:broader :regional-reconnaissance ;
@@ -425,5 +497,6 @@ cs: a skos:ConceptScheme ;
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalHeavyMineralSampling> ;
     skos:inScheme cs: ;
     skos:notation "01.4"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "regional heavy mineral sampling"@en .
+    skos:prefLabel "regional heavy mineral sampling"@en
+.
 
