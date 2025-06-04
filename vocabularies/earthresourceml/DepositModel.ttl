@@ -1,6 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifier/cmmi/deposit-model/>
-PREFIX cs: <http://resource.geosciml.org/classifier/cmmi/deposit-model>
-PREFIX : <http://resource.geosciml.org/classifier/cmmi/deposit-model/>
+PREFIX : <None/>
 PREFIX cs: <http://resource.geosciml.org/classifier/cmmi/deposit-model>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>

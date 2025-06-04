@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/conventioncode/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -26,20 +26,20 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This scheme describes the concept space for specifying the convention used for reporting the orientation of a planar feature, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in CGI_PlanarOrientation properties in GeoSciML GeologicStructures."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Convention Code vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/conventioncode/dip_dip_direction>,
-        <http://resource.geosciml.org/classifier/cgi/conventioncode/strike_dip_rhr> ;
+    skos:hasTopConcept :dip_dip_direction,
+        :strike_dip_rhr ;
     skos:prefLabel "Convention Code for Strike and Dip Measurements"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/conventioncode> a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/conventioncode/dip_dip_direction>,
-        <http://resource.geosciml.org/classifier/cgi/conventioncode/strike_dip_rhr> ;
+    skos:member :dip_dip_direction,
+        :strike_dip_rhr ;
     skos:prefLabel "Convention Code for Strike and Dip Measurements - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/conventioncode/dip_dip_direction> a skos:Concept ;
+:dip_dip_direction a skos:Concept ;
     schema:citation "GeoSciML v.2"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The orientation measurement consists of a dip and a dip direction. Dip is the angle that the structural surface (eg bedding, fault plane) makes with the horizontal measured perpendicular to the strike of the structure and in the vertical plane Dip direction is the azimuth perpindicular to the strike of the structure"@en ;
@@ -48,7 +48,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/conventioncode/strike_dip_rhr> a skos:Concept ;
+:strike_dip_rhr a skos:Concept ;
     schema:citation "GeoSciML v2"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The strike and dip of planar data is listed according to the ‘right-hand rule’ or, as one looks along the strike direction, the surface dips to the right. Dip is the angle that the structural surface (eg bedding, fault plane) makes with the horizontal measured perpindicular to the strike of the structure and in the vertical plane"@en ;

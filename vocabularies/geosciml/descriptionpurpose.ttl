@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -27,22 +27,22 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This scheme describes codes used to specify the intended scope of a description of a GeologicFeature, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for us in the \"purpose\" property in GeoSciML GeologicFeature elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Description Purpose vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/defining_norm>,
-        <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/instance>,
-        <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/typical_norm> ;
+    skos:hasTopConcept :defining_norm,
+        :instance,
+        :typical_norm ;
     skos:prefLabel "Description Purpose"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/descriptionpurpose> a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/defining_norm>,
-        <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/instance>,
-        <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/typical_norm> ;
+    skos:member :defining_norm,
+        :instance,
+        :typical_norm ;
     skos:prefLabel "Description Purpose - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/descriptionpurpose/defining_norm> a skos:Concept ;
+:defining_norm a skos:Concept ;
     schema:citation "GeoSciML UML model scope notes"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A description that specifies properties sufficient to identify a new occurrence as belonging to the class represented by the description. Basically these are the 'sufficient conditions' for class membership. Used when presented with a query 'I have an outcrop with these properties, which geologic unit should I assign to the outcrop?' DefiningNorm has to do with the intension of a ControlledConcept."@en ;
@@ -51,7 +51,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/descriptionpurpose/instance> a skos:Concept ;
+:instance a skos:Concept ;
     schema:citation "GeoSciML UML model scope notes"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A description that is specific to a particular observed occurrence. This is 'raw data', and its classification may start out as very general. There are kinds of narrowly defined ControlledConcepts that might not allow 'instances' that are different from the DefiningNorm. It might be worth considering a different relationship between MappedFeature and an Instance GeologicEntity, with the GeologicEntity role being 'description'."@en ;
@@ -60,7 +60,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/descriptionpurpose/typical_norm> a skos:Concept ;
+:typical_norm a skos:Concept ;
     schema:citation "GeoSciML UML model scope notes"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A description that specifies properties to be expected of some occurrence associated with the GeologicEntity. This description may include many properties that are not part of the DefiningNorm. For example, the fact that granite is typically light-colored is not a defining property, but is certainly a useful typical property. These kinds of descriptions would be used to address queries like 'This area is within a polygon classified as Podunk Formation, what sort of lithology am I most likely to encounter when I start digging?' The Podunk Formation may be defined by the presence of a certain ammonite... TypicalNorm description would be constructed as a summary over many Instance descriptions."@en ;

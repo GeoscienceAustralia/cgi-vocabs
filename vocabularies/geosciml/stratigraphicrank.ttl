@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -28,56 +28,56 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This scheme specifies concepts used to categorize the stratigraphic rank of geologic units, as compiled by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016.01 SKOS-RDF version of the CGI Stratigraphic Rank vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.02.xslt."@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/complex>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/rank_not_specified>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite> ;
+    skos:hasTopConcept :complex,
+        :megasequence,
+        :rank_not_specified,
+        :supergroup,
+        :supersuite ;
     skos:prefLabel "Stratigraphic Rank"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/stratigraphicrank> a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/bed>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/complex>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/member>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/rank_not_specified>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/sequence>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/subgroup>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite> ;
+    skos:member :bed,
+        :complex,
+        :formation,
+        :group,
+        :lithodeme,
+        :megasequence,
+        :member,
+        :rank_not_specified,
+        :sequence,
+        :subgroup,
+        :suite,
+        :supergroup,
+        :supersequence,
+        :supersuite ;
     skos:prefLabel "Stratigraphic Rank - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/complex> a skos:Concept ;
+:complex a skos:Concept ;
     schema:citation "Salvador; A.; ed. 1994. International Stratigraphic Guide: International Union of Geological Sciences; Trondheim; NO; 214 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A lithostratigraphic unit composed of diverse types of any class or classes of rock (sedimentary; igneous; metamorphic); and characterized by irregularly mixed lithology or by hightly complicated structure relations to the extent that the original sequence of the component rocks may be obscured and the individual rocks or rock sequence cannot be readily mapped."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "complex"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme> ;
+    skos:related :lithodeme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence> a skos:Concept ;
+:megasequence a skos:Concept ;
     schema:citation "Haq; B.U.hardenbol; J.; and Vail; P.R.; 1988; Mesozoic and Cenozoic chronostratigraphy an dcycles of sea-level changes; in Wilgus; C.K.; et al.; eds; Sea-level Changes: an Integrated Approach: Society of Sedimentary Geology Special Publication 42; p. 71-108."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A succession of strata comprising two or more supersequences. A large-scale sequence-stratigraphic unit deposited during one distinct phase of basin evolution; separated by major unconformities that mark a change in fundamental basin-controlling processes."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence> ;
+    skos:narrower :supersequence ;
     skos:prefLabel "megasequence"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite> ;
+    skos:related :supersuite ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/rank_not_specified> a skos:Concept ;
+:rank_not_specified a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "unit is not part of a defined stratigraphic hierarchy."@en ;
@@ -86,121 +86,121 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup> a skos:Concept ;
+:supergroup a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A supergroup is a formal assemblage of related or superposed groups or of groups and formations"@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group> ;
+    skos:narrower :group ;
     skos:prefLabel "supergroup"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite> ;
+    skos:related :supersuite ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite> a skos:Concept ;
+:supersuite a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A formal lithodemic unit next higher in rank to suite. It comprises two or more suites having a degree of natural relationship to one another"@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite> ;
+    skos:narrower :suite ;
     skos:prefLabel "supersuite"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup> ;
+    skos:related :megasequence,
+        :supergroup ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/bed> a skos:Concept ;
+:bed a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/member> ;
+    skos:broader :member ;
     skos:definition "The smallest formal lithostratigraphic unit; usually a distinctive lithic entity which can be distinguished from adjacent rocks by one or more physical characteristics."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "bed"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation> a skos:Concept ;
+:formation a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/subgroup> ;
+    skos:broader :subgroup ;
     skos:definition "A body of rock identified by lithic characteristics and stratigraphic position; it is usually but not necessarily tabular and is mappable at the Earth's surface or traceable in the subsurface."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/member> ;
+    skos:narrower :member ;
     skos:prefLabel "formation"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme> .
+    skos:related :lithodeme .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group> a skos:Concept ;
+:group a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup> ;
+    skos:broader :supergroup ;
     skos:definition "A group is the lithostratigraphic unit next higher in rank to either subgroup or formation. A groups may consist of two or more subgroups or two or more formations or a combination of both."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/subgroup> ;
+    skos:narrower :subgroup ;
     skos:prefLabel "group"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite> .
+    skos:related :suite .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme> a skos:Concept ;
+:lithodeme a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite> ;
+    skos:broader :suite ;
     skos:definition "A body of predominantly intrusivehighly deformed and/or highly metamorphosed rock; distinguished and delimited on the basis of rock characteristics."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "lithodeme"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/complex>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/sequence> .
+    skos:related :complex,
+        :formation,
+        :sequence .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/member> a skos:Concept ;
+:member a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation> ;
+    skos:broader :formation ;
     skos:definition "A formal lithostratigraphic unit next in rank below a formation; and always part of a formation. It is a named entity within a formation because it possesses characteristics distinguishing it from adjacent parts of the formation."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/bed> ;
+    skos:narrower :bed ;
     skos:prefLabel "member"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/sequence> a skos:Concept ;
+:sequence a skos:Concept ;
     schema:citation "Van Wagoner; J.C.; Posamentierh.W.; Mitchum; R.M.; Vail; P.R.; Sarg; J.F.; Loutit; T.S.hardenbol; J.; 1988; An overview of sequence stratigraphy and key definitions. In: Wilgus; C.K.hastings; B.S.; Kendall; C.G.St.C.; Posamentierh.W.; Ross; C.A.; Van Wagoner; J.C. (Eds.); Sea Level Changes––An Integrated Approach; vol. 42. SEPM Special Publication; pp. 39–45."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence> ;
+    skos:broader :supersequence ;
     skos:definition "A genetically related succession of strata bounded by unconformites or their correlative conformable contacts; and typically having a thickness of 10-100 metres."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sequence"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme> .
+    skos:related :lithodeme .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/subgroup> a skos:Concept ;
+:subgroup a skos:Concept ;
     schema:citation "Salvador; 1994"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group> ;
+    skos:broader :group ;
     skos:definition "A subgroup is the lithostratigraphic unit next higher in rank to formation. A subgroup usually consists of several formations."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation> ;
+    skos:narrower :formation ;
     skos:prefLabel "subgroup"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite> a skos:Concept ;
+:suite a skos:Concept ;
     schema:citation "North American Commission on Stratigraphic Nomenclature; 2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite> ;
+    skos:broader :supersuite ;
     skos:definition "A formal lithodemic unit next higher in rank to lithodeme. It comprises two or more associated lithodemes of the same class (e.g.; plutonic; metamorphic)."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme> ;
+    skos:narrower :lithodeme ;
     skos:prefLabel "suite"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group>,
-        <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence> .
+    skos:related :group,
+        :supersequence .
 
 
-<http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence> a skos:Concept ;
+:supersequence a skos:Concept ;
     schema:citation "Haq; B.U.hardenbol; J.; and Vail; P.R.; 1988; Mesozoic and Cenozoic chronostratigraphy an dcycles of sea-level changes; in Wilgus; C.K.; et al.; eds; Sea-level Changes: an Integrated Approach: Society of Sedimentary Geology Special Publication 42; p. 71-108."@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence> ;
+    skos:broader :megasequence ;
     skos:definition "A succession of strata comprising two or more sequences"@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/sequence> ;
+    skos:narrower :sequence ;
     skos:prefLabel "supersequence"@en ;
-    skos:related <http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite> .
+    skos:related :suite .
 

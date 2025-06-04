@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/particleaspectratio/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -28,197 +28,197 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This file contains the CGI Particle Aspect Ratio vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. AspectRatio describes the geometry of particles based on the ratios of lengths of long, intermediate and short axes of grains. Equates to sphericity in sedimentary rocks (ie: the degree to which the shape of a particle approximates a sphere). A quantitative specification is based on the ratio of lengths of long, intermediate and short axes of grain shape (Sneed and Folk, 1958; Zingg, 1935). This vocabulary includes terms for specifying average shape of some collection of particles.(eg: prolate, slightly flattened, very bladed, equant, acicular, tabular). Numeric shape values from Sneed and Folk (1958) are best understood by looking at the pictures of particles with the different shapes there and in Pettijohn et al. (1972). By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Particle Aspect Ratio vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/particleaspectratio/form_not_specified> ;
+    skos:hasTopConcept :form_not_specified ;
     skos:prefLabel "Particle Aspect Ratio"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/particleaspectratio> a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/bladed>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/bladed_medium>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/compact_bladed>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/equant>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/fibrous>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/form_not_specified>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate_medium>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/particle_geometry_uncertain>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/prolate>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/prolate_medium>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/slightly_flattened>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/slightly_prolate>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/strongly_flattened>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/strongly_prolate>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/very_bladed> ;
+    skos:member :any_form,
+        :bladed,
+        :bladed_medium,
+        :compact_bladed,
+        :equant,
+        :fibrous,
+        :form_not_specified,
+        :oblate,
+        :oblate_medium,
+        :particle_geometry_uncertain,
+        :prolate,
+        :prolate_medium,
+        :slightly_flattened,
+        :slightly_prolate,
+        :strongly_flattened,
+        :strongly_prolate,
+        :very_bladed ;
     skos:prefLabel "Particle Aspect Ratio - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/form_not_specified> a skos:Concept ;
+:form_not_specified a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Particle form may take any or no value. For use in normative descriptions."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/particle_geometry_uncertain> ;
+    skos:narrower :any_form,
+        :particle_geometry_uncertain ;
     skos:prefLabel "form not specified"@en ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form> a skos:Concept ;
+:any_form a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/form_not_specified> ;
+    skos:broader :form_not_specified ;
     skos:definition "Particle has some form, but it is not specified."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/particleaspectratio/bladed>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/equant>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/prolate> ;
+    skos:narrower :bladed,
+        :equant,
+        :oblate,
+        :prolate ;
     skos:prefLabel "any form"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/bladed> a skos:Concept ;
+:bladed a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form> ;
+    skos:broader :any_form ;
     skos:definition "Bladed group in Sneed&Folk, (1958), S/L is less than 0.7 and (L-I)/(L-S) is between 0.33 and 0.66."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/particleaspectratio/bladed_medium>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/compact_bladed>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/very_bladed> ;
+    skos:narrower :bladed_medium,
+        :compact_bladed,
+        :very_bladed ;
     skos:prefLabel "bladed"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/bladed_medium> a skos:Concept ;
+:bladed_medium a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/bladed> ;
+    skos:broader :bladed ;
     skos:definition "S/L is between 0.3 and 0.5 and (L-I)/(L-S) is between 0.33 and 0.66 Sneed&Folk, (1958)."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "bladed medium"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/compact_bladed> a skos:Concept ;
+:compact_bladed a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/bladed> ;
+    skos:broader :bladed ;
     skos:definition "S/L is between 0.5 and 0.7 and (L-I)/(L-S) is between 0.33 and 0.66 Sneed&Folk, (1958)."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "compact bladed"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/equant> a skos:Concept ;
+:equant a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form> ;
+    skos:broader :any_form ;
     skos:definition "Particles are compact in Sneed & Folk (1958), ratio of S/L is greater than 0.7."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "equant"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/fibrous> a skos:Concept ;
+:fibrous a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/strongly_prolate> ;
+    skos:broader :strongly_prolate ;
     skos:definition "Particles are so elongate they are fibrous."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "fibrous"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate> a skos:Concept ;
+:oblate a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form> ;
+    skos:broader :any_form ;
     skos:definition "Particles are in 'platy group' in Sneed&Folk, (1958), S/L is less than 0.7 and (L-I)/(L-S) is less than 0.33."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate_medium>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/slightly_flattened>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/strongly_flattened> ;
+    skos:narrower :oblate_medium,
+        :slightly_flattened,
+        :strongly_flattened ;
     skos:prefLabel "oblate"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate_medium> a skos:Concept ;
+:oblate_medium a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate> ;
+    skos:broader :oblate ;
     skos:definition "Particles are 'just platy' in Sneed&Folk, (1958), S/L is between 0.3 and 0.5 and (L-I)/(L-S) is less than 0.33."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "oblate medium"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/particle_geometry_uncertain> a skos:Concept ;
+:particle_geometry_uncertain a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/form_not_specified> ;
+    skos:broader :form_not_specified ;
     skos:definition "Particle form is uncertain or not categorizable, generally obscured by overprinting deformation, metamorphism, or alteration, but reason is not specified."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "particle form indeterminate"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/prolate> a skos:Concept ;
+:prolate a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/any_form> ;
+    skos:broader :any_form ;
     skos:definition "Particles are in 'elongated group' in Sneed & Folk, (1958), S/L is less than 0.7 and (L-I)/(L-S) is greater than 0.66."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/particleaspectratio/prolate_medium>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/slightly_prolate>,
-        <http://resource.geosciml.org/classifier/cgi/particleaspectratio/strongly_prolate> ;
+    skos:narrower :prolate_medium,
+        :slightly_prolate,
+        :strongly_prolate ;
     skos:prefLabel "prolate"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/prolate_medium> a skos:Concept ;
+:prolate_medium a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/prolate> ;
+    skos:broader :prolate ;
     skos:definition "Particle are 'just elongated' in Sneed&Folk, (1958), S/L is between 0.3 and 0.5 and (L-I)/(L-S) is greater than 0.66."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "prolate medium"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/slightly_flattened> a skos:Concept ;
+:slightly_flattened a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate> ;
+    skos:broader :oblate ;
     skos:definition "Particles are 'Compact-platy' in Sneed&Folk, (1958), S/L is between 0.5 and 0.7 and (L-I)/(L-S) is less than 0.33."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "slightly flattened"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/slightly_prolate> a skos:Concept ;
+:slightly_prolate a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/prolate> ;
+    skos:broader :prolate ;
     skos:definition "Particles are compact-elongated in Sneed&Folk, (1958), S/L is between 0.5 and 0.7 and (L-I)/(L-S) is greater than 0.66."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "slightly prolate"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/strongly_flattened> a skos:Concept ;
+:strongly_flattened a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/oblate> ;
+    skos:broader :oblate ;
     skos:definition "Particles are 'very platy' in Sneed&Folk, (1958), S/L is less than 0.3 and (L-I)/(L-S) is less than 0.33."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "strongly flattened"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/strongly_prolate> a skos:Concept ;
+:strongly_prolate a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/prolate> ;
+    skos:broader :prolate ;
     skos:definition "Particles are very elongated in Sneed&Folk, (1958), S/L is less than 0.3 and (L-I)/(L-S) is greater than 0.66."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/particleaspectratio/fibrous> ;
+    skos:narrower :fibrous ;
     skos:prefLabel "strongly prolate"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleaspectratio/very_bladed> a skos:Concept ;
+:very_bladed a skos:Concept ;
     schema:citation "Sneed and Folk, 1958, Pettijohn et al., 1972, NADM SLTTs, 2004"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/particleaspectratio/bladed> ;
+    skos:broader :bladed ;
     skos:definition "S/L is less than 0.3 and (L-I)/(L-S) is between 0.33 and 0.66 Sneed&Folk, (1958)."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "very bladed"@en .

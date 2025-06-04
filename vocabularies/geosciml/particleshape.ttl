@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleshape/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/particleshape/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleshape>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -26,40 +26,40 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This file contains the CGI Particle Shape vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The Shape attribute describes, a) the development of crystal faces bounding particles in crystalline compond materials, and b) surface rounding of grains in sedimentary rocks. Roundness is a measure of the sharpness of the edges between surfaces bounding a particle (see Jackson, 1997; Wadell, 1932) and is an indication of the degree of abrasion of a clastic particle. Expressed by Wadell (1932) as the ratio of the average radius of curvature of the several edges or corners of the particle to the radius of curvature of the maximum inscribed sphere (or to one-half the nominal diameter of the particle). The value is more conveniently computed from a plane figure (a projection or cross section); thus, roundness may be defined as the ratio of the average radius of curvature of the corners of the particle image to the radius of the maximum inscribed circle. A perfectly rounded particle (such as a sphere) has a roundness value of 1.0; less-rounded particles have values less than 1.0. The corresponding concept in aggregates with crystalline as opposed to clastic grains is here referred to as crystallinity, and is the degree to which a mineral grain is bounded by crystal faces. Terms should be appropriate for the kind of compound material (eg: for crystalline rocks- euhedral, ideoblastic, subhedral, anhedral, xenoblastic; for sedimentary rocks - angular, rounded). By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Particle Shape vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/particleshape/angular>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/anhedral>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/diffuse>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/euhedral>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/resorbed>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/rounded>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/shape_not_specified>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/sub_angular>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/sub_rounded>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/subhedral>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/very_angular>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/well_rounded> ;
+    skos:hasTopConcept :angular,
+        :anhedral,
+        :diffuse,
+        :euhedral,
+        :resorbed,
+        :rounded,
+        :shape_not_specified,
+        :sub_angular,
+        :sub_rounded,
+        :subhedral,
+        :very_angular,
+        :well_rounded ;
     skos:prefLabel "Particle Shape"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/particleshape> a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/particleshape/angular>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/anhedral>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/diffuse>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/euhedral>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/resorbed>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/rounded>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/shape_not_specified>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/sub_angular>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/sub_rounded>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/subhedral>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/very_angular>,
-        <http://resource.geosciml.org/classifier/cgi/particleshape/well_rounded> ;
+    skos:member :angular,
+        :anhedral,
+        :diffuse,
+        :euhedral,
+        :resorbed,
+        :rounded,
+        :shape_not_specified,
+        :sub_angular,
+        :sub_rounded,
+        :subhedral,
+        :very_angular,
+        :well_rounded ;
     skos:prefLabel "Particle Shape - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/angular> a skos:Concept ;
+:angular a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle showing very little or no evidence of abrasion, with all of its edges and corners sharp, such as blocks with numerous (15-30) secondary corners and a roundness value between 0.17 and 0.25 (midpoint at 0.21)."@en ;
@@ -68,7 +68,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/anhedral> a skos:Concept ;
+:anhedral a skos:Concept ;
     schema:citation "MacKenzie, W.S., Donaldson, C.H. & Guilford, C., 1982. Atlas of igneous rocks and their textures. John Wiley & Sons, New York"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Crystalline particles in a rock lack well-developed crystal faces, usually referring to igneous or metamorphic grains"@en ;
@@ -77,7 +77,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/diffuse> a skos:Concept ;
+:diffuse a skos:Concept ;
     schema:citation "SLTTs 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Particles in aggregate have diffuse, ill-defined boundaries"@en ;
@@ -86,7 +86,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/euhedral> a skos:Concept ;
+:euhedral a skos:Concept ;
     schema:citation "MacKenzie, W.S., Donaldson, C.H. & Guilford, C., 1982. Atlas of igneous rocks and their textures. John Wiley & Sons, New York"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Crystalline particles in a rock are mostly bounded by perfect crystal faces, usually referring to igneous or metamorphoc grains"@en ;
@@ -95,7 +95,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/resorbed> a skos:Concept ;
+:resorbed a skos:Concept ;
     schema:citation "Neuendorf, K.K.E, Mehl, J.P. & Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p."@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Particles have smooth, embayed boundaries caused by resorption by the host magma"@en ;
@@ -104,7 +104,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/rounded> a skos:Concept ;
+:rounded a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle whose original edges and corners have been smoothed off to rather broad curves and whose original faces are almost completely removed by abrasion (although some comparatively flat surfaces may be present), such as a pebble with a roundness value between 0.49 and 0.70 (midpoint at 0.59) and few (0-5) and greatly subdued secondary corners. The original shape is still readily apparent."@en ;
@@ -113,7 +113,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/shape_not_specified> a skos:Concept ;
+:shape_not_specified a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Shape property may have any value. Use in normative definitions where shape may take any value."@en ;
@@ -122,7 +122,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/sub_angular> a skos:Concept ;
+:sub_angular a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle showing definite effects of slight abrasion, retaining its original general form, and having faces that are virtually untouched and edges and corners that are rounded off to some extent, such as a glacial boulder with numerous (10-20) secondary corners and a roundness value between 0.25 and 0.35 (midpoint at 0.300)."@en ;
@@ -131,7 +131,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/sub_rounded> a skos:Concept ;
+:sub_rounded a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle showing considerable but incomplete abrasion and an original general form that is still discernible, and having many of its edges and corners noticeably rounded off to smooth curves, such as a cobble with a reduced number (5-10) of secondary corners, a considerably reduced area of the original faces, and a roundness value between 0.35 and 0.49 (midpoint at 0.41)."@en ;
@@ -140,7 +140,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/subhedral> a skos:Concept ;
+:subhedral a skos:Concept ;
     schema:citation "MacKenzie, W.S., Donaldson, C.H. & Guilford, C., 1982. Atlas of igneous rocks and their textures. John Wiley & Sons, New York"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Crystalline particles in a rock are partly bounded by crystal faces, usually referring to igneous or metamorphic grains"@en ;
@@ -149,7 +149,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/very_angular> a skos:Concept ;
+:very_angular a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle with a roundness value between 0.12 and 0.17 (midpoint at 0.14)."@en ;
@@ -158,7 +158,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/particleshape/well_rounded> a skos:Concept ;
+:well_rounded a skos:Concept ;
     schema:citation "Powers, M. C., 1953 A new roundness scale for sedimentary particles. Journal of Sedimentary Petrology, v. 23, p. 117-119"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A clastic sedimentary particle whose original faces, edges, and corners have been destroyed by abrasion and whose entire surface consists of broad curves without any flat areas, specif. said of a particle with no secondary corners and a roundness value between 0.70 and 1.00 (midpoint at 0.84). The original shape may be suggested by the present form of the particle."@en ;

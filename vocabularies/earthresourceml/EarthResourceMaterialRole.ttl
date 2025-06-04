@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -23,30 +23,30 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This file contains the CGI Earth Resource Material Role vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. This scheme describes concepts used to specify the relationship of Earth materials to a resource occurrence. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Earth Resource Material Role vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/alteration-product>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/gangue>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/host-rock>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/ore>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/primary>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/secondary>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/wall-rock> ;
+    skos:hasTopConcept :alteration-product,
+        :gangue,
+        :host-rock,
+        :ore,
+        :primary,
+        :secondary,
+        :wall-rock ;
     skos:prefLabel "Earth Resource Material Role"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role> a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/alteration-product>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/gangue>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/host-rock>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/ore>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/primary>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/secondary>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/wall-rock> ;
+    skos:member :alteration-product,
+        :gangue,
+        :host-rock,
+        :ore,
+        :primary,
+        :secondary,
+        :wall-rock ;
     skos:prefLabel "Earth Resource Material Role - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/alteration-product> a skos:Concept ;
+:alteration-product a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "(a) Any change in the mineralogic composition of a rock brought about by physical or chemical means, esp. by the action of hydrothermal solutions; also, a secondary, i.e. supergene, change in a rock or mineral. (b) Changes in the chemical or mineralogical composition of a rock produced by weathering."@en ;
@@ -56,7 +56,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/gangue> a skos:Concept ;
+:gangue a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "merduk"@id,
@@ -85,7 +85,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/host-rock> a skos:Concept ;
+:host-rock a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A body of rock serving as a host for other rocks or for mineral deposits; e.g. a pluton containing xenoliths, or any rock in which ore deposits occur. It is a somewhat more specific term than country rock."@en ;
@@ -101,7 +101,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/ore> a skos:Concept ;
+:ore a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The naturally occurring material from which a mineral or minerals of economic value can be extracted at a reasonable profit. Also, the mineral(s) thus extracted. The term is generally but not always used to refer to metalliferous material, and is often modified by the name of the valuable constituent, e.g., \"iron ore\"."@en ;
@@ -119,7 +119,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/primary> a skos:Concept ;
+:primary a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Rocks of which the constituents are newly formed particles that have never been constituents of previously formed rocks and that are not the products of alteration or replacement, esp. igneous rocks formed directly by solidification from a magma"@en ;
@@ -129,7 +129,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/secondary> a skos:Concept ;
+:secondary a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Rocks composed of particles derived from the erosion or weathering of pre-existing rocks, such as residual, chemical, or organic rocks formed of detrital, precipitated, or organically accumulated materials; specif. clastic sedimentary rocks."@en ;
@@ -139,7 +139,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/wall-rock> a skos:Concept ;
+:wall-rock a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "associated rock"@en ;

@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/deformationstyle/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -23,22 +23,22 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This scheme specifies concepts used to describe the Deformation Style of a fault or shear, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the deformationStyle property in GeoSciML ShearDisplacementStructureDescription elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Deformation Style vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle>,
-        <http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile>,
-        <http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile> ;
+    skos:hasTopConcept :brittle,
+        :ductile,
+        :mixed_brittle_ductile ;
     skos:prefLabel "Deformation Style"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/deformationstyle> a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle>,
-        <http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile>,
-        <http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile> ;
+    skos:member :brittle,
+        :ductile,
+        :mixed_brittle_ductile ;
     skos:prefLabel "Deformation Style - All Concepts "@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle> a skos:Concept ;
+:brittle a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Deformation in fault zone has been accommodated primarily through fracturing and loss of continuity between adjacent rock bodies."@en ;
@@ -47,7 +47,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile> a skos:Concept ;
+:ductile a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "periukan teregang"@id,
@@ -74,7 +74,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile> a skos:Concept ;
+:mixed_brittle_ductile a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Deformation in fault zone has been accommodated by both fracturing and plastic shape change in rock bodies."@en ;

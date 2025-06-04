@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/proportionterm/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -29,122 +29,122 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This file contains the CGI Proportion Term vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. This vocabulary provides terms that may be used to qualitatively express abundance of composition parts in a geologic unit or earth material description. Quantity that specifies the fraction of the geologic unit composed of the compound material. This vocabulary is used for GeologicUnit.GeologicUnitPart.proportion, GeologicUnit.compositionPart.proportion, and for compoundMaterial.ConsituentPart.proportion. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Proportion Term vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+    skos:hasTopConcept :present ;
     skos:prefLabel "Proportion Term"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/proportionterm> a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/proportionterm/all>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/dominant>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/major>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/minor>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/predominant>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/present>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/rare>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/trace>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/variable> ;
+    skos:member :all,
+        :dominant,
+        :major,
+        :minor,
+        :predominant,
+        :present,
+        :rare,
+        :subordinate,
+        :trace,
+        :variable ;
     skos:prefLabel "Proportion Term - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/present> a skos:Concept ;
+:present a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Component is present, but proportion is unknown"@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/major>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/predominant>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate>,
-        <http://resource.geosciml.org/classifier/cgi/proportionterm/variable> ;
+    skos:narrower :major,
+        :predominant,
+        :subordinate,
+        :variable ;
     skos:prefLabel "present"@en ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/all> a skos:Concept ;
+:all a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/dominant> ;
+    skos:broader :dominant ;
     skos:definition "Component constitutes effectively 100 percent of the volume of the described entity."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "all"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/dominant> a skos:Concept ;
+:dominant a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/major> ;
+    skos:broader :major ;
     skos:definition "Component constitutes greater than 75 percent of the volume of the described entity. This concept is intended to reflect absolute abundance (ie, considerably more than half) rather than relative abundance (ie, predominant component). Note there is a mismatch between the URI name and the preferred label for this concept."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/all> ;
+    skos:narrower :all ;
     skos:prefLabel "major"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/major> a skos:Concept ;
+:major a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+    skos:broader :present ;
     skos:definition "Component constitutes greater than 50 percent of the volume of the described entity."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/dominant> ;
+    skos:narrower :dominant ;
     skos:prefLabel "more than half"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/minor> a skos:Concept ;
+:minor a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate> ;
+    skos:broader :subordinate ;
     skos:definition "Component constitutes less than 25 percent of the volume of the described entity."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/rare> ;
+    skos:narrower :rare ;
     skos:prefLabel "minor"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/predominant> a skos:Concept ;
+:predominant a skos:Concept ;
     schema:citation "17-12-2009 Added based on reviews for OneGeology Europe"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "predominant"@en ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+    skos:broader :present ;
     skos:definition "Constituent forms more of the described entity than any other constituent. (ie, relative abundance)"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "most abundant"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/rare> a skos:Concept ;
+:rare a skos:Concept ;
     schema:citation "this vocabulary, follows Neuendorf et al 2005 usage scoped to coal description"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/minor> ;
+    skos:broader :minor ;
     skos:definition "Component constitutes less than 5 percent of the volume of the described entity."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/trace> ;
+    skos:narrower :trace ;
     skos:prefLabel "rare"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate> a skos:Concept ;
+:subordinate a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "subordinate"@en ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+    skos:broader :present ;
     skos:definition "Component constitutes less than 50 percent of the volume of the described entity."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/minor> ;
+    skos:narrower :minor ;
     skos:prefLabel "less than half"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/trace> a skos:Concept ;
+:trace a skos:Concept ;
     schema:citation "this vocabulary, Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/rare> ;
+    skos:broader :rare ;
     skos:definition "Component constitutes less than approximately 1 percent of the volume of the described entity. Presence is detectable but too small for accurate determination."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "trace"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/proportionterm/variable> a skos:Concept ;
+:variable a skos:Concept ;
     schema:citation "this vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+    skos:broader :present ;
     skos:definition "Component varies in proportion throughout the described entity."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Variable"@de,

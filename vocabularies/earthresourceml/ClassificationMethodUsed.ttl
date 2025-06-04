@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/classification-method-used/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

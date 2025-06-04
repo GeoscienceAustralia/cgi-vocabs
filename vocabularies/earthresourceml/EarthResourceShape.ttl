@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -22,30 +22,30 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This file contains the CGI Earth Resource Shape vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts specifying the typical geometrical shape of an Earth Resource (e.g. lenticular, pipelike, irregular etc). By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Earth Resource Shape vocabulary. Vocabulary Shepherd: Tim McCormick/Rachel Heaven. Compilation and review in Google doc spreadsheet, adopted 2014-01-09, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/cylindrical>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/irregular>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/lensoidal>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/nodular>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/podiform>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/saddle-shaped>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/tabular> ;
+    skos:hasTopConcept :cylindrical,
+        :irregular,
+        :lensoidal,
+        :nodular,
+        :podiform,
+        :saddle-shaped,
+        :tabular ;
     skos:prefLabel "Earth Resource Shape"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/earth-resource-shape> a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/cylindrical>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/irregular>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/lensoidal>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/nodular>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/podiform>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/saddle-shaped>,
-        <http://resource.geosciml.org/classifier/cgi/earth-resource-shape/tabular> ;
+    skos:member :cylindrical,
+        :irregular,
+        :lensoidal,
+        :nodular,
+        :podiform,
+        :saddle-shaped,
+        :tabular ;
     skos:prefLabel "Earth Resource Shape - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-shape/cylindrical> a skos:Concept ;
+:cylindrical a skos:Concept ;
     schema:citation "BGS Mineral Occurrence Database"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "chimney"@en,
@@ -69,7 +69,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-shape/irregular> a skos:Concept ;
+:irregular a skos:Concept ;
     schema:citation "From CGI GeologicUnitMorphology vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Body geometry is irregular and can not be characterized using terminology."@en ;
@@ -79,7 +79,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-shape/lensoidal> a skos:Concept ;
+:lensoidal a skos:Concept ;
     schema:citation "Glossary of Geology. 4th Edition, AGI + DC, adapted from"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "lens"@en,
@@ -97,7 +97,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-shape/nodular> a skos:Concept ;
+:nodular a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI, definition (b)"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "nodule"@en ;
@@ -114,7 +114,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-shape/podiform> a skos:Concept ;
+:podiform a skos:Concept ;
     schema:citation "Dictionary of Mining 2nd ed, AGI 1997, adapted from"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "pod"@en,
@@ -126,7 +126,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-shape/saddle-shaped> a skos:Concept ;
+:saddle-shaped a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "reverse saddle"@en,
@@ -138,7 +138,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/earth-resource-shape/tabular> a skos:Concept ;
+:tabular a skos:Concept ;
     schema:citation "Dictionary of Mining 2nd ed, AGI 1997, adapted from"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "blanket"@en,

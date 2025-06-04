@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/raw-material-role/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -23,22 +23,22 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This file contains the CGI Raw Material Role vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts for categorizing raw material relationships with Earth Resource occurrences. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Raw Material Role vocabulary. Compilation and review in Google doc spreadsheet; adopted June 2013; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/raw-material-role/gangue>,
-        <http://resource.geosciml.org/classifier/cgi/raw-material-role/ore>,
-        <http://resource.geosciml.org/classifier/cgi/raw-material-role/waste> ;
+    skos:hasTopConcept :gangue,
+        :ore,
+        :waste ;
     skos:prefLabel "Raw Material Role"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/raw-material-role> a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/raw-material-role/gangue>,
-        <http://resource.geosciml.org/classifier/cgi/raw-material-role/ore>,
-        <http://resource.geosciml.org/classifier/cgi/raw-material-role/waste> ;
+    skos:member :gangue,
+        :ore,
+        :waste ;
     skos:prefLabel "Raw Material Role - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/raw-material-role/gangue> a skos:Concept ;
+:gangue a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "merduk"@id,
@@ -67,7 +67,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/raw-material-role/ore> a skos:Concept ;
+:ore a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The naturally occurring material from which a mineral or minerals of economic value can be extracted at a reasonable profit. Also, the mineral(s) thus extracted. The term is generally but not always used to refer to metalliferous material, and is often modified by the name of the valuable constituent, e.g., \"iron ore\"."@en ;
@@ -85,7 +85,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/raw-material-role/waste> a skos:Concept ;
+:waste a skos:Concept ;
     schema:citation "Glossary of Geology. 5th Edition, AGI - online"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "buangan"@id,

@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -23,13 +23,13 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This file contains the CGI Resource Assessment Category vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to describe methods and quality of resource assessment within an Earth Resource. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Resource Assessment Category vocabulary. Compilation and review in Google doc spreadsheet; adopted June 2013; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-and-inferred-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/inferred-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-and-indicated-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-indicated-inferred-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/poorly-estimated-mineral-resource> ;
+    skos:hasTopConcept :indicated-and-inferred-mineral-resource,
+        :indicated-mineral-resource,
+        :inferred-mineral-resource,
+        :measured-and-indicated-mineral-resource,
+        :measured-indicated-inferred-mineral-resource,
+        :measured-mineral-resource,
+        :poorly-estimated-mineral-resource ;
     skos:prefLabel "Resource Assessment Category"@en .
 
 
@@ -37,17 +37,17 @@ cs: a skos:ConceptScheme ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     skos:changeNote "2021-12-17 R.Heaven BGS Added alignments to INSPIRE registry codelists using new alignments created automatically using Levenshtein similarity threshold of 0.75."@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-and-inferred-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/inferred-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-and-indicated-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-indicated-inferred-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-mineral-resource>,
-        <http://resource.geosciml.org/classifier/cgi/resource-assessment-category/poorly-estimated-mineral-resource> ;
+    skos:member :indicated-and-inferred-mineral-resource,
+        :indicated-mineral-resource,
+        :inferred-mineral-resource,
+        :measured-and-indicated-mineral-resource,
+        :measured-indicated-inferred-mineral-resource,
+        :measured-mineral-resource,
+        :poorly-estimated-mineral-resource ;
     skos:prefLabel "Resource Assessment Category - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-and-inferred-mineral-resource> a skos:Concept ;
+:indicated-and-inferred-mineral-resource a skos:Concept ;
     schema:citation "Australia GGIC"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated in part with a reasonable level of confidence and in part with a low level of confidence. It is based on exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are in places too widely or inappropriately spaced to confirm geological and/or grade continuity but are spaced closely enough for continuity to be assumed, and in other places of limited or of uncertain quality and reliability."@en ;
@@ -58,7 +58,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-mineral-resource> a skos:Concept ;
+:indicated-mineral-resource a skos:Concept ;
     schema:citation "CRIRSCO Code; JORC 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated with a reasonable level of confidence. It is based on exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are too widely or inappropriately spaced to confirm geological and/or grade continuity but are spaced closely enough for continuity to be assumed."@en ;
@@ -69,7 +69,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/resource-assessment-category/inferred-mineral-resource> a skos:Concept ;
+:inferred-mineral-resource a skos:Concept ;
     schema:citation "CRIRSCO Code; JORC 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "That part of a Mineral Resource for which tonnage, grade and mineral content can be estimated with a low level of confidence. It is inferred from geological evidence and assumed but not verified geological and/or grade continuity. It is based on information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes which may be limited or of uncertain quality and reliability."@en ;
@@ -86,7 +86,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-and-indicated-mineral-resource> a skos:Concept ;
+:measured-and-indicated-mineral-resource a skos:Concept ;
     schema:citation "Australia GGIC"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated in part with a high level of confidence and in part with a reasonable level of confidence. It is based on exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are in places spaced closely enough to confirm geological and grade continuity and in other places too widely or inappropriately spaced to confirm geological and/or grade continuity but are spaced closely enough for continuity to be assumed."@en ;
@@ -97,7 +97,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-indicated-inferred-mineral-resource> a skos:Concept ;
+:measured-indicated-inferred-mineral-resource a skos:Concept ;
     schema:citation "Australia GGIC"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated in part with a high level of confidence, in part with a reasonable level of confidence and in part with a low level of confidence. It is based on exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are in places spaced closely enough to confirm geological and grade continuity, in other places too widely or inappropriately spaced to confirm geological and/or grade continuity but are spaced closely enough for continuity to be assumed, and in other places of limited or of uncertain quality and reliability."@en ;
@@ -108,7 +108,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-mineral-resource> a skos:Concept ;
+:measured-mineral-resource a skos:Concept ;
     schema:citation "CRIRSCO Code; JORC 2004"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated with a high level of confidence. It is based on detailed and reliable exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are spaced closely enough to confirm geological and grade continuity."@en ;
@@ -119,7 +119,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/resource-assessment-category/poorly-estimated-mineral-resource> a skos:Concept ;
+:poorly-estimated-mineral-resource a skos:Concept ;
     schema:citation "Australia GGIC"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Poorly estimated mineral resource, poorly documented"@en ;

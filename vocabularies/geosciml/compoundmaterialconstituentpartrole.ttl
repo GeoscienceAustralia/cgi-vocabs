@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -29,55 +29,55 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This scheme describes the concept space for Compound Material Constituent Part concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Used to categorize kinds of particles that are the constituents of a compound material. Designed for populating the ConstituentPart/role property in GeoSciML CompoundMaterialDescription elements."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Compound Material Constituent Part vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt."@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/constituent_role_not_specified>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/interstitial_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:hasTopConcept :constituent_role_not_specified,
+        :interstitial_constituent,
+        :particulate_constituent,
+        :structural_part ;
     skos:prefLabel "Compound Material Constituent Part"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole> a skos:Collection ;
     schema:citation "this vocabulary" ;
     skos:definition "All Concepts in this vocabulary" ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_crystal>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_inclusion>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/chadacryst>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/clast_supporting_orthomatrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/clot>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/constituent_role_not_specified>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corona>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corrosion_rim>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/crystalline_framework_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/dropstone>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/epimatrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/floating_clast>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/granular_framework_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/groundmass_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/inclusion>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/interstitial_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/irregular_part>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/kelyphitic_rim>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/layer>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/matrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/megacryst>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/oikocryst>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/orthomatrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/overgrowth>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/phenoclast>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/phenocryst>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/porphyroblast>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/porphyroclast>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/protomatrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/pseudomatrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/sedimentary_rock_cement>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/small_concretion>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/vein> ;
+    skos:member :armoured_relict_crystal,
+        :armoured_relict_inclusion,
+        :chadacryst,
+        :clast_supporting_orthomatrix,
+        :clot,
+        :constituent_role_not_specified,
+        :corona,
+        :corrosion_rim,
+        :crystalline_framework_constituent,
+        :dropstone,
+        :epimatrix,
+        :floating_clast,
+        :granular_framework_constituent,
+        :groundmass_constituent,
+        :inclusion,
+        :interstitial_constituent,
+        :irregular_part,
+        :kelyphitic_rim,
+        :layer,
+        :matrix,
+        :megacryst,
+        :oikocryst,
+        :orthomatrix,
+        :overgrowth,
+        :particulate_constituent,
+        :phenoclast,
+        :phenocryst,
+        :porphyroblast,
+        :porphyroclast,
+        :protomatrix,
+        :pseudomatrix,
+        :sedimentary_rock_cement,
+        :small_concretion,
+        :structural_part,
+        :vein ;
     skos:prefLabel "Compound Material Constituent Part - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/constituent_role_not_specified> a skos:Concept ;
+:constituent_role_not_specified a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "For descriptions in which role of constituent in compound material is not specified."@en ;
@@ -86,181 +86,181 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/interstitial_constituent> a skos:Concept ;
+:interstitial_constituent a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Constituent is distributed through the material between other constituent particles"@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/groundmass_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/matrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/sedimentary_rock_cement> ;
+    skos:narrower :groundmass_constituent,
+        :matrix,
+        :sedimentary_rock_cement ;
     skos:prefLabel "interstitial constituent"@en ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent> a skos:Concept ;
+:particulate_constituent a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Constituent occurs as a collection of particles that are characterized by average properties of the individual particles"@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_crystal>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/chadacryst>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/crystalline_framework_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/granular_framework_constituent>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/megacryst>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/oikocryst>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/phenoclast> ;
+    skos:narrower :armoured_relict_crystal,
+        :chadacryst,
+        :crystalline_framework_constituent,
+        :granular_framework_constituent,
+        :megacryst,
+        :oikocryst,
+        :phenoclast ;
     skos:prefLabel "particulate constituent"@en ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> a skos:Concept ;
+:structural_part a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Constituent occurs in a structural configuration integral to the rock,such as layering,veinlets,overgrowths. The 'material' composition of these parts will often be other rock materials,not minerals,and 'ParticleGeometryDescription' associated with these describes the geometry of the constituent,not the particles the it is made of. These roles are mostly useful for RockMaterial descriptions that apply to individual samples,because their distribution is unlikely to be pervasive enought to be considered characteristic of a large mass of material."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/clot>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corona>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/dropstone>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/floating_clast>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/inclusion>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/irregular_part>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/layer>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/overgrowth>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/small_concretion>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/vein> ;
+    skos:narrower :clot,
+        :corona,
+        :dropstone,
+        :floating_clast,
+        :inclusion,
+        :irregular_part,
+        :layer,
+        :overgrowth,
+        :small_concretion,
+        :vein ;
     skos:prefLabel "structural part"@en ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_crystal> a skos:Concept ;
+:armoured_relict_crystal a skos:Concept ;
     schema:citation "base on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent> ;
+    skos:broader :particulate_constituent ;
     skos:definition "A crystal of an earlier rock that is prevented from further reaction in a later rock by a rim of reaction products"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "armoured relict crystal"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_inclusion> a skos:Concept ;
+:armoured_relict_inclusion a skos:Concept ;
     schema:citation "base on Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/inclusion> ;
+    skos:broader :inclusion ;
     skos:definition "an inclusion of an earlier rock that is prevented from further reaction in a later rock by a rim of reaction products"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "armoured relict inclusion"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/chadacryst> a skos:Concept ;
+:chadacryst a skos:Concept ;
     schema:citation "Neuendorf et al.,2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent> ;
+    skos:broader :particulate_constituent ;
     skos:definition "The enclosed crystal in a poikolitic texture"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "chadacryst"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/clast_supporting_orthomatrix> a skos:Concept ;
+:clast_supporting_orthomatrix a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/orthomatrix> ;
+    skos:broader :orthomatrix ;
     skos:definition "Orthomatrix in matrix supported sedimentary rock."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "clast supporting orthomatrix"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/clot> a skos:Concept ;
+:clot a skos:Concept ;
     schema:citation "Neuendorf et al,2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "A cluster of ferromagnesian minerals in an igneous rock,from several centimeters to decimeters in diameter,that may be a segregation or an altered xenolith."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "clot"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corona> a skos:Concept ;
+:corona a skos:Concept ;
     schema:citation "Williams,Turner and Gilbert,1954, Spry,1969, Fettes and Desmons,2007"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "Constituent occurs as a concentric envelope enclosing another constituent. Corona is a non-genetic term."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corrosion_rim>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/kelyphitic_rim> ;
+    skos:narrower :corrosion_rim,
+        :kelyphitic_rim ;
     skos:prefLabel "corona"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corrosion_rim> a skos:Concept ;
+:corrosion_rim a skos:Concept ;
     schema:citation "Neuendorf et al.,2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corona> ;
+    skos:broader :corona ;
     skos:definition "A corona formed by a secondary mineral around an orginal igneous crystal,formed by modification of the crystal by the corrosive action of its parent magma"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "corrosion rim"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/crystalline_framework_constituent> a skos:Concept ;
+:crystalline_framework_constituent a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent> ;
+    skos:broader :particulate_constituent ;
     skos:definition "Constituent forms an interconnected network of discernible crystals."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "crystalline framework constituent"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/dropstone> a skos:Concept ;
+:dropstone a skos:Concept ;
     schema:citation "NADM SLTTs 2004, Jackson,1997,p 193"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "An oversized stone in laminated sediment that depresses the underlying laminae and may be covered by -draped laminae. Most dropstones originate through ice-rafting, other sources are floating tree roots and kelp holdfasts..."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "dropstone"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/epimatrix> a skos:Concept ;
+:epimatrix a skos:Concept ;
     schema:citation "NADM SLTTs 2004, Dickinson,1970"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/matrix> ;
+    skos:broader :matrix ;
     skos:definition "A type of matrix consisting of inhomogeneous interstitial materials grown in originally open interstices during diagenesis,but lacking the homogeneity and clear textural evidence of pore-filling needed to classify as phyllosilicate cement."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "epimatrix"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/floating_clast> a skos:Concept ;
+:floating_clast a skos:Concept ;
     schema:citation "Pettijohn et al.,1972,p. 90, SMR"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "Constituent is a clast that has no visible contacts with other clasts. Interpreted to be largely or completly immersed in matrix or cement."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "floating clast"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/granular_framework_constituent> a skos:Concept ;
+:granular_framework_constituent a skos:Concept ;
     schema:citation "Jackson,1997,p. 250"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent> ;
+    skos:broader :particulate_constituent ;
     skos:definition "Constituent forms a rigid arrangement of particles that support one another at their points of contact...constituting a mechanically firm structure capable of supporting open pore spaces,although interstices may be occupied by cement or matrix"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "granular framework constituent"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/groundmass_constituent> a skos:Concept ;
+:groundmass_constituent a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/interstitial_constituent> ;
+    skos:broader :interstitial_constituent ;
     skos:definition "Constituent forms an interconnected network of material enclosing other constituents that are disguished by larger grain size."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "groundmass constituent"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/inclusion> a skos:Concept ;
+:inclusion a skos:Concept ;
     schema:citation "Neuendorf et al,2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "包体"@zh,
         "夹杂物"@zh ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "A fragment of older material within an igneous rock to which it may or may not be genetically related"@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/armoured_relict_inclusion> ;
+    skos:narrower :armoured_relict_inclusion ;
     skos:prefLabel "Einschluss"@de,
         "inclusion"@en,
         "inclusión"@es,
@@ -281,19 +281,19 @@ cs: a skos:ConceptScheme ;
         "包裹体"@zh .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/irregular_part> a skos:Concept ;
+:irregular_part a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "A constituent with irregular distribution and geometry,as in pseudobreccia or patch migmatite."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "irregular part"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/kelyphitic_rim> a skos:Concept ;
+:kelyphitic_rim a skos:Concept ;
     schema:citation "Williams,Turner and Gilbert,1954, Fettes and Desmons,2007"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/corona> ;
+    skos:broader :corona ;
     skos:definition "Corona that consists of concentric bands with radial fibrous texture."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Kelyphitrinde"@de,
@@ -305,10 +305,10 @@ cs: a skos:ConceptScheme ;
         "kelyfitisk bård"@sv .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/layer> a skos:Concept ;
+:layer a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "A thin sheet compositionally distinct from the surrounding material,related to primary genesis of rock,e.g. sedimentary layers,metamorphic segregation"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Schicht"@de,
@@ -320,17 +320,17 @@ cs: a skos:ConceptScheme ;
         "lager"@sv .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/matrix> a skos:Concept ;
+:matrix a skos:Concept ;
     schema:citation "NADM SLTTs 2004, Jackson,1997"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zat dasar"@id ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/interstitial_constituent> ;
+    skos:broader :interstitial_constituent ;
     skos:definition "Constituent forms finer-grained material interstitial to a framework constituent. \\The finer-grained material enclosing,or filling the interstices between,the larger grains or particles of a sediment or sedimentary rock....The term refers to the relative size and disposition of the particles,and no particular particle size is implied\\ (Jackson,1997,p. 393). May be classifiable into orthomatrix,protomatrix,epimatrix,pseudomatrix,and unclassified matrix."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/epimatrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/orthomatrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/protomatrix>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/pseudomatrix> ;
+    skos:narrower :epimatrix,
+        :orthomatrix,
+        :protomatrix,
+        :pseudomatrix ;
     skos:prefLabel "matrix"@en,
         "matrice roche"@fr,
         "matriks"@id,
@@ -344,44 +344,44 @@ cs: a skos:ConceptScheme ;
         "矩阵"@zh .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/megacryst> a skos:Concept ;
+:megacryst a skos:Concept ;
     schema:citation "Neuendorf et al 2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent> ;
+    skos:broader :particulate_constituent ;
     skos:definition "Any crystal in an igneous or metamorphic rock that is sgnificantly larger than the surounding groundmass. May be a phenocryst,xenocryst,porphyroblast or porphyroclast"@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/phenocryst>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/porphyroblast>,
-        <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/porphyroclast> ;
+    skos:narrower :phenocryst,
+        :porphyroblast,
+        :porphyroclast ;
     skos:prefLabel "megacryst"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/oikocryst> a skos:Concept ;
+:oikocryst a skos:Concept ;
     schema:citation "Neuendorf et al.,2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent> ;
+    skos:broader :particulate_constituent ;
     skos:definition "Constituent occurs as crystals that poikilitically enclose crystals of other phases in an igneous rock."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "oikocryst"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/orthomatrix> a skos:Concept ;
+:orthomatrix a skos:Concept ;
     schema:citation "NADM SLTTs 2004, Dickinson,1970"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/matrix> ;
+    skos:broader :matrix ;
     skos:definition "A type of matrix consisting of recrystallized detrital lutum (clay fraction,less than 2 micron) or protomatrix."@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/clast_supporting_orthomatrix> ;
+    skos:narrower :clast_supporting_orthomatrix ;
     skos:prefLabel "orthomatrix"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/overgrowth> a skos:Concept ;
+:overgrowth a skos:Concept ;
     schema:citation "NADM SLTTs 2004, Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "オーバーグロース"@ja,
         "표면연정"@ko,
         "生长过度"@zh ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "Constituent crystallized in crystallographic continuity with some other mineral constituent,typically quartz or calcite. In a clastic rock,commonly forms cement as well,but this should be represented using two role attribute links,'overgrowth' and cement,because overgrowth does not necessarily imply cement."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Ueberwachsung"@de,
@@ -403,21 +403,21 @@ cs: a skos:ConceptScheme ;
         "繁茂"@zh .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/phenoclast> a skos:Concept ;
+:phenoclast a skos:Concept ;
     schema:citation "Neuendorf et al.,2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/particulate_constituent> ;
+    skos:broader :particulate_constituent ;
     skos:definition "A relatively large and conspicuous fragment in a sediment or sedimentary rock"@en ;
     skos:inScheme cs: ;
     skos:prefLabel "phenoclast"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/phenocryst> a skos:Concept ;
+:phenocryst a skos:Concept ;
     schema:citation "Neuendorf et al. 2005"@en ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "hablur awal/sulung"@id,
         "À´ñ©´½­ó©º¡"@lo ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/megacryst> ;
+    skos:broader :megacryst ;
     skos:definition "Constituent occurs as crystals that are distinctly larger than a groundmass of enclosing crystals. Used only in igneous rocks."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Einsprengling"@de,
@@ -439,64 +439,64 @@ cs: a skos:ConceptScheme ;
         "斑晶"@zh .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/porphyroblast> a skos:Concept ;
+:porphyroblast a skos:Concept ;
     schema:citation "Fettes and Desmons,2007"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/megacryst> ;
+    skos:broader :megacryst ;
     skos:definition "Constituent occurs as crystals formed by metamorphic crystallization,set in a finer-grained groundmass."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "porphyroblast"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/porphyroclast> a skos:Concept ;
+:porphyroclast a skos:Concept ;
     schema:citation "Spry,1969"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/megacryst> ;
+    skos:broader :megacryst ;
     skos:definition "Relict crystal in metamorphic rock,in groundmass of relatively finer-grained material. Connotes that groundmass is result of tectonic reduction in grain size."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "porphyroclast"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/protomatrix> a skos:Concept ;
+:protomatrix a skos:Concept ;
     schema:citation "NADM SLTTs 2004, Dickinson,1970"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/matrix> ;
+    skos:broader :matrix ;
     skos:definition "A type of matrix consisting of un-recrystallized detrital clayey lutum (clay fraction,less than 2 micron) in weakly consolidated rocks."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "protomatrix"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/pseudomatrix> a skos:Concept ;
+:pseudomatrix a skos:Concept ;
     schema:citation "NADM SLTTs 2004, Dickinson,1970"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/matrix> ;
+    skos:broader :matrix ;
     skos:definition "A type of matrix consisting of soft deformable framework grains that are squeezed and flattened between stronger framework grains."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "pseudomatrix"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/sedimentary_rock_cement> a skos:Concept ;
+:sedimentary_rock_cement a skos:Concept ;
     schema:citation "NADM SLTTs 2004, Jackson,1997"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/interstitial_constituent> ;
+    skos:broader :interstitial_constituent ;
     skos:definition "A constituent that occupies space between individual grains of a consolidated sedimentary rock,and binds the grains together as a rigid,coherent mass, it may be derived from the sediment or its entrapped waters,or it may be brought in by solution from outside sources. Material is usually chemically precipitated (Jackson,1997,p. 103). Distinguished from matrix by clearly secondary origin and generally monomineralic character."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "sedimentary rock cement"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/small_concretion> a skos:Concept ;
+:small_concretion a skos:Concept ;
     schema:citation "Neuendorf et al,2005"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "A hard,compact mass or aggregate of mineral matter,normally subsperical but commonly oblate,disc-shaped or irregular. Formed by precipitation of mineral from solution in the pores of a granular rock,localized around a nucleus or center,to define a discrete,sharply separated object. Size ranges from cm to decimeter for application as a compoundMaterialConstituentPart, larger concretions should be considered GeologicUnit parts."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "small concretion"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/vein> a skos:Concept ;
+:vein a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole/structural_part> ;
+    skos:broader :structural_part ;
     skos:definition "Thin sheet of material intruded into the rock. May be hydrothermal,magmatic,or sedimentary."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Gang"@de,

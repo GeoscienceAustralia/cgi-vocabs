@@ -1,4 +1,4 @@
-PREFIX : <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage/>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/waste-storage/>
 PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -22,34 +22,34 @@ cs: a skos:ConceptScheme ;
         "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
     skos:definition "This file contains the CGI Waste Storage vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts for categorizing approaches to material waste storage associated with Earth Resource extraction. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
     skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Waste Storage vocabulary. Compilation and review in Google doc spreadsheet; adopted June 2013 at GTWG face to face in St. Petersburg, Russia; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
-    skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/waste-storage/surface>,
-        <http://resource.geosciml.org/classifier/cgi/waste-storage/underground>,
-        <http://resource.geosciml.org/classifier/cgi/waste-storage/underwater> ;
+    skos:hasTopConcept :surface,
+        :underground,
+        :underwater ;
     skos:prefLabel "Waste Storage"@en .
 
 
 <http://resource.geosciml.org/classifier/cgi/waste-storage> a skos:Collection ;
     schema:citation "The original vocabulary - all its concepts"@en ;
     skos:definition "All the Concepts in this vocabulary"@en ;
-    skos:member <http://resource.geosciml.org/classifier/cgi/waste-storage/covered>,
-        <http://resource.geosciml.org/classifier/cgi/waste-storage/surface>,
-        <http://resource.geosciml.org/classifier/cgi/waste-storage/underground>,
-        <http://resource.geosciml.org/classifier/cgi/waste-storage/underwater> ;
+    skos:member :covered,
+        :surface,
+        :underground,
+        :underwater ;
     skos:prefLabel "Waste Storage - All Concepts"@en .
 
 
-<http://resource.geosciml.org/classifier/cgi/waste-storage/surface> a skos:Concept ;
+:surface a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining waste storage at open-sky environment (ground level)"@en ;
     skos:inScheme cs: ;
-    skos:narrower <http://resource.geosciml.org/classifier/cgi/waste-storage/covered> ;
+    skos:narrower :covered ;
     skos:notation "01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "surface"@en ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/waste-storage/underground> a skos:Concept ;
+:underground a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining waste storage at underground environment"@en ;
@@ -59,7 +59,7 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/waste-storage/underwater> a skos:Concept ;
+:underwater a skos:Concept ;
     schema:citation "Australia GGIC"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining waste deposited at sea or lake floor (e.g. sea bed mining)"@en ;
@@ -69,10 +69,10 @@ cs: a skos:ConceptScheme ;
     skos:topConceptOf cs: .
 
 
-<http://resource.geosciml.org/classifier/cgi/waste-storage/covered> a skos:Concept ;
+:covered a skos:Concept ;
     schema:citation "This vocabulary"@en ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <http://resource.geosciml.org/classifier/cgi/waste-storage/surface> ;
+    skos:broader :surface ;
     skos:definition "Covered mining waste storage at ground level"@en ;
     skos:inScheme cs: ;
     skos:notation "01.1"^^dt:LocalHierarchyKey ;
