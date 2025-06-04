@@ -6,169 +6,169 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 dcterms:created
-    rdfs:label "Date Created"@en ;
+    schema:name "Date Created"@en ;
     schema:description "Date of creation of the resource."@en ;
 .
 
 dcterms:creator
-    rdfs:label "Creator"@en ;
+    schema:name "Creator"@en ;
     schema:description "An entity responsible for making the resource."@en ;
 .
 
 dcterms:hasPart
-    rdfs:label "Has Part"@en ;
+    schema:name "Has Part"@en ;
     schema:description "A related resource that is included either physically or logically in the described resource."@en ;
 .
 
 dcterms:modified
-    rdfs:label "Date Modified"@en ;
+    schema:name "Date Modified"@en ;
     schema:description "Date on which the resource was changed."@en ;
 .
 
 dcterms:provenance
-    rdfs:label "Provenance"@en ;
+    schema:name "Provenance"@en ;
     schema:description "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation."@en ;
 .
 
 dcterms:publisher
-    rdfs:label "Publisher"@en ;
+    schema:name "Publisher"@en ;
     schema:description "An entity responsible for making the resource available."@en ;
 .
 
 dcterms:source
-    rdfs:label "Source"@en ;
+    schema:name "Source"@en ;
     schema:description "A related resource from which the described resource is derived."@en ;
 .
 
 rdfs:isDefinedBy
-    rdfs:label "is defined by" ;
+    schema:name "is defined by" ;
     schema:description "The defininition of the subject resource." ;
 .
 
 skos:Collection
-    rdfs:label "Collection"@en ;
+    schema:name "Collection"@en ;
     schema:description "A meaningful collection of concepts."@en ;
 .
 
 skos:Concept
-    rdfs:label
+    schema:name
         "Concept" ,
         "Concept"@en ;
     schema:description "An idea or notion; a unit of thought."@en ;
 .
 
 skos:ConceptScheme
-    rdfs:label "Concept Scheme"@en ;
+    schema:name "Concept Scheme"@en ;
     schema:description "A set of concepts, optionally including statements about semantic relationships between those concepts."@en ;
 .
 
 skos:altLabel
-    rdfs:label "alternative label"@en ;
+    schema:name "alternative label"@en ;
     schema:description "An alternative lexical label for a resource."@en ;
 .
 
 skos:broader
-    rdfs:label "has broader"@en ;
+    schema:name "has broader"@en ;
     schema:description "Relates a concept to a concept that is more general in meaning."@en ;
 .
 
 skos:changeNote
-    rdfs:label "change note"@en ;
+    schema:name "change note"@en ;
     schema:description "A note about a modification to a concept."@en ;
 .
 
 skos:definition
-    rdfs:label "definition"@en ;
+    schema:name "definition"@en ;
     schema:description "A statement or formal explanation of the meaning of a concept."@en ;
 .
 
 skos:editorialNote
-    rdfs:label "editorial note"@en ;
+    schema:name "editorial note"@en ;
     schema:description "A note for an editor, translator or maintainer of the vocabulary."@en ;
 .
 
 skos:exactMatch
-    rdfs:label "has exact match"@en ;
+    schema:name "has exact match"@en ;
     schema:description "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch."@en ;
 .
 
 skos:example
-    rdfs:label "example"@en ;
+    schema:name "example"@en ;
     schema:description "An example of the use of a concept."@en ;
 .
 
 skos:hasTopConcept
-    rdfs:label "has top concept"@en ;
+    schema:name "has top concept"@en ;
     schema:description "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en ;
 .
 
 skos:historyNote
-    rdfs:label "history note"@en ;
+    schema:name "history note"@en ;
     schema:description "A note about the past state/use/meaning of a concept."@en ;
 .
 
 skos:inScheme
-    rdfs:label "is in scheme"@en ;
+    schema:name "is in scheme"@en ;
     schema:description "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
 .
 
 skos:member
-    rdfs:label "has member"@en ;
+    schema:name "has member"@en ;
     schema:description "Relates a collection to one of its members."@en ;
 .
 
 skos:narrower
-    rdfs:label "has narrower"@en ;
+    schema:name "has narrower"@en ;
     schema:description "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."@en ;
 .
 
 skos:notation
-    rdfs:label "notation"@en ;
+    schema:name "notation"@en ;
     schema:description "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ;
 .
 
 skos:note
-    rdfs:label "note"@en ;
+    schema:name "note"@en ;
     schema:description "A general note, for any purpose."@en ;
 .
 
 skos:prefLabel
-    rdfs:label "preferred label"@en ;
+    schema:name "preferred label"@en ;
     schema:description "The preferred lexical label for a resource, in a given language."@en ;
 .
 
 skos:related
-    rdfs:label "has related"@en ;
+    schema:name "has related"@en ;
     schema:description "Relates a concept to a concept with which there is an associative semantic relationship."@en ;
 .
 
 skos:topConceptOf
-    rdfs:label "is top concept in scheme"@en ;
+    schema:name "is top concept in scheme"@en ;
     schema:description "Relates a concept to the concept scheme that it is a top level concept of."@en ;
 .
 
 dcat:Catalog
-    rdfs:label "Catalogue"@en ;
+    schema:name "Catalogue"@en ;
     schema:description "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)."@en ;
 .
 
 prof:hasArtifact
-    rdfs:label "has artifact" ;
+    schema:name "has artifact" ;
     schema:description "The URL of a downloadable file with particulars such as its format and role indicated by the Resource Descriptor"@en ;
 .
 
 prof:hasResource
-    rdfs:label "has resource"@en ;
+    schema:name "has resource"@en ;
     schema:description "A resource which describes the nature of an artifact and the role it plays in relation to the Profile"@en ;
 .
 
 prof:hasRole
-    rdfs:label "has role" ;
+    schema:name "has role" ;
     schema:description "The function of an artifact described by a Resource Descriptor, such as specification, guidance etc."@en ;
 .
 
 <https://kurrawong.ai>
-    rdfs:label "KurrawongAI" ;
+    schema:name "KurrawongAI" ;
     schema:description """KurrawongAI is a small, Australian-based company enabling organisations to take control of their data.
 
 We use data modelling, data governance and data systems implementation expertise all based on Semantic Web and Knowledge Graph principles to ensure data is in the richest, most open and most extensible form it can be.
@@ -177,927 +177,925 @@ We use knowledge graphs for data storage, as a transfer format, when serialised,
 .
 
 <https://linked.data.gov.au/org/ga>
-    rdfs:label "Geoscience Australia" ;
+    schema:name "Geoscience Australia" ;
 .
 
 schema:Organization
-    rdfs:label "Organization" ;
+    schema:name "Organization" ;
     schema:description "An organization such as a school, NGO, corporation, club, etc." ;
 .
 
 schema:affiliation
-    rdfs:label "affiliation" ;
+    schema:name "affiliation" ;
     schema:description "An organization that this person is affiliated with. For example, a school/university, a club, or a team." ;
 .
 
 schema:codeRepository
-    rdfs:label "codeRepository" ;
+    schema:name "codeRepository" ;
     schema:description "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex)." ;
 .
 
 schema:contributor
-    rdfs:label "contributor" ;
+    schema:name "contributor" ;
     schema:description "A secondary contributor to the CreativeWork or Event." ;
 .
 
 schema:creator
-    rdfs:label "creator" ;
+    schema:name "creator" ;
     schema:description "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork." ;
 .
 
 schema:dateCreated
-    rdfs:label "dateCreated" ;
+    schema:name "dateCreated" ;
     schema:description "The date on which the CreativeWork was created or the item was added to a DataFeed." ;
 .
 
 schema:dateModified
-    rdfs:label "dateModified" ;
+    schema:name "dateModified" ;
     schema:description "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed." ;
 .
 
 schema:description
-    rdfs:label "description" ;
+    schema:name "description" ;
     schema:description "A description of the item." ;
 .
 
 schema:name
-    rdfs:label "name" ;
+    schema:name "name" ;
     schema:description "The name of the item." ;
 .
 
 schema:publisher
-    rdfs:label "publisher" ;
+    schema:name "publisher" ;
     schema:description "The publisher of the creative work." ;
 .
 
 schema:url
-    rdfs:label "url" ;
+    schema:name "url" ;
     schema:description "URL of the item." ;
 .
 
-<https://linked.data.gov.au/org/cgi> rdfs:label "Commission for Geoscience Information" .
+<https://prez.dev/Manifest> schema:name "Manifest" .
+<https://prez.dev/ManifestResourceRoles/CatalogueAndResourceModel> schema:name "Catalogue And Resource Model" .
+<https://prez.dev/ManifestResourceRoles/CatalogueData> schema:name "Catalogue Data" .
+<https://prez.dev/ManifestResourceRoles/CompleteCatalogueAndResourceLabels> schema:name "Complete Catalogue And Resource Labels" .
+<https://prez.dev/ManifestResourceRoles/ResourceData> schema:name "Resource Data" .
 
-<https://linked.data.gov.au/org/cgi-gtwg> rdfs:label "CGI's Geoscience Terminology Working Group" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/CIMstandards> schema:name "CIM standards" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/CRIRSCOCode> schema:name "CRIRSCO Code" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/IIMChCode> schema:name "IIMCh Code" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/IMMReportingCode> schema:name "IMM Reporting Code" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/JORCcode> schema:name "JORC code" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/NI43-101> schema:name "NI 43-101" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/PERCCode> schema:name "PERC Code" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/SAMRECcode> schema:name "SAMREC code" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/SECGuide> schema:name "SEC Guide" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/SMEGuide> schema:name "SME Guide" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/UNFCCode> schema:name "UNFC Code" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/peruvianCode> schema:name "Peruvian Code" .
+<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/russianCode> schema:name "Russian Code" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/HREE> schema:name "HREE" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/LREE> schema:name "LREE" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/agate> schema:name "agate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/aggregate> schema:name "aggregate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/alumina> schema:name "alumina" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/aluminium> schema:name "aluminium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/aluminosilicate> schema:name "aluminosilicate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/alunite> schema:name "alunite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/amazonite> schema:name "amazonite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/amber> schema:name "amber" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/amethyst> schema:name "amethyst" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/andalusite> schema:name "andalusite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/anhydrite> schema:name "anhydrite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/anthophyllite> schema:name "anthophyllite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/anthracite> schema:name "anthracite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/antimony> schema:name "antimony" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/apatite> schema:name "apatite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/apatiteGemstone> schema:name "apatite-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/aquamarine> schema:name "aquamarine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/arsenic> schema:name "arsenic" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/asbestos-serpentine> schema:name "asbestos-serpentine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/asbestos> schema:name "asbestos" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/asbestosAmphibole> schema:name "asbestos-amphibole" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/asphalt> schema:name "asphalt" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/barium> schema:name "barium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/baryte> schema:name "baryte" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/baseMetal> schema:name "base metal" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bauxite> schema:name "bauxite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bentonite> schema:name "bentonite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/beryl> schema:name "beryl" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/beryllium> schema:name "beryllium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bismuth> schema:name "bismuth" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/blackCoal> schema:name "black coal" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/borate> schema:name "borate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/boron> schema:name "boron" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/brickClay> schema:name "brick clay" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bromine> schema:name "bromine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/brownCoal> schema:name "brown coal" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/calcite> schema:name "calcite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/carbonaceousMaterial> schema:name "carbonaceousMaterial" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/carnallite> schema:name "carnallite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/carnelian> schema:name "carnelian" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/cassiteriteGemstone> schema:name "cassiterite-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/cesium> schema:name "cesium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chalcedony> schema:name "chalcedony" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chemicalCompoundProduct> schema:name "chemical compound product" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chemicalOxideProduct> schema:name "chemical oxide product" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chert> schema:name "chert" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chlorite> schema:name "chlorite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chrome> schema:name "chrome" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chromite> schema:name "chromite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chromium> schema:name "chromium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chrysoberyl> schema:name "chrysoberyl" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chrysoprase> schema:name "chrysoprase" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chrysotile> schema:name "chrysotile" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/citrine> schema:name "citrine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/clay> schema:name "clay" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/coalBedMethane> schema:name "coal bed methane" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/cobalt> schema:name "cobalt" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/copper> schema:name "copper" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/corundum> schema:name "corundum" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/corundumGemstone> schema:name "corundum-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/crocidolite> schema:name "crocidolite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/crushedRock> schema:name "crushed rock" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/cryolite> schema:name "cryolite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/diamond> schema:name "diamond" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/diamondGemstone> schema:name "diamond-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/diatomite> schema:name "diatomite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/dimensionStone> schema:name "dimension stone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/diopsideEnstatite> schema:name "diopside-enstatite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/dioptase> schema:name "dioptase" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/directShippingOre> schema:name "direct shipping ore" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/directUseCcommodity> schema:name "direct use commodity" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/dumortierite> schema:name "dumortierite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/dysprosium> schema:name "dysprosium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/emerald> schema:name "emerald" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/epsomite> schema:name "epsomite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/euclase> schema:name "euclase" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/europium> schema:name "europium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/evaporite> schema:name "evaporite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/feldspar> schema:name "feldspar" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/feldsparGemstone> schema:name "feldspar-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ferrousMetal> schema:name "ferrous metal" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/fluorine> schema:name "fluorine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/fluorite> schema:name "fluorite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/foundrySand> schema:name "foundry sand" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/fracSand> schema:name "frac sand" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/fullersEarth> schema:name "Fullers earth" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gadolinium> schema:name "gadolinium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/garnet> schema:name "garnet" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/garnetgemstone> schema:name "garnet-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gasHydrate> schema:name "gas hydrate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gaseousHydrocarbons> schema:name "gaseous hydrocarbons" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gemstone> schema:name "gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/germanium> schema:name "germanium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/glauconite> schema:name "glauconite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gold> schema:name "gold" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/graphite> schema:name "graphite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/greenstone> schema:name "greenstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gypsum> schema:name "gypsum" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/hafnium> schema:name "hafnium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/halloysite> schema:name "halloysite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/heliodor> schema:name "heliodor" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/hematite> schema:name "hematite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/hematiteGemstone> schema:name "hematite-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/hematiteOre> schema:name "hematite ore" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/holmium> schema:name "holmium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ilmenite> schema:name "ilmenite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/indium> schema:name "indium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/industrialMineral> schema:name "industrialMineral" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/industrialRock> schema:name "industrialRock" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/iodine> schema:name "iodine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/iron> schema:name "iron" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ironOre> schema:name "iron ore" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ironOxide> schema:name "iron oxide" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/jade> schema:name "jade" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/jarosite> schema:name "jarosite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kaolin> schema:name "kaolin" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kornerupine> schema:name "kornerupine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kyanite> schema:name "kyanite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kyaniteGemstone> schema:name "kyanite-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lanthanum> schema:name "lanthanum" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/laterite> schema:name "laterite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lazulite> schema:name "lazulite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lead> schema:name "lead" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/leucoxene> schema:name "leucoxene" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lime> schema:name "lime" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/limestone> schema:name "limestone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/liquidHydrocarbons> schema:name "liquidHydrocarbons" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lithium> schema:name "lithium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lithiumOxide> schema:name "lithium oxide" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lutetium> schema:name "lutetium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnesia> schema:name "magnesia" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnesium> schema:name "magnesium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnetite> schema:name "magnetite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnetiteOre> schema:name "magnetite ore" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/malachite> schema:name "malachite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/manganese> schema:name "manganese" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/manganeseOre> schema:name "manganese ore" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/marble> schema:name "marble" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/mercury> schema:name "mercury" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/metal> schema:name "metal" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/metalloid> schema:name "metalloid" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/mica> schema:name "mica" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/miscellaneousDimensionStones> schema:name "miscellaneous dimension stones" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/molybdenum> schema:name "molybdenum" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/monazite> schema:name "monazite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/moonstone> schema:name "moonstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/morganite> schema:name "morganite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/mossAgate> schema:name "mossAgate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/naturalSecondaryAggregate> schema:name "natural secondary aggregate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/nephelineSyenite> schema:name "nephelineSyenite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/nickel> schema:name "nickel" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/niobium> schema:name "niobium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/niobiumPentoxide> schema:name "niobiumPentoxide" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/nitrate> schema:name "nitrate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/nonMetal> schema:name "non metal" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/obsidian> schema:name "obsidian" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ochre> schema:name "ochre" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/oil> schema:name "oil" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/oilShale> schema:name "oil shale" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/olivine> schema:name "olivine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/olivineGemstone> schema:name "olivine-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/onyx> schema:name "onyx" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/opal> schema:name "opal" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/organicMaterial> schema:name "organicMaterial" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/osmium> schema:name "osmium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/palladium> schema:name "palladium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/palygorskite> schema:name "palygorskite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/peat> schema:name "peat" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/phenakite> schema:name "phenakite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/phosphateRock> schema:name "phosphateRock" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/phosphorous> schema:name "phosphorous" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/phosphorousPentoxide> schema:name "phosphorousPentoxide" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/platinum> schema:name "platinum" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/platinumGroupMetal> schema:name "platinum group metal" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/potash> schema:name "potash" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/potassium> schema:name "potassium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pozzolan> schema:name "pozzolan" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/praseodymium> schema:name "praseodymium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/preciousMetal> schema:name "precious metal" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/prehnite> schema:name "prehnite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/primaryAggregate> schema:name "primary aggregate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/producedCommodity> schema:name "produced commodity" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/promethium> schema:name "promethium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pumice> schema:name "pumice" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pyrite> schema:name "pyrite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pyrophyllite> schema:name "pyrophyllite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/quartz> schema:name "quartz" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/quartzGemstone> schema:name "quartz-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rareEarthElement> schema:name "rare earth element" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rareEarthOxide> schema:name "rare earth oxide" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/recycledAggregate> schema:name "recycled aggregate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/reservoirGas> schema:name "reservoir gas" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rhenium> schema:name "rhenium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rhodium> schema:name "rhodium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rhodonite> schema:name "rhodonite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/riprap> schema:name "riprap" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/roseQuartz> schema:name "rose quartz" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rubidium> schema:name "rubidium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ruby> schema:name "ruby" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ruthenium> schema:name "ruthenium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rutile> schema:name "rutile" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/salt> schema:name "salt" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/samarium> schema:name "samarium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sand> schema:name "sand" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sandAndGravel> schema:name "sand and gravel" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sandstone> schema:name "sandstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sapphirine> schema:name "sapphirine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/scandium> schema:name "scandium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/scapolite> schema:name "scapolite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/selenium> schema:name "selenium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sepiolite> schema:name "sepiolite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sericite> schema:name "sericite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/serpentine> schema:name "serpentine" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/shellGrit> schema:name "shell grit" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/silicaGemstone> schema:name "silica-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/silicon> schema:name "silicon" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sillimanite> schema:name "sillimanite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/silver> schema:name "silver" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sinhalite> schema:name "sinhalite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/slate> schema:name "slate" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/smokeyQuartz> schema:name "smokey quartz" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sodaAsh> schema:name "soda ash" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sodalite> schema:name "sodalite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spectrolite> schema:name "spectrolite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spinel> schema:name "spinel" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spinelGemstone> schema:name "spinel-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spodumene> schema:name "spodumene" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spongolite> schema:name "spongolite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/staurolite> schema:name "staurolite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/strontianite> schema:name "strontianite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/strontium> schema:name "strontium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sulphur> schema:name "sulphur" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sylvite> schema:name "sylvite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/talc> schema:name "talc" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tantalum> schema:name "tantalum" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tantalumPentoxide> schema:name "tantalumPentoxide" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tanzanite> schema:name "tanzanite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tarSand> schema:name "tar sand" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tellurium> schema:name "tellurium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/thallium> schema:name "thallium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/thenardite> schema:name "thenardite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/thorium> schema:name "thorium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/thulium> schema:name "thulium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tin> schema:name "tin" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/titanium> schema:name "titanium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/topaz> schema:name "topaz" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tourmaline> schema:name "tourmaline" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tremoliteActinolite> schema:name "tremolite-actinolite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tsavorite> schema:name "tsavorite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tungsten> schema:name "tungsten" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/turquoise> schema:name "turquoise" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/uranium> schema:name "uranium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/uraniumOxide> schema:name "uranium oxide" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/vanadium> schema:name "vanadium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/vanadiumPentoxide> schema:name "vanadium pentoxide" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/variscite> schema:name "variscite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/vermiculite> schema:name "vermiculite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/vesuvianite> schema:name "vesuvianite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/whiteFiringClay> schema:name "white-firing clay" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/wollastonite> schema:name "wollastonite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/xenotimeGemstone> schema:name "xenotime-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ytterbium> schema:name "ytterbium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/yttrium> schema:name "yttrium" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/yttriumOxide> schema:name "yttrium oxide" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zeolite> schema:name "zeolite" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zinc> schema:name "zinc" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zirconGemstone> schema:name "zircon-gemstone" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zirconia> schema:name "zirconia" .
+<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zirconium> schema:name "zirconium" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/facies> schema:name "facies" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/inclusion> schema:name "inclusion" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/lithosome> schema:name "lithosome" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/onlyPart> schema:name "only part" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/partOf> schema:name "part of" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/stratigraphicPart> schema:name "stratigraphic part" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/unspecifiedPartRole> schema:name "unspecified part role" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/abrasiveMinerals> schema:name "abrasive minerals" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/agriculturaLime> schema:name "agricultural lime" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/buildingAndDimensionStone> schema:name "building and dimension stone" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/cementMakingMaterial> schema:name "cement-making material" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/chemical> schema:name "Chemical" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/construction> schema:name "construction" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/constructionAggregates> schema:name "construction aggregates" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/drillingMinerals> schema:name "drilling minerals" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/energyMinerals> schema:name "energy minerals" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/engineeringClay> schema:name "engineering clay" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/fertilizer> schema:name "fertilizer" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/fossilFuelUse> schema:name "fossil fuel use" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/foundryMinerals> schema:name "foundry minerals" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/glassManufacturingMinerals> schema:name "glass manufacturing minerals" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/horticultural> schema:name "horticultural" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/industrialMinerals> schema:name "industrialMinerals" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/industrialProductTreatment> schema:name "industrial product treatment" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/landscaping> schema:name "landscaping" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/metalIndustry> schema:name "metal industry" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/mineralSpecimens> schema:name "mineral specimens" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/nuclearEnergySource> schema:name "nuclear energy source" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/plasterAndPlasterBoard> schema:name "plaster and plaster board" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/specialityAndOtherIndustrialRocksAndMinerals> schema:name "Speciality and other industrialRocks and minerals" .
+<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/structuralClayProducts> schema:name "structural clay products" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aboveCarbonateCompensationDepthSetting> schema:name "above carbonate compensation depth setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/activeContinentalMarginSetting> schema:name "active continental margin setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aeolianProcessSetting> schema:name "aeolian process setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/algalFlatSetting> schema:name "algal flat setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/anoxicSetting> schema:name "anoxic setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aridOrSemiAridEnvironmentSetting> schema:name "arid or Semi Arid environment setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/backArcSetting> schema:name "back arc setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierIslandCoastlineSetting> schema:name "barrier island coastline setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/basinPlainSetting> schema:name "basin plain setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/belowCarbonateCompensationDepthSetting> schema:name "below carbonate compensation depth setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/biologicalReefSetting> schema:name "biological reef setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/blanketBog> schema:name "blanket bog" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/carbonateDominatedShorelineSetting> schema:name "carbonate dominated shoreline setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/coastalPlainSetting> schema:name "coastal plain setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/collisionalSetting> schema:name "collisional setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalBorderlandSetting> schema:name "continental borderland setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalRiftSetting> schema:name "continental rift setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalShelfSetting> schema:name "continental shelf setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaicSystemSetting> schema:name "deltaic system setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthInteriorSetting> schema:name "earth interior setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthSurfaceSetting> schema:name "earth surface setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/englacialSetting> schema:name "englacial setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/epicontinentalMarineSetting> schema:name "epicontinental marine setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarySetting> schema:name "estuary setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/fastSpreadingCenterSetting> schema:name "fast spreading center setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forearcSetting> schema:name "forearc setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forelandSetting> schema:name "foreland setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacialOutwashPlainSetting> schema:name "glacial outwash plain setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierLateralSetting> schema:name "glacier lateral setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierRelatedSetting> schema:name "glacier related setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierTerminusSetting> schema:name "glacier terminus setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/highPressureLowTemperatureEarthInteriorSetting> schema:name "high pressure low temperature Earth interior setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hillslopeSetting> schema:name "hillslope setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hotSpotSetting> schema:name "hot spot setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humidTemperateClimaticSetting> schema:name "humid temperate climatic setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humidTropicalClimaticSetting> schema:name "humid tropical climatic setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hypabyssalSetting> schema:name "hypabyssal setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intraplateTectonicSetting> schema:name "intraplate tectonic setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lacustrineSetting> schema:name "lacustrine setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lagoonalSetting> schema:name "lagoonal setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowEnergyShorelineSetting> schema:name "low energy shoreline setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowPressureHighTemperatureSetting> schema:name "low pressure high temperature setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerOceanicCrustalSetting> schema:name "lower oceanic-crustal setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marginalMarineSabkhaSetting> schema:name "marginal marine sabkha setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marineCarbonatePlatformSetting> schema:name "marine carbonate platform setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marineSetting> schema:name "marine setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/midOceanRidgeSetting> schema:name "mid ocean ridge setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleContinentalCrustSetting> schema:name "middle continental crust setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mudFlatSetting> schema:name "mud flat setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanHighlandSetting> schema:name "ocean highland setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanicPlateauSetting> schema:name "oceanic plateau setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/passiveContinentalMarginSetting> schema:name "passive continental margin setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/pedimentSetting> schema:name "pediment setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/piedmontSlopeSystemSetting> schema:name "piedmont slope system setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/plateMarginSetting> schema:name "plate margin setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/playaSetting> schema:name "playa setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/polarClimaticSetting> schema:name "polar climatic setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/proglacialSetting> schema:name "proglacial setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/riverPlainSystemSetting> schema:name "river plain system setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/rockyCoastSetting> schema:name "rocky coast setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/seamountSetting> schema:name "seamount setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/slopeRiseSetting> schema:name "slope-rise setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/slowSpreadingCenterSetting> schema:name "slow spreading center setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/strandplainSetting> schema:name "strandplain setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subaerialSetting> schema:name "subaerial setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subaqueousSetting> schema:name "subaqueous setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subductionZoneSetting> schema:name "subduction zone setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subglacialSetting> schema:name "subglacial setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/submarineFanSetting> schema:name "submarine fan setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/supraglacialSetting> schema:name "supraglacial setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/swampOrMarshSetting> schema:name "swamp or marsh setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/terrestrialSetting> schema:name "terrestrial setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalFlatSetting> schema:name "tidal flat setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalMarsh> schema:name "tidal marsh" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalSetting> schema:name "tidal setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/transformPlateBoundarySetting> schema:name "transform plate boundary setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/ultraHighPressureCrustalSetting> schema:name "ultra high pressure crustal setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperContinentalCrustalSetting> schema:name "upper continental crustal setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperOceanicCrustalSetting> schema:name "upper oceanic crustal setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/volcanicArcSetting> schema:name "volcanic arc setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/wetlandSetting> schema:name "wetland setting" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/accretion> schema:name "accretion" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/alteration> schema:name "alteration" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalPrecipitation> schema:name "biological precipitation" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalWeathering> schema:name "biological weathering" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/bolideImpact> schema:name "bolide impact" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalPrecipitation> schema:name "chemical precipitation" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalWeathering> schema:name "chemical weathering" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/cometaryImpact> schema:name "cometary impact" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/contactMetamorphism> schema:name "contact metamorphism" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalBreakup> schema:name "continental breakup" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalCollision> schema:name "continental collision" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/debrisFlowDeposition> schema:name "debris flow deposition" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/deepWaterOxygenDepletion> schema:name "deep water oxygen depletion" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/deformation> schema:name "deformation" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/deformationTwinning> schema:name "deformation twinning" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/deposition> schema:name "deposition" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/diageneticProcess> schema:name "diagenetic process" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/diffusionCreep> schema:name "diffusion creep" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/dislocationMetamorphism> schema:name "dislocation metamorphism" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolution> schema:name "dissolution" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolutionCreep> schema:name "dissolution creep" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/ductileFlow> schema:name "ductile flow" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/effusiveEruption> schema:name "effusive eruption" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/erosion> schema:name "erosion" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/eruption> schema:name "eruption" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/excavation> schema:name "excavation" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/extinction> schema:name "extinction" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/faulting> schema:name "faulting" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/folding> schema:name "folding" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/fracturing> schema:name "fracturing" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/frostShattering> schema:name "frost shattering" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/geologicProcess> schema:name "geologic process" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/geomagneticProcess> schema:name "geomagnetic process" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/grading> schema:name "grading" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/haloclasty> schema:name "haloclasty" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/hawaiianEruption> schema:name "hawaiian eruption" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/humanActivity> schema:name "human activity" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/hydration> schema:name "hydration" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/hydrolysis> schema:name "hydrolysis" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/iceErosion> schema:name "ice erosion" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/intrusion> schema:name "intrusion" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticCrystallisation> schema:name "magmatic crystallisation" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticProcess> schema:name "magmatic process" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/magneticFieldReversal> schema:name "magnetic field reversal" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/massWasting> schema:name "mass wasting" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/massWastingDeposition> schema:name "mass wasting deposition" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/materialTransportAndDeposition> schema:name "material transport and deposition" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/mechanicalDeposition> schema:name "mechanical deposition" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/melting> schema:name "melting" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/metamorphicProcess> schema:name "metamorphic process" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/meteoriteImpact> schema:name "meteorite impact" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/microfracturing> schema:name "microfracturing" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/obduction> schema:name "obduction" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/organicAccumulation> schema:name "organic accumulation" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/orogenicProcess> schema:name "orogenic process" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/oxidation> schema:name "oxidation" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/partialMelting> schema:name "partial melting" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/physicalWeathering> schema:name "physical weathering" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/plinianEruption> schema:name "plinian eruption" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/polarWander> schema:name "polar wander" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/pressureReleaseWeathering> schema:name "pressure release weathering" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/pyroclasticEruption> schema:name "pyroclastic eruption" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/rifting> schema:name "rifting" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelChange> schema:name "sea level change" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelFall> schema:name "sea level fall" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelRise> schema:name "sea level rise" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/sedimentaryProcess> schema:name "sedimentary process" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/shearing> schema:name "shearing" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/speciation> schema:name "speciation" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/spreading> schema:name "spreading" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/strombolianEruption> schema:name "strombolian eruption" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/subduction> schema:name "subduction" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/tectonicProcess> schema:name "tectonic process" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/thermalShockWeathering> schema:name "thermal shock weathering" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/transformFaulting> schema:name "transform faulting" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/turbidityCurrentDeposition> schema:name "turbidity current deposition" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/vulcanianEruption> schema:name "vulcanian eruption" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/waterErosion> schema:name "water erosion" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/weathering> schema:name "weathering" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/windErosion> schema:name "wind erosion" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/approximateResourceCalculation> schema:name "approximate calculation of the resource" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/augerDrilling> schema:name "auger drilling" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/coreDrilling> schema:name "core drilling" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedGeochemistry> schema:name "detailed geochemistry" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedGeophysics> schema:name "detailed geophysics" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedHeavyMineralSampling> schema:name "detailed heavy mineral sampling" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedSurfaceExploration> schema:name "detailed surface exploration" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/feasibilityStudyReport> schema:name "feasibility study and report" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/geologicalInterpretation> schema:name "geological interpretation" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/geostatisticalEstimates> schema:name "geostatistical estimates" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/miningPilot> schema:name "mining pilot" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/oreBeneficiationTest> schema:name "ore beneficiation tests" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/percussionDrilling> schema:name "percussion drilling" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalGeochemistry> schema:name "regional geochemistry" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalHeavyMineralSampling> schema:name "regional heavy mineral sampling" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalReconnaissance> schema:name "regional reconnaissance" .
+<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/subsurfaceExploration> schema:name "subsurface exploration" .
+<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/geochemicalAnomaly> schema:name "geochemical anomaly" .
+<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/geophysicalAnomaly> schema:name "geophysical anomaly" .
+<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/mineralReserveDefined> schema:name "mineral reserve defined" .
+<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/mineralResourceDefined> schema:name "mineral resource defined" .
+<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/negativeFeasibilityStudy> schema:name "negative feasibility study" .
+<http://inspire.ec.europa.eu/codelist/FaultTypeValue/dextralStrikeSlipFault> schema:name "dextral strike slip fault" .
+<http://inspire.ec.europa.eu/codelist/FaultTypeValue/fault> schema:name "fault" .
+<http://inspire.ec.europa.eu/codelist/FaultTypeValue/lowAngleNormalFault> schema:name "low-angle normal fault" .
+<http://inspire.ec.europa.eu/codelist/FaultTypeValue/reverseFault> schema:name "reverse fault" .
+<http://inspire.ec.europa.eu/codelist/FaultTypeValue/sinistralStrikeSlipFault> schema:name "sinistral strike slip fault" .
+<http://inspire.ec.europa.eu/codelist/FaultTypeValue/thrustFault> schema:name "thrust fault" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/allostratigraphicUnit> schema:name "allostratigraphic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/alterationUnit> schema:name "alteration unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/artificialGround> schema:name "artificial ground" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/biostratigraphicUnit> schema:name "biostratigraphic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/chronostratigraphicUnit> schema:name "chronostratigraphic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/deformationUnit> schema:name "deformation unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/excavationUnit> schema:name "excavation unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/geologicUnit> schema:name "geologic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/geophysicalUnit> schema:name "geophysical unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithodemicUnit> schema:name "lithodemic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithogeneticUnit> schema:name "lithogenetic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithologicUnit> schema:name "lithologic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithostratigraphicUnit> schema:name "lithostratigraphic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithotectonicUnit> schema:name "lithotectonic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/magnetostratigraphicUnit> schema:name "magnetostratigraphic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/massMovementUnit> schema:name "mass movement unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/pedostratigraphicUnit> schema:name "pedostratigraphic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/polarityChronostratigraphicUnit> schema:name "polarity chronostratigraphic unit" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/acidicIgneousMaterial> schema:name "acidic igneous material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/acidicIgneousRock> schema:name "acidic igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparGranite> schema:name "alkali feldspar granite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparRhyolite> schema:name "alkali feldspar rhyolite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparSyenite> schema:name "alkali feldspar syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparSyeniticRock> schema:name "alkali feldspar syenitic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparTrachyte> schema:name "alkali feldspar trachyte" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparTrachyticRock> schema:name "alkali feldspar trachytic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/amphibolite> schema:name "amphibolite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/andesite> schema:name "andesite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/anorthosite> schema:name "anorthosite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/anorthositicRock> schema:name "anorthositic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/anthraciteCoal> schema:name "anthracite coal" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicMaterial> schema:name "anthropogenic material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicUnconsolidatedMaterial> schema:name "anthropogenic unconsolidated material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/aphanite> schema:name "aphanite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/aplite> schema:name "aplite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/arenite> schema:name "arenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ashAndLapilli> schema:name "ash and lapilli" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ashBrecciaBombOrBlockTephra> schema:name "ash breccia, bomb, or block tephra" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ashTuffLapillistoneAndLapilliTuff> schema:name "ash tuff, lapillistone, and lapilli tuff" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/basalt> schema:name "basalt" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/basanite> schema:name "basanite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/basaniticFoidite> schema:name "basanitic foidite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/basicIgneousMaterial> schema:name "basic igneous material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/basicIgneousRock> schema:name "basic igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/bauxite> schema:name "bauxite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/biogenicSediment> schema:name "biogenic sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/biogenicSilicaSedimentaryRock> schema:name "biogenic silica sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/bituminousCoal> schema:name "bituminous coal" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/boninite> schema:name "boninite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/boulderGravelSizeSediment> schema:name "boulder gravel size sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/boundstone> schema:name "boundstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/breccia> schema:name "breccia" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/brecciaGougeSeries> schema:name "breccia-gouge series" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSediment> schema:name "calcareous carbonate sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSedimentaryMaterial> schema:name "calcareous carbonate sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSedimentaryRock> schema:name "calcareous carbonate sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateMud> schema:name "carbonate mud" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateMudstone> schema:name "carbonate mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateOoze> schema:name "carbonate ooze" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateRichMud> schema:name "carbonate rich mud" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateRichMudstone> schema:name "carbonate rich mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSediment> schema:name "carbonate sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSedimentaryMaterial> schema:name "carbonate sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSedimentaryRock> schema:name "carbonate sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateWackestone> schema:name "carbonate wackestone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonatite> schema:name "carbonatite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/cataclasiteSeries> schema:name "cataclasite series" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/chalk> schema:name "chalk" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/chemicalSedimentaryMaterial> schema:name "chemical sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/chloriteActinoliteEpidoteMetamorphicRock> schema:name "chlorite actinolite epidote metamorphic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSediment> schema:name "clastic sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSedimentaryMaterial> schema:name "clastic sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSedimentaryRock> schema:name "clastic sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clay> schema:name "clay" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/claystone> schema:name "claystone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/coal> schema:name "coal" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/cobbleGravelSizeSediment> schema:name "cobble gravel size sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/compositeGenesisMaterial> schema:name "composite genesis material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/compositeGenesisRock> schema:name "composite genesis rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/compoundMaterial> schema:name "compound material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/crystallineCarbonate> schema:name "crystalline carbonate" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dacite> schema:name "dacite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/diamictite> schema:name "diamictite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/diamicton> schema:name "diamicton" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/diorite> schema:name "diorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dioriticRock> schema:name "dioritic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dioritoid> schema:name "dioritoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/doleriticRock> schema:name "doleritic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticOrMagnesianSedimentaryMaterial> schema:name "dolomitic or magnesian sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticOrMagnesianSedimentaryRock> schema:name "dolomitic or magnesian sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticSediment> schema:name "dolomitic sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/duricrust> schema:name "duricrust" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/eclogite> schema:name "eclogite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/evaporite> schema:name "evaporite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/exoticAlkalineRock> schema:name "exotic alkaline rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/exoticCompositionIgneousRock> schema:name "exotic composition igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/exoticEvaporite> schema:name "exotic evaporite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/faultRelatedMaterial> schema:name "fault-related material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/fineGrainedIgneousRock> schema:name "fine grained igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAlkaliFeldsparSyenite> schema:name "foid bearing alkali feldspar syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAlkaliFeldsparTrachyte> schema:name "foid bearing alkali feldspar trachyte" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAnorthosite> schema:name "foid bearing anorthosite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingDiorite> schema:name "foid bearing diorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingGabbro> schema:name "foid bearing gabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingLatite> schema:name "foid bearing latite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzodiorite> schema:name "foid bearing monzodiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzogabbro> schema:name "foid bearing monzogabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzonite> schema:name "foid bearing monzonite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingSyenite> schema:name "foid bearing syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingTrachyte> schema:name "foid bearing trachyte" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidDiorite> schema:name "foid diorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidDioritoid> schema:name "foid dioritoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidGabbro> schema:name "foid gabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidGabbroid> schema:name "foid gabbroid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzodiorite> schema:name "foid monzodiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzogabbro> schema:name "foid monzogabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzosyenite> schema:name "foid monzosyenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidSyenite> schema:name "foid syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidSyenitoid> schema:name "foid syenitoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidite> schema:name "foidite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foiditoid> schema:name "foiditoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidolite> schema:name "foidolite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foliatedMetamorphicRock> schema:name "foliated metamorphic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/fragmentalIgneousMaterial> schema:name "fragmental igneous material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/fragmentalIgneousRock> schema:name "fragmental igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/framestone> schema:name "framestone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/gabbro> schema:name "gabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/gabbroicRock> schema:name "gabbroic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/gabbroid> schema:name "gabbroid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/genericConglomerate> schema:name "generic conglomerate" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/genericMudstone> schema:name "generic mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/genericSandstone> schema:name "generic sandstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/glassRichIgneousRock> schema:name "glass rich igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/glassyIgneousRock> schema:name "glassy igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/glaucophaneLawsoniteEpidoteMetamorphicRock> schema:name "glaucophane lawsonite epidote metamorphic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/gneiss> schema:name "gneiss" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/grainstone> schema:name "grainstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/granite> schema:name "granite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/granitoid> schema:name "granitoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/granodiorite> schema:name "granodiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/granofels> schema:name "granofels" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/granulite> schema:name "granulite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/gravel> schema:name "gravel" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/gravelSizeSediment> schema:name "gravel size sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/hornblendite> schema:name "hornblendite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/hornfels> schema:name "hornfels" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/hybridSediment> schema:name "hybrid sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/hybridSedimentaryRock> schema:name "hybrid sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/igneousMaterial> schema:name "igneous material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/igneousRock> schema:name "igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/impactGeneratedMaterial> schema:name "impact generated material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/impureCalcareousCarbonateSediment> schema:name "impure calcareous carbonate sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/impureCarbonateSediment> schema:name "impure carbonate sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/impureCarbonateSedimentaryRock> schema:name "impure carbonate sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/impureDolomiticSediment> schema:name "impure dolomitic sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/impureLimestone> schema:name "impure limestone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/intermediateCompositionIgneousMaterial> schema:name "intermediate composition igneous material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/intermediateCompositionIgneousRock> schema:name "intermediate composition igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSediment> schema:name "iron rich sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSedimentaryMaterial> schema:name "iron rich sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSedimentaryRock> schema:name "iron rich sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/kalsiliticAndMeliliticRock> schema:name "kalsilitic and melilitic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/komatiiticRock> schema:name "komatiitic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/latite> schema:name "latite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/latiticRock> schema:name "latitic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/lignite> schema:name "lignite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/limestone> schema:name "limestone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/marble> schema:name "marble" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/materialFormedInSurficialEnvironment> schema:name "material formed in surficial environment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/metamorphicRock> schema:name "metamorphic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/metasomaticRock> schema:name "metasomatic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/micaSchist> schema:name "mica schist" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/migmatite> schema:name "migmatite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzodiorite> schema:name "monzodiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzodioriticRock> schema:name "monzodioritic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzogabbro> schema:name "monzogabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzogabbroicRock> schema:name "monzogabbroic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzogranite> schema:name "monzogranite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzonite> schema:name "monzonite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzoniticRock> schema:name "monzonitic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/mud> schema:name "mud" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/mudSizeSediment> schema:name "mud size sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/myloniticRock> schema:name "mylonitic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/naturalUnconsolidatedMaterial> schema:name "natural unconsolidated material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSediment> schema:name "non-clastic siliceous sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSedimentaryMaterial> schema:name "non-clastic siliceous sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSedimentaryRock> schema:name "non-clastic siliceous sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ooze> schema:name "ooze" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/organicBearingMudstone> schema:name "organic bearing mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSediment> schema:name "organic rich sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSedimentaryMaterial> schema:name "organic rich sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSedimentaryRock> schema:name "organic rich sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/orthogneiss> schema:name "orthogneiss" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/packstone> schema:name "packstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/paragneiss> schema:name "paragneiss" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/peat> schema:name "peat" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pebbleGravelSizeSediment> schema:name "pebble gravel size sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pegmatite> schema:name "pegmatite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/peridotite> schema:name "peridotite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phaneriticIgneousRock> schema:name "phaneritic igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticBasanite> schema:name "phonolitic basanite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticFoidite> schema:name "phonolitic foidite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticTephrite> schema:name "phonolitic tephrite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phonolitoid> schema:name "phonolitoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phosphateRichSediment> schema:name "phosphate rich sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phosphateRichSedimentaryMaterial> schema:name "phosphate rich sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phosphorite> schema:name "phosphorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phyllite> schema:name "phyllite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phyllonite> schema:name "phyllonite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/porphyry> schema:name "porphyry" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pureCalcareousCarbonateSediment> schema:name "pure calcareous carbonate sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateMudstone> schema:name "pure carbonate mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateSediment> schema:name "pure carbonate sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateSedimentaryRock> schema:name "pure carbonate sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pureDolomiticSediment> schema:name "pure dolomitic sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pyroclasticMaterial> schema:name "pyroclastic material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pyroclasticRock> schema:name "pyroclastic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pyroxenite> schema:name "pyroxenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAlkaliFeldsparSyenite> schema:name "quartz alkali feldspar syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAlkaliFeldsparTrachyte> schema:name "quartz alkali feldspar trachyte" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAnorthosite> schema:name "quartz anorthosite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzDiorite> schema:name "quartz diorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzGabbro> schema:name "quartz gabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzLatite> schema:name "quartz latite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzodiorite> schema:name "quartz monzodiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzogabbro> schema:name "quartz monzogabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzonite> schema:name "quartz monzonite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzRichIgneousRock> schema:name "quartz rich igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzSyenite> schema:name "quartz syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzTrachyte> schema:name "quartz trachyte" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzite> schema:name "quartzite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/residualMaterial> schema:name "residual material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rhyolite> schema:name "rhyolite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rhyolitoid> schema:name "rhyolitoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rock> schema:name "rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rockSalt> schema:name "rock salt" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/sand> schema:name "sand" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/sandSizeSediment> schema:name "sand size sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/sapropel> schema:name "sapropel" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/schist> schema:name "schist" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/sediment> schema:name "sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/sedimentaryMaterial> schema:name "sedimentary material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/sedimentaryRock> schema:name "sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/serpentinite> schema:name "serpentinite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/shale> schema:name "shale" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/silicateMud> schema:name "silicate mud" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/silicateMudstone> schema:name "silicate mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/siliceousOoze> schema:name "siliceous ooze" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/silt> schema:name "silt" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/siltstone> schema:name "siltstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/skarn> schema:name "skarn" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/slate> schema:name "slate" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/spilite> schema:name "spilite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/syenite> schema:name "syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/syeniticRock> schema:name "syenitic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/syenitoid> schema:name "syenitoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/syenogranite> schema:name "syenogranite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tephra> schema:name "tephra" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tephrite> schema:name "tephrite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tephriticFoidite> schema:name "tephritic foidite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tephriticPhonolite> schema:name "tephritic phonolite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tephritoid> schema:name "tephritoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tholeiiticBasalt> schema:name "tholeiitic basalt" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tonalite> schema:name "tonalite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/trachyte> schema:name "trachyte" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/trachyticRock> schema:name "trachytic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/trachytoid> schema:name "trachytoid" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/travertine> schema:name "travertine" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tuffBrecciaAgglomerateOrPyroclasticBreccia> schema:name "tuff-breccia, agglomerate, or pyroclastic breccia" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tuffite> schema:name "tuffite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ultrabasicIgneousRock> schema:name "ultrabasic igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ultramaficIgneousRock> schema:name "ultramafic igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/unconsolidatedMaterial> schema:name "unconsolidated material" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/wacke> schema:name "wacke" .
+<http://inspire.ec.europa.eu/codelist/MappingFrameValue/baseOfQuaternary> schema:name "base of quaternary" .
+<http://inspire.ec.europa.eu/codelist/MappingFrameValue/surfaceGeology> schema:name "surface geology" .
+<http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBasement> schema:name "top of basement" .
+<http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBedrock> schema:name "top of bedrock" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/abandoned> schema:name "abandoned" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/careAndMaintenance> schema:name "care and maintenance" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/closed> schema:name "closed" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/construction> schema:name "under construction" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/feasibility> schema:name "feasibility" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/historic> schema:name "historic" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/notOperating> schema:name "not operating" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/operating> schema:name "operating" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/operatingContinuously> schema:name "operating continuously" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/operatingIntermittently> schema:name "operating intermittently" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/pendingApproval> schema:name "pending approval" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/retention> schema:name "retention" .
+<http://inspire.ec.europa.eu/codelist/MineStatusValue/underDevelopment> schema:name "under development" .
+<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/field> schema:name "field" .
+<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/mineralizedZone> schema:name "mineralized zone" .
+<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/occurrence> schema:name "occurrence" .
+<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/project> schema:name "project" .
+<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/prospect> schema:name "prospect" .
+<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/province> schema:name "province" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/boreholeMining> schema:name "borehole mining" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/dredgeMining> schema:name "dredge mining" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/hydraulicMining> schema:name "hydraulic mining" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/quarry> schema:name "quarry" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subaqueousRemoteOperatedVehicle> schema:name "subaqueous remote operated vehicle" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subaqueousVacuumPumping> schema:name "subaqueous vacuum pumping" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subsurfaceMining> schema:name "subsurface mining" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/surfaceMining> schema:name "surface mining" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/underground> schema:name "underground" .
+<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/underwaterMining> schema:name "underwater mining" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/adsorption> schema:name "Adsorption" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/agglomeration> schema:name "Agglomeration" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/automaticSorting> schema:name "Automatic sorting" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/burning> schema:name "Burning" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/calcining> schema:name "Calcining" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/cementation> schema:name "Cementation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/centrifugalGravitySeparation> schema:name "centrifugal gravity separation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/chemicalTreatment> schema:name "chemical treatment" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/coagulation> schema:name "Coagulation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/comminution> schema:name "Comminution" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/crystallization> schema:name "Crystallization" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/distillation> schema:name "Distillation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/eddyCurrentSeparator> schema:name "eddy current separator" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/electrolysis> schema:name "Electrolysis" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/electrostaticSeparation> schema:name "Electrostatic separation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/evaporation> schema:name "Evaporation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/flocculation> schema:name "Flocculation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/flotation> schema:name "Flotation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/gravimetricSorting> schema:name "Gravimetric methods (density, shape)" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/gravitySeparationTable> schema:name "gravity separation table" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/heavyMediumSeparation> schema:name "heavy medium separation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/incineration> schema:name "Incineration" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/leaching> schema:name "Leaching" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/liquidSolidSeparation> schema:name "Liquid-solid separation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/manualSorting> schema:name "Manual sorting (handpicking)" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/particleSizing> schema:name "Particle sizing" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/physicalChemicalTreatment> schema:name "physical chemical treatment" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/physicalTreatment> schema:name "physical treatment" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/precipitation> schema:name "Precipitation" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/pyrometallurgy> schema:name "Pyrometallurgy" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/roasting> schema:name "Roasting" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/sluiceConcentration> schema:name "sluice concentration" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/smelting> schema:name "Smelting" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/solventExtraction> schema:name "Solvent extraction" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/sorting> schema:name "sorting" .
+<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/stratificationJig> schema:name "Stratification (jig)" .
+<http://inspire.ec.europa.eu/codelist/ReserveCategoryValue/probableOreReserves> schema:name "probable ore reserves" .
+<http://inspire.ec.europa.eu/codelist/ReserveCategoryValue/provedAndProbableOreReserves> schema:name "proved and probable ore reserves" .
+<http://inspire.ec.europa.eu/codelist/ReserveCategoryValue/provedOreReserves> schema:name "proved ore reserves" .
+<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/indicatedAndInferredMineralResource> schema:name "indicated and inferred mineral resource" .
+<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/indicatedMineralResource> schema:name "indicated mineral resource" .
+<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/inferredMineralResource> schema:name "inferred mineral resource" .
+<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/measuredAndIndicatedMineralResource> schema:name "measured and indicated mineral resource" .
+<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/measuredIndicatedAndInferredMineralResource> schema:name "measured, indicated and inferred mineral resource" .
+<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/measuredMineralResource> schema:name "measured mineral resource" .
 
-<https://prez.dev/Manifest> rdfs:label "Manifest" .
-<https://prez.dev/ManifestResourceRoles/CatalogueAndResourceModel> rdfs:label "Catalogue And Resource Model" .
-<https://prez.dev/ManifestResourceRoles/CatalogueData> rdfs:label "Catalogue Data" .
-<https://prez.dev/ManifestResourceRoles/CompleteCatalogueAndResourceLabels> rdfs:label "Complete Catalogue And Resource Labels" .
-<https://prez.dev/ManifestResourceRoles/ResourceData> rdfs:label "Resource Data" .
-
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/CIMstandards> rdfs:label "CIM standards" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/CRIRSCOCode> rdfs:label "CRIRSCO Code" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/IIMChCode> rdfs:label "IIMCh Code" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/IMMReportingCode> rdfs:label "IMM Reporting Code" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/JORCcode> rdfs:label "JORC code" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/NI43-101> rdfs:label "NI 43-101" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/PERCCode> rdfs:label "PERC Code" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/SAMRECcode> rdfs:label "SAMREC code" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/SECGuide> rdfs:label "SEC Guide" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/SMEGuide> rdfs:label "SME Guide" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/UNFCCode> rdfs:label "UNFC Code" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/peruvianCode> rdfs:label "Peruvian Code" .
-<http://inspire.ec.europa.eu/codelist/ClassificationMethodUsedValue/russianCode> rdfs:label "Russian Code" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/HREE> rdfs:label "HREE" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/LREE> rdfs:label "LREE" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/agate> rdfs:label "agate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/aggregate> rdfs:label "aggregate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/alumina> rdfs:label "alumina" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/aluminium> rdfs:label "aluminium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/aluminosilicate> rdfs:label "aluminosilicate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/alunite> rdfs:label "alunite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/amazonite> rdfs:label "amazonite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/amber> rdfs:label "amber" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/amethyst> rdfs:label "amethyst" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/andalusite> rdfs:label "andalusite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/anhydrite> rdfs:label "anhydrite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/anthophyllite> rdfs:label "anthophyllite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/anthracite> rdfs:label "anthracite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/antimony> rdfs:label "antimony" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/apatite> rdfs:label "apatite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/apatiteGemstone> rdfs:label "apatite-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/aquamarine> rdfs:label "aquamarine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/arsenic> rdfs:label "arsenic" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/asbestos-serpentine> rdfs:label "asbestos-serpentine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/asbestos> rdfs:label "asbestos" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/asbestosAmphibole> rdfs:label "asbestos-amphibole" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/asphalt> rdfs:label "asphalt" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/barium> rdfs:label "barium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/baryte> rdfs:label "baryte" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/baseMetal> rdfs:label "base metal" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bauxite> rdfs:label "bauxite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bentonite> rdfs:label "bentonite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/beryl> rdfs:label "beryl" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/beryllium> rdfs:label "beryllium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bismuth> rdfs:label "bismuth" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/blackCoal> rdfs:label "black coal" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/borate> rdfs:label "borate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/boron> rdfs:label "boron" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/brickClay> rdfs:label "brick clay" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/bromine> rdfs:label "bromine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/brownCoal> rdfs:label "brown coal" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/calcite> rdfs:label "calcite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/carbonaceousMaterial> rdfs:label "carbonaceousMaterial" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/carnallite> rdfs:label "carnallite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/carnelian> rdfs:label "carnelian" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/cassiteriteGemstone> rdfs:label "cassiterite-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/cesium> rdfs:label "cesium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chalcedony> rdfs:label "chalcedony" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chemicalCompoundProduct> rdfs:label "chemical compound product" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chemicalOxideProduct> rdfs:label "chemical oxide product" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chert> rdfs:label "chert" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chlorite> rdfs:label "chlorite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chrome> rdfs:label "chrome" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chromite> rdfs:label "chromite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chromium> rdfs:label "chromium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chrysoberyl> rdfs:label "chrysoberyl" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chrysoprase> rdfs:label "chrysoprase" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/chrysotile> rdfs:label "chrysotile" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/citrine> rdfs:label "citrine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/clay> rdfs:label "clay" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/coalBedMethane> rdfs:label "coal bed methane" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/cobalt> rdfs:label "cobalt" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/copper> rdfs:label "copper" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/corundum> rdfs:label "corundum" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/corundumGemstone> rdfs:label "corundum-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/crocidolite> rdfs:label "crocidolite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/crushedRock> rdfs:label "crushed rock" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/cryolite> rdfs:label "cryolite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/diamond> rdfs:label "diamond" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/diamondGemstone> rdfs:label "diamond-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/diatomite> rdfs:label "diatomite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/dimensionStone> rdfs:label "dimension stone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/diopsideEnstatite> rdfs:label "diopside-enstatite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/dioptase> rdfs:label "dioptase" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/directShippingOre> rdfs:label "direct shipping ore" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/directUseCcommodity> rdfs:label "direct use commodity" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/dumortierite> rdfs:label "dumortierite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/dysprosium> rdfs:label "dysprosium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/emerald> rdfs:label "emerald" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/epsomite> rdfs:label "epsomite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/euclase> rdfs:label "euclase" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/europium> rdfs:label "europium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/evaporite> rdfs:label "evaporite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/feldspar> rdfs:label "feldspar" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/feldsparGemstone> rdfs:label "feldspar-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ferrousMetal> rdfs:label "ferrous metal" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/fluorine> rdfs:label "fluorine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/fluorite> rdfs:label "fluorite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/foundrySand> rdfs:label "foundry sand" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/fracSand> rdfs:label "frac sand" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/fullersEarth> rdfs:label "Fullers earth" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gadolinium> rdfs:label "gadolinium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/garnet> rdfs:label "garnet" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/garnetgemstone> rdfs:label "garnet-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gasHydrate> rdfs:label "gas hydrate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gaseousHydrocarbons> rdfs:label "gaseous hydrocarbons" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gemstone> rdfs:label "gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/germanium> rdfs:label "germanium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/glauconite> rdfs:label "glauconite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gold> rdfs:label "gold" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/graphite> rdfs:label "graphite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/greenstone> rdfs:label "greenstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/gypsum> rdfs:label "gypsum" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/hafnium> rdfs:label "hafnium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/halloysite> rdfs:label "halloysite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/heliodor> rdfs:label "heliodor" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/hematite> rdfs:label "hematite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/hematiteGemstone> rdfs:label "hematite-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/hematiteOre> rdfs:label "hematite ore" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/holmium> rdfs:label "holmium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ilmenite> rdfs:label "ilmenite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/indium> rdfs:label "indium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/industrialMineral> rdfs:label "industrialMineral" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/industrialRock> rdfs:label "industrialRock" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/iodine> rdfs:label "iodine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/iron> rdfs:label "iron" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ironOre> rdfs:label "iron ore" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ironOxide> rdfs:label "iron oxide" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/jade> rdfs:label "jade" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/jarosite> rdfs:label "jarosite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kaolin> rdfs:label "kaolin" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kornerupine> rdfs:label "kornerupine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kyanite> rdfs:label "kyanite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/kyaniteGemstone> rdfs:label "kyanite-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lanthanum> rdfs:label "lanthanum" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/laterite> rdfs:label "laterite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lazulite> rdfs:label "lazulite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lead> rdfs:label "lead" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/leucoxene> rdfs:label "leucoxene" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lime> rdfs:label "lime" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/limestone> rdfs:label "limestone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/liquidHydrocarbons> rdfs:label "liquidHydrocarbons" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lithium> rdfs:label "lithium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lithiumOxide> rdfs:label "lithium oxide" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/lutetium> rdfs:label "lutetium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnesia> rdfs:label "magnesia" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnesium> rdfs:label "magnesium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnetite> rdfs:label "magnetite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/magnetiteOre> rdfs:label "magnetite ore" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/malachite> rdfs:label "malachite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/manganese> rdfs:label "manganese" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/manganeseOre> rdfs:label "manganese ore" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/marble> rdfs:label "marble" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/mercury> rdfs:label "mercury" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/metal> rdfs:label "metal" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/metalloid> rdfs:label "metalloid" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/mica> rdfs:label "mica" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/miscellaneousDimensionStones> rdfs:label "miscellaneous dimension stones" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/molybdenum> rdfs:label "molybdenum" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/monazite> rdfs:label "monazite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/moonstone> rdfs:label "moonstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/morganite> rdfs:label "morganite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/mossAgate> rdfs:label "mossAgate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/naturalSecondaryAggregate> rdfs:label "natural secondary aggregate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/nephelineSyenite> rdfs:label "nephelineSyenite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/nickel> rdfs:label "nickel" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/niobium> rdfs:label "niobium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/niobiumPentoxide> rdfs:label "niobiumPentoxide" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/nitrate> rdfs:label "nitrate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/nonMetal> rdfs:label "non metal" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/obsidian> rdfs:label "obsidian" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ochre> rdfs:label "ochre" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/oil> rdfs:label "oil" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/oilShale> rdfs:label "oil shale" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/olivine> rdfs:label "olivine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/olivineGemstone> rdfs:label "olivine-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/onyx> rdfs:label "onyx" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/opal> rdfs:label "opal" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/organicMaterial> rdfs:label "organicMaterial" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/osmium> rdfs:label "osmium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/palladium> rdfs:label "palladium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/palygorskite> rdfs:label "palygorskite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/peat> rdfs:label "peat" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/phenakite> rdfs:label "phenakite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/phosphateRock> rdfs:label "phosphateRock" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/phosphorous> rdfs:label "phosphorous" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/phosphorousPentoxide> rdfs:label "phosphorousPentoxide" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/platinum> rdfs:label "platinum" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/platinumGroupMetal> rdfs:label "platinum group metal" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/potash> rdfs:label "potash" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/potassium> rdfs:label "potassium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pozzolan> rdfs:label "pozzolan" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/praseodymium> rdfs:label "praseodymium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/preciousMetal> rdfs:label "precious metal" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/prehnite> rdfs:label "prehnite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/primaryAggregate> rdfs:label "primary aggregate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/producedCommodity> rdfs:label "produced commodity" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/promethium> rdfs:label "promethium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pumice> rdfs:label "pumice" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pyrite> rdfs:label "pyrite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pyrophyllite> rdfs:label "pyrophyllite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/quartz> rdfs:label "quartz" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/quartzGemstone> rdfs:label "quartz-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rareEarthElement> rdfs:label "rare earth element" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rareEarthOxide> rdfs:label "rare earth oxide" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/recycledAggregate> rdfs:label "recycled aggregate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/reservoirGas> rdfs:label "reservoir gas" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rhenium> rdfs:label "rhenium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rhodium> rdfs:label "rhodium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rhodonite> rdfs:label "rhodonite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/riprap> rdfs:label "riprap" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/roseQuartz> rdfs:label "rose quartz" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rubidium> rdfs:label "rubidium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ruby> rdfs:label "ruby" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ruthenium> rdfs:label "ruthenium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/rutile> rdfs:label "rutile" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/salt> rdfs:label "salt" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/samarium> rdfs:label "samarium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sand> rdfs:label "sand" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sandAndGravel> rdfs:label "sand and gravel" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sandstone> rdfs:label "sandstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sapphirine> rdfs:label "sapphirine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/scandium> rdfs:label "scandium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/scapolite> rdfs:label "scapolite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/selenium> rdfs:label "selenium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sepiolite> rdfs:label "sepiolite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sericite> rdfs:label "sericite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/serpentine> rdfs:label "serpentine" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/shellGrit> rdfs:label "shell grit" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/silicaGemstone> rdfs:label "silica-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/silicon> rdfs:label "silicon" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sillimanite> rdfs:label "sillimanite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/silver> rdfs:label "silver" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sinhalite> rdfs:label "sinhalite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/slate> rdfs:label "slate" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/smokeyQuartz> rdfs:label "smokey quartz" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sodaAsh> rdfs:label "soda ash" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sodalite> rdfs:label "sodalite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spectrolite> rdfs:label "spectrolite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spinel> rdfs:label "spinel" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spinelGemstone> rdfs:label "spinel-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spodumene> rdfs:label "spodumene" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/spongolite> rdfs:label "spongolite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/staurolite> rdfs:label "staurolite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/strontianite> rdfs:label "strontianite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/strontium> rdfs:label "strontium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sulphur> rdfs:label "sulphur" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/sylvite> rdfs:label "sylvite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/talc> rdfs:label "talc" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tantalum> rdfs:label "tantalum" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tantalumPentoxide> rdfs:label "tantalumPentoxide" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tanzanite> rdfs:label "tanzanite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tarSand> rdfs:label "tar sand" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tellurium> rdfs:label "tellurium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/thallium> rdfs:label "thallium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/thenardite> rdfs:label "thenardite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/thorium> rdfs:label "thorium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/thulium> rdfs:label "thulium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tin> rdfs:label "tin" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/titanium> rdfs:label "titanium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/topaz> rdfs:label "topaz" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tourmaline> rdfs:label "tourmaline" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tremoliteActinolite> rdfs:label "tremolite-actinolite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tsavorite> rdfs:label "tsavorite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/tungsten> rdfs:label "tungsten" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/turquoise> rdfs:label "turquoise" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/uranium> rdfs:label "uranium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/uraniumOxide> rdfs:label "uranium oxide" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/vanadium> rdfs:label "vanadium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/vanadiumPentoxide> rdfs:label "vanadium pentoxide" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/variscite> rdfs:label "variscite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/vermiculite> rdfs:label "vermiculite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/vesuvianite> rdfs:label "vesuvianite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/whiteFiringClay> rdfs:label "white-firing clay" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/wollastonite> rdfs:label "wollastonite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/xenotimeGemstone> rdfs:label "xenotime-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/ytterbium> rdfs:label "ytterbium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/yttrium> rdfs:label "yttrium" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/yttriumOxide> rdfs:label "yttrium oxide" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zeolite> rdfs:label "zeolite" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zinc> rdfs:label "zinc" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zirconGemstone> rdfs:label "zircon-gemstone" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zirconia> rdfs:label "zirconia" .
-<http://inspire.ec.europa.eu/codelist/CommodityCodeValue/zirconium> rdfs:label "zirconium" .
-<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/facies> rdfs:label "facies" .
-<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/inclusion> rdfs:label "inclusion" .
-<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/lithosome> rdfs:label "lithosome" .
-<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/onlyPart> rdfs:label "only part" .
-<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/partOf> rdfs:label "part of" .
-<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/stratigraphicPart> rdfs:label "stratigraphic part" .
-<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/unspecifiedPartRole> rdfs:label "unspecified part role" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/abrasiveMinerals> rdfs:label "abrasive minerals" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/agriculturaLime> rdfs:label "agricultural lime" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/buildingAndDimensionStone> rdfs:label "building and dimension stone" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/cementMakingMaterial> rdfs:label "cement-making material" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/chemical> rdfs:label "Chemical" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/construction> rdfs:label "construction" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/constructionAggregates> rdfs:label "construction aggregates" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/drillingMinerals> rdfs:label "drilling minerals" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/energyMinerals> rdfs:label "energy minerals" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/engineeringClay> rdfs:label "engineering clay" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/fertilizer> rdfs:label "fertilizer" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/fossilFuelUse> rdfs:label "fossil fuel use" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/foundryMinerals> rdfs:label "foundry minerals" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/glassManufacturingMinerals> rdfs:label "glass manufacturing minerals" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/horticultural> rdfs:label "horticultural" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/industrialMinerals> rdfs:label "industrialMinerals" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/industrialProductTreatment> rdfs:label "industrial product treatment" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/landscaping> rdfs:label "landscaping" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/metalIndustry> rdfs:label "metal industry" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/mineralSpecimens> rdfs:label "mineral specimens" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/nuclearEnergySource> rdfs:label "nuclear energy source" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/plasterAndPlasterBoard> rdfs:label "plaster and plaster board" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/specialityAndOtherIndustrialRocksAndMinerals> rdfs:label "Speciality and other industrialRocks and minerals" .
-<http://inspire.ec.europa.eu/codelist/EndusePotentialValue/structuralClayProducts> rdfs:label "structural clay products" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aboveCarbonateCompensationDepthSetting> rdfs:label "above carbonate compensation depth setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/activeContinentalMarginSetting> rdfs:label "active continental margin setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aeolianProcessSetting> rdfs:label "aeolian process setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/algalFlatSetting> rdfs:label "algal flat setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/anoxicSetting> rdfs:label "anoxic setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aridOrSemiAridEnvironmentSetting> rdfs:label "arid or Semi Arid environment setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/backArcSetting> rdfs:label "back arc setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierIslandCoastlineSetting> rdfs:label "barrier island coastline setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/basinPlainSetting> rdfs:label "basin plain setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/belowCarbonateCompensationDepthSetting> rdfs:label "below carbonate compensation depth setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/biologicalReefSetting> rdfs:label "biological reef setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/blanketBog> rdfs:label "blanket bog" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/carbonateDominatedShorelineSetting> rdfs:label "carbonate dominated shoreline setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/coastalPlainSetting> rdfs:label "coastal plain setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/collisionalSetting> rdfs:label "collisional setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalBorderlandSetting> rdfs:label "continental borderland setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalRiftSetting> rdfs:label "continental rift setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalShelfSetting> rdfs:label "continental shelf setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaicSystemSetting> rdfs:label "deltaic system setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthInteriorSetting> rdfs:label "earth interior setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthSurfaceSetting> rdfs:label "earth surface setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/englacialSetting> rdfs:label "englacial setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/epicontinentalMarineSetting> rdfs:label "epicontinental marine setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarySetting> rdfs:label "estuary setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/fastSpreadingCenterSetting> rdfs:label "fast spreading center setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forearcSetting> rdfs:label "forearc setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forelandSetting> rdfs:label "foreland setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacialOutwashPlainSetting> rdfs:label "glacial outwash plain setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierLateralSetting> rdfs:label "glacier lateral setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierRelatedSetting> rdfs:label "glacier related setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierTerminusSetting> rdfs:label "glacier terminus setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/highPressureLowTemperatureEarthInteriorSetting> rdfs:label "high pressure low temperature Earth interior setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hillslopeSetting> rdfs:label "hillslope setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hotSpotSetting> rdfs:label "hot spot setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humidTemperateClimaticSetting> rdfs:label "humid temperate climatic setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humidTropicalClimaticSetting> rdfs:label "humid tropical climatic setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hypabyssalSetting> rdfs:label "hypabyssal setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intraplateTectonicSetting> rdfs:label "intraplate tectonic setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lacustrineSetting> rdfs:label "lacustrine setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lagoonalSetting> rdfs:label "lagoonal setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowEnergyShorelineSetting> rdfs:label "low energy shoreline setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowPressureHighTemperatureSetting> rdfs:label "low pressure high temperature setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerOceanicCrustalSetting> rdfs:label "lower oceanic-crustal setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marginalMarineSabkhaSetting> rdfs:label "marginal marine sabkha setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marineCarbonatePlatformSetting> rdfs:label "marine carbonate platform setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marineSetting> rdfs:label "marine setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/midOceanRidgeSetting> rdfs:label "mid ocean ridge setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleContinentalCrustSetting> rdfs:label "middle continental crust setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mudFlatSetting> rdfs:label "mud flat setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanHighlandSetting> rdfs:label "ocean highland setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanicPlateauSetting> rdfs:label "oceanic plateau setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/passiveContinentalMarginSetting> rdfs:label "passive continental margin setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/pedimentSetting> rdfs:label "pediment setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/piedmontSlopeSystemSetting> rdfs:label "piedmont slope system setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/plateMarginSetting> rdfs:label "plate margin setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/playaSetting> rdfs:label "playa setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/polarClimaticSetting> rdfs:label "polar climatic setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/proglacialSetting> rdfs:label "proglacial setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/riverPlainSystemSetting> rdfs:label "river plain system setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/rockyCoastSetting> rdfs:label "rocky coast setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/seamountSetting> rdfs:label "seamount setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/slopeRiseSetting> rdfs:label "slope-rise setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/slowSpreadingCenterSetting> rdfs:label "slow spreading center setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/strandplainSetting> rdfs:label "strandplain setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subaerialSetting> rdfs:label "subaerial setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subaqueousSetting> rdfs:label "subaqueous setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subductionZoneSetting> rdfs:label "subduction zone setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subglacialSetting> rdfs:label "subglacial setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/submarineFanSetting> rdfs:label "submarine fan setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/supraglacialSetting> rdfs:label "supraglacial setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/swampOrMarshSetting> rdfs:label "swamp or marsh setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/terrestrialSetting> rdfs:label "terrestrial setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalFlatSetting> rdfs:label "tidal flat setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalMarsh> rdfs:label "tidal marsh" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalSetting> rdfs:label "tidal setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/transformPlateBoundarySetting> rdfs:label "transform plate boundary setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/ultraHighPressureCrustalSetting> rdfs:label "ultra high pressure crustal setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperContinentalCrustalSetting> rdfs:label "upper continental crustal setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperOceanicCrustalSetting> rdfs:label "upper oceanic crustal setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/volcanicArcSetting> rdfs:label "volcanic arc setting" .
-<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/wetlandSetting> rdfs:label "wetland setting" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/accretion> rdfs:label "accretion" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/alteration> rdfs:label "alteration" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalPrecipitation> rdfs:label "biological precipitation" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalWeathering> rdfs:label "biological weathering" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/bolideImpact> rdfs:label "bolide impact" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalPrecipitation> rdfs:label "chemical precipitation" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalWeathering> rdfs:label "chemical weathering" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/cometaryImpact> rdfs:label "cometary impact" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/contactMetamorphism> rdfs:label "contact metamorphism" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalBreakup> rdfs:label "continental breakup" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalCollision> rdfs:label "continental collision" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/debrisFlowDeposition> rdfs:label "debris flow deposition" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/deepWaterOxygenDepletion> rdfs:label "deep water oxygen depletion" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/deformation> rdfs:label "deformation" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/deformationTwinning> rdfs:label "deformation twinning" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/deposition> rdfs:label "deposition" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/diageneticProcess> rdfs:label "diagenetic process" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/diffusionCreep> rdfs:label "diffusion creep" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/dislocationMetamorphism> rdfs:label "dislocation metamorphism" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolution> rdfs:label "dissolution" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolutionCreep> rdfs:label "dissolution creep" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/ductileFlow> rdfs:label "ductile flow" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/effusiveEruption> rdfs:label "effusive eruption" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/erosion> rdfs:label "erosion" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/eruption> rdfs:label "eruption" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/excavation> rdfs:label "excavation" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/extinction> rdfs:label "extinction" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/faulting> rdfs:label "faulting" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/folding> rdfs:label "folding" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/fracturing> rdfs:label "fracturing" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/frostShattering> rdfs:label "frost shattering" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/geologicProcess> rdfs:label "geologic process" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/geomagneticProcess> rdfs:label "geomagnetic process" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/grading> rdfs:label "grading" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/haloclasty> rdfs:label "haloclasty" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/hawaiianEruption> rdfs:label "hawaiian eruption" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/humanActivity> rdfs:label "human activity" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/hydration> rdfs:label "hydration" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/hydrolysis> rdfs:label "hydrolysis" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/iceErosion> rdfs:label "ice erosion" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/intrusion> rdfs:label "intrusion" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticCrystallisation> rdfs:label "magmatic crystallisation" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticProcess> rdfs:label "magmatic process" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/magneticFieldReversal> rdfs:label "magnetic field reversal" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/massWasting> rdfs:label "mass wasting" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/massWastingDeposition> rdfs:label "mass wasting deposition" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/materialTransportAndDeposition> rdfs:label "material transport and deposition" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/mechanicalDeposition> rdfs:label "mechanical deposition" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/melting> rdfs:label "melting" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/metamorphicProcess> rdfs:label "metamorphic process" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/meteoriteImpact> rdfs:label "meteorite impact" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/microfracturing> rdfs:label "microfracturing" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/obduction> rdfs:label "obduction" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/organicAccumulation> rdfs:label "organic accumulation" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/orogenicProcess> rdfs:label "orogenic process" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/oxidation> rdfs:label "oxidation" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/partialMelting> rdfs:label "partial melting" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/physicalWeathering> rdfs:label "physical weathering" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/plinianEruption> rdfs:label "plinian eruption" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/polarWander> rdfs:label "polar wander" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/pressureReleaseWeathering> rdfs:label "pressure release weathering" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/pyroclasticEruption> rdfs:label "pyroclastic eruption" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/rifting> rdfs:label "rifting" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelChange> rdfs:label "sea level change" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelFall> rdfs:label "sea level fall" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelRise> rdfs:label "sea level rise" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/sedimentaryProcess> rdfs:label "sedimentary process" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/shearing> rdfs:label "shearing" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/speciation> rdfs:label "speciation" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/spreading> rdfs:label "spreading" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/strombolianEruption> rdfs:label "strombolian eruption" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/subduction> rdfs:label "subduction" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/tectonicProcess> rdfs:label "tectonic process" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/thermalShockWeathering> rdfs:label "thermal shock weathering" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/transformFaulting> rdfs:label "transform faulting" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/turbidityCurrentDeposition> rdfs:label "turbidity current deposition" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/vulcanianEruption> rdfs:label "vulcanian eruption" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/waterErosion> rdfs:label "water erosion" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/weathering> rdfs:label "weathering" .
-<http://inspire.ec.europa.eu/codelist/EventProcessValue/windErosion> rdfs:label "wind erosion" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/approximateResourceCalculation> rdfs:label "approximate calculation of the resource" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/augerDrilling> rdfs:label "auger drilling" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/coreDrilling> rdfs:label "core drilling" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedGeochemistry> rdfs:label "detailed geochemistry" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedGeophysics> rdfs:label "detailed geophysics" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedHeavyMineralSampling> rdfs:label "detailed heavy mineral sampling" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/detailedSurfaceExploration> rdfs:label "detailed surface exploration" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/feasibilityStudyReport> rdfs:label "feasibility study and report" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/geologicalInterpretation> rdfs:label "geological interpretation" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/geostatisticalEstimates> rdfs:label "geostatistical estimates" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/miningPilot> rdfs:label "mining pilot" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/oreBeneficiationTest> rdfs:label "ore beneficiation tests" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/percussionDrilling> rdfs:label "percussion drilling" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalGeochemistry> rdfs:label "regional geochemistry" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalHeavyMineralSampling> rdfs:label "regional heavy mineral sampling" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/regionalReconnaissance> rdfs:label "regional reconnaissance" .
-<http://inspire.ec.europa.eu/codelist/ExplorationActivityTypeValue/subsurfaceExploration> rdfs:label "subsurface exploration" .
-<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/geochemicalAnomaly> rdfs:label "geochemical anomaly" .
-<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/geophysicalAnomaly> rdfs:label "geophysical anomaly" .
-<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/mineralReserveDefined> rdfs:label "mineral reserve defined" .
-<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/mineralResourceDefined> rdfs:label "mineral resource defined" .
-<http://inspire.ec.europa.eu/codelist/ExplorationResultValue/negativeFeasibilityStudy> rdfs:label "negative feasibility study" .
-<http://inspire.ec.europa.eu/codelist/FaultTypeValue/dextralStrikeSlipFault> rdfs:label "dextral strike slip fault" .
-<http://inspire.ec.europa.eu/codelist/FaultTypeValue/fault> rdfs:label "fault" .
-<http://inspire.ec.europa.eu/codelist/FaultTypeValue/lowAngleNormalFault> rdfs:label "low-angle normal fault" .
-<http://inspire.ec.europa.eu/codelist/FaultTypeValue/reverseFault> rdfs:label "reverse fault" .
-<http://inspire.ec.europa.eu/codelist/FaultTypeValue/sinistralStrikeSlipFault> rdfs:label "sinistral strike slip fault" .
-<http://inspire.ec.europa.eu/codelist/FaultTypeValue/thrustFault> rdfs:label "thrust fault" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/allostratigraphicUnit> rdfs:label "allostratigraphic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/alterationUnit> rdfs:label "alteration unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/artificialGround> rdfs:label "artificial ground" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/biostratigraphicUnit> rdfs:label "biostratigraphic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/chronostratigraphicUnit> rdfs:label "chronostratigraphic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/deformationUnit> rdfs:label "deformation unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/excavationUnit> rdfs:label "excavation unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/geologicUnit> rdfs:label "geologic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/geophysicalUnit> rdfs:label "geophysical unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithodemicUnit> rdfs:label "lithodemic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithogeneticUnit> rdfs:label "lithogenetic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithologicUnit> rdfs:label "lithologic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithostratigraphicUnit> rdfs:label "lithostratigraphic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/lithotectonicUnit> rdfs:label "lithotectonic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/magnetostratigraphicUnit> rdfs:label "magnetostratigraphic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/massMovementUnit> rdfs:label "mass movement unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/pedostratigraphicUnit> rdfs:label "pedostratigraphic unit" .
-<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/polarityChronostratigraphicUnit> rdfs:label "polarity chronostratigraphic unit" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/acidicIgneousMaterial> rdfs:label "acidic igneous material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/acidicIgneousRock> rdfs:label "acidic igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparGranite> rdfs:label "alkali feldspar granite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparRhyolite> rdfs:label "alkali feldspar rhyolite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparSyenite> rdfs:label "alkali feldspar syenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparSyeniticRock> rdfs:label "alkali feldspar syenitic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparTrachyte> rdfs:label "alkali feldspar trachyte" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparTrachyticRock> rdfs:label "alkali feldspar trachytic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/amphibolite> rdfs:label "amphibolite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/andesite> rdfs:label "andesite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/anorthosite> rdfs:label "anorthosite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/anorthositicRock> rdfs:label "anorthositic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/anthraciteCoal> rdfs:label "anthracite coal" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicMaterial> rdfs:label "anthropogenic material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicUnconsolidatedMaterial> rdfs:label "anthropogenic unconsolidated material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/aphanite> rdfs:label "aphanite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/aplite> rdfs:label "aplite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/arenite> rdfs:label "arenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/ashAndLapilli> rdfs:label "ash and lapilli" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/ashBrecciaBombOrBlockTephra> rdfs:label "ash breccia, bomb, or block tephra" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/ashTuffLapillistoneAndLapilliTuff> rdfs:label "ash tuff, lapillistone, and lapilli tuff" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/basalt> rdfs:label "basalt" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/basanite> rdfs:label "basanite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/basaniticFoidite> rdfs:label "basanitic foidite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/basicIgneousMaterial> rdfs:label "basic igneous material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/basicIgneousRock> rdfs:label "basic igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/bauxite> rdfs:label "bauxite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/biogenicSediment> rdfs:label "biogenic sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/biogenicSilicaSedimentaryRock> rdfs:label "biogenic silica sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/bituminousCoal> rdfs:label "bituminous coal" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/boninite> rdfs:label "boninite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/boulderGravelSizeSediment> rdfs:label "boulder gravel size sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/boundstone> rdfs:label "boundstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/breccia> rdfs:label "breccia" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/brecciaGougeSeries> rdfs:label "breccia-gouge series" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSediment> rdfs:label "calcareous carbonate sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSedimentaryMaterial> rdfs:label "calcareous carbonate sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSedimentaryRock> rdfs:label "calcareous carbonate sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateMud> rdfs:label "carbonate mud" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateMudstone> rdfs:label "carbonate mudstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateOoze> rdfs:label "carbonate ooze" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateRichMud> rdfs:label "carbonate rich mud" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateRichMudstone> rdfs:label "carbonate rich mudstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSediment> rdfs:label "carbonate sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSedimentaryMaterial> rdfs:label "carbonate sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSedimentaryRock> rdfs:label "carbonate sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateWackestone> rdfs:label "carbonate wackestone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonatite> rdfs:label "carbonatite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/cataclasiteSeries> rdfs:label "cataclasite series" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/chalk> rdfs:label "chalk" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/chemicalSedimentaryMaterial> rdfs:label "chemical sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/chloriteActinoliteEpidoteMetamorphicRock> rdfs:label "chlorite actinolite epidote metamorphic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSediment> rdfs:label "clastic sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSedimentaryMaterial> rdfs:label "clastic sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSedimentaryRock> rdfs:label "clastic sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clay> rdfs:label "clay" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/claystone> rdfs:label "claystone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/coal> rdfs:label "coal" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/cobbleGravelSizeSediment> rdfs:label "cobble gravel size sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/compositeGenesisMaterial> rdfs:label "composite genesis material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/compositeGenesisRock> rdfs:label "composite genesis rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/compoundMaterial> rdfs:label "compound material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/crystallineCarbonate> rdfs:label "crystalline carbonate" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/dacite> rdfs:label "dacite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/diamictite> rdfs:label "diamictite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/diamicton> rdfs:label "diamicton" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/diorite> rdfs:label "diorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/dioriticRock> rdfs:label "dioritic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/dioritoid> rdfs:label "dioritoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/doleriticRock> rdfs:label "doleritic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticOrMagnesianSedimentaryMaterial> rdfs:label "dolomitic or magnesian sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticOrMagnesianSedimentaryRock> rdfs:label "dolomitic or magnesian sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticSediment> rdfs:label "dolomitic sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/duricrust> rdfs:label "duricrust" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/eclogite> rdfs:label "eclogite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/evaporite> rdfs:label "evaporite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/exoticAlkalineRock> rdfs:label "exotic alkaline rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/exoticCompositionIgneousRock> rdfs:label "exotic composition igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/exoticEvaporite> rdfs:label "exotic evaporite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/faultRelatedMaterial> rdfs:label "fault-related material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/fineGrainedIgneousRock> rdfs:label "fine grained igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAlkaliFeldsparSyenite> rdfs:label "foid bearing alkali feldspar syenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAlkaliFeldsparTrachyte> rdfs:label "foid bearing alkali feldspar trachyte" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAnorthosite> rdfs:label "foid bearing anorthosite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingDiorite> rdfs:label "foid bearing diorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingGabbro> rdfs:label "foid bearing gabbro" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingLatite> rdfs:label "foid bearing latite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzodiorite> rdfs:label "foid bearing monzodiorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzogabbro> rdfs:label "foid bearing monzogabbro" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzonite> rdfs:label "foid bearing monzonite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingSyenite> rdfs:label "foid bearing syenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingTrachyte> rdfs:label "foid bearing trachyte" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidDiorite> rdfs:label "foid diorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidDioritoid> rdfs:label "foid dioritoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidGabbro> rdfs:label "foid gabbro" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidGabbroid> rdfs:label "foid gabbroid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzodiorite> rdfs:label "foid monzodiorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzogabbro> rdfs:label "foid monzogabbro" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzosyenite> rdfs:label "foid monzosyenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidSyenite> rdfs:label "foid syenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidSyenitoid> rdfs:label "foid syenitoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidite> rdfs:label "foidite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foiditoid> rdfs:label "foiditoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foidolite> rdfs:label "foidolite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/foliatedMetamorphicRock> rdfs:label "foliated metamorphic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/fragmentalIgneousMaterial> rdfs:label "fragmental igneous material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/fragmentalIgneousRock> rdfs:label "fragmental igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/framestone> rdfs:label "framestone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/gabbro> rdfs:label "gabbro" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/gabbroicRock> rdfs:label "gabbroic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/gabbroid> rdfs:label "gabbroid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/genericConglomerate> rdfs:label "generic conglomerate" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/genericMudstone> rdfs:label "generic mudstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/genericSandstone> rdfs:label "generic sandstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/glassRichIgneousRock> rdfs:label "glass rich igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/glassyIgneousRock> rdfs:label "glassy igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/glaucophaneLawsoniteEpidoteMetamorphicRock> rdfs:label "glaucophane lawsonite epidote metamorphic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/gneiss> rdfs:label "gneiss" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/grainstone> rdfs:label "grainstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/granite> rdfs:label "granite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/granitoid> rdfs:label "granitoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/granodiorite> rdfs:label "granodiorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/granofels> rdfs:label "granofels" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/granulite> rdfs:label "granulite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/gravel> rdfs:label "gravel" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/gravelSizeSediment> rdfs:label "gravel size sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/hornblendite> rdfs:label "hornblendite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/hornfels> rdfs:label "hornfels" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/hybridSediment> rdfs:label "hybrid sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/hybridSedimentaryRock> rdfs:label "hybrid sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/igneousMaterial> rdfs:label "igneous material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/igneousRock> rdfs:label "igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/impactGeneratedMaterial> rdfs:label "impact generated material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/impureCalcareousCarbonateSediment> rdfs:label "impure calcareous carbonate sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/impureCarbonateSediment> rdfs:label "impure carbonate sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/impureCarbonateSedimentaryRock> rdfs:label "impure carbonate sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/impureDolomiticSediment> rdfs:label "impure dolomitic sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/impureLimestone> rdfs:label "impure limestone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/intermediateCompositionIgneousMaterial> rdfs:label "intermediate composition igneous material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/intermediateCompositionIgneousRock> rdfs:label "intermediate composition igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSediment> rdfs:label "iron rich sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSedimentaryMaterial> rdfs:label "iron rich sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSedimentaryRock> rdfs:label "iron rich sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/kalsiliticAndMeliliticRock> rdfs:label "kalsilitic and melilitic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/komatiiticRock> rdfs:label "komatiitic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/latite> rdfs:label "latite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/latiticRock> rdfs:label "latitic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/lignite> rdfs:label "lignite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/limestone> rdfs:label "limestone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/marble> rdfs:label "marble" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/materialFormedInSurficialEnvironment> rdfs:label "material formed in surficial environment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/metamorphicRock> rdfs:label "metamorphic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/metasomaticRock> rdfs:label "metasomatic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/micaSchist> rdfs:label "mica schist" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/migmatite> rdfs:label "migmatite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/monzodiorite> rdfs:label "monzodiorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/monzodioriticRock> rdfs:label "monzodioritic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/monzogabbro> rdfs:label "monzogabbro" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/monzogabbroicRock> rdfs:label "monzogabbroic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/monzogranite> rdfs:label "monzogranite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/monzonite> rdfs:label "monzonite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/monzoniticRock> rdfs:label "monzonitic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/mud> rdfs:label "mud" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/mudSizeSediment> rdfs:label "mud size sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/myloniticRock> rdfs:label "mylonitic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/naturalUnconsolidatedMaterial> rdfs:label "natural unconsolidated material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSediment> rdfs:label "non-clastic siliceous sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSedimentaryMaterial> rdfs:label "non-clastic siliceous sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSedimentaryRock> rdfs:label "non-clastic siliceous sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/ooze> rdfs:label "ooze" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/organicBearingMudstone> rdfs:label "organic bearing mudstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSediment> rdfs:label "organic rich sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSedimentaryMaterial> rdfs:label "organic rich sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSedimentaryRock> rdfs:label "organic rich sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/orthogneiss> rdfs:label "orthogneiss" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/packstone> rdfs:label "packstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/paragneiss> rdfs:label "paragneiss" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/peat> rdfs:label "peat" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pebbleGravelSizeSediment> rdfs:label "pebble gravel size sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pegmatite> rdfs:label "pegmatite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/peridotite> rdfs:label "peridotite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phaneriticIgneousRock> rdfs:label "phaneritic igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticBasanite> rdfs:label "phonolitic basanite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticFoidite> rdfs:label "phonolitic foidite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticTephrite> rdfs:label "phonolitic tephrite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phonolitoid> rdfs:label "phonolitoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phosphateRichSediment> rdfs:label "phosphate rich sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phosphateRichSedimentaryMaterial> rdfs:label "phosphate rich sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phosphorite> rdfs:label "phosphorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phyllite> rdfs:label "phyllite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/phyllonite> rdfs:label "phyllonite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/porphyry> rdfs:label "porphyry" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pureCalcareousCarbonateSediment> rdfs:label "pure calcareous carbonate sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateMudstone> rdfs:label "pure carbonate mudstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateSediment> rdfs:label "pure carbonate sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateSedimentaryRock> rdfs:label "pure carbonate sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pureDolomiticSediment> rdfs:label "pure dolomitic sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pyroclasticMaterial> rdfs:label "pyroclastic material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pyroclasticRock> rdfs:label "pyroclastic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/pyroxenite> rdfs:label "pyroxenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAlkaliFeldsparSyenite> rdfs:label "quartz alkali feldspar syenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAlkaliFeldsparTrachyte> rdfs:label "quartz alkali feldspar trachyte" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAnorthosite> rdfs:label "quartz anorthosite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzDiorite> rdfs:label "quartz diorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzGabbro> rdfs:label "quartz gabbro" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzLatite> rdfs:label "quartz latite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzodiorite> rdfs:label "quartz monzodiorite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzogabbro> rdfs:label "quartz monzogabbro" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzonite> rdfs:label "quartz monzonite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzRichIgneousRock> rdfs:label "quartz rich igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzSyenite> rdfs:label "quartz syenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzTrachyte> rdfs:label "quartz trachyte" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzite> rdfs:label "quartzite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/residualMaterial> rdfs:label "residual material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/rhyolite> rdfs:label "rhyolite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/rhyolitoid> rdfs:label "rhyolitoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/rock> rdfs:label "rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/rockSalt> rdfs:label "rock salt" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/sand> rdfs:label "sand" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/sandSizeSediment> rdfs:label "sand size sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/sapropel> rdfs:label "sapropel" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/schist> rdfs:label "schist" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/sediment> rdfs:label "sediment" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/sedimentaryMaterial> rdfs:label "sedimentary material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/sedimentaryRock> rdfs:label "sedimentary rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/serpentinite> rdfs:label "serpentinite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/shale> rdfs:label "shale" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/silicateMud> rdfs:label "silicate mud" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/silicateMudstone> rdfs:label "silicate mudstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/siliceousOoze> rdfs:label "siliceous ooze" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/silt> rdfs:label "silt" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/siltstone> rdfs:label "siltstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/skarn> rdfs:label "skarn" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/slate> rdfs:label "slate" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/spilite> rdfs:label "spilite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/syenite> rdfs:label "syenite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/syeniticRock> rdfs:label "syenitic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/syenitoid> rdfs:label "syenitoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/syenogranite> rdfs:label "syenogranite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/tephra> rdfs:label "tephra" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/tephrite> rdfs:label "tephrite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/tephriticFoidite> rdfs:label "tephritic foidite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/tephriticPhonolite> rdfs:label "tephritic phonolite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/tephritoid> rdfs:label "tephritoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/tholeiiticBasalt> rdfs:label "tholeiitic basalt" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/tonalite> rdfs:label "tonalite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/trachyte> rdfs:label "trachyte" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/trachyticRock> rdfs:label "trachytic rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/trachytoid> rdfs:label "trachytoid" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/travertine> rdfs:label "travertine" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/tuffBrecciaAgglomerateOrPyroclasticBreccia> rdfs:label "tuff-breccia, agglomerate, or pyroclastic breccia" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/tuffite> rdfs:label "tuffite" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/ultrabasicIgneousRock> rdfs:label "ultrabasic igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/ultramaficIgneousRock> rdfs:label "ultramafic igneous rock" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/unconsolidatedMaterial> rdfs:label "unconsolidated material" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/wacke> rdfs:label "wacke" .
-<http://inspire.ec.europa.eu/codelist/MappingFrameValue/baseOfQuaternary> rdfs:label "base of quaternary" .
-<http://inspire.ec.europa.eu/codelist/MappingFrameValue/surfaceGeology> rdfs:label "surface geology" .
-<http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBasement> rdfs:label "top of basement" .
-<http://inspire.ec.europa.eu/codelist/MappingFrameValue/topOfBedrock> rdfs:label "top of bedrock" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/abandoned> rdfs:label "abandoned" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/careAndMaintenance> rdfs:label "care and maintenance" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/closed> rdfs:label "closed" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/construction> rdfs:label "under construction" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/feasibility> rdfs:label "feasibility" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/historic> rdfs:label "historic" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/notOperating> rdfs:label "not operating" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/operating> rdfs:label "operating" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/operatingContinuously> rdfs:label "operating continuously" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/operatingIntermittently> rdfs:label "operating intermittently" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/pendingApproval> rdfs:label "pending approval" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/retention> rdfs:label "retention" .
-<http://inspire.ec.europa.eu/codelist/MineStatusValue/underDevelopment> rdfs:label "under development" .
-<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/field> rdfs:label "field" .
-<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/mineralizedZone> rdfs:label "mineralized zone" .
-<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/occurrence> rdfs:label "occurrence" .
-<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/project> rdfs:label "project" .
-<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/prospect> rdfs:label "prospect" .
-<http://inspire.ec.europa.eu/codelist/MineralOccurrenceTypeValue/province> rdfs:label "province" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/boreholeMining> rdfs:label "borehole mining" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/dredgeMining> rdfs:label "dredge mining" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/hydraulicMining> rdfs:label "hydraulic mining" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/quarry> rdfs:label "quarry" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subaqueousRemoteOperatedVehicle> rdfs:label "subaqueous remote operated vehicle" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subaqueousVacuumPumping> rdfs:label "subaqueous vacuum pumping" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/subsurfaceMining> rdfs:label "subsurface mining" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/surfaceMining> rdfs:label "surface mining" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/underground> rdfs:label "underground" .
-<http://inspire.ec.europa.eu/codelist/MiningActivityTypeValue/underwaterMining> rdfs:label "underwater mining" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/adsorption> rdfs:label "Adsorption" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/agglomeration> rdfs:label "Agglomeration" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/automaticSorting> rdfs:label "Automatic sorting" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/burning> rdfs:label "Burning" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/calcining> rdfs:label "Calcining" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/cementation> rdfs:label "Cementation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/centrifugalGravitySeparation> rdfs:label "centrifugal gravity separation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/chemicalTreatment> rdfs:label "chemical treatment" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/coagulation> rdfs:label "Coagulation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/comminution> rdfs:label "Comminution" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/crystallization> rdfs:label "Crystallization" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/distillation> rdfs:label "Distillation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/eddyCurrentSeparator> rdfs:label "eddy current separator" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/electrolysis> rdfs:label "Electrolysis" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/electrostaticSeparation> rdfs:label "Electrostatic separation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/evaporation> rdfs:label "Evaporation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/flocculation> rdfs:label "Flocculation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/flotation> rdfs:label "Flotation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/gravimetricSorting> rdfs:label "Gravimetric methods (density, shape)" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/gravitySeparationTable> rdfs:label "gravity separation table" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/heavyMediumSeparation> rdfs:label "heavy medium separation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/incineration> rdfs:label "Incineration" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/leaching> rdfs:label "Leaching" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/liquidSolidSeparation> rdfs:label "Liquid-solid separation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/manualSorting> rdfs:label "Manual sorting (handpicking)" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/particleSizing> rdfs:label "Particle sizing" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/physicalChemicalTreatment> rdfs:label "physical chemical treatment" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/physicalTreatment> rdfs:label "physical treatment" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/precipitation> rdfs:label "Precipitation" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/pyrometallurgy> rdfs:label "Pyrometallurgy" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/roasting> rdfs:label "Roasting" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/sluiceConcentration> rdfs:label "sluice concentration" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/smelting> rdfs:label "Smelting" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/solventExtraction> rdfs:label "Solvent extraction" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/sorting> rdfs:label "sorting" .
-<http://inspire.ec.europa.eu/codelist/ProcessingActivityTypeValue/stratificationJig> rdfs:label "Stratification (jig)" .
-<http://inspire.ec.europa.eu/codelist/ReserveCategoryValue/probableOreReserves> rdfs:label "probable ore reserves" .
-<http://inspire.ec.europa.eu/codelist/ReserveCategoryValue/provedAndProbableOreReserves> rdfs:label "proved and probable ore reserves" .
-<http://inspire.ec.europa.eu/codelist/ReserveCategoryValue/provedOreReserves> rdfs:label "proved ore reserves" .
-<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/indicatedAndInferredMineralResource> rdfs:label "indicated and inferred mineral resource" .
-<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/indicatedMineralResource> rdfs:label "indicated mineral resource" .
-<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/inferredMineralResource> rdfs:label "inferred mineral resource" .
-<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/measuredAndIndicatedMineralResource> rdfs:label "measured and indicated mineral resource" .
-<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/measuredIndicatedAndInferredMineralResource> rdfs:label "measured, indicated and inferred mineral resource" .
-<http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/measuredMineralResource> rdfs:label "measured mineral resource" .
+<https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> schema:name "Earth Sciences" .

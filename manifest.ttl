@@ -1,3 +1,4 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX mrr: <https://prez.dev/ManifestResourceRoles/>
 PREFIX prez: <https://prez.dev/>
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
@@ -13,21 +14,16 @@ PREFIX schema: <https://schema.org/>
             schema:name "Catalogue Definition"
         ] ,
         [
+            dcterms:conformsTo "validator-vocpub-variant.ttl" ;
             prof:hasArtifact "vocabularies/**/*.ttl" ;
             prof:hasRole mrr:ResourceData ;
             schema:description "skos:ConceptsScheme objects in RDF (Turtle) files in the vocabs/ folder" ;
             schema:name "Resource Data"
         ] ,
         [
-            prof:hasArtifact "https://github.com/RDFLib/prez/blob/main/prez/reference_data/profiles/ogc_records_profile.ttl" ;
-            prof:hasRole mrr:CatalogueAndResourceModel ;
-            schema:description "The default Prez profile for Records API" ;
-            schema:name "Profile Definition"
-        ] ,
-        [
-            prof:hasArtifact "_background/labels.ttl" ;
+            prof:hasArtifact "_background/*.ttl" ;
             prof:hasRole mrr:CompleteCatalogueAndResourceLabels ;
-            schema:description "An RDF file containing all the labels for the container content" ;
-            schema:name "Labels" ;
+            schema:description "RDF files containing all the labels for the container content" ;
+            schema:name "Labels & Agent information" ;
         ] ;
 .
