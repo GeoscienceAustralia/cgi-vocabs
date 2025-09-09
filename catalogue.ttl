@@ -27,6 +27,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category> ,
         <http://resource.geosciml.org/classifierscheme/cgi/2019.01/unfc> ,
         <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ,
+        <http://resource.geosciml.org/classifierscheme/cgi/2023.11/mineral-deposit-model> ,
 
         # GeoSciML vocabs
         <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> ,

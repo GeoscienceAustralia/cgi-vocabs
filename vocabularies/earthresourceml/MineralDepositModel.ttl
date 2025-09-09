@@ -1,5 +1,5 @@
-PREFIX : <None/>
-PREFIX cs: <http://resource.geosciml.org/classifier/cmmi/deposit-model>
+PREFIX : <http://resource.geosciml.org/classifier/cgi/mineral-deposit-model/>
+PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2023.11/mineral-deposit-model>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -2180,7 +2180,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :placer ;
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Erosional"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -2252,7 +2252,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :metamorphic-group ;
     skos:notation "08.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Metamorphic"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -2264,7 +2264,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :orogenic ;
     skos:notation "07.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Metamorphic hydrothermal"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -2565,7 +2565,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :supergene-group ;
     skos:notation "02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -2580,7 +2580,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :volcanogenic-massive-sulfide-vms ;
     skos:notation "10.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Volcanic basin hydrothermal"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -2596,7 +2596,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :phosphorite ;
     skos:notation "05.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Basin chemical"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -2612,7 +2612,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :zeolite ;
     skos:notation "04.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Basin evaporative"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -2660,7 +2660,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :uranium ;
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Infiltrational"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -2692,7 +2692,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :metasomatic-iron ;
     skos:notation "09.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Regional metasomatic"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -2826,7 +2826,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :unconformity-related ;
     skos:notation "06.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Basin hydrothermal"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -3025,7 +3025,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :vein ;
     skos:notation "11.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Magmatic hydrothermal"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -3078,7 +3078,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :ultramafic-and-or-mafic-layered-intrusion ;
     skos:notation "12.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Magmatic"@en ;
-    skos:topConceptOf <http://resource.geosciml.org/classifier/cgi/deposit-model> ;
+    skos:topConceptOf cs: ;
     sdo:additionalType :DepositEnvironment ;
 .
 
@@ -3144,4 +3144,124 @@ cs:
     sdo:dateModified "2023-11-11"^^xsd:date ;
     sdo:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     sdo:publisher <https://linked.dat.gov.au/org/cgi> ;
+.
+
+:carbonatite-nb
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel "Carbonite NB"@en ;
+.
+
+:u-m-conduit-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:komatiite-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:ophiolite-cr
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:ophiolite-ni-cu-pge
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:distal-disseminated-ag-au
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:greisen-w-mo-bi
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:greisen-be-li
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:greisen-sn-w-mo
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:oxidized-intrusion-related-au
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:reduced-intrusion-related-au
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
+.
+
+:low-fe-alkali-calcic
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Not yet given"@en ;
+    skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
+    skos:inScheme cs: ;
+    skos:notation "0"^^dt:LocalHierarchyKey ;
+    skos:prefLabel ""@en ;
 .
