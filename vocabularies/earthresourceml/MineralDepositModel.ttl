@@ -1,9 +1,10 @@
 PREFIX : <http://resource.geosciml.org/classifier/cgi/mineral-deposit-model/>
-PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2023.11/mineral-deposit-model>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs:<http://resource.geosciml.org/classifierscheme/cgi/2023.11/mineral-deposit-model>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -15,7 +16,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Abyssal pegmatite REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :albitite-hosted-uranium
@@ -26,7 +27,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Albitite-hosted uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :algoma-type-banded-iron-formation
@@ -37,7 +38,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "10.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Algoma-type banded iron formation"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :alkalic-epithermal-gold-ag
@@ -48,7 +49,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Alkalic epithermal gold ± Ag"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :anorthosite-conduit-nickel-copper-pge
@@ -59,7 +60,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.13.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Anorthosite conduit nickel-copper-PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :anorthosite-massif-titanium
@@ -70,7 +71,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.12.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Anorthosite massif titanium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :apatite-intrusion-ree
@@ -81,7 +82,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.05.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Apatite intrusion REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :apatite-nepheline-titanite-intrusion
@@ -92,7 +93,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.04."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Apatite-nepheline-titanite intrusion"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :arc-u-m-intrusion-nickel-copper-pge
@@ -103,7 +104,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.09.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Arc U-M intrusion nickel-copper-PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :arc-u-m-intrusion-titanium-vanadium
@@ -114,7 +115,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.09.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Arc U-M intrusion titanium-vanadium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :bauxite
@@ -125,7 +126,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Bauxite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :bimodal-felsic-vms
@@ -136,7 +137,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "10.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Bimodal-felsic VMS"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :bimodal-mafic-vms
@@ -147,7 +148,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "10.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Bimodal-mafic VMS"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :black-shale-gold
@@ -158,7 +159,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Black shale gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :black-shale-nickel-mo-pge
@@ -169,7 +170,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Black shale nickel ± Mo-PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :black-shale-uranium
@@ -180,7 +181,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Black shale uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :black-shale-vanadium-mo-ni
@@ -191,7 +192,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Black shale vanadium ± Mo ± Ni"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :breccia-pipe-copper
@@ -202,7 +203,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Breccia pipe copper"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :breccia-pipe-gold
@@ -213,7 +214,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Breccia pipe gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :breccia-pipe-molybdenum
@@ -224,7 +225,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Breccia pipe molybdenum"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :breccia-pipe-ree
@@ -235,7 +236,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Breccia pipe REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :calcrete-uranium
@@ -246,7 +247,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "03.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Calcrete uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :carbonate-uranium
@@ -257,7 +258,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "03.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Carbonate uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :carbonatite-laterite-ree
@@ -268,7 +269,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Carbonatite laterite REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :carbonatite-niobium
@@ -279,7 +280,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Carbonatite niobium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :carbonatite-ree
@@ -290,7 +291,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Carbonatite REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :carlin-type-gold
@@ -301,7 +302,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.04.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Carlin-type gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :climax-type-porphyry-molybdenum
@@ -312,7 +313,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.08.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Climax-type porphyry molybdenum"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :coal-peat-bog-uranium
@@ -323,7 +324,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "03.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Coal/peat/bog uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :collapse-breccia-pipe-uranium
@@ -334,7 +335,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Collapse breccia pipe uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :crust-manganese
@@ -345,7 +346,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.04.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Crust manganese"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :distal-disseminated-silver-gold
@@ -356,7 +357,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.05.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Distal-disseminated silver-gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :epithermal-beryllium
@@ -367,7 +368,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Epithermal beryllium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :epithermal-mercury
@@ -378,7 +379,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Epithermal mercury"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :epithermal-uranium
@@ -389,7 +390,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.01.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Epithermal uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :epizonal-orogenic-antimony-gold
@@ -400,7 +401,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "07.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Epizonal orogenic antimony ± gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :epizonal-orogenic-gold
@@ -411,7 +412,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "07.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Epizonal orogenic gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :epizonal-orogenic-mercury
@@ -422,7 +423,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "07.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Epizonal orogenic mercury"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :exotic-copper
@@ -433,7 +434,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "03.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Exotic copper"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :felsic-siliciclastic-vms
@@ -444,7 +445,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "10.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Felsic-siliciclastic VMS"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :ferroan-carbonate-polymetallic
@@ -455,7 +456,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ferroan carbonate polymetallic"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :fluvial-placer-diamond
@@ -466,7 +467,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluvial placer diamond"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :fluvial-placer-garnet
@@ -477,7 +478,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluvial placer garnet"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :fluvial-placer-gemstones
@@ -488,7 +489,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluvial placer gemstones"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :fluvial-placer-gold
@@ -499,7 +500,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.11"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluvial placer gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :fluvial-placer-niobium-tantalum
@@ -510,7 +511,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.10"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluvial placer niobium-tantalum"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :fluvial-placer-pge
@@ -521,7 +522,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluvial placer PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :fluvial-placer-ree
@@ -532,7 +533,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluvial placer REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :fluvial-placer-tin
@@ -543,7 +544,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluvial placer tin"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :fluvial-placer-tungsten
@@ -554,7 +555,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Fluvial placer tungsten"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :greisen-beryllium-li
@@ -565,7 +566,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.09.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Greisen beryllium ± Li"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :greisen-tin-w-mo
@@ -576,7 +577,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.09.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Greisen tin ± W, Mo"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :greisen-tungsten-molybdenum-bi
@@ -587,7 +588,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.09.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Greisen tungsten-molybdenum ± Bi"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :heavy-mineral-sands
@@ -598,7 +599,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.16"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Heavy mineral sands"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :hematite-dominant-ioa
@@ -609,7 +610,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.04.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Hematite-dominant IOA"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :hematite-dominant-iocg
@@ -620,7 +621,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Hematite-dominant IOCG"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :high-sulfidation-epithermal-silver-gold-cu
@@ -631,7 +632,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "High-sulfidation (HS) epithermal silver-gold ± Cu"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :hypozonal-orogenic-gold
@@ -642,7 +643,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "07.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Hypozonal orogenic gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :impact-u-m-intrusion-nickel-copper-pge
@@ -653,7 +654,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.09.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Impact U-M intrusion nickel-copper-PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :intermediate-sulfidation-epithermal-silver-gold-zn-pb-cu-sn-mn
@@ -664,7 +665,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.01.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Intermediate-sulfidation (IS) epithermal silver-gold ± Zn, Pb, Cu, Sn, Mn"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :ion-adsorption-ree
@@ -675,7 +676,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ion adsorption REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :irish-type-sediment-hosted-zinc-lead
@@ -686,7 +687,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.03.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Irish-type sediment-hosted zinc-lead"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :iron-oxide-gold
@@ -697,7 +698,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.02.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Iron oxide gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :iron-oxide-polymetallic
@@ -708,7 +709,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.02.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Iron oxide polymetallic"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :iron-oxide-uranium
@@ -719,7 +720,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.02.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Iron oxide uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :iron-silicate-polymetallic
@@ -730,7 +731,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Iron silicate polymetallic"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :iron-sulfide-polymetallic
@@ -741,7 +742,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Iron sulfide polymetallic"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :karst-bauxite
@@ -752,7 +753,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Karst bauxite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :kimberlite-diamond
@@ -763,7 +764,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.06.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Kimberlite diamond"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :kipushi-type-sediment-hosted-copper-zinc-lead
@@ -774,7 +775,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.03.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Kipushi-type sediment-hosted copper-zinc-lead"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :komatiite-nickel-copper-pge
@@ -785,7 +786,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.07.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Komatiite nickel-copper-PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-brine-lithium
@@ -796,7 +797,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine brine lithium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-brine-potash
@@ -807,7 +808,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine brine potash"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-clay-lithium
@@ -818,7 +819,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.04.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine clay lithium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-evaporite-borate
@@ -829,7 +830,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine evaporite borate"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-evaporite-carnallite-bischofite
@@ -840,7 +841,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine evaporite carnallite-bischofite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-evaporite-magnesite
@@ -851,7 +852,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.10"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine evaporite magnesite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-evaporite-nitrate
@@ -862,7 +863,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.11"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine evaporite nitrate"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-evaporite-potash
@@ -873,7 +874,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine evaporite potash"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-evaporite-salt
@@ -884,7 +885,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine evaporite salt"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-evaporite-trona
@@ -895,7 +896,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine evaporite trona"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-iron-formation
@@ -906,7 +907,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine iron formation"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-manganese
@@ -917,7 +918,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.04.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine manganese"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lacustrine-zeolite-li-b
@@ -928,7 +929,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Lacustrine zeolite (± Li, B)"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :laterite-magnesite
@@ -939,7 +940,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Laterite magnesite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :laterite-nickel
@@ -950,7 +951,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Laterite nickel"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :lct-pegmatite
@@ -961,7 +962,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "LCT pegmatite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :low-fluorine-porphyry-molybdenum
@@ -972,7 +973,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.08.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Low-fluorine porphyry molybdenum"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :low-iron-alkali-calcic
@@ -983,7 +984,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Low iron alkali-calcic"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :low-sulfidation-epithermal-gold-silver
@@ -994,7 +995,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Low-sulfidation (LS) epithermal gold-silver"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :mafic-siliciclastic-vms
@@ -1005,7 +1006,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "10.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Mafic-siliciclastic VMS"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :mafic-ultramafic-vms
@@ -1016,7 +1017,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "10.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Mafic-ultramafic VMS"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :magnetite-dominant-ioa
@@ -1027,7 +1028,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.04.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Magnetite-dominant IOA"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :magnetite-dominant-iocg
@@ -1038,7 +1039,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "09.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Magnetite-dominant IOCG"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :marine-brine-potash-mg-li-and-so-on
@@ -1049,7 +1050,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Marine brine potash (± Mg, Li, and so on)"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :marine-evaporite-gypsum
@@ -1060,7 +1061,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Marine evaporite gypsum"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :marine-evaporite-magnesite
@@ -1071,7 +1072,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Marine evaporite magnesite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :marine-evaporite-potash
@@ -1082,7 +1083,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Marine evaporite potash"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :marine-evaporite-salt
@@ -1093,7 +1094,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "04.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Marine evaporite salt"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :mesozonal-orogenic-gold
@@ -1104,7 +1105,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "07.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Mesozonal orogenic gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :metamorphic-graphite
@@ -1115,7 +1116,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "08.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Metamorphic graphite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :metamorphic-kyanite
@@ -1126,7 +1127,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "08.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Metamorphic kyanite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :mvt-barite
@@ -1137,7 +1138,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.04.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "MVT barite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :mvt-fluorspar
@@ -1148,7 +1149,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.04.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "MVT fluorspar"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :mvt-strontium
@@ -1159,7 +1160,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.04.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "MVT strontium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :mvt-zinc-lead
@@ -1170,7 +1171,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.04.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "MVT zinc-lead"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :nodular-magnesite
@@ -1181,7 +1182,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "03.04.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Nodular magnesite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :nodule-manganese
@@ -1192,7 +1193,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.04.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Nodule manganese"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :non-sulfide-zinc-lead-mn
@@ -1203,7 +1204,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.05.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Non-sulfide zinc-lead ± Mn"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :nyf-pegmatite
@@ -1214,7 +1215,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "NYF pegmatite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :oolitic-iron-formation
@@ -1225,7 +1226,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Oolitic iron formation"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :ophiolite-chromium
@@ -1236,7 +1237,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.11.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ophiolite chromium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :ophiolite-nickel-copper-pge
@@ -1247,7 +1248,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.11.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ophiolite nickel-copper-PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :orogenic-copper-gold
@@ -1258,7 +1259,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "07.01.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Orogenic copper ± gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :orogenic-graphite
@@ -1269,7 +1270,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "07.01.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Orogenic graphite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :orogenic-silver-lead-zinc-copper-antimony
@@ -1280,7 +1281,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "07.01.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Orogenic silver-lead-zinc-copper-antimony"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :oxidized-intrusion-related-gold
@@ -1291,7 +1292,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.10.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Oxidized intrusion-related gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :paleochannel-iron
@@ -1302,7 +1303,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "03.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Paleochannel iron"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :paleoplacer-gold-uranium
@@ -1313,7 +1314,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.15"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Paleoplacer gold ± uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :paleoplacer-heavy-mineral-sands
@@ -1324,7 +1325,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.14"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Paleoplacer heavy mineral sands"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :paleoplacer-tin
@@ -1335,7 +1336,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.13"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Paleoplacer tin"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :peralkaline-igneous-hfse-ree
@@ -1346,7 +1347,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Peralkaline igneous HFSE-REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :phosphorite-group
@@ -1357,7 +1358,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Phosphorite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :porphyry-gold-copper
@@ -1368,7 +1369,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.08.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Porphyry gold ± copper"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :porphyry-copper-gold
@@ -1379,7 +1380,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.08.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Porphyry copper ± gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :porphyry-copper-molybdenum
@@ -1390,7 +1391,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.08.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Porphyry copper-molybdenum"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :porphyry-tin
@@ -1401,7 +1402,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.08.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Porphyry tin"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :porphyry-tungsten
@@ -1412,7 +1413,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.08.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Porphyry tungsten"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :reduced-intrusion-related-gold
@@ -1423,7 +1424,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.10.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Reduced intrusion-related gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :replacement-gold-silver
@@ -1434,7 +1435,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.06.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement gold-silver"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :replacement-copper
@@ -1445,7 +1446,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.06.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement copper"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :replacement-fluorite
@@ -1456,7 +1457,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.06.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement fluorite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :replacement-magnesium
@@ -1467,7 +1468,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.06.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement magnesium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :replacement-manganese
@@ -1478,7 +1479,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.06.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement manganese"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :replacement-polymetallic
@@ -1489,7 +1490,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.06.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement polymetallic"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :replacement-tin
@@ -1500,7 +1501,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.06.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement tin"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :replacement-zinc-lead
@@ -1511,7 +1512,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.06.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement zinc-lead"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :residual-clay
@@ -1522,7 +1523,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Residual clay"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :residual-placer-lead
@@ -1533,7 +1534,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Residual placer lead"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :residual-placer-tin
@@ -1544,7 +1545,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Residual placer tin"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :sandstone-hosted-zinc-lead
@@ -1555,7 +1556,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.04.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Sandstone-hosted zinc-lead"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :sandstone-uranium
@@ -1566,7 +1567,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "03.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Sandstone uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :sediment-hosted-copper-co
@@ -1577,7 +1578,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Sediment-hosted copper ± Co"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :sedimentary-manganese
@@ -1588,7 +1589,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.04.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Sedimentary manganese"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :shoreline-placer-gold
@@ -1599,7 +1600,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "01.01.12"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Shoreline placer gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :siliciclastic-carbonate-zinc-lead
@@ -1610,7 +1611,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Siliciclastic-carbonate zinc-lead"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :siliciclastic-mafic-barite
@@ -1621,7 +1622,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Siliciclastic-mafic barite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :siliciclastic-mafic-zinc-lead
@@ -1632,7 +1633,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Siliciclastic-mafic zinc-lead"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :simple-pegmatite
@@ -1643,7 +1644,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Simple pegmatite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :skarn-gold-copper-tungsten
@@ -1654,7 +1655,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.07.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn gold ± copper ± tungsten"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :skarn-beryllium-fluorite
@@ -1665,7 +1666,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.07.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn beryllium-fluorite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :skarn-copper
@@ -1676,7 +1677,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.07.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn copper"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :skarn-molybdenum
@@ -1687,7 +1688,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.07.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn molybdenum"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :skarn-tin-copper-mo
@@ -1698,7 +1699,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.07.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn tin ± copper ± Mo"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :skarn-uranium-ree
@@ -1709,7 +1710,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.07.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn uranium-REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :skarn-tungsten-mo
@@ -1720,7 +1721,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.07.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn tungsten ± Mo"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :skarn-zinc-lead-silver
@@ -1731,7 +1732,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.07.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn zinc-lead-silver"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :supergene-copper
@@ -1742,7 +1743,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.03.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene copper"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :supergene-gold
@@ -1753,7 +1754,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.03.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene gold"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :supergene-iron
@@ -1764,7 +1765,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.03.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene iron"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :supergene-lead
@@ -1775,7 +1776,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.03.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene lead"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :supergene-manganese
@@ -1786,7 +1787,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.03.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene manganese"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :supergene-silver
@@ -1797,7 +1798,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene silver"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :supergene-uranium
@@ -1808,7 +1809,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.03.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :supergene-vanadium
@@ -1819,7 +1820,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.03.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene vanadium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :supergene-zinc
@@ -1830,7 +1831,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "02.03.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene zinc"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :superior-type-banded-iron-formation
@@ -1841,7 +1842,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Superior-type banded iron formation"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :superior-type-banded-manganese
@@ -1852,7 +1853,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "05.04.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Superior-type banded manganese"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :u-m-conduit-nickel-copper-pge
@@ -1863,7 +1864,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.10.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "U-M conduit nickel-copper-PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :u-m-intrusion-nickel-copper-pge
@@ -1874,7 +1875,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.09.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "U-M intrusion nickel-copper-PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :u-m-layered-intrusion-chromium
@@ -1885,7 +1886,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.08.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "U-M layered intrusion chromium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :u-m-layered-intrusion-iron-titanium-vanadium
@@ -1896,7 +1897,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.08.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "U-M layered intrusion iron-titanium-vanadium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :u-m-layered-intrusion-nickel-copper-pge
@@ -1907,7 +1908,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.08.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "U-M layered intrusion nickel-copper-PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :u-m-layered-intrusion-pge
@@ -1918,7 +1919,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "12.08.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "U-M layered intrusion PGE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :unconformity-related-ree
@@ -1929,7 +1930,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.01.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Unconformity-related REE"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :unconformity-related-uranium
@@ -1940,7 +1941,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.01.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Unconformity-related uranium"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :underclay-overclay
@@ -1952,7 +1953,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "02.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel
         "Underclay, overclay"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :vein-cobalt-ni
@@ -1963,7 +1964,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein cobalt ± Ni"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :vein-copper
@@ -1974,7 +1975,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.02.03"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein copper"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :vein-five-element
@@ -1985,7 +1986,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "06.06.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein five-element"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :vein-fluorite
@@ -1996,7 +1997,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.02.07"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein fluorite"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :vein-polymetallic
@@ -2007,7 +2008,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.02.08"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein polymetallic"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :vein-replacement-nickel
@@ -2018,7 +2019,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.02.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein ± replacement nickel"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :vein-tin-polymetallic
@@ -2029,7 +2030,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.02.06"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein tin polymetallic"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :vein-tin
@@ -2040,7 +2041,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.02.04"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein tin"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :vein-tungsten
@@ -2051,7 +2052,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "11.02.05"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein tungsten"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :volcanic-hosted-copper
@@ -2062,7 +2063,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "10.03.01"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Volcanic-hosted copper"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :volcanogenic-manganese
@@ -2073,19 +2074,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "10.02.02"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Volcanogenic manganese"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
-<https://linked.dat.gov.au/org/cgi>
-    a sdo:Organization ;
-    sdo:name "Commission for Geoscience Information" ;
-    sdo:url "https://cgi-iugs.org"^^xsd:anyURI ;
+<https://linked.data.gov.au/org/cgi>
+    a schema:Organization ;
+    schema:name "Commission for Geoscience Information" ;
+    schema:url "https://cgi-iugs.org"^^xsd:anyURI ;
 .
 
 <https://linked.dat.gov.au/org/ga>
-    a sdo:Organization ;
-    sdo:name "Geoscience Australia" ;
-    sdo:url "https://www.ga.gov.au"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "Geoscience Australia" ;
+    schema:url "https://www.ga.gov.au"^^xsd:anyURI ;
 .
 
 :anorthosite-conduit
@@ -2097,7 +2098,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :anorthosite-conduit-nickel-copper-pge ;
     skos:notation "12.13."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Anorthosite conduit"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :anorthosite-massif
@@ -2109,7 +2110,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :anorthosite-massif-titanium ;
     skos:notation "12.12."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Anorthosite massif"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :apatite-intrusion
@@ -2121,7 +2122,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :apatite-intrusion-ree ;
     skos:notation "12.05."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Apatite intrusion"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :carlin-type
@@ -2133,7 +2134,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :carlin-type-gold ;
     skos:notation "11.04."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Carlin-type"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :clay-basin-evaporative
@@ -2145,7 +2146,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :lacustrine-clay-lithium ;
     skos:notation "04.04."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Clay (basin evaporative)"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :collapse-breccia-pipe
@@ -2157,7 +2158,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :collapse-breccia-pipe-uranium ;
     skos:notation "06.02."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Collapse breccia pipe"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :distal-disseminated
@@ -2169,7 +2170,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :distal-disseminated-ag-au ;
     skos:notation "11.05."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Distal-disseminated"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :erosional
@@ -2181,7 +2182,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "01.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Erosional"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :exotic
@@ -2193,7 +2194,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :exotic-copper ;
     skos:notation "03.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Exotic"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :five-element
@@ -2205,7 +2206,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :vein-five-element ;
     skos:notation "06.06."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Five-element"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :kimberlite
@@ -2217,7 +2218,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :kimberlite-diamond ;
     skos:notation "12.06."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Kimberlite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :komatiite
@@ -2229,7 +2230,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :komatiite-ni-cu-pge ;
     skos:notation "12.07."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Komatiite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :magnesite
@@ -2241,7 +2242,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :nodular-magnesite ;
     skos:notation "03.04."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Magnesite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :metamorphic
@@ -2253,7 +2254,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "08.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Metamorphic"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :metamorphic-hydrothermal
@@ -2265,7 +2266,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "07.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Metamorphic hydrothermal"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :non-sulfide
@@ -2277,7 +2278,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :non-sulfide-zinc-lead-mn ;
     skos:notation "06.05."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Non-sulfide"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :paleochannel
@@ -2289,7 +2290,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :paleochannel-iron ;
     skos:notation "03.02."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Paleochannel"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :peralkaline-igneous
@@ -2301,7 +2302,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :peralkaline-igneous-hfse-ree ;
     skos:notation "12.03."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Peralkaline igneous"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :phosphorite
@@ -2313,7 +2314,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :phosphorite-group ;
     skos:notation "05.02."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Phosphorite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :skarn-iron
@@ -2329,7 +2330,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "09.02.07"^^dt:LocalHierarchyKey ,
         "11.07.09"^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn iron"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :ultramafic-and-or-mafic-conduit
@@ -2341,7 +2342,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :u-m-conduit-ni-cu-pge ;
     skos:notation "12.10."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ultramafic and (or) mafic conduit"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :volcanic-hosted
@@ -2353,7 +2354,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :volcanic-hosted-copper ;
     skos:notation "10.03."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Volcanic-hosted"@en ;
-    sdo:additionalType :DepositType ;
+    schema:additionalType :DepositType ;
 .
 
 :zeolite
@@ -2365,7 +2366,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower :lacustrine-zeolite-li-b ;
     skos:notation "04.03."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Zeolite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :alkali-calcic
@@ -2379,7 +2380,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :low-fe-alkali-calcic ;
     skos:notation "09.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Alkali-calcic"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :carbonatite
@@ -2393,7 +2394,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :carbonatite-ree ;
     skos:notation "12.02."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Carbonatite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :intrusion-related
@@ -2407,7 +2408,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :reduced-intrusion-related-au ;
     skos:notation "11.10."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Intrusion-related"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :ioa
@@ -2421,7 +2422,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :magnetite-dominant-ioa ;
     skos:notation "09.04."^^dt:LocalHierarchyKey ;
     skos:prefLabel "IOA"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :iocg
@@ -2435,7 +2436,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :magnetite-dominant-iocg ;
     skos:notation "09.03."^^dt:LocalHierarchyKey ;
     skos:prefLabel "IOCG"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :metamorphic-group
@@ -2449,7 +2450,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :metamorphic-kyanite ;
     skos:notation "08.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Metamorphic"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :ophiolite
@@ -2463,7 +2464,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :ophiolite-ni-cu-pge ;
     skos:notation "12.11."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ophiolite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :unconformity-related
@@ -2477,7 +2478,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :unconformity-related-uranium ;
     skos:notation "06.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Unconformity-related"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :volcanogenic
@@ -2491,7 +2492,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :volcanogenic-manganese ;
     skos:notation "10.02."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Volcanogenic"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :brine
@@ -2506,7 +2507,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :marine-brine-potash-mg-li-and-so-on ;
     skos:notation "04.02."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Brine"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :clay-supergene
@@ -2521,7 +2522,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :underclay-overclay ;
     skos:notation "02.02."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Clay (supergene)"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :greisen
@@ -2536,7 +2537,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :greisen-w-mo-bi ;
     skos:notation "11.09."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Greisen"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :iron-formation
@@ -2551,7 +2552,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :superior-type-banded-iron-formation ;
     skos:notation "05.03."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Iron formation"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :supergene
@@ -2566,7 +2567,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "02.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :volcanic-basin-hydrothermal
@@ -2581,7 +2582,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "10.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Volcanic basin hydrothermal"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :basin-chemical
@@ -2597,7 +2598,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "05.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Basin chemical"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :basin-evaporative
@@ -2613,7 +2614,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "04.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Basin evaporative"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :black-shale
@@ -2629,7 +2630,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :black-shale-vanadium-mo-ni ;
     skos:notation "05.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Black shale"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :breccia-pipe
@@ -2645,7 +2646,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :breccia-pipe-ree ;
     skos:notation "11.03."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Breccia pipe"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :infiltrational
@@ -2661,7 +2662,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "03.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Infiltrational"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :pegmatite
@@ -2677,7 +2678,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :simple-pegmatite ;
     skos:notation "12.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Pegmatite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :regional-metasomatic
@@ -2693,7 +2694,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "09.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Regional metasomatic"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :ultramafic-and-or-mafic-intrusion
@@ -2709,7 +2710,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :u-m-intrusion-nickel-copper-pge ;
     skos:notation "12.09."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ultramafic and (or) mafic intrusion"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :ultramafic-and-or-mafic-layered-intrusion
@@ -2725,7 +2726,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :u-m-layered-intrusion-pge ;
     skos:notation "12.08."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Ultramafic and (or) mafic-layered intrusion"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :uranium
@@ -2741,7 +2742,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :sandstone-uranium ;
     skos:notation "03.03."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Uranium"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :laterite
@@ -2758,7 +2759,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :laterite-nickel ;
     skos:notation "02.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Laterite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :manganese
@@ -2775,7 +2776,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :superior-type-banded-manganese ;
     skos:notation "05.04."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Manganese"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :mississippi-valley-type-mvt
@@ -2792,7 +2793,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :sandstone-hosted-zinc-lead ;
     skos:notation "06.04."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Mississippi Valley-type (MVT)"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :volcanogenic-massive-sulfide-vms
@@ -2809,7 +2810,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :mafic-ultramafic-vms ;
     skos:notation "10.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Volcanogenic massive sulfide (VMS)"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :basin-hydrothermal
@@ -2827,7 +2828,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "06.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Basin hydrothermal"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :sediment-hosted
@@ -2845,7 +2846,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :siliciclastic-mafic-zinc-lead ;
     skos:notation "06.03."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Sediment-hosted"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :epithermal
@@ -2864,7 +2865,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :low-sulfidation-epithermal-gold-silver ;
     skos:notation "11.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Epithermal"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :metasomatic-iron
@@ -2883,7 +2884,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :skarn-iron ;
     skos:notation "09.02."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Metasomatic iron"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :porphyry
@@ -2902,7 +2903,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :porphyry-tungsten ;
     skos:notation "11.08."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Porphyry"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :orogenic
@@ -2922,7 +2923,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :orogenic-silver-lead-zinc-copper-antimony ;
     skos:notation "07.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Orogenic"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :replacement
@@ -2942,7 +2943,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :replacement-zinc-lead ;
     skos:notation "11.06."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Replacement"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :vein
@@ -2962,7 +2963,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :vein-tungsten ;
     skos:notation "11.02."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Vein"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :skarn
@@ -2983,7 +2984,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :skarn-zinc-lead-silver ;
     skos:notation "11.07."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Skarn"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :supergene-group
@@ -3004,7 +3005,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :supergene-zinc ;
     skos:notation "02.03."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Supergene"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :magmatic-hydrothermal
@@ -3026,12 +3027,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "11.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Magmatic hydrothermal"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :DepositEnvironment
     a owl:Class ;
-    sdo:name "Mineral Deposit Environment" ;
+    schema:name "Mineral Deposit Environment" ;
 .
 
 :evaporite
@@ -3054,7 +3055,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :marine-evaporite-salt ;
     skos:notation "04.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Evaporite"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :magmatic
@@ -3079,7 +3080,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:notation "12.."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Magmatic"@en ;
     skos:topConceptOf cs: ;
-    sdo:additionalType :DepositEnvironment ;
+    schema:additionalType :DepositEnvironment ;
 .
 
 :placer
@@ -3107,17 +3108,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :shoreline-placer-gold ;
     skos:notation "01.01."^^dt:LocalHierarchyKey ;
     skos:prefLabel "Placer"@en ;
-    sdo:additionalType :DepositGroup ;
+    schema:additionalType :DepositGroup ;
 .
 
 :DepositGroup
     a owl:Class ;
-    sdo:name "Mineral Deposit Group" ;
+    schema:name "Mineral Deposit Group" ;
 .
 
 :DepositType
     a owl:Class ;
-    sdo:name "Mineral Deposit Type" ;
+    schema:name "Mineral Deposit Type" ;
 .
 
 cs:
@@ -3138,12 +3139,14 @@ cs:
         :volcanic-basin-hydrothermal ;
     skos:historyNote "Taken from Geoscience Australia's internal database, November 2023" ;
     skos:prefLabel "Mineral Deposit Models"@en ;
-    sdo:copyrightNotice "(c) Commission for Geoscience Information, 2023" ;
-    sdo:creator <https://linked.dat.gov.au/org/ga> ;
-    sdo:dateCreated "2022-06-30"^^xsd:date ;
-    sdo:dateModified "2023-11-11"^^xsd:date ;
-    sdo:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    sdo:publisher <https://linked.dat.gov.au/org/cgi> ;
+    schema:copyrightNotice "(c) Commission for Geoscience Information, 2023" ;
+    schema:creator <https://linked.dat.gov.au/org/ga> ;
+    schema:dateCreated "2022-06-30"^^xsd:date ;
+    schema:dateModified "2023-11-11"^^xsd:date ;
+    schema:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
+    schema:status astatus:experimental ;
 .
 
 :carbonatite-nb

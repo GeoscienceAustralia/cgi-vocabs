@@ -1,5 +1,6 @@
 PREFIX : <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/>
-PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs:<http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -15,6 +16,7 @@ cs:
     schema:citation "Original set of terms from the GeosciML standard" ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "http://www.opengis.net/doc/geosciml/4.1"^^xsd:anyURI ;
+    schema:status astatus:stable ;
     skos:changeNote
         "2009-07-14 Generate SKOS encoding of vocabulary from Excel spreadsheet."@en,
         "2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en,

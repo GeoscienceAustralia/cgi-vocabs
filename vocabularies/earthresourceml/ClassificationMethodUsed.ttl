@@ -1,5 +1,6 @@
 PREFIX : <http://resource.geosciml.org/classifier/cgi/classification-method-used/>
-PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs:<http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -15,6 +16,7 @@ cs:
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
+    schema:status astatus:stable ;
     skos:changeNote
         "2014 - Original SKOS implementation, based on 2013-06 approved vocabulary from GTWG face-to-face meeting in St. Petersburg, Russia. SKOS-RDF generated from Excel workbook using GSML_SKOS_from_XLS_2013.xslt."@en,
         "2016-07-15 OLR - Reformat SKOS to migrate to new vocabulary server. No changes to concepts."@en,

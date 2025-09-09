@@ -1,5 +1,6 @@
 PREFIX : <http://resource.geosciml.org/classifier/cgi/end-use-potential/>
-PREFIX cs: <http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs:<http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential>
 PREFIX dt: <http://resource.geosciml.org/datatype/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -15,6 +16,7 @@ cs:
     schema:citation "The EarthResourceML standard"@en ;
     schema:publisher <https://linked.data.gov.au/org/cgi> ;
     schema:citation "https://earthresourceml.org"^^xsd:anyURI ;
+    schema:status astatus:stable ;
     skos:changeNote
         "2014-02-23 Conversion to SKOS by SM Richard."@en,
         "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name."@en,
