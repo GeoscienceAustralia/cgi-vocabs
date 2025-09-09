@@ -1,5 +1,6 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -1099,3 +1100,161 @@ schema:url
 <http://inspire.ec.europa.eu/codelist/ResourceCategoryValue/measuredMineralResource> schema:name "measured mineral resource" .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> schema:name "Earth Sciences" .
+
+
+
+dcterms:conformsTo
+    schema:description "An established standard to which the described resource conforms."@en ;
+    schema:name "Conforms To"@en ;
+.
+
+owl:Class
+    schema:description "The class of OWL classes." ;
+    schema:name "Class" ;
+.
+
+<https://linked.data.gov.au/def/reg-statuses/experimental>
+    schema:description "An entry that has been accepted into the register temporarily and may be subject to change or withdrawal."@en ;
+    schema:name "experimental"@en ;
+.
+
+<https://linked.data.gov.au/def/reg-statuses/stable>
+    schema:description "An entry that is seen as having a reasonable measure of stability, may be used to mark the full adoption of a previously 'experimental' entry."@en ;
+    schema:name "stable"@en ;
+.
+
+schema:additionalType
+    schema:description
+        "An additional type for the item, typically used for adding more specific types from external vocabularies" ,
+        """An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. Typically the value is a URI-identified RDF class, and in this case corresponds to the
+    use of rdf:type in RDF. Text values can be used sparingly, for cases where useful information can be added without their being an appropriate schema to reference. In the case of text values, the class label should follow the schema.org <a href="https://schema.org/docs/styleguide.html">style guide</a>.""" ,
+        "An additional type for the item, typically used for adding more specific types from external vocabularies"@en ;
+    schema:name
+        "additional type" ,
+        "additional type"@en ;
+.
+
+schema:citation
+    schema:description "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc" ;
+    schema:name "citation" ;
+.
+
+schema:copyrightNotice
+    schema:description "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work" ;
+    schema:name "copyright notice" ;
+.
+
+schema:keywords
+    schema:description "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property" ;
+    schema:name "keywords" ;
+.
+
+schema:license
+    schema:description "A license document that applies to this content, typically indicated by URL" ;
+    schema:name "license" ;
+.
+
+schema:status
+    schema:description "The status of the study (enumerated)" ;
+    schema:name "status" ;
+.
+
+<https://purl.org/NET/rdflicense/cc-by4.0>
+    schema:description "The Creative Commons BY 4.0 International license" ;
+    schema:name "CC BY 4.0" ;
+.
+
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/bedLithosome> schema:name "bed lithosome" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/blocks> schema:name "blocks" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/concretion> schema:name "concretion" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/cyclicBeddingPackage> schema:name "cyclic bedding package" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/enclave> schema:name "enclave" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/geologicUnitMatrix> schema:name "geologic unit matrix" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/irregularLithosome> schema:name "irregular lithosome" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/layerLithosome> schema:name "layer lithosome" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/lenticularLithosome> schema:name "lenticular lithosome" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/markerBed> schema:name "marker bed" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/pendants> schema:name "pendants" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/rafts> schema:name "rafts" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/roofPendant> schema:name "roof pendant" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/screen> schema:name "screen" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/tectonicBlock> schema:name "tectonic block" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/veinOrDikeLithosome> schema:name "vein or dike lithosome" .
+<http://inspire.ec.europa.eu/codelist/CompositionPartRoleValue/xenolith> schema:name "xenolith" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/abandonedChannel> schema:name "abandoned channel" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/abyssal> schema:name "abyssal" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/activeSpreadingCenter> schema:name "active spreading center" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/alluvialFan> schema:name "alluvial fan" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/alluvialPlain> schema:name "alluvial plain" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/backreef> schema:name "backreef" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierBeach> schema:name "barrier beach" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierLagoon> schema:name "barrier lagoon" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/basinBog> schema:name "basin bog" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/bathyal> schema:name "bathyal" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/beach> schema:name "beach" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/bog> schema:name "bog" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/braidedChannel> schema:name "braided channel" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/cave> schema:name "cave" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/coastalDuneField> schema:name "coastal dune field" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/contactMetamorphicOrigin> schema:name "contact metamorphic origin" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalCrust> schema:name "continental crust" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/crust> schema:name "crust" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/cutoffMeander> schema:name "cutoff meander" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deepSeaTrench> schema:name "deep sea trench" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaFront> schema:name "delta front" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaPlain> schema:name "delta plain" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/distributaryChannel> schema:name "distributary channel" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/distributaryMouth> schema:name "distributary mouth" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/dunefield> schema:name "dunefield" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarineDelta> schema:name "estuarine delta" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarineLagoon> schema:name "estuarine lagoon" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/extendedTerrane> schema:name "extended terrane" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/extraTerrestrialOrigin> schema:name "extra terrestrial origin" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/floodplain> schema:name "floodplain" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forereef> schema:name "forereef" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/gibberPlain> schema:name "gibber plain" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hadal> schema:name "hadal" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hinterlandSetting> schema:name "hinterland setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/inactiveSpreadingCenter> schema:name "inactive spreading center" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/innerNeritic> schema:name "inner neritic" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/interdistributaryBay> schema:name "interdistributary bay" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intertidal> schema:name "intertidal" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lacustrineDelta> schema:name "lacustrine delta" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerBathyal> schema:name "lower bathyal" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerContinentalCrust> schema:name "lower continental crust" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerDeltaPlain> schema:name "lower delta plain" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerMantle> schema:name "lower mantle" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mantle> schema:name "mantle" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/meanderingChannel> schema:name "meandering channel" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mediumSpreadingCenterSetting> schema:name "medium spreading center setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleBathyal> schema:name "middle bathyal" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleNeritic> schema:name "middle neritic" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/neritic> schema:name "neritic" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanicCrust> schema:name "oceanic crust" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/outerNeritic> schema:name "outer neritic" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/plateSpreadingCenter> schema:name "plate spreading center" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/prodelta> schema:name "prodelta" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/reefFlat> schema:name "reef flat" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/regionalMetamorphicOrigin> schema:name "regional metamorphic origin" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/riverChannel> schema:name "river channel" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/sandPlain> schema:name "sand plain" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/shorelineSettings> schema:name "shoreline settings" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/supratidal> schema:name "supratidal" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tectonicSetting> schema:name "tectonic setting" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalChannel> schema:name "tidal channel" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/transitionalCrust> schema:name "transitional crust" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperBathyal> schema:name "upper bathyal" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperDeltaPlain> schema:name "upper delta plain" .
+<http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperMantle> schema:name "upper mantle" .
+<http://inspire.ec.europa.eu/codelist/EventProcessValue/tractionSaltationOrSuspensionDeposition> schema:name "traction saltation or suspension deposition" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/geomorphologicUnit> schema:name "geomorphologic unit" .
+<http://inspire.ec.europa.eu/codelist/GeologicUnitTypeValue/pedoderm> schema:name "pedoderm" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/alkali-OlivineBasalt> schema:name "alkali-olivine basalt" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticConglomerate> schema:name "clastic conglomerate" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticMudstone> schema:name "clastic mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSandstone> schema:name "clastic sandstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dolostone> schema:name "dolostone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/highMagnesiumFineGrainedIgneousRocks> schema:name "high magnesium fine grained igneous rocks" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/impureDolostone> schema:name "impure dolostone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phonolilte> schema:name "phonolilte" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rockGypsumOrAnhydrite> schema:name "rock gypsum or anhydrite" .

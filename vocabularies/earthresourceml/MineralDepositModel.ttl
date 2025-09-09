@@ -3156,7 +3156,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel "Carbonite NB"@en ;
+    skos:prefLabel "carbonatite-nb"@en ;
 .
 
 :u-m-conduit-ni-cu-pge
@@ -3166,7 +3166,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "u-m-conduit-ni-cu-pge"@en ;
 .
 
 :komatiite-ni-cu-pge
@@ -3176,7 +3176,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "komatiite-ni-cu-pge"@en ;
 .
 
 :ophiolite-cr
@@ -3186,7 +3186,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "ophiolite-cr"@en ;
 .
 
 :ophiolite-ni-cu-pge
@@ -3196,7 +3196,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "ophiolite-ni-cu-pge"@en ;
 .
 
 :distal-disseminated-ag-au
@@ -3206,7 +3206,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "distal-disseminated-ag-au"@en ;
 .
 
 :greisen-w-mo-bi
@@ -3216,7 +3216,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "greisen-w-mo-bi"@en ;
 .
 
 :greisen-be-li
@@ -3226,7 +3226,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "greisen-be-li"@en ;
 .
 
 :greisen-sn-w-mo
@@ -3236,7 +3236,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "greisen-sn-w-mo"@en ;
 .
 
 :oxidized-intrusion-related-au
@@ -3246,7 +3246,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "oxidized-intrusion-related-au"@en ;
 .
 
 :reduced-intrusion-related-au
@@ -3256,7 +3256,7 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "reduced-intrusion-related-au"@en ;
 .
 
 :low-fe-alkali-calcic
@@ -3266,5 +3266,5 @@ cs:
     skos:historyNote "Added by NJC in 2025-09 to fix vocab validity. Needs scientific review" ;
     skos:inScheme cs: ;
     skos:notation "0"^^dt:LocalHierarchyKey ;
-    skos:prefLabel ""@en ;
+    skos:prefLabel "low-fe-alkali-calcic"@en ;
 .
