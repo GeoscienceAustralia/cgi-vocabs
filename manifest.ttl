@@ -1,0 +1,29 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX mrr: <https://prez.dev/ManifestResourceRoles/>
+PREFIX prez: <https://prez.dev/>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX schema: <https://schema.org/>
+
+[]
+    a prez:Manifest ;
+    prof:hasResource
+        [
+            prof:hasArtifact "catalogue.ttl" ;
+            prof:hasRole mrr:CatalogueData ;
+            schema:description "The definition of, and medata for, the container which here is a dcat:Catalog object" ;
+            schema:name "Catalogue Definition"
+        ] ,
+        [
+            dcterms:conformsTo "validator-vocpub-variant.ttl" ;
+            prof:hasArtifact "vocabularies/**/*.ttl" ;
+            prof:hasRole mrr:ResourceData ;
+            schema:description "skos:ConceptsScheme objects in RDF (Turtle) files in the vocabs/ folder" ;
+            schema:name "Resource Data"
+        ] ,
+        [
+            prof:hasArtifact "_background/*.ttl" ;
+            prof:hasRole mrr:CompleteCatalogueAndResourceLabels ;
+            schema:description "RDF files containing all the labels for the container content" ;
+            schema:name "Labels & Agent information" ;
+        ] ;
+.
