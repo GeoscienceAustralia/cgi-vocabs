@@ -1,0 +1,24 @@
+name: Sync updated vocabs Develop
+on:
+  push:
+    branches: [ develop ]
+
+  workflow_dispatch:
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bring in repo - develop branch
+        uses: actions/checkout@v4
+        with:
+          ref: develop
+      - name: Install UV and Prezmanifest
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          uv tool install prezmanifest
+      - name: Sync Vocabs
+        env:
+          FUSEKI_ADMIN_PASSWORD_NONPROD: ${{secrets.FUSEKI_ADMIN_PASSWORD_NONPROD}}
+          FUSEKI_SPARQL_ENDPOINT_CGI_NONPROD: ${{vars.FUSEKI_SPARQL_ENDPOINT_CGI_NONPROD}}
+        run: |
+          pm sync -u admin -p $FUSEKI_ADMIN_PASSWORD_NONPROD manifest.ttl $FUSEKI_SPARQL_ENDPOINT_CGI_NONPROD false false false false
