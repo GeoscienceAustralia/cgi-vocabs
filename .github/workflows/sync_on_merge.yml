@@ -1,0 +1,24 @@
+name: Sync updated vocabs Master
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bring in repo - master branch
+        uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Install UV and Prezmanifest
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          uv tool install prezmanifest
+      - name: Sync Vocabs
+        env:
+          FUSEKI_ADMIN_PASSWORD_PROD: ${{secrets.FUSEKI_ADMIN_PASSWORD_PROD}}
+          FUSEKI_SPARQL_ENDPOINT_CGI_PROD: ${{vars.FUSEKI_SPARQL_ENDPOINT_CGI_PROD}}
+        run: |
+          pm sync -u admin -p $FUSEKI_ADMIN_PASSWORD_PROD manifest.ttl $FUSEKI_SPARQL_ENDPOINT_CGI_PROD false false false false
