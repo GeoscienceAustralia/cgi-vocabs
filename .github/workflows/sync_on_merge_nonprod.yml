@@ -1,4 +1,4 @@
-name: Sync updated vocabs Develop
+name: Sync Vocabs on Merge to Develop
 on:
   push:
     branches: [ develop ]
@@ -21,4 +21,4 @@ jobs:
           FUSEKI_ADMIN_PASSWORD_NONPROD: ${{secrets.FUSEKI_ADMIN_PASSWORD_NONPROD}}
           FUSEKI_SPARQL_ENDPOINT_CGI_NONPROD: ${{vars.FUSEKI_SPARQL_ENDPOINT_CGI_NONPROD}}
         run: |
-          pm sync -u admin -p $FUSEKI_ADMIN_PASSWORD_NONPROD manifest.ttl $FUSEKI_SPARQL_ENDPOINT_CGI_NONPROD false false false false
+          pm sync -u admin -p $FUSEKI_ADMIN_PASSWORD_NONPROD manifest.ttl $FUSEKI_SPARQL_ENDPOINT_CGI_NONPROD true false true false
