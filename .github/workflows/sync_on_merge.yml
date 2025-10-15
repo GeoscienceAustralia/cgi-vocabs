@@ -1,4 +1,4 @@
-name: Sync updated vocabs Master
+name: Sync Vocabs on Merge to Master
 on:
   push:
     branches: [ master ]
@@ -21,4 +21,4 @@ jobs:
           FUSEKI_ADMIN_PASSWORD_PROD: ${{secrets.FUSEKI_ADMIN_PASSWORD_PROD}}
           FUSEKI_SPARQL_ENDPOINT_CGI_PROD: ${{vars.FUSEKI_SPARQL_ENDPOINT_CGI_PROD}}
         run: |
-          pm sync -u admin -p $FUSEKI_ADMIN_PASSWORD_PROD manifest.ttl $FUSEKI_SPARQL_ENDPOINT_CGI_PROD false false false false
+          pm sync -u admin -p $FUSEKI_ADMIN_PASSWORD_PROD manifest.ttl $FUSEKI_SPARQL_ENDPOINT_CGI_PROD true false true false
