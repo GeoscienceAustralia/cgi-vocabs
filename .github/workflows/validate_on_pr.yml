@@ -1,0 +1,22 @@
+name: Validate Vocabs on PRs to Master
+on:
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bring in repo - master branch
+        uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Install UV and Prezmanifest
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          uv tool install prezmanifest
+      - name: Validate all vocabs with Prezmanifest
+        run: |
+          pm validate manifest.ttl
